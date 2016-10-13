@@ -10,7 +10,7 @@ keywords:
 
 This section explains you the steps required to populate the Spreadsheet with data, format, and export it as excel file. This section covers only the minimal features that you need to know to get started with the Spreadsheet.
 
-# Adding Script Reference
+## Adding Script Reference
 
 Create an HTML page and add the scripts references in the order mentioned in the following code example.
 
@@ -57,6 +57,7 @@ Add a `div`container to render the Spreadsheet.
 Initialize the Spreadsheet by using the ejSpreadsheet method. The Spreadsheet is rendered based on default `width` and `height`. You can also customize the Spreadsheet dimension by setting the [`width`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-width "width") and [`height`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-height "height") property in [`scrollSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings "scrollSettings").
 
 {% highlight html %}
+
 <!DOCTYPE html>
 <html>    
    <body>
@@ -67,11 +68,12 @@ Initialize the Spreadsheet by using the ejSpreadsheet method. The Spreadsheet is
       </script>
     </body>
 </html>
+
 {% endhighlight %}
 
 Now, the Spreadsheet is rendered with default row and column count.
 
-![](Getting-Started_images/md_img1.png)
+![](Getting-Started_images/Getting-Started_img1.png)
 
 ## Populate Spreadsheet with data
 
@@ -88,9 +90,10 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
     $scope.sheetData = [{ rangeSettings: [{ dataSource: window.defaultData, startCell:'A1' }] }];
     });
    </script>
+   
 {% endhighlight %}
 
-![](Getting-Started_images/md_img2.png)
+![](Getting-Started_images/Getting-Started_img2.png)
 
 N> For more details about `data binding` refer following [`link`](http://help.syncfusion.com/js/spreadsheet/data-binding "link")
 
@@ -114,9 +117,10 @@ To apply conditional formats for a range use `cFormatRule` property. The followi
       this.XLCFormat.setCFRule({ "action": "greaterthan", "inputs": ["10"], "color": "redft", "range": "D2:D8" });
      }
    </script>
+   
 {% endhighlight %}
 
-![](Getting-Started_images/md_img3.png)
+![](Getting-Started_images/Getting-Started_img3.png)
 
 N> For more details about `Conditional Formatting` refer following [`link`](http://help.syncfusion.com/js/spreadsheet/data-presentation#conditional-formatting "link")
 
