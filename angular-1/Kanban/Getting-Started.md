@@ -71,7 +71,7 @@ The other required internal dependencies are tabulated below,
         ej.kanban.min.js
       </td>
       <td>
-        Kanban core script file which includes schedule related scripts files such as <i>ej.kanban.base.js</i>, <i>ej.kanban.common.js</i>,<i>ej.kanban.dragAndDrop.js</i>,<i>ej.kanban.edit.js</i>,<i>ej.kanban.adaptive.js</i>,<i>ej.kanban.filter.js</i>,<i>ej.kanban.scroller.js</i>,<i>ej.kanban.selection.js</i>,<i>ej.kanban.swimlane.js</i> and <i>ej.kanban.context.js</i><br/><br/>
+        Kanban core script file which includes kanban related scripts files such as <i>ej.kanban.base.js</i>, <i>ej.kanban.common.js</i>,<i>ej.kanban.dragAndDrop.js</i>,<i>ej.kanban.edit.js</i>,<i>ej.kanban.adaptive.js</i>,<i>ej.kanban.filter.js</i>,<i>ej.kanban.scroller.js</i>,<i>ej.kanban.selection.js</i>,<i>ej.kanban.swimlane.js</i> and <i>ej.kanban.context.js</i><br/><br/>
       </td>
    </tr>
    <tr>
@@ -171,12 +171,12 @@ So the complete boilerplate code is
 {% highlight html %}
 
     <!DOCTYPE html>
-    <html>
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="KanbanApp">
     <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Essential Studio for JavaScript">
     <meta name="author" content="Syncfusion">
-    <title></title>
+    <title>Essential Studio for AngularJS: Kanban</title>
     <!-- Essential Studio for JavaScript  theme reference -->
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!-- Essential Studio for JavaScript  script references -->
@@ -214,8 +214,7 @@ The code example for defining controls in AngularJS is as follows,
                     <div id="Kanban" ej-kanban>
                         <div e-columns>
                             <div e-column e-headertext="Backlog"></div>
-                            <div e-column e-headertext="In Progress"></div>
-                            <div e-column e-headertext="Testing"></div>
+                            <div e-column e-headertext="In Progress"></div>                            
                             <div e-column e-headertext="Done"></div>
                         </div>										
                     </div>
@@ -247,8 +246,7 @@ For demonstration purpose, [Northwind OData service](http://mvc.syncfusion.com/S
                     <div id="Kanban" ej-kanban e-datasource="data">
                             <div e-columns>
                                 <div e-column e-headertext="Backlog"></div>
-                                <div e-column e-headertext="In Progress"></div>
-                                <div e-column e-headertext="Testing"></div>
+                                <div e-column e-headertext="In Progress"></div>                                
                                 <div e-column e-headertext="Done"></div>
                             </div>										
                     </div>
@@ -286,8 +284,7 @@ In order to display cards in Kanban control, you need to map the database fields
                     <div id="Kanban" ej-kanban e-datasource="data" e-keyfield="Status" e-fields-content="Summary" e-fields-primarykey="Id">
                             <div e-columns>
                                 <div e-column e-headertext="Backlog" e-key="Open"></div>
-                                <div e-column e-headertext="In Progress" e-key="InProgress"></div>
-                                <div e-column e-headertext="Testing" e-key="Testing"></div>
+                                <div e-column e-headertext="In Progress" e-key="InProgress"></div>                                
                                 <div e-column e-headertext="Done" e-key="Close"></div>
                             </div>										
                     </div>
@@ -320,8 +317,7 @@ N>  `e-fields.primaryKey` field is mandatory for “Drag and Drop” ,”Selecti
                         <div id="Kanban" ej-kanban e-datasource="data" e-keyfield="Status" e-fields-content="Summary" e-fields-primarykey="Id" e-fields-swimlanekey="Assignee">
                             <div e-columns>
                                 <div e-column e-headertext="Backlog" e-key="Open"></div>
-                                <div e-column e-headertext="In Progress" e-key="InProgress"></div>
-                                <div e-column e-headertext="Testing" e-key="Testing"></div>
+                                <div e-column e-headertext="In Progress" e-key="InProgress"></div>                                
                                 <div e-column e-headertext="Done" e-key="Close"></div>
                             </div>										
                         </div>
@@ -352,8 +348,7 @@ Filters allows to filter the collection of cards from `dataSource` which meets t
                  <div id="Kanban" ej-kanban e-datasource="data" e-keyfield="Status" e-fields-content="Summary" e-fields-primarykey="Id" e-fields-swimlanekey="Assignee" e-allowfiltering="true">
                      <div e-columns>
                          <div e-column e-headertext="Backlog" e-key="Open"></div>
-                         <div e-column e-headertext="In Progress" e-key="InProgress"></div>
-                         <div e-column e-headertext="Testing" e-key="Testing"></div>
+                         <div e-column e-headertext="In Progress" e-key="InProgress"></div>                         
                          <div e-column e-headertext="Done" e-key="Close"></div>
                      </div>		
                      <div e-filterSettings>
