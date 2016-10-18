@@ -147,6 +147,8 @@ In the above code example, `currentview` and `setDate` are the scope variables d
 
 </html>
 
+{% endhighlight %}
+
 The Scheduler properties that supports **two-way binding** are as follows - 
 
 <table>
@@ -167,8 +169,6 @@ The Scheduler properties that supports **two-way binding** are as follows -
 	<td>Sets the Scheduler dataSource</td>
 	</tr>
 </table>	
-
-{% endhighlight %}
 
 ## Binding Appointment Data
 
