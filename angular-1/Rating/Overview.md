@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Rating | JavaScript | Syncfusion
 description: overview
 platform: js
 control: Rating
