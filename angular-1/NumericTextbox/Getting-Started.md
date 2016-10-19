@@ -3,15 +3,15 @@ layout: post
 title: Getting-Started
 description: getting started
 platform: js
-control: TextBoxes
+control: NumericTextbox
 documentation: ug
 ---
 
 # Getting Started
 
-This section explains briefly about how to create a **EJ** **TextBox** control in your application with **JavaScript**. From the following steps you can learn how to create and use **EJ** **TextBox** in your application. Here we have showcased the Textbox controls.
+This section explains briefly about how to create **a** **NumericTextBox** control in your application with **JavaScript**. From the following steps you can learn how to create and use **NumericTextBox**  in your application. Here we have showcased the Textbox controls.
 
-![](Getting-Started_images/GettingStarted_img1.jpeg)
+![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
 ## Create Textboxes Widgets
@@ -27,25 +27,25 @@ Create an **HTML** file and add the following template to the HTML file for Te
 </table>
 The ng-app directive explains the root element (<html> or <body> tags) of the application. You will assign a name to the ng-app directive, then you must create a module with that name. In this module, you will have to define your directives, services, filters and configurations.
 
-Properties can be bind to ejTextboxes control using the prefix e- and particular property name as shown as below
+Properties can be bind to ejNumericTextbox control using the prefix e- and particular property name as shown as below
 
 Add the input elements
 
 <table>
 <tr>
 <td>
-<table class="sample" style="margin: auto"><br/><br/><tbody><br/><br/><tr><br/><br/><td><br/><br/><span>Numeric Textbox</span><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><input id="numeric" type="text" ej-numerictextbox e-value="nvalue" /><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><span>Percentage Textbox</span><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><input id="percent" type="text" ej-percentagetextbox e-value="pvalue" /><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><span>Currency Textbox</span><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><input id="currency" type="text" ej-currencytextbox e-value="cvalue" /><br/><br/></td><br/><br/></tr><br/><br/></tbody><br/><br/></table><br/><br/></td></tr>
+<table class="sample" style="margin: auto"><br/><br/><tbody><br/><br/><tr><br/><br/><td><br/><br/><span>Numeric Textbox</span><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><input id="numeric" type="text" ej-numerictextbox e-value="nvalue" /><br/><br/></td><br/><br/></tr><br/><br/></tbody><br/><br/></table><br/><br/></td></tr>
 </table>
 Set the value in the controller
 
 <table>
 <tr>
 <td>
-angular.module('EditCtrl', ['ejangular'])<br/><br/>.controller('EditorsCtrl', function ($scope) {<br/><br/>$scope.nvalue = 600;<br/><br/>$scope.pvalue = 400;<br/><br/>$scope.cvalue = 400; <br/><br/>});<br/><br/></td></tr>
+angular.module('EditCtrl', ['ejangular'])<br/><br/>.controller('EditorsCtrl', function ($scope) {<br/><br/>$scope.nvalue = 600;<br/><br/>});<br/><br/></td></tr>
 </table>
 Execute the above code to render the following output
 
-![](Getting-Started_images/GettingStarted_img2.jpeg)
+![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
 ## Set the MinValue, MaxValue and Value in Textoxes
@@ -59,7 +59,7 @@ table class="sample" style="margin: auto"><br/><br/><tbody><br/><br/><tr><br/><b
 </table>
 The following screenshot shows the output for the above code
 
-![](Getting-Started_images/GettingStarted_img3.jpeg)
+![](Getting-Started_images/Getting-Started_img3.jpeg)
 
 
 ## Set the Strict Mode option
@@ -69,7 +69,7 @@ You can set the “**StrictMode****”** **option** to restrict entering values
 <table>
 <tr>
 <td>
-table class="sample" style="margin: auto"><br/><br/><tbody><br/><br/><tr><br/><br/><td><br/><br/><span>Numeric Textbox</span><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><input id="numeric" type="text" ej-numerictextbox e-value="100" e-maxvalue="1000" e-enablestrictmode="true" /><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><span>Percentage Textbox</span><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><input id="percent" type="text" ej-percentagetextbox e-value="50" e-maxvalue="1000" e-enablestrictmode="true" /><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><span>Currency Textbox</span><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><input id="currency" type="text" ej-currencytextbox e-value="20" e-maxvalue="1000" e-enablestrictmode="true" /><br/><br/></td><br/><br/></tr><br/><br/></tbody><br/><br/></td></tr>
+table class="sample" style="margin: auto"><br/><br/><tbody><br/><br/><tr><br/><br/><td><br/><br/><span>Numeric Textbox</span><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><input id="numeric" type="text" ej-numerictextbox e-value="100" e-maxvalue="1000" e-enablestrictmode="true" /><br/><br/></td><br/><br/></tr><br/><br/></tbody><br/><br/></td></tr>
 </table>
 <table>
 <tr>
@@ -78,7 +78,7 @@ angular.module('EditCtrl', ['ejangular'])<br/><br/>.controller('EditorsCtrl', fu
 </table>
 The following screenshot show the output the for the above code
 
-![](Getting-Started_images/GettingStarted_img4.jpeg)
+![](Getting-Started_images/Getting-Started_img4.jpeg)
 
 
 ## Data Binding
@@ -94,7 +94,7 @@ We have listed the properties of **Textbox** widget that supports two way bindin
 **Supported** **properties**<br/><br/></td></tr>
 <tr>
 <td>
-ejNumericTextbox<br/><br/>ejCurrencyTextbox<br/><br/>ejPercentageTextbox<br/><br/></td><td>
+ejNumericTextbox<br/><br/><br/><br/></td><td>
 Value<br/><br/><br/><br/></td></tr>
 </table>
 Please use the below code to bind the Textbox in two-way support.
@@ -102,17 +102,17 @@ Please use the below code to bind the Textbox in two-way support.
 <table>
 <tr>
 <td>
-<table class="sample" style="margin: auto"><br/><br/><tbody><br/><br/><tr><br/><br/><td><br/><br/><span>Numeric Textbox</span><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><input id="numeric" type="text" ej-numerictextbox e-value="nvalue" /><br/><br/></td><br/><br/></tr><br/><br/><tr> <br/><br/><td><br/><br/><input type="text" class="input ejinputtext" ng-model="nvalue" /><br /><br/><br/></td><br/><br/><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><span>Percentage Textbox</span><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><input id="percent" type="text" ej-percentagetextbox e-value="pvalue" /><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><input type="text" class="input ejinputtext" ng-model="pvalue" /><br /><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><span>Currency Textbox</span><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><input id="currency" type="text" ej-currencytextbox e-value="cvalue" /><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><input type="text" class="input ejinputtext" ng-model="cvalue" /><br /><br/><br/></td><br/><br/></tr> <br/><br/></tbody><br/><br/></table><br/><br/></td></tr>
+<table class="sample" style="margin: auto"><br/><br/><tbody><br/><br/><tr><br/><br/><td><br/><br/><span>Numeric Textbox</span><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><input id="numeric" type="text" ej-numerictextbox e-value="nvalue" /><br/><br/></td><br/><br/></tr><br/><br/><tr> <br/><br/><td><br/><br/><input type="text" class="input ejinputtext" ng-model="nvalue" /><br /><br/><br/></td><br/><br/><br/><br/></tr><br/><br/></tbody><br/><br/></table><br/><br/></td></tr>
 </table>
 <table>
 <tr>
 <td>
-angular.module('EditCtrl', ['ejangular'])<br/><br/>.controller('EditorsCtrl', function ($scope) {<br/><br/>$scope.nvalue = 600;<br/><br/>$scope.pvalue = 400;<br/><br/>$scope.cvalue = 400; <br/><br/>});<br/><br/></td></tr>
+angular.module('EditCtrl', ['ejangular'])<br/><br/>.controller('EditorsCtrl', function ($scope) {<br/><br/>$scope.nvalue = 600;<br/><br/>});<br/><br/></td></tr>
 </table>
 In the above sample, Textbox value was bind in two way method. Changes made in the textbox will reflect to another textbox.
 
 Run the above code to render the following output.
 
-![](Getting-Started_images/GettingStarted_img5.jpeg)
+![](Getting-Started_images/Getting-Started_img5.jpeg)
 
 
