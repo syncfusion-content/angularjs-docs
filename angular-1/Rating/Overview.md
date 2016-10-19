@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: Rating
 documentation: ug
+keywords: rating features, key features, rating overview
 ---
 
 # Overview

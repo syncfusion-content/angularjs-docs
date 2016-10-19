@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: Tab
 documentation: ug
+keywords: tab features, key features, tab overview 
 ---
 
 # Overview

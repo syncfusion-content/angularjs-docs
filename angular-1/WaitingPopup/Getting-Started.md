@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: WaitingPopup
 documentation: ug
+keywords: ejwaitingpopup, waitingpopup, js waitingpopup 
 ---
 
 # Getting Started
@@ -32,15 +33,14 @@ Essential JS includes angular directives for all controls in the ej.widget.angul
 <!doctype html>
 <html lang="en" ng-app="WaitingPopupApp">
 <head>
-    <title>Essential Studio for JavaScript : Angular JS Support for Tagcloud </title>
+    <title>Essential Studio for JavaScript : Angular JS Support for WaitingPopup </title>
     <!-- Style sheet for default theme (flat azure) -->
-    <link href="http://cdn.syncfusion.com/13.4.0.53/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--Scripts-->
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js" type="text/javascript"> </script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js" type="text/javascript"> </script> 
     <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
-    <script type="text/javascript" src="http://cdn.syncfusion.com/13.4.0.53/js/web/ej.web.all.min.js "></script>
-    <script src="http://cdn.syncfusion.com/13.4.0.53/js/common/ej.widget.angular.min.js"></script>
+    <script type="text/javascript" src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js "></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script>
     <!--Add custom scripts here -->
 </head>
 <body ng-controller="WaitingPopupCtrl">

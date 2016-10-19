@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: WaitingPopup
 documentation: ug
+keywords: waitingpopup features, key features, waitingpopup overview 
 ---
 
 # Overview
