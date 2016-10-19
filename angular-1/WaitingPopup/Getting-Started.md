@@ -123,7 +123,7 @@ The following screenshot displays a **User** **login**.
 
 ## Add WaitingPopup Widget
 
-To render the ejTagCloud using angular directive, we need to inject the ej angular directive with modules.
+To render the ejWaitingPopup using angular directive, we need to inject the ej angular directive with modules.
 
  In a real-time login page scenario, when you click the Login button, the WaitingPopup is displayed. 
 

@@ -53,7 +53,7 @@ The ng-app directive explains the root element (<html> or <body> tags) of the ap
 
 A controller is defined using ng-controller directive. Each controller accepts an object $scope which we pass as a parameter.  This object is used to bind the controller with view.   
 
-Properties can be bind to ejTagCloud control using the prefix e- and particular property name.
+Properties can be bind to ejRating control using the prefix e- and particular property name.
 
  Add movies list in the table to render Rating control. Here, you can add corresponding images in the images folder and give the accurate image path.
 
