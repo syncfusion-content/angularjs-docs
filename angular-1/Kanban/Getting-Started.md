@@ -71,7 +71,10 @@ The other required internal dependencies are tabulated below,
         ej.kanban.min.js
       </td>
       <td>
-        Kanban core script file which includes kanban related scripts files such as <i>ej.kanban.base.js</i>, <i>ej.kanban.common.js</i>,<i>ej.kanban.dragAndDrop.js</i>,<i>ej.kanban.edit.js</i>,<i>ej.kanban.adaptive.js</i>,<i>ej.kanban.filter.js</i>,<i>ej.kanban.scroller.js</i>,<i>ej.kanban.selection.js</i>,<i>ej.kanban.swimlane.js</i> and <i>ej.kanban.context.js</i><br/><br/>
+        Kanban core script file which includes kanban related scripts files such as <i>ej.kanban.base.js</i>,
+         <i>ej.kanban.common.js</i>,<i>ej.kanban.dragAndDrop.js</i>,<i>ej.kanban.edit.js</i>,
+         <i>ej.kanban.adaptive.js</i>,<i>ej.kanban.filter.js</i>,<i>ej.kanban.scroller.js</i>,
+         <i>ej.kanban.selection.js</i>,<i>ej.kanban.swimlane.js</i> and <i>ej.kanban.context.js</i><br/><br/>
       </td>
    </tr>
    <tr>
