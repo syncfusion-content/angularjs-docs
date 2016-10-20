@@ -2,7 +2,7 @@
 layout: post
 title: overview
 description: overview
-platform: aspnet-core
+platform: Angular-1-JS
 control: rotator
 documentation: ug
 ---
