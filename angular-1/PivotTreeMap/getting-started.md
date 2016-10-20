@@ -66,8 +66,8 @@ Refer the [CDN](https://help.syncfusion.com/js/cdn) script files with other requ
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
-	<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-	<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script>
 </head>
 
 {% endhighlight %}
@@ -83,16 +83,16 @@ Create the PivotTreeMap control using `ej-pivottreemap` directive and define all
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="PivotTreeMapApp">
 
 <body>
-	<div ng-controller="PivotTreeMapCtrl">
+    <div ng-controller="PivotTreeMapCtrl">
         <div id="PivotTreeMap1" ej-pivottreemap e-dataSource="dataSource" e-isresponsive="isResponsive" style="min-height: 275px; height: 460px; width: 99%;"></div>
-		    
-		<!--Tooltip labels can be localized here-->
-		<script id="tooltipTemplate" type="application/jsrender">
-			<div style="background:White; color:black; font-size:12px; font-weight:normal; border: 1px solid #4D4D4D; white-space: nowrap;border-radius: 2px; margin-right: 25px; min-width: 110px;padding-right: 5px; padding-left: 5px; padding-bottom: 2px ;width: auto; height: auto;">
-				<div>Measure(s) : {{:~Measures(#data)}}</div><div>Row : {{:~Row(#data)}}</div><div>Column : {{:~Column(#data)}}</div><div>Value : {{:~Value(#data)}}</div>
-			</div>
-		</script>   
-	</div>
+ 
+        <!--Tooltip labels can be localized here-->
+        <script id="tooltipTemplate" type="application/jsrender">
+            <div style="background:White; color:black; font-size:12px; font-weight:normal; border: 1px solid #4D4D4D; white-space: nowrap;border-radius: 2px; margin-right: 25px; min-width: 110px;padding-right: 5px; padding-left: 5px; padding-bottom: 2px ;width: auto; height: auto;">
+                <div>Measure(s) : {{:~Measures(#data)}}</div><div>Row : {{:~Row(#data)}}</div><div>Column : {{:~Column(#data)}}</div><div>Value : {{:~Value(#data)}}</div>
+            </div>
+        </script>   
+    </div>
 </body>
 
 </html>
@@ -108,45 +108,45 @@ Initializes the OLAP datasource for PivotTreeMap control as shown below.
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="PivotTreeMapApp">
 <head> <!-- Dependency file references --> </head>
 <body>
-	<div ng-controller="PivotTreeMapCtrl">
+    <div ng-controller="PivotTreeMapCtrl">
         <div id="PivotTreeMap1" ej-pivottreemap e-dataSource="dataSource" e-isresponsive="isResponsive" style="min-height: 275px; height: 460px; width: 99%;"></div>
-		    
-		<!--Tooltip labels can be localized here-->
-		<script id="tooltipTemplate" type="application/jsrender">
-			<div style="background:White; color:black; font-size:12px; font-weight:normal; border: 1px solid #4D4D4D; white-space: nowrap;border-radius: 2px; margin-right: 25px; min-width: 110px;padding-right: 5px; padding-left: 5px; padding-bottom: 2px ;width: auto; height: auto;">
-				<div>Measure(s) : {{:~Measures(#data)}}</div><div>Row : {{:~Row(#data)}}</div><div>Column : {{:~Column(#data)}}</div><div>Value : {{:~Value(#data)}}</div>
-			</div>
-		</script>   
-	</div>
+ 
+        <!--Tooltip labels can be localized here-->
+        <script id="tooltipTemplate" type="application/jsrender">
+            <div style="background:White; color:black; font-size:12px; font-weight:normal; border: 1px solid #4D4D4D; white-space: nowrap;border-radius: 2px; margin-right: 25px; min-width: 110px;padding-right: 5px; padding-left: 5px; padding-bottom: 2px ;width: auto; height: auto;">
+                <div>Measure(s) : {{:~Measures(#data)}}</div><div>Row : {{:~Row(#data)}}</div><div>Column : {{:~Column(#data)}}</div><div>Value : {{:~Value(#data)}}</div>
+            </div>
+        </script>   
+    </div>
 <script>
-	angular.module('PivotTreeMapApp', ['ejangular']).controller('PivotTreeMapCtrl', function ($scope) {
-		$scope.isResponsive = true;
-		$scope.dataSource = {
-			data: "http://bi.syncfusion.com/olap/msmdpump.dll;Locale identifier=1033;", //data
-			catalog: "Adventure Works DW 2008 SE",
-			cube: "Adventure Works",
-			rows: [
-				{
-					fieldName: "[Customer].[Customer Geography]"
-				}
-			],
-			columns: [
-				{
-					fieldName: "[Date].[Fiscal]"
-				}
-			],
-			values: [
-				{
-					measures: [
-						{
-							fieldName: "[Measures].[Customer Count]",
-						}
-					],
-					axis: "columns"
-				}
-			]
-		};
-	});
+    angular.module('PivotTreeMapApp', ['ejangular']).controller('PivotTreeMapCtrl', function ($scope) {
+        $scope.isResponsive = true;
+        $scope.dataSource = {
+                data: "http://bi.syncfusion.com/olap/msmdpump.dll;Locale identifier=1033;", //data
+                catalog: "Adventure Works DW 2008 SE",
+                cube: "Adventure Works",
+                rows: [
+                    {
+                        fieldName: "[Customer].[Customer Geography]"
+                    }
+                ],
+                columns: [
+                    {
+                        fieldName: "[Date].[Fiscal]"
+                    }
+                ],
+                values: [
+                    {
+                        measures: [
+                            {
+                                fieldName: "[Measures].[Customer Count]",
+                            }
+                        ],
+                        axis: "columns"
+                    }   
+                ]
+        };
+    });
 </script>
 </body>
 

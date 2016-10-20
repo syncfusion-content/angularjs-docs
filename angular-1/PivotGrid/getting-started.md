@@ -66,8 +66,8 @@ Refer the [CDN](https://help.syncfusion.com/js/cdn) script files with other requ
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
-	<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-	<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script>
 </head>
 
 {% endhighlight %}
@@ -87,9 +87,9 @@ Create the PivotGrid control using `ej-pivotgrid` directive and define all its o
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="PivotGridApp">
 
 <body>
-	<div ng-controller="PivotGridCtrl">
+    <div ng-controller="PivotGridCtrl">
         <div id="PivotGrid1" ej-pivotgrid e-datasource="datasource" e-isResponsive="isResponsive" style="height: 350px; width: 100%; float: left; overflow: auto" />
-	</div>
+    </div>
 </body>
 
 </html>
@@ -105,62 +105,62 @@ Let us now see how to populate the PivotGrid control using a sample JSON data as
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="PivotGridApp">
 <head> <!-- Dependency file references --> </head>
 <body>
-	<div ng-controller="PivotGridCtrl">
+    <div ng-controller="PivotGridCtrl">
         <div id="PivotGrid1" ej-pivotgrid e-datasource="datasource" e-isResponsive="isResponsive" style="height: 350px; width: 100%; float: left; overflow: auto" />
-	</div>
+    </div>
 <script>
-	var pivot_dataset = [
-			{ Amount: 100, Country: "Canada", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Alberta" },
-			{ Amount: 200, Country: "Canada", Date: "FY 2006", Product: "Van", Quantity: 3, State: "British Columbia" },
-			{ Amount: 300, Country: "Canada", Date: "FY 2007", Product: "Car", Quantity: 4, State: "Brunswick" },
-			{ Amount: 150, Country: "Canada", Date: "FY 2008", Product: "Bike", Quantity: 3, State: "Manitoba" },
-			{ Amount: 200, Country: "Canada", Date: "FY 2006", Product: "Car", Quantity: 4, State: "Ontario" },
-			{ Amount: 100, Country: "Canada", Date: "FY 2007", Product: "Van", Quantity: 1, State: "Quebec" },
-			{ Amount: 200, Country: "France", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Charente-Maritime" },
-			{ Amount: 250, Country: "France", Date: "FY 2006", Product: "Van", Quantity: 4, State: "Essonne" },
-			{ Amount: 300, Country: "France", Date: "FY 2007", Product: "Car", Quantity: 3, State: "Garonne (Haute)" },
-			{ Amount: 150, Country: "France", Date: "FY 2008", Product: "Van", Quantity: 2, State: "Gers" },
-			{ Amount: 200, Country: "Germany", Date: "FY 2006", Product: "Van", Quantity: 3, State: "Bayern" },
-			{ Amount: 250, Country: "Germany", Date: "FY 2007", Product: "Car", Quantity: 3, State: "Brandenburg" },
-			{ Amount: 150, Country: "Germany", Date: "FY 2008", Product: "Car", Quantity: 4, State: "Hamburg" },
-			{ Amount: 200, Country: "Germany", Date: "FY 2008", Product: "Bike", Quantity: 4, State: "Hessen" },
-			{ Amount: 150, Country: "Germany", Date: "FY 2007", Product: "Van", Quantity: 3, State: "Nordrhein-Westfalen" },
-			{ Amount: 100, Country: "Germany", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Saarland" },
-			{ Amount: 150, Country: "United Kingdom", Date: "FY 2008", Product: "Bike", Quantity: 5, State: "England" },
-			{ Amount: 250, Country: "United States", Date: "FY 2007", Product: "Car", Quantity: 4, State: "Alabama" },
-			{ Amount: 200, Country: "United States", Date: "FY 2005", Product: "Van", Quantity: 4, State: "California" },
-			{ Amount: 100, Country: "United States", Date: "FY 2006", Product: "Bike", Quantity: 2, State: "Colorado" },
-			{ Amount: 150, Country: "United States", Date: "FY 2008", Product: "Car", Quantity: 3, State: "New Mexico" },
-			{ Amount: 200, Country: "United States", Date: "FY 2005", Product: "Bike", Quantity: 4, State: "New York" },
-			{ Amount: 250, Country: "United States", Date: "FY 2008", Product: "Car", Quantity: 3, State: "North Carolina" },
-			{ Amount: 300, Country: "United States", Date: "FY 2007", Product: "Van", Quantity: 4, State: "South Carolina" }
-	];
-	var dataSource = {
-		data: pivot_dataset,
-		rows: [
-			{
-				fieldName: "Country",
-				fieldCaption: "Country"
-			}
-		],
-		columns: [
-			{
-				fieldName: "Product",
-				fieldCaption: "Product"
-			}
-		],
-		values: [
-			{
-				fieldName: "Amount",
-				fieldCaption: "Amount"
-			}
-		]
-	};
-
-	angular.module("PivotGridApp",["ejangular"]).controller('PivotGridCtrl', function ($scope) {
-			$scope.isResponsive = true;
-			$scope.datasource = dataSource;
-	});
+    var pivot_dataset = [
+            { Amount: 100, Country: "Canada", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Alberta" },
+            { Amount: 200, Country: "Canada", Date: "FY 2006", Product: "Van", Quantity: 3, State: "British Columbia" },
+            { Amount: 300, Country: "Canada", Date: "FY 2007", Product: "Car", Quantity: 4, State: "Brunswick" },
+            { Amount: 150, Country: "Canada", Date: "FY 2008", Product: "Bike", Quantity: 3, State: "Manitoba" },
+            { Amount: 200, Country: "Canada", Date: "FY 2006", Product: "Car", Quantity: 4, State: "Ontario" },
+            { Amount: 100, Country: "Canada", Date: "FY 2007", Product: "Van", Quantity: 1, State: "Quebec" },
+            { Amount: 200, Country: "France", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Charente-Maritime" },
+            { Amount: 250, Country: "France", Date: "FY 2006", Product: "Van", Quantity: 4, State: "Essonne" },
+            { Amount: 300, Country: "France", Date: "FY 2007", Product: "Car", Quantity: 3, State: "Garonne (Haute)" },
+            { Amount: 150, Country: "France", Date: "FY 2008", Product: "Van", Quantity: 2, State: "Gers" },
+            { Amount: 200, Country: "Germany", Date: "FY 2006", Product: "Van", Quantity: 3, State: "Bayern" },
+            { Amount: 250, Country: "Germany", Date: "FY 2007", Product: "Car", Quantity: 3, State: "Brandenburg" },
+            { Amount: 150, Country: "Germany", Date: "FY 2008", Product: "Car", Quantity: 4, State: "Hamburg" },
+            { Amount: 200, Country: "Germany", Date: "FY 2008", Product: "Bike", Quantity: 4, State: "Hessen" },
+            { Amount: 150, Country: "Germany", Date: "FY 2007", Product: "Van", Quantity: 3, State: "Nordrhein-Westfalen" },
+            { Amount: 100, Country: "Germany", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Saarland" },
+            { Amount: 150, Country: "United Kingdom", Date: "FY 2008", Product: "Bike", Quantity: 5, State: "England" },
+            { Amount: 250, Country: "United States", Date: "FY 2007", Product: "Car", Quantity: 4, State: "Alabama" },
+            { Amount: 200, Country: "United States", Date: "FY 2005", Product: "Van", Quantity: 4, State: "California" },
+            { Amount: 100, Country: "United States", Date: "FY 2006", Product: "Bike", Quantity: 2, State: "Colorado" },
+            { Amount: 150, Country: "United States", Date: "FY 2008", Product: "Car", Quantity: 3, State: "New Mexico" },
+            { Amount: 200, Country: "United States", Date: "FY 2005", Product: "Bike", Quantity: 4, State: "New York" },
+            { Amount: 250, Country: "United States", Date: "FY 2008", Product: "Car", Quantity: 3, State: "North Carolina" },
+            { Amount: 300, Country: "United States", Date: "FY 2007", Product: "Van", Quantity: 4, State: "South Carolina" }
+    ];
+    var dataSource = {
+            data: pivot_dataset,
+            rows: [
+                {
+                    fieldName: "Country",
+                    fieldCaption: "Country"
+                }
+            ],
+            columns: [
+                {
+                    fieldName: "Product",
+                    fieldCaption: "Product"
+                }
+            ],
+            values: [
+                {
+                    fieldName: "Amount",
+                    fieldCaption: "Amount"
+                }
+            ]
+        };
+ 
+    angular.module("PivotGridApp",["ejangular"]).controller('PivotGridCtrl', function ($scope) {
+        $scope.isResponsive = true;
+        $scope.datasource = dataSource;
+    });
 </script>
 </body>
 
@@ -185,9 +185,9 @@ Create the PivotGrid control using `ej-pivotgrid` directive and define all its o
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="PivotGridApp">
 
 <body>
-	<div ng-controller="PivotGridCtrl">
-		<div id="PivotGrid1" ej-pivotgrid e-datasource="datasource" e-isResponsive="isResponsive" style="height: 350px; width: 100%; float: left; overflow: auto" />
-	</div>
+    <div ng-controller="PivotGridCtrl">
+        <div id="PivotGrid1" ej-pivotgrid e-datasource="datasource" e-isResponsive="isResponsive" style="height: 350px; width: 100%; float: left; overflow: auto" />
+    </div>
 </body>
 
 </html>
@@ -203,39 +203,40 @@ Initializes the OLAP datasource for PivotGrid control as shown below.
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="PivotGridApp">
 <head> <!-- Dependency file references --> </head>
 <body>
-	<div ng-controller="PivotGridCtrl">
-		<div id="PivotGrid1" ej-pivotgrid e-datasource="datasource" e-isResponsive="isResponsive" style="height: 350px; width: 100%; float: left; overflow: auto" />
-	</div>
+    <div ng-controller="PivotGridCtrl">
+        <div id="PivotGrid1" ej-pivotgrid e-datasource="datasource" e-isResponsive="isResponsive" style="height: 350px; width: 100%; float: left; overflow: auto" />
+    </div>
 <script>
-	angular.module("PivotGridApp",["ejangular"]).controller('PivotGridOlapCtrl', function ($scope) {
-		$scope.dataSource = {
-			data: "http://bi.syncfusion.com/olap/msmdpump.dll", //data
-			catalog: "Adventure Works DW 2008 SE",
-			cube: "Adventure Works",
-			rows: [
-				{
-					fieldName: "[Date].[Fiscal]"
-				}
-			],
-			columns: [
-				{
-					fieldName: "[Customer].[Customer Geography]"
-				}
-			],
-			values: [
-				{
-					measures: [
-						{
-							fieldName: "[Measures].[Internet Sales Amount]"
-						}
-					],
-					axis: "columns"
-				}
-			]
-		};
-		$scope.isResponsive = true;
-		$scope.datasource = $scope.dataSource;
-	});
+    angular.module("PivotGridApp",["ejangular"]).controller('PivotGridOlapCtrl', function ($scope) {
+        $scope.dataSource = {
+            data: "http://bi.syncfusion.com/olap/msmdpump.dll", //data
+            catalog: "Adventure Works DW 2008 SE",
+            cube: "Adventure Works",
+            rows: [
+                {
+                    fieldName: "[Date].[Fiscal]"
+                }
+            ],
+            columns: [
+                {
+                    fieldName: "[Customer].[Customer Geography]"
+                }
+            ],
+            values: [
+                {
+                    measures: [
+                        {
+                            fieldName: "[Measures].[Internet Sales Amount]"
+                        }
+                    ],
+                    axis: "columns"
+                }
+            ]
+        };
+        $scope.isResponsive = true;
+        $scope.datasource = $scope.dataSource;
+    })
+
 </script>
 </body>
 

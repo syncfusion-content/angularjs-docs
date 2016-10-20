@@ -66,8 +66,8 @@ Refer the [CDN](https://help.syncfusion.com/js/cdn) script files with other requ
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
-	<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-	<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script>
 </head>
 
 {% endhighlight %}
@@ -87,12 +87,12 @@ Create the PivotChart control using `ej-pivotchart` directive and define all its
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="PivotChartApp">
 
 <body>
-	<div ng-controller="PivotChartCtrl">
-		<div id="PivotChart1" ej-pivotchart e-dataSource="dataSource" e-title-text="title" e-showtooltip="showTooltip" e-isResponsive ="isResponsive"
-			e-animation="animation" e-commonseriesoptions-type="ctype" e-commonseriesoptions-tooltip-visible="showTooltip"
-			e-size="size" e-primaryxaxis="primaryXAxis" e-primaryyaxis="primaryYAxis" e-legend="legend" e-load='loadTheme'
-			style="height: 500px; width: 100%;"/>
-	</div>
+    <div ng-controller="PivotChartCtrl">
+        <div id="PivotChart1" ej-pivotchart e-dataSource="dataSource" e-title-text="title" e-showtooltip="showTooltip" e-isResponsive ="isResponsive"
+            e-animation="animation" e-commonseriesoptions-type="ctype" e-commonseriesoptions-tooltip-visible="showTooltip"
+            e-size="size" e-primaryxaxis="primaryXAxis" e-primaryyaxis="primaryYAxis" e-legend="legend" e-load='loadTheme'
+            style="height: 500px; width: 100%;"/>
+    </div>
 </body>
 
 </html>
@@ -108,75 +108,75 @@ Let us now see how to populate the PivotChart control using a sample JSON data a
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="PivotChartApp">
 <head> <!-- Dependency file references --> </head>
 <body>
-	<div ng-controller="PivotChartCtrl">
-		<div id="PivotChart1" ej-pivotchart e-dataSource="dataSource" e-title-text="title" e-showtooltip="showTooltip" e-isResponsive ="isResponsive"
-			e-animation="animation" e-commonseriesoptions-type="ctype" e-commonseriesoptions-tooltip-visible="showTooltip"
-			e-size="size" e-primaryxaxis="primaryXAxis" e-primaryyaxis="primaryYAxis" e-legend="legend" e-load='loadTheme'
-			style="height: 500px; width: 100%;"/>
-	</div>
+    <div ng-controller="PivotChartCtrl">
+        <div id="PivotChart1" ej-pivotchart e-dataSource="dataSource" e-title-text="title" e-showtooltip="showTooltip" e-isResponsive ="isResponsive"
+            e-animation="animation" e-commonseriesoptions-type="ctype" e-commonseriesoptions-tooltip-visible="showTooltip"
+            e-size="size" e-primaryxaxis="primaryXAxis" e-primaryyaxis="primaryYAxis" e-legend="legend" e-load='loadTheme'
+            style="height: 500px; width: 100%;"/>
+    </div>
 <script>
-	var pivot_dataset = [
-			{ Amount: 100, Country: "Canada", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Alberta" },
-			{ Amount: 200, Country: "Canada", Date: "FY 2006", Product: "Van", Quantity: 3, State: "British Columbia" },
-			{ Amount: 300, Country: "Canada", Date: "FY 2007", Product: "Car", Quantity: 4, State: "Brunswick" },
-			{ Amount: 150, Country: "Canada", Date: "FY 2008", Product: "Bike", Quantity: 3, State: "Manitoba" },
-			{ Amount: 200, Country: "Canada", Date: "FY 2006", Product: "Car", Quantity: 4, State: "Ontario" },
-			{ Amount: 100, Country: "Canada", Date: "FY 2007", Product: "Van", Quantity: 1, State: "Quebec" },
-			{ Amount: 200, Country: "France", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Charente-Maritime" },
-			{ Amount: 250, Country: "France", Date: "FY 2006", Product: "Van", Quantity: 4, State: "Essonne" },
-			{ Amount: 300, Country: "France", Date: "FY 2007", Product: "Car", Quantity: 3, State: "Garonne (Haute)" },
-			{ Amount: 150, Country: "France", Date: "FY 2008", Product: "Van", Quantity: 2, State: "Gers" },
-			{ Amount: 200, Country: "Germany", Date: "FY 2006", Product: "Van", Quantity: 3, State: "Bayern" },
-			{ Amount: 250, Country: "Germany", Date: "FY 2007", Product: "Car", Quantity: 3, State: "Brandenburg" },
-			{ Amount: 150, Country: "Germany", Date: "FY 2008", Product: "Car", Quantity: 4, State: "Hamburg" },
-			{ Amount: 200, Country: "Germany", Date: "FY 2008", Product: "Bike", Quantity: 4, State: "Hessen" },
-			{ Amount: 150, Country: "Germany", Date: "FY 2007", Product: "Van", Quantity: 3, State: "Nordrhein-Westfalen" },
-			{ Amount: 100, Country: "Germany", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Saarland" },
-			{ Amount: 150, Country: "United Kingdom", Date: "FY 2008", Product: "Bike", Quantity: 5, State: "England" },
-			{ Amount: 250, Country: "United States", Date: "FY 2007", Product: "Car", Quantity: 4, State: "Alabama" },
-			{ Amount: 200, Country: "United States", Date: "FY 2005", Product: "Van", Quantity: 4, State: "California" },
-			{ Amount: 100, Country: "United States", Date: "FY 2006", Product: "Bike", Quantity: 2, State: "Colorado" },
-			{ Amount: 150, Country: "United States", Date: "FY 2008", Product: "Car", Quantity: 3, State: "New Mexico" },
-			{ Amount: 200, Country: "United States", Date: "FY 2005", Product: "Bike", Quantity: 4, State: "New York" },
-			{ Amount: 250, Country: "United States", Date: "FY 2008", Product: "Car", Quantity: 3, State: "North Carolina" },
-			{ Amount: 300, Country: "United States", Date: "FY 2007", Product: "Van", Quantity: 4, State: "South Carolina" }
-	];
-	var dataSource = {
-		data: pivot_dataset,
-		rows: [
-			{
-				fieldName: "Product",
-				fieldCaption: "Product"
-			},
-			{
-				fieldName: "Date",
-				fieldCaption: "Date"
-			}
-		],
-		columns: [
-			{
-				fieldName: "Country",
-				fieldCaption: "Country"
-			}
-		],
-		values: [
-			{
-				fieldName: "Amount",
-				fieldCaption: "Amount"
-			}
-		]
-	};
-	angular.module('PivotChartApp', ['ejangular']).controller('PivotChartCtrl', function ($scope) {
-		$scope.dataSource = dataSource;
-		$scope.title = "PivotChart in Essential JS";
-		$scope.isResponsive = true;
-		$scope.ctype = ej.PivotChart.ChartTypes.Column;
-		$scope.showTooltip = true;
-		$scope.size = { height: "460px", width: "95%" };
-		$scope.primaryXAxis = { labelRotation: 0 };
-		$scope.primaryYAxis = { title: { text: "Amount" } };
-		$scope.legend = { visible: true, rowCount: 2 };
-	});
+    var pivot_dataset = [
+            { Amount: 100, Country: "Canada", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Alberta" },
+            { Amount: 200, Country: "Canada", Date: "FY 2006", Product: "Van", Quantity: 3, State: "British Columbia" },
+            { Amount: 300, Country: "Canada", Date: "FY 2007", Product: "Car", Quantity: 4, State: "Brunswick" },
+            { Amount: 150, Country: "Canada", Date: "FY 2008", Product: "Bike", Quantity: 3, State: "Manitoba" },
+            { Amount: 200, Country: "Canada", Date: "FY 2006", Product: "Car", Quantity: 4, State: "Ontario" },
+            { Amount: 100, Country: "Canada", Date: "FY 2007", Product: "Van", Quantity: 1, State: "Quebec" },
+            { Amount: 200, Country: "France", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Charente-Maritime" },
+            { Amount: 250, Country: "France", Date: "FY 2006", Product: "Van", Quantity: 4, State: "Essonne" },
+            { Amount: 300, Country: "France", Date: "FY 2007", Product: "Car", Quantity: 3, State: "Garonne (Haute)" },
+            { Amount: 150, Country: "France", Date: "FY 2008", Product: "Van", Quantity: 2, State: "Gers" },
+            { Amount: 200, Country: "Germany", Date: "FY 2006", Product: "Van", Quantity: 3, State: "Bayern" },
+            { Amount: 250, Country: "Germany", Date: "FY 2007", Product: "Car", Quantity: 3, State: "Brandenburg" },
+            { Amount: 150, Country: "Germany", Date: "FY 2008", Product: "Car", Quantity: 4, State: "Hamburg" },
+            { Amount: 200, Country: "Germany", Date: "FY 2008", Product: "Bike", Quantity: 4, State: "Hessen" },
+            { Amount: 150, Country: "Germany", Date: "FY 2007", Product: "Van", Quantity: 3, State: "Nordrhein-Westfalen" },
+            { Amount: 100, Country: "Germany", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Saarland" },
+            { Amount: 150, Country: "United Kingdom", Date: "FY 2008", Product: "Bike", Quantity: 5, State: "England" },
+            { Amount: 250, Country: "United States", Date: "FY 2007", Product: "Car", Quantity: 4, State: "Alabama" },
+            { Amount: 200, Country: "United States", Date: "FY 2005", Product: "Van", Quantity: 4, State: "California" },
+            { Amount: 100, Country: "United States", Date: "FY 2006", Product: "Bike", Quantity: 2, State: "Colorado" },
+            { Amount: 150, Country: "United States", Date: "FY 2008", Product: "Car", Quantity: 3, State: "New Mexico" },
+            { Amount: 200, Country: "United States", Date: "FY 2005", Product: "Bike", Quantity: 4, State: "New York" },
+            { Amount: 250, Country: "United States", Date: "FY 2008", Product: "Car", Quantity: 3, State: "North Carolina" },
+            { Amount: 300, Country: "United States", Date: "FY 2007", Product: "Van", Quantity: 4, State: "South Carolina" }
+    ];
+    var dataSource = {
+        data: pivot_dataset,
+        rows: [
+            {
+                fieldName: "Product",
+                fieldCaption: "Product"
+            },
+            {
+                fieldName: "Date",
+                fieldCaption: "Date"
+            }
+        ],
+        columns: [
+            {
+                fieldName: "Country",
+                fieldCaption: "Country"
+            }
+        ],
+        values: [
+            {
+                fieldName: "Amount",
+                fieldCaption: "Amount"
+            }
+        ]
+    };
+    angular.module('PivotChartApp', ['ejangular']).controller('PivotChartCtrl', function ($scope) {
+        $scope.dataSource = dataSource;
+        $scope.title = "PivotChart in Essential JS";
+        $scope.isResponsive = true;
+        $scope.ctype = ej.PivotChart.ChartTypes.Column;
+        $scope.showTooltip = true;
+        $scope.size = { height: "460px", width: "95%" };
+        $scope.primaryXAxis = { labelRotation: 0 };
+        $scope.primaryYAxis = { title: { text: "Amount" } };
+        $scope.legend = { visible: true, rowCount: 2 };
+    });
 </script>
 </body>
 
@@ -201,12 +201,12 @@ Create the PivotChart control using `ej-pivotchart` directive and define all its
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="PivotChartApp">
 
 <body>
-	<div ng-controller="PivotChartCtrl">
-		<div id="PivotChart1" ej-pivotchart e-dataSource="dataSource" e-title-text="title" e-showtooltip="showTooltip" e-isResponsive ="isResponsive"
-			e-animation="animation" e-commonseriesoptions-type="ctype" e-commonseriesoptions-tooltip-visible="showTooltip"
-			e-size="size" e-primaryxaxis="primaryXAxis" e-primaryyaxis="primaryYAxis" e-legend="legend" e-load='loadTheme'
-			style="height: 500px; width: 100%;"/>
-	</div>
+    <div ng-controller="PivotChartCtrl">
+        <div id="PivotChart1" ej-pivotchart e-dataSource="dataSource" e-title-text="title" e-showtooltip="showTooltip" e-isResponsive ="isResponsive"
+            e-animation="animation" e-commonseriesoptions-type="ctype" e-commonseriesoptions-tooltip-visible="showTooltip"
+            e-size="size" e-primaryxaxis="primaryXAxis" e-primaryyaxis="primaryYAxis" e-legend="legend" e-load='loadTheme'
+            style="height: 500px; width: 100%;"/>
+    </div>
 </body>
 
 </html>
@@ -222,50 +222,50 @@ Initializes the OLAP datasource for PivotChart control as shown below.
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="PivotChartApp">
 <head> <!-- Dependency file references --> </head>
 <body>
-	<div ng-controller="PivotChartCtrl">
-		<div id="PivotChart1" ej-pivotchart e-dataSource="dataSource" e-title-text="title" e-showtooltip="showTooltip" e-isResponsive ="isResponsive"
-			e-animation="animation" e-commonseriesoptions-type="ctype" e-commonseriesoptions-tooltip-visible="showTooltip"
-			e-size="size" e-primaryxaxis="primaryXAxis" e-primaryyaxis="primaryYAxis" e-legend="legend" e-load='loadTheme'
-			style="height: 500px; width: 100%;"/>
-	</div>
-<script>
-	angular.module('PivotChartApp', ['ejangular']).controller('PivotChartOlapCtrl', function ($scope) {
-		$scope.dataSource = {
-			data: "http://bi.syncfusion.com/olap/msmdpump.dll", //data
-			catalog: "Adventure Works DW 2008 SE",
-			cube: "Adventure Works",
-			rows: [
-				{
-					fieldName: "[Date].[Fiscal]"
-				}
-			],
-			columns: [
-				{
-					fieldName: "[Customer].[Customer Geography]"
-				}
-			],
-			values: [
-				{
-					measures: [
-						{
-							fieldName: "[Measures].[Internet Sales Amount]"
-						}
-					],
-					axis: "columns"
-				}
-			]
-		};
+    <div ng-controller="PivotChartCtrl">
+        <div id="PivotChart1" ej-pivotchart e-dataSource="dataSource" e-title-text="title" e-showtooltip="showTooltip" e-isResponsive ="isResponsive"
+            e-animation="animation" e-commonseriesoptions-type="ctype" e-commonseriesoptions-tooltip-visible="showTooltip"
+            e-size="size" e-primaryxaxis="primaryXAxis" e-primaryyaxis="primaryYAxis" e-legend="legend" e-load='loadTheme'
+            style="height: 500px; width: 100%;"/>
+    </div>
+    <script>
+        angular.module('PivotChartApp', ['ejangular']).controller('PivotChartOlapCtrl', function ($scope) {
+            $scope.dataSource = {
+            data: "http://bi.syncfusion.com/olap/msmdpump.dll", //data
+            catalog: "Adventure Works DW 2008 SE",
+            cube: "Adventure Works",
+            rows: [
+                {
+                    fieldName: "[Date].[Fiscal]"
+                }
+            ],
+            columns: [
+                {
+                    fieldName: "[Customer].[Customer Geography]"
+                }
+            ],
+            values: [
+                {
+                    measures: [
+                        {
+                            fieldName: "[Measures].[Internet Sales Amount]"
+                        }
+                    ],
+                    axis: "columns"
+               }
+            ]
+        };
 
-	$scope.dataSource = $scope.dataSource;
-	$scope.title = "PivotChart in Essential JS";
-	$scope.isResponsive = true;
-	$scope.ctype = ej.PivotChart.ChartTypes.Column;
-	$scope.showTooltip = true;
-	$scope.size = { height: "480px", width: "95%" };
-	$scope.primaryXAxis = { labelRotation: 0 };
-	$scope.primaryYAxis = { title: { text: "Internet Sales Amount" } };
-	$scope.legend = { visible: true, rowCount: 2 };
-	});
+        $scope.dataSource = $scope.dataSource;
+        $scope.title = "PivotChart in Essential JS";
+        $scope.isResponsive = true;
+        $scope.ctype = ej.PivotChart.ChartTypes.Column;
+        $scope.showTooltip = true;
+        $scope.size = { height: "480px", width: "95%" };
+        $scope.primaryXAxis = { labelRotation: 0 };
+        $scope.primaryYAxis = { title: { text: "Internet Sales Amount" } };
+        $scope.legend = { visible: true, rowCount: 2 };
+    });
 </script>
 </body>
 

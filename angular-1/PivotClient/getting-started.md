@@ -66,8 +66,8 @@ Refer the [CDN](https://help.syncfusion.com/js/cdn) script files with other requ
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
-	<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-	<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script>
 </head>
 
 {% endhighlight %}
@@ -87,11 +87,11 @@ Create the PivotClient control using `ej-pivotclient` directive and define all i
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="PivotClientApp">
 
 <body>
-	<div ng-controller="PivotClientCtrl">
-		<div id="PivotClient1" ej-pivotclient e-datasource="dataSource" e-customobject="customObject"
-			e-rendersuccess='setChartProperties' e-beforeexport="Export" e-savereport="saveReportSettings" e-loadreport="saveReportSettings" e-fetchReport="saveReportSettings" e-title="Relational Browser" style="min-height: 275px;
-			min-width: 525px;" />
-	</div>
+    <div ng-controller="PivotClientCtrl">
+        <div id="PivotClient1" ej-pivotclient e-datasource="dataSource" e-customobject="customObject"
+            e-rendersuccess='setChartProperties' e-beforeexport="Export" e-savereport="saveReportSettings" e-loadreport="saveReportSettings" e-fetchReport="saveReportSettings" e-title="Relational Browser" style="min-height: 275px;
+            min-width: 525px;" />
+    </div>
 </body>
 
 </html>
@@ -107,38 +107,38 @@ Let us now see how to populate the PivotClient control using a sample JSON data 
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="PivotClientApp">
 <head> <!-- Dependency file references --> </head>
 <body>
-	<div ng-controller="PivotClientCtrl">
-		<div id="PivotClient1" ej-pivotclient e-datasource="dataSource" e-customobject="customObject"
-			e-rendersuccess='setChartProperties' e-beforeexport="Export" e-savereport="saveReportSettings" e-loadreport="saveReportSettings" e-fetchReport="saveReportSettings" e-title="Relational Browser" style="min-height: 275px;
-			min-width: 525px;" />
-	</div>
+    <div ng-controller="PivotClientCtrl">
+        <div id="PivotClient1" ej-pivotclient e-datasource="dataSource" e-customobject="customObject"
+            e-rendersuccess='setChartProperties' e-beforeexport="Export" e-savereport="saveReportSettings" e-loadreport="saveReportSettings" e-fetchReport="saveReportSettings" e-title="Relational Browser" style="min-height: 275px;
+            min-width: 525px;" />
+</div>
 <script>
     angular.module('PivotClientApp', ['ejangular']).controller('PivotClientCtrl', function ($scope) {
         $scope.pivot_dataset = [
-            { Amount: 100, Country: "Canada", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Alberta" },
-            { Amount: 200, Country: "Canada", Date: "FY 2006", Product: "Van", Quantity: 3, State: "British Columbia" },
-            { Amount: 300, Country: "Canada", Date: "FY 2007", Product: "Car", Quantity: 4, State: "Brunswick" },
-            { Amount: 150, Country: "Canada", Date: "FY 2008", Product: "Bike", Quantity: 3, State: "Manitoba" },
-            { Amount: 200, Country: "Canada", Date: "FY 2006", Product: "Car", Quantity: 4, State: "Ontario" },
-            { Amount: 100, Country: "Canada", Date: "FY 2007", Product: "Van", Quantity: 1, State: "Quebec" },
-            { Amount: 200, Country: "France", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Charente-Maritime" },
-            { Amount: 250, Country: "France", Date: "FY 2006", Product: "Van", Quantity: 4, State: "Essonne" },
-            { Amount: 300, Country: "France", Date: "FY 2007", Product: "Car", Quantity: 3, State: "Garonne (Haute)" },
-            { Amount: 150, Country: "France", Date: "FY 2008", Product: "Van", Quantity: 2, State: "Gers" },
-            { Amount: 200, Country: "Germany", Date: "FY 2006", Product: "Van", Quantity: 3, State: "Bayern" },
-            { Amount: 250, Country: "Germany", Date: "FY 2007", Product: "Car", Quantity: 3, State: "Brandenburg" },
-            { Amount: 150, Country: "Germany", Date: "FY 2008", Product: "Car", Quantity: 4, State: "Hamburg" },
-            { Amount: 200, Country: "Germany", Date: "FY 2008", Product: "Bike", Quantity: 4, State: "Hessen" },
-            { Amount: 150, Country: "Germany", Date: "FY 2007", Product: "Van", Quantity: 3, State: "Nordrhein-Westfalen" },
-            { Amount: 100, Country: "Germany", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Saarland" },
-            { Amount: 150, Country: "United Kingdom", Date: "FY 2008", Product: "Bike", Quantity: 5, State: "England" },
-            { Amount: 250, Country: "United States", Date: "FY 2007", Product: "Car", Quantity: 4, State: "Alabama" },
-            { Amount: 200, Country: "United States", Date: "FY 2005", Product: "Van", Quantity: 4, State: "California" },
-            { Amount: 100, Country: "United States", Date: "FY 2006", Product: "Bike", Quantity: 2, State: "Colorado" },
-            { Amount: 150, Country: "United States", Date: "FY 2008", Product: "Car", Quantity: 3, State: "New Mexico" },
-            { Amount: 200, Country: "United States", Date: "FY 2005", Product: "Bike", Quantity: 4, State: "New York" },
-            { Amount: 250, Country: "United States", Date: "FY 2008", Product: "Car", Quantity: 3, State: "North Carolina" },
-            { Amount: 300, Country: "United States", Date: "FY 2007", Product: "Van", Quantity: 4, State: "South Carolina" }
+                        { Amount: 100, Country: "Canada", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Alberta" },
+                        { Amount: 200, Country: "Canada", Date: "FY 2006", Product: "Van", Quantity: 3, State: "British Columbia" },
+                        { Amount: 300, Country: "Canada", Date: "FY 2007", Product: "Car", Quantity: 4, State: "Brunswick" },
+                        { Amount: 150, Country: "Canada", Date: "FY 2008", Product: "Bike", Quantity: 3, State: "Manitoba" },
+                        { Amount: 200, Country: "Canada", Date: "FY 2006", Product: "Car", Quantity: 4, State: "Ontario" },
+                        { Amount: 100, Country: "Canada", Date: "FY 2007", Product: "Van", Quantity: 1, State: "Quebec" },
+                        { Amount: 200, Country: "France", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Charente-Maritime" },
+                        { Amount: 250, Country: "France", Date: "FY 2006", Product: "Van", Quantity: 4, State: "Essonne" },
+                        { Amount: 300, Country: "France", Date: "FY 2007", Product: "Car", Quantity: 3, State: "Garonne (Haute)" },
+                        { Amount: 150, Country: "France", Date: "FY 2008", Product: "Van", Quantity: 2, State: "Gers" },
+                        { Amount: 200, Country: "Germany", Date: "FY 2006", Product: "Van", Quantity: 3, State: "Bayern" },
+                        { Amount: 250, Country: "Germany", Date: "FY 2007", Product: "Car", Quantity: 3, State: "Brandenburg" },
+                        { Amount: 150, Country: "Germany", Date: "FY 2008", Product: "Car", Quantity: 4, State: "Hamburg" },
+                        { Amount: 200, Country: "Germany", Date: "FY 2008", Product: "Bike", Quantity: 4, State: "Hessen" },
+                        { Amount: 150, Country: "Germany", Date: "FY 2007", Product: "Van", Quantity: 3, State: "Nordrhein-Westfalen" },
+                        { Amount: 100, Country: "Germany", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Saarland" },
+                        { Amount: 150, Country: "United Kingdom", Date: "FY 2008", Product: "Bike", Quantity: 5, State: "England" },
+                        { Amount: 250, Country: "United States", Date: "FY 2007", Product: "Car", Quantity: 4, State: "Alabama" },
+                        { Amount: 200, Country: "United States", Date: "FY 2005", Product: "Van", Quantity: 4, State: "California" },
+                        { Amount: 100, Country: "United States", Date: "FY 2006", Product: "Bike", Quantity: 2, State: "Colorado" },
+                        { Amount: 150, Country: "United States", Date: "FY 2008", Product: "Car", Quantity: 3, State: "New Mexico" },
+                        { Amount: 200, Country: "United States", Date: "FY 2005", Product: "Bike", Quantity: 4, State: "New York" },
+                        { Amount: 250, Country: "United States", Date: "FY 2008", Product: "Car", Quantity: 3, State: "North Carolina" },
+                        { Amount: 300, Country: "United States", Date: "FY 2007", Product: "Van", Quantity: 4, State: "South Carolina" }
         ];
         $scope.dataSource = {
             data: $scope.pivot_dataset,
@@ -161,7 +161,7 @@ Let us now see how to populate the PivotClient control using a sample JSON data 
                 }
             ]
         };
-
+ 
         $scope.customObject = { Language: "en-US" };
     });
     function setChartProperties(args) {
@@ -209,11 +209,11 @@ Create the PivotClient control using `ej-pivotclient` directive and define all i
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="PivotClientApp">
 
 <body>
-	<div ng-controller="PivotClientCtrl">
-		<div id="PivotClient1" ej-pivotclient e-datasource="dataSource" e-customobject="customObject"
-			e-rendersuccess='setChartProperties' e-title="OLAP Browser" e-savereport="saveReportSettings" e-loadreport="saveReportSettings" e-fetchReport="saveReportSettings" e-beforeexport="Export" style="min-height: 275px;
-			min-width: 525px;" />
-	</div>
+    <div ng-controller="PivotClientCtrl">
+        <div id="PivotClient1" ej-pivotclient e-datasource="dataSource" e-customobject="customObject"
+            e-rendersuccess='setChartProperties' e-title="OLAP Browser" e-savereport="saveReportSettings" e-loadreport="saveReportSettings" e-fetchReport="saveReportSettings" e-beforeexport="Export" style="min-height: 275px;
+            min-width: 525px;" />
+    </div>
 </body>
 
 </html>
@@ -229,11 +229,11 @@ Initializes the OLAP datasource for PivotClient control as shown below.
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="PivotClientApp">
 <head> <!-- Dependency file references --> </head>
 <body>
-	<div ng-controller="PivotClientCtrl">
-		<div id="PivotClient1" ej-pivotclient e-datasource="dataSource" e-customobject="customObject"
-			e-rendersuccess='setChartProperties' e-title="OLAP Browser" e-savereport="saveReportSettings" e-loadreport="saveReportSettings" e-fetchReport="saveReportSettings" e-beforeexport="Export" style="min-height: 275px;
-			min-width: 525px;" />
-	</div>
+    <div ng-controller="PivotClientCtrl">
+        <div id="PivotClient1" ej-pivotclient e-datasource="dataSource" e-customobject="customObject"
+            e-rendersuccess='setChartProperties' e-title="OLAP Browser" e-savereport="saveReportSettings" e-loadreport="saveReportSettings" e-fetchReport="saveReportSettings" e-beforeexport="Export" style="min-height: 275px;
+            min-width: 525px;" />
+    </div>
 <script>
     angular.module('PivotClientApp', ['ejangular']).controller('PivotClientPivotCtrl', function ($scope) {
         $scope.datasource = {
@@ -255,7 +255,7 @@ Initializes the OLAP datasource for PivotClient control as shown below.
                     measures: [
                         {
                             fieldName: "[Measures].[Customer Count]",
-                        }
+                        }                    
                     ],
                     axis: "columns"
                 }
