@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started
 description: Getting Started
-platform: aspnet-core
+platform: angularJS
 control: RadialSlider
 documentation: ug
 ---
@@ -15,10 +15,10 @@ This section helps to get started of the RadialSlider component for AngularJS.
 
 ## Adding a dependency 
 The following steps guide you to add a RadialSlider component.
-1.	Create an HTML file and add required scripts and CSS files for rendering Essential JavaScript component as given in the Getting Started. 
+1.	Create an HTML file and add required scripts and CSS files for rendering Essential JavaScript component as given in the [Getting Started](https://help.syncfusion.com/js/angularjs). 
 2.	In addition to it for AngularJS implementation, refer the “angular.min.js” and “ej.widgets.angular.min.js” files.
 
-## Create your first Radial Slider control AngularJS
+## Create your first Radial Slider
 Create a div element that is a container for Radial Slider. You can Refer to the following code example.
 
 {% highlight html %}

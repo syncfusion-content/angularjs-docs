@@ -2,12 +2,12 @@
 layout: post
 title: overview
 description: overview
-platform: aspnet-core
+platform: angularJS
 control: Dialog
 documentation: ug
 ---
 # Overview
-The Essential JavaScript AngularJS Dialog control displays a Dialog window within a web page. The Dialog enables a message to be displayed, such as supplementary content like images and text, and an interactive content like forms.
+The Essential JavaScript Dialog provided with AngularJS support displays a Dialog window within a web page. The Dialog enables a message to be displayed, such as supplementary content like images and text, and an interactive content like forms.
 
 ## Key Features
 

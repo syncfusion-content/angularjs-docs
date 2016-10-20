@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started
 description: Getting Started
-platform: aspnet-core
+platform: angularJS
 control: Dialog
 documentation: ug
 ---
@@ -12,12 +12,12 @@ documentation: ug
 This section helps you to understand the getting started of the Dialog component with the step-by-step instructions. 
 
 
-# Create Dialog
+# Create a Dialog
 
 ## Adding dependencies
 
 The following steps guide you to add a Dialog component.
-1.	Create an HTML file and add required scripts and CSS files for rendering Essential JavaScript component as given in the Getting Started.
+1.	Create an HTML file and add required scripts and CSS files for rendering Essential JavaScript component as given in the [Getting Started](https://help.syncfusion.com/js/angularjs).
 2.	In addition to it for angular implementation, refer the “angular.min.js” and “ej.widgets.angular.min.js” files.
 
 Add the below codes in corresponding tags.
