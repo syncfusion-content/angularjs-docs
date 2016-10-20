@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started
 description: Getting Started
-platform: aspnet-core
+platform: Angular-1-JS
 control: rotator
 documentation: ug
 ---
