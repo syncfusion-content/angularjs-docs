@@ -29,7 +29,7 @@ Add the below CSS reference in the head section, for the default theme
 <table>
 <tr>
 <td>
-<link rel="stylesheet" href="http://cdn.syncfusion.com/14.3.0.49/js/web/flat-azure/ej.web.all.min.css" /><br/><br/><br/><br/></td></tr>
+<link rel="stylesheet" href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" /><br/><br/><br/><br/></td></tr>
 </table>
 Script References
 
@@ -115,7 +115,7 @@ So you can add the below Script references in the head section:
 <table>
 <tr>
 <td>
-<!doctype html><br/><br/><html lang="en" ng-app="'FileApp'"><br/><br/><head><br/><br/><title>Essential Studio for JavaScript : Angular JS Support for FileExplorer </title><br/><br/><!-- Style sheet for default theme (flat azure) --><br/><br/><link href="http://cdn.syncfusion.com/14.3.0.49/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /><br/><br/><!--Scripts--><br/><br/><script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js" type="text/javascript"> </script><br/><br/><script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script><br/><br/><script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script><br/><br/><script type="text/javascript" src="http://cdn.syncfusion.com/14.3.0.49/js/web/ej.web.all.min.js "></script><br/><br/><script src="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.widget.angular.min.js"></script><br/><br/><!--Add custom scripts here --><br/><br/></head><br/><br/><body><br/><br/><!--Add the elements here--><br/><br/></body><br/><br/></html><br/><br/></td></tr>
+<!doctype html><br/><br/><html lang="en" ng-app="'FileApp'"><br/><br/><head><br/><br/><title>Essential Studio for JavaScript : Angular JS Support for FileExplorer </title><br/><br/><!-- Style sheet for default theme (flat azure) --><br/><br/><link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /><br/><br/><!--Scripts--><br/><br/><script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js" type="text/javascript"> </script><br/><br/><script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script><br/><br/><script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script><br/><br/><script type="text/javascript" src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js "></script><br/><br/><script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script><br/><br/><!--Add custom scripts here --><br/><br/></head><br/><br/><body><br/><br/><!--Add the elements here--><br/><br/></body><br/><br/></html><br/><br/></td></tr>
 </table>
 ## Initialize and configure the control
 
