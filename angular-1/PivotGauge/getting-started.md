@@ -66,8 +66,8 @@ Refer the [CDN](https://help.syncfusion.com/js/cdn) script files with other requ
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
-	<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-	<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script>
 </head>
 
 {% endhighlight %}
@@ -87,11 +87,11 @@ Create the PivotGauge control using `ej-PivotGauge` directive and define all its
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="PivotGaugeApp">
 
 <body>
-	<div ng-controller="PivotGaugeCtrl">
-		<div id="PivotGauge1" ej-pivotgauge e-dataSource="dataSource" e-enabletooltip="enableTooltip" e-rowscount="rowsCount"
-			e-columnscount="columnsCount" e-scales="scales" e-load="loadGaugeTheme" e-backgroundcolor="backgroundColor" e-labelFormatSettings="labelFormatSettings"
-			style="min-height: 290px; height: 338px; width: 100%; overflow: auto; position:relative;" />
-	</div>
+    <div ng-controller="PivotGaugeCtrl">
+        <div id="PivotGauge1" ej-pivotgauge e-dataSource="dataSource" e-enabletooltip="enableTooltip" e-rowscount="rowsCount"
+        e-columnscount="columnsCount" e-scales="scales" e-load="loadGaugeTheme" e-backgroundcolor="backgroundColor" e-labelFormatSettings="labelFormatSettings"
+        style="min-height: 290px; height: 338px; width: 100%; overflow: auto; position:relative;" />
+    </div>
 </body>
 
 </html>
@@ -107,135 +107,135 @@ Let us now see how to populate the PivotGauge control using a sample JSON data a
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="PivotGaugeApp">
 <head> <!-- Dependency file references --> </head>
 <body>
-	<div ng-controller="PivotGaugeCtrl">
-		<div id="PivotGauge1" ej-pivotgauge e-dataSource="dataSource" e-enabletooltip="enableTooltip" e-rowscount="rowsCount"
-			e-columnscount="columnsCount" e-scales="scales" e-load="loadGaugeTheme" e-backgroundcolor="backgroundColor" e-labelFormatSettings="labelFormatSettings"
-			style="min-height: 290px; height: 338px; width: 100%; overflow: auto; position:relative;" />
-	</div>
+    <div ng-controller="PivotGaugeCtrl">
+        <div id="PivotGauge1" ej-pivotgauge e-dataSource="dataSource" e-enabletooltip="enableTooltip" e-rowscount="rowsCount"
+            e-columnscount="columnsCount" e-scales="scales" e-load="loadGaugeTheme" e-backgroundcolor="backgroundColor" e-labelFormatSettings="labelFormatSettings"
+            style="min-height: 290px; height: 338px; width: 100%; overflow: auto; position:relative;" />
+    </div>
 <script>
-	var pivot_dataset = [
-			{ Amount: 100, Country: "Canada", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Alberta" },
-			{ Amount: 200, Country: "Canada", Date: "FY 2006", Product: "Van", Quantity: 3, State: "British Columbia" },
-			{ Amount: 300, Country: "Canada", Date: "FY 2007", Product: "Car", Quantity: 4, State: "Brunswick" },
-			{ Amount: 150, Country: "Canada", Date: "FY 2008", Product: "Bike", Quantity: 3, State: "Manitoba" },
-			{ Amount: 200, Country: "Canada", Date: "FY 2006", Product: "Car", Quantity: 4, State: "Ontario" },
-			{ Amount: 100, Country: "Canada", Date: "FY 2007", Product: "Van", Quantity: 1, State: "Quebec" },
-			{ Amount: 200, Country: "France", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Charente-Maritime" },
-			{ Amount: 250, Country: "France", Date: "FY 2006", Product: "Van", Quantity: 4, State: "Essonne" },
-			{ Amount: 300, Country: "France", Date: "FY 2007", Product: "Car", Quantity: 3, State: "Garonne (Haute)" },
-			{ Amount: 150, Country: "France", Date: "FY 2008", Product: "Van", Quantity: 2, State: "Gers" },
-			{ Amount: 200, Country: "Germany", Date: "FY 2006", Product: "Van", Quantity: 3, State: "Bayern" },
-			{ Amount: 250, Country: "Germany", Date: "FY 2007", Product: "Car", Quantity: 3, State: "Brandenburg" },
-			{ Amount: 150, Country: "Germany", Date: "FY 2008", Product: "Car", Quantity: 4, State: "Hamburg" },
-			{ Amount: 200, Country: "Germany", Date: "FY 2008", Product: "Bike", Quantity: 4, State: "Hessen" },
-			{ Amount: 150, Country: "Germany", Date: "FY 2007", Product: "Van", Quantity: 3, State: "Nordrhein-Westfalen" },
-			{ Amount: 100, Country: "Germany", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Saarland" },
-			{ Amount: 150, Country: "United Kingdom", Date: "FY 2008", Product: "Bike", Quantity: 5, State: "England" },
-			{ Amount: 250, Country: "United States", Date: "FY 2007", Product: "Car", Quantity: 4, State: "Alabama" },
-			{ Amount: 200, Country: "United States", Date: "FY 2005", Product: "Van", Quantity: 4, State: "California" },
-			{ Amount: 100, Country: "United States", Date: "FY 2006", Product: "Bike", Quantity: 2, State: "Colorado" },
-			{ Amount: 150, Country: "United States", Date: "FY 2008", Product: "Car", Quantity: 3, State: "New Mexico" },
-			{ Amount: 200, Country: "United States", Date: "FY 2005", Product: "Bike", Quantity: 4, State: "New York" },
-			{ Amount: 250, Country: "United States", Date: "FY 2008", Product: "Car", Quantity: 3, State: "North Carolina" },
-			{ Amount: 300, Country: "United States", Date: "FY 2007", Product: "Van", Quantity: 4, State: "South Carolina" }
-	];
-	var dataSource = {
-		data: pivot_dataset,
-		rows: [
-			{
-				fieldName: "Country",
-				fieldCaption: "Country"
-			},
-			{
-				fieldName: "State",
-				fieldCaption: "State"
-			}
-		],
-		columns: [
-			{
-				fieldName: "Product",
-				fieldCaption: "Product"
-			}
-		],
-		values: [
-			{
-				fieldName: "Amount",
-				fieldCaption: "Amount"
-			},
-			{
-				fieldName: "Quantity",
-				fieldCaption: "Quantity"
-			}
-		]
-	};
+    var pivot_dataset = [
+                { Amount: 100, Country: "Canada", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Alberta" },
+                { Amount: 200, Country: "Canada", Date: "FY 2006", Product: "Van", Quantity: 3, State: "British Columbia" },
+                { Amount: 300, Country: "Canada", Date: "FY 2007", Product: "Car", Quantity: 4, State: "Brunswick" },
+                { Amount: 150, Country: "Canada", Date: "FY 2008", Product: "Bike", Quantity: 3, State: "Manitoba" },
+                { Amount: 200, Country: "Canada", Date: "FY 2006", Product: "Car", Quantity: 4, State: "Ontario" },
+                { Amount: 100, Country: "Canada", Date: "FY 2007", Product: "Van", Quantity: 1, State: "Quebec" },
+                { Amount: 200, Country: "France", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Charente-Maritime" },
+                { Amount: 250, Country: "France", Date: "FY 2006", Product: "Van", Quantity: 4, State: "Essonne" },
+                { Amount: 300, Country: "France", Date: "FY 2007", Product: "Car", Quantity: 3, State: "Garonne (Haute)" },
+                { Amount: 150, Country: "France", Date: "FY 2008", Product: "Van", Quantity: 2, State: "Gers" },
+                { Amount: 200, Country: "Germany", Date: "FY 2006", Product: "Van", Quantity: 3, State: "Bayern" },
+                { Amount: 250, Country: "Germany", Date: "FY 2007", Product: "Car", Quantity: 3, State: "Brandenburg" },
+                { Amount: 150, Country: "Germany", Date: "FY 2008", Product: "Car", Quantity: 4, State: "Hamburg" },
+                { Amount: 200, Country: "Germany", Date: "FY 2008", Product: "Bike", Quantity: 4, State: "Hessen" },
+                { Amount: 150, Country: "Germany", Date: "FY 2007", Product: "Van", Quantity: 3, State: "Nordrhein-Westfalen" },
+                { Amount: 100, Country: "Germany", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Saarland" },
+                { Amount: 150, Country: "United Kingdom", Date: "FY 2008", Product: "Bike", Quantity: 5, State: "England" },
+                { Amount: 250, Country: "United States", Date: "FY 2007", Product: "Car", Quantity: 4, State: "Alabama" },
+                { Amount: 200, Country: "United States", Date: "FY 2005", Product: "Van", Quantity: 4, State: "California" },
+                { Amount: 100, Country: "United States", Date: "FY 2006", Product: "Bike", Quantity: 2, State: "Colorado" },
+                { Amount: 150, Country: "United States", Date: "FY 2008", Product: "Car", Quantity: 3, State: "New Mexico" },
+                { Amount: 200, Country: "United States", Date: "FY 2005", Product: "Bike", Quantity: 4, State: "New York" },
+                { Amount: 250, Country: "United States", Date: "FY 2008", Product: "Car", Quantity: 3, State: "North Carolina" },
+                { Amount: 300, Country: "United States", Date: "FY 2007", Product: "Van", Quantity: 4, State: "South Carolina" }
+    ];
+    var dataSource = {
+            data: pivot_dataset,
+            rows: [
+                {
+	                fieldName: "Country",
+	                fieldCaption: "Country"
+                },
+                {
+	                fieldName: "State",
+	                fieldCaption: "State"
+                }
+            ],
+            columns: [
+                { 
+	                fieldName: "Product",
+	                fieldCaption: "Product"
+                }
+            ],
+            values: [
+                {
+	                fieldName: "Amount",
+	                fieldCaption: "Amount"
+                },
+                {
+	                fieldName: "Quantity",
+	                fieldCaption: "Quantity"
+                }
+            ]
+    };
 
-	var scale = [{
-		showRanges: true,
-		radius: 150, showScaleBar: true, size: 1,
-		border: {
-			width: 0.5
-		},
-		showIndicators: true, showLabels: true,
-		pointers: [{
-			showBackNeedle: true,
-			backNeedleLength: 20,
-			length: 125,
-			width: 7
-		},
-					{
-						type: "marker",
-						markerType: "diamond",
-						distanceFromScale: 5,
-						placement: "center",
-						backgroundColor: "#29A4D9",
-						length: 25,
-						width: 15
-					}],
-		ticks: [{
-			type: "major",
-			distanceFromScale: 2,
-			height: 16,
-			width: 1, color: "#8c8c8c"
-		}, {
-			type: "minor",
-			height: 6,
-			width: 1,
-			distanceFromScale: 2,
-			color: "#8c8c8c"
-		}],
-		labels: [{
-			color: "#8c8c8c"
-		}],
-		ranges: [{
-			distanceFromScale: -5,
-			backgroundColor: "#fc0606",
-			border: {
-				color: "#fc0606"
-			}
-		}, {
-			distanceFromScale: -5
-		}],
-		customLabels: [{
-			position: { x: 180, y: 290 },
-			font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
-		}, {
-			position: { x: 180, y: 320 },
-			font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, lcolor: "#666666"
-		}, {
-			position: { x: 180, y: 150 },
-			font: { size: "12px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
-		}]
-	}];
+var scale = [{
+        showRanges: true,
+        radius: 150, showScaleBar: true, size: 1,
+        border: {
+            width: 0.5
+        },
+        showIndicators: true, showLabels: true,
+        pointers: [{
+            showBackNeedle: true,
+            backNeedleLength: 20,
+            length: 125,
+            width: 7
+        },
+        {
+            type: "marker",
+            markerType: "diamond",
+            distanceFromScale: 5,
+            placement: "center",
+            backgroundColor: "#29A4D9",
+            length: 25,
+            width: 15
+    }],
+    ticks: [{
+        type: "major",
+        distanceFromScale: 2,
+        height: 16,
+        width: 1, color: "#8c8c8c"
+    }, {
+        type: "minor",
+        height: 6,
+        width: 1,
+        distanceFromScale: 2,
+        color: "#8c8c8c"
+    }],
+    labels: [{
+        color: "#8c8c8c"
+    }],
+    ranges: [{
+        distanceFromScale: -5,
+        backgroundColor: "#fc0606",
+        border: {
+	        color: "#fc0606"
+        }
+    }, {
+        distanceFromScale: -5
+    }],
+    customLabels: [{
+            position: { x: 180, y: 290 },
+            font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
+    }, {
+            position: { x: 180, y: 320 },
+            font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, lcolor: "#666666"
+    }, {
+             position: { x: 180, y: 150 },
+             font: { size: "12px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
+             }]
+    }];
 
-	angular.module('PivotGaugeApp', ['ejangular']).controller('PivotGaugeCtrl', function ($scope) {
-		$scope.dataSource = dataSource;
-		$scope.enableTooltip = true;
-		$scope.rowsCount = 2;
-		$scope.columnsCount = 3;
-		$scope.scales = scale;
-		$scope.labelFormatSettings = { decimalPlaces: 2 };
-		$scope.backgroundColor = "transparent";
-	});
+    angular.module('PivotGaugeApp', ['ejangular']).controller('PivotGaugeCtrl', function ($scope) {
+        $scpe.dataSource = dataSource;
+        $scope.enableTooltip = true;
+        $scope.rowsCount = 2;
+        $scope.columnsCount = 3;
+        $scope.scales = scale;
+        $scope.labelFormatSettings = { decimalPlaces: 2 };
+        $scope.backgroundColor = "transparent";
+    });
 </script>
 </body>
 
@@ -260,11 +260,11 @@ Create the PivotGauge control using `ej-PivotGauge` directive and define all its
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="PivotGaugeApp">
 
 <body>
-	<div ng-controller="PivotGaugeCtrl">
-		<div id="PivotGauge1" ej-pivotgauge e-dataSource="dataSource" e-enabletooltip="enableTooltip" e-rowscount="rowsCount"
-			e-columnscount="columnsCount" e-scales="scales" e-load="loadGaugeTheme" e-backgroundcolor="backgroundColor" e-labelFormatSettings="labelFormatSettings"
-			style="min-height: 275px; height: 338px; width: 100%; overflow: auto; position:relative;" />
-	</div>
+    <div ng-controller="PivotGaugeCtrl">
+        <div id="PivotGauge1" ej-pivotgauge e-dataSource="dataSource" e-enabletooltip="enableTooltip" e-rowscount="rowsCount"
+            e-columnscount="columnsCount" e-scales="scales" e-load="loadGaugeTheme" e-backgroundcolor="backgroundColor" e-labelFormatSettings="labelFormatSettings"
+            style="min-height: 275px; height: 338px; width: 100%; overflow: auto; position:relative;" />
+    </div>
 </body>
 
 </html>
@@ -280,107 +280,108 @@ Initializes the OLAP datasource for PivotGauge control as shown below.
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="PivotGaugeApp">
 <head> <!-- Dependency file references --> </head>
 <body>
-	<div ng-controller="PivotGaugeCtrl">
-		<div id="PivotGauge" ej-pivotgauge e-dataSource="dataSource" e-enabletooltip="enableTooltip" e-rowscount="rowsCount"
-			e-columnscount="columnsCount" e-scales="scales" e-load="loadGaugeTheme" e-backgroundcolor="backgroundColor" e-labelFormatSettings="labelFormatSettings"
-			style="min-height: 275px; height: 338px; width: 100%; overflow: auto; position:relative;" />
-	</div>
+    <div ng-controller="PivotGaugeCtrl">
+        <div id="PivotGauge" ej-pivotgauge e-dataSource="dataSource" e-enabletooltip="enableTooltip" e-rowscount="rowsCount"
+            e-columnscount="columnsCount" e-scales="scales" e-load="loadGaugeTheme" e-backgroundcolor="backgroundColor" e-labelFormatSettings="labelFormatSettings"
+            style="min-height: 275px; height: 338px; width: 100%; overflow: auto; position:relative;" />
+    </div>
 
 <script>
-	var scale = [{
-		showRanges: true,
-		radius: 150, showScaleBar: true, size: 1,
-		border: {
-			width: 0.5
-		},
-		showIndicators: true, showLabels: true,
-		pointers: [{
-			showBackNeedle: true,
-			backNeedleLength: 20,
-			length: 125,
-			width: 7
-		},
-					{
-						type: "marker",
-						markerType: "diamond",
-						distanceFromScale: 5,
-						placement: "center",
-						backgroundColor: "#29A4D9",
-						length: 25,
-						width: 15
-					}],
-		ticks: [{
-			type: "major",
-			distanceFromScale: 2,
-			height: 16,
-			width: 1, color: "#8c8c8c"
-		}, {
-			type: "minor",
-			height: 6,
-			width: 1,
-			distanceFromScale: 2,
-			color: "#8c8c8c"
-		}],
-		labels: [{
-			color: "#8c8c8c"
-		}],
-		ranges: [{
-			distanceFromScale: -5,
-			backgroundColor: "#fc0606",
-			border: {
-				color: "#fc0606"
-			}
-		}, {
-			distanceFromScale: -5
-		}],
-		customLabels: [{
-			position: { x: 180, y: 290 },
-			font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
-		}, {
-			position: { x: 180, y: 320 },
-			font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, lcolor: "#666666"
-		}, {
-			position: { x: 180, y: 150 },
-			font: { size: "12px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
-		}]
-	}];
+    var scale = [{
+            showRanges: true,
+            radius: 150, showScaleBar: true, size: 1,
+            border: {
+                width: 0.5
+            },
+            showIndicators: true, showLabels: true,
+            pointers: [{ 
+                showBackNeedle: true,
+                backNeedleLength: 20,
+                length: 125,
+                width: 7
+            },
+            {
+                type: "marker",
+                markerType: "diamond",
+                distanceFromScale: 5,
+                placement: "center",
+                backgroundColor: "#29A4D9",
+                length: 25,
+                width: 15
+            }],
+            ticks: [{
+                type: "major",
+                distanceFromScale: 2,
+                height: 16,
+                width: 1, color: "#8c8c8c"
+            }, {
+                type: "minor",
+                height: 6,
+                width: 1,
+                distanceFromScale: 2,
+                color: "#8c8c8c"
+            }], 
 
-	angular.module('PivotGaugeApp', ['ejangular']).controller('PivotGaugeOlapCtrl', function ($scope) {
-		$scope.dataSource = {
-			data: "http://bi.syncfusion.com/olap/msmdpump.dll",
-			catalog: "Adventure Works DW 2008 SE",
-			cube: "Adventure Works",
-			rows: [
-				{
-					fieldName: "[Date].[Fiscal]",
-					filterItems: { filterType: "include", values: ["[Date].[Fiscal].[Fiscal Year].&amp;[2004]"] }
-				},
-			],
-			columns: [
-				{
-					fieldName: "[Customer].[Customer Geography]"
-				}
-			],
-			values: [
-				{
-					measures: [
-						{
-							fieldName: "[Measures].[Internet Sales Amount]"
-						},
-						{
-							fieldName: "[Measures].[Internet Revenue Status]"
-						},
-						{
-							fieldName: "[Measures].[Internet Revenue Trend]"
-						},
-					{
-						fieldName: "[Measures].[Internet Revenue Goal]"
-					},
-					],
-					axis: ej.PivotGauge.AxisName.Columns
-				}
-			]
-		};
+            labels: [{
+                color: "#8c8c8c"
+            }],
+            ranges: [{
+                distanceFromScale: -5,
+                backgroundColor: "#fc0606",
+                border: {
+                    color: "#fc0606"
+                }
+            }, {
+                distanceFromScale: -5
+            }],      
+            customLabels: [{
+                position: { x: 180, y: 290 },
+                font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
+            }, {
+                position: { x: 180, y: 320 },
+                font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, lcolor: "#666666"
+            }, {
+                position: { x: 180, y: 150 },
+                font: { size: "12px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
+            }]
+    }];
+
+    angular.module('PivotGaugeApp', ['ejangular']).controller('PivotGaugeOlapCtrl', function ($scope) {
+        $scope.dataSource = {
+            data: "http://bi.syncfusion.com/olap/msmdpump.dll",
+            catalog: "Adventure Works DW 2008 SE",
+            cube: "Adventure Works",
+            rows: [
+                {
+                    fieldName: "[Date].[Fiscal]",
+                    filterItems: { filterType: "include", values: ["[Date].[Fiscal].[Fiscal Year].&amp;[2004]"] }
+                },
+            ],
+            columns: [
+                {
+                    fieldName: "[Customer].[Customer Geography]"
+                }
+            ],
+            values: [
+                {
+                    measures: [
+                        {
+                            fieldName: "[Measures].[Internet Sales Amount]"
+                        },
+                        {
+                            fieldName: "[Measures].[Internet Revenue Status]"
+                        },
+                        {
+                            fieldName: "[Measures].[Internet Revenue Trend]"
+                        },
+                        { 
+                            fieldName: "[Measures].[Internet Revenue Goal]"
+                        },
+                    ],
+                    axis: ej.PivotGauge.AxisName.Columns
+                }
+            ]
+        };
         $scope.dataSource = $scope.dataSource;
         $scope.enableTooltip = true;
         $scope.rowsCount = 2;
