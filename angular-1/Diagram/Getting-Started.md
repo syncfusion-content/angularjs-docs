@@ -69,19 +69,18 @@ Add a placeholder `div` element that can be used to initialize the diagram widge
 {% endhighlight %}
 
 This creates an empty diagram
-C:\Users\saranya.kuppan\Documents\angular-1-docs\angular-1\Diagram\Getting-Started_images
 ![](/angular-1/Diagram/Getting-Started_images/Getting-Started_img1.png)
 
-### Create and add Node
+### Initialize Nodes and Connectors
 
-Let us create and add a `node` (JSON data) with specific position, size, label and shape.
+Let us create and add a `node` (JSON data) with specific position, size, label and shape. Connect two or more nodes by adding a `connector` into `diagram.connectors` collection with reference to source and target end.
 
 {% highlight html %}
 
 <!DOCTYPE html>
 <html ng-app="defaultApp">  
     <body ng-controller="diagramCtrl">
-          <ej-diagram id="diagramCore" e-height="600px" e-width="100%" e-nodes="nodes"></ej-diagram>
+          <ej-diagram id="diagramCore" e-height="600px" e-width="100%" e-nodes="nodes" e-connectors="connectors"></ej-diagram>
     </body>
 </html>
 
@@ -109,47 +108,20 @@ var nodes = [{
     // Shape for the node
     type: "flow",
     shape: "terminator"
-}];
-var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
-syncApp.controller('diagramCtrl', function ($scope, $rootScope) {
-    $scope.nodes = nodes;
-});
-        </script>
-    </body>
-</html>
-
-{% endhighlight %}
-
-N> `labels` property is an array, which indicates that more than one label can be added to a node.
-
-Added node will be displayed in diagram as shown below.
-
-![](/angular-1/Diagram/Getting-Started_images/Getting-Started_img2.png)
-
-### Connect nodes
-
-* Create another `node` with another set of data.
-
-{% highlight javascript %}
-
-var nodes =
-[
-	{
-		name: "Start", offsetX: 300, width: 140, height: 50, offsetY: 50,
-		labels: [{ text: "Start" }], type: "flow", shape: "terminator"
-	},
-	{
-		name: "Init", offsetX: 300, width: 140, height: 50, offsetY: 140,
-		labels: [{ text: "var i = 0;" }], type: "flow", shape: "process"
-	},
+},
+{
+	name: "Init", 
+    offsetX: 300, 
+    offsetY: 140,
+    width: 140, 
+    height: 50,
+	labels: [{ 
+        text: "var i = 0;" 
+    }], 
+    type: "flow",
+    shape: "process"
+	}
 ];
-
-{% endhighlight %}
-
-* Connect these two nodes by adding a `connector` into `diagram.connectors` collection with reference to source and target end.
-
-{% highlight javascript %}
-
 var connectors = [{
 	// Unique name for the connector
 	name: "connector1",
@@ -161,16 +133,20 @@ var connectors = [{
 	// An empty orthogonal segment
 	segments: [{ type: "orthogonal" }]
 }];
-
 var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
 syncApp.controller('diagramCtrl', function ($scope, $rootScope) {
     $scope.nodes = nodes;
     $scope.connectors = connectors;
 });
+        </script>
+    </body>
+</html>
 
 {% endhighlight %}
 
-* `Connector` connects the two nodes as shown below.
+N> `labels` property is an array, which indicates that more than one label can be added to a node.
+
+Added nodes and connector connecting node will be displayed in diagram as shown below.
 
 ![](/angular-1/Diagram/Getting-Started_images/Getting-Started_img3.png)
 
