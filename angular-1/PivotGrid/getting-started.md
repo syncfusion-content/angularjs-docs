@@ -157,7 +157,8 @@ Let us now see how to populate the PivotGrid control using a sample JSON data as
             ]
         };
  
-    angular.module("PivotGridApp",["ejangular"]).controller('PivotGridCtrl', function ($scope) {
+    angular.module("PivotGridApp",["ejangular"]).controller('PivotGridCtrl', function ($scope) 
+    {
         $scope.isResponsive = true;
         $scope.datasource = dataSource;
     });
