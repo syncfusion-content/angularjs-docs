@@ -53,7 +53,7 @@ Add a placeholder `div` element that can be used to initialize the diagram widge
 
 {% endhighlight %}
 
-% highlight html %}
+{% highlight html %}
 
 <!DOCTYPE html>
 <html>    
@@ -86,7 +86,7 @@ Let us create and add a `node` (JSON data) with specific position, size, label a
 
 {% endhighlight %}
 
-% highlight html %}
+{% highlight html %}
 
 <!DOCTYPE html>
 <html>    
