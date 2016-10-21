@@ -53,21 +53,6 @@ In the above code, `ej.web.all.min.js`script reference has been added for demons
 
 {% endhighlight %}
 
-{% highlight html %}
-
-<!DOCTYPE html>
-<html>    
-   <body>
-      <script>
-      var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
-      syncApp.controller('heatmapCtrl', function ($scope,$rootScope) {
-      });
-      </script>
-    </body>
-</html>
-
-{% endhighlight %}
-
 ### Prepare and Populate data
 
 Populate product information in a collection called `ItemsSource`.
@@ -79,19 +64,19 @@ Next we can configure color range for these values using color mapping and also 
 
 {% highlight html %}
 <!DOCTYPE html>
-    <html ng-app="defaultApp">
-<body ng-controller="heatmapCtrl">
-    <ej-heatmap id="HeatMap" e-width="100%" e-height="300px"
-                e-itemssource="itemsSource"
-                e-heatmapcell-showcontent="showContentValue"
-                e-heatmapcell-showcolor="cellColor"
-                e-itemsmapping="itemsMapping">
-    <e-colormappingcollection>
-        <e-colormapping e-value="0" e-color="#8ec8f8"></e-colormapping>
-        <e-colormapping e-value="100" e-color="#0d47a1"></e-colormapping>
-    </e-colormappingcollection>
-    </ej-heatmap>
-</body>
+<html ng-app="defaultApp">
+    <body ng-controller="heatmapCtrl">
+        <ej-heatmap id="HeatMap" e-width="100%" e-height="300px"
+                    e-itemssource="itemsSource"
+                    e-heatmapcell-showcontent="showContentValue"
+                    e-heatmapcell-showcolor="cellColor"
+                    e-itemsmapping="itemsMapping">
+        <e-colormappingcollection>
+            <e-colormapping e-value="0" e-color="#8ec8f8"></e-colormapping>
+            <e-colormapping e-value="100" e-color="#0d47a1"></e-colormapping>
+        </e-colormappingcollection>
+        </ej-heatmap>
+    </body>
 </html>
 
 {% endhighlight %}
@@ -102,47 +87,47 @@ Next we can configure color range for these values using color mapping and also 
 <html>    
    <body>
       <script>
-var scope;
-var itemsSource = [];
-var rows = ["Vegie-spread", "Tofuaa", "Alice Mutton", "Konbu", "Fløtemysost", "Perth Pasties", "Boston Crab Meat", "Raclette Courdavault"];
-for (var i = 0; i < 8; i++) {
-    itemsSource.push({
-        ProductName: rows[i],
-        Y2010: getValue(),
-        Y2011: getValue(),
-        Y2012: getValue(),
-        Y2013: getValue(),
-        Y2014: getValue(),
-        Y2015: getValue(),
-        Y2016: getValue(),
-        Y2017: getValue(),
-        Y2018: getValue()
-    });
-}
-function getValue() {
-    return Math.floor((Math.random() * 100) + 1);
-}
+            var scope;
+            var itemsSource = [];
+            var rows = ["Vegie-spread", "Tofuaa", "Alice Mutton", "Konbu", "Fløtemysost", "Perth Pasties", "Boston Crab Meat", "Raclette Courdavault"];
+            for (var i = 0; i < 8; i++) {
+                itemsSource.push({
+                    ProductName: rows[i],
+                    Y2010: getValue(),
+                    Y2011: getValue(),
+                    Y2012: getValue(),
+                    Y2013: getValue(),
+                    Y2014: getValue(),
+                    Y2015: getValue(),
+                    Y2016: getValue(),
+                    Y2017: getValue(),
+                    Y2018: getValue()
+                });
+            }
+            function getValue() {
+                return Math.floor((Math.random() * 100) + 1);
+            }
 
-     var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
-syncApp.controller('heatmapCtrl', function ($scope, $rootScope) {
-    $scope.itemsSource = itemsSource;
-    $scope.itemsMapping = {
-        row: { "propertyName": "Year", "displayName": "Year", },
-        value: { "propertyName": "Value" },
-        columnMapping: [
-    { "propertyName": "Y2010", "displayName": "Y2010", columnStyle: { width: 100 } },
-    { "propertyName": "Y2011", "displayName": "Y2011", columnStyle: { width: 100 } },
-    { "propertyName": "Y2012", "displayName": "Y2012", columnStyle: { width: 100 } },
-    { "propertyName": "Y2013", "displayName": "Y2013", columnStyle: { width: 100 } },
-    { "propertyName": "Y2014", "displayName": "Y2014", columnStyle: { width: 100 } },
-    { "propertyName": "Y2015", "displayName": "Y2015", columnStyle: { width: 100 } },
-    { "propertyName": "Y2016", "displayName": "Y2016", columnStyle: { width: 100 } },
-    { "propertyName": "Y2017", "displayName": "Y2017", columnStyle: { width: 100 } },
-    { "propertyName": "Y2018", "displayName": "Y2018", columnStyle: { width: 100 } },
-        ],
-        headerMapping: { "propertyName": "ProductName", "displayName": "Product Name", columnStyle: { width: 140 } }
-    };
-});
+            angular.module("defaultApp", ["ngRoute", "ejangular"]);
+            syncApp.controller('heatmapCtrl', function ($scope, $rootScope) {
+                $scope.itemsSource = itemsSource;
+                $scope.itemsMapping = {
+                    row: { "propertyName": "Year", "displayName": "Year", },
+                    value: { "propertyName": "Value" },
+                    columnMapping: [
+                        { "propertyName": "Y2010", "displayName": "Y2010", columnStyle: { width: 100 } },
+                        { "propertyName": "Y2011", "displayName": "Y2011", columnStyle: { width: 100 } },
+                        { "propertyName": "Y2012", "displayName": "Y2012", columnStyle: { width: 100 } },
+                        { "propertyName": "Y2013", "displayName": "Y2013", columnStyle: { width: 100 } },
+                        { "propertyName": "Y2014", "displayName": "Y2014", columnStyle: { width: 100 } },
+                        { "propertyName": "Y2015", "displayName": "Y2015", columnStyle: { width: 100 } },
+                        { "propertyName": "Y2016", "displayName": "Y2016", columnStyle: { width: 100 } },
+                        { "propertyName": "Y2017", "displayName": "Y2017", columnStyle: { width: 100 } },
+                        { "propertyName": "Y2018", "displayName": "Y2018", columnStyle: { width: 100 } },
+                    ],
+                    headerMapping: { "propertyName": "ProductName", "displayName": "Product Name", columnStyle: { width: 140 } }
+                };
+            });
       </script>
     </body>
 </html>
@@ -157,7 +142,7 @@ A legend control is used to represent range value in a gradient, create a legend
  
 {% highlight html %}
 <!DOCTYPE html>
-    <html ng-app="defaultApp">
+<html ng-app="defaultApp">
 <body ng-controller="heatmapCtrl">
     <ej-heatmaplegend id="heatmap_legend" e-isresponsive="true"
                       e-height="50px"
@@ -168,23 +153,6 @@ A legend control is used to represent range value in a gradient, create a legend
         </e-colormappingcollection>
     </ej-heatmaplegend>
 </body>
-</html>
-
-{% endhighlight %}
-
-{% highlight %}
-
-<!DOCTYPE html>
-<html>    
-   <body>
-      <script>
-var scope;
-     var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
-syncApp.controller('heatmapCtrl', function ($scope, $rootScope) {
-    $scope.legendCollection = ["heatmap_legend"];
-});
-      </script>
-    </body>
 </html>
 
 {% endhighlight %}
