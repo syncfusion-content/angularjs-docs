@@ -77,41 +77,24 @@ Populate product information in a collection called `ItemsSource`.
 Now data is ready, next we need to configure data source and map rows and columns to visualize. For that, need to prepare `ItemsMapping` add it in resource and set items source and mapping.
 Next we can configure color range for these values using color mapping and also configure items mapping based on items source.
 
-## Initialize Legend
-
-A legend control is used to represent range value in a gradient, create a legend with the same color mapping as shown below.
- 
-Final HTML page looks like this.
-
 {% highlight html %}
 <!DOCTYPE html>
     <html ng-app="defaultApp">
 <body ng-controller="heatmapCtrl">
     <ej-heatmap id="HeatMap" e-width="100%" e-height="300px"
                 e-itemssource="itemsSource"
-                e-legendcollection="legendCollection"
                 e-heatmapcell-showcontent="showContentValue"
                 e-heatmapcell-showcolor="cellColor"
-                e-itemsmapping="itemsMapping"></ej-heatmap>
+                e-itemsmapping="itemsMapping">
     <e-colormappingcollection>
         <e-colormapping e-value="0" e-color="#8ec8f8"></e-colormapping>
         <e-colormapping e-value="100" e-color="#0d47a1"></e-colormapping>
     </e-colormappingcollection>
-    <ej-heatmaplegend id="heatmap_legend" e-isresponsive="true"
-                      e-colormappingcollection="colorMappingCollection"
-                      e-height="50px"
-                      e-width="75%"
-                      e-showlabel="true">
-        <e-colormappingcollection>
-            <e-colormapping e-value="0" e-color="#8ec8f8"></e-colormapping>
-            <e-colormapping e-value="100" e-color="#0d47a1"></e-colormapping>
-        </e-colormappingcollection>
+    </ej-heatmap>
 </body>
 </html>
 
 {% endhighlight %}
-
-Final script file looks like this.
 
 {% highlight %}
 
@@ -143,7 +126,6 @@ function getValue() {
      var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
 syncApp.controller('heatmapCtrl', function ($scope, $rootScope) {
     $scope.itemsSource = itemsSource;
-    $scope.legendCollection = ["heatmap_legend"];
     $scope.itemsMapping = {
         row: { "propertyName": "Year", "displayName": "Year", },
         value: { "propertyName": "Value" },
@@ -160,7 +142,6 @@ syncApp.controller('heatmapCtrl', function ($scope, $rootScope) {
         ],
         headerMapping: { "propertyName": "ProductName", "displayName": "Product Name", columnStyle: { width: 140 } }
     };
-    $scope.legendCollection = ["heatmap_legend"];
 });
       </script>
     </body>
@@ -169,3 +150,43 @@ syncApp.controller('heatmapCtrl', function ($scope, $rootScope) {
 {% endhighlight %}
 
 ![](Getting-Started_images/Getting-Started_img1.png)
+
+## Initialize Legend
+
+A legend control is used to represent range value in a gradient, create a legend with the same color mapping as shown below.
+ 
+{% highlight html %}
+<!DOCTYPE html>
+    <html ng-app="defaultApp">
+<body ng-controller="heatmapCtrl">
+    <ej-heatmaplegend id="heatmap_legend" e-isresponsive="true"
+                      e-height="50px"
+                      e-width="75%">
+        <e-colormappingcollection>
+            <e-colormapping e-value="0" e-color="#8ec8f8"></e-colormapping>
+            <e-colormapping e-value="100" e-color="#0d47a1"></e-colormapping>
+        </e-colormappingcollection>
+    </ej-heatmaplegend>
+</body>
+</html>
+
+{% endhighlight %}
+
+{% highlight %}
+
+<!DOCTYPE html>
+<html>    
+   <body>
+      <script>
+var scope;
+     var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
+syncApp.controller('heatmapCtrl', function ($scope, $rootScope) {
+    $scope.legendCollection = ["heatmap_legend"];
+});
+      </script>
+    </body>
+</html>
+
+{% endhighlight %}
+
+![](Getting-Started_images/Getting-Started_img2.png)
