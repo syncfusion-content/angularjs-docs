@@ -111,7 +111,7 @@ Let us now see how to populate the PivotClient control using a sample JSON data 
         <div id="PivotClient1" ej-pivotclient e-datasource="dataSource" e-customobject="customObject"
             e-rendersuccess='setChartProperties' e-beforeexport="Export" e-savereport="saveReportSettings" e-loadreport="saveReportSettings" e-fetchReport="saveReportSettings" e-title="Relational Browser" style="min-height: 275px;
             min-width: 525px;" />
-</div>
+    </div>
 <script>
     angular.module('PivotClientApp', ['ejangular']).controller('PivotClientCtrl', function ($scope) {
         $scope.pivot_dataset = [
