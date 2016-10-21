@@ -59,9 +59,9 @@ Add a placeholder `div` element that can be used to initialize the diagram widge
 <html>    
    <body>
       <script>
-      var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
-      syncApp.controller('diagramCtrl', function ($scope,$rootScope) {
-      });
+        var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
+        syncApp.controller('diagramCtrl', function ($scope,$rootScope) {
+        });
       </script>
     </body>
 </html>
@@ -92,52 +92,50 @@ Let us create and add a `node` (JSON data) with specific position, size, label a
 <html>    
    <body>
       <script>
-var nodes = [{
-    // Unique name for the node
-    name: "Start",
-    // Position of the node
-    offsetX: 300,
-    offsetY: 50,
-    // Size of the node
-    width: 140,
-    height: 50,
-    // Text(label) added to the node
-    labels: [{
-        text: "Start"
-    }],
-    // Shape for the node
-    type: "flow",
-    shape: "terminator"
-},
-{
-	name: "Init", 
-    offsetX: 300, 
-    offsetY: 140,
-    width: 140, 
-    height: 50,
-	labels: [{ 
-        text: "var i = 0;" 
-    }], 
-    type: "flow",
-    shape: "process"
-	}
-];
-var connectors = [{
-	// Unique name for the connector
-	name: "connector1",
-
-	// Source and Target node's name to which connector needs to be connected.
-	sourceNode: "Start",
-	targetNode: "Init",
-
-	// An empty orthogonal segment
-	segments: [{ type: "orthogonal" }]
-}];
-var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
-syncApp.controller('diagramCtrl', function ($scope, $rootScope) {
-    $scope.nodes = nodes;
-    $scope.connectors = connectors;
-});
+        var nodes = [{
+            // Unique name for the node
+            name: "Start",
+            // Position of the node
+            offsetX: 300,
+            offsetY: 50,
+            // Size of the node
+            width: 140,
+            height: 50,
+            // Text(label) added to the node
+            labels: [{
+                text: "Start"
+            }],
+            // Shape for the node
+            type: "flow",
+            shape: "terminator"
+        },
+        {
+            name: "Init", 
+            offsetX: 300, 
+            offsetY: 140,
+            width: 140, 
+            height: 50,
+            labels: [{ 
+                text: "var i = 0;" 
+            }], 
+            type: "flow",
+            shape: "process"
+            }
+        ];
+        var connectors = [{
+            // Unique name for the connector
+            name: "connector1",
+            // Source and Target node's name to which connector needs to be connected.
+            sourceNode: "Start",
+            targetNode: "Init",
+            // An empty orthogonal segment
+            segments: [{ type: "orthogonal" }]
+        }];
+        var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
+        syncApp.controller('diagramCtrl', function ($scope, $rootScope) {
+            $scope.nodes = nodes;
+            $scope.connectors = connectors;
+        });
         </script>
     </body>
 </html>
@@ -158,7 +156,6 @@ Added nodes and connector connecting node will be displayed in diagram as shown 
 
 {% highlight javascript %}
 
-//Initialize data source...
 var data = [
 	{ Name: "Elizabeth", Role: "Director" },
 	{ Name: "Christina", ReportingPerson: "Elizabeth", Role: "Manager" },
@@ -191,7 +188,7 @@ var data = [
                             e-datasourcesettings-root="dataSourceSettings.root"
                             e-defaultsettings-node="defaultSettings.node"
                             e-defaultsettings-connector="defaultSettings.connector">
-                </ej-diagram>
+</ej-diagram>
 
 {% endhighlight %}
 
