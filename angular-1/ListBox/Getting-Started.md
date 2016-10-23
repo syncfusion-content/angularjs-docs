@@ -1,9 +1,9 @@
 ---
 layout: post
-title: create a listbox widget in anularjs
-description: create a listbox widget in anularjs
+title: Getting started | ListBox | JavaScript | Syncfusion
+description: Getting started with listbox widget in angularjs
 platform: js
-control: Getting Started
+control: ListBox
 documentation: ug
 ---
 
