@@ -143,8 +143,8 @@ We have listed the properties of **Textbox** widget that supports two way bindin
 <table>
 <tr>
 <td>
-**control******<br/><br/></td><td>
-**Supported** **properties**<br/><br/></td></tr>
+<b>control</b><br/><br/></td><td>
+<b>Supported properties</b><br/><br/></td></tr>
 <tr>
 <td>
 ejNumericTextbox<br/><br/><br/><br/></td><td>

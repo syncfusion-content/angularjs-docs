@@ -41,11 +41,10 @@ Create a new Html file and include the below code.
 
 Add the below CSS reference in the head section, for the default theme
 
-<table>
-<tr>
-<td>
-<link rel="stylesheet" href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" /><br/><br/><br/><br/></td></tr>
-</table>
+{% highlight html %}
+<link rel="stylesheet" href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" />
+{% endhighlight %}
+
 <b>Script References</b>
 
 The external script dependencies of the FileExplorer widget are,
