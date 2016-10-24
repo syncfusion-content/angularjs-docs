@@ -15,11 +15,26 @@ The following section is briefly explain the things to get started with FileExpl
 
 Create a new Html file and include the below code.
 
-<table>
-<tr>
-<td>
-<!DOCTYPE html><br/><br/><html xmlns="http://www.w3.org/1999/xhtml"><br/><br/><head><br/><br/><meta charset="utf-8"><br/><br/><title> </title><br/><br/></head><br/><br/><body><br/><br/></body><br/><br/></html><br/><br/></td></tr>
-</table>
+{% highlight html %}
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title> </title>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
+{% endhighlight %}
+
 ## Adding the References
 
 ## CSS References
@@ -31,7 +46,7 @@ Add the below CSS reference in the head section, for the default theme
 <td>
 <link rel="stylesheet" href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" /><br/><br/><br/><br/></td></tr>
 </table>
-Script References
+<b>Script References</b>
 
 The external script dependencies of the FileExplorer widget are,
 
@@ -43,8 +58,8 @@ And the internal script dependencies of the FileExplorer widget are:
 <table>
 <tr>
 <td>
-**File******<br/><br/></td><td>
-**Description****/****Usage******<br/><br/></td></tr>
+<b>File</b><br/><br/></td><td>
+<b>Description/Usage</b><br/><br/></td></tr>
 <tr>
 <td>
 Angular.min.js<br/><br/></td><td>
@@ -112,29 +127,49 @@ Essential JavaScript includes angular directives for all controls with the ej.wi
 
 So you can add the below Script references in the head section:
 
-<table>
-<tr>
-<td>
-<!doctype html><br/><br/><html lang="en" ng-app="'FileApp'"><br/><br/><head><br/><br/><title>Essential Studio for JavaScript : Angular JS Support for FileExplorer </title><br/><br/><!-- Style sheet for default theme (flat azure) --><br/><br/><link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /><br/><br/><!--Scripts--><br/><br/><script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js" type="text/javascript"> </script><br/><br/><script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script><br/><br/><script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script><br/><br/><script type="text/javascript" src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js "></script><br/><br/><script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script><br/><br/><!--Add custom scripts here --><br/><br/></head><br/><br/><body><br/><br/><!--Add the elements here--><br/><br/></body><br/><br/></html><br/><br/></td></tr>
-</table>
+{% highlight html %}
+<!doctype html>
+<html lang="en" ng-app="'FileApp'">
+<head>
+    <title>Essential Studio for JavaScript : Angular JS Support for FileExplorer </title>
+    <!-- Style sheet for default theme (flat azure) -->
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <!--Scripts-->
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js" type="text/javascript"> </script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
+    <script type="text/javascript" src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js "></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script>
+    <!--Add custom scripts here -->
+
+</head>
+<body>
+    <!--Add the elements here-->
+</body>
+</html>
+{% endhighlight %}
+
 ## Initialize and configure the control
 
 The ng-app directive explains the root element (<html> or <body> tags) of the application. You will assign a name to the ng-app directive, then you must create a module with that name. In this module, you will have to define your directives, services, filters and configurations.
 
 Once added the element you can initialize the control from the script section like below:
 
-<table>
-<tr>
-<td>
-<div id="fileExplorer" ej-fileexplorer e-path="path" e-ajaxaction="ajaxaction" e-isresponsive="true" e-layout="grid" e-width="100%" ></div><br/><br/></td></tr>
-</table>
-<table>
-<tr>
-<td>
-angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {<br/><br/>$scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",<br/><br/>$scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"<br/><br/>});<br/><br/></td></tr>
-</table>
+
+{% highlight html %}
+<div id="fileExplorer" ej-fileexplorer e-path="path" e-ajaxaction="ajaxaction" e-isresponsive="true" e-layout="grid" e-width="100%" ></div>
+{% endhighlight %}
+
+{% highlight html %}
+angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
+    $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
+    $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+
+});
+{% endhighlight %}
+
 Once you completed the above steps, you get an output like below,
 
-![](GettingStarted_images/GettingStarted_img1.jpeg)
+![](Getting-Started_images/Getting-Started_img1.png)
 
 

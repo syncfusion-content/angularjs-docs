@@ -25,22 +25,49 @@ Essential JavaScript includes angular directives for all controls with the ej.wi
 
 Create an **HTML** file and add the following template to the **HTML** file.
 
-<table>
-<tr>
-<td>
-<!doctype html><br/><br/><html lang="en" ng-app="MaskApp"><br/><br/><head><br/><br/><title>Essential Studio for JavaScript : Angular JS Support for MaskEdit </title><br/><br/><!-- Style sheet for default theme (flat azure) --><br/><br/><link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /><br/><br/><!--Scripts--><br/><br/><script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js" type="text/javascript"> </script><br/><br/><script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script><br/><br/><script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script><br/><br/><script type="text/javascript" src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js "></script><br/><br/><script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script><br/><br/><!--Add custom scripts here --><br/><br/></head><br/><br/><body><br/><br/><!--Add the MaskEdit elements here--><br/><br/></body><br/><br/></html><br/><br/></td></tr>
-</table>
-Add the input elements to create the MaskEdit.
+{% highlight html %}
+<!doctype html>
+<html lang="en" ng-app="MaskCtrl">
+<head>
+    <title>Essential Studio for JavaScript : Angular JS Support for MaskEdit </title>
+    <!-- Style sheet for default theme (flat azure) -->
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <!--Scripts-->
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js" type="text/javascript"> </script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
+    <script type="text/javascript" src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js "></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script>
+    <!--Add custom scripts here -->
+</head>
+<body>
+    <!--Add the Textbox elements here-->
+</body>
+</html>
+{% endhighlight %}
+
+## Add the input elements to create the MaskEdit.
 
 The ng-app directive explains the root element (<html> or <body> tags) of the application. You will assign a name to the ng-app directive, then you must create a module with that name. In this module, you will have to define your directives, services, filters and configurations.
 
 Properties can be bind to ejMaskEdit control using the prefix "e-" and particular property name as shown as below
 
-<table>
-<tr>
-<td>
-<table style="margin: auto"><br/><br/><tbody><br/><br/><tr><br/><br/><td><br/><br/><span>Enter product key</span><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><input id="maskedit" type="text" ej-maskedit e-inputmode="ej.InputMode.Text" e-maskformat='99-999' e-width="width" />        </td><br/><br/></tr><br/><br/></tbody><br/><br/></table><br/><br/></td></tr>
+{% highlight html %}
+<table style="margin: auto">
+<tbody>
+    <tr>
+        <td>
+            <span>Enter product key</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+         <input id="maskedit" type="text" ej-maskedit e-inputmode="ej.InputMode.Text" e-   maskformat='99-999' e-width="width" />        </td>
+    </tr>
+</tbody>
 </table>
+{% endhighlight %}
+
 The following screenshot shows the output of the above code example.
 
 ![](Getting-Started_images/GettingStarted_img1.jpeg)
@@ -52,6 +79,7 @@ The **MaskEdit** Textbox supports the data binding. When a widget’s model attr
 
 We have listed the properties of MaskEdit widget that supports the two way binding:
 
+
 <table>
 <tr>
 <td>
@@ -62,18 +90,35 @@ We have listed the properties of MaskEdit widget that supports the two way bindi
 ejMaskEdit<br/><br/></td><td>
 Value<br/><br/></td></tr>
 </table>
-<table>
+
+{% highlight html %}
+<table style="margin: auto">
+<tbody>
 <tr>
 <td>
-<table class="sample" style="margin: auto"><br/><br/><tbody><br/><br/><tr><br/><br/><td><br/><br/><span>MaskEdit Textbox</span><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><input id="maskedit" type="text" ej-maskedit e-value="mvalue" e-inputmode="ej.InputMode.Text" e-maskformat='99-999' e-width="width" /><br/><br/></td><br/><br/></tr><br/><br/><tr><br/><br/><td><br/><br/><input id="maskedit2" type="text" ej-maskedit e-value="mvalue" e-inputmode="ej.InputMode.Text" e-maskformat='99-999' e-width="width" /><br /><br/><br/></td><br/><br/></tr><br/><br/></tbody><br/><br/></table><br/><br/></td></tr>
-</table>
-<table>
+    <span>MaskEdit Textbox</span>
+</td>
+</tr>
 <tr>
 <td>
-angular.module('EditCtrl', ['ejangular'])<br/><br/>.controller('EditorsCtrl', function ($scope) {<br/><br/>$scope.mvalue = "12-345";<br/><br/>});<br/><br/></td></tr>
+    <input id="maskedit" type="text" ej-maskedit e-value="mvalue" e-inputmode="ej.InputMode.Text" e-maskformat='99-999' e-width="width" />
+</td>
+</tr>
+<tr>
+<td>
+    <input id="maskedit2" type="text" ej-maskedit e-value="mvalue" e-inputmode="ej.InputMode.Text" e-maskformat='99-999' e-width="width" /><br />
+</td>
+</tr>
+</tbody>
 </table>
+{% endhighlight %}
+
+{% highlight html %}
+angular.module('EditCtrl', ['ejangular'])
+.controller('EditorsCtrl', function ($scope) {
+$scope.mvalue = "12-345";
+});
+{% endhighlight %}
 Execute the above code to render the following output.
 
 ![](Getting-Started_images/GettingStarted_img2.jpeg)
-
-

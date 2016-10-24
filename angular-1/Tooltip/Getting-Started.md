@@ -100,6 +100,8 @@ The Tooltip can be created from any HTML element with the HTML `id` attribute an
             	});
     
        </script>
+ 
+{% endhighlight %}
 
 Apply the following style sheet
 
