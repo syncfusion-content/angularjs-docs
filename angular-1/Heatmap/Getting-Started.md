@@ -81,8 +81,7 @@ Next we can configure color range for these values using color mapping and also 
 
 {% endhighlight %}
 
-{% highlight %}
-
+{% highlight javascript %}
 <!DOCTYPE html>
 <html>    
    <body>
