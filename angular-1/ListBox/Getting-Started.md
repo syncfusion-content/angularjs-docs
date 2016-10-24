@@ -13,7 +13,7 @@ The ListBox widget that contains a list of selectable items. It performs excepti
 This section explains briefly about how to create a web ListBox in your application with Angular JavaScript by step-by-step instructions. The following screenshot illustrates the functionality of a ListBox widget.
 
 
-![](Getting_Started_images\Getting_Started_img1.png)
+![](Getting_Started_images\Getting-Started_img1.png)
 
 ## Create a ListBox widget in AnularJS
 
@@ -125,7 +125,7 @@ Please use the below code the bind the **ListBox** in two-way support.
                 <div class="angularbind">
                     <div id="control">
                         <div>
-                            <ul id="Ul1" ej-listbox e-datasource="datalist" " e-fields-id="id" e-fields-text="text" e-value="value"></ul>
+                            <ul id="Ul1" ej-listbox e-datasource="datalist" e-fields-id="id" e-fields-text="text" e-value="value"></ul>
                         </div>
                     </div>
                     <div id="binding">
