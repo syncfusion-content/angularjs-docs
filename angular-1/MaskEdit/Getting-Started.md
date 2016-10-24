@@ -62,7 +62,8 @@ Properties can be bind to ejMaskEdit control using the prefix "e-" and particula
     </tr>
     <tr>
         <td>
-         <input id="maskedit" type="text" ej-maskedit e-inputmode="ej.InputMode.Text" e-   maskformat='99-999' e-width="width" />        </td>
+         <input id="maskedit" type="text" ej-maskedit e-inputmode="ej.InputMode.Text" e-maskformat='99-999' e-width="width" /> 
+        </td>
     </tr>
 </tbody>
 </table>
@@ -83,8 +84,8 @@ We have listed the properties of MaskEdit widget that supports the two way bindi
 <table>
 <tr>
 <td>
-**control******<br/><br/></td><td>
-**Supported** **properties**<br/><br/></td></tr>
+<b>control<b><br/><br/></td><td>
+<b>Supported properties</b><br/><br/></td></tr>
 <tr>
 <td>
 ejMaskEdit<br/><br/></td><td>
