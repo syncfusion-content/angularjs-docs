@@ -49,8 +49,7 @@ Add the following in the script section.
 
 {% highlight javascript %}
 
-        angular.module('syncApp', ['ejangular'])
-             .controller('BarcodeCtrl', function ($scope) {
+        syncApp.controller('BarCodeController', function ($scope) {
                                                });
 
 {% endhighlight %}
@@ -88,8 +87,7 @@ The data for the suggestion list can be populated using the dataSource property.
 
 {% highlight javascript %}
 
-        angular.module('syncApp', ['ejangular'])
-             .controller('BarcodeCtrl', function ($scope) {
+        syncApp.controller('BarCodeController', function ($scope) {
 			     $scope.text_qr = "http://www.syncfusion.com";
                                                });
 
