@@ -2,7 +2,7 @@
 layout: post
 title: Overview
 description: overview
-platform: js
+platform: Angular-1
 control: Tooltip Control
 documentation: ug
 keywords : ejTooltip, Tooltip, js Tooltip, Tooltip widget

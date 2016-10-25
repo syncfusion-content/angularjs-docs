@@ -2,7 +2,7 @@
 layout: post
 title: Overview | Tab | JavaScript | Syncfusion
 description: overview  	 	
-platform: js
+platform: Angular-1
 control: Toolbar
 documentation: ug
 keywords: toolbar features, key features, toolbar overview 

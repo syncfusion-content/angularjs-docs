@@ -2,7 +2,7 @@
 layout: post
 title: RTL
 description: rtl
-platform: AngularJS
+platform: Angular-1
 control: Scroller
 documentation: ug
 ---

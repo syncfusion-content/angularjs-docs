@@ -2,7 +2,7 @@
 layout: post
 title: overview
 description: overview
-platform: Angular-1-JS
+platform: Angular-1
 control: Navigation Drawer
 documentation: ug
 ---

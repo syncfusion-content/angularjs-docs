@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started
 description: Getting Started
-platform: angularJS
+platform: Angular-1
 control: Dialog
 documentation: ug
 ---

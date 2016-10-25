@@ -1,7 +1,7 @@
 ---
 title: PivotGauge Control Overview	
 description: Overview of PivotGauge control
-platform: Angular 1.0
+platform: Angular-1
 control: pivotgauge
 documentation: ug
 keywords: pivotgauge features, key features, pivotgauge overview 

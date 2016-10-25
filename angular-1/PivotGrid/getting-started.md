@@ -1,7 +1,7 @@
 ---
 title: Getting started with PivotGrid component	
 description: Rendering a basic PivotGrid with local data
-platform: Angular 1.0
+platform: Angular-1
 control: pivotgrid
 documentation: ug
 keywords: ejpivotgrid, pivotgrid, pivotgrid widget, js pivotgrid 

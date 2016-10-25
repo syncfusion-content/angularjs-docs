@@ -1,7 +1,7 @@
 ---
 title: Getting Started for Angular 1.0 Spreadsheet
 description: How to create a Spreadsheet with data source, apply format and export it as excel file.
-platform: Angular 1.0
+platform: Angular-1
 control: Spreadsheet
 documentation: Ug
 keywords: 

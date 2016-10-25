@@ -2,7 +2,7 @@
 layout: post
 title: Overview
 description: overview
-platform: AngularJS
+platform: Angular-1
 control: Scroller
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started
 description: getting started
-platform: Angular 1.0
+platform: Angular-1
 control: Autocomplete 
 documentation: ug
 ---

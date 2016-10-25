@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started | RichTextEditor | JavaScript | Syncfusion
 description: getting started 
-platform: RTE
+platform: Angular-1
 control: RichTextEditor Control
 documentation: ug
 keywords: ejrte, rte, js rte

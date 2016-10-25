@@ -1,7 +1,7 @@
 ---
 title: PivotTreeMap Control Overview	
 description: Overview of PivotTreeMap control
-platform: Angular 1.0
+platform: Angular-1
 control: pivottreemap
 documentation: ug
 keywords: pivottreemap features, key features, pivottreemap overview 

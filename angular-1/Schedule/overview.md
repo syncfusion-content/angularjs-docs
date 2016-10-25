@@ -1,7 +1,7 @@
 ---
 title: Schedule Control Overview	
 description: Overview of Schedule control
-platform: Angular 1.0
+platform: Angular-1
 control: schedule
 documentation: ug
 keywords: schedule features, key features, schedule overview 
