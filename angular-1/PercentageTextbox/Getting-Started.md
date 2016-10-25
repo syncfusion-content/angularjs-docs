@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started
 description: getting started
-platform:Angular-1
+platform: Angular-1
 control: PercentageTextbox
 documentation: ug
 ---
