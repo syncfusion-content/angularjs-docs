@@ -1,7 +1,7 @@
 ---
 title: Getting started with PivotTreeMap component	
 description: Rendering a basic PivotTreeMap with local data
-platform: Angular 1.0
+platform: Angular-1
 control: pivottreemap
 documentation: ug
 keywords: ejpivottreemap, pivottreemap, pivottreemap widget, js pivottreemap 

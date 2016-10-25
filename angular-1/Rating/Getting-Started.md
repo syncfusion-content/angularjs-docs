@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started | Rating | JavaScript | Syncfusion
 description: getting started
-platform: js
+platform: Angular-1
 control: Rating
 documentation: ug
 keywords: ejrating, rating, js rating 

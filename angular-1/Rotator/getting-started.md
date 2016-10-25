@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started
 description: Getting Started
-platform: Angular-1-JS
+platform: Angular-1
 control: rotator
 documentation: ug
 ---

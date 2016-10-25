@@ -1,7 +1,7 @@
 ---
 title: Getting started with PivotClient component	
 description: Rendering a basic PivotClient with local data
-platform: Angular 1.0
+platform: Angular-1
 control: pivotclient
 documentation: ug
 keywords: ejpivotclient, pivotclient, pivotclient widget, js pivotclient 

@@ -1,7 +1,7 @@
 ---
 title: PivotGrid Control Overview	
 description: Overview of PivotGrid control
-platform: Angular 1.0
+platform: Angular-1
 control: pivotgrid
 documentation: ug
 keywords: pivotgrid features, key features, pivotgrid overview 

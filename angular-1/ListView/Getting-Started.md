@@ -2,7 +2,7 @@
 layout: post
 title: Getting started | ListView | JavaScript | Syncfusion
 description: Getting started with listview widget in angularjs
-platform: js
+platform: Angular-1
 control: ListView
 documentation: ug
 ---
@@ -12,7 +12,7 @@ The ListView control allows you to select an item from a list-like interface and
 This section explains briefly about how to create a web ListView widget in your application with Angular JavaScript by step-by-step instructions. The following screenshot illustrates the output of a ListView widget.
 
 
-![](Getting_Started_images\Getting_Started_img1.png)
+![](Getting_Started_images\Getting-Started_img1.png)
 
 ## Create a ListView widget in AnularJS
 
@@ -86,8 +86,6 @@ To render the ejListview using angular directive, we need to inject the ejangula
          });
     </script>
 
-
-
 {% endhighlight %}
 
 
@@ -111,69 +109,43 @@ selectedItemIndex checkedIndices dataSource</td></tr>
 
 Please use the below code the bind the **Listview** in two-way support.
 
-&lt;div class="content-container-fluid"&gt;
+{% highlight html %}
 
-    &lt;div class="row"&gt;
+<div class="content-container-fluid">
+    <div class="row">
+        <div class="cols-sample-area">
+            <div class="frame">
+                <div class="angularbind">
+                    <div id="control">
+                        <div>
+                            <div ej-listview id="listview" e-selecteditemindex="selected" e-width="300px" e-persistselection="true" e-showheader="true" e-headertitle="Mailbox">
+                            <ul>
+                            <li data-ej-text="Inbox"></li>
+                            <li data-ej-text="VIP"></li>
+                            <li data-ej-text="Drafts"></li>
+                            <li data-ej-text="Sent"></li>
+                            <li data-ej-text="Junk"></li>
+                            <li data-ej-text="All mails"></li>
+                            <li data-ej-text="Mail"></li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </br>
+                    <div id="binding">
+                        <input type="text" id="listValue" class="input ejinputtext" ng-model="selected" />
+                    </div>
+                    <h6><span style="font-style: italic; font-weight: normal; margin: 5px; text-align: center">Note:Two Way Angular Support</span></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-        &lt;div class="cols-sample-area"&gt;
-
-            &lt;div class="frame"&gt;
-
-                <div class="ctrllabel">Select from List</div>
-
-                &lt;div class="angularbind"&gt;
-
-                    &lt;div id="control"&gt;
-
-                        &lt;div&gt;
-
-                            &lt;div ej-listview id="listview" e-selecteditemindex="selected" e-persistselection="true" e-showheader="true" e-headertitle="Mailbox"&gt;
-
-                                &lt;ul&gt;
-
-                                    &lt;li data-ej-text="Inbox"&gt;&lt;/li&gt;
-
-                                    &lt;li data-ej-text="VIP"&gt;&lt;/li&gt;
-
-                                    &lt;li data-ej-text="Drafts"&gt;&lt;/li&gt;
-
-                                    &lt;li data-ej-text="Sent"&gt;&lt;/li&gt;
-
-                                    &lt;li data-ej-text="Junk"&gt;&lt;/li&gt;
-
-                                    &lt;li data-ej-text="All mails"&gt;&lt;/li&gt;
-
-                                    &lt;li data-ej-text="Mail"&gt;&lt;/li&gt;
-
-                                &lt;/ul&gt;
-
-                            &lt;/div&gt;
-
-                        &lt;/div&gt;
-
-                    &lt;/div&gt;
-
-                    &lt;/br&gt;
-
-                    &lt;div id="binding"&gt;
-
-                        &lt;input type="text" id="listValue" class="input ejinputtext" ng-model="selected" /&gt;
-
-                    &lt;/div&gt;
-
-                    &lt;h6&gt;<span style="font-style: italic; font-weight: normal; margin: 5px; text-align: center">Note:Two Way Angular Support</span>&lt;/h6&gt;
-
-                &lt;/div&gt;
-
-            &lt;/div&gt;
-
-        &lt;/div&gt;
-
-    &lt;/div&gt;
-
-&lt;/div&gt;
+{% endhighlight %}
 
 
+{% highlight js %}
 
 angular.module("ListViewApp", ['ejangular'])
 
@@ -183,6 +155,7 @@ angular.module("ListViewApp", ['ejangular'])
 
     });
 
+{% endhighlight %}
 
 
 Here the ngModel directive binds an input, select, textarea (or custom form control) to a property on the scope using [NgModelController](https://docs.angularjs.org/api/ng/type/ngModel.NgModelController), which is created and exposed by this directive. 
@@ -203,7 +176,7 @@ We can add a header for **ListView**. Refer to the following script.
 
 {% highlight html %}
 
-<div ej-listview id="listview"  e-showheader="false" e-headertitle="Mailbox">
+<div ej-listview id="listview" e-showheader="false" e-headertitle="Mailbox">
     <ul>
         <li data-ej-text="Inbox"></li>
         <li data-ej-text="VIP"></li>

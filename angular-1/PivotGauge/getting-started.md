@@ -1,7 +1,7 @@
 ---
 title: Getting started with PivotGauge component	
 description: Rendering a basic PivotGauge with local data
-platform: Angular 1.0
+platform: Angular-1
 control: PivotGauge
 documentation: ug
 keywords: ejPivotGauge, PivotGauge, PivotGauge widget, js PivotGauge 

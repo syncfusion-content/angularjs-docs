@@ -1,7 +1,7 @@
 ---
 title: PivotChart Control Overview	
 description: Overview of PivotChart control
-platform: Angular 1.0
+platform: Angular-1
 control: pivotchart
 documentation: ug
 keywords: pivotchart features, key features, pivotchart overview 

@@ -2,7 +2,7 @@
 layout: post
 title: Overview | WaitingPopup | JavaScript | Syncfusion
 description: overview
-platform: js
+platform: Angular-1
 control: WaitingPopup
 documentation: ug
 keywords: waitingpopup features, key features, waitingpopup overview 

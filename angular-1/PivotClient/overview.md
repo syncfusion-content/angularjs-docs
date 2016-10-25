@@ -1,7 +1,7 @@
 ---
 title: PivotClient Control Overview	
 description: Overview of PivotClient control
-platform: Angular 1.0
+platform: Angular-1
 control: pivotclient
 documentation: ug
 keywords: pivotclient features, key features, pivotclient overview 

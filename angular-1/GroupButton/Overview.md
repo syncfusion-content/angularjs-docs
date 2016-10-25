@@ -2,7 +2,7 @@
 layout: post
 title: Overview
 description: overview
-platform: angularjs
+platform: Angular-1
 control: GroupButton
 documentation: ug
 ---
