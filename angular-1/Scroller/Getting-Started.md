@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started
 description: getting started
-platform: AngularJS
+platform: Angular-1
 control: Scroller
 documentation: ug
 ---

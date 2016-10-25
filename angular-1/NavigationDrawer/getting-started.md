@@ -2,7 +2,7 @@
 layout: post
 title: getting-started
 description: getting started
-platform: Angular-1-JS
+platform: Angular-1
 control: navigation drawer
 documentation: ug
 ---

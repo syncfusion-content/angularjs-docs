@@ -1,7 +1,7 @@
 ---
 title: Getting started with PivotChart component	
 description: Rendering a basic PivotChart with local data
-platform: Angular 1.0
+platform: Angular-1
 control: pivotchart
 documentation: ug
 keywords: ejpivotchart, pivotchart, pivotchart widget, js pivotchart 

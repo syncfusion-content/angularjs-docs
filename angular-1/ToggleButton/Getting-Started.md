@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started
 description: getting started
-platform: angularjs
+platform: Angular-1
 control: Toggle Button
 documentation: ug
 ---

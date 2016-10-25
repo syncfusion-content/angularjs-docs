@@ -2,7 +2,7 @@
 layout: post
 title: Getting started | ListBox | JavaScript | Syncfusion
 description: Getting started with listbox widget in angularjs
-platform: js
+platform: Angular-1
 control: ListBox
 documentation: ug
 ---

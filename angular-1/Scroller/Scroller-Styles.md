@@ -2,7 +2,7 @@
 layout: post
 title: Scroller-Styles
 description: scroller styles
-platform: AngularJS
+platform: Angular-1
 control: Scroller
 documentation: ug
 ---

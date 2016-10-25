@@ -1,7 +1,7 @@
 ---
 title: Getting started with Ribbon component	
 description: Rendering a basic Ribbon
-platform: js
+platform: Angular-1
 control: Ribbon
 documentation: ug
 keywords: ejribbon, ribbon,js ribbon 

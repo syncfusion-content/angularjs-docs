@@ -2,7 +2,7 @@
 layout: post
 title: Getting started with DatePicker
 description: To get start with DatePicker by adding references.
-platform: angularjs
+platform: Angular-1
 control: DatePicker
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title:  Grid widget for Syncfusion Essential Angular 1.0
 description: Overview of Grid control
-platform: Angular 1.0
+platform: Angular-1
 control: Grid
 documentation: ug
 ---

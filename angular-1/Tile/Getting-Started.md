@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started
 description: getting started
-platform: Angular JS
+platform: Angular-1
 control: Tile
 documentation: ug
 ---

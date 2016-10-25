@@ -2,7 +2,7 @@
 layout: post
 title: Thumb-Scrolling
 description: thumb scrolling
-platform: AngularJS
+platform: Angular-1
 control: Scroller
 documentation: ug
 ---

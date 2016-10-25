@@ -2,7 +2,7 @@
 layout: post
 title: Getting started with Tooltip widget for Syncfusion Essential JS
 description: How to create the Tooltip
-platform: JS
+platform: Angular-1
 control: Tooltip
 documentation: ug
 keywords : ejTooltip, Tooltip, js Tooltip, Tooltip widget

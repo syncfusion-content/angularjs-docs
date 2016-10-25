@@ -2,7 +2,7 @@
 layout: post
 title: Overview
 description: overview
-platform: Angular-1-JS
+platform: Angular-1
 control: tile
 documentation: ug
 ---
