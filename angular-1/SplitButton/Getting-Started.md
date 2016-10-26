@@ -14,10 +14,10 @@ This section explains briefly about how to create a **Split Button** in your app
 
 ![](/js/SplitButton/Getting-Started_images/Getting-Started_img1.png)
 
-**Split Button Creation**
+## Split Button Creation
 
-Create an **HTML** file and add the following template to **HTML** file for **Split Button** creation.
-Essential JavaScript includes angular directives for all controls with the ej.widget.angular.min.js script file. All the Essential JS directives have been encapsulated into a single module called **ejangular**. To render our ej controls in angular, you need to refer the “angular.min.js” and “ej.widget.angular.min.js” in your application.
+1. Create an **HTML** file and add the following template to **HTML** file for **Split Button** creation.
+2. Essential JavaScript includes angular directives for all controls with the ej.widget.angular.min.js script file. All the Essential JS directives have been encapsulated into a single module called **ejangular**. To render our ej controls in angular, you need to refer the “angular.min.js” and “ej.widget.angular.min.js” in your application.
 
 
 {% highlight html %}

@@ -62,7 +62,7 @@ N> For themes, you can use the `ej.web.all.min.css` CDN link from the code examp
 
 All the Essential JavaScript directives have been encapsulated into a single module called `ejangular` so the first step would be to declare dependency for this module within your AngularJS application. 
 
-The spreadshet can be created using `ej-spreadsheet` AngularJS directive and its properties can be defined using `e-` prefix followed by the property name. 
+The Spreadsheet can be created using `ej-spreadsheet` AngularJS directive and its properties can be defined using `e-` prefix followed by the property name. 
 
 The code example for defining controls in AngularJS is as follows,
 
@@ -77,7 +77,7 @@ The code example for defining controls in AngularJS is as follows,
 
 {% endhighlight %}
 
-Initialize the Spreadsheet by using the ejSpreadsheet method. The Spreadsheet is rendered based on default `width` and `height`. You can also customize the Spreadsheet dimension by setting the [`width`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-width "width") and [`height`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-height "height") property in [`e-scrollsettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings "scrollSettings").
+The Spreadsheet is rendered based on [`e-scrollsettings-width`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-width "width") and [`e-scrollsettings-height`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-height "height") property.
 
 {% highlight html %}
 
@@ -149,12 +149,12 @@ N> For more details about `Conditional Formatting` refer following [`link`](http
 
 ## Export Spreadsheet as Excel File
 
-The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`e-allowexporting`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option in [`e-exportsettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings "exportSettings") as `true`. Since Spreadsheet uses server side helper to save documents set [`excelUrl`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-excelurl "excelUrl") in [`e-exportsettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings "exportSettings") option. The following code example illustrates this,
+The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`e-exportsettings-allowexporting`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option as `true`and Specify [`e-exportsettings-excelUrl`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-excelurl "excelUrl") option to save documents using server side helper. The following code example illustrates this,
 
 {% highlight html %}
 
 <body ng-controller="SpreadsheetCtrl">
-    <div id="Spreadsheet" ej-spreadsheet e-sheets="sheetData" e-allowexporting="true" e-exportsettings-excelurl="excelurl"></div>
+    <div id="Spreadsheet" ej-spreadsheet e-sheets="sheetData" e-exportsettings-allowexporting="true" e-exportsettings-excelurl="excelurl"></div>
 </body>
 <script>
     var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
