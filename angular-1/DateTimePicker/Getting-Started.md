@@ -111,7 +111,6 @@ In a real-time appointment scenario, the appointment is open only for a limited 
 
 {% endhighlight %}
 
-{% highlight javascript %}
 
 {% highlight javascript %}
         angular.module('DateTimeCtrl', ['ejangular'])
@@ -123,8 +122,6 @@ In a real-time appointment scenario, the appointment is open only for a limited 
            });
 {% endhighlight %}
 
-
-{% endhighlight %}
 
 
 
