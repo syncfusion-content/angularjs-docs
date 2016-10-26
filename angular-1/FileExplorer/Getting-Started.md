@@ -49,8 +49,8 @@ Add the below CSS reference in the head section, for the default theme
 
 The external script dependencies of the FileExplorer widget are,
 
-* [jQuery 1.7.1](http://jquery.com/# "") or later versions.
-* [jsrender](https://www.jsviews.com/#jsrender "") – for grid view template.
+* [jQuery 1.7.1](http://jquery.com/#) or later versions.
+* [jsrender](https://www.jsviews.com/#jsrender) – for grid view template.
 
 And the internal script dependencies of the FileExplorer widget are:
 

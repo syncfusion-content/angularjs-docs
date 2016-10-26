@@ -19,8 +19,7 @@ To get start with TreeView, create a new HTML file and add the required dependen
 
 ## External script files
 
-* [jQuery 1.7.1](http://jquery.com/# "") and later versions.
-* [jQuery.easing.js](http://gsgd.co.uk/sandbox/jquery/easing/# "") - to support the animation effects.
+* [jQuery 1.7.1](http://jquery.com/#) and later versions.
 
 ## Internal Script files
 
