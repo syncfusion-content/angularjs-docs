@@ -77,7 +77,7 @@ The code example for defining controls in AngularJS is as follows,
 
 {% endhighlight %}
 
-Initialize the Spreadsheet by using the ejSpreadsheet method. The Spreadsheet is rendered based on default `width` and `height`. You can also customize the Spreadsheet dimension by setting the [`width`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-width "width") and [`height`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-height "height") property in [`e-scrollsettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings "scrollSettings").
+Initialize the Spreadsheet by using the ejSpreadsheet method. The Spreadsheet is rendered based on [`e-scrollsettings-width`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-width "width") and [`e-scrollsettings-height`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-height "height") property.
 
 {% highlight html %}
 
@@ -149,7 +149,7 @@ N> For more details about `Conditional Formatting` refer following [`link`](http
 
 ## Export Spreadsheet as Excel File
 
-The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`e-allowexporting`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option in [`e-exportsettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings "exportSettings") as `true`. Since Spreadsheet uses server side helper to save documents set [`excelUrl`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-excelurl "excelUrl") in [`e-exportsettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings "exportSettings") option. The following code example illustrates this,
+The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`e-exportsettings-allowexporting`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option as `true`and Specify [`e-exportsettings-excelUrl`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-excelurl "excelUrl") option to save documents using server side helper. The following code example illustrates this,
 
 {% highlight html %}
 
