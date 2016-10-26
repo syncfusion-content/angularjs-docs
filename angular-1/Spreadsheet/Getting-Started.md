@@ -62,7 +62,7 @@ N> For themes, you can use the `ej.web.all.min.css` CDN link from the code examp
 
 All the Essential JavaScript directives have been encapsulated into a single module called `ejangular` so the first step would be to declare dependency for this module within your AngularJS application. 
 
-The spreadshet can be created using `ej-spreadsheet` AngularJS directive and its properties can be defined using `e-` prefix followed by the property name. 
+The Spreadsheet can be created using `ej-spreadsheet` AngularJS directive and its properties can be defined using `e-` prefix followed by the property name. 
 
 The code example for defining controls in AngularJS is as follows,
 
@@ -77,7 +77,7 @@ The code example for defining controls in AngularJS is as follows,
 
 {% endhighlight %}
 
-Initialize the Spreadsheet by using the ejSpreadsheet method. The Spreadsheet is rendered based on [`e-scrollsettings-width`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-width "width") and [`e-scrollsettings-height`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-height "height") property.
+The Spreadsheet is rendered based on [`e-scrollsettings-width`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-width "width") and [`e-scrollsettings-height`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-height "height") property.
 
 {% highlight html %}
 
@@ -154,7 +154,7 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
 {% highlight html %}
 
 <body ng-controller="SpreadsheetCtrl">
-    <div id="Spreadsheet" ej-spreadsheet e-sheets="sheetData" e-allowexporting="true" e-exportsettings-excelurl="excelurl"></div>
+    <div id="Spreadsheet" ej-spreadsheet e-sheets="sheetData" e-exportsettings-allowexporting="true" e-exportsettings-excelurl="excelurl"></div>
 </body>
 <script>
     var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
