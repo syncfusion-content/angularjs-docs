@@ -84,7 +84,7 @@ We have listed the properties of MaskEdit widget that supports the two way bindi
 <table>
 <tr>
 <td>
-<b>control<b><br/><br/></td><td>
+<b>control</b><br/><br/></td><td>
 <b>Supported properties</b><br/><br/></td></tr>
 <tr>
 <td>
