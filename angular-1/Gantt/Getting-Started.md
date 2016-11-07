@@ -25,7 +25,7 @@ Create an HTML file and add the following template to the HTML file.
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Getting Started with Gantt Control for Angular Js</title>
+      <title>Getting Started with Gantt Control for AngularJS</title>
       <!-- style sheet for default theme(flat azure) -->
       <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
       <!--scripts-->    
