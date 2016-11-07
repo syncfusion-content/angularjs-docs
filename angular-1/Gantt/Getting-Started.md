@@ -386,7 +386,7 @@ By following these steps, you have learned how to provide data source to Gantt c
 
 ## Highlight Weekend
 
-In Gantt, you can on or off weekends high lighting by setting the [`e-highlightWeekEnds`](http://help.syncfusion.com/js/api/ejgantt#members:highlightweekends "highlightWeekEnds")
+In Gantt, weekends can be highlighted by setting the [`e-highlightWeekEnds`](http://help.syncfusion.com/js/api/ejgantt#members:highlightweekends "highlightWeekEnds")
 
  as `true` or `false`.
 
