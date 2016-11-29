@@ -3,29 +3,17 @@ title: Getting Started with ReportViewer component
 description: getting started
 platform: Angular-1
 control: ReportViewer
-documentation: ug
+documentation: ug 
 keywords: ejReportViewer, ReportViewer, js ReportViewer 
 ---
 
 # Getting Started
 
-The AngularJS directives are usually included within the `ej.widget.angular.min.js` file and all these directives are usually packed together in a common module known as `ejangular`. For basic details on how to configure Syncfusion widgets in AngularJS framework, refer [here](https://help.syncfusion.com/js/angularjs).
+This section explains briefly about how to create a ReportViewer in your web application with AngularJS.
 
-To get start with the ReportViewer control in AngularJS framework, the following list of external dependencies are mandatory which are available in the following link, 
+## Create your first ReportViewer in Angular-1
 
-* [jQuery](http://jquery.com) - 1.7.1 and later versions
-* [jsRender](https://github.com/borismoore/jsrender) - to render the templates
-* [AngularJS](https://angularjs.org/)
-
-The external AngularJS script file `angular.min.js` can also be accessed from the following installed location.
-
-* **(installed location)**\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external
-
-An another mandatory script is `ej.widget.angular.min.js`, which can be accessed from the below specified location.
-
-* **(installed location)**\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\common
-
-## Create your first ReportViewer in JavaScript
+In this tutorial, you can learn how to create a simple ReportViewer control, Load RDLC Report and Load SSRS Report in your web application with AngularJS.
 
 ### Create HTML Page
 
@@ -44,8 +32,6 @@ Create a new HTML file and include the below initial code.
 </html>
 
 {% endhighlight %}
-
-### Add Styles, Scripts and Control in HTML Page
 
 ### Add Scripts and Styles
 
@@ -117,7 +103,7 @@ ReportViewer with Grouping Aggregate Report
 
 ReportViewer supports to load RDL/RDLC files from SSRS Server. The following steps help you to load reports from SSRS Server.
 
-1. Set the `reportPath` from SSRS and SSRS `reportServerUrl` in the ReportViewer properties.
+1.Set the `reportPath` from SSRS and SSRS `reportServerUrl` in the ReportViewer properties.
 
 {% highlight html %}
 
@@ -138,7 +124,7 @@ ReportViewer supports to load RDL/RDLC files from SSRS Server. The following ste
 
 N> The credential information for Report Server is provided in online service. 
 
-2. Run the application and you can see the ReportViewer on the page as displayed in the following screenshot.
+2.Run the application and you can see the ReportViewer on the page as displayed in the following screenshot.
 
    ![](Getting-Started_images/Getting-Started_img2.png) 
    
@@ -149,7 +135,7 @@ N> The credential information for Report Server is provided in online service.
 
 The ReportViewer has data binding support to visualize the RDLC reports. The following code example helps you to bind data to ReportViewer.
 
-1. Assign the RDLC report path to ReportViewer’s `reportPath` property and set the data sources to the ReportViewer’s `dataSources` property and specify the `processingMode` as local.
+1.Assign the RDLC report path to ReportViewer’s `reportPath` property and set the data sources to the ReportViewer’s `dataSources` property and specify the `processingMode` as local.
 
 {% highlight html %}
 
@@ -179,9 +165,9 @@ The ReportViewer has data binding support to visualize the RDLC reports. The fol
 
 {% endhighlight %}
 
-N> Default RDLC Report will be rendered, which is used in the online service.
+N> Default RDLC Report will be rendered, which is used in the online service. You can obtain sample rdl/rdlc files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ejReportTemplate).
 
-2. Run the application and you can see the ReportViewer on the page as displayed in the following screenshot.
+2.Run the application and you can see the ReportViewer on the page as displayed in the following screenshot.
 
    ![](Getting-Started_images/Getting-Started_img3.png) 
    
