@@ -150,3 +150,66 @@ angular.module('treeApp', ['ejangular']).controller('TreeCtrl', function ($scope
         };
 });
 {% endhighlight %}
+
+## Two-way Binding
+
+TreeView data source supports two-way (bidirectional) binding modes when we specifying **e-deepwatch** as **true** in TreeView control. It allows to synchronize the changes of the TreeView and data source.
+
+When enable **e-deepwatch** support, if do any interaction (like drag and drop, edit, add, remove, selection, check, expand any node) in TreeView then mapped data source will be updated automatically. And also if do any changes in data source then TreeView will be updated automatically.
+
+{% highlight html %}
+
+<body ng-app="TreeCtrl" ng-controller="TreeViewCtrl">
+    <!--create the TreeView wrapper-->
+    <div id="twoway" e-deepwatch="true" ej-treeview e-fields="fields" e-fields-datasource="data" e-allowediting="true" e-allowmultiselection="true" e-allowdraganddrop="true" e-showcheckbox="true"></div>
+    {{data}}
+    <br />
+    <button type="button" id="btn1" ng-click="addNode()">Add node via scope</button>
+    <button type="button" id="btn2" ng-click="addScope()">Add node via TreeView</button>
+    <button type="button" id="btn3" ng-click="removeNode()">Remove node via scope</button>
+    <button type="button" id="btn4" ng-click="removeScope()">Remove node via TreeView</button>
+</body>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+var localData = [
+    { id: 1, name: "Item 1", hasChild: true, expanded: true },
+    { id: 2, pid: 1, name: "Item 1.1", selected: true },
+    { id: 3, pid: 1, name: "Item 1.2" },
+    { id: 4, name: "Item 2" },
+    { id: 5, name: "Item 3" },
+];
+angular.module('TreeCtrl', ['ejangular']).controller('TreeViewCtrl', function ($scope) {
+    $scope.data = localData;
+    $scope.fields = {
+        id: "id",
+        parentId: "pid",
+        text: "name",
+        hasChild: "hasChild",
+        expanded: "expanded",
+        selected: "selected"
+    };
+    var i = 4;
+    $scope.addScope = function () {
+        var treeobj = $("#twoway").data("ejTreeView");
+        treeobj.addNode({ id: i, name: "New Item " + i });
+        i++;
+    };
+    $scope.addNode = function () {
+        $scope.data.push({ id: i, name: "New Item " + i });
+        i++;
+    };
+    $scope.removeScope = function () {
+        var treeobj = $("#twoway").data("ejTreeView");
+        treeobj.removeNode(); //removed the selected node in TreeView
+    };
+    $scope.removeNode = function () {
+        $scope.data.pop(); // removed last item in data source
+    };
+});
+	
+{% endhighlight %}
+
+For more details about two-way binding in TreeView, refer the sample [here](http://jsplayground.syncfusion.com/Sync_w22vpvds).
