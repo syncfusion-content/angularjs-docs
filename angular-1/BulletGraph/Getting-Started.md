@@ -1,7 +1,7 @@
 ---
 title: Getting-Started
 description: how to create bulletgraph, add scales, ticks, measures, qualitativeranges
-platform: js
+platform: Angular 1.0
 control: Bullet Graph
 documentation: ug
 keywords: ejbulletgraph, bulletgraph, bulletgraph widget, js bulletgraph,angular bulletgraph,angularjs bulletgraph,angular 1.0 bulletgraph,angular 1 bulletgraph
@@ -71,7 +71,7 @@ So the complete boilerplate code is
     <!DOCTYPE html>
     <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="BulletGraphApp">
     <head>
-    <title>Essential Studio for AngularJS: BUlletGraph</title>
+    <title>Essential Studio for AngularJS: BulletGraph</title>
     <!-- Essential Studio for JavaScript  theme reference -->
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!-- Essential Studio for JavaScript  script references -->
@@ -103,7 +103,7 @@ The code example for defining controls in AngularJS is as follows,
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="BulletGraphApp">
     <head>
-        <title>Essential Studio for AngularJS: BUlletGraph</title>
+        <title>Essential Studio for AngularJS: BulletGraph</title>
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="BulletGraphCtrl">
