@@ -1,7 +1,7 @@
 ---
 title: Getting-Started
 description: How to create a digitalgauge, add items, background image and other functionalities
-platform: js
+platform: Angular 1.0
 control: Digital Gauge
 documentation: ug
 keywords: ejdigitalgauge, digitalgauge, digitalgauge widget, js digitalgauge, angular digitalgauge, angularjs digitalgauge, angular 1.0 digitalgauge, angular 1 digitalgauge
