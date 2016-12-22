@@ -159,7 +159,8 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
 <script>
     var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
     syncApp.controller('SpreadsheetCtrl', function ($scope,$rootScope) {
-    $scope.excelurl = "http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToExcel";
+    $scope.sheetData = [{ rangeSettings: [{ dataSource: window.defaultData, startCell:'A1' }] }];
+    $scope.excelurl = "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport";
       });
 </script>
 
