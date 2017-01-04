@@ -57,16 +57,12 @@ Initialize the Sparkline by using the ej-sparkline attribute. The Sparkline is r
 {% highlight html %}
 
 <body ng-controller="SparkCtrl">
-    <div id="container" ej-sparkline e-size="sparksize">
+    <div id="container" ej-sparkline e-size-height="100px" e-size-width="400px">
     </div>
     <script>
         angular.module('SparkApp', ['ejangular'])
-            .controller('SparkCtrl', function ($scope) {
-                $scope.sparksize = {
-                    height: 100,
-                    width: 400
-                };
-            });
+        .controller('SparkCtrl', function ($scope) {
+                  });
     </script>
 </body>
 

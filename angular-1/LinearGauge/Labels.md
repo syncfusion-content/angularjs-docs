@@ -29,30 +29,34 @@ Labels are units that are used to display the values in the scales. You can cust
     </head>
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
-                 <ej-lineargauge   e-enableanimation="false" e-value="40" e-frame-innerwidth="8" e-frame-outerwidth="10"
-                e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
+                 <ej-lineargauge   e-enableanimation="false" e-value="40" e-frame-innerwidth="8" 
+                 e-frame-outerwidth="10" 
+                 e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
                  <e-scales>
-                 <e-scale   e-backgroundcolor="transparent" 
-                 e-border-color="transparent" e-border-width="0" e-showBarPointers="true" e-showMarkerPointers="false" e-showCustomLabels="true" >
+                 <e-scale   e-backgroundcolor="transparent" e-border-color="transparent" 
+                 e-border-width="0" e-showBarPointers="true" e-showMarkerPointers="false" 
+                 e-showCustomLabels="true" >
                  <e-barpointers>
                  <e-barpointer  e-width="10" >
                  </e-barpointer>
                  </e-barpointers>
-                  <e-labels>
-                 <e-label e-textcolor="red" e-angle="10" e-opacity="0.5" e-includeFirstValue="false" e-font-fontFamily="arial" e-font-size="12px"
-                 e-font-fontStyle="bold"></e-label>
+                 <e-labels>
+                 <e-label e-textcolor="red" e-angle="10" e-opacity="0.5" e-includeFirstValue="false" 
+                 e-font-fontFamily="arial" e-font-size="12px" e-font-fontStyle="bold"></e-label>
                  </e-labels>
                  <e-ticks>
-                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
-                  <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
+                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="7" 
+                 e-distancefromscale-y="0"></e-tick>
+                 <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" 
+                 e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
                  </e-ticks>
                  </e-scale>
                  </e-scales>
-                  </ej-lineargauge>
+                 </ej-lineargauge>
         </div>
-         <script >
+        <script>
         angular.module('LinearGaugeApp', ['ejangular'])
-       .controller('LinearGaugeCtrl', function ($scope) {
+        .controller('LinearGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -83,32 +87,39 @@ Execute the above code to render the following output.
     </head>
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
-                 <ej-lineargauge   e-enableanimation="false" e-value="31" e-width="600" e-height="250" e-theme="flatlight" e-orientation="horizontal"
-                 e-labelcolor="black" e-enableresize="true" e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
+                 <ej-lineargauge   e-enableanimation="false" e-value="31" e-width="600" e-height="250" 
+                 e-theme="flatlight" e-orientation="horizontal" e-labelcolor="black" e-enableresize="true" 
+                 e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
                  <e-scales>
-                 <e-scale   e-backgroundcolor="White" e-width="5" e-majorintervalvalue="25" e-minorintervalvalue="5" e-type="roundedrectangle"
-                 e-border-color="#AEC75F" e-border-width="2" e-showBarPointers="true" e-showMarkerPointers="false" e-showCustomLabels="true" >
+                 <e-scale   e-backgroundcolor="White" e-width="5" e-majorintervalvalue="25" 
+                 e-minorintervalvalue="5" e-type="roundedrectangle" e-border-color="#AEC75F" 
+                 e-border-width="2" e-showBarPointers="true" e-showMarkerPointers="false" 
+                 e-showCustomLabels="true" >
                  <e-barpointers>
                  <e-barpointer  e-width="4" e-backgroundcolor="Red" >
                  </e-barpointer>
                  </e-barpointers>
-                  <e-labels>
-                 <e-label  e-angle="90" e-distancefromscale-x="0" e-distancefromscale-y="60" e-unittext="%"></e-label>
+                 <e-labels>
+                 <e-label  e-angle="90" e-distancefromscale-x="0" e-distancefromscale-y="60" 
+                 e-unittext="%"></e-label>
                  </e-labels>
                  <e-ticks>
-                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="0" e-distancefromscale-y="25"></e-tick>
-                  <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" e-distancefromscale-x="0" e-distancefromscale-y="25"></e-tick>
+                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="0" 
+                 e-distancefromscale-y="25"></e-tick>
+                 <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" 
+                 e-distancefromscale-x="0" e-distancefromscale-y="25"></e-tick>
                  </e-ticks>
-                  <e-customlabels>
-                 <e-customlabel e-value="Download In Progress" e-position-x="50" e-position-y="20"></e-customlabel>
+                 <e-customlabels>
+                 <e-customlabel e-value="Download In Progress" e-position-x="50" e-position-y="20">
+                 </e-customlabel>
                  </e-customlabels>
                  </e-scale>
                  </e-scales>
-                  </ej-lineargauge>
+                 </ej-lineargauge>
         </div>
-         <script >
+        <script>
         angular.module('LinearGaugeApp', ['ejangular'])
-       .controller('LinearGaugeCtrl', function ($scope) {
+        .controller('LinearGaugeCtrl', function ($scope) {
          });
     </script>
     </body>

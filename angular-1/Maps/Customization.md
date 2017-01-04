@@ -36,14 +36,15 @@ The above properties of `e-shapeSettings` are applied only when the `e-shapesett
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
-            <e-layer e-shapedata=usMap  e-enablemousehover="true" e-shapesettings-fill="#9CBF4E" e-shapesettings-strokethickness="0.5"
-              e-shapesettings-stroke="white" e-shapesettings-highlightstroke="white" e-shapesettings-highlightcolor="#BC5353" 
-              e-shapesettings-highlightborderwidth="1"></e-layer>
+            <e-layer e-shapedata=usMap  e-enablemousehover="true" e-shapesettings-fill="#9CBF4E" 
+            e-shapesettings-strokethickness="0.5" e-shapesettings-stroke="white" 
+            e-shapesettings-highlightstroke="white" e-shapesettings-highlightcolor="#BC5353" 
+            e-shapesettings-highlightborderwidth="1"></e-layer>
         </e-layers>
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+        .controller('MapsCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -112,9 +113,10 @@ Gets or sets the start point and end point gradient colors to be applied for spe
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
-            <e-layer e-shapedata=usMap  e-shapedatapath="name" e-shapepropertypath="name" e-datasource=populationData
-              e-shapesettings-fill="#9CBF4E" e-shapesettings-strokethickness="0.5"
-              e-shapesettings-stroke="white" e-shapesettings-valuepath="population" e-shapesettings-enablegradient="true">
+            <e-layer e-shapedata=usMap  e-shapedatapath="name" e-shapepropertypath="name" 
+            e-datasource=populationData e-shapesettings-fill="#9CBF4E" 
+            e-shapesettings-strokethickness="0.5" e-shapesettings-stroke="white" 
+            e-shapesettings-valuepath="population" e-shapesettings-enablegradient="true">
               <div e-shapesettings-colormappings-rangecolormapping>
                     <e-shaperangecolormap e-from="500000" e-to="1000000" e-gradientcolors="ncolor1">
                     </e-shaperangecolormap>
@@ -238,9 +240,10 @@ Here USA election data is considered as input datasource and stored in “electi
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
-            <e-layer e-shapedata=usMap  e-shapedatapath="State" e-shapepropertypath="name" e-datasource=electionData
-              e-shapesettings-autofill="false"  e-shapesettings-strokethickness="0.5"
-              e-shapesettings-stroke="white" e-shapesettings-valuepath="Electors" e-shapesettings-colorvaluepath="Candidate">
+            <e-layer e-shapedata=usMap  e-shapedatapath="State" e-shapepropertypath="name" 
+            e-datasource=electionData e-shapesettings-autofill="false"  
+            e-shapesettings-strokethickness="0.5" e-shapesettings-stroke="white" 
+            e-shapesettings-valuepath="Electors" e-shapesettings-colorvaluepath="Candidate">
               <div e-shapesettings-colormappings-equalcolormapping>
                     <e-shapeequalcolormap e-value="Romney" e-color="#D84444">
                     </e-shapeequalcolormap>
@@ -253,7 +256,7 @@ Here USA election data is considered as input datasource and stored in “electi
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+        .controller('MapsCtrl', function ($scope) {
                 
                         });
     </script>
@@ -280,12 +283,13 @@ When `e-shapesettings-autoFill` property is set to true, shapes are filled with 
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
-            <e-layer e-shapedata=usMap e-shapesettings-autofill="true" e-shapesettings-strokethickness="0.5"  e-shapesettings-stroke="white"></e-layer>
+            <e-layer e-shapedata=usMap e-shapesettings-autofill="true" 
+            e-shapesettings-strokethickness="0.5"  e-shapesettings-stroke="white"></e-layer>
         </e-layers>
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+        .controller('MapsCtrl', function ($scope) {
                        });
     </script>
     </body>
@@ -316,14 +320,15 @@ This property is enabled only when `e-shapesettings-colorPalette` property value
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
-            <e-layer e-shapesettings-autofill="true" e-shapesettings-colorpalette="custompalette"  e-shapesettings-custompalette=custompalette></e-layer>
+            <e-layer e-shapesettings-autofill="true" e-shapesettings-colorpalette="custompalette"  
+            e-shapesettings-custompalette=custompalette></e-layer>
         </e-layers>
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+        .controller('MapsCtrl', function ($scope) {
                     $scope.custompalette=["#E51400", "#A4C400", "#730202","#008B00", "#EF6535",
-                                    "#1BA0E2", "#C63477", "#0050EF", "#BF004D", "#AA00FF"];
+                                         "#1BA0E2", "#C63477", "#0050EF", "#BF004D", "#AA00FF"];
                  });
     </script>
     </body>
@@ -356,7 +361,7 @@ The tooltip is displayed only when you set `e-showTooltip` to “True” in the 
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+        .controller('MapsCtrl', function ($scope) {
                  });
     </script>
     </body>
@@ -382,25 +387,28 @@ The `e-tooltipTemplate` property is used for customizing the template for toolti
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
-            <e-layer e-showtooltip="true" e-tooltiptemplate="myTooltip" e-shapesettings-valuepath="name" ></e-layer>
+            <e-layer e-showtooltip="true" e-tooltiptemplate="myTooltip" 
+            e-shapesettings-valuepath="name" ></e-layer>
         </e-layers>
     </div>
      <div  id="myTooltip" style="display: none;">
         <div >
             <div style="height:60px;width:120px;background:#4586a0;border-radius:3px;">
                 <div style="margin-top:-20px;margin-left:9px;padding-top:3px">
-                    <label style="margin-top:-20px;font-weight:normal;font-size:12px;color:white;font-family:Segoe UI;">{{:name}}</label>
+                 <label style="margin-top:-20px;font-weight:normal;font-size:12px;color:white;font-family:Segoe UI;">
+                 {{:name}}</label>
                 </div>
                 <div style="height:10px;"></div>
                 <div style="margin-top:-10px;margin-left:9px;">
-                    <label style="margin-top:-10px;font-weight:normal;font-size:14px;color:white;font-family:segoe ui light;">{{:population}}</label>
+                <label style="margin-top:-10px;font-weight:normal;font-size:14px;color:white;font-family:segoe ui light;">
+                {{:population}}</label>
                 </div>
             </div>
         </div>
     </div> 
     <script>
         angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+        .controller('MapsCtrl', function ($scope) {
                  });
     </script>
     </body>

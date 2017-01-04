@@ -24,14 +24,15 @@ The opacity of the character is adjustable with the help of **opacity** property
         <div id="digitalframe">
                  <ej-digitalgauge e-width="800" >
                  <e-items>
-                 <e-item e-value="SYNCFUSION" e-charactersettings-opacity="0.3" e-charactersettings-spacing="3">
+                 <e-item e-value="SYNCFUSION" e-charactersettings-opacity="0.3"
+                 e-charactersettings-spacing="3">
                  </e-item>
                  </e-items>
                  </ej-digitalgauge>
         </div>
-         <script >
+        <script>
         angular.module('DigitalGaugeApp', ['ejangular'])
-       .controller('DigitalGaugeCtrl', function ($scope) {
+        .controller('DigitalGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -70,14 +71,15 @@ The number of text to be displayed can be limited by the attribute called **coun
                  <ej-digitalgauge e-width="800" >
                  <e-items>
                  <e-item e-value="1234567890" e-segmentsettings-length="8" e-segmentsettings-width="1" 
-                 e-charactersettings-count="10" e-charactersettings-spacing="10" e-charactersettings-type="sevensegment">
+                 e-charactersettings-count="10" e-charactersettings-spacing="10" 
+                 e-charactersettings-type="sevensegment">
                  </e-item>
                  </e-items>
                  </ej-digitalgauge>
         </div>
-         <script >
+        <script>
         angular.module('DigitalGaugeApp', ['ejangular'])
-       .controller('DigitalGaugeCtrl', function ($scope) {
+        .controller('DigitalGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -106,14 +108,15 @@ The text in the **Digital****Gauge** is positioned with position object. This ob
         <div id="digitalframe">
                  <ej-digitalgauge e-width="800" e-height="300" e-frame-backgroundimageurl="board1.jpg" >
                  <e-items>
-                 <e-item e-value="YELLOW" e-segmentsettings-color="yellow" e-position-x="80" e-position-y="10">
+                 <e-item e-value="YELLOW" e-segmentsettings-color="yellow" e-position-x="80"
+                 e-position-y="10">
                  </e-item>
                  </e-items>
                  </ej-digitalgauge>
         </div>
-         <script >
+        <script>
         angular.module('DigitalGaugeApp', ['ejangular'])
-       .controller('DigitalGaugeCtrl', function ($scope) {
+        .controller('DigitalGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -143,15 +146,15 @@ The text in the **Digital Gauge** is positioned with position object. This objec
         <div id="digitalframe">
                  <ej-digitalgauge e-width="800" >
                  <e-items>
-                 <e-item e-value="WELCOME" e-segmentsettings-length="3" e-segmentsettings-width="3" e-shadowcolor="yellow" e-shadowblur="20"
-                 e-shadowoffsetx="15" e-shadowoffsety="15">
+                 <e-item e-value="WELCOME" e-segmentsettings-length="3" e-segmentsettings-width="3" 
+                 e-shadowcolor="yellow" e-shadowblur="20" e-shadowoffsetx="15" e-shadowoffsety="15">
                  </e-item>
                  </e-items>
                  </ej-digitalgauge>
         </div>
-         <script >
+        <script>
         angular.module('DigitalGaugeApp', ['ejangular'])
-       .controller('DigitalGaugeCtrl', function ($scope) {
+        .controller('DigitalGaugeCtrl', function ($scope) {
          });
     </script>
     </body>

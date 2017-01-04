@@ -44,9 +44,9 @@ documentation: ug
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -79,18 +79,19 @@ The Scale border is modified with the object called **border**. It has two borde
         <div id="circularframe">
                 <ej-circulargauge >
                 <e-scales>
-                <e-scale e-radius="150" e-showscalebar="true" e-backgroundcolor="red" e-border-color="blue" e-border-color-width="3">
+                <e-scale e-radius="150" e-showscalebar="true" e-backgroundcolor="red"
+                e-border-color="blue" e-border-color-width="3">
                 <e-pointers>
-               <e-pointer e-length="100">
-               </e-pointer>
-               </e-pointers>
+                <e-pointer e-length="100">
+                </e-pointer>
+                </e-pointers>
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -120,14 +121,15 @@ Execute the above code to render the following output.
         <div id="circularframe">
                 <ej-circulargauge >
                 <e-scales>
-                <e-scale e-pointerCap-radius="10" e-pointerCap-borderWidth="4" e-pointerCap-borderColor="blue" e-pointerCap-backgroundcolor="red" >
+                <e-scale e-pointerCap-radius="10" e-pointerCap-borderWidth="4"
+                e-pointerCap-borderColor="blue" e-pointerCap-backgroundcolor="red" >
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -159,15 +161,16 @@ Execute the above code to render the following output.
         <div id="circularframe">
                 <ej-circulargauge >
                 <e-scales>
-                <e-scale e-size="30" e-scaleRadius="130" e-minimum="20" e-maximum="120" e-majorIntervalValue="20" e-minorIntervalValue="5" 
-                 e-backgroundcolor="red" e-opacity="0.5" e-shadowOffset="20" e-direction="CounterClockwise"  >
+                <e-scale e-size="30" e-scaleRadius="130" e-minimum="20" e-maximum="120"
+                e-majorIntervalValue="20" e-minorIntervalValue="5" e-backgroundcolor="red" 
+                e-opacity="0.5" e-shadowOffset="20" e-direction="CounterClockwise"  >
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -201,32 +204,34 @@ You can set **Multiple scales** for a single **Circular Gauge** control by using
         <div id="circularframe">
                 <ej-circulargauge >
                 <e-scales>
-                <e-scale e-size="10" e-showScaleBar="true"  e-scaleRadius="150" e-minimum="20" e-maximum="120" e-majorIntervalValue="20" e-minorIntervalValue="5" 
-                 e-shadowOffset="20" e-direction="Clockwise"  >
-                 <e-pointers>
-                 <e-pointer e-value="50" e-length="120"></e-pointer>
-                 </e-pointers>
+                <e-scale e-size="10" e-showScaleBar="true"  e-scaleRadius="150" e-minimum="20"
+                e-maximum="120" e-majorIntervalValue="20" e-minorIntervalValue="5" 
+                e-shadowOffset="20" e-direction="Clockwise"  >
+                <e-pointers>
+                <e-pointer e-value="50" e-length="120"></e-pointer>
+                </e-pointers>
                 </e-scale>
-                <e-scale e-size="10" e-showScaleBar="false"  e-scaleRadius="80"  e-majorIntervalValue="10"  
-                 e-shadowOffset="20" e-direction="CounterClockwise" e-opacity="0.5"  >
-                 <e-pointers>
-                 <e-pointer e-value="40" e-length="50"></e-pointer>
-                 </e-pointers>
-                 <e-labels>
-                 <e-label e-color="red" e-distanceFromScale="40">
-                 </e-label>
-                 </e-labels>
-                 <e-ticks>
-                 <e-tick e-distanceFromScale="80" e-color="red">
-                 </e-tick>
-                 </e-ticks>
+                <e-scale e-size="10" e-showScaleBar="false"  e-scaleRadius="80"  
+                e-majorIntervalValue="10" e-shadowOffset="20" e-direction="CounterClockwise" 
+                e-opacity="0.5"  >
+                <e-pointers>
+                <e-pointer e-value="40" e-length="50"></e-pointer>
+                </e-pointers>
+                <e-labels>
+                <e-label e-color="red" e-distanceFromScale="40">
+                </e-label>
+                </e-labels>
+                <e-ticks>
+                <e-tick e-distanceFromScale="80" e-color="red">
+                </e-tick>
+                </e-ticks>
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>

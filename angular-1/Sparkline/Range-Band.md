@@ -20,11 +20,12 @@ The range band feature is used to highlight a particular range along the y-axis 
     </head>
   <body ng-controller="SparkCtrl">
     <div id="container" >
-    <ej-sparkline e-rangebandsettings-startrange="4" e-rangebandsettings-endrange="30" e-rangebandsettings-color="#ff14ae" e-rangebandsettings-opacity="0.4"></ej-sparkline>
+    <ej-sparkline e-rangebandsettings-startrange="4" e-rangebandsettings-endrange="30" e-rangebandsettings-color="#ff14ae" 
+    e-rangebandsettings-opacity="0.4"></ej-sparkline>
     </div>
     <script>
-        angular.module('SparkApp', ['ejangular'])
-            .controller('SparkCtrl', function ($scope) {
+    angular.module('SparkApp', ['ejangular'])
+    .controller('SparkCtrl', function ($scope) {
                 });
     </script>
     </body>

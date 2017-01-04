@@ -24,8 +24,8 @@ EjChart supports localization for its axis labels and tooltip. To render the cha
         <div id="container" ej-chart  e-locale="fr-FR">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                         });
         </script>
     </body>

@@ -28,10 +28,10 @@ documentation: ug
     <body ng-controller="RangeCtrl">
        <div id="rangecontainer">
        <ej-rangenavigator e-valuetype="numeric"></ej-rangenavigator>
-         </div>
+       </div>
     <script>
         angular.module('RangeApp', ['ejangular'])
-            .controller('RangeCtrl', function ($scope) {
+        .controller('RangeCtrl', function ($scope) {
                 });
     </script>
    </body>
@@ -63,10 +63,10 @@ By default the **valueType** of the **RangeNavigator** is “**datetime**” and
     <body ng-controller="RangeCtrl">
        <div id="rangecontainer">
        <ej-rangenavigator e-valuetype="datetime" ></ej-rangenavigator>
-         </div>
+       </div>
     <script>
         angular.module('RangeApp', ['ejangular'])
-            .controller('RangeCtrl', function ($scope) {
+        .controller('RangeCtrl', function ($scope) {
                 });
     </script>
    </body>
@@ -102,11 +102,12 @@ By default **intervalType** for higher level labels are **years** and for lower 
     </head>
     <body ng-controller="RangeCtrl">
        <div id="rangecontainer">
-       <ej-rangenavigator  e-valuetype="datetime" e-labelsettings-higherlevel-intervaltype="years" e-labelsettings-lowerlevel-intervaltype="quarters"></ej-rangenavigator>
-         </div>
+       <ej-rangenavigator  e-valuetype="datetime" e-labelsettings-higherlevel-intervaltype="years" 
+       e-labelsettings-lowerlevel-intervaltype="quarters"></ej-rangenavigator>
+       </div>
     <script>
         angular.module('RangeApp', ['ejangular'])
-            .controller('RangeCtrl', function ($scope) {
+        .controller('RangeCtrl', function ($scope) {
                 });
     </script>
    </body>

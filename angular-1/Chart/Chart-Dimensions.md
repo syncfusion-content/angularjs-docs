@@ -32,9 +32,8 @@ You can customize the chart dimension by setting the width and height for the co
         }
         </style>
         <script>
-         
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+           .controller('ChartCtrl', function ($scope) {
                  
                 });
         </script>
@@ -55,13 +54,12 @@ You can also set the chart dimension by using the `e-size` property of the chart
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart e-size=size>
+        <div id="container" ej-chart e-size-height="450px" e-size-width="600px">
         </div>
         <script>
-            var sizeObj = { height: "450px", width: "600px" };
-            angular.module('ChartApp', ['ejangular'])
+                 angular.module('ChartApp', ['ejangular'])
                 .controller('ChartCtrl', function ($scope) {
-                    $scope.size = sizeObj;
+                   
                 });
         </script>
     </body>
@@ -85,13 +83,12 @@ You can specify the chart size in percentage by using the `e-size` property. The
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart e-size=size>
+        <div id="container" ej-chart e-size-height="80%" e-size-width="90%">
         </div>
         <script>
-            var sizeObj = { height: "80%", width: "90%" };
-            angular.module('ChartApp', ['ejangular'])
+                angular.module('ChartApp', ['ejangular'])
                 .controller('ChartCtrl', function ($scope) {
-                    $scope.size = sizeObj;
+                   
                 });
         </script>
     </body>
@@ -105,7 +102,7 @@ You can specify the chart size in percentage by using the `e-size` property. The
 
 ## Responsive chart
 
-To resize the Chart when the browser or the chart container is resized, set the `e-isResponsive` property to **true**, where the chart adapts to the changes in size of the container.
+To resize the Chart when the browser or the chart container is resized, set the `e-isresponsive` property to **true**, where the chart adapts to the changes in size of the container.
 
 {% highlight html %}
 
@@ -115,13 +112,11 @@ To resize the Chart when the browser or the chart container is resized, set the 
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart e-isResponsive= true>
+        <div id="container" ej-chart e-isresponsive= true>
         </div>
         <script>
-         
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  
+                angular.module('ChartApp', ['ejangular'])
+                .controller('ChartCtrl', function ($scope) {       
                 });
         </script>
     </body>

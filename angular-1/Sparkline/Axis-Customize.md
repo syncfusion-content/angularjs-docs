@@ -23,8 +23,8 @@ The Sparkline axis can be collapsed using visible property in `e-axislinesetting
     <ej-sparkline e-axislinesettings-visible="true" e-axislinesettings-color="#ff14ae"></ej-sparkline>
     </div>
     <script>
-        angular.module('SparkApp', ['ejangular'])
-            .controller('SparkCtrl', function ($scope) {
+    angular.module('SparkApp', ['ejangular'])
+    .controller('SparkCtrl', function ($scope) {
                 });
     </script>
     </body>

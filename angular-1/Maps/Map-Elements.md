@@ -50,10 +50,9 @@ The `e-markers` property has a list of objects that contains the data for Annota
      var markers = [
         { latitude: 37.0000, longitude: -120.0000, city: "California" },
         { latitude: 40.7127, longitude: -74.0059, city: "New York" },
-        { latitude: 42, longitude: -93, city: "Iowa" }            
-    ];
+        { latitude: 42, longitude: -93, city: "Iowa" }];  
         angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+       .controller('MapsCtrl', function ($scope) {
                 $scope.markers=markers;
                         });
     </script>
@@ -103,10 +102,9 @@ Without datasource, n number of markers can be added to shape layers with `e-mar
      var markers = [
         { latitude: 37.0000, longitude: -120.0000, city: "California" },
         { latitude: 40.7127, longitude: -74.0059, city: "New York" },
-        { latitude: 42, longitude: -93, city: "Iowa" }            
-    ];
+        { latitude: 42, longitude: -93, city: "Iowa" }];
         angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+        .controller('MapsCtrl', function ($scope) {
                 $scope.markers=markers;
                         });
     </script>
@@ -195,20 +193,22 @@ N> Tooltip and Color Mappings for bubble is to be set as similar to the tooltip 
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
-            <e-layer  e-shapedata=usMap e-shapedatapath="name" e-shapepropertypath="name" e-datasource=datasource e-enablemousehover="true"
-            e-shapesettings-fill="#9CBF4E" e-shapesettings-strokethickness="0.5" e-shapesettings-stroke="white" e-bubblesettings-showbubble="true"
-            e-bubblesettings-minvalue="20" e-bubblesettings-maxvalue="40" e-bubblesettings-color="#C99639" e-bubblesettings-valuepath="population">
-              </e-layer>
+            <e-layer  e-shapedata=usMap e-shapedatapath="name" e-shapepropertypath="name" 
+            e-datasource=datasource e-enablemousehover="true" e-shapesettings-fill="#9CBF4E" 
+            e-shapesettings-strokethickness="0.5" e-shapesettings-stroke="white" 
+            e-bubblesettings-showbubble="true" e-bubblesettings-minvalue="20" 
+            e-bubblesettings-maxvalue="40" e-bubblesettings-color="#C99639" 
+            e-bubblesettings-valuepath="population">
+            </e-layer>
         </e-layers>
     </div>
      <script>
          angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+         .controller('MapsCtrl', function ($scope) {
                 $scope.datasource=[
                     { name: "California", population: "38332521" },
                     { name: "New York", population: "19651127" },
-                    { name: "Iowa", population: "3090416" }
-                ];
+                    { name: "Iowa", population: "3090416" }];
                         });
     </script>
     </body>
@@ -290,13 +290,14 @@ N> Here, Equal Color Mapping code sample for shapeSettings with color mappings i
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
-            <e-layer e-legendsettings-showlegend="true" e-legendsettings-position="bottomLeft" e-legendsettings-height="30" e-legendsettings-width="70">
-              </e-layer>
+            <e-layer e-legendsettings-showlegend="true" e-legendsettings-position="bottomLeft" 
+            e-legendsettings-height="30" e-legendsettings-width="70">
+            </e-layer>
         </e-layers>
     </div>
      <script>
          angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+         .controller('MapsCtrl', function ($scope) {
                    });
     </script>
     </body>
@@ -334,15 +335,17 @@ N> Here, Range Color Mapping code snippet for shapeSettings with color mappings 
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
-            <e-layer e-legendsettings-showlegend="true" e-legendsettings-position="topLeft" e-legendsettings-dockonmap="true" 
-             e-legendsettings-height="15" e-legendsettings-width="150" e-legendsettings-mode="interactive" e-legendsettings-title="population"
-             e-legendsettings-leftlabel="0.5M" e-legendsettings-rightlabel="40M">
-              </e-layer>
+            <e-layer e-legendsettings-showlegend="true" e-legendsettings-position="topLeft" 
+            e-legendsettings-dockonmap="true" e-legendsettings-height="15" 
+            e-legendsettings-width="150" e-legendsettings-mode="interactive" 
+            e-legendsettings-title="population" e-legendsettings-leftlabel="0.5M" 
+            e-legendsettings-rightlabel="40M">
+            </e-layer>
         </e-layers>
     </div>
      <script>
          angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+         .controller('MapsCtrl', function ($scope) {
                    });
     </script>
     </body>
@@ -369,24 +372,25 @@ A bubble legend feature is used to provide the key (legend) for another map elem
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
-            <e-layer e-shapedata=usMap e-legendsettings-showlegend="true" e-legendsettings-type="bubble" e-bubblesettings-showbubble="true"
-            e-bubblesettings-valuepath="population" e-bubblesettings-minvalue="20" e-bubblesettings-maxvalue="40">
-             <div e-bubblesettings-colormappings-rangecolormapping>
-              <e-bubblerangecolormap e-from="500000" e-to="1000000" e-color="#9CBF4E" e-range="10688">
-               </e-bubblerangecolormap>
-               <e-bubblerangecolormap e-from="1000001" e-to="5000000" e-color="#45D6BD" e-range="19390">
-               </e-bubblerangecolormap>
-               <e-bubblerangecolormap e-from="5000001" e-to="10000000" e-color="#FF567C" e-range="18718">
-               </e-bubblerangecolormap>
-                <e-bubblerangecolormap e-from="10000001" e-to="40000000" e-color="#470F52" e-range="30716">
-               </e-bubblerangecolormap>
-              </div>
-              </e-layer>
+            <e-layer e-shapedata=usMap e-legendsettings-showlegend="true" e-legendsettings-type="bubble" 
+            e-bubblesettings-showbubble="true" e-bubblesettings-valuepath="population" 
+            e-bubblesettings-minvalue="20" e-bubblesettings-maxvalue="40">
+            <div e-bubblesettings-colormappings-rangecolormapping>
+            <e-bubblerangecolormap e-from="500000" e-to="1000000" e-color="#9CBF4E" e-range="10688">
+            </e-bubblerangecolormap>
+            <e-bubblerangecolormap e-from="1000001" e-to="5000000" e-color="#45D6BD" e-range="19390">
+            </e-bubblerangecolormap>
+            <e-bubblerangecolormap e-from="5000001" e-to="10000000" e-color="#FF567C" e-range="18718">
+            </e-bubblerangecolormap>
+            <e-bubblerangecolormap e-from="10000001" e-to="40000000" e-color="#470F52" e-range="30716">
+            </e-bubblerangecolormap>
+            </div>
+            </e-layer>
         </e-layers>
     </div>
      <script>
          angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+         .controller('MapsCtrl', function ($scope) {
                    });
     </script>
     </body>

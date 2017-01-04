@@ -34,13 +34,13 @@ You can color, all the leaf nodes with the same color by setting the `color` val
         <!--CSS and Script file References -->
     </head> 
     <body ng-controller="TreemapCtrl">
-     <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
-     <ej-treemap e-unicolormapping-color="Crimson">
-     </ej-treemap>
-     </div>
+    <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
+    <ej-treemap e-unicolormapping-color="Crimson">
+    </ej-treemap>
+    </div>
     <script>
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+    angular.module('TreemapApp', ['ejangular'])
+    .controller('TreemapCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -74,9 +74,9 @@ You can group the leaf nodes based on the range of the data’s color values. Yo
      </e-rangecolormapping>
      </ej-treemap>
      </div>
-    <script>
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+     <script>
+     angular.module('TreemapApp', ['ejangular'])
+     .controller('TreemapCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -105,12 +105,13 @@ You can differentiate all the leaf nodes using the `e-desaturationColorMapping` 
     <body ng-controller="TreemapCtrl">
      <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
      <ej-treemap e-desaturationcolormapping-color="DeepSkyBlue" e-desaturationcolormapping-from="1"
-                    e-desaturationcolormapping-to="0.2" e-desaturationcolormapping-rangeminimum="0" e-desaturationcolormapping-rangemaximum="4">
+     e-desaturationcolormapping-to="0.2" e-desaturationcolormapping-rangeminimum="0" 
+     e-desaturationcolormapping-rangemaximum="4">
      </ej-treemap>
      </div>
-    <script>
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+     <script>
+     angular.module('TreemapApp', ['ejangular'])
+     .controller('TreemapCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -142,8 +143,8 @@ You can customize the **Leaf level TreeMap items** using `e-leafItemSettings`. T
     <body ng-controller="TreemapCtrl">
      <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
      <ej-treemap e-datasource=populationdata e-colorValuePath="Growth" e-weightvaluepath="Population"
-    e-leafitemsettings-labelpath="Region" e-showtooltip="true" e-tooltiptemplate="template">
-      <e-rangecolormapping>
+     e-leafitemsettings-labelpath="Region" e-showtooltip="true" e-tooltiptemplate="template">
+     <e-rangecolormapping>
      <e-rangecolor e-color="#77D8D8" e-from="0" e-to="1"></e-rangecolor>
      <e-rangecolor e-color="#AED960" e-from="0" e-to="2"></e-rangecolor>
      <e-rangecolor e-color="#FFAF51" e-from="0" e-to="3"></e-rangecolor>
@@ -155,21 +156,21 @@ You can customize the **Leaf level TreeMap items** using `e-leafItemSettings`. T
      </ej-treemap>
      </div>
      <script  id="template" type="application/jsrender">
-        <div  style="margin-left:17px;margin-top:-45px;">      
-            <div style="height:auto;width:auto;background:black;border-radius:3px;opacity:0.6">
-                <div style="margin-top:-20px;margin-left:9px;padding-top:3px;margin-right:9px;">
-                    <label style="margin-top:-20px;font-weight:normal;font-size:12px;color:white;font-family:Segoe UI;">{{:Region}}</label>
-                </div>
-                <div style="height:10px;"></div>
-                <div style="margin-top:-10px;margin-left:9px;margin-right:9px;padding-bottom:3px;">
-                    <label style="margin-top:-10px;font-weight:normal;font-size:14px;color:white;font-family:segoe ui light;">{{:Population}}</label>
-                </div>
-            </div>
-        </div>            
+     <div  style="margin-left:17px;margin-top:-45px;">      
+     <div style="height:auto;width:auto;background:black;border-radius:3px;opacity:0.6">
+     <div style="margin-top:-20px;margin-left:9px;padding-top:3px;margin-right:9px;">
+     <label style="margin-top:-20px;font-weight:normal;font-size:12px;color:white;font-family:Segoe UI;">{{:Region}}</label>
+     </div>
+     <div style="height:10px;"></div>
+     <div style="margin-top:-10px;margin-left:9px;margin-right:9px;padding-bottom:3px;">
+     <label style="margin-top:-10px;font-weight:normal;font-size:14px;color:white;font-family:segoe ui light;">{{:Population}}</label>
+     </div>
+     </div>
+     </div>            
     </script>
     <script>
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+    angular.module('TreemapApp', ['ejangular'])
+    .controller('TreemapCtrl', function ($scope) {
                         });
     </script>
     </body>

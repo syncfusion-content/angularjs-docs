@@ -25,8 +25,8 @@ To render a Line type Sparkline, set the `e-type` as **line**. To change the col
     <ej-sparkline e-width="3" e-fill="#33ccff"></ej-sparkline>
     </div>
     <script>
-        angular.module('SparkApp', ['ejangular'])
-            .controller('SparkCtrl', function ($scope) {
+    angular.module('SparkApp', ['ejangular'])
+    .controller('SparkCtrl', function ($scope) {
                 });
     </script>
 </body>
@@ -52,8 +52,8 @@ To render a Column Sparkline, set the type as **column** To change the color of 
     <ej-sparkline e-type="column" e-fill="#33ccff"></ej-sparkline>
     </div>
     <script>
-        angular.module('SparkApp', ['ejangular'])
-            .controller('SparkCtrl', function ($scope) {
+    angular.module('SparkApp', ['ejangular'])
+    .controller('SparkCtrl', function ($scope) {
                 });
     </script>
     </body>
@@ -79,8 +79,8 @@ To render an Area Sparkline, you can specify the type as **area**. To change the
     <ej-sparkline e-type="area" e-fill="#69D2E7"></ej-sparkline>
     </div>
     <script>
-        angular.module('SparkApp', ['ejangular'])
-            .controller('SparkCtrl', function ($scope) {
+    angular.module('SparkApp', ['ejangular'])
+    .controller('SparkCtrl', function ($scope) {
                 });
     </script>
     </body>
@@ -106,8 +106,8 @@ WinLoss Sparkline render as a column segment and it show the positive, negative 
     <ej-sparkline e-type="winloss" e-fill="#69D2E7"></ej-sparkline>
     </div>
     <script>
-        angular.module('SparkApp', ['ejangular'])
-            .controller('SparkCtrl', function ($scope) {
+    angular.module('SparkApp', ['ejangular'])
+    .controller('SparkCtrl', function ($scope) {
                 });
     </script>
     </body>
@@ -133,9 +133,9 @@ You can create a pie type sparkline by setting the type as **pie**. Colors for t
     <ej-sparkline e-type="pie" e-palette="palette"></ej-sparkline>
     </div>
     <script>
-        angular.module('SparkApp', ['ejangular'])
-            .controller('SparkCtrl', function ($scope) {
-                $scope.palette=["#ff3399", "#33ccff"];
+    angular.module('SparkApp', ['ejangular'])
+    .controller('SparkCtrl', function ($scope) {
+           $scope.palette=["#ff3399", "#33ccff"];
                 });
     </script>
    </body>

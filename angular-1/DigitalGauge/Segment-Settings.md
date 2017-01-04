@@ -26,14 +26,15 @@ documentation: ug
         <div id="digitalframe">
                  <ej-digitalgauge >
                  <e-items>
-                 <e-item e-value="GO AHEAD" e-segmentsettings-color="green" e-segmentsettings-spacing="4" e-segmentsettings-opacity="0.1">
+                 <e-item e-value="GO AHEAD" e-segmentsettings-color="green" e-segmentsettings-spacing="4" 
+                 e-segmentsettings-opacity="0.1">
                  </e-item>
                  </e-items>
                  </ej-digitalgauge>
         </div>
-         <script >
+        <script>
         angular.module('DigitalGaugeApp', ['ejangular'])
-       .controller('DigitalGaugeCtrl', function ($scope) {
+        .controller('DigitalGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -69,9 +70,9 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
                  </e-items>
                  </ej-digitalgauge>
         </div>
-         <script >
+        <script>
         angular.module('DigitalGaugeApp', ['ejangular'])
-       .controller('DigitalGaugeCtrl', function ($scope) {
+        .controller('DigitalGaugeCtrl', function ($scope) {
          });
     </script>
     </body>

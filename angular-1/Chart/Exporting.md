@@ -22,22 +22,22 @@ In client-side rendered chart can be exported as PNG image or as SVG file.
 {% highlight html %}
 <body>
     <!--Chart download link-->
-    <a id="download" style="cursor: pointer; position: absolute;right: 150px;">ExportChart</a>
-   <div id="container" ej-chart e-enablecanvasrendering="true" e-exporting="exporting" >
-    </div>
-<script>
-         angular.module('syncApp', ['ejangular'])
-               .controller('Chart', function ($scope) {
-                   $scope.exporting = { type: "png", mode: "client", fileName: "ChartSnapshot" };
-                  });
-        function download() {
-            var canvas = $("#container").ejChart("export");
-            this.href = canvas.toDataURL();
-        }
-        if (document.getElementById('download').addEventListener)
-            document.getElementById('download').addEventListener('click', download, false);
-        else
-            document.getElementById('download').attachEvent('onclick', download, false);
+   <a id="download" style="cursor: pointer; position: absolute;right: 150px;">ExportChart</a>
+   <div id="container" ej-chart e-enablecanvasrendering="true" e-exportsettings-type="png"
+   e-exportsettings-mode="client" e-exportsettings-filename="ChartSnapshot" >
+   </div>
+   <script>
+   angular.module('syncApp', ['ejangular'])
+   .controller('Chart', function ($scope) {
+       });
+   function download() {
+    var canvas = $("#container").ejChart("export");
+    this.href = canvas.toDataURL();
+   }
+   if (document.getElementById('download').addEventListener)
+       document.getElementById('download').addEventListener('click', download, false);
+   else
+       document.getElementById('download').attachEvent('onclick', download, false);
     </script>
 </body>
 
@@ -65,16 +65,16 @@ Server-side operation can be done by using the server-side frameworks such as We
     <a id="download" style="cursor: pointer; position:absolute;">
         <button onclick="download()" value="Export">Export</button>
     </a>
-   <div id="container" ej-chart e-enablecanvasrendering="true" e-exporting="exporting" >
-    </div>
-    <script>             
-             angular.module('syncApp', ['ejangular'])
-               .controller('Chart', function ($scope) {
-                  $scope.exporting = { type: "jpg", action: window.baseurl + 'api/Chart/ImageExport' };
+   <div id="container" ej-chart e-enablecanvasrendering="true" e-exportsettings-type="jpg"
+   e-exportsettings-action = window.baseurl + 'api/Chart/ImageExport' >
+   </div>
+   <script>             
+   angular.module('syncApp', ['ejangular'])
+   .controller('Chart', function ($scope) {       
                   });
-         function download() {
-          $("#container").ejChart("export");
-                }
+   function download() {
+    $("#container").ejChart("export");
+              }
     </script>
 </body>
 
@@ -100,7 +100,8 @@ public void ExportChart(string Data, string ChartModel)
                 data = System.Uri.UnescapeDataString(Data);
                 oStringWriter.WriteLine(System.Uri.UnescapeDataString(Data));
                 Response.ContentType = "text/plain";
-                Response.AddHeader("Content-Disposition", String.Format("attachment;filename={0}", (obj.ExportSettings.FileName + ".svg")));
+                Response.AddHeader("Content-Disposition", String.Format("attachment;filename={0}",
+                (obj.ExportSettings.FileName + ".svg")));
                 Response.Clear();
                 using (StreamWriter writer = new StreamWriter(Response.OutputStream))
                 {
@@ -138,7 +139,8 @@ public void ExportChart(string Data, string ChartModel)
                     else
                         section.PageSetup.Orientation = PageOrientation.Portrait;
                     paragraph.AppendPicture(Image.FromStream(stream));
-                    document.Save(fileName + ".doc", Syncfusion.DocIO.FormatType.Doc, HttpContext.ApplicationInstance.Response, Syncfusion.DocIO.HttpContentDisposition.Attachment);
+                    document.Save(fileName + ".doc", Syncfusion.DocIO.FormatType.Doc,
+                    HttpContext.ApplicationInstance.Response,Syncfusion.DocIO.HttpContentDisposition.Attachment);
                 }
                 else if (type == "pdf")      // to export as PDF
                 {
@@ -149,14 +151,16 @@ public void ExportChart(string Data, string ChartModel)
                     else
                         pdfDoc.Pages[0].Section.PageSettings.Orientation = PdfPageOrientation.Portrait;
                     pdfDoc.Pages[0].Graphics.DrawImage(PdfImage.FromStream(stream), new PointF(10, 30));
-                    pdfDoc.Save(obj.ExportSettings.FileName + ".pdf", HttpContext.ApplicationInstance.Response, HttpReadType.Save);
+                    pdfDoc.Save(obj.ExportSettings.FileName + ".pdf", HttpContext.ApplicationInstance.Response,
+                    HttpReadType.Save);
                     pdfDoc.Close();
                 }
                 else                        // to export as image
                 {
                     stream.WriteTo(Response.OutputStream);
                     Response.ContentType = "application/octet-stream";
-                    Response.AddHeader("Content-Disposition", String.Format("attachment;filename={0}", fileName + "." + type));
+                    Response.AddHeader("Content-Disposition", String.Format("attachment;filename={0}",
+                    fileName + "." + type));
                     Response.Flush();
                     stream.Close();
                     stream.Dispose();
@@ -171,7 +175,8 @@ public void ExportChart(string Data, string ChartModel)
             ChartProperties chartProp = new ChartProperties();
             foreach (KeyValuePair<string, object> ds in div)
             {
-                var property = chartProp.GetType().GetProperty(ds.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+                var property = chartProp.GetType().GetProperty(ds.Key, BindingFlags.Instance 
+                | BindingFlags.Public | BindingFlags.IgnoreCase);
                 if (property != null)
                 {
                     Type type = property.PropertyType;
@@ -200,19 +205,20 @@ N> Refer the MultipleExportType.AppendToSheet, MultipleExportType.NewSheet.
 
 {% highlight javascript %}
     //Render Chart1
-     <div id="container1" ej-chart e-enablecanvasrendering="true" e-exporting="exporting" >
+     <div id="container1" ej-chart e-enablecanvasrendering="true" 
+     e-exportsettings-type="xlsx"
+     e-exportsettings-action=window.baseurl + 'api/Chart/ExcelExport' >
     </div>
      //Render Chart2
-      <div id="container2" ej-chart >
+    <div id="container2" ej-chart >
     </div>
        //Export multiple chart to excel
-       angular.module('syncApp', ['ejangular'])
-               .controller('Chart', function ($scope) {
-                  $scope.exporting = { type: "xlsx", action: window.baseurl + 'api/Chart/ExcelExport' };
-                  });
-         function download() {
-         var chart = $("#container1").ejChart("instance");
-          chart.export('Excel',window.baseurl + 'api/Chart/ExcelExport', true);
+    angular.module('syncApp', ['ejangular'])
+    .controller('Chart', function ($scope) {
+             });
+    function download() {
+    var chart = $("#container1").ejChart("instance");
+    chart.export('Excel',window.baseurl + 'api/Chart/ExcelExport', true);
                 }
 
 {% endhighlight %}
@@ -274,16 +280,16 @@ We can also rotate the chart and can export it. Possible angles of rotation are 
     <a id="download" style="cursor: pointer; position:absolute;">
         <button onclick="download()" value="Export">Export</button>
     </a>
-   <div id="container" ej-chart e-enablecanvasrendering="true" e-exporting="exporting" >
-    </div>
-    <script>             
-             angular.module('syncApp', ['ejangular'])
-               .controller('Chart', function ($scope) {
-                  $scope.exporting = { angle:"180", action: window.baseurl + 'api/Chart/PdfExport' };
-                  });
-         function download() {
-          $("#container").ejChart("export");
-                }
+   <div id="container" ej-chart e-enablecanvasrendering="true" e-exportsettings-angle="180"
+   e-exportsettings-action=  window.baseurl + 'api/Chart/PdfExport'  >
+   </div>
+   <script>             
+   angular.module('syncApp', ['ejangular'])
+   .controller('Chart', function ($scope) {
+               });
+   function download() {
+   $("#container").ejChart("export");
+           }
     </script>
 </body>
 

@@ -23,12 +23,12 @@ To render a Line Chart, set the series `e-type` as **"line"** in the chart serie
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="line" e-fill="#E94649"></e-series>
+        <e-series  e-type="line" e-fill="#E94649"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -54,12 +54,12 @@ To change the width of the line segment, you can use the `e-width` property in t
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="line" e-width="3"></e-series>
+        <e-series  e-type="line" e-width="3"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -86,12 +86,12 @@ To render the line series with dotted lines, you can use the `e-dashArray` optio
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="line" e-dashArray="5,5"></e-series>
+        <e-series  e-type="line" e-dasharray="5,5"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -118,12 +118,12 @@ For customizing the start and end caps of the line segment, you can use the `e-l
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-lineCap="square"></e-series>
+        <e-series  e-linecap="square"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -150,12 +150,12 @@ You can use the `e-linejoin` property to specify how two intersecting line segme
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-lineJoin="round"></e-series>
+        <e-series  e-linejoin="round"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -182,14 +182,17 @@ html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-points="points"></e-series>
+        <e-series>
+        <e-points>
+        <e-points e-fill="red">
+        </e-points>
+        </e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                   $scope.points=[{ fill: 'red' },
-                   //];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+               
                 });
         </script>
     </body>
@@ -215,12 +218,12 @@ To render a Step Line Chart, set the series `e-type` as **"stepline"** in the ch
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="stepline" e-fill="#E94649"></e-series>
+        <e-series  e-type="stepline" e-fill="#E94649"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -246,12 +249,12 @@ To change the line width, you can use the **width** property.
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-width="3"></e-series>
+        <e-series  e-width="3"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -276,12 +279,12 @@ To render the step line series with dotted lines, you can use the `e-dasharray` 
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-dashArray="5,5"></e-series>
+        <e-series  e-dashArray="5,5"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -310,12 +313,12 @@ For customizing the start and end caps of the line segment, you can use the `e-l
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-lineCap="square"></e-series>
+        <e-series  e-lineCap="square"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -342,12 +345,12 @@ You can use the `e-linejoin` property to specify how two intersecting line segme
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-lineJoin="round"></e-series>
+        <e-series  e-linejoin="round"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -374,12 +377,12 @@ To render an Area chart, you can specify the series `e-type` as **"area"** in th
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="area"  e-fill = "#69D2E7"></e-series>
+        <e-series  e-type="area"  e-fill = "#69D2E7"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -415,13 +418,13 @@ Since the RangeArea series requires two y values for a point, you have to add th
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="rangeArea"  e-datasource="dataSource" e-xName="x"  e-high="high"  e-low="low" e-fill="Indigo"></e-series>
+        <e-series  e-type="rangeArea"  e-datasource="dataSource" e-xName="x"  e-high="high" 
+        e-low="low" e-fill="Indigo"></e-series>
         </e-series>
         </div>
         <script>
- var chartData=[{ x: 1935, high:80, low:70},
-                   { x: 1945, high:60, low:50},
-                   ];
+         var chartData=[{ x: 1935, high:80, low:70},
+                        { x: 1945, high:60, low:50}];
             angular.module('ChartApp', ['ejangular'])
                 .controller('ChartCtrl', function ($scope) {
                      $scope.dataSource=chartData;
@@ -451,13 +454,12 @@ To render a Step Area Chart, set the `e-type` as **"stepArea"** in the chart ser
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="stepArea"  e-fill="#69D2E7"></e-series>
+        <e-series  e-type="stepArea"  e-fill="#69D2E7"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                  
                 });
         </script>
@@ -486,13 +488,12 @@ To render a Spline Area Chart, set the `e-type` as **"splineArea"** in the chart
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="splineArea"  e-fill="#C4C24A"></e-series>
+        <e-series  e-type="splineArea"  e-fill="#C4C24A"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {                  
                  
                 });
         </script>
@@ -518,13 +519,12 @@ To render a Stacked Area Chart, set the `e-type` as **"stackingArea"** in the ch
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="stackingArea"  e-fill="#69D2E7"></e-series>
+        <e-series  e-type="stackingArea"  e-fill="#69D2E7"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {      
                  
                 });
         </script>
@@ -550,13 +550,13 @@ To render a 100% Stacked Area Chart, set the `e-type` as **"stackingArea100"** i
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="stackingArea100"  e-fill="#C4C24A"></e-series>
+        <e-series  e-type="stackingArea100"  e-fill="#C4C24A"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-             
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+            
                 });
         </script>
     </body>
@@ -585,8 +585,8 @@ To render a Column Chart, set the `e-type` as **"column"** in the chart series. 
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+       .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -613,15 +613,16 @@ You can change the color of a column by using the `fill` property of the point.
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart >
         <e-series>
-        <e-series e-points="points"></e-series>
+        <e-points>
+        <e-points e-fill="skyblue" ></e-points>
+        //...
+        </e-points>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.points=[
-                      { fill: 'skyblue' }, //...
-                     }];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                 
                    });
         </script>
     </body>
@@ -650,12 +651,12 @@ N> Width of a column also depends upon the `e-columnSpacing` property, because `
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart e-commonseriesoptions-columnwidth="0.7">
         <e-series>
-            <e-series  e-columnwidth="0.8"></e-series>
+        <e-series  e-columnwidth="0.8"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -680,8 +681,8 @@ Corners of the column chart can be customized by setting value to the `e-cornerr
         <div id="container" ej-chart e-commonseriesoptions-cornerradius="20" >
          </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -708,12 +709,12 @@ N> Column spacing will also affect the width of the column. For example, setting
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart e-commonseriesoptions-columnspacing="0">
         <e-series>
-            <e-series  e-columnspacing="0.2"></e-series>
+        <e-series  e-columnspacing="0.2"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -743,12 +744,12 @@ The following chart types can be rendered as cylinder in both 2D and in 3D view.
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart >
         <e-series>
-            <e-series  e-type="column" e-columnfacet="cylinder"></e-series>
+        <e-series  e-type="column" e-columnfacet="cylinder"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -779,16 +780,15 @@ Since, the RangeColumn series requires two y values for a point, add the `e-high
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="rangeColumn"  e-datasource="dataSource" e-xName="x"  e-high="high"  e-low="low" e-fill="#E94649"></e-series>
+        <e-series  e-type="rangeColumn"  e-datasource="dataSource" e-xName="x"  e-high="high"  
+        e-low="low" e-fill="#E94649"></e-series>
         </e-series>
         </div>
         <script>
- var chartData=[{ x: 1935, high:80, low:70},
-                   { x: 1945, high:60, low:50},
-                   ];
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  
+         var chartData=[{ x: 1935, high:80, low:70},
+                        { x: 1945, high:60, low:50}];
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {               
                    $scope.dataSource=chartData;
                 });
         </script>
@@ -814,7 +814,10 @@ To change the color of a range column, you can use the `fill` property of point.
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart >
         <e-series>
-        <e-series e-points="points"></e-series>
+        <e-points>
+        <e-points e-fill="skyblue" ></e-points>
+        //...
+        </e-points>
         </e-series>
         </div>
         <script>
@@ -848,12 +851,12 @@ To render a Stacked Column Chart, set the `e-type` as **"stackingColumn"** in th
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="stackingColumn"  e-fill="#E94649"></e-series>
+         <e-series  e-type="stackingColumn"  e-fill="#E94649"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -880,12 +883,12 @@ You can use the `e-stackinggroup` property to group the stacked columns. Columns
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series e-stackinggroup="GroupOne"></e-series>
+        <e-series e-stackinggroup="GroupOne"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -913,15 +916,16 @@ To change the color of a stacking column, you can use the `fill` property of the
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart >
         <e-series>
-        <e-series e-points="points"></e-series>
+        <e-points>
+        <e-points e-fill="skyblue" ></e-points>
+        //...
+        </e-points>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.points=[
-                      { fill: 'skyblue' }, //...
-                     }];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+             
                    });
         </script>
     </body>
@@ -947,12 +951,12 @@ To render a 100% Stacked Column Chart, set the `e-type` as **"stackingColumn100"
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="stackingcolumn100"  e-fill="#E94649"></e-series>
+        <e-series  e-type="stackingcolumn100"  e-fill="#E94649"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -979,13 +983,13 @@ By using the `e-stackinggroup` property, you can group the 100% stacking columns
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-stackinggroup="GroupOne"></e-series>
-             <e-series  e-stackinggroup="GroupOne"></e-series>
+        <e-series  e-stackinggroup="GroupOne"></e-series>
+        <e-series  e-stackinggroup="GroupOne"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -1013,16 +1017,17 @@ To change the color of a 100% stacking column, you can use the `fill` property o
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart >
         <e-series>
-        <e-series e-points="points"></e-series>
+        <e-points>
+        <e-points e-fill="skyblue" ></e-points>
+        //...
+        </e-points>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.points=[
-                      { fill: 'skyblue' }, //...
-                     }];
-                   });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+
+        });         
         </script>
     </body>
 </html>
@@ -1045,12 +1050,12 @@ To render a bar Chart, set the `e-type` as **"bar"** in the chart series. To cha
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="bar" e-fill="#E94649"></e-series>            
+        <e-series  e-type="bar" e-fill="#E94649"></e-series>            
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -1075,16 +1080,17 @@ By using the `fill` property of the point, you can change the specific point of 
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart >
         <e-series>
-        <e-series e-points="points"></e-series>
+        <e-points>
+        <e-points e-fill="skyblue" ></e-points>
+        //...
+        </e-points>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.points=[
-                      { fill: 'skyblue' }, //...
-                     }];
-                   });
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
+              
+            });
         </script>
     </body>
 </html>
@@ -1109,12 +1115,12 @@ To render a Stacked Bar Chart, set the `e-type` as **"stackingBar"** in the char
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="stackingBar" e-fill="#E94649"></e-series>            
+        <e-series  e-type="stackingBar" e-fill="#E94649"></e-series>            
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -1143,13 +1149,13 @@ You can use the `e-stackinggroup` property to group the stacking bars with the s
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-stackinggroup="GroupOne"></e-series>
-             <e-series  e-stackinggroup="GroupOne"></e-series>
+        <e-series  e-stackinggroup="GroupOne"></e-series>
+        <e-series  e-stackinggroup="GroupOne"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -1176,15 +1182,16 @@ You can change the color of a stacking bar by using the `fill` property of the p
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart >
         <e-series>
-        <e-series e-points="points"></e-series>
+        <e-points>
+        <e-points e-fill="skyblue" ></e-points>
+        //...
+        </e-points>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.points=[
-                      { fill: 'skyblue' }, //...
-                     }];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                
                    });
         </script>
     </body>
@@ -1209,12 +1216,12 @@ To render a 100% Stacked Bar Chart, set the `e-type` as **"stackingBar100"** in 
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="stackingBar100" e-fill="#E94649"></e-series>            
+        <e-series  e-type="stackingBar100" e-fill="#E94649"></e-series>            
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -1239,13 +1246,13 @@ By using the `e-stackingGroup` property, you can group the 100% stacking bars wi
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-stackinggroup="GroupOne"></e-series>
-             <e-series  e-stackinggroup="GroupOne"></e-series>
+        <e-series  e-stackinggroup="GroupOne"></e-series>
+        <e-series  e-stackinggroup="GroupOne"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -1272,15 +1279,16 @@ To change the color of a 100% stacking bar, you can use the `fill` property of t
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart >
         <e-series>
-        <e-series e-points="points"></e-series>
+        <e-points>
+        <e-points e-fill="skyblue" ></e-points>
+        //...
+        </e-points>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.points=[
-                      { fill: 'skyblue' }, //...
-                     }];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                
                    });
         </script>
     </body>
@@ -1306,12 +1314,12 @@ To render a Spline Chart, set the `e-type` as **"spline"** in the chart series. 
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="spline" e-fill="#6ADCB0"></e-series>            
+        <e-series  e-type="spline" e-fill="#6ADCB0"></e-series>            
         </e-series>
         </div>
         <script>
-           angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -1337,12 +1345,12 @@ To change the spline segment width, you can use the `e-width` property of the se
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="spline" e-fill="#6ADCB0" e-width="3"></e-series>            
+        <e-series  e-type="spline" e-fill="#6ADCB0" e-width="3"></e-series>            
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -1370,13 +1378,12 @@ To render the spline series with dotted lines, you can use the `e-dasharray` opt
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="spline" e-dasharray="5,5"></e-series>            
+        <e-series  e-type="spline" e-dasharray="5,5"></e-series>            
         </e-series>
         </div>
         <script>
-
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -1404,13 +1411,12 @@ You can create a pie chart by setting the series `e-type` as **"pie"** in the ch
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="pie"></e-series>            
+        <e-series  e-type="pie"></e-series>            
         </e-series>
         </div>
         <script>
-
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -1437,13 +1443,12 @@ You can use the `e-pieCoefficient` property to change the diameter of the Pie ch
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="pie" e-piecoefficient="0.4"></e-series>            
+        <e-series  e-type="pie" e-piecoefficient="0.4"></e-series>            
         </e-series>
         </div>
         <script>
-
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+          angular.module('ChartApp', ['ejangular'])
+          .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -1470,13 +1475,12 @@ You can explode a pie segment on the chart load by using the `e-explodeindex` of
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-explodeindex="1"></e-series>            
+        <e-series  e-explodeindex="1"></e-series>            
         </e-series>
         </div>
         <script>
-
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -1502,13 +1506,12 @@ To explode all the segments of the Pie chart, you can enable the `e-explodeall` 
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-explodeall="true"></e-series>            
+        <e-series  e-explodeall="true"></e-series>            
         </e-series>
         </div>
         <script>
-
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -1533,13 +1536,12 @@ To explode a pie segment on a mouse over, you can enable the `e-explode` propert
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-explode="true"></e-series>   
+        <e-series  e-explode="true"></e-series>   
         </e-series>
         </div>
         <script>
-
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -1565,13 +1567,12 @@ EjChart allows you to render all the data points/segments in the semi-pie, quart
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="pie" e-startangle="-90" e-endangle="90"></e-series>
-       </e-series>
+        <e-series  e-type="pie" e-startangle="-90" e-endangle="90"></e-series>
+        </e-series>
         </div>
         <script>
-
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
              
                 });
         </script>
@@ -1596,12 +1597,12 @@ To create a Doughnut chart, you can specify the series `e-type` as **"doughnut"*
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="doughnut"></e-series>
-         </e-series>
+        <e-series  e-type="doughnut"></e-series>
+        </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -1626,12 +1627,12 @@ You can change the doughnut chart inner radius by using the `e-doughnutcoefficie
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="doughnut" e-doughnutcoefficient="0.6"></e-series>
-         </e-series>
+        <e-series  e-type="doughnut" e-doughnutcoefficient="0.6"></e-series>
+        </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -1655,12 +1656,12 @@ You can use the `e-doughnutsize` property to change the diameter of the Doughnut
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="doughnut" e-doughnutsize="0.4"></e-series>
+        <e-series  e-type="doughnut" e-doughnutsize="0.4"></e-series>
          </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -1685,12 +1686,12 @@ To explode a specific doughnut segment, set the index to be exploded by using th
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="doughnut" e-explodeindex="1"></e-series>
-         </e-series>
+        <e-series  e-type="doughnut" e-explodeindex="1"></e-series>
+        </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -1714,12 +1715,12 @@ To explode all the segments, you can enable the `e-explodeall` property of the s
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="doughnut" e-explodeall="true"></e-series>
-         </e-series>
+        <e-series  e-type="doughnut" e-explodeall="true"></e-series>
+        </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -1743,12 +1744,12 @@ To explode a doughnut segment on a mouse over, you can enable the `e-explode` pr
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="doughnut" e-explode="true"></e-series>
-         </e-series>
+        <e-series  e-type="doughnut" e-explode="true"></e-series>
+        </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -1773,12 +1774,12 @@ EjChart allows you to render all the data points/segments in the semi-doughnut, 
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="doughnut" e-startangle="-90" e-endangle="90"></e-series>
+        <e-series  e-type="doughnut" e-startangle="-90" e-endangle="90"></e-series>
          </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -1804,13 +1805,13 @@ EjChart provides support to render more than one series in pie and in doughnut c
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="pie"></e-series>
-             <e-series  e-type="pie"></e-series>
-         </e-series>
+        <e-series  e-type="pie"></e-series>
+        <e-series  e-type="pie"></e-series>
+        </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -1852,12 +1853,12 @@ To create a Pyramid chart, you can specify the series `e-type` as **"pyramid"** 
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="pyramid"></e-series>
+        <e-series  e-type="pyramid"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -1881,12 +1882,12 @@ Pyramid mode has two types, *linear* and *surface* respectively. The default **"
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="pyramid" e-pyramidmode="surface"></e-series>
+        <e-series  e-type="pyramid" e-pyramidmode="surface"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -1911,12 +1912,12 @@ You can control the gap between the segments by using the `e-gapratio` option of
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="pie" e-gapratio="0.1"></e-series>
+        <e-series  e-type="pie" e-gapratio="0.1"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -1940,12 +1941,12 @@ You can explode a pyramid segment on the chart load by using the `e-explodeindex
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="pie"  e-explodeindex="4"></e-series>
+        <e-series  e-type="pyramid"  e-explodeindex="4"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -1970,12 +1971,12 @@ You can create a funnel chart by setting the series `e-type` as **"funnel"** in 
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="funnel"></e-series>
+        <e-series  e-type="funnel"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -1999,13 +2000,12 @@ Funnel segments height and width is calculated from the chart size, by default. 
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="funnel" e-funnelheight="22%" e-funnelwidth="25%"></e-series>
-           
-         </e-series>
+        <e-series  e-type="funnel" e-funnelheight="22%" e-funnelwidth="25%"></e-series>     
+        </e-series> 
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -2030,12 +2030,12 @@ You can explode a funnel segment on the chart load by using the `e-explodeindex`
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="funnel" e-explodeindex="3"></e-series>
+        <e-series  e-type="funnel" e-explodeindex="3"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -2059,8 +2059,9 @@ To create a Bubble chart, you can set the series `e-type` as **"bubble"** in the
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="bubble" e-datasource="datasource" e-xname="month" e-yname="sales" e-size="profit" ></e-series>
-         </e-series>
+        <e-series  e-type="bubble" e-datasource="datasource" e-xname="month" e-yname="sales"
+        e-size="profit" ></e-series>
+        </e-series>
         </div>
         <script>
          var chartData = [
@@ -2070,9 +2071,9 @@ To create a Bubble chart, you can set the series `e-type` as **"bubble"** in the
                 { month: 'Apr', sales: 32, profit:1.10 },
                // ...     
         ];
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.datasource=chartData;
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+               $scope.datasource=chartData;
                    });
         </script>
     </body>
@@ -2098,12 +2099,12 @@ To create a Scatter chart, you can set the series `e-type` as **"scatter"**’ i
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="scatter" ></e-series>
+        <e-series  e-type="scatter" ></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -2127,17 +2128,13 @@ You can change the scatter size by using the `e-size` property of the series mar
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="scatter" e-marker="marker" e-fill="#41F282"></e-series>
+        <e-series  e-type="scatter" e-marker-size-height="13" e-marker-size-width="13" 
+        e-fill="#41F282"></e-series>
         </e-series>
         </div>
         <script>
             angular.module('ChartApp', ['ejangular'])
                 .controller('ChartCtrl', function ($scope) {
-                    $scope.marker={
-                          //Change the scatter size
-                          size: { height: 13, width: 13 }
-
-                    }
                    });
         </script>
     </body>
@@ -2163,8 +2160,9 @@ To create a HiLoOpenClose chart, you can set the series `e-type` as **"hiloopenc
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="hiloopenclose" e-datasource="datasource" e-xname="month" e-high="high" e-low="low" e-open="open" e-close="close" ></e-series>
-         </e-series>
+        <e-series  e-type="hiloopenclose" e-datasource="datasource" e-xname="month" e-high="high" 
+        e-low="low" e-open="open" e-close="close" ></e-series>
+        </e-series>
         </div>
         <script>
          var chartData = [
@@ -2174,8 +2172,8 @@ To create a HiLoOpenClose chart, you can set the series `e-type` as **"hiloopenc
             { month: 'Apr', high: 52, low: 21, open: 35, close: 29  },
             // ...    
          ];
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
                     $scope.datasource=chartData;
                    });
         </script>
@@ -2201,12 +2199,12 @@ You can change the HiLoOpenClose chart `e-drawMode` to `open`, `close` or *both*
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="hiloopenclose" e-drawmode="open" ></e-series>
+        <e-series  e-type="hiloopenclose" e-drawmode="open" ></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
                     });
         </script>
     </body>
@@ -2231,12 +2229,13 @@ HiLoOpenClose chart `e-bullFillColor` is used to specify a fill color for the se
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="hiloopenclose" e-bullfillcolor="#FF6600" e-bearfillcolor="#336600"></e-series>
+        <e-series  e-type="hiloopenclose" e-bullfillcolor="#FF6600" e-bearfillcolor="#336600">
+        </e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                            });
         </script>
     </body>
@@ -2261,7 +2260,8 @@ You can create a Candle chart by specifying the series `e-type` as **"candle"** 
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="candle" e-datasource="datasource" e-xname="month" e-high="high" e-low="low" e-open="open" e-close="close" ></e-series>
+        <e-series  e-type="candle" e-datasource="datasource" e-xname="month" e-high="high" 
+         e-low="low" e-open="open" e-close="close" ></e-series>
          </e-series>
         </div>
         <script>
@@ -2272,8 +2272,8 @@ You can create a Candle chart by specifying the series `e-type` as **"candle"** 
             { month: 'Apr', high: 52, low: 21, open: 35, close: 29  },
             // ...    
          ];
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
                     $scope.datasource=chartData;
                    });
         </script>
@@ -2299,12 +2299,12 @@ Candle chart `e-bullFillColor` is used to specify a fill color for the segments 
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="candle" e-bullfillcolor="#FF6600" e-bearfillcolor="#336600"></e-series>
+        <e-series  e-type="candle" e-bullfillcolor="#FF6600" e-bearfillcolor="#336600"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         angular.module('ChartApp', ['ejangular'])
+            .controller('ChartCtrl', function ($scope) {
                            });
         </script>
     </body>
@@ -2329,8 +2329,9 @@ HiLo chart is created by setting the series `e-type` as **"hilo"** in the chart 
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="high" e-datasource="datasource" e-xname="month" e-high="high" e-low="low" ></e-series>
-         </e-series>
+        <e-series  e-type="high" e-datasource="datasource" e-xname="month" e-high="high" 
+        e-low="low"></e-series>
+        </e-series>
         </div>
         <script>
          var chartData = [
@@ -2340,8 +2341,8 @@ HiLo chart is created by setting the series `e-type` as **"hilo"** in the chart 
               { month: 'Apr', high: 32, low: 21 },
               // ...      
          ];
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
                     $scope.datasource=chartData;
                    });
         </script>
@@ -2368,12 +2369,12 @@ Polar chart is created by setting the series `e-type` as **polar** in the chart 
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="polar"></e-series>
+        <e-series  e-type="polar"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                            });
         </script>
     </body>
@@ -2398,12 +2399,12 @@ Polar `e-drawType`property is used to change the series plotting type to *line*,
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="polar" e-drawtype="column"></e-series>
+        <e-series  e-type="polar" e-drawtype="column"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                            });
         </script>
     </body>
@@ -2428,12 +2429,12 @@ By using the `e-isStacking` property, you can specify whether the column has to 
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="polar" e-isstacking="true"></e-series>
+        <e-series  e-type="polar" e-isstacking="true"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                            });
         </script>
     </body>
@@ -2458,12 +2459,12 @@ To create a Radar chart, you can specify the series `e-type` as **"radar"** in t
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="radar" ></e-series>
+        <e-series  e-type="radar" ></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                            });
         </script>
     </body>
@@ -2489,12 +2490,12 @@ Radar `e-drawType` property is used to change the series plotting type to *line*
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="radar" e-drawtype="column"></e-series>
+        <e-series  e-type="radar" e-drawtype="column"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                            });
         </script>
     </body>
@@ -2520,12 +2521,12 @@ By using the `e-isStacking` property, you can specify whether the column has to 
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="radar" e-isstacking="true"></e-series>
+        <e-series  e-type="radar" e-isstacking="true"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                            });
         </script>
     </body>
@@ -2552,12 +2553,12 @@ N> The inline property of the **series.positiveFill** has the first priority and
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="waterfall" e-fill="#C64E4A" e-positivefill="#C64E4A"></e-series>
+        <e-series  e-type="waterfall" e-fill="#C64E4A" e-positivefill="#C64E4A"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                            });
         </script>
     </body>
@@ -2585,19 +2586,15 @@ To display the summary of values since the last intermediate point of the waterf
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart >
         <e-series>
-        <e-series e-points="points"></e-series>
+        <e-points>
+        <e-points e-x="Intermediate sum" e-showIntermediateSum= "true"></e-points>
+        <e-points>
         </e-series>
         </div>
         <script>
                 angular.module('ChartApp', ['ejangular'])
                 .controller('ChartCtrl', function ($scope) {
-                  $scope.points=[
-                        //Enable showIntermediateSum in to a point.
-                        //  ...
-                        { x: "Intermediate sum",showIntermediateSum: true }
-                        //  ...        
-                   ];
-                   });
+                    });
         </script>
     </body>
 </html>
@@ -2620,19 +2617,15 @@ The sum of all previous point in the waterfall series is displayed on enabling t
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart >
         <e-series>
-        <e-series e-points="points"></e-series>
+        <e-points>
+        <e-points e-x="Total sum" e-showtotalSum= "true"></e-points>
+        <e-points>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.points=[
-                        //Enable showTotalSum in to a point.
-                        //  ...
-                        { x: "Total sum",showTotalSum: true }
-                        //  ...        
-                   ];
-                   });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                           });
         </script>
     </body>
 </html>
@@ -2652,12 +2645,13 @@ To customize the connector line color, width, opacity and dashArray of the water
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-            <e-series  e-type="waterfall" e-fill="#C64E4A" e-positivefill="#C64E4A"></e-series>
+        <e-series  e-connectorline-color="#333000" e-connectorline-width="1" e-connectorline-opacity="1" 
+        e-connectorline-dasharray="3,2"></e-series>
         </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                            });
         </script>
     </body>
@@ -2666,6 +2660,196 @@ To customize the connector line color, width, opacity and dashArray of the water
 
 
 ![](Chart-Types_images/Chart-Types_img74.png)
+
+
+## Error bar Chart 
+
+EjChart can generate Error bar for Cartesian type series *(Line, Column, Bar, Scatter, Area, Candle, HiLo, etc.)*. To render the Error bar for the series, set `e-visibility` as *"visible"* to `e-errorBar` in the series.
+
+
+{% highlight html %}
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+    <head>
+        <title>Essential Studio for AngularJS: Chart</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="ChartCtrl">
+        <div id="container" ej-chart>
+        <e-series>
+        <e-series  e-errorbar-visibility="visible"></e-series>
+        </e-series>
+        </div>
+        <script>
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                  });
+        </script>
+    </body>
+</html>
+
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img75.png)
+
+### Changing Error Bar Type
+
+You can change the error bar rendering type using `e-type` *(like fixedValue, percentage, standardDeviation, standardError and custom)* option of errorBar. To change the error bar line length you can use `e-verticalErrorValue` property.
+
+{% highlight html %}
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+    <head>
+        <title>Essential Studio for AngularJS: Chart</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="ChartCtrl">
+        <div id="container" ej-chart>
+        <e-series>
+        <e-series  e-errorbar-type="percentage" e-errorbar-verticalerrorvalue="3"></e-series>
+        </e-series>
+        </div>
+        <script>
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+               });
+        </script>
+    </body>
+</html>
+
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img76.png)
+
+
+#### Customizing error bar type              
+
+To customize the error bar type, set error bar `e-type` as **"custom"** and then change the horizontal/vertical positive and negative value of error bar.
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+    <head>
+        <title>Essential Studio for AngularJS: Chart</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="ChartCtrl">
+        <div id="container" ej-chart>
+        <e-series>
+        <e-series  e-errorbar-type="custom" e-errorbar-verticalPositiveErrorValue="5"
+                   e-errorbar-horizontalPositiveErrorValue="1"
+                   e-errorbar-verticalNegativeErrorValue="3"
+                   e-errorbar-horizontalNegativeErrorValue="1"></e-series>
+        </e-series>
+        </div>
+        <script>
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+               });
+        </script>
+    </body>
+</html>
+
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img77.png)
+
+
+### Changing Error Bar Mode
+
+Error bar mode is used to define whether the error bar line has to be drawn *horizontally, vertically* or in *both* side.  To change the error bar mode use `e-errorBar-mode` option.
+
+{% highlight html %}
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+    <head>
+        <title>Essential Studio for AngularJS: Chart</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="ChartCtrl">
+        <div id="container" ej-chart>
+        <e-series>
+        <e-series  e-errorbar-type="fixedValue" e-errorbar-mode="vertical"></e-series>
+        </e-series>
+        </div>
+        <script>
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+               });
+        </script>
+    </body>
+</html>
+
+
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img78.png)
+
+
+### Changing Error Bar Direction
+
+You can change the error bar direction to plus, minus or both side using `e-errorBar-direction` option.
+
+{% highlight html %}
+
+ <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+    <head>
+        <title>Essential Studio for AngularJS: Chart</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="ChartCtrl">
+        <div id="container" ej-chart>
+        <e-series>
+        <e-series  e-errorbar-type="fixedvalue"  e-errorbar-mode="vertical"
+                   e-errorbar-direction="minus"></e-series>
+        </e-series>
+        </div>
+        <script>
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+               });
+        </script>
+    </body>
+</html>
+
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img79.png)
+
+
+### Customizing Error bar cap
+
+To customize the error bar cap *visibility, length, width* and *fill* color, you can use `e-cap` option in the **series.errorBar**.
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+    <head>
+        <title>Essential Studio for AngularJS: Chart</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="ChartCtrl">
+        <div id="container" ej-chart>
+        <e-series>
+        <e-series  e-errorbar-cap-visible="true" e-errorbar-cap-length="20"
+                   e-errorbar-cap-width="1" e-errorbar-fill="#000000">
+        </e-series>
+        </e-series>
+        </div>
+        <script>
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+               });
+        </script>
+    </body>
+</html>
+ 
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img80.png)
+
 
 
 

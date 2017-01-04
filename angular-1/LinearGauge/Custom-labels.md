@@ -25,30 +25,35 @@ Custom labels collection can be directly added to the scale object. Refer the fo
     </head>
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
-                 <ej-lineargauge   e-enableanimation="false" e-height="500" e-width="200" e-labelcolor="grey"
-                 e-frame-innerwidth="8" e-frame-outerwidth="10"
-                e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
+                 <ej-lineargauge   e-enableanimation="false" e-height="500" e-width="200" 
+                 e-labelcolor="grey" e-frame-innerwidth="8" e-frame-outerwidth="10"
+                 e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
                  <e-scales>
-                 <e-scale   e-backgroundcolor="transparent" 
-                 e-border-color="transparent" e-border-width="0" e-showBarPointers="true" e-showMarkerPointers="false" e-showCustomLabels="true" >
+                 <e-scale   e-backgroundcolor="transparent" e-border-color="transparent"
+                 e-border-width="0" e-showBarPointers="true" e-showMarkerPointers="false" 
+                 e-showCustomLabels="true" >
                  <e-barpointers>
-                  <e-barpointer  e-width="10"  e-backgroundColor="#8BABFF" e-placement="near" e-distancefromscale="30" e-value="91">
+                 <e-barpointer  e-width="10"  e-backgroundColor="#8BABFF" e-placement="near" 
+                 e-distancefromscale="30" e-value="91">
                  </e-barpointer>
                  </e-barpointers>
                  <e-ticks>
-                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
-                  <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
+                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="7" 
+                 e-distancefromscale-y="0"></e-tick>
+                 <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" 
+                 e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
                  </e-ticks>
-                  <e-customlabels>
-                 <e-customlabel e-value="Mathematics Mark" e-position-x="55" e-position-y="97"></e-customlabel>
+                 <e-customlabels>
+                 <e-customlabel e-value="Mathematics Mark" e-position-x="55" e-position-y="97">
+                 </e-customlabel>
                  </e-customlabels>
                  </e-scale>
                  </e-scales>
-                  </ej-lineargauge>
+                 </ej-lineargauge>
         </div>
-         <script >
+        <script>
         angular.module('LinearGaugeApp', ['ejangular'])
-       .controller('LinearGaugeCtrl', function ($scope) {
+        .controller('LinearGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -81,30 +86,35 @@ Execute the above code to render the following output.
     </head>
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
-                 <ej-lineargauge   e-enableanimation="false" e-height="500" e-width="200" e-labelcolor="grey"
-                 e-frame-innerwidth="8" e-frame-outerwidth="10"
-                e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
+                 <ej-lineargauge   e-enableanimation="false" e-height="500" e-width="200" 
+                 e-labelcolor="grey" e-frame-innerwidth="8" e-frame-outerwidth="10"
+                 e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
                  <e-scales>
-                 <e-scale   e-backgroundcolor="transparent" 
-                 e-border-color="transparent" e-border-width="0" e-showBarPointers="true" e-showMarkerPointers="false" e-showCustomLabels="true" >
+                 <e-scale  e-backgroundcolor="transparent" e-border-color="transparent" 
+                 e-border-width="0" e-showBarPointers="true" e-showMarkerPointers="false" 
+                 e-showCustomLabels="true" >
                  <e-barpointers>
-                  <e-barpointer  e-width="10"  e-backgroundColor="#8BABFF" e-placement="near" e-distancefromscale="30" e-value="91">
+                 <e-barpointer  e-width="10"  e-backgroundColor="#8BABFF" e-placement="near" 
+                 e-distancefromscale="30" e-value="91">
                  </e-barpointer>
                  </e-barpointers>
                  <e-ticks>
-                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
-                  <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
+                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="7" 
+                 e-distancefromscale-y="0"></e-tick>
+                 <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" 
+                 e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
                  </e-ticks>
-                  <e-customlabels>
-                 <e-customlabel e-value="Mathematics Mark" e-position-x="55" e-position-y="87" e-textAngle="30" e-opacity="0.5" e-color="red"></e-customlabel>
+                 <e-customlabels>
+                 <e-customlabel e-value="Mathematics Mark" e-position-x="55" e-position-y="87" 
+                 e-textAngle="30" e-opacity="0.5" e-color="red"></e-customlabel>
                  </e-customlabels>
                  </e-scale>
                  </e-scales>
-                  </ej-lineargauge>
+                 </ej-lineargauge>
         </div>
-         <script >
+        <script>
         angular.module('LinearGaugeApp', ['ejangular'])
-       .controller('LinearGaugeCtrl', function ($scope) {
+        .controller('LinearGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -132,30 +142,35 @@ To set the location of the custom label in **Linear Gauge**, **position** proper
     </head>
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
-                 <ej-lineargauge   e-enableanimation="false" e-height="500" e-width="200" e-labelcolor="grey"
-                 e-frame-innerwidth="8" e-frame-outerwidth="10"
-                e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
+                 <ej-lineargauge   e-enableanimation="false" e-height="500" e-width="200" 
+                 e-labelcolor="grey" e-frame-innerwidth="8" e-frame-outerwidth="10"
+                 e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
                  <e-scales>
-                 <e-scale   e-backgroundcolor="transparent" 
-                 e-border-color="transparent" e-border-width="0" e-showBarPointers="true" e-showMarkerPointers="false" e-showCustomLabels="true" >
+                 <e-scale   e-backgroundcolor="transparent" e-border-color="transparent" 
+                 e-border-width="0" e-showBarPointers="true" e-showMarkerPointers="false" 
+                 e-showCustomLabels="true" >
                  <e-barpointers>
-                  <e-barpointer  e-width="10"  e-backgroundColor="#8BABFF" e-placement="near" e-distancefromscale="30" e-value="91">
+                 <e-barpointer  e-width="10"  e-backgroundColor="#8BABFF" e-placement="near" 
+                 e-distancefromscale="30" e-value="91">
                  </e-barpointer>
                  </e-barpointers>
                  <e-ticks>
-                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
-                  <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
+                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="7" 
+                 e-distancefromscale-y="0"></e-tick>
+                 <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" 
+                 e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
                  </e-ticks>
-                  <e-customlabels>
-                 <e-customlabel e-value="Mathematics Mark" e-position-x="55" e-position-y="87" ></e-customlabel>
+                 <e-customlabels>
+                 <e-customlabel e-value="Mathematics Mark" e-position-x="55" e-position-y="87" >
+                 </e-customlabel>
                  </e-customlabels>
                  </e-scale>
                  </e-scales>
-                  </ej-lineargauge>
+                 </ej-lineargauge>
         </div>
-         <script >
+        <script>
         angular.module('LinearGaugeApp', ['ejangular'])
-       .controller('LinearGaugeCtrl', function ($scope) {
+        .controller('LinearGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -182,31 +197,37 @@ You can set multiple custom labels in a single **Linear Gauge** by adding an arr
     </head>
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
-                 <ej-lineargauge   e-enableanimation="false" e-height="500" e-width="200" e-labelcolor="grey"
-                 e-frame-innerwidth="8" e-frame-outerwidth="10"
-                e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
+                 <ej-lineargauge   e-enableanimation="false" e-height="500" e-width="200" 
+                 e-labelcolor="grey" e-frame-innerwidth="8" e-frame-outerwidth="10"
+                 e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
                  <e-scales>
-                 <e-scale   e-backgroundcolor="transparent" 
-                 e-border-color="transparent" e-border-width="0" e-showBarPointers="true" e-showMarkerPointers="false" e-showCustomLabels="true" >
+                 <e-scale   e-backgroundcolor="transparent" e-border-color="transparent" 
+                 e-border-width="0" e-showBarPointers="true" e-showMarkerPointers="false" 
+                 e-showCustomLabels="true" >
                  <e-barpointers>
-                  <e-barpointer  e-width="10"  e-backgroundColor="#8BABFF" e-placement="near" e-distancefromscale="30" e-value="91">
+                 <e-barpointer  e-width="10"  e-backgroundColor="#8BABFF" e-placement="near" 
+                 e-distancefromscale="30" e-value="91">
                  </e-barpointer>
                  </e-barpointers>
                  <e-ticks>
-                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
-                  <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
+                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="7" 
+                 e-distancefromscale-y="0"></e-tick>
+                 <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" 
+                 e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
                  </e-ticks>
-                  <e-customlabels>
-                 <e-customlabel e-value="Mathematics Mark" e-position-x="55" e-position-y="87" e-color="red"></e-customlabel>
-                    <e-customlabel e-value="Marks in %" e-position-x="15" e-position-y="87" e-color="red" e-textAngle="90"></e-customlabel>
+                 <e-customlabels>
+                 <e-customlabel e-value="Mathematics Mark" e-position-x="55" e-position-y="87" 
+                 e-color="red"></e-customlabel>
+                 <e-customlabel e-value="Marks in %" e-position-x="15" e-position-y="87" 
+                 e-color="red" e-textAngle="90"></e-customlabel>
                  </e-customlabels>
                  </e-scale>
                  </e-scales>
-                  </ej-lineargauge>
+                 </ej-lineargauge>
         </div>
-         <script >
+        <script>
         angular.module('LinearGaugeApp', ['ejangular'])
-       .controller('LinearGaugeCtrl', function ($scope) {
+        .controller('LinearGaugeCtrl', function ($scope) {
          });
     </script>
     </body>

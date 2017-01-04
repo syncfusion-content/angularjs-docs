@@ -30,16 +30,16 @@ documentation: ug
                 <e-scales>
                 <e-scale >
                 <e-pointers>
-               <e-pointer e-value="30">
-               </e-pointer>
-               </e-pointers>
+                <e-pointer e-value="30">
+                </e-pointer>
+                </e-pointers>
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -82,9 +82,9 @@ Execute the above code to render the following output.
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -117,16 +117,17 @@ The Pointers border is modified with the object called **border** as in scales. 
                 <e-scales>
                 <e-scale e-radius="150"  e-showranges="true" e-showscalebar="true" e-width="10">
                 <e-pointers>
-                <e-pointer e-value="45" e-length="100" e-backgroundColor="yellow" e-border-color="green" e-border-width="2" e-opacity="0.6" e-width="16">
+                <e-pointer e-value="45" e-length="100" e-backgroundColor="yellow" 
+                e-border-color="green" e-border-width="2" e-opacity="0.6" e-width="16">
                 </e-pointer>
                 </e-pointers>
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -156,18 +157,20 @@ Based on the value, the**pointer** point out the label value. You can set the po
         <div id="circularframe">
                 <ej-circulargauge >
                 <e-scales>
-                <e-scale e-radius="150"  e-showscalebar="true" e-width="10" e-backgroundColor="orange" e-border-color="red" e-border-width="2">
+                <e-scale e-radius="150"  e-showscalebar="true" e-width="10" e-backgroundColor="orange"
+                e-border-color="red" e-border-width="2">
                 <e-pointers>
-                <e-pointer e-value="45" e-length="100" e-backgroundColor="orange" e-border-color="red" e-border-width="2" e-opacity="0.6" e-width="16">
+                <e-pointer e-value="45" e-length="100" e-backgroundColor="orange" 
+                e-border-color="red" e-border-width="2" e-opacity="0.6" e-width="16">
                 </e-pointer>
                 </e-pointers>
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -197,19 +200,21 @@ Pointer can be positioned with the help of two properties such as **distanceFrom
         <div id="circularframe">
                 <ej-circulargauge >
                 <e-scales>
-                <e-scale e-radius="150"  e-showscalebar="true" e-width="10" e-backgroundColor="orange" e-border-color="red" e-border-width="2">
+                <e-scale e-radius="150"  e-showscalebar="true" e-width="10" e-backgroundColor="orange"
+                e-border-color="red" e-border-width="2">
                 <e-pointers>
-                <e-pointer  e-type="marker" e-markertype="triangle" e-placement="near" e-distancefromscale="10" 
-                e-value="40" e-length="20" e-backgroundColor="orange" e-border-color="red" e-border-width="2" e-opacity="0.2" e-width="20">
+                <e-pointer  e-type="marker" e-markertype="triangle" e-placement="near" 
+                e-distancefromscale="10" e-value="40" e-length="20" e-backgroundColor="orange"
+                e-border-color="red" e-border-width="2" e-opacity="0.2" e-width="20">
                 </e-pointer>
                 </e-pointers>
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -298,27 +303,30 @@ In this type, needle pointer is completely replaced by image. We can implement i
         <div id="circularframe">
                 <ej-circulargauge  e-frame-frametype="halfcircle">
                 <e-scales>
-                <e-scale e-radius="150" e-showLabels="false" e-startAngle="180" e-sweepAngle="180" e-showscalebar="true">
+                <e-scale e-radius="150" e-showLabels="false" e-startAngle="180" e-sweepAngle="180"
+                e-showscalebar="true">
                 <e-pointers>
-                <e-pointer  e-type="needle" e-needletype="image" e-ImageUrl="nib.png" e-value="60" e-length="30" e-width="100">
+                <e-pointer  e-type="needle" e-needletype="image" e-ImageUrl="nib.png" e-value="60"
+                e-length="30" e-width="100">
                 </e-pointer>
                 </e-pointers>
-                 <e-ticks>
-                 <e-tick e-height="0" e-width="0">
-                 </e-tick>
-                 </e-ticks>
-                 <e-ranges>
-                 <e-range e-distancefromscale="-30" e-startValue="0" e-endValue="70" e-size="40"></e-range>
-                   <e-range e-distancefromscale="-30" e-startValue="70" e-endValue="110" e-backgroundcolor="#fc0606"
-                    e-border-color="#fc0606"e-size="40"></e-range>
-                 </e-ranges>
+                <e-ticks>
+                <e-tick e-height="0" e-width="0">
+                </e-tick>
+                </e-ticks>
+                <e-ranges>
+                <e-range e-distancefromscale="-30" e-startValue="0" e-endValue="70" e-size="40">
+                </e-range>
+                <e-range e-distancefromscale="-30" e-startValue="70" e-endValue="110" 
+                e-backgroundcolor="#fc0606" e-border-color="#fc0606"e-size="40"></e-range>
+                </e-ranges>
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -346,27 +354,30 @@ In this type, marker pointer is completely replaced by image. We can implement i
         <div id="circularframe">
                 <ej-circulargauge  e-frame-frametype="halfcircle">
                 <e-scales>
-                <e-scale e-radius="150" e-showLabels="false" e-startAngle="180" e-sweepAngle="180" e-showscalebar="true">
+                <e-scale e-radius="150" e-showLabels="false" e-startAngle="180" e-sweepAngle="180" 
+                e-showscalebar="true">
                 <e-pointers>
-                <e-pointer  e-type="marker" e-markertype="image" e-ImageUrl="ball.png" e-value="60" e-length="30" e-width="100">
+                <e-pointer  e-type="marker" e-markertype="image" e-ImageUrl="ball.png" e-value="60" 
+                e-length="30" e-width="100">
                 </e-pointer>
                 </e-pointers>
-                 <e-ticks>
-                 <e-tick e-height="0" e-width="0">
-                 </e-tick>
-                 </e-ticks>
-                 <e-ranges>
-                 <e-range e-distancefromscale="-30" e-startValue="0" e-endValue="70" e-size="40"></e-range>
-                   <e-range e-distancefromscale="-30" e-startValue="70" e-endValue="110" e-backgroundcolor="#fc0606"
-                    e-border-color="#fc0606"e-size="40"></e-range>
-                 </e-ranges>
+                <e-ticks>
+                <e-tick e-height="0" e-width="0">
+                </e-tick>
+                </e-ticks>
+                <e-ranges>
+                <e-range e-distancefromscale="-30" e-startValue="0" e-endValue="70" e-size="40">
+                </e-range>
+                <e-range e-distancefromscale="-30" e-startValue="70" e-endValue="110" 
+                e-backgroundcolor="#fc0606" e-border-color="#fc0606"e-size="40"></e-range>
+                </e-ranges>
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -394,27 +405,29 @@ In this type, marker pointer is drawn first and then image also loaded. We can i
         <div id="circularframe">
                 <ej-circulargauge  e-frame-frametype="halfcircle">
                 <e-scales>
-                <e-scale e-radius="150" e-showLabels="false" e-startAngle="180" e-sweepAngle="180" e-showscalebar="true">
+                <e-scale e-radius="150" e-showLabels="false" e-startAngle="180" e-sweepAngle="180"
+                e-showscalebar="true">
                 <e-pointers>
-                <e-pointer  e-type="marker" e-markertype="rectangle" e-ImageUrl="ball.png" e-value="60" e-length="30" e-width="100">
+                <e-pointer  e-type="marker" e-markertype="rectangle" e-ImageUrl="ball.png" 
+                e-value="60" e-length="30" e-width="100">
                 </e-pointer>
                 </e-pointers>
-                 <e-ticks>
-                 <e-tick e-height="0" e-width="0">
-                 </e-tick>
-                 </e-ticks>
-                 <e-ranges>
-                 <e-range e-distancefromscale="-30" e-startValue="0" e-endValue="70" e-size="40"></e-range>
-                   <e-range e-distancefromscale="-30" e-startValue="70" e-endValue="110" e-backgroundcolor="#fc0606"
-                    e-border-color="#fc0606"e-size="40"></e-range>
+                <e-ticks>
+                <e-tick e-height="0" e-width="0">
+                </e-tick>
+                </e-ticks>
+                <e-ranges>
+                <e-range e-distancefromscale="-30" e-startValue="0" e-endValue="70" e-size="40"></e-range>
+                <e-range e-distancefromscale="-30" e-startValue="70" e-endValue="110" 
+                e-backgroundcolor="#fc0606" e-border-color="#fc0606"e-size="40"></e-range>
                  </e-ranges>
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -443,21 +456,24 @@ Execute the above code to render the following output.
         <div id="circularframe">
                 <ej-circulargauge >
                 <e-scales>
-                <e-scale e-radius="150"  e-showscalebar="true" e-width="10" e-backgroundColor="#DCEBF9" e-border-color="green" e-border-width="2">
+                <e-scale e-radius="150"  e-showscalebar="true" e-width="10" e-backgroundColor="#DCEBF9"
+                e-border-color="green" e-border-width="2">
                 <e-pointers>
-                <e-pointer e-value="40" e-length="100" e-backgroundColor="#DCEBF9" e-border-color="green" e-border-width="2" e-opacity="0.6" e-width="16">
+                <e-pointer e-value="40" e-length="100" e-backgroundColor="#DCEBF9" e-border-color="green"
+                e-border-width="2" e-opacity="0.6" e-width="16">
                 </e-pointer>
-                <e-pointer  e-type="marker" e-markertype="triangle" e-placement="near" e-distancefromscale="20" 
-                e-value="60" e-length="20" e-backgroundColor="#DCEBF9" e-border-color="green" e-border-width="2" e-opacity="0.6" e-width="20">
+                <e-pointer  e-type="marker" e-markertype="triangle" e-placement="near" 
+                e-distancefromscale="20" e-value="60" e-length="20" e-backgroundColor="#DCEBF9"
+                e-border-color="green" e-border-width="2" e-opacity="0.6" e-width="20">
                 </e-pointer>
                 </e-pointers>
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -494,24 +510,27 @@ You can position the **Circular Gauge** pointer value with the gauge as center b
                 <e-scales>
                 <e-scale e-showranges="true">
                 <e-pointers>
-                <e-pointer  e-pointervaluetext-showValue="true" e-pointervaluetext-distance="0" e-pointervaluetext-color="#8c8c8c">
+                <e-pointer  e-pointervaluetext-showValue="true" e-pointervaluetext-distance="0" 
+                e-pointervaluetext-color="#8c8c8c">
                 </e-pointer>
                 </e-pointers>
-                 <e-ticks>
-                 <e-tick e-height="0" e-width="0">
-                 </e-tick>
-                 </e-ticks>
-                 <e-ranges>
-                 <e-range e-backgroundcolor="#1B4279" e-border-color="#1B4279" e-startValue="0" e-endValue="50" e-size="40"></e-range>
-                   <e-range e-startValue="50" e-endValue="100" e-backgroundcolor="#91B8F3" e-border-color="#91B8F3"e-size="40"></e-range>
-                 </e-ranges>
+                <e-ticks>
+                <e-tick e-height="0" e-width="0">
+                </e-tick>
+                </e-ticks>
+                <e-ranges>
+                <e-range e-backgroundcolor="#1B4279" e-border-color="#1B4279" e-startValue="0"
+                e-endValue="50" e-size="40"></e-range>
+                <e-range e-startValue="50" e-endValue="100" e-backgroundcolor="#91B8F3"
+                e-border-color="#91B8F3"e-size="40"></e-range>
+                </e-ranges>
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -553,25 +572,28 @@ Appearance of the **Circular Gauge****pointer value text** is adjusted by using 
                 <e-scales>
                 <e-scale e-showranges="true">
                 <e-pointers>
-                <e-pointer  e-pointervaluetext-showValue="true" e-pointervaluetext-distance="0" e-pointervaluetext-color="red" e-pointervaluetext-opacity="0.7"
+                <e-pointer  e-pointervaluetext-showValue="true" e-pointervaluetext-distance="0"
+                e-pointervaluetext-color="red" e-pointervaluetext-opacity="0.7"
                 e-pointervaluetext-angle="20">
                 </e-pointer>
                 </e-pointers>
-                 <e-ticks>
-                 <e-tick e-height="0" e-width="0">
-                 </e-tick>
-                 </e-ticks>
-                 <e-ranges>
-                 <e-range e-backgroundcolor="#1B4279" e-border-color="#1B4279" e-startValue="0" e-endValue="50" e-size="40"></e-range>
-                   <e-range e-startValue="50" e-endValue="100" e-backgroundcolor="#91B8F3" e-border-color="#91B8F3"e-size="40"></e-range>
-                 </e-ranges>
+                <e-ticks>
+                <e-tick e-height="0" e-width="0">
+                </e-tick>
+                </e-ticks>
+                <e-ranges>
+                <e-range e-backgroundcolor="#1B4279" e-border-color="#1B4279" e-startValue="0" 
+                e-endValue="50" e-size="40"></e-range>
+                <e-range e-startValue="50" e-endValue="100" e-backgroundcolor="#91B8F3" 
+                e-border-color="#91B8F3"e-size="40"></e-range>
+                </e-ranges>
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -603,26 +625,29 @@ Similar to other collection, font option is also available in this pointer value
                 <e-scales>
                 <e-scale e-showranges="true">
                 <e-pointers>
-                <e-pointer  e-pointervaluetext-showValue="true" e-pointervaluetext-distance="0" e-pointervaluetext-color="red"
-                e-pointervaluetext-opacity="0.7" e-pointervaluetext-angle="20" e-pointervaluetext-font-size="15px"
+                <e-pointer  e-pointervaluetext-showValue="true" e-pointervaluetext-distance="0"
+                e-pointervaluetext-color="red" e-pointervaluetext-opacity="0.7" 
+                e-pointervaluetext-angle="20" e-pointervaluetext-font-size="15px"
                 e-pointervaluetext-font-fontFamily="arial" e-pointervaluetext-font-fontStyle="normal">
                 </e-pointer>
                 </e-pointers>
-                 <e-ticks>
-                 <e-tick e-height="0" e-width="0">
-                 </e-tick>
-                 </e-ticks>
-                 <e-ranges>
-                 <e-range e-backgroundcolor="#1B4279" e-border-color="#1B4279" e-startValue="0" e-endValue="50" e-size="40"></e-range>
-                   <e-range e-startValue="50" e-endValue="100" e-backgroundcolor="#91B8F3" e-border-color="#91B8F3"e-size="40"></e-range>
-                 </e-ranges>
+                <e-ticks>
+                <e-tick e-height="0" e-width="0">
+                </e-tick>
+                </e-ticks>
+                <e-ranges>
+                <e-range e-backgroundcolor="#1B4279" e-border-color="#1B4279" e-startValue="0"
+                e-endValue="50" e-size="40"></e-range>
+                <e-range e-startValue="50" e-endValue="100" e-backgroundcolor="#91B8F3" 
+                e-border-color="#91B8F3"e-size="40"></e-range>
+                </e-ranges>
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
