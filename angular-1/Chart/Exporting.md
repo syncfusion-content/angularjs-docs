@@ -83,7 +83,7 @@ Server-side operation can be done by using the server-side frameworks such as We
 At the server side, chart can be exported as JPG, PNG, SVG, PDF, word document and as excel documents. For this the following code have to place in the controller.
 
 {% highlight csharp %}
-
+<script>
 public void ExportChart(string Data, string ChartModel)
         {
             // declaration
@@ -91,7 +91,6 @@ public void ExportChart(string Data, string ChartModel)
             string type = obj.ExportSettings.Type.ToString().ToLower();
             string fileName = obj.ExportSettings.FileName;
             string orientation = obj.ExportSettings.Orientation.ToString();
-
             if (type == "svg")      // for svg export
             {
                 StringWriter oStringWriter = new StringWriter();
@@ -110,7 +109,6 @@ public void ExportChart(string Data, string ChartModel)
                 }
                 Response.End();
             }
-
             else if (type == "xlsx")       // to export chart as excel
             {
                 List<ExportChartData> chartData = new List<ExportChartData>();
@@ -119,16 +117,13 @@ public void ExportChart(string Data, string ChartModel)
                 chartData.Add(new ExportChartData("Peter", 18));
                 chartData.Add(new ExportChartData("James", 11));
                 chartData.Add(new ExportChartData("Mary", 9.7));
-
                 ExcelExport exp = new ExcelExport();
                 exp.Export(obj, (IEnumerable)chartData, fileName + ".xlsx", ExcelVersion.Excel2010, null, null);
             }
-
             else
             {
                 Data = Data.Remove(0, Data.IndexOf(',') + 1);
                 MemoryStream stream = new MemoryStream(Convert.FromBase64String(Data));
-
                 if (type == "docx")        // to export as word document
                 {
                     WordDocument document = new WordDocument();
@@ -167,8 +162,7 @@ public void ExportChart(string Data, string ChartModel)
                 }
             }
         }
-      
-        private ChartProperties ConvertChartObject(string ChartModel)
+      private ChartProperties ConvertChartObject(string ChartModel)
         {
             JavaScriptSerializer serializer = new JavaScriptSerializer();
             IEnumerable div = (IEnumerable)serializer.Deserialize(ChartModel, typeof(IEnumerable));
@@ -226,25 +220,21 @@ N> Refer the MultipleExportType.AppendToSheet, MultipleExportType.NewSheet.
 Export multiple chart to excel at server-side
 
 {% highlight csharp %}
-
+<script>
     public class JSChartExportController : ApiController
         {
-
             [System.Web.Http.ActionName("ExcelExport")]
             [AcceptVerbs("POST")]
             public void ExcelExport()
             {
                 string chartModel = HttpContext.Current.Request.Params["ChartModel"];
                 IWorkbook book = null;
-
                 foreach (string chartProperty in ChartModel)
                 {
                     if (chartProperty != null)
                     {
                         ExcelExport exp = new ExcelExport();
-
                         ChartProperties obj = ConvertChartObject(chartProperty);
-
                         if (initial)
                         {
                             book = exp.Export((obj as ChartProperties), (IEnumerable)data, "Export1.xlsx",

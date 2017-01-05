@@ -115,7 +115,6 @@ The datasource is populated with JSON data relative to shape data and stored in 
         { name: "Wyoming", population: "582658" }
 ]
 
-
 {% endhighlight %}
 
 Refer to both shape data and datasource as illustrated in the following code example.
@@ -137,8 +136,7 @@ Refer to both shape data and datasource as illustrated in the following code exa
 3\. Set the shapeData attribute value as usMap which containes the USA shape data details. 
 
 {% highlight javascript %}
-
-    <body>
+   <body>
         <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
             <e-layer e-shapedata=usmap></e-layer>
@@ -152,11 +150,10 @@ Refer to both shape data and datasource as illustrated in the following code exa
 2\. Add a script tag anywhere in the web page and add the following code. 
 
 {% highlight javascript %}
-
-    <script>
-        angular.module('MapsApp', ['ejangular'])
-        .controller('MapsCtrl', function ($scope) {
-                $scope.usmap = usMap;
+   <script>
+   angular.module('MapsApp', ['ejangular'])
+   .controller('MapsCtrl', function ($scope) {
+               $scope.usmap = usMap;
             });
     </script>
 
@@ -251,7 +248,6 @@ The **JSON** object “populationData” is used as dataSource in the following 
 You can customize the shape’s color by using `fill`, `stroke` and `strokeThickness` properties in `shapeSettings`.
 
 {% highlight html %}
-
     <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <div e-layers>
             <div e-layer e-shapedata=usmap e-datasource=datasource e-shapedatapath='name' 
@@ -346,7 +342,6 @@ The following screenshot illustrates a map with gradient color property enabled.
 The tooltip is displayed only when the `showTooltip` is set to “**True**” in the `layers`. By default, it takes the property of the bound object that is referred in the `valuePath` and displays its content on hovering the corresponding shape. The `tooltipTemplate` property is used for customizing the template for tooltip.	
 
 {% highlight html %}
-
     <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <div e-layers>
             <div e-layer e-showtooltip="true">
