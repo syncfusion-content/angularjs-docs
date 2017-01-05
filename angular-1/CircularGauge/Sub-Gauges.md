@@ -36,9 +36,9 @@ Sub gauge collection is directly added to the scale object. Refer the following 
                 </ej-circulargauge>
         </div>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -62,25 +62,26 @@ Basic attributes such as **height** and **width** property are used to set heigh
      <div id="Gauge1">
                 <ej-circulargauge e-backgroundcolor="blue" e-value="50" e-radius="110">
                     <e-scales>
-                        <e-scale e-radius="110">
-                        </e-scale>
-                        <e-scales>
+                    <e-scale e-radius="110">
+                    </e-scale>
+                    <e-scales>
                 </ej-circulargauge>
                 </div>
                 <div id="circularframe">
                     <ej-circulargauge e-height="500" e-width="500" e-value="50">
                         <e-scales>
-                            <e-scale e-showsubgauges="true" e-radius="190">
-                                <e-subgauges>
-                                    <e-subgauge e-controlid="Gauge1" e-height="250" e-width="250" e-position-x="150" e-position-y="100"></e-subgauge>
-                                </e-subgauges>
-                            </e-scale>
-                            <e-scales>
+                        <e-scale e-showsubgauges="true" e-radius="190">
+                        <e-subgauges>
+                        <e-subgauge e-controlid="Gauge1" e-height="250" e-width="250" 
+                        e-position-x="150" e-position-y="100"></e-subgauge>
+                        </e-subgauges>
+                        </e-scale>
+                        <e-scales>
                     </ej-circulargauge>
                 </div>
                <script type="text/javascript">
                 angular.module('CircularGaugeApp', ['ejangular'])
-                  .controller('CircularGaugeCtrl', function ($scope) {
+                .controller('CircularGaugeCtrl', function ($scope) {
                     });
             </script>
         </body>
@@ -112,36 +113,38 @@ You can set multiple sub gauges in a single **Circular Gauge** by adding an arra
      <div id="SubGauge1">
                 <ej-circulargauge e-backgroundcolor="#f5b43f">
                     <e-scales>
-                        <e-scale e-radius="150">
-                        </e-scale>
-                        <e-scales>
+                    <e-scale e-radius="150">
+                    </e-scale>
+                    <e-scales>
                 </ej-circulargauge>
                 </div>
                 <div id="SubGauge2">
                 <ej-circulargauge e-backgroundcolor="#f5b43f">
                     <e-scales>
-                        <e-scale e-radius="150">
-                        </e-scale>
-                        <e-scales>
+                    <e-scale e-radius="150">
+                    </e-scale>
+                    <e-scales>
                 </ej-circulargauge>
                 </div>
                 <div id="circularframe">
                     <ej-circulargauge e-height="500" e-width="500" >
                         <e-scales>
-                            <e-scale e-showsubgauges="true" e-radius="250">
-                                <e-subgauges>
-                                    <e-subgauge e-controlid="SubGauge1" e-height="200" e-width="200" e-position-x="200" e-position-y="150"></e-subgauge>
-                                </e-subgauges>
-                                <e-subgauges>
-                                    <e-subgauge e-controlid="SubGauge2" e-height="200" e-width="200" e-position-x="50" e-position-y="200"></e-subgauge>
-                                </e-subgauges>
-                            </e-scale>
-                            <e-scales>
+                        <e-scale e-showsubgauges="true" e-radius="250">
+                        <e-subgauges>
+                        <e-subgauge e-controlid="SubGauge1" e-height="200" e-width="200"
+                        e-position-x="200" e-position-y="150"></e-subgauge>
+                        </e-subgauges>
+                        <e-subgauges>
+                        <e-subgauge e-controlid="SubGauge2" e-height="200" e-width="200"
+                        e-position-x="50" e-position-y="200"></e-subgauge>
+                        </e-subgauges>
+                        </e-scale>
+                        <e-scales>
                     </ej-circulargauge>
                 </div>
                <script type="text/javascript">
                 angular.module('CircularGaugeApp', ['ejangular'])
-                  .controller('CircularGaugeCtrl', function ($scope) {
+                .controller('CircularGaugeCtrl', function ($scope) {
                     });
             </script>
         </body>

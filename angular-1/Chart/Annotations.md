@@ -22,15 +22,15 @@ You can add annotations to the chart by using the `e-annotations` option. By usi
     </head>
     <body ng-controller="ChartCtrl">
         <div id= "watermark" style="font-size:100px; display:none">2014</div>
-        <div id="container" ej-chart e-annotations="annotations" >
+        <div id="container" ej-chart>
+        <e-annotations>
+        <e-annotation  e-visible="true" e-content="watermark" e-opacity="0.2" e-region="series">
+        </e-annotation>
+        </e-annotations>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.annotations=[{
-                       //Add Annotation content here
-	                   visible: true, content: "watermark", opacity: 0.2, region: "series" 
-                       }];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {       
                    });
         </script>
     </body>
@@ -58,18 +58,16 @@ To rotate the annotation template, you can use the `angle` property of the annot
     </head>
     <body ng-controller="ChartCtrl">
         <div id= "watermark" style="font-size:100px; display:none">2014</div>
-        <div id="container" ej-chart e-annotations="annotations" >
+        <div id="container" ej-chart >
+        <e-annotations>
+        <e-annotation  e-visible="true" e-content="watermark" e-angle="270">
+        </e-annotation>
+        </e-annotations>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.annotations=[{
-                      visible: true, 
-                      content: "watermark", 
-                      //Rotate the Annotation template
-                      angle: 270,
-                     }];
-                   });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                  });
         </script>
     </body>
 </html>
@@ -101,18 +99,16 @@ N> By using the `region` option, you can specify whether the annotation is place
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart e-annotations="annotations" >
+        <div id="container" ej-chart >
+        <e-annotations>
+        <e-annotation  e-visible="true" e-content="lowtemp" e-coordinateunit="pixels" 
+        e-x="170" e-y="350">
+        </e-annotation>
+        </e-annotations>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.annotations=[{
-                  visible: true, 
-                  content: "lowtemp", 
-                  //Change coordinateUnit type to pixels
-                  coordinateUnit: "pixels",  x: 170, y: 350,   
-                      //  ...
-                     }];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {         
                    });
         </script>
     </body>
@@ -136,20 +132,17 @@ When the coordinateUnit is set to pixels or points, you can align the annotation
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart e-annotations="annotations" >
+        <div id="container" ej-chart>
+        <e-annotations>
+        <e-annotation  e-visible="true" e-content="hightemp" 
+        e-verticalalignment="middle" e-horizontalalignment="near" e-margin-right="40">
+        </e-annotation>
+        </e-annotations>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.annotations=[{
-                     visible: true, 
-                     content: "hightemp", 
-                     //Change alignment of annotation template
-                     verticalAlignment: "middle",
-                     horizontalAlignment: "near",
-                     margin: { right: 40 }      
-                     }];
-                   });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                });
         </script>
     </body>
 </html>

@@ -34,14 +34,14 @@ You can use `e-groupGap` property to separate the items from every flat level a
     <body ng-controller="TreemapCtrl">
      <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
      <ej-treemap e-datasource=populationdata e-colorValuePath="Growth" e-weightvaluepath="Population">
-    <e-levels>
+     <e-levels>
      <e-level e-grouppath="Continent" e-groupgap="5"></e-level>
      </e-levels>
      </ej-treemap>
      </div>
-      <script>
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+     <script>
+     angular.module('TreemapApp', ['ejangular'])
+     .controller('TreemapCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -85,14 +85,11 @@ You can use `e-groupGap` property to separate the items from every flat level a
             {Region: "Western Africa", Growth: 2.78, Population: 331255000 },
             {Region: "Northern Africa", Growth: 1.70, Population: 210002000 },
             {Region: "Middle Africa", Growth: 2.79, Population: 135750000 },
-            {Region: "Southern Africa", Growth: 0.91, Population: 60425000 }
-            
-        ];
-
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
-                    $scope.populationdata=population_data;
-                        });
+            {Region: "Southern Africa", Growth: 0.91, Population: 60425000 }];
+        angular.module('TreemapApp', ['ejangular'])
+        .controller('TreemapCtrl', function ($scope) {
+            $scope.populationdata=population_data;
+                });
     </script>
     </body>
 </html>

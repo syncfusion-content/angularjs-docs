@@ -33,7 +33,7 @@ The **Series** property provides access to a collection of all series that are d
        e-border-color="transparent" e-border-color-width="2"></e-series>
        </e-series>
        </ej-rangenavigator>
-         </div>
+       </div>
     <script>
       function GetData() {
             var series1 = [];       
@@ -50,7 +50,7 @@ The **Series** property provides access to a collection of all series that are d
             data = { Open: series1};
             return data;
         }
-       var data=GetData();
+      var data=GetData();
             angular.module('RangeApp', ['ejangular'])
             .controller('RangeCtrl', function ($scope) {
                 $scope.datasource=data.Open;

@@ -28,16 +28,16 @@ Tick collection is directly added to the scale object. Refer the following code 
                 <e-scales>
                 <e-scale >
                 <e-ticks>
-               <e-tick e-value="30">
-               </e-tick>
-               </e-ticks>
+                <e-tick e-value="30">
+                </e-tick>
+                </e-ticks>
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -70,18 +70,19 @@ Major type ticks are for major interval values and minor type ticks are for mino
                 <e-scales>
                 <e-scale >
                 <e-ticks>
-               <e-tick e-type="major" e-color="red">
-               </e-tick>
-                <e-tick e-type="minor" e-color="yellow" e-height="8" e-placement="near" e-distanceFromScale="5">
-               </e-tick>
-               </e-ticks>
+                <e-tick e-type="major" e-color="red">
+                </e-tick>
+                <e-tick e-type="minor" e-color="yellow" e-height="8" e-placement="near"
+                e-distanceFromScale="5">
+                </e-tick>
+                </e-ticks>
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>

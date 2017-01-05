@@ -22,8 +22,8 @@ documentation: ug
         <div id="container" ej-chart e-enablecanvasrendering="true">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -48,22 +48,16 @@ Lazy loading feature provides an effective way for loading data on demand by scr
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart e-enablecanvasrendering="true" e-primaryxaxis-scrollbarsettings="scrollbar">
+        <div id="container" ej-chart e-enablecanvasrendering="true" 
+        e-primaryxaxis-scrollbarsettings-visible="true" 
+        e-primaryxaxis-scrollbarsettings-canresize="true"
+        e-primaryxaxis-scrollbarsettings-range-min="2009/1/1"
+        e-primaryxaxis-scrollbarsettings-range-max="2014/1/1">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                      $scope.scrollbar={
-                              // enable the scrollbar
-                              visible: true,    
-                              // enable the resize option 
-                              canResize: true,
-                              range: {
-                                       min: “2009/1/1”,
-                                       max: “2014/1/1”
-                                }        
-                      };
-                   });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                        });
         </script>
     </body>
 </html>

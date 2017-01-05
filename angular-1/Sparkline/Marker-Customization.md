@@ -20,11 +20,12 @@ You can customize markers by initializing the `e-markerSettings` property. The c
     </head>
   <body ng-controller="SparkCtrl">
     <div id="container" >
-    <ej-sparkline e-markersettings-visible="true" e-markersettings-fill="#ff14ae" e-markersettings-width="4" e-markersettings-boder-width="1"></ej-sparkline>
+    <ej-sparkline e-markersettings-visible="true" e-markersettings-fill="#ff14ae" e-markersettings-width="4" 
+    e-markersettings-boder-width="1"></ej-sparkline>
     </div>
     <script>
-        angular.module('SparkApp', ['ejangular'])
-            .controller('SparkCtrl', function ($scope) {
+    angular.module('SparkApp', ['ejangular'])
+    .controller('SparkCtrl', function ($scope) {
                 });
     </script>
     </body>

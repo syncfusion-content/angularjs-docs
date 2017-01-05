@@ -34,9 +34,9 @@ Range collection is directly added to the scale object. Refer the following code
                  <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -73,9 +73,9 @@ The API **size** is used to specify the width of the ranges.  The major attribut
                  <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -109,15 +109,16 @@ You can set the background color to improve the look and feel of the **Circular 
                  <e-scales>
                  <e-scale e-showRanges="true" e-showScaleBar="true" e-radius="150" e-size="2">
                  <e-ranges>
-                 <e-range e-startValue="20" e-endValue="80" e-backgroundColor="yellow" e-border-color="green" e-border-width="2"></e-range>
+                 <e-range e-startValue="20" e-endValue="80" e-backgroundColor="yellow" 
+                 e-border-color="green" e-border-width="2"></e-range>
                  </e-ranges>
                  </e-scale>
                  <e-scales> 
-                </ej-circulargauge>
+                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -149,16 +150,17 @@ You can position ranges using two properties such as **distanceFromScale** and *
                  <e-scales>
                  <e-scale e-showRanges="true" e-showScaleBar="true" e-radius="150" e-size="2">
                  <e-ranges>
-                 <e-range e-startValue="0" e-endValue="100" e-backgroundColor="green" e-border-color="black" e-border-width="2" e-placement="far"
+                 <e-range e-startValue="0" e-endValue="100" e-backgroundColor="green"
+                 e-border-color="black" e-border-width="2" e-placement="far"
                  e-distanceFromScale="-30"></e-range>
                  </e-ranges>
                  </e-scale>
                  <e-scales> 
-                </ej-circulargauge>
+                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -192,17 +194,20 @@ You can set multiple ranges by adding an array of ranges objects. Refer the foll
                  <e-pointer e-value="40" e-showbackneedle="true" e-length="100">
                  </e-pointers>
                  <e-ranges>
-                 <e-range e-startValue="0" e-endValue="50" e-backgroundColor="green"  e-placement="far" e-distanceFromScale="-30"></e-range>
-                 <e-range e-startValue="50" e-endValue="80" e-backgroundColor="yellow"  e-placement="far" e-distanceFromScale="-30"></e-range>
-                 <e-range e-startValue="80" e-endValue="100" e-backgroundColor="red"  e-placement="far" e-distanceFromScale="-30"></e-range>
+                 <e-range e-startValue="0" e-endValue="50" e-backgroundColor="green"  e-placement="far"
+                 e-distanceFromScale="-30"></e-range>
+                 <e-range e-startValue="50" e-endValue="80" e-backgroundColor="yellow"  e-placement="far"
+                 e-distanceFromScale="-30"></e-range>
+                 <e-range e-startValue="80" e-endValue="100" e-backgroundColor="red"  e-placement="far"
+                 e-distanceFromScale="-30"></e-range>
                  </e-ranges>
                  </e-scale>
                  <e-scales> 
-                </ej-circulargauge>
+                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -232,21 +237,23 @@ Frame is the element that decides the appearance of the **Circular Gauge**. You 
     </head>
     <body ng-controller="CircularGaugeCtrl">
         <div id="circularframe">
-                <ej-circulargauge  e-frame-frameType="halfcircle" e-halfCircleFrameStartAngle="205" e-halfCircleFrameEndAngle="335" e-pointercap-radius="50"
+                <ej-circulargauge  e-frame-frameType="halfcircle" e-halfCircleFrameStartAngle="205" 
+                e-halfCircleFrameEndAngle="335" e-pointercap-radius="50"
                 e-backgroundColor="#FFCCCC">
                 <e-scales>
                 <e-scale  e-startangle="180" e-sweepangle="180">
                 <e-pointers>
-                <e-pointer e-type="needle" e-needletype="rectangle" e-width="1" e-value="40" e-length="120">
-                 </e-pointer>
+                <e-pointer e-type="needle" e-needletype="rectangle" e-width="1" e-value="40"
+                e-length="120">
+                </e-pointer>
                 </e-pointers>
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>

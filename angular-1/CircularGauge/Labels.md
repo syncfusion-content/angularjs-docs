@@ -35,7 +35,7 @@ documentation: ug
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
        .controller('CircularGaugeCtrl', function ($scope) {
          });
@@ -70,22 +70,24 @@ Font option is also available on the labels. The basic three properties of fonts
         <div id="circularframe">
                 <ej-circulargauge >
                 <e-scales>
-                <e-scale e-showScaleBar="true"  e-radius="150" e-width="10" e-backgroundColor="#FAF4B5" e-border-color="yellow" e-border-width="2" >
-                 <e-pointers>
-                 <e-pointer e-value="40" e-length="100" e-backgroundColor="#FAF4B5" e-border-color="yellow" e-border-width="2" e-opacity="0.6" e-width="16"></e-pointer>
-                 </e-pointers>
-                 <e-labels>
-                 <e-label e-color="yellow" e-includeFirstValue="false" e-angle="10" e-opacity="0.8" e-font-size="15px" e-font-fontFamily="arial" 
-                 e-font-fontStyle="bold">
-                 </e-label>
-                 </e-labels>
-                 </e-scale>
+                <e-scale e-showScaleBar="true"  e-radius="150" e-width="10" e-backgroundColor="#FAF4B5"
+                e-border-color="yellow" e-border-width="2" >
+                <e-pointers>
+                <e-pointer e-value="40" e-length="100" e-backgroundColor="#FAF4B5" 
+                e-border-color="yellow" e-border-width="2" e-opacity="0.6" e-width="16"></e-pointer>
+                </e-pointers>
+                <e-labels>
+                <e-label e-color="yellow" e-includeFirstValue="false" e-angle="10" e-opacity="0.8"
+                e-font-size="15px" e-font-fontFamily="arial" e-font-fontStyle="bold">
+                </e-label>
+                </e-labels>
+                </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -119,25 +121,28 @@ Labels can be positioned with the help of two properties such as **distanceFromS
                 <ej-circulargauge >
                 <e-scales>
                 <e-scale e-size="2" e-showScaleBar="true"  e-radius="150" e-showRanges="true" >
-                 <e-pointers>
-                 <e-pointer e-value="40" e-length="100" e-showbackneedle="true"></e-pointer>
-                 </e-pointers>
-                 <e-labels>
-                 <e-label e-unitText="kmph" e-unitTextPosition="back">
-                 </e-label>
-                 </e-labels>
+                <e-pointers>
+                <e-pointer e-value="40" e-length="100" e-showbackneedle="true"></e-pointer>
+                </e-pointers>
+                <e-labels>
+                <e-label e-unitText="kmph" e-unitTextPosition="back">
+                </e-label>
+                </e-labels>
                 <e-ranges>
-                <e-range e-backgroundcolor="green" e-placement="far" e-distanceFromScale="-30" e-startValue="0" e-endValue="50" e-size="40"></e-range>
-                <e-range e-startValue="50" e-endValue="80" e-backgroundcolor="yellow"  e-placement="far" e-distanceFromScale="-30" e-size="40"></e-range>
-                <e-range e-startValue="80" e-endValue="100" e-backgroundcolor="red"  e-placement="far" e-distanceFromScale="-30" e-size="40"></e-range>
-                 </e-ranges>
+                <e-range e-backgroundcolor="green" e-placement="far" e-distanceFromScale="-30"
+                e-startValue="0" e-endValue="50" e-size="40"></e-range>
+                <e-range e-startValue="50" e-endValue="80" e-backgroundcolor="yellow"  
+                e-placement="far" e-distanceFromScale="-30" e-size="40"></e-range>
+                <e-range e-startValue="80" e-endValue="100" e-backgroundcolor="red"  
+                e-placement="far" e-distanceFromScale="-30" e-size="40"></e-range>
+                </e-ranges>
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -166,25 +171,27 @@ You can achieve multiple labels such as minor and major in a **Gauge** sample sc
         <div id="circularframe">
                 <ej-circulargauge >
                 <e-scales>
-                <e-scale e-showRanges="true" e-minorIntervalValue="5" e-backgroundColor="yellow" e-border-width="2" e-border-color="red" 
-                e-showScaleBar="true" e-radius="150" e-size="5"
-                 e-pointerCap-borderWidth="1.5" e-pointerCap-borderColor="red" e-pointerCap-backgroundcolor="yellow" >
-                 <e-pointers>
-                 <e-pointer e-backgroundcolor="yellow" e-length="110" e-border-color="red" e-border-width="1.5"></e-pointer>
-                 </e-pointers>
-                 <e-labels>
-                 <e-label e-type="minor" e-color="yellow">
-                 </e-label>
-                 <e-label e-type="major" e-color="red">
-                 </e-label>
-                 </e-labels>
+                <e-scale e-showRanges="true" e-minorIntervalValue="5" e-backgroundColor="yellow"
+                e-border-width="2" e-border-color="red" e-showScaleBar="true" e-radius="150" 
+                e-size="5" e-pointerCap-borderWidth="1.5" e-pointerCap-borderColor="red" 
+                e-pointerCap-backgroundcolor="yellow" >
+                <e-pointers>
+                <e-pointer e-backgroundcolor="yellow" e-length="110" e-border-color="red"
+                e-border-width="1.5"></e-pointer>
+                </e-pointers>
+                <e-labels>
+                <e-label e-type="minor" e-color="yellow">
+                </e-label>
+                <e-label e-type="major" e-color="red">
+                </e-label>
+                </e-labels>
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>

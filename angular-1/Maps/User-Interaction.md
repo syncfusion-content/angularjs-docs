@@ -29,14 +29,15 @@ You can select the shape by tapping the shape. The Single selection is enabled b
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
-            <e-layer e-shapedata=usMap e-enableselection="true" e-shapesettings-fill="#9CBF4E" e-shapesettings-strokethickness="0.5"
-              e-shapesettings-stroke="white"e-shapesettings-selectionstrokewidth="2" e-shapesettings-selectionstroke="white"
-               e-shapesettings-selectioncolor="#BC5353"></e-layer>
+            <e-layer e-shapedata=usMap e-enableselection="true" e-shapesettings-fill="#9CBF4E" 
+            e-shapesettings-strokethickness="0.5" e-shapesettings-stroke="white"
+            e-shapesettings-selectionstrokewidth="2" e-shapesettings-selectionstroke="white"
+            e-shapesettings-selectioncolor="#BC5353"></e-layer>
         </e-layers>
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+        .controller('MapsCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -66,7 +67,7 @@ This feature enables you to select multiple Map shapes on mouse taps accompanied
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+        .controller('MapsCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -98,7 +99,7 @@ You can enable this feature by setting the `e-draggingOnSelection` property  **T
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+        .controller('MapsCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -154,15 +155,15 @@ The `e-zoomsettings-maxvalue` property is used to set the maximum zoom level of 
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="MapsCtrl">
-      <div id="mapContainer" style="width: 900px; height: 600px;" ej-map e-zoomsettings-enablezoom="true" e-zoomsettings-minvalue="1"
-      e-zoomsettings-maxvalue="20" e-zoomsettings-level="1">
+      <div id="mapContainer" style="width: 900px; height: 600px;" ej-map e-zoomsettings-enablezoom="true" 
+      e-zoomsettings-minvalue="1" e-zoomsettings-maxvalue="20" e-zoomsettings-level="1">
         <e-layers>
             <e-layer e-shapedata=usMap ></e-layer>
         </e-layers>
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+        .controller('MapsCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -219,14 +220,15 @@ When `e-zoomsettings-enablezoomonselection` property is set to true, then zoomin
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="MapsCtrl">
-      <div id="mapContainer" style="width: 900px; height: 600px;" ej-map e-zoomsettings-enablezoomonselection="true">
+      <div id="mapContainer" style="width: 900px; height: 600px;" ej-map 
+      e-zoomsettings-enablezoomonselection="true">
         <e-layers>
             <e-layer e-shapedata=usMap ></e-layer>
         </e-layers>
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+        .controller('MapsCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -291,7 +293,7 @@ The panning feature enables the Map navigation. The `e-enablepan` property is us
       </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+        .controller('MapsCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -316,11 +318,12 @@ The panning feature enables the Map navigation. The `e-enablepan` property is us
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="MapsCtrl">
-      <div id="mapContainer" style="width: 900px; height: 600px;" ej-map e-navigationcontrol-enablenavigation="true">      
+      <div id="mapContainer" style="width: 900px; height: 600px;" ej-map 
+      e-navigationcontrol-enablenavigation="true">      
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+        .controller('MapsCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -365,13 +368,14 @@ You can set this option by using `e-navigationcontrol-dockposition`
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="MapsCtrl">
-      <div id="mapContainer" style="width: 900px; height: 600px;" ej-map e-navigationcontrol-enablenavigation="true"
-      e-navigationcontrol-orientation="vertical" e-navigationcontrol-dockposition="none" e-navigationcontrol-absoluteposition-x="5"
+      <div id="mapContainer" style="width: 900px; height: 600px;" ej-map 
+      e-navigationcontrol-enablenavigation="true" e-navigationcontrol-orientation="vertical" 
+      e-navigationcontrol-dockposition="none" e-navigationcontrol-absoluteposition-x="5"
       e-navigationcontrol-absoluteposition-y="16">      
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+        .controller('MapsCtrl', function ($scope) {
                         });
     </script>
     </body>

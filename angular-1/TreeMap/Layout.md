@@ -32,15 +32,15 @@ There are four different **TreeMap** layouts such as
     <body ng-controller="TreemapCtrl">
      <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
      <ej-treemap e-datasource=populationdata e-colorValuePath="Growth" e-weightvaluepath="Population"
-   e-itemslayoutmode="squarified">
-      <e-levels>
+     e-itemslayoutmode="squarified">
+     <e-levels>
      <e-level e-grouppath="Continent" e-groupgap="5"></e-level>
      </e-levels>
      </ej-treemap>
      </div>
-      <script>
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+     <script>
+     angular.module('TreemapApp', ['ejangular'])
+     .controller('TreemapCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -66,16 +66,16 @@ There are four different **TreeMap** layouts such as
     <body ng-controller="TreemapCtrl">
      <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
      <ej-treemap e-datasource=populationdata e-colorValuePath="Growth" e-weightvaluepath="Population"
-   e-itemslayoutmode="sliceanddiceauto">
-      <e-levels>
+     e-itemslayoutmode="sliceanddiceauto">
+     <e-levels>
      <e-level e-grouppath="Continent" e-groupgap="5"></e-level>
      </e-levels>
      </ej-treemap>
      </div>
-      <script>
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
-                        });
+     <script>
+     angular.module('TreemapApp', ['ejangular'])
+     .controller('TreemapCtrl', function ($scope) {
+               });
     </script>
     </body>
 </html> 
@@ -101,16 +101,16 @@ There are four different **TreeMap** layouts such as
     <body ng-controller="TreemapCtrl">
      <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
      <ej-treemap e-datasource=populationdata e-colorValuePath="Growth" e-weightvaluepath="Population"
-   e-itemslayoutmode="sliceanddicehorizontal">
-      <e-levels>
+     e-itemslayoutmode="sliceanddicehorizontal">
+     <e-levels>
      <e-level e-grouppath="Continent" e-groupgap="5"></e-level>
      </e-levels>
      </ej-treemap>
      </div>
-      <script>
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
-                        });
+     <script>
+      angular.module('TreemapApp', ['ejangular'])
+      .controller('TreemapCtrl', function ($scope) {
+               });
     </script>
     </body>
 </html> 
@@ -137,15 +137,15 @@ There are four different **TreeMap** layouts such as
     <body ng-controller="TreemapCtrl">
      <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
      <ej-treemap e-datasource=populationdata e-colorValuePath="Growth" e-weightvaluepath="Population"
-   e-itemslayoutmode="sliceanddicevertical">
-      <e-levels>
+     e-itemslayoutmode="sliceanddicevertical">
+     <e-levels>
      <e-level e-grouppath="Continent" e-groupgap="5"></e-level>
      </e-levels>
      </ej-treemap>
      </div>
-      <script>
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+     <script>
+     angular.module('TreemapApp', ['ejangular'])
+     .controller('TreemapCtrl', function ($scope) {
                         });
     </script>
     </body>

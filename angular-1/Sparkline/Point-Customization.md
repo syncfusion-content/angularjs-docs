@@ -20,13 +20,12 @@ You can customize points by initializing the point colors. The customization opt
   <body ng-controller="SparkCtrl">
     <div id="container" >
     <ej-sparkline e-type="column" e-negativePointColor="red" e-highPointColor = "blue"
-            e-lowPointColor = "orange"
-            e-startPointColor = "green"
-            e-endPointColor ="green"></ej-sparkline>
+    e-lowPointColor = "orange" e-startPointColor = "green" e-endPointColor ="green">
+    </ej-sparkline>
     </div>
     <script>
-        angular.module('SparkApp', ['ejangular'])
-            .controller('SparkCtrl', function ($scope) {
+    angular.module('SparkApp', ['ejangular'])
+    .controller('SparkCtrl', function ($scope) {
                 });
     </script>
     </body>

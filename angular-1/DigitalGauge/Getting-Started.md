@@ -172,8 +172,8 @@ You can customize the **Digital Gauge** using different properties.
 <div id="frame" style="width:100%">
         <ej-digitalgauge>
             <e-items>
-                <e-item e-value='"102"' e-segmentSettings-width="2" e-segmentSettings-length="20" e-characterSettings-type="sevensegment"
-                        e-characterSettings-spacing="12"></e-item>
+                <e-item e-value='"102"' e-segmentSettings-width="2" e-segmentSettings-length="20"
+                 e-characterSettings-type="sevensegment" e-characterSettings-spacing="12"></e-item>
             </e-items>
         </ej-digitalgauge>
     </div>
@@ -236,8 +236,9 @@ You can position the digital letters inside the canvas element using **location*
 
 <ej-digitalgauge>
     <e-items>
-       <e-item e-value='"102"' e-segmentSettings-width="2" e-segmentSettings-length="20" e-characterSettings-type="sevensegment"
-               e-characterSettings-spacing="12" e-position-x="15" e-position-y="12"></e-item>
+       <e-item e-value='"102"' e-segmentSettings-width="2" e-segmentSettings-length="20" 
+       e-characterSettings-type="sevensegment" e-characterSettings-spacing="12" 
+       e-position-x="15" e-position-y="12"></e-item>
        </e-items>
 </ej-digitalgauge>
 
@@ -257,28 +258,37 @@ You can add **Items collection** to display the temperature value as used in the
 <ej-digitalgauge>
     <e-items>
         //For Diplaying fahrenheit value
-        <e-item e-value='"102"' e-segmentSettings-width="2" e-segmentSettings-length="20" e-characterSettings-type="sevensegment"
-                e-characterSettings-spacing="12" e-position-x="15" e-position-y="12"></e-item>
+        <e-item e-value='"102"' e-segmentSettings-width="2" e-segmentSettings-length="20" 
+        e-characterSettings-type="sevensegment" e-characterSettings-spacing="12" 
+        e-position-x="15" e-position-y="12"></e-item>
          //For displaying degree symbol
-         <e-item e-value='"0"' e-segmentSettings-width="2" e-segmentSettings-length="5" e-segmentSettings-spacing="0"
-                 e-characterSettings-type="sevensegment" e-characterSettings-spacing="5" e-position-x="47" e-position-y="7">
+         <e-item e-value='"0"' e-segmentSettings-width="2" e-segmentSettings-length="5" 
+         e-segmentSettings-spacing="0" e-characterSettings-type="sevensegment" 
+         e-characterSettings-spacing="5" e-position-x="47" e-position-y="7">
          </e-item>
          //For displaying fahrenheit symbol
-         <e-item e-value="F" e-segmentSettings-width="2" e-segmentSettings-length="20" e-segmentSettings-spacing="0"
-                 e-characterSettings-type="sevensegment" e-characterSettings-spacing="12" e-position-x="76" e-position-y="12">
+         <e-item e-value="F" e-segmentSettings-width="2" e-segmentSettings-length="20" 
+         e-segmentSettings-spacing="0" e-characterSettings-type="sevensegment" 
+         e-characterSettings-spacing="12" e-position-x="76" e-position-y="12">
          </e-item>
          //For displaying Celcius value
-         <e-item e-value='"38"' e-segmentSettings-width="1" e-segmentSettings-length="5" e-segmentSettings-spacing="0" e-segmentSettings-color="#F5b43f"
-                 e-characterSettings-type="sevensegment" e-characterSettings-spacing="12" e-position-x="40" e-position-y="58">
+         <e-item e-value='"38"' e-segmentSettings-width="1" e-segmentSettings-length="5" 
+         e-segmentSettings-spacing="0" e-segmentSettings-color="#F5b43f" 
+         e-characterSettings-type="sevensegment" e-characterSettings-spacing="12" 
+         e-position-x="40" e-position-y="58">
          </e-item>
          //For displaying degree symbol
-         <e-item e-value='"0"' e-segmentSettings-width="2" e-segmentSettings-length="2" e-segmentSettings-spacing="0" e-segmentSettings-color="#F5b43f"
-                 e-characterSettings-type="sevensegment" e-characterSettings-spacing="12" e-position-x="52" e-position-y="55">
-          </e-item>
-          //For displaying celcius symbol
-          <e-item e-value="c" e-segmentSettings-width="2" e-segmentSettings-length="4" e-segmentSettings-spacing="0" e-segmentSettings-color="#F5b43f"
-                  e-characterSettings-type="sevensegment" e-characterSettings-spacing="12" e-position-x="60" e-position-y="58">
-          </e-item>
+         <e-item e-value='"0"' e-segmentSettings-width="2" e-segmentSettings-length="2" 
+         e-segmentSettings-spacing="0" e-segmentSettings-color="#F5b43f"
+         e-characterSettings-type="sevensegment" e-characterSettings-spacing="12" 
+         e-position-x="52" e-position-y="55">
+         </e-item>
+         //For displaying celcius symbol
+         <e-item e-value="c" e-segmentSettings-width="2" e-segmentSettings-length="4" 
+         e-segmentSettings-spacing="0" e-segmentSettings-color="#F5b43f"
+         e-characterSettings-type="sevensegment" e-characterSettings-spacing="12" 
+         e-position-x="60" e-position-y="58">
+         </e-item>
      </e-items>
 </ej-digitalgauge>
 

@@ -25,13 +25,15 @@ documentation: ug
     </head>
     <body ng-controller="CircularGaugeCtrl">
         <div id="circularframe">
-                <ej-circulargauge e-tooltip-ShowLabelTooltip="true" e-tooltip-showCustomLabelTooltip="true">
+                <ej-circulargauge e-tooltip-ShowLabelTooltip="true" 
+                e-tooltip-showCustomLabelTooltip="true">
                 <e-scales>
                 <e-scale   e-showLabels="true" e-radius="150">
                 <e-customlabels>
-                <e-customlabel e-color="red" e-textAngle="10" e-value="095345" e-font-size="18px" e-font-fontFamily="Arial" e-font-fontStyle="bold"
-                e-position-x="180" e-position-y="220">
-                 </e-customlabel>
+                <e-customlabel e-color="red" e-textAngle="10" e-value="095345" e-font-size="18px"
+                e-font-fontFamily="Arial" e-font-fontStyle="bold" e-position-x="180" 
+                e-position-y="220">
+                </e-customlabel>
                 </e-customlabels>
                 <e-pointers>
                 <e-pointer e-length="100" e-value="60">
@@ -40,9 +42,9 @@ documentation: ug
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -79,13 +81,14 @@ In **Tooltip** option, you can customize the Tooltip window by adding the toolti
     </div>
     </div>
         <div id="circularframe">
-                <ej-circulargauge e-tooltip-ShowLabelTooltip="true" e-tooltip-showCustomLabelTooltip="true" e-tooltip-templateid="Tooltip">
+                <ej-circulargauge e-tooltip-ShowLabelTooltip="true"
+                e-tooltip-showCustomLabelTooltip="true" e-tooltip-templateid="Tooltip">
                 <e-scales>
                 <e-scale   e-showLabels="true" e-radius="150">
                 <e-customlabels>
-                <e-customlabel e-color="red" e-textAngle="10" e-value="0 9 5 3 4 5" e-font-size="18px" e-font-fontFamily="Arial" e-font-fontStyle="bold"
-                e-position-x="180" e-position-y="220">
-                 </e-customlabel>
+                <e-customlabel e-color="red" e-textAngle="10" e-value="0 9 5 3 4 5" e-font-size="18px" 
+                e-font-fontFamily="Arial" e-font-fontStyle="bold" e-position-x="180" e-position-y="220">
+                </e-customlabel>
                 </e-customlabels>
                 <e-pointers>
                 <e-pointer e-length="100" e-value="60">
@@ -94,9 +97,9 @@ In **Tooltip** option, you can customize the Tooltip window by adding the toolti
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script>
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>

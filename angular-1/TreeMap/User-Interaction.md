@@ -33,12 +33,13 @@ The border can be customized with the `e-highlightBorderBrush` and `e-highlightB
     </head> 
     <body ng-controller="TreemapCtrl">
      <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
-     <ej-treemap e-highlightonselection="true" e-highlightborderbrush="#3e3e3e" e-highlightborderthickness="1">
+     <ej-treemap e-highlightonselection="true" e-highlightborderbrush="#3e3e3e" 
+     e-highlightborderthickness="1">
      </ej-treemap>
      </div>
-    <script>
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+     <script>
+     angular.module('TreemapApp', ['ejangular'])
+     .controller('TreemapCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -61,12 +62,13 @@ To enable the selection of leaf nodes, the `e-highlightGroupOnSelection` propert
     </head> 
     <body ng-controller="TreemapCtrl">
      <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
-     <ej-treemap e-highlightgrouponselection="true" e-highlightborderbrush="#3e3e3e" e-highlightborderthickness="1">
+     <ej-treemap e-highlightgrouponselection="true" e-highlightborderbrush="#3e3e3e" 
+     e-highlightborderthickness="1">
      </ej-treemap>
      </div>
-    <script>
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+     <script>
+     angular.module('TreemapApp', ['ejangular'])
+     .controller('TreemapCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -95,9 +97,9 @@ To select multiple items simultaneously, the mouse tap should be done along with
      <ej-treemap e-highlightonselection="true" e-selectionmode="multiple">
      </ej-treemap>
      </div>
-    <script>
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+     <script>
+     angular.module('TreemapApp', ['ejangular'])
+     .controller('TreemapCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -120,9 +122,9 @@ To select multiple items simultaneously, the mouse tap should be done along with
      <ej-treemap e-highlightgrouponselection="true" e-groupselectionmode="multiple">
      </ej-treemap>
      </div>
-    <script>
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+     <script>
+     angular.module('TreemapApp', ['ejangular'])
+     .controller('TreemapCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -152,9 +154,9 @@ To enable this feature, set the `e-draggingOnSelection` to "**true**".
      <ej-treemap e-draggingonselection="true">
      </ej-treemap>
      </div>
-    <script>
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+     <script>
+     angular.module('TreemapApp', ['ejangular'])
+     .controller('TreemapCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -180,9 +182,9 @@ To enable this feature, set the `e-draggingGroupOnSelection` to "**true**".
      <ej-treemap e-dragginggrouponselection="true">
      </ej-treemap>
      </div>
-    <script>
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+     <script>
+     angular.module('TreemapApp', ['ejangular'])
+     .controller('TreemapCtrl', function ($scope) {
                         });
     </script>
     </body>

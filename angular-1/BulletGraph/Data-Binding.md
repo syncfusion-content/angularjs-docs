@@ -25,8 +25,10 @@ Data available in client-side (local data) can be bound with **Bullet Graph** us
     <body ng-controller="BulletGraphCtrl">
         <div id="bulletframe">
                  <ej-bulletgraph e-qualitativerangesize="60" e-quantitativescalesettings-location-x="50"
-                 e-quantitativescalesettings-location-y="20" e-height="120" e-fields-dataSource="dataSource" e-fields-category="category"
-                 e-fields-featureMeasures="value" e-fields-comparativeMeasure="comparativeMeasureValue"></ej-bulletgraph>
+                 e-quantitativescalesettings-location-y="20" e-height="120"
+                 e-fields-dataSource="dataSource" e-fields-category="category"
+                 e-fields-featureMeasures="value" 
+                 e-fields-comparativeMeasure="comparativeMeasureValue"></ej-bulletgraph>
         </div>
      <script >
        var localData = [
@@ -38,18 +40,13 @@ Data available in client-side (local data) can be bound with **Bullet Graph** us
                    value: 9.5, comparativeMeasureValue: 5,
                    category: 2002
                }];
-           angular.module('BulletGraphApp', ['ejangular'])
-             .controller('BulletGraphCtrl', function ($scope) {
+       angular.module('BulletGraphApp', ['ejangular'])
+       .controller('BulletGraphCtrl', function ($scope) {
                  $scope.dataSource= localData;
-                 });
+           });
      </script>
      </body>
     </html>
-
-
-
-
-
 
 {% endhighlight %}
 
@@ -72,28 +69,31 @@ The following screenshot displays **Bullet Graph** with local data generated usi
     </head>
     <body ng-controller="BulletGraphCtrl">
         <div id="bulletframe">
-                 <ej-bulletgraph e-qualitativerangesize="60" e-quantitativescalesettings-location-x="50" e-quantitativescalesettings-minimum="5" e-quantitativescalesettings-maximum="45"
+                 <ej-bulletgraph e-qualitativerangesize="60" e-quantitativescalesettings-location-x="50" 
+                 e-quantitativescalesettings-minimum="5" e-quantitativescalesettings-maximum="45"
                  e-quantitativescalesettings-interval="10"
-                 e-quantitativescalesettings-location-y="20" e-height="120" e-fields-dataSource="dataManger" e-fields-query="query" e-fields-category="ProductID"
+                 e-quantitativescalesettings-location-y="20" e-height="120"
+                 e-fields-dataSource="dataManger" e-fields-query="query" e-fields-category="ProductID"
                  e-fields-featureMeasures="UnitPrice" e-fields-comparativeMeasure="Quantity">
                  <e-qualitativeranges>
-                <e-qualitativerange e-rangeend="25"></e-qualitativerange>
-                <e-qualitativerange e-rangeend="37"></e-qualitativerange>
-                <e-qualitativerange e-rangeend="45"></e-qualitativerange>
-            </e-qualitativeranges>
+                 <e-qualitativerange e-rangeend="25"></e-qualitativerange>
+                 <e-qualitativerange e-rangeend="37"></e-qualitativerange>
+                 <e-qualitativerange e-rangeend="45"></e-qualitativerange>
+                 </e-qualitativeranges>
                  </ej-bulletgraph>
         </div>
              <script >
-        var dataManger = ej.DataManager({
+           var dataManger = ej.DataManager({
                     url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
                 });
                // Query creation
-                var query = ej.Query().from("Order_Details").take(3).where("UnitPrice", ej.FilterOperators.greaterThan, 18, false)
+           var query = ej.Query().from("Order_Details").take(3)
+                    .where("UnitPrice", ej.FilterOperators.greaterThan, 18, false)
                     .where("UnitPrice", ej.FilterOperators.lessThanOrEqual, 40, false)
                     .where("Quantity", ej.FilterOperators.greaterThan, 5, false)
                     .where("Quantity", ej.FilterOperators.lessThanOrEqual, 45, false);
            angular.module('BulletGraphApp', ['ejangular'])
-             .controller('BulletGraphCtrl', function ($scope) {
+           .controller('BulletGraphCtrl', function ($scope) {
                  $scope.dataManger= dataManger;
                  $scope.query=query;
                  });

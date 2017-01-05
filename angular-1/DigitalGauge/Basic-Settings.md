@@ -24,9 +24,9 @@ The basic customization for any control is to set the dimension. Here dimension 
         <div id="digitalframe">
                  <ej-digitalgauge e-height="200" e-width="500" e-value="Syncfusion"></ej-digitalgauge>
         </div>
-         <script >
+         <script>
         angular.module('DigitalGaugeApp', ['ejangular'])
-       .controller('DigitalGaugeCtrl', function ($scope) {
+        .controller('DigitalGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -62,9 +62,9 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
         <div id="digitalframe">
                  <ej-digitalgauge  e-width="800" e-isresponsive="true"></ej-digitalgauge>
         </div>
-         <script >
+        <script>
         angular.module('DigitalGaugeApp', ['ejangular'])
-       .controller('DigitalGaugeCtrl', function ($scope) {
+        .controller('DigitalGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -98,11 +98,12 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
     </head>
     <body ng-controller="DigitalGaugeCtrl">
         <div id="digitalframe">
-                 <ej-digitalgauge e-width="800" e-isresponsive="true" e-themes="flatdark" e-value="LOS ANGELS 40 KM"></ej-digitalgauge>
+                 <ej-digitalgauge e-width="800" e-isresponsive="true" e-themes="flatdark"
+                  e-value="LOS ANGELS 40 KM"></ej-digitalgauge>
         </div>
-         <script >
+        <script>
         angular.module('DigitalGaugeApp', ['ejangular'])
-       .controller('DigitalGaugeCtrl', function ($scope) {
+        .controller('DigitalGaugeCtrl', function ($scope) {
          });
     </script>
     </body>

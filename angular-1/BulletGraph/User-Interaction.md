@@ -22,11 +22,12 @@ documentation: ug
     </head>
     <body ng-controller="BulletGraphCtrl">
         <div id="bulletframe">
-                 <ej-bulletgraph e-value="8" e-enableanimation="true" e-comparativemeasurevalue="5" ></ej-bulletgraph>
+                 <ej-bulletgraph e-value="8" e-enableanimation="true" e-comparativemeasurevalue="5" >
+                 </ej-bulletgraph>
         </div>
      <script type="text/javascript">
            angular.module('BulletGraphApp', ['ejangular'])
-             .controller('BulletGraphCtrl', function ($scope) {
+           .controller('BulletGraphCtrl', function ($scope) {
                  });
      </script>
      </body>
@@ -51,11 +52,12 @@ documentation: ug
     </head>
     <body ng-controller="BulletGraphCtrl">
         <div id="bulletframe">
-                 <ej-bulletgraph e-value="8" e-isresponsive="true" e-comparativemeasurevalue="5" ></ej-bulletgraph>
+                 <ej-bulletgraph e-value="8" e-isresponsive="true" e-comparativemeasurevalue="5" >
+                 </ej-bulletgraph>
         </div>
      <script type="text/javascript">
            angular.module('BulletGraphApp', ['ejangular'])
-             .controller('BulletGraphCtrl', function ($scope) {
+           .controller('BulletGraphCtrl', function ($scope) {
                  });
      </script>
      </body>
@@ -83,17 +85,22 @@ Background color for qualitative range is applied to major ticks and minor ticks
         <div id="bulletframe">
                  <ej-bulletgraph e-value="8" e-comparativemeasurevalue="5" >
                  <e-qualitativeranges>
-                <e-qualitativerange e-rangeend="3.5" e-rangestroke="darkred" e-rangeopacity="0.5"></e-qualitativerange>
-                <e-qualitativerange e-rangeend="5.0" e-rangestroke="red" e-rangeopacity="1"></e-qualitativerange>
-                <e-qualitativerange e-rangeend="7.5" e-rangestroke="blue" e-rangeopacity="0.7"></e-qualitativerange>
-                <e-qualitativerange e-rangeend="9.0" e-rangestroke="lightblue" e-rangeopacity="1"></e-qualitativerange>
-                <e-qualitativerange e-rangeend="10.5" e-rangestroke="green" e-rangeopacity="1"></e-qualitativerange>
-            </e-qualitativeranges>
+                 <e-qualitativerange e-rangeend="3.5" e-rangestroke="darkred" e-rangeopacity="0.5">
+                 </e-qualitativerange>
+                 <e-qualitativerange e-rangeend="5.0" e-rangestroke="red" e-rangeopacity="1">
+                 </e-qualitativerange>
+                 <e-qualitativerange e-rangeend="7.5" e-rangestroke="blue" e-rangeopacity="0.7">
+                 </e-qualitativerange>
+                 <e-qualitativerange e-rangeend="9.0" e-rangestroke="lightblue" e-rangeopacity="1">
+                 </e-qualitativerange>
+                 <e-qualitativerange e-rangeend="10.5" e-rangestroke="green" e-rangeopacity="1">
+                 </e-qualitativerange>
+                 </e-qualitativeranges>
                  </ej-bulletgraph>
         </div>
      <script type="text/javascript">
            angular.module('BulletGraphApp', ['ejangular'])
-             .controller('BulletGraphCtrl', function ($scope) {
+           .controller('BulletGraphCtrl', function ($scope) {
                  });
      </script>
      </body>
@@ -114,8 +121,8 @@ Bullet Graph supports Tooltip template instead of default Tooltip to customize t
 {% highlight html %}
 
 <div id="BulletGraphTooltip" style="display:none; width:125px; padding-top: 10px; padding-bottom:10px; color: blue"> 
-    <div align="center" style="color:blue; font-weight:bold"> Sales </div> 
-    <table style="color:green"> <tr> <td> Current </td> <td> : </td> </tr> <tr> <td> Target </td> <td> : </td> </tr> </table> 
+<div align="center" style="color:blue; font-weight:bold"> Sales </div> 
+<table style="color:green"> <tr> <td> Current </td> <td> : </td> </tr> <tr> <td> Target </td> <td> : </td> </tr> </table> 
 </div>
 
 {% endhighlight %}
@@ -129,11 +136,13 @@ Bullet Graph supports Tooltip template instead of default Tooltip to customize t
     </head>
     <body ng-controller="BulletGraphCtrl">
         <div id="bulletframe">
-                 <ej-bulletgraph e-value="8" e-height="150" e-comparativemeasurevalue="5" e-tooltipSettings-template="BulletGraphTooltip" ></ej-bulletgraph>
+                 <ej-bulletgraph e-value="8" e-height="150" e-comparativemeasurevalue="5"
+                 e-tooltipSettings-template="BulletGraphTooltip" >
+                 </ej-bulletgraph>
         </div>
      <script type="text/javascript">
            angular.module('BulletGraphApp', ['ejangular'])
-             .controller('BulletGraphCtrl', function ($scope) {
+           .controller('BulletGraphCtrl', function ($scope) {
                  });
      </script>
      </body>

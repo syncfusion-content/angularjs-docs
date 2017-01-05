@@ -133,14 +133,12 @@ The code example for defining controls in AngularJS is as follows,
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart e-size=size>
+        <div id="container" ej-chart e-size-height="500px" e-size-width="800px">
         </div>
         <script>
-            var sizeObj = { height: "500px", width: "800px" };
-            angular.module('ChartApp', ['ejangular'])
+                angular.module('ChartApp', ['ejangular'])
                 .controller('ChartCtrl', function ($scope) {
-                    $scope.size = sizeObj;
-                });
+                 });
         </script>
     </body>
 </html>
@@ -151,7 +149,7 @@ The code example for defining controls in AngularJS is as follows,
 
 ## Data Binding
 
-Typically, you will assign data directly to chart using [`dataSource`](../api/ejchart#members:series-datasource) property of the series. In AngularJS, you need to bind the variable, which contains data in the AngularJS scope object, to the dataSource property as illustrated in the following code example,
+Typically, you will assign data directly to chart using `dataSource` property of the series. In AngularJS, you need to bind the variable, which contains data in the AngularJS scope object, to the dataSource property as illustrated in the following code example,
 
 
 I> Essential JS includes AngularJS directives for all controls in the **ej.widget.angular.min.js** script file. 
@@ -194,7 +192,7 @@ N> All the properties in EjChart supports one way AngularJS binding except inner
                             { month: 'Dec', sales: 32 }
                         ];
         angular.module('ChartApp', ['ejangular'])
-            .controller('ChartCtrl', function ($scope) {
+        .controller('ChartCtrl', function ($scope) {
                 $scope.dataSource = chartData;
         });
     </script>
@@ -209,32 +207,22 @@ Need to edit the jsplayground sample
 
 ## Add Data Labels
 
-You can add data labels to improve the readability of the chart. This can be achieved by enabling the [`visible`](../api/ejchart#members:series-marker-datalabel-visible) option in the [`e-marker-dataLabel`](../api/ejchart#members:series-marker-datalabel    ) option. Now, the data labels are rendered at the top of all the data points.
+You can add data labels to improve the readability of the chart. This can be achieved by enabling the `e-visible` option in the `e-marker-dataLabel` option. Now, the data labels are rendered at the top of all the data points.
 
 The following code example illustrates this,
 
-
-
 {% highlight javascript %}
-
-
      <div id="container" ej-chart>
         <e-series>
-            <e-series  e-marker="markeroptions">
+            <e-series  e-marker-visible="true"
+            e-marker-datalabel-visible="true">
             </e-series>
         </e-series>
     </div>
     <script>
         angular.module('ChartApp', ['ejangular'])
-            .controller('ChartCtrl', function ($scope) {
-                //...
-                $scope.markeroptions = {
-                    dataLabel: {
-                        visible: true
-                    }
-                };
-                //...
-            });
+        .controller('ChartCtrl', function ($scope) {
+               });
     </script>
 
 
@@ -243,16 +231,16 @@ The following code example illustrates this,
 ![](Getting-Started_images/Getting-Started_img3.png)
 
 
-There are situations where the default label content is not sufficient to the user. In this case, you can use the [`template`](../api/ejchart#members:series-marker-datalabel-template) option to format the label content with some additional information.
+There are situations where the default label content is not sufficient to the user. In this case, you can use the `template` option to format the label content with some additional information.
 
 {% highlight html %}
 
 <!DOCTYPE html>
 <html>
 <body>
-      <div id="dataLabelTemplate" style="display:none; padding:3px;background-color:#F08080; opacity:0.8;">
-         <div id="point">#point.x#:$#point.y#K</div>
-      </div>
+  <div id="dataLabelTemplate" style="display:none; padding:3px;background-color:#F08080; opacity:0.8;">
+  <div id="point">#point.x#:$#point.y#K</div>
+   </div>
 </body>
 </html>
 
@@ -261,13 +249,12 @@ There are situations where the default label content is not sufficient to the us
 
 The above HTML template is used as a template for each data label. Here, "point.x" and "point.y" are the placeholder text used to display the corresponding data point’s x & y value.
 
-The following code example shows how to set the id of the above template to [`template`](../api/ejchart#members:series-marker-datalabel-template) option,
+The following code example shows how to set the id of the above template to `template` option,
 
 {% highlight javascript %}
 
-
      angular.module('ChartApp', ['ejangular'])
-            .controller('ChartCtrl', function ($scope) {
+     .controller('ChartCtrl', function ($scope) {
                 $scope.dataSource = chartData;
                 $scope.markeroptions = {
                     dataLabel: {
@@ -284,48 +271,37 @@ The following code example shows how to set the id of the above template to [`te
 
 ## Enable Legend
 
-You can enable or disable the legend by using the [`visible`](../api/ejchart#members:legend-visible) option in the [`legend`](../api/ejchart#members:legend). It is enabled in the chart, by default.
+You can enable or disable the legend by using the `visible` option in the `legend`. It is enabled in the chart, by default.
 
 {% highlight javascript %}
 
-
-    <div id="container" e-legend-visible="true">
-        
-    </div>
+   <div id="container" e-legend-visible="true">
+   </div>
 
 
 {% endhighlight %}
 
 ## Enable Tooltip
 
-The Tooltip is useful when you cannot display information by using the [`Data Labels`](data-markers.html#adding-labels) due to the space constraints. You can enable tooltip by using the [`visible`](../api/ejchart#members:series-tooltip-visible) option of the [`tooltip`](../api/ejchart#members:series-tooltip) in the specific series.
+The Tooltip is useful when you cannot display information by using the `Data Labels` due to the space constraints. You can enable tooltip by using the `visible`option of the `tooltip` in the specific series.
 
 The following code example illustrates this,
 
 {% highlight javascript %}
-
-
     <div id="Template" style="display:none; padding:3px;background-color:red; opacity:0.6;">
-        <div id="point">#point.x#:$#point.y#K</div>
+    <div id="point">#point.x#:$#point.y#K</div>
     </div>
-
     <div id="container" ej-chart>
         <e-series>
-            <e-series e-tooltip="tooltipoptions" >
+            <e-series e-tooltip-visible="true" e-tooltip-template="Template" >
             </e-series>
         </e-series>
     </div>
     <script>
-        angular.module('ChartApp', ['ejangular'])
+            angular.module('ChartApp', ['ejangular'])
             .controller('ChartCtrl', function ($scope) {
                //...
-                $scope.tooltipoptions = {
-                        visible: true,
-                        template: "Template"
-                };
-                //..
-            });
-
+               });
 
 {% endhighlight %}
 
@@ -333,21 +309,16 @@ The following code example illustrates this,
 
 ## Add Chart Title
 
-You need to add a title to the chart to provide quick information to the user about the data being plotted in the chart. You can add it by using the [`text`](../api/ejchart#members:title-text) option of the [`title`](../api/ejchart#members:title).
+You need to add a title to the chart to provide quick information to the user about the data being plotted in the chart. You can add it by using the `text`
+ option of the `title`.
 
 {% highlight javascript %}
-
-
-     <div id="container" ej-chart e-title-text=titletext>
-        
+    <div id="container" ej-chart e-title-text="Sales Analysis">      
     </div>
  <script>
-    angular.module('ChartApp', ['ejangular'])
+            angular.module('ChartApp', ['ejangular'])
             .controller('ChartCtrl', function ($scope) {
-                //...
-                $scope.titletext = "Sales Analysis";
-                //...
-            });
+              });
  </script>
 
 {% endhighlight %}

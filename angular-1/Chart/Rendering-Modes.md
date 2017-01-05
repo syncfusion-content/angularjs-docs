@@ -51,8 +51,8 @@ The following code example shows how to enable HTML5 Canvas rendering in chart.
         <div id="container" ej-chart e-enablecanvasrendering="true" >
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>

@@ -24,31 +24,37 @@ Range collection can be directly added to the scale object. Refer the following 
     </head>
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
-                 <ej-lineargauge   e-enableanimation="false" e-width="600" e-height="150" e-orientation="Horizontal" e-labelColor="black">
+                 <ej-lineargauge   e-enableanimation="false" e-width="600" e-height="150" 
+                 e-orientation="Horizontal" e-labelColor="black">
                  <e-scales>
-                 <e-scale e-width="0"  e-backgroundcolor="#AEC75F"  e-direction="clockwise" e-minimum="-20" e-maximum="60" 
-                 e-border-color="transparent" e-border-width="0" e-showBarPointers="false" e-showRanges="true" >
+                 <e-scale e-width="0"  e-backgroundcolor="#AEC75F"  e-direction="clockwise" 
+                 e-minimum="-20" e-maximum="60" e-border-color="transparent" e-border-width="0" 
+                 e-showBarPointers="false" e-showRanges="true" >
                  <e-markerpointers>
-                 <e-markerpointer  e-width="3" e-length="30" e-backgroundcolor="#FEBE48" e-type="star" e-distancefromscale="20" e-placement="near" e-value="55">
+                 <e-markerpointer  e-width="3" e-length="30" e-backgroundcolor="#FEBE48" e-type="star" 
+                 e-distancefromscale="20" e-placement="near" e-value="55">
                  </e-markerpointer>
                  </e-markerpointers>
-                  <e-labels>
+                 <e-labels>
                  <e-label e-angle="90" e-distancefromscale-x="0" e-distancefromscale-y="50"></e-label>
                  </e-labels>
                  <e-ticks>
-                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="25" e-distancefromscale-y="-1"></e-tick>
-                  <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" e-distancefromscale-x="25" e-distancefromscale-y="-1"></e-tick>
+                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="25" 
+                 e-distancefromscale-y="-1"></e-tick>
+                 <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" 
+                 e-distancefromscale-x="25" e-distancefromscale-y="-1"></e-tick>
                  </e-ticks>
                  <e-ranges>
-                 <e-range e-startvalue="-20" e-endValue="60" e-startwidth="0" e-endwidth="20" e-placement="near" e-distancefromscale="20" e-backgroundcolor="#FEBE48"></e-range>
+                 <e-range e-startvalue="-20" e-endValue="60" e-startwidth="0" e-endwidth="20" 
+                 e-placement="near" e-distancefromscale="20" e-backgroundcolor="#FEBE48"></e-range>
                  </e-ranges>
                  </e-scale>
                  </e-scales>
-                  </ej-lineargauge>
+                 </ej-lineargauge>
         </div>
-         <script >
+        <script>
         angular.module('LinearGaugeApp', ['ejangular'])
-       .controller('LinearGaugeCtrl', function ($scope) {
+        .controller('LinearGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -82,25 +88,29 @@ The major attributes for ranges are **startValue** and **endValue**. The **start
         <div id="linearframe">
                  <ej-lineargauge  e-width="500" e-labelColor="#8c8c8c">
                  <e-scales>
-                 <e-scale e-width="4"  e-backgroundcolor="#10ADF5" e-position-x="50" e-position-y="50" e-length="310" 
-                 e-border-color="transparent" e-border-width="0" e-showMarkerPointers="false" e-showRanges="true"e-showScaleBar="true">
+                 <e-scale e-width="4" e-backgroundcolor="#10ADF5" e-position-x="50" e-position-y="50" 
+                 e-length="310" e-border-color="transparent" e-border-width="0" 
+                 e-showMarkerPointers="false" e-showRanges="true"e-showScaleBar="true">
                  <e-labels>
-                 <e-label e-font-fontStyle="bold" e-font-fontFamily="Segoe UI" e-font-size="11px" e-distancefromscale-x="-12" ></e-label>
+                 <e-label e-font-fontStyle="bold" e-font-fontFamily="Segoe UI" e-font-size="11px" 
+                 e-distancefromscale-x="-12" ></e-label>
                  </e-labels>
                  <e-ticks>
                  <e-tick e-type="majorinterval" e-width="1" e-color="#8c8c8c"></e-tick>
                  </e-ticks>
                  <e-ranges>
-                 <e-range e-startvalue="0" e-endValue="50" e-startwidth="8" e-endwidth="8" e-distancefromscale="5" e-backgroundcolor="#F6B53F"></e-range>
-                 <e-range e-startvalue="70" e-endValue="100" e-startwidth="8" e-endwidth="8" e-distancefromscale="5" e-backgroundcolor="#E94649"></e-range>
+                 <e-range e-startvalue="0" e-endValue="50" e-startwidth="8" e-endwidth="8" 
+                 e-distancefromscale="5" e-backgroundcolor="#F6B53F"></e-range>
+                 <e-range e-startvalue="70" e-endValue="100" e-startwidth="8" e-endwidth="8" 
+                 e-distancefromscale="5" e-backgroundcolor="#E94649"></e-range>
                  </e-ranges>
                  </e-scale>
                  </e-scales>
-                  </ej-lineargauge>
+                 </ej-lineargauge>
         </div>
-         <script >
+        <script>
         angular.module('LinearGaugeApp', ['ejangular'])
-       .controller('LinearGaugeCtrl', function ($scope) {
+        .controller('LinearGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -134,25 +144,29 @@ Execute the above code to render the following output.
         <div id="linearframe">
                  <ej-lineargauge  e-width="500" e-labelColor="#8c8c8c">
                  <e-scales>
-                 <e-scale e-width="4"  e-backgroundcolor="transparent" e-position-x="50" e-position-y="50" e-length="310" 
-                 e-border-color="transparent" e-border-width="0" e-showMarkerPointers="false" e-showRanges="true"e-showScaleBar="true">
+                 <e-scale e-width="4" e-backgroundcolor="transparent" e-position-x="50" e-position-y="50" 
+                 e-length="310" e-border-color="transparent" e-border-width="0" e-showMarkerPointers="false" 
+                 e-showRanges="true"e-showScaleBar="true">
                  <e-labels>
-                 <e-label e-font-fontStyle="bold" e-font-fontFamily="Segoe UI" e-font-size="11px" e-distancefromscale-x="-12" ></e-label>
+                 <e-label e-font-fontStyle="bold" e-font-fontFamily="Segoe UI" e-font-size="11px" 
+                 e-distancefromscale-x="-12" ></e-label>
                  </e-labels>
                  <e-ticks>
                  <e-tick e-type="majorinterval" e-width="1" e-color="#8c8c8c"></e-tick>
                  </e-ticks>
                  <e-ranges>
-                 <e-range e-startvalue="0" e-endValue="50" e-startwidth="3" e-endwidth="18" e-distancefromscale="10" e-border-color="black" e-backgroundcolor="#F6B53F"></e-range>
-                 <e-range e-startvalue="70" e-endValue="100" e-startwidth="18" e-endwidth="3" e-distancefromscale="10" e-backgroundcolor="#E94649" e-border-color="black"></e-range>
+                 <e-range e-startvalue="0" e-endValue="50" e-startwidth="3" e-endwidth="18" 
+                 e-distancefromscale="10" e-border-color="black" e-backgroundcolor="#F6B53F"></e-range>
+                 <e-range e-startvalue="70" e-endValue="100" e-startwidth="18" e-endwidth="3" 
+                 e-distancefromscale="10" e-backgroundcolor="#E94649" e-border-color="black"></e-range>
                  </e-ranges>
                  </e-scale>
                  </e-scales>
-                  </ej-lineargauge>
+                 </ej-lineargauge>
         </div>
-         <script >
+        <script>
         angular.module('LinearGaugeApp', ['ejangular'])
-       .controller('LinearGaugeCtrl', function ($scope) {
+        .controller('LinearGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -186,25 +200,31 @@ Execute the above code to render the following output.
         <div id="linearframe">
                  <ej-lineargauge  e-width="500" e-labelColor="#8c8c8c">
                  <e-scales>
-                 <e-scale e-width="4"  e-backgroundcolor="transparent" e-position-x="50" e-position-y="50" e-length="310" 
-                 e-border-color="transparent" e-border-width="0" e-showMarkerPointers="false" e-showRanges="true"e-showScaleBar="true">
+                 <e-scale e-width="4"  e-backgroundcolor="transparent" e-position-x="50" 
+                 e-position-y="50" e-length="310" e-border-color="transparent" e-border-width="0" 
+                 e-showMarkerPointers="false" e-showRanges="true"e-showScaleBar="true">
                  <e-labels>
-                 <e-label e-font-fontStyle="bold" e-font-fontFamily="Segoe UI" e-font-size="11px" e-distancefromscale-x="-12" ></e-label>
+                 <e-label e-font-fontStyle="bold" e-font-fontFamily="Segoe UI" e-font-size="11px" 
+                 e-distancefromscale-x="-12" ></e-label>
                  </e-labels>
                  <e-ticks>
                  <e-tick e-type="majorinterval" e-width="1" e-color="#8c8c8c"></e-tick>
                  </e-ticks>
                  <e-ranges>
-                 <e-range e-startvalue="0" e-endValue="50" e-startwidth="3" e-endwidth="18" e-distancefromscale="-30" e-placement="near" e-border-color="black" e-backgroundcolor="#F6B53F"></e-range>
-                 <e-range e-startvalue="70" e-endValue="100" e-startwidth="18" e-endwidth="3" e-distancefromscale="-30" e-placement="near" e-backgroundcolor="#E94649" e-border-color="black"></e-range>
+                 <e-range e-startvalue="0" e-endValue="50" e-startwidth="3" e-endwidth="18" 
+                 e-distancefromscale="-30" e-placement="near" e-border-color="black" 
+                 e-backgroundcolor="#F6B53F"></e-range>
+                 <e-range e-startvalue="70" e-endValue="100" e-startwidth="18" e-endwidth="3" 
+                 e-distancefromscale="-30" e-placement="near" e-backgroundcolor="#E94649" 
+                 e-border-color="black"></e-range>
                  </e-ranges>
                  </e-scale>
                  </e-scales>
-                  </ej-lineargauge>
+                 </ej-lineargauge>
         </div>
-         <script >
+        <script>
         angular.module('LinearGaugeApp', ['ejangular'])
-       .controller('LinearGaugeCtrl', function ($scope) {
+        .controller('LinearGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -232,35 +252,48 @@ You can set multiple ranges by adding an array of range objects. Refer the follo
     </head>
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
-                 <ej-lineargauge e-enableanimation="false" e-width="600" e-height="150" e-labelColor="black" e-orientation="Horizontal" e-enableresize="true" >
+                 <ej-lineargauge e-enableanimation="false" e-width="600" e-height="150" 
+                 e-labelColor="black" e-orientation="Horizontal" e-enableresize="true" >
                  <e-scales>
-                 <e-scale e-width="0"  e-backgroundcolor="#AEC75F" e-direction="clockwise"  e-minimum="-20" e-maximum="60"
-                 e-position-x="50" e-position-y="50" e-length="310" 
-                 e-border-color="transparent" e-border-width="0" e-showbarPointers="false" e-showRanges="true">
-                  <e-markerpointers>
-                 <e-markerpointer  e-width="3" e-length="30" e-backgroundcolor="#FE5C09" e-type="star" e-distancefromscale="20" e-placement="near" e-value="55">
+                 <e-scale e-width="0"  e-backgroundcolor="#AEC75F" e-direction="clockwise"  
+                 e-minimum="-20" e-maximum="60" e-position-x="50" e-position-y="50" e-length="310" 
+                 e-border-color="transparent" e-border-width="0" e-showbarPointers="false" 
+                 e-showRanges="true">
+                 <e-markerpointers>
+                 <e-markerpointer  e-width="3" e-length="30" e-backgroundcolor="#FE5C09" e-type="star" 
+                 e-distancefromscale="20" e-placement="near" e-value="55">
                  </e-markerpointer>
                  </e-markerpointers>
                  <e-labels>
                  <e-label e-angle="90" e-distancefromscale-x="0" e-distancefromscale-y="50" ></e-label>
                  </e-labels>
                  <e-ticks>
-                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="20" e-distancefromscale-y="-1"></e-tick>
-                   <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" e-distancefromscale-x="20" e-distancefromscale-y="-1"></e-tick>
+                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="20" 
+                 e-distancefromscale-y="-1"></e-tick>
+                 <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" 
+                 e-distancefromscale-x="20" e-distancefromscale-y="-1"></e-tick>
                  </e-ticks>
                  <e-ranges>
-                 <e-range e-startvalue="-20" e-endValue="0" e-startwidth="5" e-endwidth="10" e-distancefromscale="20" e-placement="near" e-border-color="#2788B1" e-backgroundcolor="#2788B1"></e-range>
-                 <e-range e-startvalue="0" e-endValue="20" e-startwidth="10" e-endwidth="15" e-distancefromscale="20" e-placement="near" e-backgroundcolor="#A5BA28" e-border-color="#A5BA28"></e-range>
-                  <e-range e-startvalue="20" e-endValue="40" e-startwidth="15" e-endwidth="20" e-distancefromscale="20" e-placement="near" e-backgroundcolor="#FEBE48" e-border-color="#FEBE48"></e-range>
-                   <e-range e-startvalue="40" e-endValue="60" e-startwidth="20" e-endwidth="25" e-distancefromscale="20" e-placement="near" e-backgroundcolor="red" e-border-color="red"></e-range>
+                 <e-range e-startvalue="-20" e-endValue="0" e-startwidth="5" e-endwidth="10" 
+                 e-distancefromscale="20" e-placement="near" e-border-color="#2788B1" 
+                 e-backgroundcolor="#2788B1"></e-range>
+                 <e-range e-startvalue="0" e-endValue="20" e-startwidth="10" e-endwidth="15" 
+                 e-distancefromscale="20" e-placement="near" e-backgroundcolor="#A5BA28" 
+                 e-border-color="#A5BA28"></e-range>
+                 <e-range e-startvalue="20" e-endValue="40" e-startwidth="15" e-endwidth="20" 
+                 e-distancefromscale="20" e-placement="near" e-backgroundcolor="#FEBE48" 
+                 e-border-color="#FEBE48"></e-range>
+                 <e-range e-startvalue="40" e-endValue="60" e-startwidth="20" e-endwidth="25" 
+                 e-distancefromscale="20" e-placement="near" e-backgroundcolor="red" 
+                 e-border-color="red"></e-range>
                  </e-ranges>
                  </e-scale>
                  </e-scales>
-                  </ej-lineargauge>
+                 </ej-lineargauge>
         </div>
-         <script >
+        <script>
         angular.module('LinearGaugeApp', ['ejangular'])
-       .controller('LinearGaugeCtrl', function ($scope) {
+        .controller('LinearGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
