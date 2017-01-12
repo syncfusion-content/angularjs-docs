@@ -76,7 +76,7 @@ var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
     });
 {% endhighlight %}
 
-To load excel documents initially from server side, set [`importonload`](http://help.syncfusion.com/api/js/ejspreadsheet#members:importonload "importOnLoad") as `true` and assign document stream or URL in the server. The code snippets for document initial load from server side are as follows,
+To load excel documents initially from server side, set [`importonload`](http://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings-importonload "importOnLoad") as `true` and assign document stream or URL in the server. The code snippets for document initial load from server side are as follows,
 
 {% highlight html %}
 <body ng-controller="SpreadsheetCtrl">
