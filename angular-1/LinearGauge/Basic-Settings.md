@@ -25,24 +25,27 @@ documentation: ug
     </head>
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
-                 <ej-lineargauge e-width="300" e-height="500" e-minimum="10" e-maximum="110" e-value="78" >
+                 <ej-lineargauge e-width="300" e-height="500" e-minimum="10" e-maximum="110" e-value="78">
                  <e-scales>
-                 <e-scale e-border-color="transparent" e-border-width="0" e-showMarkerPointers="false" e-showBarPointers="true" >
+                 <e-scale e-border-color="transparent" e-border-width="0" e-showMarkerPointers="false" 
+                 e-showBarPointers="true" >
                  <e-barpointers>
                  <e-barpointer e-width="5" e-backgroundColor="grey">
                  </e-barpointer>
                  </e-barpointers>
                  <e-ticks>
-                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
-                  <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
+                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="7" 
+                 e-distancefromscale-y="0"></e-tick>
+                 <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" 
+                 e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
                  </e-ticks>
                  </e-scale>
                  </e-scales>
-                  </ej-lineargauge>
+                 </ej-lineargauge>
         </div>
-         <script >
+        <script>
         angular.module('LinearGaugeApp', ['ejangular'])
-       .controller('LinearGaugeCtrl', function ($scope) {
+        .controller('LinearGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -78,24 +81,28 @@ Execute the above code to render the following output.
     </head>
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
-                 <ej-lineargauge  e-value="80" e-frame-innerwidth="8" e-frame-outerwidth="10" e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
+                 <ej-lineargauge  e-value="80" e-frame-innerwidth="8" e-frame-outerwidth="10" 
+                 e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
                  <e-scales>
-                 <e-scale e-border-color="transparent" e-border-width="0" e-backgroundColor="transparent" e-showMarkerPointers="false" e-showBarPointers="true" >
+                 <e-scale e-border-color="transparent" e-border-width="0" e-backgroundColor="transparent" 
+                 e-showMarkerPointers="false" e-showBarPointers="true" >
                  <e-barpointers>
                  <e-barpointer e-width="5" e-backgroundColor="grey">
                  </e-barpointer>
                  </e-barpointers>
                  <e-ticks>
-                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
-                  <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
+                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="7" 
+                 e-distancefromscale-y="0"></e-tick>
+                 <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" 
+                 e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
                  </e-ticks>
                  </e-scale>
                  </e-scales>
-                  </ej-lineargauge>
+                 </ej-lineargauge>
         </div>
-         <script >
+        <script>
         angular.module('LinearGaugeApp', ['ejangular'])
-       .controller('LinearGaugeCtrl', function ($scope) {
+        .controller('LinearGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -135,10 +142,12 @@ Execute the above code to render the following output.
     </head>
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
-                 <ej-lineargauge  e-enableanimation="false" e-width="400" e-height="100" e-value="80" e-theme="flatlight" e-orientation="horizontal"
-                 e-labelcolor="black" e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
+                 <ej-lineargauge  e-enableanimation="false" e-width="400" e-height="100" e-value="80" 
+                 e-theme="flatlight" e-orientation="horizontal"
+                 e-labelcolor="black" e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
                  <e-scales>
-                 <e-scale e-border-color="transparent" e-direction="Clockwise" e-border-width="0" e-backgroundColor="transparent" e-showMarkerPointers="false" e-showBarPointers="true" >
+                 <e-scale e-border-color="transparent" e-direction="Clockwise" e-border-width="0" 
+                 e-backgroundColor="transparent" e-showMarkerPointers="false" e-showBarPointers="true">
                  <e-barpointers>
                  <e-barpointer e-width="5" e-backgroundColor="grey">
                  </e-barpointer>
@@ -147,16 +156,18 @@ Execute the above code to render the following output.
                  <e-label e-angle="90" e-distancefromscale-x="5" e-distancefromscale-y="-5">
                  </e-labels>
                  <e-ticks>
-                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="0" e-distancefromscale-y="0"></e-tick>
-                  <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" e-distancefromscale-x="0" e-distancefromscale-y="0"></e-tick>
+                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="0" 
+                 e-distancefromscale-y="0"></e-tick>
+                 <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" 
+                 e-distancefromscale-x="0" e-distancefromscale-y="0"></e-tick>
                  </e-ticks>
                  </e-scale>
                  </e-scales>
-                  </ej-lineargauge>
+                 </ej-lineargauge>
         </div>
-         <script >
+        <script>
         angular.module('LinearGaugeApp', ['ejangular'])
-       .controller('LinearGaugeCtrl', function ($scope) {
+        .controller('LinearGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -189,10 +200,12 @@ Execute the above code to render the following output.
     </head>
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
-                 <ej-lineargauge  e-enableanimation="false" e-width="400" e-height="100" e-value="80" e-isresponsive="true" e-orientation="horizontal"
-                 e-labelcolor="black" e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
+                 <ej-lineargauge  e-enableanimation="false" e-width="400" e-height="100" e-value="80" 
+                 e-isresponsive="true" e-orientation="horizontal" e-labelcolor="black" 
+                 e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
                  <e-scales>
-                 <e-scale e-border-color="transparent" e-direction="Clockwise" e-border-width="0" e-backgroundColor="transparent" e-showMarkerPointers="false" e-showBarPointers="true" >
+                 <e-scale e-border-color="transparent" e-direction="Clockwise" e-border-width="0" 
+                 e-backgroundColor="transparent" e-showMarkerPointers="false" e-showBarPointers="true">
                  <e-barpointers>
                  <e-barpointer e-width="5" e-backgroundColor="grey">
                  </e-barpointer>
@@ -201,16 +214,18 @@ Execute the above code to render the following output.
                  <e-label e-angle="90" e-distancefromscale-x="5" e-distancefromscale-y="-5">
                  </e-labels>
                  <e-ticks>
-                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="0" e-distancefromscale-y="0"></e-tick>
-                  <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" e-distancefromscale-x="0" e-distancefromscale-y="0"></e-tick>
+                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="0" 
+                 e-distancefromscale-y="0"></e-tick>
+                 <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" 
+                 e-distancefromscale-x="0" e-distancefromscale-y="0"></e-tick>
                  </e-ticks>
                  </e-scale>
                  </e-scales>
-                  </ej-lineargauge>
+                 </ej-lineargauge>
         </div>
-         <script >
+        <script>
         angular.module('LinearGaugeApp', ['ejangular'])
-       .controller('LinearGaugeCtrl', function ($scope) {
+        .controller('LinearGaugeCtrl', function ($scope) {
          });
     </script>
     </body>

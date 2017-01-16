@@ -28,16 +28,17 @@ Indicators collection is directly added to the scale object. Refer the following
                 <e-scales>
                 <e-scale  e-showIndicators="true">
                 <e-indicators>
-                <e-indicator e-height="10" e-width="10" e-type="circle" e-value="0" e-position-x="185" e-position-y="300">
-                 </e-indicator>
+                <e-indicator e-height="10" e-width="10" e-type="circle" e-value="0" e-position-x="185" 
+                e-position-y="300">
+                </e-indicator>
                 </e-indicators>
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script >
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -69,22 +70,25 @@ Indicators are of several types such as, circle, rectangle, rounded rectangle, t
         <div id="circularframe">
                 <ej-circulargauge >
                 <e-scales>
-                <e-scale  e-showIndicators="true" e-radius="150" e-size="5" e-showscalebar="true" e-minorIntervalValue="5" e-backgroundColor="#5DF243"
-                e-border-color="black" e-border-width="1.5">
+                <e-scale  e-showIndicators="true" e-radius="150" e-size="5" e-showscalebar="true"
+                e-minorIntervalValue="5" e-backgroundColor="#5DF243" e-border-color="black" 
+                e-border-width="1.5">
                 <e-pointers>
-                <e-pointer e-length="110" e-backgroundColor="#5DF243" e-border-color="black" e-border-width="1.5">
+                <e-pointer e-length="110" e-backgroundColor="#5DF243" e-border-color="black" 
+                e-border-width="1.5">
                 </e-pointer>
                 </e-pointers>
                 <e-indicators>
-                <e-indicator e-height="10" e-width="10" e-type="circle" e-value="0" e-position-x="185" e-position-y="300">
+                <e-indicator e-height="10" e-width="10" e-type="circle" e-value="0" 
+                e-position-x="185" e-position-y="300">
                 </e-indicators>
                 </e-scale>
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script >
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -115,17 +119,20 @@ The **backgroundColor** and **borderColor** sets the appearance behavior for the
         <div id="circularframe">
                 <ej-circulargauge >
                 <e-scales>
-                <e-scale  e-showIndicators="true" e-radius="150" e-size="5" e-showscalebar="true" e-minorIntervalValue="5" e-backgroundColor="#5DF243"
-                e-border-color="black" e-border-width="1.5">
+                <e-scale  e-showIndicators="true" e-radius="150" e-size="5" e-showscalebar="true"
+                e-minorIntervalValue="5" e-backgroundColor="#5DF243" e-border-color="black" 
+                e-border-width="1.5">
                 <e-pointers>
-                <e-pointer e-length="110" e-backgroundColor="#5DF243" e-border-color="black" e-border-width="1.5">
+                <e-pointer e-length="110" e-backgroundColor="#5DF243" e-border-color="black" 
+                e-border-width="1.5">
                 </e-pointer>
                 </e-pointers>
                 <e-indicators>
-                <e-indicator e-height="10" e-width="10" e-type="circle" e-value="0" e-position-x="185" e-position-y="300"> 
+                <e-indicator e-height="10" e-width="10" e-type="circle" e-value="0" 
+                e-position-x="185" e-position-y="300"> 
                 <e-stateranges>
-                <e-staterange e-endvalue="100"  e-startvalue="0" e-text="" e-backgroundcolor="#5DF243" e-bordercolor="black"
-                e-textcolor="#870505"></e-staterange>
+                <e-staterange e-endvalue="100"  e-startvalue="0" e-text="" e-backgroundcolor="#5DF243"
+                e-bordercolor="black" e-textcolor="#870505"></e-staterange>
                 </e-stateranges>
                  </e-indicator>
                 </e-indicators>
@@ -133,9 +140,9 @@ The **backgroundColor** and **borderColor** sets the appearance behavior for the
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script >
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -164,25 +171,34 @@ You can use multiple indicators for a single **Gauge**. Each indicator have a li
         <div id="circularframe">
                 <ej-circulargauge >
                 <e-scales>
-                <e-scale  e-readonly="false" e-showIndicators="true" e-showranges="true" e-size="5" e-radius="150"  e-minorIntervalValue="20" e-showscalebar="true" >
-                 <e-pointers>
-                 <e-pointer e-value="70" e-length="110"></e-pointer>
-                 </e-pointers>
-                 <e-ranges>
-                 <e-range e-startValue="0" e-endValue="50" e-backgroundcolor="green"  e-placement="far" e-distanceFromScale="-30" ></e-range>
-                 <e-range e-startValue="50" e-endValue="100" e-backgroundcolor="red"  e-placement="far" e-distanceFromScale="-30" ></e-range>
-                 </e-ranges>
-                 <e-indicators>
-                <e-indicator e-height="10" e-width="10" e-type="circle" e-value="0" e-position-x="165" e-position-y="300"> 
+                <e-scale  e-readonly="false" e-showIndicators="true" e-showranges="true" e-size="5"
+                e-radius="150"  e-minorIntervalValue="20" e-showscalebar="true" >
+                <e-pointers>
+                <e-pointer e-value="70" e-length="110"></e-pointer>
+                </e-pointers>
+                <e-ranges>
+                <e-range e-startValue="0" e-endValue="50" e-backgroundcolor="green"  e-placement="far" 
+                e-distanceFromScale="-30" ></e-range>
+                <e-range e-startValue="50" e-endValue="100" e-backgroundcolor="red"  e-placement="far"
+                e-distanceFromScale="-30" ></e-range>
+                </e-ranges>
+                <e-indicators>
+                <e-indicator e-height="10" e-width="10" e-type="circle" e-value="0" e-position-x="165" 
+                e-position-y="300"> 
                 <e-stateranges>
-                <e-staterange e-endvalue="50"  e-startvalue="0"  e-backgroundcolor="#24F92F" e-bordercolor="black"></e-staterange>
-                <e-staterange e-endvalue="50"  e-startvalue="100"  e-backgroundcolor="#322C04" e-bordercolor="black"></e-staterange>
+                <e-staterange e-endvalue="50"  e-startvalue="0"  e-backgroundcolor="#24F92F" 
+                e-bordercolor="black"></e-staterange>
+                <e-staterange e-endvalue="50"  e-startvalue="100"  e-backgroundcolor="#322C04" 
+                e-bordercolor="black"></e-staterange>
                 </e-stateranges>
                 </e-indicator>
-                 <e-indicator e-height="10" e-width="10" e-type="circle" e-value="0" e-position-x="215" e-position-y="300"> 
+                <e-indicator e-height="10" e-width="10" e-type="circle" e-value="0" e-position-x="215"
+                e-position-y="300"> 
                 <e-stateranges>
-                <e-staterange e-endvalue="50"  e-startvalue="0"  e-backgroundcolor="#600000" e-bordercolor="black"></e-staterange>
-                <e-staterange e-endvalue="50"  e-startvalue="100"  e-backgroundcolor="#FF4F2A" e-bordercolor="black"></e-staterange>
+                <e-staterange e-endvalue="50"  e-startvalue="0"  e-backgroundcolor="#600000" 
+                e-bordercolor="black"></e-staterange>
+                <e-staterange e-endvalue="50"  e-startvalue="100"  e-backgroundcolor="#FF4F2A" 
+                e-bordercolor="black"></e-staterange>
                 </e-stateranges>
                 </e-indicator>
                 </e-indicators>
@@ -190,9 +206,9 @@ You can use multiple indicators for a single **Gauge**. Each indicator have a li
                 <e-scales> 
                 </ej-circulargauge>
         </div>
-         <script >
+        <script >
         angular.module('CircularGaugeApp', ['ejangular'])
-       .controller('CircularGaugeCtrl', function ($scope) {
+        .controller('CircularGaugeCtrl', function ($scope) {
          });
     </script>
     </body>

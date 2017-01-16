@@ -21,19 +21,24 @@ The Data points that uses the **null** or **undefined** as value are considered 
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart >
         <e-series>
-        <e-series e-points="points"></e-series>
+        <e-series >
+        <e-points>
+        <e-points e-x="0" e-y="210"></e-points>
+        <e-points e-x="1" e-y="null"></e-points>
+        <e-points e-x="2" e-y="150"></e-points>
+        <e-points e-x="3" e-y="180" e-isempty="true"></e-points>
+        <e-points e-x="4" e-y="170"></e-points>
+        <e-points e-x="5" e-y="200"></e-points>
+        <e-points e-x="6" e-y="140" e-isempty="true"></e-points>
+        <e-points e-x="7" e-y="120"></e-points>
+        <e-points e-x="8" e-y="140"></e-points>
+        </e-points>
+        </e-series>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.points=[{ x: 0, y: 210 }, 
-                              { x: 1, y: null }, { x: 2, y: 150 },
-                              { x: 3, y: 180,isEmpty: true }, 
-                              { x: 4, y: 170},
-                              { x: 5, y: 200 }, 
-                              { x: 6, y: 140, isEmpty: true },
-                              { x: 7, y: 120 }, { x: 8, y: 140 } ];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -57,16 +62,13 @@ You can customize the empty points visibility and change its `displayMode` *(gap
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-        <e-series e-emptypointsettings="emptypoint"></e-series>
+        <e-series e-emptypointsettings-visible="true"
+        e-emptypointsettings-displayMode="average"></e-series>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.emptypoint= { 
-                        visible: true,
-                        displayMode : "average"
-                    };
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {                
                      });
         </script>
     </body>
@@ -95,23 +97,15 @@ Empty points color and border can be customized using `style` property of `e-emp
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-        <e-series e-emptypointsettings="emptypoint"></e-series>
+        <e-series e-emptypointsettings-visible="true"
+        e-emptypointsettings-style-color="#ffa000"
+        e-emptypointsettings-style-border-color="gray"
+        e-emptypointsettings-style-border-width="2"></e-series>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.emptypoint= { 
-                        visible: true,
-                       //Customizing empty points styles
-                       style: {
-                           color: "#ffa000",
-                           border:{
-                               color: "gray",
-                               width:2
-                            }
-                        }
-                     };
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {                   
                      });
         </script>
     </body>

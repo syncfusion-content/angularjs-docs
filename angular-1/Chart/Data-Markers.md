@@ -27,31 +27,20 @@ The following code example explains on how to enable series marker and add shape
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart>
+         <div id="container" ej-chart>
          <e-series>
-         <e-series e-marker="marker1">
+         <e-series e-marker-visible="true" e-marker-shape="diamond">
          </e-series>
-         <e-series e-marker="marker2" >
+         <e-series e-marker-visible="true" e-marker-shape="triangle" >
          </e-series>
-         <e-series e-marker="marker3">
+         <e-series e-marker-visible="true" e-marker-shape="Hexagon">
          </e-series>
          </e-series>
-        </div>
-        <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                $scope.marker1={
-                    shape:"Diamond",
-                    visible: true
-                };
-                 $scope.marker2={
-                    shape:"Triangle",
-                    visible: true
-                };
-                 $scope.marker3={
-                    shape:"Hexagon",
-                    visible: true
-                };
+         </div>
+         <script>
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
+             
                 });
         </script>
     </body>
@@ -77,22 +66,17 @@ The following code example illustrates this,
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart>
+         <div id="container" ej-chart>
          <e-series>
-         <e-series e-marker="marker">
+         <e-series e-marker-visible="true" e-marker-shape="image"
+         e-marker-imageurl="sun_annotation.png" e-marker-size-height="20"
+         e-marker-size-width="20">
          </e-series>
-        </div>
-        <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                $scope.marker={
-                 // Enable and customize the marker shape and size
-                    visible: true,
-                // In order to set imageUrl, set shape as ‘image’ .
-                    shape: "image",
-                    imageUrl: "sun_annotation.png",
-                    size: {width: 20, height: 20}
-                };
+         </div>
+         <script>
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
+              
                 });
         </script>
     </body>
@@ -117,22 +101,17 @@ The following code example shows how to enable data label and set its horizontal
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart>
+         <div id="container" ej-chart>
          <e-series>
-         <e-series e-marker="marker">
+         <e-series e-marker-datalabel-visible="true" 
+         e-marker-datalabel-horizontaltextalignment="center"
+         e-marker-datalabel-verticaltextalignment="far">
          </e-series>
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                $scope.marker={
-                  dataLabel: {
-                      //Set text alignment to datalabel text	
-                            visible: true,
-                            horizontalTextAlignment: "center",
-                            verticalTextAlignment: "far"
-                        }
-                };
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                
                 });
         </script>
     </body>
@@ -154,12 +133,12 @@ The following code example shows how to add background shapes and set template t
 
 
 <div id="template">
-     <div id="left">
-	<img src="../images/chart/icon_investments.png"/>
-     </div>
-     <div id="right">
-          <div id="point">#point.y#%</div>
-     </div>
+<div id="left">
+<img src="../images/chart/icon_investments.png"/>
+</div>
+<div id="right">
+<div id="point">#point.y#%</div>
+</div>
 </div>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
     <head>
@@ -167,36 +146,21 @@ The following code example shows how to add background shapes and set template t
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart>
+         <div id="container" ej-chart>
          <e-series>
-         <e-series e-marker="marker"></e-series>
-          <e-series e-marker="marker1"></e-series>
-           <e-series e-marker="marker2"></e-series>
+         <e-series e-marker-datalabel-visible="true"
+         e-marker-datalabel-template="template"></e-series>
+         <e-series e-marker-datalabel-visible="true"
+         e-marker-datalabel-shape="rectangle" 
+         e-marker-datalabel-border-width="1"
+         e-marker-datalabel-border-color="red"></e-series>
+         <e-series e-marker-datalabel-visible="true"></e-series>
          </e-series>
-        </div>
-        <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                $scope.marker={
-                   dataLabel: {
-			           visible: true,
-                     //Set template to data label
-            			template: 'template'
-		              }	
-                };
-               $scope.marker1={
-                   dataLabel: {
-			                visible: true,
-                          //Add background shape to the data label
-                            shape: 'Rectangle',
-                            border: { width: 1, color: "red" }		
-		              }	
-                };
-                $scope.marker2={
-                   dataLabel: {
-			           visible: true,
-                      }	
-                };
+         </div>
+         <script>
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
+             
                 });
         </script>
     </body>
@@ -219,23 +183,17 @@ The following code example shows how to rotate datalabel text and customize the 
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart>
+         <div id="container" ej-chart>
          <e-series>
-         <e-series e-marker="marker">
+         <e-series e-marker-datalabel-visible="true"
+         e-marker-datalabel-angle="30" e-marker-datalabel-offset="15"
+         e-marker-datalabel-font-color="black" e-marker-datalabel-font-size="13px">
          </e-series>
-        </div>
-        <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                $scope.marker={
-                  dataLabel: {
-                           visible: true,
-                           //Rotate data label and customize the font
-                            angle: "300",    
-                            offset: 15,
-                            font: { color: "black", size:"13px" }
-                        }
-                };
+         </div>
+         <script>
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
+               
                 });
         </script>
     </body>
@@ -258,22 +216,16 @@ The following code example shows how to set textPosition to display data label i
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart>
+         <div id="container" ej-chart>
          <e-series>
-         <e-series e-marker="marker">
+         <e-series e-marker-datalabel-visible="true"
+         e-marker-datalabel-textposition="middle">
          </e-series>
-        </div>
-        <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                $scope.marker={
-                  dataLabel: {
-                             visible: true,
-                         // Place the datalabel text position in the centre of the rectangle
-                           textPosition: "middle"
-                          // ...
-                        }
-                };
+         </div>
+         <script>
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
+               
                 });
         </script>
     </body>
@@ -296,29 +248,25 @@ The following code example shows how to set the *labelPosition*,
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart>
+         <div id="container" ej-chart>
          <e-series>
-         <e-series e-marker="marker" e-type="doughnut" e-labelPosition="outside" e-datasource="dataSource" e-xname="x" e-yname="y" e-textmappingname="text">
+         <e-series e-marker-datalabel-visible="true" e-marker-datalabel-shape="rectangle"
+         e-marker-datalabel-font-color="white" e-type="doughnut" e-labelPosition="outside" 
+         e-datasource="dataSource" e-xname="x" e-yname="y" e-textmappingname="text">
          </e-series>
-        </div>
-        <script>
-        var chartData= [{ x: 'India', y: 24, text: 'India 24%' },
-                            { x: 'Japan', y: 25, text: 'Japan 25%' },
-                            { x: 'Australia', y: 20, text: 'Australia 20%' },
-                            { x: 'USA', y: 35, text: 'USA 35%' },
-                            { x: 'China', y: 23, text: 'China 23%' },
-                            { x: 'Germany', y: 27, text: 'Germany 27%' },
-                            { x: 'France', y: 22, text: 'France 22%' }];
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         </div>
+         <script>
+         var chartData= [{ x: 'India', y: 24, text: 'India 24%' },
+                        { x: 'Japan', y: 25, text: 'Japan 25%' },
+                        { x: 'Australia', y: 20, text: 'Australia 20%' },
+                        { x: 'USA', y: 35, text: 'USA 35%' },
+                        { x: 'China', y: 23, text: 'China 23%' },
+                        { x: 'Germany', y: 27, text: 'Germany 27%' },
+                        { x: 'France', y: 22, text: 'France 22%' }];
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
                     $scope.dataSource=chartData;
-                $scope.marker={
-                  dataLabel: {
-                           visible: true,
-                           shape: 'rectangle',
-                           font: {color: "white"}
-                        }
-                };
+              
                 });
         </script>
     </body>
@@ -349,25 +297,17 @@ The label can be wrapped for pie, doughnut, funnel, and pyramid series by settin
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart>
+         <div id="container" ej-chart>
          <e-series>
-         <e-series e-marker="marker">
+         <e-series e-marker-datalabel-visible="true"
+         e-marker-datalabel-enablewrap="true" 
+         e-marker-datalabel-maximumlabelwidth="32">
          </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.marker={
-                  dataLabel: {
-                             // enable the dataLabel
-                              visible: true,
-                             // enable the wrapping option
-                             enableWrap: true,
-                              // set the maximumLabelWidth of the data label
-                             maximumLabelWidth: 32
-                                //. . .
-                        }
-                };
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                                  
                 });
         </script>
     </body>
@@ -396,37 +336,38 @@ When the data is provided by using the `e-points` option, you can add marker for
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart >
         <e-series>
-        <e-series e-points="points"></e-series>
+        <e-series>
+        <e-points>
+        <e-points e-x="Jan" e-y="35"></e-points>
+        <e-points e-x="Feb" e-y="28"></e-points>
+        <e-points e-x="Mar" e-y="34"></e-points>
+        <e-points e-x="Apr" e-y="32"></e-points>
+        <e-points e-x="May" e-y="40"></e-points>
+        <e-points e-x="Jun" e-y="33"></e-points>
+        <e-points e-x="Jul" e-y="35"></e-points>
+        <e-points e-x="Aug" e-y="55" e-marker-datalabel-visible="true"
+        e-marker-datalabel-offset="-10"
+        e-marker-datalabel-shape="upArrow" e-marker-datalabel-font-color="white"
+        e-marker-datalabel-font-size="11px" e-marker-datalabel-margin-left="15"
+        e-marker-datalabel-margin-right="15" e-marker-datalabel-margin-top="10"
+        e-marker-datalabel-margin-bottom="10" e-marker-datalabel-fill="green" ></e-points>
+        <e-points e-x="Sep" e-y="38"></e-points>
+        <e-points e-x="Oct" e-y="30"></e-points>
+        <e-points e-x="Nov" e-y="25" e-marker-datalabel-visible="true"
+        e-marker-datalabel-offset="-22" e-marker-datalabel-verticaltextalignment="near"
+        e-marker-datalabel-shape="downArrow" e-marker-datalabel-font-color="white"
+        e-marker-datalabel-font-size="11px" e-marker-datalabel-margin-left="15"
+        e-marker-datalabel-margin-right="15" e-marker-datalabel-margin-top="10"
+        e-marker-datalabel-margin-bottom="10" e-marker-datalabel-fill="red"></e-points>
+        <e-points e-x="Dec" e-y="32"></e-points>        
+        </e-points>
+        </e-series>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.points=[ 
-                      { x: 'Jan', y: 35 }, { x: 'Feb', y: 28 },   { x: 'Mar', y: 34 },
-                      { x: 'Apr', y: 32 },{ x: 'May', y: 40 },  { x: 'Jun', y: 32 },
-                      { x: 'Jul', y: 35 },  { x: 'Aug', y: 55,
-                       marker: {
-                         //Enable and customize the data label for a point
-                            dataLabel: {
-                                visible: true,
-                                offset: -10,
-                                shape: "upArrow", font: { color: "white" , size: '11px' },
-                                margin: { left: 15, right: 15, top: 10, bottom: 10 },
-                                fill: "green"
-                           } } },
-                          { x: 'Sep', y: 38 },{ x: 'Oct', y: 30 },
-                          { x: 'Nov', y: 25,
-                                  marker: {
-                                    //Enable and customize the data label for a point
-                                     dataLabel: {
-                                        visible: true,
-                                        offset: -22,
-                                        verticalTextAlignment: 'near',
-                                        shape: "downArrow", font: { color: "white", size: '11px' },
-                                        margin: { left: 15, right: 15, top: 10, bottom: 10 },                    
-                                        fill: "red"
-                           } } },  { x: 'Dec', y: 32 }];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {        
+                              
                    });
         </script>
     </body>
@@ -444,43 +385,39 @@ When the data is bound to the series by using the `e-dataSource` option, you can
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart>
+         <div id="container" ej-chart e-seriesrendering=seriesrender>
          <e-series>
-         <e-series   e-datasource="dataSource" e-xname="month" e-yname="sales" e-seriesrendering=seriesrender>
+         <e-series e-marker-datalabel-visible="true"  e-datasource="dataSource" e-xname="month" 
+         e-yname="sales">
          </e-series>
-        </div>
-        <script>
-           angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         </div>
+         <script>
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
                     $scope.dataSource=chartData;
                     $scope.seriesrender="seriesrender";
-                $scope.marker={
-                  dataLabel: {
-                           visible: true,
-                             }
-                };
-                });
-                function seriesRender(sender)
-                {
+                   });
+         function seriesRender(sender)
+            {
 	                   //Enable and customize the dataLabel for a point using event
-              sender.data.series.points[7].marker = {
+               sender.data.series.points[7].marker = {
                dataLabel: {
                     visible: true,
                     offset: -10,
                     shape: "upArrow", font: { color: "white", size: '11px' },
                     margin: { left: 15, right: 15, top: 10, bottom: 10 },                    
                     fill: "green"
-                }};
-            sender.data.series.points[10].marker = {
+               }};
+               sender.data.series.points[10].marker = {
                  //Enable and customize the dataLabel for a point using event
-                dataLabel: {
+               dataLabel: {
                         visible: true,
                         offset: -22,
                         verticalTextAlignment: 'near',
                         shape: "downArrow", font: { color: "white", size: '11px' },
                         margin: { left: 15, right: 15, top: 10, bottom: 10 },                    
                         fill: "red"
-                }};
+               }};
         }
         </script>
     </body>
@@ -505,23 +442,18 @@ This feature is used to connect label and data point by using a line. It can be 
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart>
+         <div id="container" ej-chart>
          <e-series>
-         <e-series e-marker="marker" e-labelPosition="outsideextended" >
+         <e-series e-marker-datalabel-visible="true"
+         e-marker-datalabel-connectorline-type="bezier"
+         e-marker-datalabel-color="black"
+         e-labelPosition="outsideextended" >
          </e-series>
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                $scope.marker={
-                  dataLabel: {
-                             visible: true,
-                             // Set connector line type and customize the color,
-                             connectorLine: { type: 'bezier', color: 'black' }
-                             // ...
-                              }
-                };
-                });
+         </div>
+         <script>
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
+                             });
         </script>
     </body>
 </html>
@@ -546,30 +478,27 @@ The following code example shows how to enable smart labels,
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart>
+         <div id="container" ej-chart>
          <e-series>
-         <e-series e-marker="marker" e-type="pie" e-labelPosition="outsideextended"  e-enablesmartlabels="true" e-datasource="dataSource" e-xname="x" e-yname="y" e-textmappingname="text">
+         <e-series e-marker-datalabel-visible="true" e-marker-datalabel-shape="none"
+         e-marker-datalabel-font-size="14px" e-marker-datalabel-connectorline-type="bezier"
+         e-marker-datalabel-connectorline-color="black" e-type="pie" 
+         e-labelPosition="outsideextended" e-enablesmartlabels="true" 
+         e-datasource="dataSource" e-xname="x" e-yname="y" 
+         e-textmappingname="text">
          </e-series>
-        </div>
-        <script>
-        var chartData= [{ x: 'Other Personnal', y: 94658, text: 'Other Personal, 88.47%' },
+         </div>
+         <script>
+         var chartData= [{ x: 'Other Personnal', y: 94658, text: 'Other Personal, 88.47%' },
                              { x: 'Medical care', y: 9090, text: 'Medical care, 8.49%' },
 		                     { x: 'Housing', y: 2577, text: 'Housing, 2.40%' },
                              { x: 'Transportation', y: 473, text: 'Transportation, 0.44%' },
                              { x: 'Education', y: 120, text: 'Education, 0.11%' },
                              { x: 'Electronics', y: 70, text: 'Electronics, 0.06%' }];
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
                     $scope.dataSource=chartData;
-                    $scope.marker={
-                       dataLabel: {
-                          visible: true,
-				          shape: 'none',
-				          connectorLine: { type: 'bezier', color: 'black' },
-				          font: { size: '14px' }
-                        }
-                };
-                });
+                     });
         </script>
     </body>
 </html>

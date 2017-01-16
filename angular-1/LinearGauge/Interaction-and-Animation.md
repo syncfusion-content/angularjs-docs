@@ -37,16 +37,18 @@ documentation: ug
                  </e-markerpointer>
                  </e-markerpointers>
                  <e-ticks>
-                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
-                  <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
+                 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c" e-distancefromscale-x="7" 
+                 e-distancefromscale-y="0"></e-tick>
+                 <e-tick e-type="minorinterval" e-width="1" e-height="6" e-color="#8c8c8c" 
+                 e-distancefromscale-x="7" e-distancefromscale-y="0"></e-tick>
                  </e-ticks>
                  </e-scale>
                  </e-scales>
-                  </ej-lineargauge>
+                 </ej-lineargauge>
         </div>
-         <script >
+        <script>
         angular.module('LinearGaugeApp', ['ejangular'])
-       .controller('LinearGaugeCtrl', function ($scope) {
+        .controller('LinearGaugeCtrl', function ($scope) {
          });
     </script>
     </body>

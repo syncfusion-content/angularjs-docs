@@ -20,7 +20,7 @@ This section encompasses on how to configure the **ej-rangenavigator** and updat
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
 
-**Configure RangeNavigator**
+## Configure RangeNavigator
 
 Getting started with your **ej-rangenavigator** is simple. You can initialize the **ej-rangenavigator** by setting its range values.
 
@@ -68,7 +68,7 @@ The following code example renders a **RangeNavigator** with a range from 2010, 
 
     <script>
         angular.module('RangeApp', ['ejangular'])
-            .controller('RangeCtrl', function ($scope) {
+        .controller('RangeCtrl', function ($scope) {
                 $scope.rangeSetting = {
                     start: "2010/1/1", end: "2010/12/31"
                 };
@@ -95,12 +95,12 @@ You can create data source for **RangeNavigator** as follows.
 
    <script>
         var Data = [{ "xDate": new Date(2011, 0, 1), "yValue": 10 },
-                       { "xDate": new Date(2011, 2, 1), "yValue": 5 },
-                       { "xDate": new Date(2011, 4, 1), "yValue": 15 },
-                       { "xDate": new Date(2011, 6, 1), "yValue": 25 },
-                       { "xDate": new Date(2011, 8, 1), "yValue": 10 },
-                       { "xDate": new Date(2011, 10, 1), "yValue": 5 },
-                       { "xDate": new Date(2011, 12, 1), "yValue": 15 }];
+                    { "xDate": new Date(2011, 2, 1), "yValue": 5 },
+                    { "xDate": new Date(2011, 4, 1), "yValue": 15 },
+                    { "xDate": new Date(2011, 6, 1), "yValue": 25 },
+                    { "xDate": new Date(2011, 8, 1), "yValue": 10 },
+                    { "xDate": new Date(2011, 10, 1), "yValue": 5 },
+                    { "xDate": new Date(2011, 12, 1), "yValue": 15 }];
     </script>
 {% endhighlight %}
 
@@ -109,11 +109,12 @@ Now, add the **dataSource** to the **RangeNavigator** and provide the field name
 
 {% highlight javascript %}
 
-<div id="rangecontainer" ej-rangenavigator e-datasource="dataSource" e-xname="xDate" e-yname="yValue"></div>
+<div id="rangecontainer" ej-rangenavigator e-datasource="dataSource" 
+e-xname="xDate" e-yname="yValue"></div>
    <script>
    //..
         angular.module('RangeApp', ['ejangular'])
-            .controller('RangeCtrl', function ($scope) {
+        .controller('RangeCtrl', function ($scope) {
                 $scope.dataSource = Data;                
             });
     </script>
@@ -128,7 +129,7 @@ The following screenshot displays a RangeNavigator with the default **"Line"** s
 
 ![](Getting-Started_images/Getting-Started_img3.png) 
 
-**Enable tooltip**
+## Tooltip
 
 You can customize **Tooltip** for RangeNavigator using **tooltip** option. You can use **tooltipDisplayMode** option in **tooltip**,to display the tooltip "always" or "ondemand" (displays tooltip only while dragging the sliders). You can also specify label format for tooltip using **labelFormat**.
 
@@ -140,7 +141,7 @@ The following code sample shows how to enable a Tooltip.
          e-tooltipsettings="tooltip"></div>
     <script>
         angular.module('RangeApp', ['ejangular'])
-            .controller('RangeCtrl', function ($scope) {
+        .controller('RangeCtrl', function ($scope) {
                 $scope.tooltip = {
                     visible: true,
                     labelFormat: "MMM/yyyy",
@@ -156,7 +157,7 @@ The following screenshot displays the label format **Tooltip** in RangeNavigator
 
 ![](Getting-Started_images/Getting-Started_img4.png) 
 
-**Update Chart**
+## Update Chart
 
 You can use **ej-rangenavigator** with controls such as **chart** and **grid** to view the range of data selected in **ej-rangenavigator**. 
 
@@ -210,7 +211,7 @@ You can update the chart with the selected data using the **e-rangechanged** eve
 <script>
 //...datasource
         angular.module('RangeApp', ['ejangular'])
-            .controller('RangeCtrl', function ($scope) {
+        .controller('RangeCtrl', function ($scope) {
                 $scope.dataSource = chartData;
                 $scope.tooltip = {
                     visible: true,
@@ -236,7 +237,7 @@ The following screenshot displays how a RangeNavigator is updated when a selecte
 
 ![](Getting-Started_images/Getting-Started_img5.png) 
 
-**Set value type**
+## Set value type
 
 **ej-rangenavigator** can also be used with numerical values. You can specify the data type using **valueType** option. 
 
@@ -264,12 +265,13 @@ Now, you can set the **dataSource** for Chart Series and **valueType** property 
 
 <div id="rangecontainer" ej-rangenavigator>
         <div e-series>
-            <e-series e-datasource="dataSource" e-valuetype="numeric" e-xname="xDate" e-yname="yValue" e-type="line"></e-series>
+            <e-series e-datasource="dataSource" e-valuetype="numeric" e-xname="xDate" 
+            e-yname="yValue" e-type="line"></e-series>
         </div>
 </div>
 <script>
         angular.module('RangeApp', ['ejangular'])
-            .controller('RangeCtrl', function ($scope) {
+        .controller('RangeCtrl', function ($scope) {
                 $scope.dataSource = window.chartData;
         });
 </script>

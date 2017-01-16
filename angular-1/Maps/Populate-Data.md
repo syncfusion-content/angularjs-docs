@@ -139,13 +139,14 @@ The JSON object “populationData” is used as `e-dataSource` in the following 
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
-            <e-layer e-shapedata=usMap  e-shapedatapath="name" e-shapepropertypath="name" e-datasource=PopulationData>
-              </e-layer>
+            <e-layer e-shapedata=usMap  e-shapedatapath="name" e-shapepropertypath="name" 
+            e-datasource=PopulationData>
+            </e-layer>
         </e-layers>
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+        .controller('MapsCtrl', function ($scope) {
                 $scope.PopulationData = populationData;
                         });
     </script>

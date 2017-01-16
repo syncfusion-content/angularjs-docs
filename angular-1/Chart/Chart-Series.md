@@ -20,7 +20,7 @@ In EjChart, you can add multiple series object in the `e-series` options. The se
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart>
+         <div id="container" ej-chart>
          <e-series>
          <e-series e-name="Gold" e-datasource=dataSource e-xname="XValue" e-yname="YValue1" >
          </e-series>
@@ -29,9 +29,9 @@ In EjChart, you can add multiple series object in the `e-series` options. The se
          <e-series e-name="Bronze" e-datasource=dataSource e-xname="XValue" e-yname="YValue3">
          </e-series>
          </e-series>
-        </div>
-        <script>
-        var chartData= [
+         </div>
+         <script>
+         var chartData= [
               { "XValue": "USA", "YValue1": 50, "YValue2": 70, "YValue3": 45 },
               { "XValue": "China", "YValue1": 40, "YValue2": 60, "YValue3": 55 },
               { "XValue": "Japan", "YValue1": 70, "YValue2": 60, "YValue3": 50 },
@@ -39,13 +39,12 @@ In EjChart, you can add multiple series object in the `e-series` options. The se
               { "XValue": "France", "YValue1": 50, "YValue2": 45, "YValue3": 35 },
               { "XValue": "Germany", "YValue1": 40, "YValue2": 30, "YValue3": 22 },
               { "XValue": "Italy", "YValue1": 40, "YValue2": 35, "YValue3": 37 },
-              { "XValue": "Sweden", "YValue1": 30, "YValue2": 35, "YValue3": 27 }
-              ];
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+              { "XValue": "Sweden", "YValue1": 30, "YValue2": 35, "YValue3": 27 }];
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
                 $scope.dataSource="chartData";
                 });
-        </script>
+         </script>
     </body>
 </html>
 
@@ -71,8 +70,11 @@ The following code example explains on how to enable marker, tooltip and animati
     </head>
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart e-commonseriesoptions-type="line" 
-                     e-commonseriesoptions-enableanimation="true" e-commonseriesoptions-tooltip-visible="true" e-commonseriesoptions-tooltip-template="template"
-                     e-commonseriesoptions-marker="marker">
+        e-commonseriesoptions-enableanimation="true" 
+        e-commonseriesoptions-tooltip-visible="true" e-commonseriesoptions-tooltip-template="template"
+        e-commonseriesoptions-marker-visible="true" e-commonseriesoptions-marker-shape="circle"
+        e-commonseriesoptions-marker-size-height="10" e-commonseriesoptions-marker-size-width=10
+        e-commonseriesoptions-marker-border-width="2">
          <e-series>
          <e-series e-name="Gold" e-datasource=dataSource e-xname="XValue" e-yname="YValue1" >
          </e-series>
@@ -85,15 +87,7 @@ The following code example explains on how to enable marker, tooltip and animati
         <script>
                angular.module('ChartApp', ['ejangular'])
                 .controller('ChartCtrl', function ($scope) {
-                    $scope.marker={
-                    shape: 'circle',
-                    size:
-                    {
-                        height: 10, width: 10
-                    },
-                    visible: true,
-                    border: { width: 2 }
-            },
+                  
                     });
         </script>
     </body>
@@ -114,21 +108,21 @@ EjChart allows you to render the combination of different series in the chart.
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart>
+         <div id="container" ej-chart>
          <e-series>
           //Set chart type to series1
          <e-series e-type="column" >
          </e-series>
           //Set chart type to series2
-        <e-series e-type="line" >
+         <e-series e-type="line" >
          </e-series>
          </e-series>
-        </div>
-        <script>
-               angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         </div>
+         <script>
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
                   });
-        </script>
+         </script>
     </body>
 </html>
 
@@ -156,16 +150,16 @@ When the combination of Cartesian and accumulation series types are added to the
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart>
+         <div id="container" ej-chart>
          <e-series>
-         <e-series e-type="line" e-name="Gold" e-datasource=dataSource e-xname="XValue" e-yname="YValue1" >
+         <e-series e-type="line" e-name="Gold" e-datasource=dataSource e-xname="XValue" 
+         e-yname="YValue1"></e-series>
+         <e-series e-type="pie" e-name="Silver" e-datasource=dataSource e-xname="XValue" 
+         e-yname="YValue2" ></e-series>
          </e-series>
-         <e-series e-type="pie" e-name="Silver" e-datasource=dataSource e-xname="XValue" e-yname="YValue2" >
-         </e-series>
-         </e-series>
-        </div>
-        <script>
-        var chartData= [
+         </div>
+         <script>
+         var chartData= [
               { "XValue": "USA", "YValue1": 50, "YValue2": 70 },
               { "XValue": "China", "YValue1": 40, "YValue2": 60},
               { "XValue": "Japan", "YValue1": 70, "YValue2": 60},
@@ -173,13 +167,12 @@ When the combination of Cartesian and accumulation series types are added to the
               { "XValue": "France", "YValue1": 50, "YValue2": 45 },
               { "XValue": "Germany", "YValue1": 40, "YValue2": 30 },
               { "XValue": "Italy", "YValue1": 40, "YValue2": 35},
-              { "XValue": "Sweden", "YValue1": 30, "YValue2": 35 }
-              ];
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+              { "XValue": "Sweden", "YValue1": 30, "YValue2": 35 }];
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
                 $scope.dataSource="chartData";
                 });
-        </script>
+         </script>
     </body>
 </html>
 

@@ -23,19 +23,18 @@ You can bind the series `e-series-datasource` to the indicator by setting the sp
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-indicators="indicators">
+        <div id="container" ej-chart>
         <e-series>
-        <e-series e-datasource="dataSource" e-xname="xDate" e-high="High" e-low="Low" e-open="Open" e-close="Close" e-name="Hilo" e-type="hiloopenclose"></e-series>
+        <e-series e-datasource="dataSource" e-xname="xDate" e-high="High" e-low="Low" e-open="Open" 
+        e-close="Close" e-name="Hilo" e-type="hiloopenclose"></e-series>
         </e-series>
+        <e-indicators>
+        <e-indicator e-seriesname="Hilo"></e-indicator>
+        </e-indicators>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.indicators=[{
-                        //Set Hilo series dataSource to indicator using seriesName
-                        seriesName: "Hilo"
-                        //  ...
-                     }];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {        
                    });
         </script>
     </body>
@@ -56,21 +55,15 @@ Also, you can add data to the indicator directly by using the `dataSource` optio
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-indicators="indicators">
+        <div id="container" ej-chart>
+        <e-indicators>
+        <e-indicator e-datasource=chartData e-xname="xDate" e-high="High" e-low="Low"
+        e-open="Open" e-close="Close"></e-indicator>
+        </e-indicators>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.indicators=[{
-                        //Add dataSource to indicator directly
-                    dataSource: chartData,
-                    xName: "xDate",
-                    high: "High",
-                    low: "Low",
-                    open: "Open",
-                    close: "Close",                
-                    //  ...
-                     }];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -94,21 +87,18 @@ To create an Accumulation Distribution indicator, set the `indicators.type` as *
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-indicators="indicators">
+        <div id="container" ej-chart>
         <e-series>
         <e-series e-datasource="dataSource" e-xname="xDate" e-high="high" e-low="low" e-open="open" 
         e-close="close" e-name="hilo" e-type="hiloopenclose" e-volume="volume"></e-series>
         </e-series>
+        <e-indicators>
+        <e-indicator e-seriesname="hilo" e-type="accumulationdistribution"></e-indicator>
+        </e-indicators>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.indicators=[{
-                        seriesName: "hilo",
-                         //Set indicator type
-                        type: "accumulationdistribution"
-                        //  ...
-                     }];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {   
                    });
         </script>
     </body>
@@ -133,21 +123,18 @@ You can create an ATR indicator by setting the `indicators.type` as **"atr"** in
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-indicators="indicators">
+        <div id="container" ej-chart>
         <e-series>
         <e-series e-datasource="dataSource" e-xname="xDate" e-high="high" e-low="low" e-open="open" 
         e-close="close" e-name="hilo" e-type="hiloopenclose" ></e-series>
         </e-series>
+        <e-indicators>
+        <e-indicator e-seriesname="hilo" e-type="atr"></e-indicator>
+        </e-indicators>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.indicators=[{
-                        seriesName: "hilo",
-                         //Set indicator type
-                        type: "atr"
-                        //  ...
-                     }];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {      
                    });
         </script>
     </body>
@@ -172,21 +159,18 @@ Bollinger Band indicator is created by setting the `indicators.type` as **"bolli
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-indicators="indicators">
+        <div id="container" ej-chart>
         <e-series>
         <e-series e-datasource="dataSource" e-xname="xDate" e-high="high" e-low="low" e-open="open" 
         e-close="close" e-name="hilo" e-type="hiloopenclose" ></e-series>
         </e-series>
+        <e-indicators>
+        <e-indicator e-seriesname="hilo" e-type="bollingerband"></e-indicator>
+        </e-indicators>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.indicators=[{
-                        seriesName: "hilo",
-                         //Set indicator type
-                        type: "bollingerband"
-                        //  ...
-                     }];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -208,22 +192,19 @@ To render an EMA indicator, you have to set the `indicators.type` as **"ema"**.
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-indicators="indicators">
+        <div id="container" ej-chart>
         <e-series>
         <e-series e-datasource="dataSource" e-xname="xDate" e-high="high" e-low="low" e-open="open" 
         e-close="close" e-name="hilo" e-type="hiloopenclose" ></e-series>
         </e-series>
+        <e-indicators>
+        <e-indicator e-seriesname="hilo" e-type="ema"></e-indicator>
+        </e-indicators>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.indicators=[{
-                        seriesName: "hilo",
-                         //Set indicator type
-                        type: "ema"
-                        //  ...
-                     }];
-                   });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                  });
         </script>
     </body>
 </html>
@@ -246,22 +227,19 @@ Momentum Technical indicator is created by setting the `indicators.type` as **"m
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-indicators="indicators">
+        <div id="container" ej-chart>
         <e-series>
         <e-series e-datasource="dataSource" e-xname="xDate" e-high="high" e-low="low" e-open="open" 
         e-close="close" e-name="hilo" e-type="hiloopenclose" ></e-series>
         </e-series>
+         <e-indicators>
+        <e-indicator e-seriesname="hilo" e-type="momentum"></e-indicator>
+        </e-indicators>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.indicators=[{
-                        seriesName: "hilo",
-                         //Set indicator type
-                        type: "momentum"
-                        //  ...
-                     }];
-                   });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                  });
         </script>
     </body>
 </html>
@@ -288,18 +266,15 @@ To render an MACD indicator, you have to set the `indicators.type` as **"macd"**
         <e-series>
         <e-series e-datasource="dataSource" e-xname="xDate" e-high="high" e-low="low" e-open="open" 
         e-close="close" e-name="hilo" e-type="hiloopenclose" ></e-series>
+         <e-indicators>
+        <e-indicator e-seriesname="hilo" e-type="macd"></e-indicator>
+        </e-indicators>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.indicators=[{
-                        seriesName: "hilo",
-                         //Set indicator type
-                        type: "macd"
-                        //  ...
-                     }];
-                   });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                  });
         </script>
     </body>
 </html>
@@ -322,21 +297,19 @@ By using the `macdType` enumeration property, you can change the MACD rendering 
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-indicators="indicators">
+        <div id="container" ej-chart>
         <e-series>
         <e-series e-datasource="dataSource" e-xname="xDate" e-high="high" e-low="low" e-open="open" 
         e-close="close" e-name="hilo" e-type="hiloopenclose" ></e-series>
         </e-series>
+        <e-indicators>
+        <e-indicator e-seriesname="hilo" e-type="macd" e-macdtype="histogram"></e-indicator>
+        </e-indicators>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.indicators=[{
-                        type: "macd",
-                        macdType:"histogram"
-                        //  ...
-                     }];
-                   });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                  });
         </script>
     </body>
 </html>
@@ -360,22 +333,19 @@ To render the RSI indicator, set the `indicators.type` as **"rsi"**. It contains
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-indicators="indicators">
+        <div id="container" ej-chart >
         <e-series>
         <e-series e-datasource="dataSource" e-xname="xDate" e-high="high" e-low="low" e-open="open" 
         e-close="close" e-name="hilo" e-type="hiloopenclose" ></e-series>
         </e-series>
+        <e-indicators>
+        <e-indicator e-seriesname="hilo" e-type="rsi"></e-indicator>
+        </e-indicators>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.indicators=[{
-                        seriesName: "hilo",
-                         //Set indicator type
-                        type: "rsi"
-                        //  ...
-                     }];
-                   });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                });
         </script>
     </body>
 </html>
@@ -398,22 +368,19 @@ To render the SMA indicator, you should specify the `indicators.type` as **"sma"
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-indicators="indicators">
+        <div id="container" ej-chart  >
         <e-series>
         <e-series e-datasource="dataSource" e-xname="xDate" e-high="high" e-low="low" e-open="open" 
         e-close="close" e-name="hilo" e-type="hiloopenclose" ></e-series>
         </e-series>
+         <e-indicators>
+        <e-indicator e-seriesname="hilo" e-type="sma"></e-indicator>
+        </e-indicators>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.indicators=[{
-                        seriesName: "hilo",
-                         //Set indicator type
-                        type: "sma"
-                        //  ...
-                     }];
-                   });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+               });
         </script>
     </body>
 </html>
@@ -436,22 +403,19 @@ For the Stochastic indicator, you need to set the `indicators.type` as **"stocha
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-indicators="indicators">
+        <div id="container" ej-chart>
         <e-series>
         <e-series e-datasource="dataSource" e-xname="xDate" e-high="high" e-low="low" e-open="open" 
         e-close="close" e-name="hilo" e-type="hiloopenclose" ></e-series>
+        <e-indicators>
+        <e-indicator e-seriesname="hilo" e-type="stochastic"></e-indicator>
+        </e-indicators>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.indicators=[{
-                        seriesName: "hilo",
-                         //Set indicator type
-                        type: "stochastic"
-                        //  ...
-                     }];
-                   });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                 });
         </script>
     </body>
 </html>
@@ -472,21 +436,18 @@ To render the TMA indicator, you should specify the `indicators.type` as **"tma"
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-indicators="indicators">
+        <div id="container" ej-chart>
         <e-series>
         <e-series e-datasource="dataSource" e-xname="xDate" e-high="high" e-low="low" e-open="open" 
         e-close="close" e-name="hilo" e-type="hiloopenclose" ></e-series>
         </e-series>
+        <e-indicators>
+        <e-indicator e-seriesname="hilo" e-type="tma"></e-indicator>
+        </e-indicators>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.indicators=[{
-                        seriesName: "hilo",
-                         //Set indicator type
-                        type: "tma"
-                        //  ...
-                     }];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -514,18 +475,14 @@ To display the indicator tooltip, use `visible` option of the `indicators.toolti
         <e-series e-datasource="dataSource" e-xname="xDate" e-high="high" e-low="low" e-open="open" 
         e-close="close" e-name="hilo" e-type="hiloopenclose" ></e-series>
         </e-series>
+        <e-indicators>
+        <e-indicator e-tooltip-visible="true"></e-indicator>
+        </e-indicators>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.indicators=[{
-                                     //  ...
-                             tooltip: {
-                                  //Enable tooltip for indicator
-                              visible: true
-                                       }
-                                    }];
-                                   });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                  });
         </script>
     </body>
 </html>

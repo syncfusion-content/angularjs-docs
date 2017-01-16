@@ -188,8 +188,9 @@ On executing the above code sample renders a customized **Linear Gauge** as foll
 
 <ej-lineargauge e-height="550" e-width="500" e-labelcolor="#8c8c8c" e-enableanimation="false">
     <e-scales>
-       <e-scale e-type="thermometer" e-backgroundcolor="transparent" e-minimum="-10" e-maximum="110" e-minorintervalvalue="5"
-                e-width="20" e-position-x="50" e-position-y="18" e-length="355" e-border-width="0.5">
+       <e-scale e-type="thermometer" e-backgroundcolor="transparent" e-minimum="-10" e-maximum="110" 
+       e-minorintervalvalue="5" e-width="20" e-position-x="50" e-position-y="18" e-length="355" 
+       e-border-width="0.5">
        //Add the pointers customization code here
        //Add the labels customization code here
        //Add the ticks customization code here
@@ -220,14 +221,16 @@ In **Linear gauge** there are two types of pointers available such as marker poi
 
 <ej-lineargauge e-height="550" e-width="500" e-labelcolor="#8c8c8c" e-enableanimation="false">
     <e-scales>
-       <e-scale e-type="thermometer" e-backgroundcolor="transparent" e-minimum="-10" e-maximum="110" e-minorintervalvalue="5"
-                e-width="20" e-position-x="50" e-position-y="18" e-length="355" e-border-width="0.5">
-           <e-markerpointers>
+       <e-scale e-type="thermometer" e-backgroundcolor="transparent" e-minimum="-10" e-maximum="110"
+       e-minorintervalvalue="5" e-width="20" e-position-x="50" e-position-y="18" e-length="355" 
+       e-border-width="0.5">
+       <e-markerpointers>
                <e-markerpointer e-opacity="0"></e-markerpointer>
-           </e-markerpointers>
-           <e-barpointers>
-              <e-barpointer  e-width="10" e-distancefromscale="-0.5" e-value="37" e-backgroundcolor="#DB3738"></e-barpointer>
-           </e-barpointers>
+       </e-markerpointers>
+       <e-barpointers>
+              <e-barpointer  e-width="10" e-distancefromscale="-0.5" e-value="37" 
+              e-backgroundcolor="#DB3738"></e-barpointer>
+        </e-barpointers>
         //Add the labels customization code here
         //Add the ticks customization code here
         //Add the Custom labels customization code here
@@ -298,13 +301,15 @@ On executing the above code sample renders a customized **Linear Gauge** as foll
             //Add the labels customization code here
             //Add the ticks customization code here
             <e-ticks>
-              <e-tick e-type="majorinterval" e-height="8" e-width="1" e-color="#8c8c8c" e-distancefromscale-y="-4"></e-tick>
-              <e-tick e-type="minorinterval" e-height="4" e-width="1" e-color="#8c8c8c" e-distancefromscale-y="-4"></e-tick>
-              <e-tick e-type="majorinterval" e-placement="far" e-height="8" e-width="1" e-color="#8c8c8c" 
-                      e-distancefromscale-y="-4">
+              <e-tick e-type="majorinterval" e-height="8" e-width="1" e-color="#8c8c8c" 
+              e-distancefromscale-y="-4"></e-tick>
+              <e-tick e-type="minorinterval" e-height="4" e-width="1" e-color="#8c8c8c" 
+              e-distancefromscale-y="-4"></e-tick>
+              <e-tick e-type="majorinterval" e-placement="far" e-height="8" e-width="1" 
+              e-color="#8c8c8c" e-distancefromscale-y="-4">
               </e-tick>
-              <e-tick e-type="minorinterval" e-placement="far" e-height="4" e-width="1" e-color="#8c8c8c"
-                      e-distancefromscale-y="-4">
+              <e-tick e-type="minorinterval" e-placement="far" e-height="4" e-width="1" 
+              e-color="#8c8c8c" e-distancefromscale-y="-4">
               </e-tick>
             </e-ticks>
             //Add the Custom labels customization code here   
@@ -371,7 +376,8 @@ You can add a function to convert the temperature from Degrees to Fahrenheit val
 {% highlight javascript %}
 
 <div id="linearframe">
-<ej-lineargauge e-height="550" e-width="500" e-labelcolor="#8c8c8c" e-enableanimation="false" e-drawlabels="DrawLabel">
+<ej-lineargauge e-height="550" e-width="500" e-labelcolor="#8c8c8c" e-enableanimation="false" 
+e-drawlabels="DrawLabel">
 </ej-lineargauge>
 </div>
 <script>
@@ -401,7 +407,8 @@ You can add the function that displays the current temperature value in the cust
 {% highlight javascript %}
 
 <div id="linearframe">
-<ej-lineargauge e-height="550" e-width="500" e-labelcolor="#8c8c8c" e-enableanimation="false" e-drawlabels="DrawLabel">
+<ej-lineargauge e-height="550" e-width="500" e-labelcolor="#8c8c8c" e-enableanimation="false" 
+e-drawlabels="DrawLabel">
 </ej-lineargauge>
 </div>
 <script>
@@ -416,7 +423,7 @@ You can add the function that displays the current temperature value in the cust
                     args.style.textValue = "Cool Weather" + " (" + fahValue.toFixed(1) + "° F)";
                 }
                 else if (temp == 0) {
-                    args.style.textValue = "Freezing point of Water" + " (" + fahValue.toFixed(1) + "° F)";
+                    args.style.textValue ="Freezing point of Water" + "(" + fahValue.toFixed(1) + "° F)";
                 }
                 else if (temp >= 15 && temp < 30) {
                     args.style.textValue = "Room Temperature" + " (" + fahValue.toFixed(1) + "° F)";
@@ -434,7 +441,7 @@ You can add the function that displays the current temperature value in the cust
                     args.style.textValue = "Very Hot Temperature" + " (" + fahValue.toFixed(1) + "° F)";
                 }
                 else if (temp == 100) {
-                    args.style.textValue = "Boiling point of Water" + " (" + fahValue.toFixed(1) + "° F)";
+                    args.style.textValue ="Boiling point of Water" + "(" + fahValue.toFixed(1) + "° F)";
                 }
             }
         }

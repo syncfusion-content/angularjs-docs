@@ -25,16 +25,13 @@ Tooltip for the data points can be enabled by using the `visible` option of the 
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-        <e-series e-tooltip="tooltip"></e-series>
+        <e-series e-tooltip-visible="true"></e-series>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.tooltip= { 
-                        visible: true
-                       };
-                     });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                    });
         </script>
     </body>
 </html>
@@ -61,17 +58,14 @@ You can also use * **#series.<optionname>#** * as placeholder to display the val
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-        <e-series e-tooltip="tooltip"></e-series>
+        <e-series e-tooltip-visible="true"
+        e-tooltip-format="#series.name# <br/> #point.x# : #point.y#  (g/kWh)"></e-series>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.tooltip= { 
-                        visible: true,
-                        format:"#series.name# <br/> #point.x# : #point.y#  (g/kWh)"	
-                       };
-                     });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                 });
         </script>
     </body>
 </html>
@@ -108,16 +102,13 @@ You can also use * **#series.<optionname>#** * as place holder to display the va
     </div>
         <div id="container" ej-chart>
         <e-series>
-        <e-series e-tooltip="tooltip"></e-series>
+        <e-series e-tooltip-template="Tooltip"></e-series>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.tooltip= { 
-                       template:"Tooltip"
-                       };
-                     });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                });
         </script>
     </body>
 </html>
@@ -133,7 +124,7 @@ You can also use * **#series.<optionname>#** * as place holder to display the va
 
 #### Tooltip template animation
 
-You can enable animation by setting the `enableAnimation` to true. Tooltip animates when the mouse moves from one data point to another point. The `duration` property in tooltip specifies the time taken to animate the tooltip. the duration is set to **"500ms"**, by default.
+You can enable animation by setting the `e-enableAnimation` to true. Tooltip animates when the mouse moves from one data point to another point. The `e-duration` property in tooltip specifies the time taken to animate the tooltip. the duration is set to **"500ms"**, by default.
 
 N> Tooltip is animated only if the template is specified for tooltip.
 
@@ -156,18 +147,14 @@ N> Tooltip is animated only if the template is specified for tooltip.
     </div>
         <div id="container" ej-chart>
         <e-series>
-        <e-series e-tooltip="tooltip"></e-series>
+        <e-series e-tooltip-template="Tooltip"
+        e-tooltip-enableanimation="true" e-tooltip-duration="1000ms"></e-series>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.tooltip= { 
-                       template:"Tooltip",
-                       enableAnimation:true,
-                       duration:"1000ms"
-                       };
-                     });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                  });
         </script>
     </body>
 </html>
@@ -190,19 +177,14 @@ The `fill` and `border` options are used to customize the background color and b
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-        <e-series e-tooltip="tooltip"></e-series>
+        <e-series e-tooltip-fill="#FF9933" e-tooltip-border-width="1"
+        e-tooltip-border-color="#993300"></e-series>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.tooltip= { 
-                       //Change tooltip color and border
-                       fill: '#FF9933',
-                       border: { width: 1, color: "#993300" }	
-                       // ...
-                       };
-                     });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                   });
         </script>
     </body>
 </html>
@@ -226,18 +208,13 @@ The options `rx` and `ry` are used to customize the corner radius of the tooltip
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
         <e-series>
-        <e-series e-tooltip="tooltip"></e-series>
+        <e-series e-tooltip-rx="50" e-tooltip-ry="50"></e-series>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.tooltip= { 
-                        //Customize the corner radius of the tooltip rectangle.
-                        rx: "50", ry: "50"  
-                       // ...
-                       };
-                     });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                  });
         </script>
     </body>
 </html>
@@ -274,8 +251,8 @@ N> Pinch zooming is supported only in browsers that support multi-touch gestures
         <div id="container" ej-chart e-zooming-enable="true">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                      });
         </script>
     </body>
@@ -306,8 +283,8 @@ The `e-zooming-type` option in zooming specifies whether the chart is allowed to
         <div id="container" ej-chart e-zooming-enable="true" e-zooming-type="x">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                      });
         </script>
     </body>
@@ -332,9 +309,9 @@ You can choose the items displayed in the zooming toolbar by specifying the prop
         <div id="container" ej-chart e-zooming-enable="true" e-zooming-toolbaritems="toolbar">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                        $scope.toolbar = ["reset","zoomIn","zoomOut"];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+          $scope.toolbar = ["reset","zoomIn","zoomOut"];
                      });
         </script>
     </body>
@@ -362,8 +339,8 @@ EjChart provides scrollbar support to view the other portions of chart area whic
         <div id="container" ej-chart e-zooming-enable="true" e-scrollbar="true">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                       });
         </script>
     </body>
@@ -391,12 +368,13 @@ Crosshair can be enabled by using the `e-crosshair-visible` option . Crosshair l
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-    <div id="container" ej-chart e-crosshair-visible="true" e-primaryxaxis-crosshairlabel-visible="true" e-primaryyaxis-crosshairlabel-visible="true">
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                      });
+    <div id="container" ej-chart e-crosshair-visible="true" 
+    e-primaryxaxis-crosshairlabel-visible="true" e-primaryyaxis-crosshairlabel-visible="true">
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {
+               });
         </script>
     </body>
 </html>
@@ -421,23 +399,17 @@ The `fill` and `border` options of the `e-primaryxaxis-crosshairLabel` is used t
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-    <div id="container" ej-chart e-crosshair="crosshair" e-primaryxaxis-crosshairlabel="crosshairlabel" >
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.crosshair={
-                        visible: true,
-                        //Customizing the crosshair line
-                        line: { color: 'gray', width: 2 }
-                        };
-                      $scope.crosshairlabel={
-                          visible: true,
-                          //Customizing the crosshair label background color and border
-                          fill: "red", 
-                          border: { color: "green", width: 2 }
-                      };  
-                      });
+    <div id="container" ej-chart e-crosshair-visible="true"
+    e-crosshair-line-color="gray" e-crosshair-line-width="2"
+    e-primaryxaxis-crosshairlabel-visible="true"
+    e-primaryxaxis-crosshairlabel-fill="red"
+    e-primaryxaxis-crosshairlabel-border-color="green"
+    e-primaryxaxis-crosshairlabel-border-width="2" >
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {
+            });
         </script>
     </body>
 </html>
@@ -465,11 +437,11 @@ Trackball can be enabled by setting the `e-crosshair-visible` option  to *true* 
     </head>
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart e-crosshair-visible="true" e-crosshair-type="trackball">
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                      });
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {
+              });
         </script>
     </body>
 </html>
@@ -493,26 +465,15 @@ Shape and size of the trackball marker can be customized by using the `shape`and
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-    <div id="container" ej-chart e-crosshair="crosshair">
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.crosshair={
-                     visible: true,
-                     type:'trackball',
-                  //Customize the trackball line color and width
-                     line: { color: '#800000', width: 2 },
-                  //Customize the trackball marker shape size and visibility
-                  marker: {
-                       shape: 'pentagon',
-                       size: {
-                            height: 9, width: 9
-                         },
-                       //Enable/disable trackball marker
-                       visible: true
-                    }     
-                }; 
+    <div id="container" ej-chart e-crosshair-visible="true"
+    e-crosshair-type="trackball" e-crosshair-line-color="#800000"
+    e-crosshair-line-width="2" e-crosshair-marker-shape="pentagon"
+    e-crosshair-marker-size-height="9" e-crosshair-marker-size-width="9"
+    e-crosshair-marker-visible="true">
+    </div>
+    <script>
+     angular.module('ChartApp', ['ejangular'])
+     .controller('ChartCtrl', function ($scope) {
                 });
         </script>
     </body>
@@ -536,12 +497,12 @@ X and Y values displayed in the trackball tooltip are formatted based on its axi
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-    <div id="container" ej-chart e-crosshair-visible="true" e-crosshair-type="trackball" e-primaryxaxis-labelformat="MMM, yyyy" e-primaryyaxis-labelformat="{value}K">
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                                     
+    <div id="container" ej-chart e-crosshair-visible="true" e-crosshair-type="trackball"
+     e-primaryxaxis-labelformat="MMM, yyyy" e-primaryyaxis-labelformat="{value}K">
+    </div>
+    <script>
+     angular.module('ChartApp', ['ejangular'])
+     .controller('ChartCtrl', function ($scope) {
                 });
         </script>
     </body>
@@ -566,24 +527,18 @@ You can able to show the trackball tooltip in two modes, using trackballTooltipS
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-    <div id="container" ej-chart e-crosshair-visible="true" e-crosshair-type="trackball" e-crosshair-trackballtooltipsettings="tooltip">
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.tooltip= {
-                           //Trackball mode
-                            mode: 'grouping',
-                            //Customize the trackball border, fill, rx and ry               
-                                border:{ 
-                                    width:1,
-                                    color: 'grey'
-                                },
-                            rx: 3,
-                            ry: 3,
-                            fill: 'whitesmoke'
-                        };
-                      });
+    <div id="container" ej-chart e-crosshair-visible="true" e-crosshair-type="trackball" 
+    e-crosshair-trackballtooltipsettings-mode="grouping" 
+    e-crosshair-trackballtooltipsettings-border-width="1"
+    e-crosshair-trackballtooltipsettings-border-color="grey"
+    e-crosshair-trackballtooltipsettings-rx="3"
+    e-crosshair-trackballtooltipsettings-ry="3"
+    e-crosshair-trackballtooltipsettings-fill="whitesmoke">
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {
+                        });
         </script>
     </body>
 </html>
@@ -609,14 +564,13 @@ N> When hovering mouse on the data points, the corresponding series legend also 
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart>
     <e-series>
-    <e-series e-highlightsettings="highlight"></e-series>
+    <e-series e-highlightsettings-enable="true"></e-series>
     </e-series>
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.highlight={enable:true};
-                       });
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {
+                });
         </script>
     </body>
 </html>
@@ -648,18 +602,13 @@ To highlight all the data points of the specified series, you can set the **"ser
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart>
     <e-series>
-    <e-series e-highlightsettings="highlight"></e-series>
+    <e-series e-highlightsettings-enable="true" e-highlightsettings-mode="series"></e-series>
     </e-series>
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.highlight={
-                        enable:true,
-                        //Change highlight mode
-                        mode:"series"
-                        };
-                       });
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {             
+               });
         </script>
     </body>
 </html>
@@ -683,18 +632,13 @@ To highlight a single point, you can set the **"point"** value to the `mode` opt
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart>
     <e-series>
-    <e-series e-highlightsettings="highlight"></e-series>
+    <e-series e-highlightsettings-enable="true" e-highlightsettings-mode="point"></e-series>
     </e-series>
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.highlight={
-                        enable:true,
-                        //Change highlight mode
-                        mode:"point"
-                        };
-                       });
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {             
+               });
         </script>
     </body>
 </html>
@@ -711,7 +655,7 @@ To highlight the points that corresponds to the same index in all the series, se
 
 {% highlight html %}
 
- <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
     <head>
         <title>Essential Studio for AngularJS: Chart</title>
         <!--CSS and Script file References -->
@@ -719,18 +663,13 @@ To highlight the points that corresponds to the same index in all the series, se
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart>
     <e-series>
-    <e-series e-highlightsettings="highlight"></e-series>
+    <e-series e-highlightsettings-enable="true" e-highlightsettings-mode="cluster"></e-series>
     </e-series>
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.highlight={
-                        enable:true,
-                        //Change highlight mode
-                        mode:"cluster"
-                        };
-                       });
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {             
+               });
         </script>
     </body>
 </html>
@@ -753,19 +692,15 @@ To customize the highlighted series, use the `color`, `border` and `opacity` opt
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart>
     <e-series>
-    <e-series e-highlightsettings="highlight"></e-series>
+    <e-series e-highlightsettings-enable="true" e-highlightsettings-border-width="1.5"
+    e-highlightsettings-border-color="red" e-highlightsettings-opacity="0.5"
+    e-highlightsettings-color="green"></e-series>
     </e-series>
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.highlight={
-                        enable:true,
-                        //Customizing 
-                        border: { width: '1.5', color: "red" },
-                        opacity: 0.5, color: "green"
-                        };
-                       });
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {             
+               });
         </script>
     </body>
 </html>
@@ -811,18 +746,14 @@ EjChart provides pattern support for highlighting the data by setting the value 
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart>
     <e-series>
-    <e-series e-highlightsettings="highlight"></e-series>
+    <e-series e-highlightsettings-enable="true" e-highlightsettings-pattern="chessboard">
     </e-series>
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.highlight={
-                        enable:true,
-                        //change the highlight pattern
-                       pattern:"chessboard"
-                        };
-                       });
+    </e-series>
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {             
+               });
         </script>
     </body>
 </html>
@@ -843,27 +774,22 @@ To create a custom pattern for the highlighting data points, set the pattern typ
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-      <svg>
-                <pattern id="dots_a" patternUnits="userSpaceOnUse" width="6" height="6">
-                    <rect x="0" y="0" width="6" height="6" transform="translate(0,0)" fill="black" opacity="1"></rect>
-                    <path d='M 3 -3 L -3 3 M 0 6 L 6 0 M 9 3 L 3 9'stroke-width="1" stroke="white"></path>
-                </pattern>
-            </svg>
+    <svg>
+    <pattern id="dots_a" patternUnits="userSpaceOnUse" width="6" height="6">
+    <rect x="0" y="0" width="6" height="6" transform="translate(0,0)" fill="black" opacity="1"></rect>
+    <path d='M 3 -3 L -3 3 M 0 6 L 6 0 M 9 3 L 3 9'stroke-width="1" stroke="white"></path>
+    </pattern>
+    </svg>
     <div id="container" ej-chart>
     <e-series>
-    <e-series e-highlightsettings="highlight"></e-series>
+    <e-series e-highlightsettings-enable="true" e-highlightsettings-pattern="custom"
+    e-highlightsettings-custompattern="dots_a"></e-series>
     </e-series>
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.highlight={
-                         enable: true,
-                          //Add custom pattern for highlighting data
-                         pattern: "custom",
-                         customPattern: 'dots_a',
-                        };
-                       });
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {
+                   });
         </script>
     </body>
 </html>
@@ -887,16 +813,13 @@ N> When mouse is clicked on the data points, the corresponding series legend als
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart>
     <e-series>
-    <e-series e-selectionsettings="selection"></e-series>
+    <e-series e-selectionsettings-enable="true"></e-series>
     </e-series>
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.selection={
-                        enable:true
-                        };
-                       });
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {
+                  });
         </script>
     </body>
 </html>
@@ -927,22 +850,17 @@ To select all the data points of the specified series, you can set the **"series
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart>
     <e-series>
-    <e-series e-selectionsettings="selection"></e-series>
+    <e-series e-selectionsettings-enable="true" e-selectionsettings-mode="series"
+    e-selectionsettings-pattern="chessboard"></e-series>
     </e-series>
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.selection={
-                        enable:true,
-                        mode:"series",
-                        pattern:"chessboard"
-                        };
-                       });
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {
+                  });
         </script>
     </body>
 </html>
-
 
 
 {% endhighlight %}
@@ -963,17 +881,13 @@ To highlight a single point, you can set the **"point"** value to the `mode` opt
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart>
     <e-series>
-    <e-series e-selectionsettings="selection"></e-series>
+    <e-series e-selectionsettings-enable="true" e-selectionsettings-mode="point"></e-series>
     </e-series>
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.selection={
-                        enable:true,
-                        mode:"point"
-                        };
-                       });
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {
+                  });
         </script>
     </body>
 </html>
@@ -998,21 +912,16 @@ To select the points that corresponds to the same index in all the series, set t
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart>
     <e-series>
-    <e-series e-selectionsettings="selection"></e-series>
+    <e-series e-selectionsettings-enable="true" e-selectionsettings-mode="cluster"></e-series>
     </e-series>
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.selection={
-                        enable:true,
-                        mode:"cluster"
-                        };
-                       });
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {
+                  });
         </script>
     </body>
 </html>
-
    
 {% endhighlight %}
 
@@ -1034,24 +943,20 @@ To fetch the selected area data points value, you can set the selectionSettings 
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart e-rangeselected="rangeSelection">
     <e-series>
-    <e-series e-selectionsettings="selection"></e-series>
+    <e-series e-selectionsettings-enable="true" e-selectionsettings-mode="range"
+    e-selectionsettings-rangetype="xy"></e-series>
     </e-series>
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.rangeSelection="rangeSelection";
-                    $scope.selection={
-                        enable:true,
-                        mode:"range",
-                        rangeType:"xy"
-                        };
-                         });
-                  //event to fetch the selected data point values
-           function rangeSelection (sender){
-            var selectedData = sender.data.selectedDataCollection;
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {
+     $scope.rangeSelection="rangeSelection";
+     });
+     //event to fetch the selected data point values
+     function rangeSelection (sender){
+     var selectedData = sender.data.selectedDataCollection;
             //...
-         }        
+      }        
         </script>
     </body>
 </html>     
@@ -1079,11 +984,13 @@ To select a data point or a series on mouse click based on the `selectionSetting
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-    <div id="container" ej-chart e-commonseriesoptions-selectionsettings-enable="true" e-commonseriesoptions-selectionsettings-type="single" e-commonseriesoptions-selectionsettings-mode="series">
-       </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+    <div id="container" ej-chart e-commonseriesoptions-selectionsettings-enable="true"
+     e-commonseriesoptions-selectionsettings-type="single" 
+     e-commonseriesoptions-selectionsettings-mode="series">
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {
                     });
         </script>
     </body>
@@ -1106,11 +1013,13 @@ For selecting multiple data points or series on mouse click, set `selectionSetti
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-    <div id="container" ej-chart e-commonseriesoptions-selectionsettings-enable="true" e-commonseriesoptions-selectionsettings-type="multiple" e-commonseriesoptions-selectionsettings-mode="series">
-       </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+    <div id="container" ej-chart e-commonseriesoptions-selectionsettings-enable="true" 
+    e-commonseriesoptions-selectionsettings-type="multiple" 
+    e-commonseriesoptions-selectionsettings-mode="series">
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {
                     });
         </script>
     </body>
@@ -1136,20 +1045,15 @@ To customize the selection styles, use the `color`, `border` and `opacity` optio
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart>
     <e-series>
-    <e-series e-selectionsettings="selection"></e-series>
+    <e-series e-selectionsettings-enable="true" e-selectionsettings-border-width="1.5"
+    e-selectionsettings-border-color="red" e-selectionsettings-opacity="0.5"
+    e-selectionsettings-color="red"></e-series>
     </e-series>
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.selection={
-                        enable:true,
-                       //Customizing selection rectangle styles
-                         border: { width: '1.5', color: "red" },
-                         opacity: 0.5, color: "red"
-                         // ...
-                        };
-                       });
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {
+                  });
         </script>
     </body>
 </html>
@@ -1194,21 +1098,17 @@ EjChart provides pattern support for the data selection by setting the value to 
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart>
     <e-series>
-    <e-series e-selectionsettings="selection"></e-series>
+    <e-series e-selectionsettings-enable="true" e-selectionsettings-pattern="diagonalForward">
     </e-series>
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.selection={
-                        enable:true,
-                        pattern:"diagonalForward"
-                        };
-                       });
+    </e-series>
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {
+                  });
         </script>
     </body>
 </html>
-
 
 {% endhighlight %}
 
@@ -1227,27 +1127,23 @@ To create a custom pattern for selecting the data points, set the `pattern` type
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-     <svg>
-                <pattern id="dots_a" patternUnits="userSpaceOnUse" width="6" height="6">
-                    <rect x="0" y="0" width="6" height="6" transform="translate(0,0)" fill="black" opacity="1"></rect>
-                    <path d='M 3 -3 L -3 3 M 0 6 L 6 0 M 9 3 L 3 9'stroke-width="1" stroke="white"></path>
-                </pattern>
-            </svg>
+    <svg>
+    <pattern id="dots_a" patternUnits="userSpaceOnUse" width="6" height="6">
+    <rect x="0" y="0" width="6" height="6" transform="translate(0,0)" fill="black" opacity="1"></rect>
+    <path d='M 3 -3 L -3 3 M 0 6 L 6 0 M 9 3 L 3 9'stroke-width="1" stroke="white"></path>
+    </pattern>
+    </svg>
     <div id="container" ej-chart>
     <e-series>
-    <e-series e-selectionsettings="selection"></e-series>
+    <e-series e-selectionsettings-enable="true"
+    e-selectionsettings-pattern="custom" e-selectionsettings-custompattern="dots_a">
     </e-series>
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.selection={
-                        enable:true,
-                        //Add custom pattern for selection data
-                        pattern: "custom",
-                        customPattern: 'dots_a'
-                        };
-                       });
+    </e-series>
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {
+                });
         </script>
     </body>
 </html>
@@ -1273,18 +1169,15 @@ To get the series information when selecting the specific series, subscribe to t
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart e-seriesregionclick=seriesSelection>
     <e-series>
-    <e-series e-selectionsettings="selection"></e-series>
+    <e-series e-selectionsettings-enable="true"></e-series>
     </e-series>
-        </div>
-        <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.seriesSelection="seriesSelection";
-                    $scope.selection={
-                        enable:true
-                        };
-                       });
-         function seriesSelection(sender) {
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {
+    $scope.seriesSelection="seriesSelection";
+                   });
+    function seriesSelection(sender) {
             //Get Series information on series selection
             var seriesData = sender.series;
         }           
@@ -1311,14 +1204,14 @@ We can able to select the point/series programmatically on chart load, by settin
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart e-selectedDataPointIndexes="pointindex">
     <e-series>
-    <e-series e-selectionsettings="selection"></e-series>
+    <e-series e-selectionsettings-enable="true"></e-series>
     </e-series>
         </div>
         <script>
                 angular.module('ChartApp', ['ejangular'])
                 .controller('ChartCtrl', function ($scope) {
                     $scope.pointindex=[{ seriesIndex:0 , pointIndex:2 },
-               { seriesIndex:1 , pointIndex:4 }];
+                                       { seriesIndex:1 , pointIndex:4 }];
                        });
         </script>
     </body>

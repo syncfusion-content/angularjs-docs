@@ -18,13 +18,13 @@ documentation: ug
             <div>FileName </div>
             <input type="text" id="txtFileName">
             <div >FileFormat </div>
-               <select id="ddlFileType">
-                <option value="JPEG">JPEG</option>
-                <option value="PNG">PNG</option>
+            <select id="ddlFileType">
+            <option value="JPEG">JPEG</option>
+            <option value="PNG">PNG</option>
             </select>
-      <script>
-              angular.module('CircularGaugeApp', ['ejangular'])
-                  .controller('CircularGaugeCtrl', function ($scope) {
+    <script>
+       angular.module('CircularGaugeApp', ['ejangular'])
+       .controller('CircularGaugeCtrl', function ($scope) {
                   });
        $(function () {
        $("#btnExportImage").ejButton({ width: "100px", click: "buttonclickevent", });

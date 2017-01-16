@@ -22,11 +22,12 @@ documentation: ug
     </head>
     <body ng-controller="DigitalGaugeCtrl">
         <div id="digitalframe">
-                 <ej-digitalgauge e-frame-innerwidth="6" e-frame-outerwidth="10" e-value="WELCOME"></ej-digitalgauge>
+                 <ej-digitalgauge e-frame-innerwidth="6" e-frame-outerwidth="10" e-value="WELCOME">
+                 </ej-digitalgauge>
         </div>
-         <script >
+         <script>
         angular.module('DigitalGaugeApp', ['ejangular'])
-       .controller('DigitalGaugeCtrl', function ($scope) {
+        .controller('DigitalGaugeCtrl', function ($scope) {
          });
     </script>
     </body>
@@ -57,16 +58,17 @@ For a better appearance, you can set the **background****image** for the **Digit
     </head>
     <body ng-controller="DigitalGaugeCtrl">
         <div id="digitalframe">
-                 <ej-digitalgauge e-frame-backgroundimageurl="board3.jpg"  e-value="RADAR" e-height="300">
+                 <ej-digitalgauge e-frame-backgroundimageurl="board3.jpg"  e-value="RADAR"
+                 e-height="300">
                  <e-items>
                  <e-item e-position-x="95" e-position-y="10">
                  </e-item>
                  </e-items>
                  </ej-digitalgauge>
         </div>
-         <script >
+        <script>
         angular.module('DigitalGaugeApp', ['ejangular'])
-       .controller('DigitalGaugeCtrl', function ($scope) {
+        .controller('DigitalGaugeCtrl', function ($scope) {
          });
     </script>
     </body>

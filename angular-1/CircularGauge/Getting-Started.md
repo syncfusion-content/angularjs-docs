@@ -115,8 +115,8 @@ The code example for defining controls in AngularJS is as follows,
     </head>
     <body ng-controller="CircularGaugeCtrl">
         <div id="circularframe">
-                <ej-circulargauge>
-                </ej-circulargauge>
+         <ej-circulargauge>
+         </ej-circulargauge>
         </div>
     </body>
 </html>
@@ -202,12 +202,12 @@ To display the values in the **Gauge,** scale labels are used. You can customize
 
 <ej-CircularGauge e-height="500" e-width="500" e-backgroundcolor="#3D3F3D" e-readonly="false">
     <e-scales>
-       <e-scale e-showranges="true" e-showindicators="true" e-maximum="200" e-majorintervalvalue="20" e-minorintervalvalue="5"
-                e-pointercap-radius="15" e-pointercap-borderwidth="0" e-pointercap-backgroundcolor="#797C79"
-                e-pointercap-bordercolor="#797C79">
-       <e-labels>
-           <e-label e-color="#ffffff"></e-label>
-       </e-labels>
+     <e-scale e-showranges="true" e-showindicators="true" e-maximum="200" e-majorintervalvalue="20" 
+     e-minorintervalvalue="5" e-pointercap-radius="15" e-pointercap-borderwidth="0" 
+     e-pointercap-backgroundcolor="#797C79" e-pointercap-bordercolor="#797C79">
+     <e-labels>
+     <e-label e-color="#ffffff"></e-label>
+     </e-labels>
        //Add the pointers customization code here
        //Add the ticks customization code here
        //Add the ranges customization code here
@@ -234,25 +234,27 @@ You can use three pointers that denote kilometer value, rotation per minute valu
 
 <ej-CircularGauge e-height="500" e-width="500" e-backgroundcolor="#3D3F3D" e-readonly="false">
     <e-scales>
-        <e-scale e-showranges="true" e-showindicators="true" e-maximum="200" e-majorintervalvalue="20" e-minorintervalvalue="5"
-                 e-pointercap-radius="15" e-pointercap-borderwidth="0" e-pointercap-backgroundcolor="#797C79"
-                 e-pointercap-bordercolor="#797C79">
-            <e-labels>
+        <e-scale e-showranges="true" e-showindicators="true" e-maximum="200" e-majorintervalvalue="20"
+         e-minorintervalvalue="5" e-pointercap-radius="15" e-pointercap-borderwidth="0" 
+         e-pointercap-backgroundcolor="#797C79" e-pointercap-bordercolor="#797C79">
+         <e-labels>
                <e-label e-color="#ffffff"></e-label>
-            </e-labels>
-            <e-pointers>
-               <e-pointer e-value="140" e-distancefromscale="60" e-showbackneedle="false" e-length="20" e-type="marker"e-markertype="triangle"
-                          e-width="10" e-radius="10" e-backgroundcolor="#FF940A">
-                  <e-border e-color="#FF940A"></e-border>
+         </e-labels>
+         <e-pointers>
+                <e-pointer e-value="140" e-distancefromscale="60" e-showbackneedle="false" 
+                e-length="20" e-type="marker"e-markertype="triangle" e-width="10" 
+                e-radius="10" e-backgroundcolor="#FF940A">
+                <e-border e-color="#FF940A"></e-border>
                 </e-pointer>
-                <e-pointer e-value="110" e-showbackneedle="false" e-length="150" e-width="2" e-radius="10" e-needletype="rectangle" 
-                           e-backgroundcolor="#05AFFF">
-                   <e-border e-color="#05AFFF"></e-border>
+                <e-pointer e-value="110" e-showbackneedle="false" e-length="150" e-width="2" 
+                e-radius="10" e-needletype="rectangle" e-backgroundcolor="#05AFFF">
+                <e-border e-color="#05AFFF"></e-border>
                 </e-pointer>
-                <e-pointer e-value="67" e-showbackneedle="false" e-length="100" e-width="15" e-radius="10" e-backgroundcolor="#FC5D07">
-                    <e-border e-color="#FC5D07"></e-border>
+                <e-pointer e-value="67" e-showbackneedle="false" e-length="100" e-width="15" 
+                e-radius="10" e-backgroundcolor="#FC5D07">
+                <e-border e-color="#FC5D07"></e-border>
                 </e-pointer>
-             </e-pointers>
+         </e-pointers>
        //Add the ticks customization code here
        //Add the ranges customization code here
        //Add the indicators customization code here
@@ -278,33 +280,36 @@ You can display the tick value with customization as given in the following code
 
 <ej-CircularGauge e-height="500" e-width="500" e-backgroundcolor="#3D3F3D" e-readonly="false">
     <e-scales>
-        <e-scale e-showranges="true" e-showindicators="true" e-maximum="200" e-majorintervalvalue="20" e-minorintervalvalue="5"
-                 e-pointercap-radius="15" e-pointercap-borderwidth="0" e-pointercap-backgroundcolor="#797C79"
-                 e-pointercap-bordercolor="#797C79">
-            <e-labels>
+        <e-scale e-showranges="true" e-showindicators="true" e-maximum="200" e-majorintervalvalue="20" 
+        e-minorintervalvalue="5" e-pointercap-radius="15" e-pointercap-borderwidth="0" 
+        e-pointercap-backgroundcolor="#797C79" e-pointercap-bordercolor="#797C79">
+        <e-labels>
                <e-label e-color="#ffffff"></e-label>
-            </e-labels>
-            <e-pointers>
-               <e-pointer e-value="140" e-distancefromscale="60" e-showbackneedle="false" e-length="20" e-type="marker"e-markertype="triangle"
-                          e-width="10" e-radius="10" e-backgroundcolor="#FF940A">
-                  <e-border e-color="#FF940A"></e-border>
-                </e-pointer>
-                <e-pointer e-value="110" e-showbackneedle="false" e-length="150" e-width="2" e-radius="10" e-needletype="rectangle" 
-                           e-backgroundcolor="#05AFFF">
-                   <e-border e-color="#05AFFF"></e-border>
-                </e-pointer>
-                <e-pointer e-value="67" e-showbackneedle="false" e-length="100" e-width="15" e-radius="10" e-backgroundcolor="#FC5D07">
-                    <e-border e-color="#FC5D07"></e-border>
-                </e-pointer>
-             </e-pointers>
-             <e-ticks>
-                <e-tick e-type="major" e-distanceFromScale="70" e-height="20" e-width="3" e-color="#ffffff"></e-tick>
-                <e-tick e-type="minor" e-distanceFromScale="70" e-height="12" e-width="1" e-color="#ffffff"></e-tick>
-             </e-ticks>
+        </e-labels>
+        <e-pointers>
+            <e-pointer e-value="140" e-distancefromscale="60" e-showbackneedle="false" e-length="20"
+            e-type="marker"e-markertype="triangle" e-width="10" e-radius="10" e-backgroundcolor="#FF940A">
+            <e-border e-color="#FF940A"></e-border>
+            </e-pointer>
+            <e-pointer e-value="110" e-showbackneedle="false" e-length="150" e-width="2" e-radius="10"
+            e-needletype="rectangle" e-backgroundcolor="#05AFFF">
+            <e-border e-color="#05AFFF"></e-border>
+            </e-pointer>
+            <e-pointer e-value="67" e-showbackneedle="false" e-length="100" e-width="15" e-radius="10"
+            e-backgroundcolor="#FC5D07">
+            <e-border e-color="#FC5D07"></e-border>
+            </e-pointer>
+        </e-pointers>
+        <e-ticks>
+            <e-tick e-type="major" e-distanceFromScale="70" e-height="20" e-width="3" e-color="#ffffff">
+            </e-tick>
+            <e-tick e-type="minor" e-distanceFromScale="70" e-height="12" e-width="1" e-color="#ffffff">
+            </e-tick>
+        </e-ticks>
        //Add the indicators customization code here
        //Add the Custom labels customization code here
         </e-scale>
-     </e-scales>
+    </e-scales>
 </ej-CircularGauge>
 
 
@@ -325,29 +330,32 @@ Ranges denote the property of scale value in the speedometer. The color values o
 
  <ej-CircularGauge e-height="500" e-width="500" e-backgroundcolor="#3D3F3D" e-readonly="false">
     <e-scales>
-        <e-scale e-showranges="true" e-showindicators="true" e-maximum="200" e-majorintervalvalue="20" e-minorintervalvalue="5"
-                 e-pointercap-radius="15" e-pointercap-borderwidth="0" e-pointercap-backgroundcolor="#797C79"
-                 e-pointercap-bordercolor="#797C79">
-            <e-labels>
+        <e-scale e-showranges="true" e-showindicators="true" e-maximum="200" e-majorintervalvalue="20"
+        e-minorintervalvalue="5" e-pointercap-radius="15" e-pointercap-borderwidth="0" 
+        e-pointercap-backgroundcolor="#797C79" e-pointercap-bordercolor="#797C79">
+        <e-labels>
                <e-label e-color="#ffffff"></e-label>
-            </e-labels>
-            <e-pointers>
-               <e-pointer e-value="140" e-distancefromscale="60" e-showbackneedle="false" e-length="20" e-type="marker"e-markertype="triangle"
-                          e-width="10" e-radius="10" e-backgroundcolor="#FF940A">
-                  <e-border e-color="#FF940A"></e-border>
-                </e-pointer>
-                <e-pointer e-value="110" e-showbackneedle="false" e-length="150" e-width="2" e-radius="10" e-needletype="rectangle" 
-                           e-backgroundcolor="#05AFFF">
-                   <e-border e-color="#05AFFF"></e-border>
-                </e-pointer>
-                <e-pointer e-value="67" e-showbackneedle="false" e-length="100" e-width="15" e-radius="10" e-backgroundcolor="#FC5D07">
-                    <e-border e-color="#FC5D07"></e-border>
-                </e-pointer>
-             </e-pointers>
-             <e-ticks>
-                <e-tick e-type="major" e-distanceFromScale="70" e-height="20" e-width="3" e-color="#ffffff"></e-tick>
-                <e-tick e-type="minor" e-distanceFromScale="70" e-height="12" e-width="1" e-color="#ffffff"></e-tick>
-             </e-ticks>
+        </e-labels>
+        <e-pointers>
+           <e-pointer e-value="140" e-distancefromscale="60" e-showbackneedle="false" e-length="20"
+           e-type="marker"e-markertype="triangle" e-width="10" e-radius="10" e-backgroundcolor="#FF940A">
+           <e-border e-color="#FF940A"></e-border>
+           </e-pointer>
+           <e-pointer e-value="110" e-showbackneedle="false" e-length="150" e-width="2" e-radius="10"
+           e-needletype="rectangle" e-backgroundcolor="#05AFFF">
+           <e-border e-color="#05AFFF"></e-border>
+           </e-pointer>
+           <e-pointer e-value="67" e-showbackneedle="false" e-length="100" e-width="15" e-radius="10"
+            e-backgroundcolor="#FC5D07">
+           <e-border e-color="#FC5D07"></e-border>
+           </e-pointer>
+        </e-pointers>
+        <e-ticks>
+         <e-tick e-type="major" e-distanceFromScale="70" e-height="20" e-width="3" e-color="#ffffff">         
+         </e-tick>
+         <e-tick e-type="minor" e-distanceFromScale="70" e-height="12" e-width="1" e-color="#ffffff">
+         </e-tick>
+        </e-ticks>
        //Add the indicators customization code here
        //Add the Custom labels customization code here
         </e-scale>
@@ -373,70 +381,84 @@ Indicators denote whether the pointer values are placed in their respective zone
 
 <ej-CircularGauge e-height="500" e-width="500" e-backgroundcolor="#3D3F3D" e-readonly="false">
     <e-scales>
-        <e-scale e-showranges="true" e-showindicators="true" e-maximum="200" e-majorintervalvalue="20" e-minorintervalvalue="5"
-                 e-pointercap-radius="15" e-pointercap-borderwidth="0" e-pointercap-backgroundcolor="#797C79"
-                 e-pointercap-bordercolor="#797C79">
-            <e-labels>
+        <e-scale e-showranges="true" e-showindicators="true" e-maximum="200" e-majorintervalvalue="20"
+        e-minorintervalvalue="5" e-pointercap-radius="15" e-pointercap-borderwidth="0" 
+        e-pointercap-backgroundcolor="#797C79" e-pointercap-bordercolor="#797C79">
+        <e-labels>
                <e-label e-color="#ffffff"></e-label>
-            </e-labels>
-            <e-pointers>
-               <e-pointer e-value="140" e-distancefromscale="60" e-showbackneedle="false" e-length="20" e-type="marker"e-markertype="triangle"
-                          e-width="10" e-radius="10" e-backgroundcolor="#FF940A">
-                  <e-border e-color="#FF940A"></e-border>
-                </e-pointer>
-                <e-pointer e-value="110" e-showbackneedle="false" e-length="150" e-width="2" e-radius="10" e-needletype="rectangle" 
-                           e-backgroundcolor="#05AFFF">
-                   <e-border e-color="#05AFFF"></e-border>
-                </e-pointer>
-                <e-pointer e-value="67" e-showbackneedle="false" e-length="100" e-width="15" e-radius="10" e-backgroundcolor="#FC5D07">
-                    <e-border e-color="#FC5D07"></e-border>
-                </e-pointer>
-             </e-pointers>
-             <e-ticks>
-                <e-tick e-type="major" e-distanceFromScale="70" e-height="20" e-width="3" e-color="#ffffff"></e-tick>
-                <e-tick e-type="minor" e-distanceFromScale="70" e-height="12" e-width="1" e-color="#ffffff"></e-tick>
-             </e-ticks>
-             <e-ranges>
-                <e-range e-distancefromscale="30" e-startvalue="0" e-endvalue="70" e-backgroundcolor="#5DF243">
-                   <e-border e-color="#FFFFFF"></e-border>
-                </e-range>
-                <e-range e-distancefromscale="30" e-startvalue="70" e-endvalue="140" e-backgroundcolor="#F6FF0A">
-                   <e-border e-color="#FFFFFF"></e-border>
-                </e-range>
-                <e-range e-distancefromscale="30" e-startvalue="140" e-endvalue="200" e-backgroundcolor="#FF1807">
-                   <e-border e-color="#FFFFFF"></e-border>
-                </e-range>
-              </e-ranges>
-              <e-indicators>
-                 <e-indicator e-height="10" e-width="10" e-type="circle" e-position-x="210" e-position-y="300">
-                    <e-stateranges>
-                       <e-staterange e-endValue="70" e-startvalue="0" e-backgroundcolor="#5DF243" e-bordercolor="#5DF243" e-text=""
-                                     e-textColor="#870505">
-                       </e-staterange>
-                       <e-staterange e-endValue="200" e-startvalue="70" e-backgroundcolor="#145608" e-bordercolor="#145608" e-text=""
-                                     e-textColor="#870505">
-                       </e-staterange>
-                     </e-stateranges>
-                  </e-indicator>
-                  <e-indicator e-height="10" e-width="10" e-type="circle" e-position-x="255" e-position-y="200">
-                     <e-stateranges>
-                         <e-staterange e-endValue="140" e-startvalue="70" e-backgroundcolor="#F6FF0A" e-bordercolor="#F6FF0A" e-text="">
-                         </e-staterange>
-                         <e-staterange e-endValue="70" e-startvalue="0" e-backgroundcolor="#969B0C" e-bordercolor="#969B0C" e-text="">
-                         </e-staterange>
-                         <e-staterange e-endValue="200" e-startvalue="140" e-backgroundcolor="#969B0C" e-bordercolor="#969B0C" e-text="">
-                         </e-staterange>
-                      </e-stateranges>
-                   </e-indicator>
-                   <e-indicator e-height="10" e-width="10" e-type="circle" e-position-x="300" e-position-y="300">
-                      <e-stateranges>
-                         <e-staterange e-endValue="140" e-startvalue="0" e-backgroundcolor="#890F06" e-bordercolor="#890F06" e-text="">
-                         </e-staterange>
-                         <e-staterange e-endValue="200" e-startvalue="140" e-backgroundcolor="#FF1807" e-bordercolor="#FF1807" e-text="">
-                         </e-staterange>
-                      </e-stateranges>
-                   </e-indicator>
-                </e-indicators>
+        </e-labels>
+        <e-pointers>
+               <e-pointer e-value="140" e-distancefromscale="60" e-showbackneedle="false" e-length="20" 
+               e-type="marker"e-markertype="triangle" e-width="10" e-radius="10" e-backgroundcolor="#FF940A">
+               <e-border e-color="#FF940A"></e-border>
+               </e-pointer>
+               <e-pointer e-value="110" e-showbackneedle="false" e-length="150" e-width="2" e-radius="10"
+               e-needletype="rectangle" e-backgroundcolor="#05AFFF">
+               <e-border e-color="#05AFFF"></e-border>
+               </e-pointer>
+               <e-pointer e-value="67" e-showbackneedle="false" e-length="100" e-width="15" e-radius="10" 
+               e-backgroundcolor="#FC5D07">
+               <e-border e-color="#FC5D07"></e-border>
+               </e-pointer>
+        </e-pointers>
+        <e-ticks>
+               <e-tick e-type="major" e-distanceFromScale="70" e-height="20" e-width="3" e-color="#ffffff">
+               </e-tick>
+               <e-tick e-type="minor" e-distanceFromScale="70" e-height="12" e-width="1" e-color="#ffffff">
+               </e-tick>
+        </e-ticks>
+        <e-ranges>
+               <e-range e-distancefromscale="30" e-startvalue="0" e-endvalue="70"
+               e-backgroundcolor="#5DF243">
+               <e-border e-color="#FFFFFF"></e-border>
+               </e-range>
+               <e-range e-distancefromscale="30" e-startvalue="70" e-endvalue="140"
+               e-backgroundcolor="#F6FF0A">
+               <e-border e-color="#FFFFFF"></e-border>
+               </e-range>
+               <e-range e-distancefromscale="30" e-startvalue="140" e-endvalue="200"
+               e-backgroundcolor="#FF1807">
+               <e-border e-color="#FFFFFF"></e-border>
+               </e-range>
+        </e-ranges>
+        <e-indicators>
+               <e-indicator e-height="10" e-width="10" e-type="circle" e-position-x="210" 
+                e-position-y="300">
+               <e-stateranges>
+               <e-staterange e-endValue="70" e-startvalue="0" e-backgroundcolor="#5DF243" 
+               e-bordercolor="#5DF243" e-text="" e-textColor="#870505">
+               </e-staterange>
+               <e-staterange e-endValue="200" e-startvalue="70" e-backgroundcolor="#145608" 
+               e-bordercolor="#145608" e-text="" e-textColor="#870505">
+               </e-staterange>
+               </e-stateranges>
+               </e-indicator>
+               <e-indicator e-height="10" e-width="10" e-type="circle" e-position-x="255" 
+               e-position-y="200">
+               <e-stateranges>
+               <e-staterange e-endValue="140" e-startvalue="70" e-backgroundcolor="#F6FF0A" 
+               e-bordercolor="#F6FF0A" e-text="">
+               </e-staterange>
+               <e-staterange e-endValue="70" e-startvalue="0" e-backgroundcolor="#969B0C" 
+               e-bordercolor="#969B0C" e-text="">
+               </e-staterange>
+               <e-staterange e-endValue="200" e-startvalue="140" e-backgroundcolor="#969B0C" 
+               e-bordercolor="#969B0C" e-text="">
+               </e-staterange>
+               </e-stateranges>
+               </e-indicator>
+               <e-indicator e-height="10" e-width="10" e-type="circle" e-position-x="300" 
+               e-position-y="300">
+               <e-stateranges>
+               <e-staterange e-endValue="140" e-startvalue="0" e-backgroundcolor="#890F06" 
+               e-bordercolor="#890F06" e-text="">
+               </e-staterange>
+               <e-staterange e-endValue="200" e-startvalue="140" e-backgroundcolor="#FF1807" 
+               e-bordercolor="#FF1807" e-text="">
+               </e-staterange>
+               </e-stateranges>
+               </e-indicator>
+        </e-indicators>
        </e-scale>
      </e-scales>
 </ej-CircularGauge>
@@ -459,81 +481,98 @@ You can specify the text in the **Gauge** using **Custom labels** and you can cu
 
 <ej-CircularGauge e-height="500" e-width="500" e-backgroundcolor="#3D3F3D" e-readonly="false">
     <e-scales>
-        <e-scale e-showranges="true" e-showindicators="true" e-maximum="200" e-majorintervalvalue="20" e-minorintervalvalue="5"
-                 e-pointercap-radius="15" e-pointercap-borderwidth="0" e-pointercap-backgroundcolor="#797C79"
-                 e-pointercap-bordercolor="#797C79">
-            <e-labels>
+        <e-scale e-showranges="true" e-showindicators="true" e-maximum="200" e-majorintervalvalue="20"
+         e-minorintervalvalue="5" e-pointercap-radius="15" e-pointercap-borderwidth="0" 
+         e-pointercap-backgroundcolor="#797C79" e-pointercap-bordercolor="#797C79">
+        <e-labels>
                <e-label e-color="#ffffff"></e-label>
-            </e-labels>
-            <e-pointers>
-               <e-pointer e-value="140" e-distancefromscale="60" e-showbackneedle="false" e-length="20" e-type="marker"e-markertype="triangle"
-                          e-width="10" e-radius="10" e-backgroundcolor="#FF940A">
-                  <e-border e-color="#FF940A"></e-border>
-                </e-pointer>
-                <e-pointer e-value="110" e-showbackneedle="false" e-length="150" e-width="2" e-radius="10" e-needletype="rectangle" 
-                           e-backgroundcolor="#05AFFF">
-                   <e-border e-color="#05AFFF"></e-border>
-                </e-pointer>
-                <e-pointer e-value="67" e-showbackneedle="false" e-length="100" e-width="15" e-radius="10" e-backgroundcolor="#FC5D07">
-                    <e-border e-color="#FC5D07"></e-border>
-                </e-pointer>
-             </e-pointers>
-             <e-ticks>
-                <e-tick e-type="major" e-distanceFromScale="70" e-height="20" e-width="3" e-color="#ffffff"></e-tick>
-                <e-tick e-type="minor" e-distanceFromScale="70" e-height="12" e-width="1" e-color="#ffffff"></e-tick>
-             </e-ticks>
-             <e-ranges>
-                <e-range e-distancefromscale="30" e-startvalue="0" e-endvalue="70" e-backgroundcolor="#5DF243">
-                   <e-border e-color="#FFFFFF"></e-border>
-                </e-range>
-                <e-range e-distancefromscale="30" e-startvalue="70" e-endvalue="140" e-backgroundcolor="#F6FF0A">
-                   <e-border e-color="#FFFFFF"></e-border>
-                </e-range>
-                <e-range e-distancefromscale="30" e-startvalue="140" e-endvalue="200" e-backgroundcolor="#FF1807">
-                   <e-border e-color="#FFFFFF"></e-border>
-                </e-range>
-              </e-ranges>
-              <e-indicators>
-                 <e-indicator e-height="10" e-width="10" e-type="circle" e-position-x="210" e-position-y="300">
-                    <e-stateranges>
-                       <e-staterange e-endValue="70" e-startvalue="0" e-backgroundcolor="#5DF243" e-bordercolor="#5DF243" e-text=""
-                                     e-textColor="#870505">
-                       </e-staterange>
-                       <e-staterange e-endValue="200" e-startvalue="70" e-backgroundcolor="#145608" e-bordercolor="#145608" e-text=""
-                                     e-textColor="#870505">
-                       </e-staterange>
-                     </e-stateranges>
-                  </e-indicator>
-                  <e-indicator e-height="10" e-width="10" e-type="circle" e-position-x="255" e-position-y="200">
-                     <e-stateranges>
-                         <e-staterange e-endValue="140" e-startvalue="70" e-backgroundcolor="#F6FF0A" e-bordercolor="#F6FF0A" e-text="">
-                         </e-staterange>
-                         <e-staterange e-endValue="70" e-startvalue="0" e-backgroundcolor="#969B0C" e-bordercolor="#969B0C" e-text="">
-                         </e-staterange>
-                         <e-staterange e-endValue="200" e-startvalue="140" e-backgroundcolor="#969B0C" e-bordercolor="#969B0C" e-text="">
-                         </e-staterange>
-                      </e-stateranges>
-                   </e-indicator>
-                   <e-indicator e-height="10" e-width="10" e-type="circle" e-position-x="300" e-position-y="300">
-                      <e-stateranges>
-                         <e-staterange e-endValue="140" e-startvalue="0" e-backgroundcolor="#890F06" e-bordercolor="#890F06" e-text="">
-                         </e-staterange>
-                         <e-staterange e-endValue="200" e-startvalue="140" e-backgroundcolor="#FF1807" e-bordercolor="#FF1807" e-text="">
-                         </e-staterange>
-                      </e-stateranges>
-                   </e-indicator>
-                </e-indicators>
-                <e-customlabels>
-                   <e-customlabel e-value="Safe" e-position-x="200" e-position-y="280" e-color="#5DF243">
-                      <e-font e-size="12px" e-fontfamily="Arial" e-fontstyle="Bold"></e-font>
-                   </e-customlabel>
-                   <e-customlabel e-value="Caution" e-position-x="253" e-position-y="212" e-color="#F6FF0A">
-                      <e-font e-size="12px" e-fontfamily="Arial" e-fontstyle="Bold"></e-font>
-                   </e-customlabel>
-                   <e-customlabel e-value="Danger" e-position-x="290" e-position-y="280" e-color="#FF1807">
-                       <e-font e-size="12px" e-fontfamily="Arial" e-fontstyle="Bold"></e-font>
-                   </e-customlabel>
-                 </e-customlabels>
+        </e-labels>
+        <e-pointers>
+               <e-pointer e-value="140" e-distancefromscale="60" e-showbackneedle="false" 
+               e-length="20" e-type="marker"e-markertype="triangle" e-width="10" 
+               e-radius="10" e-backgroundcolor="#FF940A">
+               <e-border e-color="#FF940A"></e-border>
+               </e-pointer>
+               <e-pointer e-value="110" e-showbackneedle="false" e-length="150" e-width="2" 
+               e-radius="10" e-needletype="rectangle" e-backgroundcolor="#05AFFF">
+               <e-border e-color="#05AFFF"></e-border>
+               </e-pointer>
+               <e-pointer e-value="67" e-showbackneedle="false" e-length="100" e-width="15" 
+               e-radius="10" e-backgroundcolor="#FC5D07">
+               <e-border e-color="#FC5D07"></e-border>
+               </e-pointer>
+        </e-pointers>
+        <e-ticks>
+               <e-tick e-type="major" e-distanceFromScale="70" e-height="20" e-width="3" 
+               e-color="#ffffff"></e-tick>
+               <e-tick e-type="minor" e-distanceFromScale="70" e-height="12" e-width="1" 
+               e-color="#ffffff"></e-tick>
+        </e-ticks>
+        <e-ranges>
+               <e-range e-distancefromscale="30" e-startvalue="0" e-endvalue="70" 
+               e-backgroundcolor="#5DF243">
+               <e-border e-color="#FFFFFF"></e-border>
+               </e-range>
+               <e-range e-distancefromscale="30" e-startvalue="70" e-endvalue="140" 
+               e-backgroundcolor="#F6FF0A">
+               <e-border e-color="#FFFFFF"></e-border>
+               </e-range>
+               <e-range e-distancefromscale="30" e-startvalue="140" e-endvalue="200"
+               e-backgroundcolor="#FF1807">
+               <e-border e-color="#FFFFFF"></e-border>
+               </e-range>
+        </e-ranges>
+        <e-indicators>
+               <e-indicator e-height="10" e-width="10" e-type="circle" e-position-x="210" 
+               e-position-y="300">
+               <e-stateranges>
+               <e-staterange e-endValue="70" e-startvalue="0" e-backgroundcolor="#5DF243" 
+               e-bordercolor="#5DF243" e-text="" e-textColor="#870505">
+               </e-staterange>
+               <e-staterange e-endValue="200" e-startvalue="70" e-backgroundcolor="#145608"
+                e-bordercolor="#145608" e-text="" e-textColor="#870505">
+               </e-staterange>
+               </e-stateranges>
+               </e-indicator>
+               <e-indicator e-height="10" e-width="10" e-type="circle" e-position-x="255" 
+               e-position-y="200">
+               <e-stateranges>
+               <e-staterange e-endValue="140" e-startvalue="70" e-backgroundcolor="#F6FF0A" 
+               e-bordercolor="#F6FF0A" e-text="">
+               </e-staterange>
+               <e-staterange e-endValue="70" e-startvalue="0" e-backgroundcolor="#969B0C" 
+               e-bordercolor="#969B0C" e-text="">
+               </e-staterange>
+               <e-staterange e-endValue="200" e-startvalue="140" e-backgroundcolor="#969B0C"
+                e-bordercolor="#969B0C" e-text="">
+               </e-staterange>
+               </e-stateranges>
+               </e-indicator>
+               <e-indicator e-height="10" e-width="10" e-type="circle" e-position-x="300" 
+               e-position-y="300">
+               <e-stateranges>
+               <e-staterange e-endValue="140" e-startvalue="0" e-backgroundcolor="#890F06" 
+               e-bordercolor="#890F06" e-text="">
+               </e-staterange>
+               <e-staterange e-endValue="200" e-startvalue="140" e-backgroundcolor="#FF1807" 
+               e-bordercolor="#FF1807" e-text="">
+               </e-staterange>
+               </e-stateranges>
+               </e-indicator>
+        </e-indicators>
+        <e-customlabels>
+               <e-customlabel e-value="Safe" e-position-x="200" e-position-y="280" e-color="#5DF243">
+               <e-font e-size="12px" e-fontfamily="Arial" e-fontstyle="Bold"></e-font>
+               </e-customlabel>
+               <e-customlabel e-value="Caution" e-position-x="253" e-position-y="212" 
+               e-color="#F6FF0A">
+               <e-font e-size="12px" e-fontfamily="Arial" e-fontstyle="Bold"></e-font>
+               </e-customlabel>
+               <e-customlabel e-value="Danger" e-position-x="290" e-position-y="280" 
+               e-color="#FF1807">
+               <e-font e-size="12px" e-fontfamily="Arial" e-fontstyle="Bold"></e-font>
+               </e-customlabel>
+        </e-customlabels>
        </e-scale>
      </e-scales>
 </ej-CircularGauge>

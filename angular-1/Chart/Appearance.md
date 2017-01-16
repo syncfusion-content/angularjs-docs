@@ -22,12 +22,11 @@ The Chart displays different series in different colors by default. You can cust
     </head>
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart e-palette="palette" >
-         </div>
+        </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.palette=[{ "grey", "skyblue", "orange"
-                                   }];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+         $scope.palette=[{ "grey", "skyblue", "orange"}];
                    });
         </script>
     </body>
@@ -75,10 +74,10 @@ You can set your desired theme by using the `e-theme` property. Flat light is th
     </head>
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart e-theme="gradientlight" >
-         </div>
+        </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                          });
         </script>
     </body>
@@ -103,22 +102,17 @@ Marker, data label and fill color of each point in a series can be customized in
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart >
         <e-series>
-        <e-series e-points="points"></e-series>
+        <e-series>
+        <e-points>
+        <e-points e-x="0" e-y="210" e-fill="#E27F2D" e-marker-visible="true" >
+        </e-points>
         </e-series>
-         </div>
+        </e-series>
+        </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.points=[{ 
-                            x : 0,
-                            y: 210, 
-                            fill: "#E27F2D",
-                            marker: { 
-                                 visible: true,
-                                 // ...
-                               }
-                              }];
-                             });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+        });         
         </script>
     </body>
 </html>
@@ -144,18 +138,14 @@ N> Series border can be applied to all the series (except Line, Spline, HiLo, Hi
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart >
         <e-series>
-        <e-series e-series-border="border"></e-series>
+        <e-series e-series-border-color="blue" e-series-border-width="2"
+        e-series-border-dasharray="5,3"></e-series>
         </e-series>
-         </div>
+        </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.border={ 
-                            //Change the color, width and dashArray to customize the border of series
-                            color: "blue", width: 2, dashArray: "5,3" 
-                            //...
-                              };
-                             });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                  });
         </script>
     </body>
 </html>
@@ -179,11 +169,12 @@ The Chart background can be customized by using the `e-background` property of t
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart e-background="skyblue" e-border-color="#FF0000" e-border-width="2" e-border-opacity="0.35">
-         </div>
+        <div id="container" ej-chart e-background="skyblue" e-border-color="#FF0000" 
+        e-border-width="2" e-border-opacity="0.35">
+        </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                          });
         </script>
     </body>
@@ -207,12 +198,13 @@ The Chart `e-margin` property is used to add the margin to the chart area at the
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart e-margin-left="40" e-margin-top="40" e-margin-right="40" e-margin-bottom="40">
-         </div>
+        <div id="container" ej-chart e-margin-left="40" e-margin-top="40" 
+        e-margin-right="40" e-margin-bottom="40">
+        </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                         });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                    });
         </script>
     </body>
 </html>
@@ -235,11 +227,11 @@ Background image can be added to the chart by using the `e-backGroundImageUrl` p
     </head>
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart e-backgroundimageurl="images/chart/wheat.png">
-         </div>
+        </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                         });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                    });
         </script>
     </body>
 </html>
@@ -263,10 +255,10 @@ The Chart area background can be customized by using the `e-chartarea-background
     </head>
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart e-chartarea-background="skyblue">
-         </div>
+        </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                          });
         </script>
     </body>
@@ -290,19 +282,13 @@ You can provide different color for alternate grid rows and columns formed by th
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart e-primaryyaxis-alternategridband="gridband">
-         </div>
+        <div id="container" ej-chart e-primaryyaxis-alternategridband-even-fill="#A7A9AB"
+        e-primaryyaxis-alternategridband-even-opacity="0.1">
+        </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                 $scope.gridband={                 
-                       even: {
-                           fill: "#A7A9AB", 
-                           opacity: 0.1,
-                       }  
-                   // ...               
-               };
-                         });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                  });
         </script>
     </body>
 </html>
@@ -332,9 +318,9 @@ You can enable animation by using the `e-enableAnimation`property of the series.
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                               });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                     });
         </script>
     </body>
 </html>
@@ -359,13 +345,13 @@ However, you can force the chart to animate series by calling the animate method
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                               });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                    });
                                 //Dynamically animating Chart
-           function animateChart(){
+        function animateChart(){
            //Calling the animate method for dynamic animation
-           $("#container").ejChart("animate");      
+        $("#container").ejChart("animate");      
               }
         </script>
     </body>

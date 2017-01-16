@@ -24,16 +24,16 @@ The text in the **Digital Gauge** is positioned with position object. This objec
                  <e-items>
                  <e-item e-value="BLUE" e-segmentsettings-color="blue" e-position-x="90" e-position-y="0">
                  </e-item>
-                  <e-item e-value="RED" e-segmentsettings-color="red" e-position-x="90" e-position-y="15">
+                 <e-item e-value="RED" e-segmentsettings-color="red" e-position-x="90" e-position-y="15">
                  </e-item>
-                  <e-item e-value="PINK" e-segmentsettings-color="pink" e-position-x="90" e-position-y="30">
+                 <e-item e-value="PINK" e-segmentsettings-color="pink" e-position-x="90" e-position-y="30">
                  </e-item>
                  </e-items>
                  </ej-digitalgauge>
         </div>
-         <script >
+        <script>
         angular.module('DigitalGaugeApp', ['ejangular'])
-       .controller('DigitalGaugeCtrl', function ($scope) {
+        .controller('DigitalGaugeCtrl', function ($scope) {
          });
     </script>
     </body>

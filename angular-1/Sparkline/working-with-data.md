@@ -35,10 +35,10 @@ You can bind data to the sparkline in two ways
 { employeeId: 8, sales: 55 },
 { employeeId: 9, sales: 38 },
 { employeeId: 10, sales: 30 }]; 
-  
-   angular.module('syncApp',['ejangular']).controller("sparkline",function($scope){    
+angular.module('syncApp',['ejangular'])
+.controller("sparkline",function($scope){    
     $scope.sparklinedata = sparklinedata;
-});
+      });
 </script>
 </body>
 </html>
@@ -63,10 +63,10 @@ You can bind data to the sparkline in two ways
 <div id="column" ej-sparkline e-datasource="sparklinedata"></div>
 <script>
     var data = [2, 6, -1, 1, 12, 5, -2, 7, -3, 5, 8, 10, ];	 
-  
-   angular.module('syncApp',['ejangular']).controller("sparkline",function($scope){    
-    $scope.sparklinedata = data;
-});
+    angular.module('syncApp',['ejangular'])
+    .controller("sparkline",function($scope){    
+        $scope.sparklinedata = data;
+            });
 </script>
 </body>
 </html>
