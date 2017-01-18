@@ -145,8 +145,6 @@ To add/remove/re-arrange context menu items, you need to use [contextMenuSetting
 
 {% endhighlight %}
 
-{% highlight js %}
-
 {% highlight javascript %}
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
