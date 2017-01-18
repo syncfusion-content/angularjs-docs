@@ -1,21 +1,23 @@
 ---
-title: PivotTreeMap Control Overview	
-description: Overview of PivotTreeMap control
+layout: post
+title: Overview
+description: overview
 platform: Angular-1
 control: pivottreemap
 documentation: ug
-keywords: pivottreemap features, key features, pivottreemap overview 
+keywords: ejpivottreemap, pivottreemap, pivottreemap widget, js pivottreemap 
 ---
 
 # Overview
 
-The **PivotTreeMap** control lets the user to visualize OLAP data in the form of nested nodes in hierarchical order with the ability to drill up and down. 
+The PivotTreeMap control lets the user to visualize OLAP data in the form of nested nodes in hierarchical order with the ability to drill up and down.
 
-**Key Features**
+## Key Features
 
-Some of the key features of PivotTreeMap are as follows, 
-
-* **Data Source** - Binds the PivotTreeMap control with XML/A data sources.
+* **Data Source** - Binds the PivotTreeMap control with the Microsoft SQL Server Analysis Services (SSAS) and XML/A data sources.
 * **Drill Support** - Enables you to navigate through the inner levels of a hierarchy elements.
 * **Color Mapping** - Allows user to differentiate leaf nodes using various color codes either based on their value or members.
 * **Legend** - Differentiates the color code based on value range (from minimum to maximum).
+
+
+
