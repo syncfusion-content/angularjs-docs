@@ -344,7 +344,7 @@ You can ensure the specified tree node is visible by using [ensureVisible](http:
 
 <div id="treeView" ej-treeview e-fields-datasource="localData" e-fields-id="id" e-fields-parentid="parent" e-fields-text="text"/>
 
-{% endhighlight}} 
+{% endhighlight %} 
 
 {% highlight js %}
 
