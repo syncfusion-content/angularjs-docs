@@ -1,10 +1,11 @@
 ---
-title: PivotGauge Control Overview	
-description: Overview of PivotGauge control
+layout: post
+title: Overview
+description: overview
 platform: Angular-1
-control: pivotgauge
+control: PivotGauge
 documentation: ug
-keywords: pivotgauge features, key features, pivotgauge overview 
+keywords: ejPivotGauge, PivotGauge, PivotGauge widget, js PivotGauge 
 ---
 
 # Overview
@@ -13,9 +14,9 @@ The **PivotGauge** control is a lightweight control that reads both **OLAP** and
 
 **Key Features**
 
-Some of the key features of PivotGauge are as follows, 
+The key features of the **PivotGauge** control is as follows:
 
-* **Data source:** Supports OLAP data binding with **XML/A** data sources and Relational data sources.
+* **Data source:** Supports OLAP data binding with Microsoft Analysis Service database, **XML/A** data sources and Relational data sources.
 * **Tooltip:** Displays the value and goal information in the tooltip.
 * **Multiple gauges and Layouts:** Support to customize the layout while rendering multiple controls.
 * **Frame types:** Built-in frame types provide a rich appearance of control.
