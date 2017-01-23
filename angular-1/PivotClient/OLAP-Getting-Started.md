@@ -180,8 +180,6 @@ Create the PivotClient control using `ej-pivotclient` directive and define all i
 
 {% endhighlight %}
 
-{% endhighlight %}
-
 The “url” property in PivotClient widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the PivotClient widget as endpoint are WCF and WebAPI.
 
 N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Olap”**. Suppose if you are using WCF service, then the URL would look like **“/OlapService.svc”**. 
