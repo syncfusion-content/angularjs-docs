@@ -28,10 +28,6 @@ I> By default JSON export mode will be applied for server and client mode.
 
 In order to perform exporting with the use of a custom service method, the service containing the exporting method is hosted and its link is given in url as shown below.  Without giving any value to the 'url' property it takes our default exporting service link.
 
-{% highlight javascript %}
-
-Create the PivotClient control using `ej-pivotclient` directive and define all its other properties prefixed with `e-` as shown in the below code.
-
 {% highlight html %}
 
 <div ng-controller="PivotClientCtrl">
