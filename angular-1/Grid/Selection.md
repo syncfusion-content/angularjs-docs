@@ -33,15 +33,15 @@ The following code example describes the above behavior.
 
 {% highlight html %}
  <div ng-controller="rowSelectionCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true"  e-allowfiltering="true" e-allowselection="true" e-selectionsettings="selectionMode" e-selectiontype="multiple">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-allowselection="true" e-selectionsettings="selectionMode" e-selectiontype="multiple">
           <div e-columns>
-             <div e-column e-field="OrderID" ></div>
-             <div e-column e-field="EmployeeID" ></div>
-             <div e-column e-field="ShipCity" ></div>
-             <div e-column e-field="ShipCountry" ></div>
+             <div e-column e-field="OrderID"></div>
+             <div e-column e-field="EmployeeID"></div>
+             <div e-column e-field="ShipCity"></div>
+             <div e-column e-field="ShipCountry"></div>
              <div e-column e-field="Freight"></div>
-            </div>
-       </div>
+           </div>
+     </div>
  </div>
 {% endhighlight %}
 
@@ -66,15 +66,15 @@ The following code example describes the above behavior.
 
 {% highlight html %}
  <div ng-controller="cellSelectionCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true"  e-allowfiltering="true" e-allowselection="true" e-selectionsettings="selectionMode" e-selectiontype="multiple">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-allowselection="true" e-selectionsettings="selectionMode" e-selectiontype="multiple">
           <div e-columns>
-             <div e-column e-field="OrderID" ></div>
-             <div e-column e-field="EmployeeID" ></div>
-             <div e-column e-field="ShipCity" ></div>
-             <div e-column e-field="ShipCountry" ></div>
+             <div e-column e-field="OrderID"></div>
+             <div e-column e-field="EmployeeID"></div>
+             <div e-column e-field="ShipCity"></div>
+             <div e-column e-field="ShipCountry"></div>
              <div e-column e-field="Freight"></div>
-            </div>
-       </div>
+          </div>
+     </div>
  </div>
 {% endhighlight %}
 
@@ -99,15 +99,15 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 <div ng-controller="columnSelectionCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true"  e-allowfiltering="true" e-allowselection="true" e-selectionsettings="selectionMode" e-selectiontype="multiple">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-allowselection="true" e-selectionsettings="selectionMode" e-selectiontype="multiple">
           <div e-columns>
-             <div e-column e-field="OrderID" ></div>
-             <div e-column e-field="EmployeeID" ></div>
-             <div e-column e-field="ShipCity" ></div>
-             <div e-column e-field="ShipCountry" ></div>
+             <div e-column e-field="OrderID"></div>
+             <div e-column e-field="EmployeeID"></div>
+             <div e-column e-field="ShipCity"></div>
+             <div e-column e-field="ShipCountry"></div>
              <div e-column e-field="Freight"></div>
-            </div>
-       </div>
+          </div>
+     </div>
  </div>
 {% endhighlight %}
 
@@ -126,21 +126,21 @@ The following output is displayed as a result of the above code example
 
 ## Touch options
 
-While using grid in a [touch](http://help.syncfusion.com/api/js/ejgrid#members:enabletouch "touch") device environment, there is an option for multi selection through single tap on the row and it will shows a popup with multi-selection symbol. Tap the icon to enable multi selection in a single tap.
+While using grid in a [touch](http://help.syncfusion.com/api/js/ejgrid#members:enabletouch "touch") device environment, there is an option for multi selection through single tap on the row and it will show a popup with multi-selection symbol. Tap the icon to enable multi selection in a single tap.
 
 The following code example describes the above behavior. 
 
 {% highlight html %}
 <div ng-controller="selectListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-enabletouch="true" e-allowfiltering="true" e-allowselection="true" e-selectiontype="multiple">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-enabletouch="true" e-allowselection="true" e-selectiontype="multiple">
           <div e-columns>
              <div e-column e-field="OrderID" ></div>
-             <div e-column e-field="EmployeeID" ></div>
-             <div e-column e-field="ShipCity" ></div>
-             <div e-column e-field="ShipCountry" ></div>
+             <div e-column e-field="EmployeeID"></div>
+             <div e-column e-field="ShipCity"></div>
+             <div e-column e-field="ShipCountry"></div>
              <div e-column e-field="Freight"></div>
-            </div>
-       </div>
+          </div>
+     </div>
  </div>
 {% endhighlight %}
 
@@ -158,7 +158,7 @@ The following output is displayed as a result of the above code example.
 
 ## Toggle Selection
 
-The [Toggle](http://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-enabletoggle "Toggle") selection allows to perform selection and unselection of the particular row, cell or column.  To enable toggle selection, set [`enableToggle`](http://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-enabletoggle "enableToggle") property of [`e-selectionsettings`](http://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") as `true`. If you click on the selected row, cell or column then it will be unselected and vice versa. 
+The [Toggle](http://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-enabletoggle "Toggle") selection allows to perform selection and unselection of the particular row, cell or column. To enable toggle selection, set [`enableToggle`](http://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-enabletoggle "enableToggle") property of [`e-selectionsettings`](http://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") as `true`. If you click on the selected row, cell or column then it will be unselected and vice versa. 
 
 N> If multi selection is enabled, then in first click on any selected row (without pressing Ctrl key), it will clear multi selection and in second click on the same row, it will be unselected. 
 
@@ -166,15 +166,15 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 <div ng-controller="toggleListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-allowselection="true" e-selectionsettings="Settings">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-allowselection="true" e-selectionsettings="Settings">
           <div e-columns>
              <div e-column e-field="OrderID" ></div>
-             <div e-column e-field="EmployeeID" ></div>
-             <div e-column e-field="ShipCity" ></div>
-             <div e-column e-field="ShipCountry" ></div>
+             <div e-column e-field="EmployeeID"></div>
+             <div e-column e-field="ShipCity"></div>
+             <div e-column e-field="ShipCountry"></div>
              <div e-column e-field="Freight"></div>
-            </div>
-       </div>
+          </div>
+     </div>
  </div>
 {% endhighlight %}
 
