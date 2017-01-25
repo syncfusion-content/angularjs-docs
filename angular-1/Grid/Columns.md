@@ -27,9 +27,9 @@ The following code example describes the above behavior.
    <div ng-controller="columnTemplateCtrl">
        <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-pagesettings-pagesize="4" >
           <div e-columns>
-		    <div e-column e-headertext="Photo">
-               <img style="width: 75px; height: 70px" ng-src="../Content/images/Employees/{{data.EmployeeID}}.png" alt="{{data.EmployeeID}}" />
-            </div>
+		        <div e-column e-headertext="Photo">
+                   <img style="width: 75px; height: 70px" ng-src="../Content/images/Employees/{{data.EmployeeID}}.png" alt="{{data.EmployeeID}}" />
+                </div>
 		        <div e-column e-field="EmployeeID"> </div>
 		        <div e-column e-field="FirstName"> </div>
 		        <div e-column e-field="LastName"> </div> 
