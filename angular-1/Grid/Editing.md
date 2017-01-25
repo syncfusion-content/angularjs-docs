@@ -2,7 +2,7 @@
 layout: post
 title: Editing with Grid widget for Syncfusion Essential AngularJS
 description: How to perform editing and configure edit time functionalities like edit type, edit time controls etc
-platform: Angular-1
+platform: angular-1
 control: Grid
 documentation: ug
 --- 
@@ -12,10 +12,10 @@ The grid control has support for dynamic insertion, updation and deletion of rec
 
 Deletion of the record is possible by selecting the required row and clicking on Delete icon in toolbar. 
 
-The primary key for the data source should be defined in [`columns`](http://help.syncfusion.com/api/js/ejgrid#members:columns "columns") definition, for editing to work properly. In [`columns`](http://help.syncfusion.com/api/js/ejgrid#members:columns "columns") definition, particular primary column's [`isPrimaryKey`](http://help.syncfusion.com/api/js/ejgrid#members:columns-isprimarykey "isPrimaryKey") property should be set to `true`. Refer the Knowledge base [link](http://www.syncfusion.com/kb/2675/cant-edit-any-row-except-the-first-row-in-grid# "link") for more information.
+The primary key for the data source should be defined in [`e-columns`](http://help.syncfusion.com/api/js/ejgrid#members:columns "columns") definition, for editing to work properly. In [`e-columns`](http://help.syncfusion.com/api/js/ejgrid#members:columns "columns") definition, particular primary column's [`e-isprimarykey`](http://help.syncfusion.com/api/js/ejgrid#members:columns-isprimarykey "isPrimaryKey") property should be set to `true`. Refer the Knowledge base [link](http://www.syncfusion.com/kb/2675/cant-edit-any-row-except-the-first-row-in-grid# "link") for more information.
 
 N> 1. In grid, the primary key column will be automatically set to read only while editing the row, but you can specify primary key column value while adding a new record.
-N> 2. The column which is specified as [`isIdentity`](http://help.syncfusion.com/api/js/ejgrid#members:columns-isidentity "isIdentity") will be in readonly mode both while editing and adding a record. Also, auto incremented value is assigned to that [`isIdentity`](http://help.syncfusion.com/api/js/ejgrid#members:columns-isidentity "isIdentity") column.
+N> 2. The column which is specified as [`e-isidentity`](http://help.syncfusion.com/api/js/ejgrid#members:columns-isidentity "isIdentity") will be in readonly mode both while editing and adding a record. Also, auto incremented value is assigned to that [`e-isidentity`](http://help.syncfusion.com/api/js/ejgrid#members:columns-isidentity "isIdentity") column.
 
 ## Toolbar with edit option
 
@@ -26,7 +26,7 @@ N> For [`toolbarItems`](http://help.syncfusion.com/api/js/ejgrid#members:toolbar
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
+<div ng-controller="ToolbarCtrl">
      <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" >
           <div e-columns>
              <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
@@ -40,7 +40,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-        syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+        syncApp.controller('ToolbarCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
@@ -55,7 +55,7 @@ The following output is displayed as a result of the above code example.
 
 ## Cell edit type and its params
 
-The edit type of bound column can be customized using [`editType`](http://help.syncfusion.com/api/js/ejgrid#members:columns-edittype "editType") property of [`columns`](http://help.syncfusion.com/api/js/ejgrid#members:columns "columns"). The following Essential JavaScript controls are supported built-in by [`editType`](http://help.syncfusion.com/api/js/ejgrid#members:columns-edittype "editType"). You can set the [`editType`](http://help.syncfusion.com/api/js/ejgrid#members:columns-edittype "editType") based on specific data type of the column. 
+The edit type of bound column can be customized using [`e-edittype`](http://help.syncfusion.com/api/js/ejgrid#members:columns-edittype "editType") property of [`e-columns`](http://help.syncfusion.com/api/js/ejgrid#members:columns "columns"). The following Essential JavaScript controls are supported built-in by [`e-edittype`](http://help.syncfusion.com/api/js/ejgrid#members:columns-edittype "editType"). You can set the [`e-edittype`](http://help.syncfusion.com/api/js/ejgrid#members:columns-edittype "editType") based on specific data type of the column. 
 
 * [`CheckBox`](http://help.syncfusion.com/api/js/ejcheckbox# "CheckBox") control for boolean data type.
 * [`NumericTextBox`](http://help.syncfusion.com/api/js/ejtextboxes# "NumericTextBox") control for integers, double, and decimal data types.
@@ -66,9 +66,9 @@ The edit type of bound column can be customized using [`editType`](http://help.s
 
 
 
-And also you can define the model for all the editTypes controls while editing through [`editParams`](http://help.syncfusion.com/api/js/ejgrid#members:columns-editparams "editParams") property of [`columns`](http://help.syncfusion.com/api/js/ejgrid#members:columns "columns").
+And also you can define the model for all the editTypes controls while editing through [`e-editparams`](http://help.syncfusion.com/api/js/ejgrid#members:columns-editparams "editParams") property of [`columns`](http://help.syncfusion.com/api/js/ejgrid#members:columns "columns").
 
-The following table describes [`editType`](http://help.syncfusion.com/api/js/ejgrid#members:columns-edittype "editType") and their corresponding [`editParams`](http://help.syncfusion.com/api/js/ejgrid#members:columns-editparams "editParams") of the specific data type of the column.
+The following table describes [`e-edittype`](http://help.syncfusion.com/api/js/ejgrid#members:columns-edittype "editType") and their corresponding [`e-editparams`](http://help.syncfusion.com/api/js/ejgrid#members:columns-editparams "editParams") of the specific data type of the column.
 
 <table>
 <tr>
@@ -109,29 +109,29 @@ editParams: {  allowGrouping: true }</td></tr>
 
 </table>
 
-N> 1. If [`editType`](http://help.syncfusion.com/api/js/ejgrid#members:columns-edittype "editType") is not set, then by default it will display the input element ("stringedit") while editing a column.
-N> 2. For [`editType`](http://help.syncfusion.com/api/js/ejgrid#members:columns-edittype "editType") property you can assign either `string` value ("numericedit") or `enum` value (`ej.Grid.EditingType.Numeric`).
+N> 1. If [`e-edittype`](http://help.syncfusion.com/api/js/ejgrid#members:columns-edittype "editType") is not set, then by default it will display the input element ("stringedit") while editing a column.
+N> 2. For [`e-edittype`](http://help.syncfusion.com/api/js/ejgrid#members:columns-edittype "editType") property you can assign either `string` value ("numericedit") or `enum` value (`ej.Grid.EditingType.Numeric`).
 
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
+<div ng-controller="EditTypeCtrl">
      <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" >
           <div e-columns>
              <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
              <div e-column e-field="CustomerID" e-edittype="stringedit" ></div>
-			  <div e-column e-field="Freight" e-edittype="numericedit" e-editParams-decimalplaces="2" ></div>
-              <div e-column e-field="ShipCity" e-edittype="dropdownedit" ></div>
+			  <div e-column e-field="Freight" e-edittype="numericedit" e-editparams-decimalplaces="2" ></div>
+              <div e-column e-field="ShipCity" e-edittype="dropdownedit" e-editparams-enableAnimation="true" ></div>
               <div e-column e-field="ShipCountry"></div>
 			  <div e-column e-field="OrderDate" e-edittype="datepicker" e-format="{0:MM/dd/yyyy}"></div>
-			  <div e-column e-field="Verified" e-edittype="booleanedit"></div>
+			  <div e-column e-field="Verified" e-edittype="booleanedit" e-editparams-showroundedcorner="true" ></div>
            </div>
        </div>
  </div>
 {% endhighlight %}
 
 {% highlight javascript %}
-       syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+       syncApp.controller('EditTypeCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
@@ -146,7 +146,7 @@ The following output is displayed as a result of the above code example.
 
 ## Cell Edit Template
 
-On editing the column values, custom editor can be created by using [`editTemplate`](http://help.syncfusion.com/api/js/ejgrid#members:columns-edittemplate "editTemplate") property of [`columns`](http://help.syncfusion.com/api/js/ejgrid#members:columns "columns"). It has three functions, they are
+On editing the column values, custom editor can be created by using [`e-edittemplate`](http://help.syncfusion.com/api/js/ejgrid#members:columns-edittemplate "editTemplate") property of [`e-columns`](http://help.syncfusion.com/api/js/ejgrid#members:columns "columns"). It has three functions, they are
 
 1. `create` - It is used to create the control at time of initialize.
 2. `read` - It is used to read the input value at time of save.
@@ -155,7 +155,7 @@ On editing the column values, custom editor can be created by using [`editTempla
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
+<div ng-controller="EditTemplateCtrl">
      <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" >
           <div e-columns>
               <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
@@ -169,7 +169,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-       syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+       syncApp.controller('EditTemplateCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
@@ -208,7 +208,7 @@ N> For [`editMode`](http://help.syncfusion.com/api/js/ejgrid#members:editsetting
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
+<div ng-controller="InlineCtrl">
      <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" >
           <div e-columns>
              <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
@@ -222,7 +222,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-      syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+      syncApp.controller('InlineCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true , editMode:"normal"};
@@ -242,7 +242,7 @@ Set [`editMode`](http://help.syncfusion.com/api/js/ejgrid#members:editsettings-e
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
+<div ng-controller="InlineFormCtrl">
      <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" >
           <div e-columns>
              <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
@@ -256,7 +256,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-     syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+     syncApp.controller('InlineFormCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true , editMode:"inlineform"};
@@ -275,7 +275,7 @@ You can edit any of the fields pertaining to a single record of data and apply i
 
 Using this template support, you can edit the fields that are not bound to grid columns.
 
-To edit the records using Inline template form, set [`editMode`](http://help.syncfusion.com/api/js/ejgrid#members:editsettings-editmode "editMode") as `inlineformtemplate` and specify the template ID to [`editSettings.inlineFormTemplateID`](http://help.syncfusion.com/api/js/ejgrid#members:editsettings-inlineformtemplateid "editSettings.inlineFormTemplateID") property.
+To edit the records using Inline template form, set [`editMode`](http://help.syncfusion.com/api/js/ejgrid#members:editsettings-editmode "editMode")as `inlineformtemplate` and specify the template ID to [`inlineFormTemplateID`](http://help.syncfusion.com/api/js/ejgrid#members:editsettings-inlineformtemplateid "editSettings.inlineFormTemplateID") of [`e-editsettings`] prop
 
 While using template form, you can change the HTML elements to appropriate JS controls based on the column type. This can be achieved by using [`actionComplete`](http://help.syncfusion.com/api/js/ejgrid#events:actioncomplete "actionComplete") event of grid.
 
