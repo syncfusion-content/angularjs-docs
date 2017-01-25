@@ -48,7 +48,7 @@ The following code example describes the above behavior.
 {% highlight javascript %}
     syncApp.controller('rowSelectionCtrl', function ($scope,$rootScope) {
        //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-        $scope.data = window.gridData;
+         $scope.data = window.gridData;
 		 $scope.selectionMode = { selectionMode: ["row"] };
       });
 {% endhighlight %}
@@ -115,7 +115,7 @@ The following code example describes the above behavior.
       syncApp.controller('columnSelectionCtrl', function ($scope,$rootScope) {
        //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
             $scope.data = window.gridData;
-		$scope.selectionMode = { selectionMode: ["column"] };
+		    $scope.selectionMode = { selectionMode: ["column"] };
       });
 {% endhighlight %}
 
