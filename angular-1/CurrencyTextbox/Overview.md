@@ -1,9 +1,9 @@
-﻿---
+---
 layout: post
 title: Overview
 description: overview
 platform: Angular-1
-control: CurrencyTextBox  
+control: CurrencyTextBox
 documentation: ug
 ---
 
