@@ -15,9 +15,9 @@ N> 2. If the [`e-field`](http://help.syncfusion.com/api/js/ejgrid#members:column
 
 ## Column Template
 
-HTML templates can be specified in the [`template`](http://help.syncfusion.com/api/js/ejgrid#members:columns-template "template") property of the particular column as a string (HTML element) or ID of the template's HTML element.
+HTML templates can be specified in the [`e-template`](http://help.syncfusion.com/api/js/ejgrid#members:columns-template "template") property of the particular column as a string (HTML element) or ID of the template's HTML element.
 
-You can use "ng-template" to define the template column. 
+You can use "ng-template" to define the template column and declare the image template with the Angular directive "ng-src".
 
 N> If [`e-field`](http://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") is not specified, you will not able to perform editing, grouping, filtering, sorting, search and summary functionalities in particular column.
 
@@ -25,7 +25,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
    <div ng-controller="columnTemplateCtrl">
-       <div id="Grid"  ej-grid e-datasource="data" e-allowpaging="true" e-pagesettings-pagesize="4" >
+       <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-pagesettings-pagesize="4" >
           <div e-columns>
 		    <div e-column e-headertext="Photo">
                <img style="width: 75px; height: 70px" ng-src="../Content/images/Employees/{{data.EmployeeID}}.png" alt="{{data.EmployeeID}}" />
