@@ -7,7 +7,7 @@ control: Dialog
 documentation: ug
 ---
 # Overview
-The Essential JavaScript Dialog provided with AngularJS support displays a Dialog window within a web page. The Dialog enables a message to be displayed, such as supplementary content like images and text, and an interactive content like forms.
+The Essential Angular Dialog provided with AngularJS support displays a Dialog window within a web page. The Dialog enables a message to be displayed, such as supplementary content like images and text, and an interactive content like forms.
 
 ## Key Features
 
