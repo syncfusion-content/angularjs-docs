@@ -2,7 +2,7 @@
 layout: post
 title: Row with Grid widget for Syncfusion Essential AngularJS
 description: How to use and customize the grid row
-platform: Angular-1
+platform: angular-1
 control: Grid
 documentation: ug
 --- 
@@ -12,7 +12,7 @@ It represents the record details that are fetched from the datasource.
 
 ## Details Template
 
-It provides a detailed view /additional information about each row of the grid. You can render any type of JsRender template and assign the script template id in the [`detailsTemplate`](http://help.syncfusion.com/api/js/ejgrid#members:detailstemplate "detailsTemplate") property. And also you can change HTML elements in detail template row into JavaScript controls using [`detailsDataBound`](http://help.syncfusion.com/api/js/ejgrid#events:detailsdatabound "detailsDataBound") event.
+It provides a detailed view /additional information about each row of the grid. You can render any type of JsRender template and assign the script template id in the [`e-detailstemplate`](http://help.syncfusion.com/api/js/ejgrid#members:detailstemplate "detailsTemplate") property. And also you can change HTML elements in detail template row into JavaScript controls using [`e-detailsdatabound`](http://help.syncfusion.com/api/js/ejgrid#events:detailsdatabound "detailsDataBound") event.
 
 On enabling details template, new column will be added in grid with an expander button in it and that can be expanded or collapsed to show or hide the underlying details row respectively.
 
@@ -21,7 +21,7 @@ N> It's a standard way to enclose the template within the `script` tag with `typ
 The following code example describes the above behavior.
 
 {% highlight html %}
-  <body ng-controller="PhoneListCtrl">
+  <body ng-controller="detailTemplateCtrl">
       <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-detailstemplate="detailTemp"  e-detailsdatabound="detailgrid">
         <div e-columns>
             <div e-column e-field="EmployeeID" ></div>
@@ -44,7 +44,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-      syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+      syncApp.controller('detailTemplateCtrl', function ($scope,$rootScope) {
             $scope.data = window.employeeView;
             $scope.detailTemp= "#tabGridContents",
             $scope.detailgrid = "detailGridData"
@@ -52,9 +52,9 @@ The following code example describes the above behavior.
      
    function detailGridData(e) {
             var filteredData = e.data["EmployeeID"];
+            var data = ej.DataManager(window.ordersView).executeLocal(ej.Query().where("EmployeeID", "equal", parseInt(filteredData), true).take(5));
             e.detailsElement.find("#detailGrid").ejGrid({
-                dataSource: window.gridData,
-                query: new ej.Query().take(5),
+                dataSource: data,
                 columns: ["OrderID", "EmployeeID", "ShipCity", "ShipCountry", "Freight"]
             });
             e.detailsElement.find(".tabcontrol").ejTab();
@@ -69,13 +69,13 @@ The following output is displayed as a result of the above code example.
 
 ## Row Template
 
-Row template enables you to set the customized look and behavior to grid all rows. [`rowTemplate`](http://help.syncfusion.com/api/js/ejgrid#members:rowtemplate "rowTemplate") property can be used bind the `id` of HTML template.
+Row template enables you to set the customized look and behavior to grid all rows. [`e-rowtemplate`](http://help.syncfusion.com/api/js/ejgrid#members:rowtemplate "rowTemplate") property can be used bind the `id` of HTML template.
 
 The following code example describes the above behavior.
 
 {% highlight html %}
-  <div ng-controller="PhoneListCtrl">
-      <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-allowscrolling="true" e-pagesettings-pagesize="5" e-pagesettings-pagecount="2" e-rowTemplate="rowTemp" e-allowscrolling="true" e-scrollsettings="scroll" >
+  <div ng-controller="rowTemplateCtrl">
+      <div id="Grid" ej-grid e-datasource="data" e-allowscrolling="true" e-rowtemplate="rowTemp" e-scrollsettings="scroll" >
 			<div e-columns>
 				<div e-column e-field="Photo" e-headertext="Photo" e-width="30"></div>
 				<div e-column e-headertext="Employee Details" e-width="70"></div>
@@ -120,7 +120,7 @@ The following code example describes the above behavior.
  {% endhighlight %}
 
 {% highlight javascript %}
-       syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+       syncApp.controller('rowTemplateCtrl', function ($scope,$rootScope) {
             $scope.data = window.employeeData;
             $scope.rowTemp = "#templateData";
             $scope.scroll ={ width: 500, height: 380 }
