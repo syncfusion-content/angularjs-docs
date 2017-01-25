@@ -23,16 +23,16 @@ N> You can get the chart **instance** using instance method.
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart >
         <e-series>
-        <e-series >
+        <e-series ></e-series>
         </e-series>
         </div>
         <script>
         var duration;
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                       duration=window.setInterval(update, 100);  
-                   });
-                   function updateChart(){
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+        duration=window.setInterval(update, 100);  
+          });
+        function updateChart(){
         //Creating chart instance
         var chart =  $("#chartcontainer").ejChart("instance");      
         if (chart.model.series[0].points.length > 10)

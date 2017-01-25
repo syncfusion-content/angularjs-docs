@@ -29,12 +29,14 @@ You can enable this feature by setting the `e-layerType` property value as "OSM"
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
-            <e-layer e-layertype="osm" e-urltemplate="http://a.tile.openstreetmap.org/level/tileX/tileY.png"></e-layer>
+            <e-layer e-layertype="osm" 
+            e-urltemplate="http://a.tile.openstreetmap.org/level/tileX/tileY.png">
+            </e-layer>
         </e-layers>
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+        .controller('MapsCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -71,7 +73,7 @@ You can enable this feature by defining the `layerType` as “bing”.
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
-            .controller('MapsCtrl', function ($scope) {
+        .controller('MapsCtrl', function ($scope) {
                         });
     </script>
     </body>

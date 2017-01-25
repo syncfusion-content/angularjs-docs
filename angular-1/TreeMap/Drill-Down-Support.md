@@ -48,18 +48,22 @@ Gets or sets a color for highlighting tree map item during drill down.</td></tr>
     </head> 
     <body ng-controller="TreemapCtrl">
      <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
-     <ej-treemap e-datasource=populationdata e-enabledrilldown="true" e-drilldownheadercolor="#199DAF" e-drilldownselectioncolor="#199DAF"
-     e-unicolormapping-color="#CCDFE3" e-weightvaluepath="Population">
+     <ej-treemap e-datasource=populationdata e-enabledrilldown="true" e-drilldownheadercolor="#199DAF" 
+     e-drilldownselectioncolor="#199DAF" e-unicolormapping-color="#CCDFE3" 
+     e-weightvaluepath="Population">
      <e-levels>
-     <e-level e-grouppath="Continent" e-showlabels="true" e-headerheight="25" e-showheader="true" e-headertemplate="headertemplate" e-groupgap="5"></e-level>
-      <e-level e-grouppath="Country" e-showlabels="true" e-headerheight="25" e-showheader="true" e-headertemplate="headertemplate" e-groupgap="0"></e-level>
-       <e-level e-grouppath="Name" e-showlabels="true" e-headerheight="25" e-showheader="true" e-headertemplate="headertemplate" e-groupgap="0"></e-level>
+     <e-level e-grouppath="Continent" e-showlabels="true" e-headerheight="25" e-showheader="true" e-headertemplate="headertemplate" 
+     e-groupgap="5"></e-level>
+     <e-level e-grouppath="Country" e-showlabels="true" e-headerheight="25" e-showheader="true" e-headertemplate="headertemplate" 
+     e-groupgap="0"></e-level>
+     <e-level e-grouppath="Name" e-showlabels="true" e-headerheight="25" e-showheader="true" e-headertemplate="headertemplate" 
+     e-groupgap="0"></e-level>
      </e-levels>
      </ej-treemap>
      </div>
-      <script>
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+     <script>
+     angular.module('TreemapApp', ['ejangular'])
+     .controller('TreemapCtrl', function ($scope) {
                         });
     </script>
     </body>

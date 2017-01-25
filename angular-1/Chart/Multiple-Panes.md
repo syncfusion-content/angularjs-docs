@@ -30,30 +30,24 @@ To split the chart area vertically into a number of rows, use `e-rowDefinitions`
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-rowdefinitions="rowdefinitions" >
-         <e-axes>
-         <e-axis e-name="yAxis1" e-rowindex="1">
-            </e-axes>
+        <div id="container" ej-chart>
+        <e-rowdefinitions>
+        <e-rowdefinition e-unit="percentage" e-linecolor="Gray" e-rowheight="50"
+        e-linewidth="0"></e-rowdefinition>
+        <e-rowdefinition e-unit="percentage" e-linecolor="green" e-rowheight="50"
+        e-linewidth="0"></e-rowdefinition>
+        <e-rowdefinitions>
+        <e-axes>
+        <e-axis e-name="yAxis1" e-rowindex="1">
+        </e-axes>
         <e-series>
-            <e-series e-yAxisName="yAxis1"></e-series>
+        <e-series e-yAxisName="yAxis1"></e-series>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.rowdefinitions=[{
-                       //  Split first row of the chart area
-                       unit: 'percentage',
-                       lineColor: 'Gray',
-                       rowHeight: 50,
-                       linewidth: 0
-                   }, {
-                       //  Split second row of the chart area
-                       unit: 'percentage',
-                       lineColor: 'green',
-                       rowHeight: 50,
-                       linewidth: 0
-                   }];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+               
                    });
         </script>
     </body>
@@ -79,24 +73,21 @@ For spanning the vertical axis along multiple panes vertically, you can use `e-p
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-rowdefinitions="rowdefinitions" e-primaryyaxis-rowspan="2" >
-         <e-axes>
-         <e-axis >
-            </e-axes>
+        <div id="container" ej-chart  e-primaryyaxis-rowspan="2" >
+        <e-rowdefinitions>
+         //...
+        <e-rowdefinitions>
+        <e-axes>
+        <e-axis ></e-axis>
+        </e-axes>
         <e-series>
-            <e-series e-yAxisName="yAxis1"></e-series>
+        <e-series e-yAxisName="yAxis1"></e-series>
         </e-series>
         </div>
         <script>
                 angular.module('ChartApp', ['ejangular'])
                 .controller('ChartCtrl', function ($scope) {
-                  $scope.rowdefinitions=[{
-
-                         // ...
-                  },{
-
-                         // ...
-                  }];
+                
                    });
         </script>
     </body>
@@ -121,26 +112,24 @@ To split the chart area horizontally into a number of columns, use `e-columnDefi
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-columndefinitions="columndefinitions" >
-         <e-axes>
-         <e-axis e-name="xAxis1" e-columnindex="1">
-            </e-axes>
+        <div id="container" ej-chart>
+        <e-columndefinitions>
+        <e-columndefinition e-unit="percentage" e-columnwidth="50">
+        </e-columndefinition>
+        <e-columndefinition e-unit="percentage"  e-columnwidth="50">
+        </e-columndefinition>
+        <e-columndefinitions>
+        <e-axes>
+        <e-axis e-name="xAxis1" e-columnindex="1">
+        </e-axes>
         <e-series>
-            <e-series e-xAxisName="yAxis1"></e-series>
+        <e-series e-xAxisName="yAxis1"></e-series>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.columndefinitions=[{
-                    //  Split first column of the chart area
-                    unit : 'percentage', 
-                    columnWidth : 50,
-                }, {
-                    //  Split second column of the chart area
-                    unit : 'percentage',                 
-                    columnWidth : 50,
-                }];
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
+                 
                    });
         </script>
     </body>
@@ -162,25 +151,21 @@ For spanning the horizontal axis along multiple panes horizontally, you can use 
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-columndefinitions="columndefinitions" e-primaryxaxis-columnspan="2" >
-         <e-axes>
-         <e-axis >
-            </e-axes>
+        <div id="container" ej-chart  e-primaryxaxis-columnspan="2" >
+        <e-columndefinitions>
+        // ..
+        <e-columndefinitions>
+        <e-axes>
+        <e-axis ></e-axis>
+        </e-axes>
         <e-series>
-            <e-series e-xAxisName="xAxis1"></e-series>
+        <e-series e-xAxisName="xAxis1"></e-series>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.columndefinitions=[{
-
-                         // ...
-                  },{
-
-                         // ...
-                  }];
-                   });
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
+         });       
         </script>
     </body>
 </html>

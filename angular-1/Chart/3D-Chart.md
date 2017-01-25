@@ -30,8 +30,8 @@ For rendering a 3D Column Chart, specify the series `e-type` as **"column"** in 
         </e-series>
         </div>
         <script>
-          angular.module('ChartApp', ['ejangular'])
-          .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
             });
         </script>
     </body>
@@ -61,8 +61,8 @@ You can create a 3D Bar Chart by setting the series `e-type` as **"bar"** in the
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                       });
         </script>
     </body>
@@ -93,8 +93,8 @@ Stacking Column 3DChart is rendered by specifying the series `e-type` as **"stac
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                       });
         </script>
     </body>
@@ -126,8 +126,8 @@ Stacking Column 3DChart is rendered by specifying the series `e-type` as **"stac
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                       });
         </script>
     </body>
@@ -160,8 +160,8 @@ To create Stacking Bar 3DChart, set the series `e-type` as **"stackingBar"** in 
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                       });
         </script>
     </body>
@@ -192,8 +192,8 @@ You can create 100% Stacking Bar 3DChart by setting the series `e-type` as **"st
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                       });
         </script>
     </body>
@@ -223,8 +223,8 @@ To render the Pie Chart in 3D view, enable the **enbel3D** option in the chart a
         <e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                       });
         </script>
     </body>
@@ -256,8 +256,8 @@ To render the Doughnut Chart in 3D view, enable the **enbel3D** option in the ch
         <e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                       });
         </script>
     </body>
@@ -290,8 +290,8 @@ To render the EjChart in 3D view, set the `e-enable3D`option as *true* in the ch
         <div id="container" ej-chart e-enable3d="true">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                       });
         </script>
     </body>
@@ -321,8 +321,8 @@ To render the EjChart in 3D view, set the `e-enable3D`option as *true* in the ch
         <div id="container" ej-chart e-enable3d="true" e-sidebysideseriesplacement="true">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                       });
         </script>
     </body>
@@ -349,8 +349,8 @@ In 3DChart, Cartesian axes lines are represented as walls and it defines the wid
         <div id="container" ej-chart e-enable3d="true" e-wallsize="10">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                       });
         </script>
     </body>
@@ -378,8 +378,8 @@ By using the `e-depth` property, you can view the 3D Chart from the front view o
         <div id="container" ej-chart e-enable3d="true" e-depth="120">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                       });
         </script>
     </body>
@@ -402,11 +402,12 @@ To spin the 3D Chart on mouse dragging, enable `e-enableRotation` option in the 
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart e-enable3d="true" e-tilt="10" e-enablerotation="true" e-rotation="40">
+        <div id="container" ej-chart e-enable3d="true" e-tilt="10" e-enablerotation="true" 
+        e-rotation="40">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                       });
         </script>
     </body>
@@ -433,8 +434,8 @@ The `e-perspectiveAngle` specifies the appearance of the height, width, depth an
         <div id="container" ej-chart e-enable3d="true" e-perspectiveangle="150">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                       });
         </script>
     </body>

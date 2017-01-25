@@ -34,7 +34,7 @@ Category axis displays the text labels instead of numbers. To use the categorica
         </div>
         <script>
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -64,9 +64,8 @@ Labels in the category axis can be placed on the ticks by setting the `e-primary
         <div id="container" ej-chart  e-primaryxaxis-labelPlacement="onTicks">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -94,9 +93,8 @@ To display the labels after a fixed interval n, you can set the `e-primaryxaxis-
         <div id="container" ej-chart  e-primaryxaxis-range-interval="2">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -124,18 +122,17 @@ Category axis can also plot points based on index value of data points. Index ba
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart  e-primaryxaxis-isindexed="true">
         <e-series>
-            <e-series e-datasource=dataSource e-xname="x" e-yname="y">
-            </e-series>
+        <e-series e-datasource=dataSource e-xname="x" e-yname="y">
+        </e-series>
         </e-series>
         </div>
         <script>
-       var chartData = [{ x: "Monday", y: 50 }, { x: "Tuesday", y: 40 }, { x: "Wednesday", y: 70 },
-                    { x: "Thursday", y: 60 }, { x: "Friday", y: 50 },
-                    { x: "Monday", y: 40 }, { x: "Monday", y: 30 }
-        ];
+       var chartData = [{ x: "Monday", y: 50 }, { x: "Tuesday", y: 40 }, 
+                        { x: "Wednesday", y: 70 },
+                        { x: "Thursday", y: 60 }, { x: "Friday", y: 50 },
+                        { x: "Monday", y: 40 }, { x: "Monday", y: 30 }];
         angular.module('syncApp', ['ejangular'])
                .controller('Chart', function ($scope) {
-               
                    $scope.dataSource = chartData;
                    
                });
@@ -172,9 +169,8 @@ Numeric axis uses numerical scale and displays numbers as labels. To use numeric
         <div id="container" ej-chart  e-primaryxaxis-valuetype="double">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -204,9 +200,8 @@ To customize the range of an axis, you can use the `e-primaryxaxis-range` proper
         <div id="container" ej-chart  e-primaryyaxis-range-min="0" e-primaryyaxis-range-max="50">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -235,9 +230,8 @@ Axis interval can be customized by using the `e-primaryyaxis-range-interval`prop
         <div id="container" ej-chart  e-primaryyaxis-range-interval="5">
         </div>
         <script>
-
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+           angular.module('ChartApp', ['ejangular'])
+           .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -273,9 +267,8 @@ When the value of the `e-primaryxaxis-rangePadding` property is **none**, paddin
         <div id="container" ej-chart  e-primaryyaxis-rangePadding="none">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -303,9 +296,8 @@ When the value of `e-primaryyaxis-rangePadding`property is **round**, the axis r
         <div id="container" ej-chart  e-primaryyaxis-rangePadding="round">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -340,9 +332,8 @@ When the value of the `e-primaryyaxis-rangePadding` property is **additional**, 
         <div id="container" ej-chart  e-primaryyaxis-rangePadding="additional">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -370,10 +361,9 @@ When the value of the `e-primaryyaxis-rangePadding` property is **normal**, the 
         <div id="container" ej-chart  e-primaryyaxis-rangePadding="normal">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                   
+            .controller('ChartCtrl', function ($scope) {
+                  
                 });
         </script>
     </body>
@@ -400,9 +390,8 @@ Date time axis uses date time scale and displays the date time values as axis la
         <div id="container" ej-chart  e-primaryxaxis-valuetype="datetime">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -430,12 +419,12 @@ Date time axis uses date time scale and displays the date time values as axis la
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-primaryxaxis-range-min="2000/6/1" e-primaryxaxis-range-max="2010/6/1">
+        <div id="container" ej-chart  e-primaryxaxis-range-min="2000/6/1"
+         e-primaryxaxis-range-max="2010/6/1">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -470,12 +459,12 @@ Essential Chart supports the following types of interval for date time axis.
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-primaryxaxis-range-interval="2" e-primaryxaxis-intervaltype="years">
+        <div id="container" ej-chart e-primaryxaxis-range-interval="2" 
+        e-primaryxaxis-intervaltype="years">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -512,9 +501,8 @@ When the value of the `e-primaryxaxis-rangePadding` property is **none**, paddin
         <div id="container" ej-chart  e-primaryxaxis-rangePadding="none">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -541,9 +529,8 @@ When the value of the `e-primaryxaxis-rangePadding`property is **round**, the ax
         <div id="container" ej-chart  e-primaryxaxis-rangePadding="round">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -577,9 +564,8 @@ When the value of the `e-primaryxaxis-rangePadding` property is **additional**, 
         <div id="container" ej-chart  e-primaryxaxis-rangePadding="additional">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -607,9 +593,8 @@ Logarithmic axis uses logarithmic scale and it is very useful in visualizing whe
         <div id="container" ej-chart  e-primaryyaxis-valuetype="logarithmic">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -640,9 +625,8 @@ Logarithmic range can be customized by using the `e-primaryxaxis-range` property
         <div id="container" ej-chart  e-primaryyaxis-range-min="1" e-primaryyaxis-range-max="4">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -669,9 +653,8 @@ Logarithmic base can be customized by using the `e-primaryyaxis-logBase` propert
         <div id="container" ej-chart  e-primaryyaxis-logBase="2">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -699,9 +682,8 @@ Logarithmic axis interval can be customized by using the `e-primaryyaxis-range-i
         <div id="container" ej-chart  e-primaryyaxis-range-interval="2">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -731,9 +713,8 @@ Numeric labels can be formatted by using the `e-primaryyaxis-labelFormat` proper
         <div id="container" ej-chart  e-primaryxaxis-labelFormat="c">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -820,9 +801,8 @@ Date time labels can be formatted by using the `e-primaryxaxis-labelFormat` prop
         <div id="container" ej-chart  e-primaryxaxis-labelFormat="dd/MM/yyyy">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -897,9 +877,8 @@ Prefix and suffix can be added to the category labels by using the `e-primaryxax
         <div id="container" ej-chart  e-primaryxaxis-labelFormat="${value}K">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -929,13 +908,12 @@ Axis can be positioned anywhere in chart area using the `e-primaryxaxis-crossesA
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-    //crosses PrimaryYAxis at 0
+    <!--crosses PrimaryYAxis at 0 -->
         <div id="container" ej-chart  e-primaryxaxis-crossesAt="0">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -960,16 +938,16 @@ The `e-primaryxaxis-crossesInAxis` property takes axis name as input and determi
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-    //crosses PrimaryYAxis at 0
-        <div id="container" ej-chart  e-primaryxaxis-crossesAt="-0.2" e-primaryxaxis-crossesInAxis="secondaryYAxis">
+    <!--crosses PrimaryYAxis at 0 -->
+        <div id="container" ej-chart  e-primaryxaxis-crossesAt="-0.2" 
+        e-primaryxaxis-crossesInAxis="secondaryYAxis">
         <e-axes>
         <e-axis e-orientation="vertical" e-name="secondaryYAxis"></e-axis>
         </e-axes>
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -994,9 +972,8 @@ Axis will be placed in the opposite side if value of `e-primaryxaxis-crossesAt` 
         <div id="container" ej-chart  e-primaryxaxis-crossesAt="200">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -1024,9 +1001,8 @@ For crossing in a date time horizontal axis, date object should be provided as v
         <div id="container" ej-chart  e-primaryyaxis-crossesAt="2010/4/29">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -1056,9 +1032,8 @@ W> String value provided for `e-primaryxaxis-crossesAt` property is case-sensiti
         <div id="container" ej-chart  e-primaryyaxis-crossesAt="Tuesday">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -1086,9 +1061,8 @@ Axis visibility can be controlled by using the `e-primaryxaxis-visible` property
         <div id="container" ej-chart  e-primaryyaxis-visibile=false>
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                    
                 });
         </script>
@@ -1112,21 +1086,15 @@ The `e-primaryxaxis-title` property in the axis provides options to customize th
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-primaryxaxis-title ="title" e-primaryxaxis-title-text="Month" e-primaryxaxis-enableTrim="true" e-primaryxaxis-maximumTitleWidth="80">
+        <div id="container" ej-chart  e-primaryxaxis-title ="title" e-primaryxaxis-title-text="Month" 
+        e-primaryxaxis-enableTrim="true" e-primaryxaxis-maximumTitleWidth="80"
+        e-primaryxaxis-title-font-fontfamily="Segoe UI" e-primaryxaxis-title-font-size="16px"
+        e-primaryxaxis-title-font-fontweight="bold" e-primaryxaxis-title-font-color="grey">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                $scope.title={
-                        font : {
-                        fontFamily : 'Segoe UI',
-                        size : '16px',
-                        fontWeight : 'bold' ,
-                        color : 'grey',
-                    }
-                    } 
-                                  });
+            .controller('ChartCtrl', function ($scope) {
+                 });
         </script>
     </body>
 </html>
@@ -1147,12 +1115,13 @@ You can modify the position of the axis title either inside or outside the chart
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-primaryxaxis-title-text = "Month" e-primaryxaxis-title-position="inside" e-primaryxaxis-title-alignment="near" e-primaryxaxis-title-offset="10">
+        <div id="container" ej-chart  e-primaryxaxis-title-text="Month" 
+        e-primaryxaxis-title-position="inside" e-primaryxaxis-title-alignment="near" 
+        e-primaryxaxis-title-offset="10">
         </div>
         <script>
-
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+            .controller('ChartCtrl', function ($scope) {
                   
                 });
         </script>
@@ -1176,22 +1145,14 @@ The `font` property of the axis provides options to customize the `font-family`,
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-primaryxaxis="xaxis">
+        <div id="container" ej-chart  e-primaryxaxis-font-fontfamily="Segoe UI" 
+        e-primaryxaxis-font-size="14px" e-primaryxaxis-font-fontweight="bold"
+        e-primaryxaxis-font-color="blue">
         </div>
         <script>
-
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.xaxis={
-               //Customizing label appearance
-                font : {
-                        fontFamily : 'Segoe UI',
-                        size : '14px',
-                        fontWeight : 'bold' ,
-                        color : 'blue',
-                },  
-
-                  }
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+               
                 });
         </script>
     </body>
@@ -1215,13 +1176,13 @@ Axis labels and ticks can be positioned inside or outside the chart area by usin
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart   e-primaryxaxis-labelPosition="inside" e-primaryxaxis-tickLinesPosition="inside">
+        <div id="container" ej-chart   e-primaryxaxis-labelPosition="inside" 
+        e-primaryxaxis-tickLinesPosition="inside">
         </div>
         <script>
-
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                                });
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
+            });
         </script>
     </body>
 </html>
@@ -1249,10 +1210,9 @@ Labels with long text at the edges of an axis may appear partially outside the c
         <div id="container" ej-chart   e-primaryxaxis-edgeLabelPlacement="shift">
         </div>
         <script>
-
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                                });
+        angular.module('ChartApp', ['ejangular'])
+       .controller('ChartCtrl', function ($scope) {
+            });
         </script>
     </body>
 </html>
@@ -1282,27 +1242,17 @@ The `e-primaryxaxis-majorGridLines` and `e-primaryxaxis-minorGridLines` properti
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-primaryxaxis="xaxis" e-primaryxaxis-minorTicksPerInterval= "0" >
+        <div id="container" ej-chart e-primaryxaxis-majorgridlines-color="blue" 
+        e-primaryxaxis-majorgridlines-visible="true" 
+        e-primaryxaxis-majorgridlines-width="1"
+        e-primaryxaxis-minorgridlines-color="red" 
+        e-primaryxaxis-minorgridlines-visible="false" 
+        e-primaryxaxis-minorgridlines-width="1"
+        e-primaryxaxis-minorTicksPerInterval= "0" >
         </div>
         <script>
-
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.xaxis={
-                 //Customizing grid lines
-                majorGridLines : {
-                    color : 'blue',                    
-                    visible : true,  
-                    width : 1 
-                },
-                minorGridLines : {
-                    color : 'red',                    
-                    visible : false,  
-                    width : 1 
-                }
-            }
-            
-
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {  
                   });
         </script>
     </body>
@@ -1325,29 +1275,23 @@ The `e-primaryxaxis-majorTickLines` and `e-primaryxaxis-minorTickLines` properti
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-primaryxaxis="xaxis" e-primaryxaxis-minorTicksPerInterval= "0" >
+      <div id="container" ej-chart e-primaryxaxis-majorticklines-color="blue" 
+        e-primaryxaxis-majorticklines-visible="true" 
+        e-primaryxaxis-majorticklines-width="1"
+        e-primaryxaxis-majorticklines-size="5"
+        e-primaryxaxis-minorticklines-color="red" 
+        e-primaryxaxis-minorticklines-visible="false" 
+        e-primaryxaxis-minorticklines-width="1"
+        e-primaryxaxis-minorTicksPerInterval= "0"
+        e-primaryxaxis-minorticklines-size="5" >
         </div>
         <script>
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {  
+                  });
             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.xaxis={
-               //Customizing tick lines
-                majorTickLines : {
-                    color : 'blue',                    
-                    visible : true,  
-                    width : 1 ,
-                    size : 5,
-                },
-                 minorTickLines : {
-                    color : 'red',                    
-                    visible : false,  
-                    width : 1 ,
-                    size : 5
-                }
-                //  ...
-             }
-            
-
+            .controller('ChartCtrl', function ($scope) {
+                 
                   });
         </script>
     </body>
@@ -1373,9 +1317,9 @@ Axis can be inversed by using the `e-primaryxaxis-isInversed` property of the ax
         <div id="container" ej-chart   e-primaryxaxis-isInversed="true">
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                                });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+             });
         </script>
     </body>
 </html>
@@ -1407,9 +1351,9 @@ The `e-primaryxaxis-opposedPosition` property of axis can be used to place the a
         <div id="container" ej-chart   e-primaryyaxis-opposedPosition="true">
         </div>
         <script>
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                                });
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
+            });
         </script>
     </body>
 </html>
@@ -1441,9 +1385,9 @@ A maximum of 3 labels are displayed for each 100 pixels in the axis, by default.
         <div id="container" ej-chart   e-primaryxaxis-maximumLabels="1">
         </div>
         <script>
-              angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                                });
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
+             });
         </script>
     </body>
 </html>
@@ -1486,8 +1430,8 @@ An additional horizontal or vertical axis can be added to the chart by adding an
             </e-series>
         </div>
         <script>
-             angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
                                 });
         </script>
     </body>
@@ -1517,7 +1461,7 @@ When the Axis labels overlap with each other based on the chart dimensions and l
           </div>
         <script>
              angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+             .controller('ChartCtrl', function ($scope) {
                                 });
         </script>
     </body>
@@ -1576,22 +1520,17 @@ Axis can be customized with multiple levels of labels using the `e-primaryxaxis-
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-primaryxaxis="xaxis"  >
+        <div id="container" ej-chart>
+        <e-primaryxaxis-multilevellabels>
+        <e-primaryxaxis-multilevellabel e-visible="true" e-text="Quarter1"
+         e-start="-0.5" e-end="2.5">
+        </e-primaryxaxis-multilevellabel>
+        </e-primaryxaxis-multilevellabels>
         </div>
         <script>
-
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.xaxis={
-               multiLevelLabels: [
-                        { 
-                            visible: true,
-                            start: -0.5,
-                            end: 2.5,
-                            text: "Quater1"
-                         }]
-                    }    
-                 });
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
+                });
         </script>
     </body>
 </html>
@@ -1612,23 +1551,17 @@ The color, width and type of the border can be customized. The default border ty
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-primaryxaxis="xaxis"  >
+        <div id="container" ej-chart >  
+        <e-primaryxaxis-multilevellabels>
+        <e-primaryxaxis-multilevellabel e-border-type="brace" e-border-width="2"
+         e-border-color="black">
+        </e-primaryxaxis-multilevellabel>
+        </e-primaryxaxis-multilevellabels>
         </div>
         <script>
-
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.xaxis={
-               multiLevelLabels: [
-                        { 
-                      // customizing the border properties 
-                            border:{
-                                type: "brace",
-                                width: 2,
-                                color: "black"
-                           }
-                         }]
-                    }    
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+           
                  });
         </script>
     </body>
@@ -1648,24 +1581,16 @@ The text of the labels can be customized using the `text` and `font` properties
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-primaryxaxis="xaxis"  >
+        <div id="container" ej-chart >
+        <e-primaryxaxis-multilevellabels>
+        <e-primaryxaxis-multilevellabel e-text="Year - 2015" e-font-fontfamily="Algerian" 
+        e-font-size="12px" e-font-color="black">
+        </e-primaryxaxis-multilevellabel>
+        </e-primaryxaxis-multilevellabels>
         </div>
         <script>
-
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.xaxis={
-               multiLevelLabels: [
-                        { 
-                            // customizing the text and font properties
-                            text: "Year - 2015",
-                            font:{
-                               fontFamily: "Algerian", 
-                               size: "12px",
-                               color: "black"                            
-                              }
-                         }]
-                    }    
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
                  });
         </script>
     </body>
@@ -1685,21 +1610,17 @@ You can change the alignment of the text to far, near and center position using 
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-primaryxaxis="xaxis"  >
+         <div id="container" ej-chart >
+        <e-primaryxaxis-multilevellabels>
+        <e-primaryxaxis-multilevellabel e-textalignment="far">
+        </e-primaryxaxis-multilevellabel>
+        </e-primaryxaxis-multilevellabels>
         </div>
         <script>
-
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.xaxis={
-               multiLevelLabels: [
-                        { 
-                            // customizing the text alignment
-                            textAlignment: "far",
-                         }]
-                    }    
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
                  });
-        </script>
+     </script>            
     </body>
 </html>         
 
@@ -1717,22 +1638,17 @@ You can trim, wrap or wrapAndTrim the text if it exceeds the maximum text width 
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-primaryxaxis="xaxis"  >
+        <div id="container" ej-chart >
+        <e-primaryxaxis-multilevellabels>
+        <e-primaryxaxis-multilevellabel e-textoverflow="trim" e-maximumtextwidth="40">
+        </e-primaryxaxis-multilevellabel>
+        </e-primaryxaxis-multilevellabels>
         </div>
         <script>
-
-            angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.xaxis={
-               multiLevelLabels: [
-                        { 
-                           // customizing the text overflow  
-                            textOverflow: “trim", 
-                            maximumtextWidth: 40   
-                         }]
-                    }    
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
                  });
-        </script>
+       </script>          
     </body>
 </html>         
 

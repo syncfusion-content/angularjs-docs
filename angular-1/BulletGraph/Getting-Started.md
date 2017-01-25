@@ -139,7 +139,7 @@ Assign the data in **localData** variable to the **dataSource** property of **Bu
                 $scope.data = localData;
              });
 
-var localData = [
+               var localData = [
                {
                    value: 90, comparativeMeasureValue: 100,
                    category: 2013
@@ -253,10 +253,11 @@ var localData = [
 
 Once the **dataSource** property is assigned with the required values, you can bind the variable names used in the **JSON** data to the corresponding fields of the **BulletGraph** as shown in the following code sample.
 
-{% highlight javascript %}
+{% highlight html %}
 
 
-<ej-bulletgraph e-fields-datasource="data"  e-fields-category="category"  e-fields-featuremeasures="value" 
+<ej-bulletgraph e-fields-datasource="data"  e-fields-category="category"  
+                e-fields-featuremeasures="value" 
                 e-fields-comparativemeasure="comparativeMeasureValue">
 </ej-bulletgraph>
 
@@ -270,15 +271,16 @@ By default, the **BulletGraph** is rendered in the Horizontal orientation with i
 
 **Minimum**, **maximum** and **interval** values for the **quantitativeScale** of the **bullet graph** should be set, as shown in the following code example.
 
-{% highlight javascript %}
+{% highlight html %}
 
 
-<ej-bulletgraph e-height="540" e-width="850" e-qualitativerangesize="800" e-quantitativescalelength="420"
-                        e-orientation="vertical" e-flowdirection="backward" e-quantitativescalesettings-interval="10"
-                        e-quantitativescalesettings-minimum="70" e-quantitativescalesettings-maximum="130" e-quantitativescalesettings-tickposition="near"
-                        e-labelsettings-position="above"
-                        e-fields-datasource="data" e-fields-category="category" e-fields-featuremeasures="value"
-                        e-fields-comparativemeasure="comparativeMeasureValue">
+<ej-bulletgraph e-height="540" e-width="850" e-qualitativerangesize="800"
+                e-quantitativescalelength="420" e-orientation="vertical" 
+                e-flowdirection="backward" e-quantitativescalesettings-interval="10"
+                e-quantitativescalesettings-minimum="70" e-quantitativescalesettings-maximum="130"
+                e-quantitativescalesettings-tickposition="near" e-labelsettings-position="above"
+                e-fields-datasource="data" e-fields-category="category" e-fields-featuremeasures="value"
+                e-fields-comparativemeasure="comparativeMeasureValue">
 </ej-bulletgraph>
 
 
@@ -293,7 +295,7 @@ As you can see in the image above, the bullet graph without any ranges is displa
 
 By default, 3 ranges are displayed in the **BulletGraph** control during the initial rendering of the control with its default values. In order to customize it, you need to set appropriate values for the **rangeEnd** and its **rangeStroke** properties.  Any number of **qualitativeRanges** can be added to the control. 
 
-{% highlight javascript %}
+{% highlight html %}
 
 <ej-bulletgraph>
             <e-qualitativeranges>
@@ -317,10 +319,14 @@ You have to do the following code changes in the quantitative scale in order to 
 
 {% highlight javascript %}
 
- <ej-bulletgraph
-                 e-quantitativescalesettings-majorticksettings-width="1" e-quantitativescalesettings-majorticksettings-size="13" e-quantitativescalesettings-majorticksettings-stroke="gray"
-                 e-quantitativescalesettings-minorticksettings-width="1" e-quantitativescalesettings-minorticksettings-size="5" e-quantitativescalesettings-minorticksettings-stroke="gray"
-                 e-quantitativescalesettings-comparativemeasuresettings-stroke="#507786" e-quantitativescalesettings-featuredmeasuresettings-stroke="#169DD8">
+ <ej-bulletgraph e-quantitativescalesettings-majorticksettings-width="1" 
+                 e-quantitativescalesettings-majorticksettings-size="13"
+                 e-quantitativescalesettings-majorticksettings-stroke="gray"
+                 e-quantitativescalesettings-minorticksettings-width="1" 
+                 e-quantitativescalesettings-minorticksettings-size="5"
+                 e-quantitativescalesettings-minorticksettings-stroke="gray"
+                 e-quantitativescalesettings-comparativemeasuresettings-stroke="#507786" 
+                 e-quantitativescalesettings-featuredmeasuresettings-stroke="#169DD8">
 </ej-bulletgraph>
 
 {% endhighlight %}
@@ -337,14 +343,17 @@ You can display an appropriate Caption and Subtitle in the **BulletGraph** by ad
 
 {% highlight javascript %}
 
-<ej-bulletgraph e-captionsettings-textposition='Top' e-captionsettings-textalignment='Center' e-captionsettings-textanchor='middle'
-                e-captionsettings-text="Monsoon Rainfall - Actual vs Forecast" e-captionsettings-font-color="null" e-captionsettings-font-fontfamily="segoe ui"
-                e-captionsettings-font-fontstyle="normal" e-captionsettings-font-size="12px" e-captionsettings-font-fontweight="regular"
-                e-captionsettings-font-opacity="1" e-captionsettings-subtitle-textangle="-90" e-captionsettings-subtitle-text="Rainfall (mm)"
-                e-captionsettings-subtitle-location-x="15" e-captionsettings-subtitle-location-y="250" e-captionsettings-subtitle-font-color="null"
-                e-captionsettings-subtitle-font-fontfamily="segoe ui" e-captionsettings-subtitle-font-fontstyle="normal"
-                e-captionsettings-subtitle-font-size="12px" e-captionsettings-subtitle-font-fontweight="regular"
-                e-captionsettings-subtitle-font-opacity="1">
+<ej-bulletgraph e-captionsettings-textposition='Top' e-captionsettings-textalignment='Center' 
+                e-captionsettings-textanchor='middle' 
+                e-captionsettings-text="Monsoon Rainfall - Actual vs Forecast" 
+                e-captionsettings-font-color="null" e-captionsettings-font-fontfamily="segoe ui"
+                e-captionsettings-font-fontstyle="normal" e-captionsettings-font-size="12px"
+                e-captionsettings-font-fontweight="regular" e-captionsettings-font-opacity="1" 
+                e-captionsettings-subtitle-textangle="-90" e-captionsettings-subtitle-text="Rainfall (mm)"
+                e-captionsettings-subtitle-location-x="15" e-captionsettings-subtitle-location-y="250" 
+                e-captionsettings-subtitle-font-color="null" e-captionsettings-subtitle-font-fontfamily="segoe ui"
+                e-captionsettings-subtitle-font-fontstyle="normal" e-captionsettings-subtitle-font-size="12px" 
+                e-captionsettings-subtitle-font-fontweight="regular" e-captionsettings-subtitle-font-opacity="1">
 </ej-bulletgraph>
 
 {% endhighlight %}
@@ -359,7 +368,7 @@ The following screenshot displays a **BulletGraph** in the caption and title in 
 
 You can use a Tooltip in your application to display any information. The tooltip is enabled by setting the **visible** property in tooltip to **True.** 
 
-{% highlight javascript %}
+{% highlight html %}
 
 <ej-bulletgraph  e-tooltipsettings-visible="true">
 </ej-bulletgraph>

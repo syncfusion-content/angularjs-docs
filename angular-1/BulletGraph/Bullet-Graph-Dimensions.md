@@ -26,7 +26,7 @@ This section explains you on how to change the dimensions of the **Bullet Graph*
         </div>
      <script type="javascript">
            angular.module('BulletGraphApp', ['ejangular'])
-             .controller('BulletGraphCtrl', function ($scope) {
+           .controller('BulletGraphCtrl', function ($scope) {
                  });
      </script>
      </body>
@@ -58,7 +58,7 @@ The feature measure bar value is customized using the **value** property. Defaul
         </div>
      <script type="javascript">
            angular.module('BulletGraphApp', ['ejangular'])
-             .controller('BulletGraphCtrl', function ($scope) {
+           .controller('BulletGraphCtrl', function ($scope) {
                  });
      </script>
      </body>
@@ -88,7 +88,7 @@ The **Comparative measure value** is set using **comparativeMeasureValue** prope
         </div>
      <script type="text/javascript">
            angular.module('BulletGraphApp', ['ejangular'])
-             .controller('BulletGraphCtrl', function ($scope) {
+           .controller('BulletGraphCtrl', function ($scope) {
                  });
      </script>
      </body>
@@ -119,7 +119,7 @@ The following screenshot displays **Bullet Graph** with comparative measure valu
         </div>
      <script type="text/javascript">
            angular.module('BulletGraphApp', ['ejangular'])
-             .controller('BulletGraphCtrl', function ($scope) {
+           .controller('BulletGraphCtrl', function ($scope) {
                  });
      </script>
      </body>
@@ -149,7 +149,7 @@ Bullet Graph is oriented either horizontally or vertically using orientation pro
         </div>
      <script type="text/javascript">
            angular.module('BulletGraphApp', ['ejangular'])
-             .controller('BulletGraphCtrl', function ($scope) {
+           .controller('BulletGraphCtrl', function ($scope) {
                  });
      </script>
      </body>
@@ -174,7 +174,7 @@ The Flow direction of Bullet Graph is customized using flowDirection property. D
         </div>
      <script type="text/javascript">
            angular.module('BulletGraphApp', ['ejangular'])
-             .controller('BulletGraphCtrl', function ($scope) {
+           .controller('BulletGraphCtrl', function ($scope) {
                  });
      </script>
      </body>
@@ -204,7 +204,7 @@ Size of the Qualitative range is customized using qualitativeRangeSize property.
         </div>
      <script type="text/javascript">
            angular.module('BulletGraphApp', ['ejangular'])
-             .controller('BulletGraphCtrl', function ($scope) {
+           .controller('BulletGraphCtrl', function ($scope) {
                  });
      </script>
      </body>
@@ -234,7 +234,7 @@ Length of the **Quantitative****scale** is customized using **quantitativeScaleL
         </div>
      <script type="text/javascript">
            angular.module('BulletGraphApp', ['ejangular'])
-             .controller('BulletGraphCtrl', function ($scope) {
+           .controller('BulletGraphCtrl', function ($scope) {
                  });
      </script>
      </body>

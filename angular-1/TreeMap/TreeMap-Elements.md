@@ -39,8 +39,9 @@ You can customize the labels of the **legend item** using `e-legendLabel` proper
     <body ng-controller="TreemapCtrl">
      <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
      <ej-treemap e-datasource=populationdata e-colorValuePath="Growth" e-weightvaluepath="Population"
-     e-showlegend="true" e-itemslayoutmode="squarified" e-legendsettings-height="40" e-legendsettings-width="700">
-      <e-rangecolormapping>
+     e-showlegend="true" e-itemslayoutmode="squarified" e-legendsettings-height="40" 
+     e-legendsettings-width="700">
+     <e-rangecolormapping>
      <e-rangecolor e-color="#77D8D8" e-from="0" e-to="1" e-legendlabel="Range1"></e-rangecolor>
      <e-rangecolor e-color="#AED960" e-from="0" e-to="2" e-legendlabel="Range2"></e-rangecolor>
      <e-rangecolor e-color="#FFAF51" e-from="0" e-to="3" e-legendlabel="Range3"></e-rangecolor>
@@ -52,8 +53,8 @@ You can customize the labels of the **legend item** using `e-legendLabel` proper
      </ej-treemap>
      </div>
      <script>
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+     angular.module('TreemapApp', ['ejangular'])
+     .controller('TreemapCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -88,14 +89,15 @@ You can provide the left and right labels to interactive legend by using `e-lege
     </head> 
     <body ng-controller="TreemapCtrl">
      <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
-     <ej-treemap e-showlegend="true" e-legendsettings-height="15" e-legendsettings-width="150" e-legendsettings-mode="interactive"
-     e-legendsettings-title="population" e-legendsettings-leftLabel="0.5M" e-legendsettings-righlabel="40M" e-legendsettings-dockposition="top">
-    //...
+     <ej-treemap e-showlegend="true" e-legendsettings-height="15" e-legendsettings-width="150" 
+     e-legendsettings-mode="interactive" e-legendsettings-title="population" 
+     e-legendsettings-leftLabel="0.5M" e-legendsettings-righlabel="40M" e-legendsettings-dockposition="top">
+     //...
      </ej-treemap>
      </div>
      <script>
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+     angular.module('TreemapApp', ['ejangular'])
+     .controller('TreemapCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -122,18 +124,19 @@ You can set headers for each level by setting the `e-showHeader` property of the
      <ej-treemap >
     //...
      <e-levels>
-     <e-level e-grouppath="Continent" e-groupgap="2" e-headerheight="25" e-headertemplate="headertemplate"></e-level>
+     <e-level e-grouppath="Continent" e-groupgap="2" e-headerheight="25" 
+     e-headertemplate="headertemplate"></e-level>
      </e-levels>
      </ej-treemap>
      </div>
-       <script  id="headertemplate" type="application/htmlrender">
-        <div style="background-color: white; margin:5px">
-            <label style="color:black;font-size:large;" >{{:header}}</label><br />            
-        </div>                        
-    </script>    
+     <script  id="headertemplate" type="application/htmlrender">
+     <div style="background-color: white; margin:5px">
+     <label style="color:black;font-size:large;" >{{:header}}</label><br />            
+     </div>                        
+     </script>    
      <script>
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+     angular.module('TreemapApp', ['ejangular'])
+     .controller('TreemapCtrl', function ($scope) {
                         });
     </script>
     </body>
@@ -159,21 +162,23 @@ You can also set labels for the leaf nodes by setting the `e-showLabels` propert
     </head> 
     <body ng-controller="TreemapCtrl">
      <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
-     <ej-treemap e-leafitemsettings-labelpath="Region" e-leafitemsettings-showlabels="true" e-legendsettings-height="40" e-legendsettings-width="700">
-    //...
+     <ej-treemap e-leafitemsettings-labelpath="Region" e-leafitemsettings-showlabels="true" 
+     e-legendsettings-height="40" e-legendsettings-width="700">
+     //...
      <e-levels>
-     <e-level e-grouppath="Continent" e-showlabels="true" e-groupgap="2" e-headerheight="20" e-headertemplate="headertemplate" e-labelposition="topleft" ></e-level>
+     <e-level e-grouppath="Continent" e-showlabels="true" e-groupgap="2" e-headerheight="20" 
+     e-headertemplate="headertemplate" e-labelposition="topleft" ></e-level>
      </e-levels>
      </ej-treemap>
      </div>
-       <script  id="headertemplate" type="application/htmlrender">
-        <div style="background-color: white; margin:5px">
-            <label style="color:black;font-size:large;" >{{:header}}</label><br />            
-        </div>                        
-    </script>    
+     <script  id="headertemplate" type="application/htmlrender">
+     <div style="background-color: white; margin:5px">
+     <label style="color:black;font-size:large;" >{{:header}}</label><br />            
+     </div>                        
+     </script>    
      <script>
-           angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+     angular.module('TreemapApp', ['ejangular'])
+     .controller('TreemapCtrl', function ($scope) {
                         });
     </script>
     </body>

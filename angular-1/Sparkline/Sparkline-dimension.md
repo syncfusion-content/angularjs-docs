@@ -27,8 +27,8 @@ You can customize the Sparkline dimension by setting the width and height for th
     <ej-sparkline></ej-sparkline>
     </div>
     <script>
-        angular.module('SparkApp', ['ejangular'])
-            .controller('SparkCtrl', function ($scope) {
+    angular.module('SparkApp', ['ejangular'])
+    .controller('SparkCtrl', function ($scope) {
                    });
     </script>
 </body>
@@ -51,16 +51,12 @@ You can also set the Sparkline dimension by using the `e-size` property of the S
     </head>
   <body ng-controller="SparkCtrl">
     <div id="container" >
-    <ej-sparkline e-size="sparksize"></ej-sparkline>
+    <ej-sparkline e-size-height="40px" e-size-width="60px"></ej-sparkline>
     </div>
     <script>
-        angular.module('SparkApp', ['ejangular'])
-            .controller('SparkCtrl', function ($scope) {
-             $scope.sparksize = {
-                    height: "40",
-                    width: "60"
-                };
-                   });
+    angular.module('SparkApp', ['ejangular'])
+    .controller('SparkCtrl', function ($scope) {
+               });
     </script>
 </body>
 </html>
@@ -83,8 +79,8 @@ To resize the Sparkline when the browser or the sparkline container is resized, 
     <ej-sparkline e-isresponsive="true"></ej-sparkline>
     </div>
     <script>
-        angular.module('SparkApp', ['ejangular'])
-            .controller('SparkCtrl', function ($scope) {
+    angular.module('SparkApp', ['ejangular'])
+    .controller('SparkCtrl', function ($scope) {
                 });
     </script>
 </body>

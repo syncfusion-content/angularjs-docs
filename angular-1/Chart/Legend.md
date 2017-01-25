@@ -26,8 +26,8 @@ By default, the legend is enabled in the chart. You can enable or disable it by 
         <div id="container" ej-chart e-legend-visible="true">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                      });
         </script>
     </body>
@@ -53,8 +53,8 @@ To add the title to the legend, you have to specify the `e-legend-title-text` op
         <div id="container" ej-chart e-legend-title-text="Countries">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                      });
         </script>
     </body>
@@ -81,8 +81,8 @@ By using the `e-legend-position`option, you can position the legend at *left*, *
         <div id="container" ej-chart e-legend-position="top">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                      });
         </script>
     </body>
@@ -107,8 +107,8 @@ You can align the legend to the *center*, *far* or *near* based on its position 
         <div id="container" ej-chart e-legend-position="top" e-legend-alignment="far">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                      });
         </script>
     </body>
@@ -144,8 +144,8 @@ You can arrange the legend items horizontally and vertically by using the `e-leg
         <div id="container" ej-chart e-legend-rowcount="4" e-legend-columncount="4">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                      });
         </script>
     </body>
@@ -173,8 +173,8 @@ To change the legend icon shape, you have to specify the shape in the `e-legend-
         <div id="container" ej-chart e-legend-shape="seriesType">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                      });
         </script>
     </body>
@@ -197,12 +197,13 @@ You can change the size of the legend items by using the `width` and `height` op
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart e-legend-itemstyle="itemstyle">
+        <div id="container" ej-chart e-legend-itemstyle-width="13"
+        e-legend-itemstyle-height="13" e-legend-itemstyle-border-color="#FF0000"
+        e-legend-itemstyle-border-width="1">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.itemstyle={ width: 13, height: 13, border: { color: "#FF0000", width: 1 } };
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {    
                      });
         </script>
     </body>
@@ -223,12 +224,11 @@ By default, legend takes 20% of the **height** horizontally when it was placed o
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart e-legend-size="size">
+        <div id="container" ej-chart e-legend-size-width="550px" e-legend-size-height="100px">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.size={ width: "550", height: "100" };
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {                  
                      });
         </script>
     </body>
@@ -256,8 +256,8 @@ You can control the spacing between the legend items by using the `e-legend-item
         <div id="container" ej-chart e-legend-itempadding="15">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                      });
         </script>
     </body>
@@ -283,8 +283,8 @@ You can customize the legend border by using the `e-legend-border` option in the
         <div id="container" ej-chart e-legend-border-color="#FFC342" e-legend-border-width="2">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                     });
         </script>
     </body>
@@ -306,12 +306,12 @@ You can enable or disable the legend scrollbar by using the `e-legend-enableScro
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart e-legend-size="size" e-legend-enablescrollbar="true">
+        <div id="container" ej-chart e-legend-size-width="430px"
+        e-legend-size-height="80px" e-legend-enablescrollbar="true">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                    $scope.size={width:"430",height:"80"};
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {              
                     });
         </script>
     </body>
@@ -335,13 +335,14 @@ To customize the legend item text and title you can use the `e-legend-font` and 
     </head>
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart e-legend-font-fontfamily="Segoe UI"
-         e-legend-font-fontstyle="normal" e-legend-font-fontweight="bold" e-legend-font-size="15px" e-legend-title-textalignment="center"
-          e-legend-title-font-fontfamily="Segoe UI"
-         e-legend-title-font-fontstyle="Italic" e-legend-title-font-fontweight="bold" e-legend-title-font-size="12px" >
+        e-legend-font-fontstyle="normal" e-legend-font-fontweight="bold" e-legend-font-size="15px" 
+        e-legend-title-textalignment="center" e-legend-title-font-fontfamily="Segoe UI"
+        e-legend-title-font-fontstyle="Italic" e-legend-title-font-fontweight="bold" 
+        e-legend-title-font-size="12px" >
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                     });
         </script>
     </body>
@@ -369,8 +370,8 @@ You can trim the legend item text when its width exceeds the `e-legend-textWidth
         <div id="container" ej-chart e-legend-textoverflow="trim" e-legend-textwidth="34">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                     });
         </script>
     </body>
@@ -409,11 +410,11 @@ You can get the legend item details such as *index*, *bounds*, *shape* and *seri
         <div id="container" ej-chart e-legenditemclick=onlegendclicked>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                     $scope.onlegendclicked="onlegendclicked";
                     });
-         function onlegendclicked(sender) {
+        function onlegendclicked(sender) {
         //Get legend item details on legend item click.
         var legendItem = sender.data;
         }
@@ -439,8 +440,8 @@ You can select a specific series or point while clicking on the corresponding le
         <div id="container" ej-chart e-toggleseriesvisibility="false">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                     });
     </script>
     </body>
@@ -467,18 +468,21 @@ You can collapse the specific series/point legend item displaying in the chart, 
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart  e-legend-visible="true">
         <e-series>
-        <e-series e-points="points"></e-series>
+        <e-series>
+        <e-points>
+        <e-points e-x="Albania" e-y="60.1"></e-points>
+          //...
+           //Collapse the point's legend item in the legend collection
+        <e-points e-x="New Zealand" e-y="82.8" e-visibleOnLegend="hidden"></e-points>
+        </e-points>
+        </e-series>
         </e-series>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.points=[{ x: 'Albania', y: 60.1 },
-                     //...
-                     //Collapse the point's legend item in the legend collection
-                     { x: 'New Zealand', y: 82.8, visibleOnLegend:'hidden' }]
-                  }];
-                   });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+              
+            });
         </script>
     </body>
 </html>

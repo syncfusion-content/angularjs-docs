@@ -24,21 +24,16 @@ You can create horizontal stripline by adding the `e-primaryxaxis-stripline` in 
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-primaryyaxis-stripline="stripline">
+        <div id="container" ej-chart>
+        <e-primaryyaxis-stripline>
+        <e-primaryyaxis-stripline e-visible="true" e-start="30" e-end="40">
+        </e-primaryyaxis-stripline>
+        </e-primaryyaxis-stripline>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.stripline=[
-                     //Create horizontal Stripline using vertical Axis
-                     {
-                         //Enable Stripline
-                         visible: true,
-                         start: 30,
-                         end: 40,
-                     },
-                      // ...
-                   ];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+              
                    });
         </script>
     </body>
@@ -67,21 +62,15 @@ You can create vertical stripline by adding the `e-primaryyaxis-stripline` in th
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-primaryxaxis-stripline="stripline">
+        <div id="container" ej-chart>
+        <e-primaryxaxis-stripline>
+        <e-primaryxaxis-stripline e-visible="true" e-start="3" e-end="7">
+        </e-primaryxaxis-stripline>
+        </e-primaryxaxis-stripline>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.stripline=[
-                     //Create horizontal Stripline using vertical Axis
-                     {
-                         //Enable Stripline
-                         visible: true,
-                         start: 3,
-                         end: 7,
-                     },
-                      // ...
-                   ];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {      
                    });
         </script>
     </body>
@@ -104,17 +93,17 @@ To customize the stripLine text, use the `text` and `font`options.
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-primaryyaxis-stripline="stripline">
+        <div id="container" ej-chart>
+        <e-primaryyaxis-stripline>
+        <e-primaryyaxis-stripline e-text="High Temperature" e-font-size="18px"
+        e-font-color="white">
+        </e-primaryyaxis-stripline>
+        </e-primaryyaxis-stripline>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.stripline=[{
-                          //Customize the stripLine text and font styles
-                   text: 'High Temperature',
-                   font: { size: '18px', color: 'white' }      
-                   // ...                         
-                     }];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+              
                    });
         </script>
     </body>
@@ -138,16 +127,15 @@ Stripline text can be aligned by using the `textAlignment` property.
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-primaryyaxis-stripline="stripline">
+        <div id="container" ej-chart>
+        <e-primaryyaxis-stripline>
+        <e-primaryyaxis-stripline e-textalignment="middletop">
+        </e-primaryyaxis-stripline>
+        </e-primaryyaxis-stripline>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.stripline=[{
-                    //Set stripLine text alignment to top position
-                    textAlignment: 'middletop',          
-                   // ...                         
-                     }];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {                
                    });
         </script>
     </body>
@@ -172,20 +160,17 @@ To customize the stripLine styles, use the `color`, `opacity`, `borderWidth`and 
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-primaryyaxis-stripline="stripline">
+        <div id="container" ej-chart>
+        <e-primaryyaxis-stripline>
+        <e-primaryyaxis-stripline e-color="#33CCFF" e-borderwidth="2" e-opacity="0.5"
+        e-bordercolor="red">
+        </e-primaryyaxis-stripline>
+        </e-primaryyaxis-stripline>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.stripline=[{
-                    //Customize the StripLine rectangle
-                         color: '#33CCFF',
-                         borderWidth: 2,
-                         opacity: 0.5,
-                         borderColor: 'red',   
-                   // ...                         
-                     }];
-                   });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                  });
         </script>
     </body>
 </html>
@@ -210,17 +195,16 @@ Stripline `zIndex`] property is used to display the stripLine either behind or o
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart  e-primaryyaxis-stripline="stripline">
+        <div id="container" ej-chart>
+        <e-primaryyaxis-stripline>
+        <e-primaryyaxis-stripline e-zindex="over">
+        </e-primaryyaxis-stripline>
+        </e-primaryyaxis-stripline>
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
-                  $scope.stripline=[{
-                      //Change stripLine zIndex
-                        zindex: 'over',
-                   // ...                         
-                     }];
-                   });
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                });
         </script>
     </body>
 </html>

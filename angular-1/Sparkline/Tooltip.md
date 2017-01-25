@@ -23,8 +23,8 @@ A tooltip follows the pointer movement and is used to indicate the value of a po
     <ej-sparkline e-tooltip-visible="true" ></ej-sparkline>
     </div>
     <script>
-        angular.module('SparkApp', ['ejangular'])
-            .controller('SparkCtrl', function ($scope) {
+    angular.module('SparkApp', ['ejangular'])
+    .controller('SparkCtrl', function ($scope) {
                 });
     </script>
     </body>
@@ -57,8 +57,8 @@ HTML elements can be displayed in the tooltip by using the [`template`](../api/e
     <ej-sparkline e-tooltip-visible="true" e-tooltip-template="item"></ej-sparkline>
     </div>
     <script>
-        angular.module('SparkApp', ['ejangular'])
-            .controller('SparkCtrl', function ($scope) {
+    angular.module('SparkApp', ['ejangular'])
+    .controller('SparkCtrl', function ($scope) {
                 });
     </script>
     </body>

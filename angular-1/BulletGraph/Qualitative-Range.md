@@ -20,15 +20,17 @@ documentation: ug
     </head>
     <body ng-controller="BulletGraphCtrl">
         <div id="bulletframe">
-                 <ej-bulletgraph e-qualitativerangesize="80"  e-height="200" e-quantativescalesettings-location-x="50" e-quantativescalesettings-location-y="20"
-                 e-quantativescalesettings-minimum="0" e-quantativescalesettings-maximum="100" e-quantativescalesettings-interval="10" e-quantativescalesettings-featureMeasures="featureMeasures">
-                  <e-qualitativeranges>
-                <e-qualitativerange e-rangeend="35" e-rangestroke="darkred" e-rangeopacity="0.5"></e-qualitativerange>
-                <e-qualitativerange e-rangeend="50" e-rangestroke="red" e-rangeopacity="1"></e-qualitativerange>
-                <e-qualitativerange e-rangeend="75" e-rangestroke="blue" e-rangeopacity="0.7"></e-qualitativerange>
-                <e-qualitativerange e-rangeend="90" e-rangestroke="lightblue" e-rangeopacity="1"></e-qualitativerange>
-                <e-qualitativerange e-rangeend="100" e-rangestroke="green" e-rangeopacity="1"></e-qualitativerange>
-            </e-qualitativeranges>
+                 <ej-bulletgraph e-qualitativerangesize="80"  e-height="200" e-quantativescalesettings-location-x="50" 
+                 e-quantativescalesettings-location-y="20"  e-quantativescalesettings-minimum="0" 
+                 e-quantativescalesettings-maximum="100" e-quantativescalesettings-interval="10"
+                 e-quantativescalesettings-featureMeasures="featureMeasures">
+                 <e-qualitativeranges>
+                 <e-qualitativerange e-rangeend="35" e-rangestroke="darkred" e-rangeopacity="0.5"></e-qualitativerange>
+                 <e-qualitativerange e-rangeend="50" e-rangestroke="red" e-rangeopacity="1"></e-qualitativerange>
+                 <e-qualitativerange e-rangeend="75" e-rangestroke="blue" e-rangeopacity="0.7"></e-qualitativerange>
+                 <e-qualitativerange e-rangeend="90" e-rangestroke="lightblue" e-rangeopacity="1"></e-qualitativerange>
+                 <e-qualitativerange e-rangeend="100" e-rangestroke="green" e-rangeopacity="1"></e-qualitativerange>
+                 </e-qualitativeranges>
                  </ej-bulletgraph>
         </div>
         <script type="text/javascript">

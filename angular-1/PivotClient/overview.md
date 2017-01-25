@@ -1,10 +1,11 @@
 ---
-title: PivotClient Control Overview	
-description: Overview of PivotClient control
+layout: post
+title: Overview
+description: overview
 platform: Angular-1
 control: pivotclient
 documentation: ug
-keywords: pivotclient features, key features, pivotclient overview 
+keywords: ejpivotclient, pivotclient, pivotclient widget, js pivotclient 
 ---
 
 # Overview
@@ -16,10 +17,13 @@ The **PivotClient** control for **Essential JavaScript** provides support to bin
 
 The key features of the **PivotClient** control is as follows:
 
-* **Data Source:** Binds the **PivotClient** control with Relational data source and with **XML/A** data sources.
+* **Data Source:** Binds the **PivotClient** control with Relational data source and with Microsoft Analysis Services databases and **XML/A** data sources.
 * **Axis Element Builder:** Allows building an **OLAP/Pivot** report by placing elements in the different axes of the **PivotClient**. There are four axes that are supported namely column, row, slicer and values.
 * **Member Editor:** Lists out the members of the selected field for Relational data source and members of the selected hierarchy in a tree-view-like structure for OLAP data source.
 * **Toolbar:** The toolbar of the **PivotClient** component provide options for exporting and manipulating the **OLAP/Pivot** report such as add report, new report, remove report, etc.,
 * **Cube Dimension Browser:** A tree-view-like structure that organizes the dimensions, measures and named sets from the selected OLAP cube into independent logical groups.
 * **Field List:** List which explores the fields available in Relational data source connected.
 * **Visualization Controls:** For a diagrammatic representation of multidimensional data.
+
+
+

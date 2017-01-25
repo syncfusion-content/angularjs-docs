@@ -43,7 +43,7 @@ The `e-dataSource` property accepts the collection values as input. For example,
                    { Continent: "Africa", Region: "Southern Africa", Growth: 0.91, Population: 60425000 }
         ];
            angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+           .controller('TreemapCtrl', function ($scope) {
                     $scope.populationdata=population_data;
                         });
     </script>

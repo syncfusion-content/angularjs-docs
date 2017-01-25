@@ -49,7 +49,7 @@ N> All the properties in EjChart supports one way AngularJS binding except inner
           { month: 'Oct', sales: 30 }, { month: 'Nov', sales: 25 }, { month: 'Dec', sales: 32 }];
           
         angular.module('ChartApp', ['ejangular'])
-            .controller('ChartCtrl', function ($scope) {
+        .controller('ChartCtrl', function ($scope) {
                 $scope.dataSource = chartData;
         });
     </script>
@@ -72,7 +72,15 @@ N> All the properties in EjChart supports one way AngularJS binding except inner
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart >
         <e-series>
-        <e-series e-points="points"></e-series>
+        <e-series >
+        <e-points>
+        <e-points e-x="John" e-y="10000"></e-points>
+        <e-points e-x="Jake" e-y="12000"></e-points>
+        <e-points e-x="Peter" e-y="18000"></e-points>
+        <e-points e-x="James" e-y="11000"></e-points>
+        <e-points e-x="Mary" e-y="9700"></e-points>
+        </e-points>
+        </e-series>
         </e-series>
         </div>  
     </body>
@@ -83,9 +91,7 @@ N> All the properties in EjChart supports one way AngularJS binding except inner
   <script>
                 angular.module('ChartApp', ['ejangular'])
                 .controller('ChartCtrl', function ($scope) {
-                  $scope.points= [{ x: "John", y: 10000 }, { x: "Jake", y: 12000 }, { x: "Peter", y: 18000 },
-                        { x: "James", y: 11000 }, { x: "Mary", y: 9700 }]
-                   });
+                });
         </script>
 
 {% endhighlight %}
@@ -126,7 +132,7 @@ You can bind the remote data to the chart by using the DataManager and you can u
         // Query creation
         var query = ej.Query().from("Orders").take(6);
         angular.module('ChartApp', ['ejangular'])
-            .controller('ChartCtrl', function ($scope) {
+        .controller('ChartCtrl', function ($scope) {
                  $scope.dataSource = dataManger;
                  $scope.query = query;
         });

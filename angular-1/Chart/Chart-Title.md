@@ -21,13 +21,14 @@ By using the title option, you can add the `e-title-text` as well as customize i
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart e-title-text= "Efficiency of oil-fired power production"  e-title-background="lightblue" 
-        e-title-border-color="blue" e-title-border-width="2"  e-title-border-opacity="0.5"  e-title-border-cornerradius="4" 
-        e-title-font-fontfamily="Arial" e-title-font-fontstyle="italic"  e-title-font-fontweight="normal" e-title-font-size="23px" >
+        <div id="container" ej-chart e-title-text= "Efficiency of oil-fired power production" 
+        e-title-background="lightblue" e-title-border-color="blue" e-title-border-width="2" 
+        e-title-border-opacity="0.5"  e-title-border-cornerradius="4" e-title-font-fontfamily="Arial" 
+        e-title-font-fontstyle="italic"  e-title-font-fontweight="normal" e-title-font-size="23px" >
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -53,8 +54,8 @@ We can trim, wrap and wrapAndTrim to the chart title using textOverflow property
         e-title-enabletrim="true"  e-title-maximumwidth="15" e-title-textoverflow="trim" >
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -76,11 +77,12 @@ You can change the title alignment to *center*, *far* and *near* by using the `e
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart e-title-text= "Efficiency of oil-fired power production"  e-title-textalignment="near">
+        <div id="container" ej-chart e-title-text= "Efficiency of oil-fired power production"
+        e-title-textalignment="near">
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -103,13 +105,16 @@ By using the subTitle option, you can add the `e-title-subTitle` to the chart ti
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart e-title-subtitle-text= "( in a week )"  e-title-subtitle-background="lightblue" 
-        e-title-subtitle-border-color="blue" e-title-subtitle-border-width="2"  e-title-subtitle-border-opacity="0.5"  e-title-subtitle-border-cornerradius="4" 
-        e-title-subtitle-font-fontfamily="Arial" e-title-subtitle-font-fontstyle="italic"  e-title-subtitle-font-fontweight="normal" e-subtitle-title-font-size="23px" >
+        <div id="container" ej-chart e-title-subtitle-text= "( in a week )"  
+        e-title-subtitle-background="lightblue" 
+        e-title-subtitle-border-color="blue" e-title-subtitle-border-width="2" 
+        e-title-subtitle-border-opacity="0.5"  e-title-subtitle-border-cornerradius="4" 
+        e-title-subtitle-font-fontfamily="Arial" e-title-subtitle-font-fontstyle="italic"
+        e-title-subtitle-font-fontweight="normal" e-subtitle-title-font-size="23px" >
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -131,11 +136,12 @@ We can trim, wrap and wrapAndTrim to the chart subtitle using textOverflow prope
     </head>
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart e-title-subtitle-text= "( in  a  week )"  
-        e-title-subtitle-enabletrim="true"  e-title-subtitle-maximumwidth="50" e-title-subtitle-textoverflow="wrap" >
+        e-title-subtitle-enabletrim="true"  e-title-subtitle-maximumwidth="50"
+        e-title-subtitle-textoverflow="wrap" >
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>
@@ -158,11 +164,12 @@ You can change the subtitle alignment to *center*, *far* and *near* by using the
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart e-title-subtitle-text= "( in  a  week )"  e-title-subtitle-textalignment="center" >
+        <div id="container" ej-chart e-title-subtitle-text= "( in  a  week )" 
+         e-title-subtitle-textalignment="center" >
         </div>
         <script>
-                angular.module('ChartApp', ['ejangular'])
-                .controller('ChartCtrl', function ($scope) {
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
                    });
         </script>
     </body>

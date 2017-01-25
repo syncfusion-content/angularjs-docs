@@ -31,7 +31,7 @@ The following code sample explains how to link these libraries from a [Content D
 {% highlight js %}
 
     <!--  jquery script  -->
-      <script src="http://code.jquery.com/jquery-1.10.1.min.js"                      type="text/javascript"></script>
+      <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
     <!-- Essential JS UI widget -->
       <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.angular.min.js"></script>
     <!-- JS Render widget -->
@@ -73,7 +73,7 @@ Add a **&lt;script&gt;** tag anywhere in a web page and initialize **TreeMap** a
         <script>
             //..
             angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+            .controller('TreemapCtrl', function ($scope) {
                     $scope.populationdata = population_data;
                     $scope.WValuePath = "Population";
                 });
@@ -93,21 +93,20 @@ Populate the TreeMap data in JSON object. For example, you can use population da
       <script type="text/javascript">
 
         var population_data = [
-                   { Continent: "Asia", Region: "Southern Asia", Growth: 1.32, Population: 1749046000 },
-                   { Continent: "Asia", Region: "Eastern Asia", Growth: 0.57, Population: 1620807000 },
-                   { Continent: "Asia", Region: "South-Eastern Asia", Growth: 1.20, Population: 618793000 },
-                   { Continent: "Asia", Region: "Western Asia", Growth: 1.98, Population: 245707000 },
-                   { Continent: "Asia", Region: "Central Asia", Growth: 1.43, Population: 64370000 },
-                   { Continent: "Europe", Region: "Europe", Growth: 0.10, Population: 742452000 },
-                   { Continent: "America", Region: "South America", Growth: 1.06, Population: 406740000 },
-                   { Continent: "America", Region: "Northern America", Growth: 0.85, Population: 355361000 },
-                   { Continent: "America", Region: "Central America", Growth: 1.40, Population: 167387000 },
-                   { Continent: "Africa", Region: "Eastern Africa", Growth: 2.89, Population: 373202000 },
-                   { Continent: "Africa", Region: "Western Africa", Growth: 2.78, Population: 331255000 },
-                   { Continent: "Africa", Region: "Northern Africa", Growth: 1.70, Population: 210002000 },
-                   { Continent: "Africa", Region: "Middle Africa", Growth: 2.79, Population: 135750000 },
-                   { Continent: "Africa", Region: "Southern Africa", Growth: 0.91, Population: 60425000 }
-        ]
+             { Continent: "Asia", Region: "Southern Asia", Growth: 1.32, Population: 1749046000 },
+             { Continent: "Asia", Region: "Eastern Asia", Growth: 0.57, Population: 1620807000 },
+             { Continent: "Asia", Region: "South-Eastern Asia", Growth: 1.20, Population: 618793000 },
+             { Continent: "Asia", Region: "Western Asia", Growth: 1.98, Population: 245707000 },
+             { Continent: "Asia", Region: "Central Asia", Growth: 1.43, Population: 64370000 },
+             { Continent: "Europe", Region: "Europe", Growth: 0.10, Population: 742452000 },
+             { Continent: "America", Region: "South America", Growth: 1.06, Population: 406740000 },
+             { Continent: "America", Region: "Northern America", Growth: 0.85, Population: 355361000 },
+             { Continent: "America", Region: "Central America", Growth: 1.40, Population: 167387000 },
+             { Continent: "Africa", Region: "Eastern Africa", Growth: 2.89, Population: 373202000 },
+             { Continent: "Africa", Region: "Western Africa", Growth: 2.78, Population: 331255000 },
+             { Continent: "Africa", Region: "Northern Africa", Growth: 1.70, Population: 210002000 },
+             { Continent: "Africa", Region: "Middle Africa", Growth: 2.79, Population: 135750000 },
+             { Continent: "Africa", Region: "Southern Africa", Growth: 0.91, Population: 60425000 }]
       </script>
     </head>
 
@@ -142,33 +141,32 @@ The final **HTML** file is illustrated in the following code sample.
         <script type="text/javascript">
 
             var population_data = [
-                   { Continent: "Asia", Region: "Southern Asia", Growth: 1.32, Population: 1749046000 },
-                   { Continent: "Asia", Region: "Eastern Asia", Growth: 0.57, Population: 1620807000 },
-                   { Continent: "Asia", Region: "South-Eastern Asia", Growth: 1.20, Population: 618793000 },
-                   { Continent: "Asia", Region: "Western Asia", Growth: 1.98, Population: 245707000 },
-                   { Continent: "Asia", Region: "Central Asia", Growth: 1.43, Population: 64370000 },
-                   { Continent: "Europe", Region: "Europe", Growth: 0.10, Population: 742452000 },
-                   { Continent: "America", Region: "South America", Growth: 1.06, Population: 406740000 },
-                   { Continent: "America", Region: "Northern America", Growth: 0.85, Population: 355361000 },
-                   { Continent: "America", Region: "Central America", Growth: 1.40, Population: 167387000 },
-                   { Continent: "Africa", Region: "Eastern Africa", Growth: 2.89, Population: 373202000 },
-                   { Continent: "Africa", Region: "Western Africa", Growth: 2.78, Population: 331255000 },
-                   { Continent: "Africa", Region: "Northern Africa", Growth: 1.70, Population: 210002000 },
-                   { Continent: "Africa", Region: "Middle Africa", Growth: 2.79, Population: 135750000 },
-                   { Continent: "Africa", Region: "Southern Africa", Growth: 0.91, Population: 60425000 }
-            ]
+             { Continent: "Asia", Region: "Southern Asia", Growth: 1.32, Population: 1749046000 },
+             { Continent: "Asia", Region: "Eastern Asia", Growth: 0.57, Population: 1620807000 },
+             { Continent: "Asia", Region: "South-Eastern Asia", Growth: 1.20, Population: 618793000 },
+             { Continent: "Asia", Region: "Western Asia", Growth: 1.98, Population: 245707000 },
+             { Continent: "Asia", Region: "Central Asia", Growth: 1.43, Population: 64370000 },
+             { Continent: "Europe", Region: "Europe", Growth: 0.10, Population: 742452000 },
+             { Continent: "America", Region: "South America", Growth: 1.06, Population: 406740000 },
+             { Continent: "America", Region: "Northern America", Growth: 0.85, Population: 355361000 },
+             { Continent: "America", Region: "Central America", Growth: 1.40, Population: 167387000 },
+             { Continent: "Africa", Region: "Eastern Africa", Growth: 2.89, Population: 373202000 },
+             { Continent: "Africa", Region: "Western Africa", Growth: 2.78, Population: 331255000 },
+             { Continent: "Africa", Region: "Northern Africa", Growth: 1.70, Population: 210002000 },
+             { Continent: "Africa", Region: "Middle Africa", Growth: 2.79, Population: 135750000 },
+             { Continent: "Africa", Region: "Southern Africa", Growth: 0.91, Population: 60425000 }]
 
         </script>
       </head>
     <body>
-    	   
-      <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;" ej-treemap e-datasource="populationdata" e-weightvaluepath="WValuePath">
+    	  
+      <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;" ej-treemap 
+      e-datasource="populationdata" e-weightvaluepath="WValuePath">
 
     </div>
         <script>
-
             angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+            .controller('TreemapCtrl', function ($scope) {
                     $scope.populationdata = population_data;
                     $scope.WValuePath = "Population";
                 });
@@ -208,9 +206,8 @@ The following code sample explains how to group TreeMap Items using ‘Levels’
         </div>
     </div>
         <script>
-
             angular.module('TreemapApp', ['ejangular'])
-                .controller('TreemapCtrl', function ($scope) {
+           .controller('TreemapCtrl', function ($scope) {
                     //..
                     $scope.gname = "Continent";
                     $scope.gap = 5;

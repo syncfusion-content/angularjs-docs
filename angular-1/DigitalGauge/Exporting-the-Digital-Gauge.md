@@ -16,11 +16,11 @@ documentation: ug
 <div id="DigitalGauge1" ej-digitalgauge e-value="SYNCFUSION"></div>
 <button id="btnSubmit">Export</button>
 <div id=" fileName ">FileName </div>
-  <input type="text" id="fileName"/>
+<input type="text" id="fileName"/>
 <div id=" fileFormat ">FileFormat </div>
 <select id="fileFormat">
-    <option value="JPEG">JPEG</option>
-    <option value="PNG">PNG</option>
+<option value="JPEG">JPEG</option>
+<option value="PNG">PNG</option>
 </select>
 
 {% endhighlight %}
