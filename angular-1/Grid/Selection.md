@@ -2,7 +2,7 @@
 layout: post
 title: Selection with Grid widget for Syncfusion Essential AngularJS
 description: How to enable selection and its functionalities
-platform: Angular-1
+platform: angular-1
 control: Grid
 documentation: ug
 --- 
@@ -19,20 +19,20 @@ There are two types of selections available in grid. They are
 
 ### Single Selection
 
-Single selection is an interactive support to select a specific row, cell or column in grid by mouse or keyboard interactions. To enable single selection by setting [`e-selectiontype`](http://help.syncfusion.com/api/js/ejgrid#members:selectiontype "selectionType") property as `single` and also set [`e-allowselection`](http://help.syncfusion.com/api/js/ejgrid#members:allowselection "allowSelection") property as `true`.
+Single selection is an interactive support to select a specific row, cell or column in grid by mouse or keyboard interactions. To enable single selection, set [`e-selectiontype`](http://help.syncfusion.com/api/js/ejgrid#members:selectiontype "selectionType") property as `single` and also set [`e-allowselection`](http://help.syncfusion.com/api/js/ejgrid#members:allowselection "allowSelection") property as `true`.
 
 ### Multiple Selections
 
-Multiple selections is an interactive support to select a group of rows, cells or columns in grid by mouse or keyboard interactions. To enable multiple selections by set [`e-selectiontype`](http://help.syncfusion.com/api/js/ejgrid#members:selectiontype "selectionType") property as `multiple` and also set [`e-allowselection`](http://help.syncfusion.com/api/js/ejgrid#members:allowselection "allowSelection") property as `true`.
+Multiple selections is an interactive support to select a group of rows, cells or columns in grid by mouse or keyboard interactions. To enable multiple selections, set [`e-selectiontype`](http://help.syncfusion.com/api/js/ejgrid#members:selectiontype "selectionType") property as `multiple` and also set [`e-allowselection`](http://help.syncfusion.com/api/js/ejgrid#members:allowselection "allowSelection") property as `true`.
 
 ## Row Selection
 
-Row selection is enabled by set [`selectionMode`](http://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`e-selectionsettings`](http://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") as `row`. For random row selection, press **"Ctrl + mouse left"** click and for continuous row selection press **"Shift + mouse left"** click on the grid rows. To unselect selected rows, by press **"Ctrl + mouse left"** click on selected row.
+Row selection is enabled by setting [`selectionMode`](http://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`e-selectionsettings`](http://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") as `row`. For random row selection, press **"Ctrl + mouse left"** click and for continuous row selection press **"Shift + mouse left"** click on the grid rows. To unselect selected rows, press **"Ctrl + mouse left"** click on selected row.
 
 The following code example describes the above behavior.
 
 {% highlight html %}
- <div ng-controller="PhoneListCtrl">
+ <div ng-controller="rowSelectionCtrl">
      <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true"  e-allowfiltering="true" e-allowselection="true" e-selectionsettings="selectionMode" e-selectiontype="multiple">
           <div e-columns>
              <div e-column e-field="OrderID" ></div>
@@ -46,7 +46,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-    syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+    syncApp.controller('rowSelectionCtrl', function ($scope,$rootScope) {
        //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
         $scope.data = window.gridData;
 		 $scope.selectionMode = { selectionMode: ["row"] };
@@ -60,12 +60,12 @@ The following output is displayed as a result of the above code example
 
 ## Cell Selection
 
-Cell selection is enabled by set [`selectionMode`](http://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`e-selectionsettings`](http://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") as `cell`. For random cell selection, press **"Ctrl + mouse left"** click and for continuous cell selection, press **"Shift + mouse left"** click on the grid cells. To unselect selected cells, press **"Ctrl + mouse left"** on selected cell click.
+Cell selection is enabled by setting [`selectionMode`](http://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`e-selectionsettings`](http://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") as `cell`. For random cell selection, press **"Ctrl + mouse left"** click and for continuous cell selection, press **"Shift + mouse left"** click on the grid cells. To unselect selected cells, press **"Ctrl + mouse left"** on selected cell click.
 
 The following code example describes the above behavior.
 
 {% highlight html %}
- <div ng-controller="PhoneListCtrl">
+ <div ng-controller="cellSelectionCtrl">
      <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true"  e-allowfiltering="true" e-allowselection="true" e-selectionsettings="selectionMode" e-selectiontype="multiple">
           <div e-columns>
              <div e-column e-field="OrderID" ></div>
@@ -79,7 +79,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-     syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+     syncApp.controller('cellSelectionCtrl', function ($scope,$rootScope) {
        //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
         $scope.data = window.gridData;
 		$scope.selectionMode = { selectionMode: ["cell"] };
@@ -98,7 +98,7 @@ The following output is displayed as a result of the above code example
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
+<div ng-controller="columnSelectionCtrl">
      <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true"  e-allowfiltering="true" e-allowselection="true" e-selectionsettings="selectionMode" e-selectiontype="multiple">
           <div e-columns>
              <div e-column e-field="OrderID" ></div>
@@ -112,7 +112,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-      syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+      syncApp.controller('columnSelectionCtrl', function ($scope,$rootScope) {
        //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
             $scope.data = window.gridData;
 		$scope.selectionMode = { selectionMode: ["column"] };
@@ -131,7 +131,7 @@ While using grid in a [touch](http://help.syncfusion.com/api/js/ejgrid#members:e
 The following code example describes the above behavior. 
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
+<div ng-controller="selectListCtrl">
      <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-enabletouch="true" e-allowfiltering="true" e-allowselection="true" e-selectiontype="multiple">
           <div e-columns>
              <div e-column e-field="OrderID" ></div>
@@ -145,7 +145,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-      syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+      syncApp.controller('selectListCtrl', function ($scope,$rootScope) {
        //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
         $scope.data = window.gridData;
       });
@@ -165,7 +165,7 @@ N> If multi selection is enabled, then in first click on any selected row (witho
 The following code example describes the above behavior. 
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
+<div ng-controller="toggleListCtrl">
      <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-allowselection="true" e-selectionsettings="Settings">
           <div e-columns>
              <div e-column e-field="OrderID" ></div>
@@ -179,7 +179,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-      syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+      syncApp.controller('toggleListCtrl', function ($scope,$rootScope) {
        //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
         $scope.data = window.gridData;
 		$scope.Settings = {enableToggle: true };
