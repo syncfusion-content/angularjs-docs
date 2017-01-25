@@ -21,15 +21,15 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 <div ng-controller="dataBindCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true">
           <div e-columns>
              <div e-column e-field="OrderID" ></div>
-             <div e-column e-field="EmployeeID" ></div>
-             <div e-column e-field="ShipCity" ></div>
-             <div e-column e-field="ShipCountry" ></div>
+             <div e-column e-field="EmployeeID"></div>
+             <div e-column e-field="ShipCity"></div>
+             <div e-column e-field="ShipCountry"></div>
              <div e-column e-field="Freight"></div>
-            </div>
-       </div>
+          </div>
+     </div>
  </div>
 {% endhighlight %}
 
@@ -66,12 +66,12 @@ The following code example describes the above behavior.
      <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true">
           <div e-columns>
              <div e-column e-field="OrderID" ></div>
-             <div e-column e-field="EmployeeID" ></div>
-             <div e-column e-field="ShipCity" ></div>
-             <div e-column e-field="ShipCountry" ></div>
+             <div e-column e-field="EmployeeID"></div>
+             <div e-column e-field="ShipCity"></div>
+             <div e-column e-field="ShipCountry"></div>
              <div e-column e-field="Freight"></div>
-            </div>
-       </div>
+          </div>
+     </div>
  </div>
 
 {% endhighlight %}
