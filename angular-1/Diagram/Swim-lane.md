@@ -223,8 +223,6 @@ var swimlane = {
 
 {% endhighlight %}
 
-{% endhighlight %}
-
 ### Add nodes to a lane
 
 To add nodes to a lane, You need to add them to the `children` collection of lane. The following code example illustrates how to add nodes to a lane.
