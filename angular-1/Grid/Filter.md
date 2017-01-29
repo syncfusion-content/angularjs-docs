@@ -2,7 +2,7 @@
 layout: post
 title: Filtering with Grid widget for Syncfusion Essential AngularJS
 description: How to enable filtering and its functionalities
-platform: Angular-1
+platform: angular-1
 control: Grid
 documentation: ug
 --- 
@@ -25,28 +25,28 @@ And also four types of filter menu is available in all filter types, they are
 
 The corresponding filter menu is opened based on the column type.
 
-N> 1. Need to specify the [`type`](http://help.syncfusion.com/api/js/ejgrid#members:columns-type "type") of column, when first record data value is empty or null otherwise the filter menu is not opened. 
-N> 2. The default filter type is Filter bar, when `e-allowfiltering` is enabled and [`e-filtertype`](http://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "filterType") is not set.
+N> 1. Need to specify the [`e-type`](http://help.syncfusion.com/api/js/ejgrid#members:columns-type "type") of column, when first record data value is empty or null otherwise the filter menu is not opened. 
+N> 2. The default filter type is Filter bar, when `e-allowfiltering` is enabled and [`filtertype`](http://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "filterType") is not set.
 
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true"  e-allowfiltering="true">
+<div ng-controller="FilteringCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-allowfiltering="true">
           <div e-columns>
-             <div e-column e-field="OrderID" ></div>
-             <div e-column e-field="EmployeeID" ></div>
-             <div e-column e-field="CustomerID" ></div>
-             <div e-column e-field="ShipCountry" ></div>
+             <div e-column e-field="OrderID"></div>
+             <div e-column e-field="EmployeeID"></div>
+             <div e-column e-field="CustomerID"></div>
+             <div e-column e-field="ShipCountry"></div>
              <div e-column e-field="Freight"></div>
-            </div>
-       </div>
+          </div>
+     </div>
  </div>
         
 {% endhighlight %}
 
 {% highlight javascript %}
-     syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+     syncApp.controller('FilteringCtrl', function ($scope,$rootScope) {
        //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
         $scope.data = window.gridData;
 
@@ -69,22 +69,22 @@ N> For [`filterType`](http://help.syncfusion.com/api/js/ejgrid#members:filterset
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true"  e-allowfiltering="true" e-filtersettings="filterType" >
+<div ng-controller="FilteringmenuCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-allowfiltering="true" e-filtersettings="filterType" >
           <div e-columns>
              <div e-column e-field="OrderID"></div>
              <div e-column e-field="EmployeeID"></div>
              <div e-column e-field="CustomerID"></div>
              <div e-column e-field="OrderDate" e-format="{0:MM/dd/yyyy}"></div>
              <div e-column e-field="Verified"></div>
-            </div>
-       </div>
+          </div>
+     </div>
  </div>
 {% endhighlight %}
 
 {% highlight javascript %}
    
-      syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+      syncApp.controller('FilteringmenuCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.filterType = { filterType: "menu" }
@@ -118,21 +118,21 @@ You can enable excel menu by setting  [`e-filtersettings`] of [`filterType`](htt
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true"  e-allowfiltering="true" e-filtersettings="filterType">
+<div ng-controller="FilteringexcelCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-allowfiltering="true" e-filtersettings="filterType">
           <div e-columns>
-             <div e-column e-field="OrderID" ></div>
-             <div e-column e-field="EmployeeID" ></div>
-             <div e-column e-field="CustomerID" ></div>
-             <div e-column e-field="ShipCountry" ></div>
+             <div e-column e-field="OrderID"></div>
+             <div e-column e-field="EmployeeID"></div>
+             <div e-column e-field="CustomerID"></div>
+             <div e-column e-field="ShipCountry"></div>
              <div e-column e-field="Freight"></div>
-            </div>
-       </div>
+          </div>
+     </div>
  </div>
 {% endhighlight %}
 
 {% highlight javascript %}
-     syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+     syncApp.controller('FilteringexcelCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.filterType = { filterType: "excel" }
@@ -156,13 +156,13 @@ N> 2. [`ej.Query`](http://help.syncfusion.com/api/js/ejquery# "ej.Query") of che
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true"  e-allowfiltering="true" e-filtersettings="filterType">
+<div ng-controller="CheckboxCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-allowfiltering="true" e-filtersettings="filterType">
           <div e-columns>
-             <div e-column e-field="OrderID" ></div>
-             <div e-column e-field="EmployeeID" ></div>
-             <div e-column e-field="CustomerID" ></div>
-             <div e-column e-field="ShipCountry" ></div>
+             <div e-column e-field="OrderID"></div>
+             <div e-column e-field="EmployeeID"></div>
+             <div e-column e-field="CustomerID"></div>
+             <div e-column e-field="ShipCountry"></div>
              <div e-column e-field="Freight"></div>
             </div>
        </div>
@@ -170,7 +170,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-    syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+    syncApp.controller('CheckboxCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.filterType = { filterType: "excel",maxFilterChoices : 4 }
@@ -189,21 +189,21 @@ To perform filter operation with case sensitive in excel styled filter menu mode
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true"  e-allowfiltering="true" e-filtersettings="filterType">
+<div ng-controller="EnablecaseCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-allowfiltering="true" e-filtersettings="filterType">
           <div e-columns>
-             <div e-column e-field="OrderID" ></div>
-             <div e-column e-field="EmployeeID" ></div>
-             <div e-column e-field="CustomerID" ></div>
-             <div e-column e-field="ShipCountry" ></div>
+             <div e-column e-field="OrderID"></div>
+             <div e-column e-field="EmployeeID"></div>
+             <div e-column e-field="CustomerID"></div>
+             <div e-column e-field="ShipCountry"></div>
              <div e-column e-field="Freight"></div>
-            </div>
-       </div>
+          </div>
+     </div>
  </div>
 {% endhighlight %}
 
 {% highlight javascript %}
-     syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+     syncApp.controller('EnablecaseCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.filterType = { filterType: "excel", enableCaseSensitivity: true }
@@ -217,7 +217,7 @@ The following output is displayed as a result of the above code example.
 
 ## Filter bar
 
-[Filter bar](http://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "Filter bar") row is located next to column header of grid. You can filter the records with different expressions depending upon the column type. To show the filter bar row, set the [`filterType`](http://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "filterType") as `filterbar`.
+[`Filterbar`](http://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "Filter bar") row is located next to column header of grid. You can filter the records with different expressions depending upon the column type. To show the filter bar row, set the [`filterType`](http://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "filterType") as `filterbar`.
 
 List of Filter bar Expressions:
 
@@ -360,22 +360,22 @@ You can enter the below filter expressions manually in the filter bar.
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true"  e-allowfiltering="true" e-filtersettings="filterType">
+<div ng-controller="FilterbarCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-allowfiltering="true" e-filtersettings="filterType">
           <div e-columns>
-             <div e-column e-field="OrderID" ></div>
-             <div e-column e-field="EmployeeID" ></div>
-             <div e-column e-field="CustomerID" ></div>
-             <div e-column e-field="ShipCountry" ></div>
+             <div e-column e-field="OrderID"></div>
+             <div e-column e-field="EmployeeID"></div>
+             <div e-column e-field="CustomerID"></div>
+             <div e-column e-field="ShipCountry"></div>
              <div e-column e-field="Freight"></div>
           </div>
-       </div>
+     </div>
  </div>
 {% endhighlight %}
    
 {% highlight javascript %}
 
-     syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+     syncApp.controller('FilterbarCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.filterType = { filterType: "filterbar" }
@@ -404,13 +404,13 @@ The filter bar message is supported only for the [`filterType`](http://help.sync
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true"  e-allowfiltering="true" e-filtersettings="filterType">
+<div ng-controller="FilterbarCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-allowfiltering="true" e-filtersettings="filterType">
           <div e-columns>
-             <div e-column e-field="OrderID" ></div>
-             <div e-column e-field="EmployeeID" ></div>
-             <div e-column e-field="CustomerID" ></div>
-             <div e-column e-field="ShipCountry" ></div>
+             <div e-column e-field="OrderID"></div>
+             <div e-column e-field="EmployeeID"></div>
+             <div e-column e-field="CustomerID"></div>
+             <div e-column e-field="ShipCountry"></div>
              <div e-column e-field="Freight"></div>
           </div>
        </div>
@@ -418,7 +418,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-    syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+    syncApp.controller('FilterbarCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.filterType = {showFilterBarMessage: true }
