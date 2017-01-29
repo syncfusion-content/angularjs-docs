@@ -175,4 +175,4 @@ The following code example describes the above behavior.
    
 The following output is displayed as a result of the above code example.
 
-![](Row_images/Row_img3.png)
+![](Row_images/Row_img2.png)
