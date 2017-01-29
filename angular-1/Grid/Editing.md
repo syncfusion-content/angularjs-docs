@@ -29,13 +29,13 @@ The following code example describes the above behavior.
 <div ng-controller="ToolbarCtrl">
      <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" >
           <div e-columns>
-             <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
+             <div e-column e-field="OrderID" e-isprimarykey="true"></div>
              <div e-column e-field="CustomerID" ></div>
              <div e-column e-field="EmployeeID" ></div>
              <div e-column e-field="ShipCity" ></div>
              <div e-column e-field="ShipCountry"></div>
-           </div>
-       </div>
+          </div>
+      </div>
  </div>
 {% endhighlight %}
 
@@ -59,7 +59,7 @@ The edit type of bound column can be customized using [`e-edittype`](http://help
 
 * [`CheckBox`](http://help.syncfusion.com/api/js/ejcheckbox# "CheckBox") control for boolean data type.
 * [`NumericTextBox`](http://help.syncfusion.com/api/js/ejtextboxes# "NumericTextBox") control for integers, double, and decimal data types.
-* `InputTextBox` control for string data type.
+* [`InputTextBox`] control for string data type.
 * [`DatePicker`](http://help.syncfusion.com/api/js/ejdatepicker# "DatePicker") control for date data type.
 * [`DateTimePicker`](http://help.syncfusion.com/api/js/ejdatetimepicker# "DateTimePicker") control for date-time data type.
 * [`DropDownList`](http://help.syncfusion.com/api/js/ejdropdownlist# "DropDownList") control for list of data type.
@@ -118,15 +118,15 @@ The following code example describes the above behavior.
 <div ng-controller="EditTypeCtrl">
      <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" >
           <div e-columns>
-             <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
-             <div e-column e-field="CustomerID" e-edittype="stringedit" ></div>
+              <div e-column e-field="OrderID" e-isprimarykey="true"></div>
+              <div e-column e-field="CustomerID" e-edittype="stringedit" ></div>
 			  <div e-column e-field="Freight" e-edittype="numericedit" e-editparams-decimalplaces="2" ></div>
               <div e-column e-field="ShipCity" e-edittype="dropdownedit" e-editparams-enableAnimation="true" ></div>
               <div e-column e-field="ShipCountry"></div>
 			  <div e-column e-field="OrderDate" e-edittype="datepicker" e-format="{0:MM/dd/yyyy}"></div>
 			  <div e-column e-field="Verified" e-edittype="booleanedit" e-editparams-showroundedcorner="true" ></div>
-           </div>
-       </div>
+          </div>
+     </div>
  </div>
 {% endhighlight %}
 
@@ -156,15 +156,15 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 <div ng-controller="EditTemplateCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" >
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" >
           <div e-columns>
-              <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
+              <div e-column e-field="OrderID" e-isprimarykey="true"></div>
               <div e-column e-field="CustomerID"></div>
 			  <div e-column e-field="Freight"></div>
               <div e-column e-field="ShipCountry"></div>
 			  <div e-column e-field="ShipPostalCode" e-edittemplate="editTemp"></div>
 		  </div>
-       </div>
+      </div>
  </div>
 {% endhighlight %}
 
@@ -211,8 +211,8 @@ The following code example describes the above behavior.
 <div ng-controller="InlineCtrl">
      <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" >
           <div e-columns>
-             <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
-             <div e-column e-field="CustomerID" ></div>
+              <div e-column e-field="OrderID" e-isprimarykey="true"></div>
+              <div e-column e-field="CustomerID"></div>
 			  <div e-column e-field="Freight" e-edittype="numericedit"></div>
               <div e-column e-field="ShipCountry" e-edittype="dropdownedit" ></div>
               <div e-column e-field="OrderDate" e-edittype="datepicker" e-format="{0:MM/dd/yyyy}"></div>
@@ -243,15 +243,15 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 <div ng-controller="InlineFormCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" >
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" >
           <div e-columns>
-             <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
-             <div e-column e-field="CustomerID" ></div>
+              <div e-column e-field="OrderID" e-isprimarykey="true"></div>
+              <div e-column e-field="CustomerID" ></div>
 			  <div e-column e-field="Freight" e-edittype="numericedit"></div>
               <div e-column e-field="ShipCountry" e-edittype="dropdownedit" ></div>
               <div e-column e-field="OrderDate" e-edittype="datepicker" e-format="{0:MM/dd/yyyy}"></div>
 		  </div>
-       </div>
+     </div>
  </div>
 {% endhighlight %}
 
@@ -287,14 +287,14 @@ N> 4.  For [`editMode`](http://help.syncfusion.com/api/js/ejgrid#members:editset
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" e-actioncomplete="actionComplete">
+<div ng-controller="InlineTemplateCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" e-actioncomplete="actionComplete">
           <div e-columns>
-             <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
-             <div e-column e-field="CustomerID" ></div>
+              <div e-column e-field="OrderID" e-isprimarykey="true"></div>
+              <div e-column e-field="CustomerID" ></div>
 			  <div e-column e-field="ShipCity"></div>
-           </div>
-       </div>
+          </div>
+     </div>
  </div>
  
    <script id="template" type="text/ng-template">
@@ -331,7 +331,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-       syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+       syncApp.controller('InlineTemplateCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true,editMode: "inlineformtemplate", inlineFormTemplateID: "#template" };
@@ -364,11 +364,11 @@ Set [`editMode`](http://help.syncfusion.com/api/js/ejgrid#members:editsettings-e
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" >
+<div ng-controller="DialogCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" >
           <div e-columns>
-             <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
-             <div e-column e-field="CustomerID" ></div>
+              <div e-column e-field="OrderID" e-isprimarykey="true"></div>
+              <div e-column e-field="CustomerID" ></div>
 			  <div e-column e-field="Freight" e-edittype="numericedit"></div>
               <div e-column e-field="ShipCountry" e-edittype="dropdownedit" ></div>
               <div e-column e-field="OrderDate" e-edittype="datepicker" e-format="{0:MM/dd/yyyy}"></div>
@@ -378,7 +378,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-     syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+     syncApp.controller('DialogCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true , editMode:"dialog"};
@@ -408,14 +408,14 @@ N> 3. For [`editMode`](http://help.syncfusion.com/api/js/ejgrid#members:editsett
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" e-actioncomplete="actionComplete">
+<div ng-controller="DialogTemplateCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" e-actioncomplete="actionComplete">
           <div e-columns>
-             <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
-             <div e-column e-field="CustomerID" ></div>
+              <div e-column e-field="OrderID" e-isprimarykey="true"></div>
+              <div e-column e-field="CustomerID" ></div>
 			  <div e-column e-field="ShipCity"></div>
-           </div>
-       </div>
+          </div>
+     </div>
  </div>
  <script id="template" type="text/template">
         <table cellspacing="10">
@@ -451,7 +451,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-     syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+     syncApp.controller('DialogTemplateCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true,editMode: "dialogtemplate",  dialogEditorTemplateID: "#template" };
@@ -481,21 +481,21 @@ By setting the [`editMode`](http://help.syncfusion.com/api/js/ejgrid#members:edi
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" e-pagesettings-pagesize="7">
+<div ng-controller="ExternalFormCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" e-pagesettings-pagesize="7">
           <div e-columns>
-             <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
-             <div e-column e-field="CustomerID" ></div>
+              <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
+              <div e-column e-field="CustomerID" ></div>
 			  <div e-column e-field="Freight" e-edittype="numericedit"></div>
               <div e-column e-field="ShipCountry" e-edittype="dropdownedit" ></div>
               <div e-column e-field="OrderDate" e-edittype="datepicker" e-format="{0:MM/dd/yyyy}"></div>
-		  </div>
+		   </div>
        </div>
  </div>
 {% endhighlight %}
 
 {% highlight javascript %}
-       syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+       syncApp.controller('ExternalFormCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true , editMode:"externalform"};
@@ -520,15 +520,15 @@ This can be achieved by setting the [`formPosition`](http://help.syncfusion.com/
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
+<div ng-controller="FormCtrl">
      <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" e-pagesettings-pagesize="7">
           <div e-columns>
-             <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
-             <div e-column e-field="CustomerID" ></div>
+              <div e-column e-field="OrderID" e-isprimarykey="true"></div>
+              <div e-column e-field="CustomerID"></div>
 			  <div e-column e-field="Freight" e-edittype="numericedit"></div>
               <div e-column e-field="ShipCountry" e-edittype="dropdownedit" ></div>
           </div>
-       </div>
+     </div>
  </div>
 {% endhighlight %}
 
@@ -563,14 +563,14 @@ N> 3. For [`editMode`](http://help.syncfusion.com/api/js/ejgrid#members:editsett
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" e-pagesettings-pagesize="5" e-actioncomplete="actionComplete">
+<div ng-controller="ExternalTemplateCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems" e-pagesettings-pagesize="5" e-actioncomplete="actionComplete">
           <div e-columns>
-             <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
-             <div e-column e-field="CustomerID" ></div>
+              <div e-column e-field="OrderID" e-isprimarykey="true"></div>
+              <div e-column e-field="CustomerID" ></div>
 			  <div e-column e-field="ShipCity"></div>
-           </div>
-       </div>
+          </div>
+     </div>
  </div>
  <script id="template" type="text/template">
         <table cellspacing="10">
@@ -606,7 +606,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-        syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+        syncApp.controller('ExternalTemplateCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true,editMode: "externalformtemplate",  externalFormTemplateID: "#template" };
@@ -638,21 +638,21 @@ N> Refer the KB [link](http://www.syncfusion.com/kb/3016/how-to-suppress-grid-co
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems">
+<div ng-controller="BatchCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems">
           <div e-columns>
-             <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
+             <div e-column e-field="OrderID" e-isprimarykey="true"></div>
              <div e-column e-field="CustomerID" ></div>
 			  <div e-column e-field="Freight" e-edittype="numericedit"></div>
               <div e-column e-field="ShipCountry" e-edittype="dropdownedit" ></div>
 			  <div e-column e-field="OrderDate" e-edittype="datepicker" e-format="{0:MM/dd/yyyy}" ></div>
           </div>
-       </div>
+     </div>
  </div>
 {% endhighlight %}
 
 {% highlight javascript %}
-     syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+     syncApp.controller('BatchCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true , editMode:"batch"};
@@ -674,21 +674,21 @@ N> [`showConfirmDialog`](http://help.syncfusion.com/api/js/ejgrid#members:editse
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems">
+<div ng-controller="BatchCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems">
           <div e-columns>
-             <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
-             <div e-column e-field="CustomerID" ></div>
+              <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
+              <div e-column e-field="CustomerID" ></div>
 			  <div e-column e-field="Freight" e-edittype="numericedit"></div>
               <div e-column e-field="ShipCountry" e-edittype="dropdownedit" ></div>
 			  <div e-column e-field="OrderDate" e-edittype="datepicker" e-format="{0:MM/dd/yyyy}" ></div>
-          </div>
-       </div>
+           </div>
+      </div>
  </div>
 {% endhighlight %}
 
 {% highlight javascript %}
-        syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+        syncApp.controller('BatchCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true , editMode:"batch",showConfirmDialog:true};
@@ -708,21 +708,21 @@ N> [`showDeleteConfirmDialog`](http://help.syncfusion.com/api/js/ejgrid#members:
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems">
+<div ng-controller="EditingCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems">
           <div e-columns>
-             <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
-             <div e-column e-field="CustomerID" ></div>
+              <div e-column e-field="OrderID" e-isprimarykey="true"></div>
+              <div e-column e-field="CustomerID"></div>
 			  <div e-column e-field="Freight" e-edittype="numericedit"></div>
               <div e-column e-field="ShipCountry" e-edittype="dropdownedit" ></div>
 			  <div e-column e-field="OrderDate" e-edittype="datepicker" e-format="{0:MM/dd/yyyy}" ></div>
-          </div>
-       </div>
+           </div>
+      </div>
  </div>
 {% endhighlight %}
 
 {% highlight javascript %}
-     syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+     syncApp.controller('EditingCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true ,showDeleteConfirmDialog:true};
@@ -828,21 +828,21 @@ Grid supports all the standard validation methods of jQuery, please refer the jQ
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems">
+<div ng-controller="ValidationCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems">
           <div e-columns>
-             <div e-column e-field="OrderID" e-isprimarykey="true" e-validationrules-required="true"></div>
+              <div e-column e-field="OrderID" e-isprimarykey="true" e-validationrules-required="true"></div>
               <div e-column e-field="CustomerID" e-validationrules-minlength="3"></div>
-               <div e-column e-field="ShipCity" ></div>
+              <div e-column e-field="ShipCity"></div>
 			  <div e-column e-field="Freight" e-edittype="numericedit" e-validationrules-range="0, 1000"></div>
               <div e-column e-field="ShipCountry"></div>
           </div>
-       </div>
+     </div>
  </div>
 {% endhighlight %}
 
 {% highlight javascript %}
-     syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+     syncApp.controller('ValidationCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true ,showDeleteConfirmDialog:true};
@@ -872,17 +872,17 @@ You can use the `UrlAdaptor` of [`ejDataManger`](http://help.syncfusion.com/api/
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems">
+<div ng-controller="AdaptorCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems">
           <div e-columns>
-             <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
-              <div e-column e-field="CustomerID" ></div>
-               <div e-column e-field="EmployeeID" ></div>
-			  <div e-column e-field="Freight" e-edittype="numericedit" e-format="{0:C}" ></div>
-              <div e-column e-field="ShipName" ></div>
+              <div e-column e-field="OrderID" e-isprimarykey="true"></div>
+              <div e-column e-field="CustomerID"></div>
+              <div e-column e-field="EmployeeID"></div>
+			  <div e-column e-field="Freight" e-edittype="numericedit" e-format="{0:C}"></div>
+              <div e-column e-field="ShipName"></div>
 			  <div e-column e-field="ShipCountry"></div>
           </div>
-       </div>
+     </div>
  </div>
  
 {% endhighlight %}
@@ -897,7 +897,7 @@ The following code example describes the above behavior.
 		  removeUrl : "/Home/Delete",
     });
 
-     syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+     syncApp.controller('Adaptor', function ($scope,$rootScope) {
           $scope.data = dataManger;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true ,showDeleteConfirmDialog:true};
           $scope.toolbarItems = { showToolbar: true, toolbarItems: ["add", "edit", "delete", "update", "cancel"] }
@@ -1100,17 +1100,17 @@ The action parameter of `crudUrl` is used to get the corresponding CRUD action.
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems">
+<div ng-controller="AdaptorCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems">
           <div e-columns>
-             <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
+              <div e-column e-field="OrderID" e-isprimarykey="true"></div>
               <div e-column e-field="CustomerID" ></div>
-               <div e-column e-field="EmployeeID" ></div>
+              <div e-column e-field="EmployeeID" ></div>
 			  <div e-column e-field="Freight" e-edittype="numericedit" e-format="{0:C}" ></div>
               <div e-column e-field="ShipName" ></div>
 			  <div e-column e-field="ShipCountry"></div>
           </div>
-       </div>
+     </div>
  </div>
  
  {% endhighlight %}
@@ -1123,7 +1123,7 @@ The following code example describes the above behavior.
           crudUrl : "Home/CrudUpdate",
 	  });
 
-     syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+     syncApp.controller('AdaptorCtrl', function ($scope,$rootScope) {
           $scope.data = dataManger;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true ,showDeleteConfirmDialog:true};
           $scope.toolbarItems = { showToolbar: true, toolbarItems: ["add", "edit", "delete", "update", "cancel"] }
@@ -1152,17 +1152,17 @@ The `batchUrl` property supports only for batch editing mode. You can specify th
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems">
+<div ng-controller="AdaptorCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems">
           <div e-columns>
-             <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
+              <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
               <div e-column e-field="CustomerID" ></div>
-               <div e-column e-field="EmployeeID" ></div>
+              <div e-column e-field="EmployeeID" ></div>
 			  <div e-column e-field="Freight" e-edittype="numericedit" e-format="{0:C}" ></div>
               <div e-column e-field="ShipName" ></div>
 			  <div e-column e-field="ShipCountry"></div>
           </div>
-       </div>
+     </div>
  </div>
  {% endhighlight %}
 
@@ -1175,7 +1175,7 @@ The following code example describes the above behavior.
           batchUrl : "Home/BatchUpdate"
 	  });
 
-     syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+     syncApp.controller('AdaptorCtrl', function ($scope,$rootScope) {
           $scope.data = dataManger;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true ,showDeleteConfirmDialog:true};
           $scope.toolbarItems = { showToolbar: true, toolbarItems: ["add", "edit", "delete", "update", "cancel"] }
@@ -1206,22 +1206,22 @@ To add new row in the top or bottom position of grid content, set [`rowPosition`
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems">
+<div ng-controller="EditingCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems">
           <div e-columns>
-             <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
-              <div e-column e-field="CustomerID" ></div>
-               <div e-column e-field="ShipCity" ></div>
+              <div e-column e-field="OrderID" e-isprimarykey="true"></div>
+              <div e-column e-field="CustomerID"></div>
+              <div e-column e-field="ShipCity"></div>
 			  <div e-column e-field="Freight" e-edittype="numericedit"></div>
               <div e-column e-field="ShipCountry"></div>
           </div>
-       </div>
+     </div>
  </div>
 {% endhighlight %}
 
 {% highlight javascript %}
      
-      syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+      syncApp.controller('EditingCtrl', function ($scope,$rootScope) {
          //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true ,rowPosition:"bottom"};
@@ -1243,22 +1243,22 @@ The blank add new row is displayed either in the top or bottom of the correspond
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div ng-controller="PhoneListCtrl">
-     <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems">
+<div ng-controller="EditingCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems">
           <div e-columns>
-             <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
-              <div e-column e-field="CustomerID" ></div>
-               <div e-column e-field="ShipCity" ></div>
+              <div e-column e-field="OrderID" e-isprimarykey="true"></div>
+              <div e-column e-field="CustomerID"></div>
+              <div e-column e-field="ShipCity"></div>
 			  <div e-column e-field="Freight" e-edittype="numericedit"></div>
               <div e-column e-field="ShipCountry"></div>
           </div>
-       </div>
+     </div>
  </div>
 {% endhighlight %}
 
 {% highlight javascript %}
      
-     syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+     syncApp.controller('EditingCtrl', function ($scope,$rootScope) {
          //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true ,showAddNewRow : true};
@@ -1278,17 +1278,17 @@ N> 2. If it is local, then the newly added record is added at the top of the pag
 
 ## Default column values on add new
 
-While adding new record in grid, there is an option to set the default value for the columns. Using [`defaultValue`](http://help.syncfusion.com/api/js/ejgrid#members:columns-defaultvalue "defaultValue") property of [`columns`](http://help.syncfusion.com/api/js/ejgrid#members:columns "columns") you can set the default values for that particular column while editing or adding a new row.
+While adding new record in grid, there is an option to set the default value for the columns. Using [`e-defaultvalue`](http://help.syncfusion.com/api/js/ejgrid#members:columns-defaultvalue "defaultValue") property of [`columns`](http://help.syncfusion.com/api/js/ejgrid#members:columns "columns") you can set the default values for that particular column while editing or adding a new row.
 
 The following code example describes the above behavior.
 
 {% highlight html %}
- <div ng-controller="PhoneListCtrl">
+ <div ng-controller="EditingCtrl">
      <div id="Grid" ej-grid e-datasource="data"  e-allowpaging="true" e-editsettings="editSettings" e-toolbarsettings="toolbarItems">
           <div e-columns>
-             <div e-column e-field="OrderID" e-isprimarykey="true" ></div>
-              <div e-column e-field="CustomerID" ></div>
-               <div e-column e-field="ShipCity" e-defaultvalue="Bern"></div>
+              <div e-column e-field="OrderID" e-isprimarykey="true"></div>
+              <div e-column e-field="CustomerID"></div>
+              <div e-column e-field="ShipCity" e-defaultvalue="Bern"></div>
 			  <div e-column e-field="Freight" e-edittype="numericedit" e-defaultvalue="45"></div>
               <div e-column e-field="ShipCountry" e-defaultvalue="Brazil"></div>
           </div>
@@ -1297,7 +1297,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight javascript %}
-    syncApp.controller('PhoneListCtrl', function ($scope,$rootScope) {
+    syncApp.controller('EditingCtrl', function ($scope,$rootScope) {
          //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true};
