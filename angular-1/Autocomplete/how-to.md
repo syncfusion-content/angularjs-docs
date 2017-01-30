@@ -2,7 +2,7 @@
 layout: post
 title: see-also
 description: see also
-platform: js
+platform: angular-1
 control: Autocomplete
 documentation: ug
 ---

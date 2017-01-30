@@ -1,13 +1,13 @@
 ---
 layout: post
-title: behavior settings
-description: behavior settings
-platform: js
+title: Behavior Settings
+description: Behavior Settings
+platform: angular-1
 control: Control Name undefined
 documentation: ug
 ---
 
-## Behavior settings
+# Behavior settings
 
 ### Enabling rotator
 

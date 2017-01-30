@@ -2,7 +2,7 @@
 layout: post
 title: Keyboard-Interaction
 description: keyboard interaction
-platform: js
+platform: angular-1
 control: TreeView
 documentation: ug
 ---
