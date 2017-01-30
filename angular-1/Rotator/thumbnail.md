@@ -3,7 +3,7 @@ layout: post
 title: preview thumbnail
 description: preview thumbnail
 platform: angular-1
-control: Control Name undefined
+control: rotator
 documentation: ug
 ---
 

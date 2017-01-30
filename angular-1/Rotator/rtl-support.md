@@ -3,7 +3,7 @@ layout: post
 title: rtl support
 description: rtl support
 platform: angular-1
-control: Control Name undefined
+control: rotator
 documentation: ug
 ---
 

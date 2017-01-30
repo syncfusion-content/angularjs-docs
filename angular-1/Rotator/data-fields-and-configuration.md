@@ -3,7 +3,7 @@ layout: post
 title: data fields and configuration
 description: data fields and configuration
 platform: angular-1
-control: Control Name undefined
+control: rotator
 documentation: ug
 ---
 
