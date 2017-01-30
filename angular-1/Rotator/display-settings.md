@@ -2,7 +2,7 @@
 layout: post
 title: display settings
 description: display settings
-platform: js
+platform: angular-1
 control: Control Name undefined
 documentation: ug
 ---

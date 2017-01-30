@@ -2,7 +2,7 @@
 layout: post
 title: textbox-customization
 description: textbox customization
-platform: js
+platform: angular-1
 control: Autocomplete
 documentation: ug
 ---

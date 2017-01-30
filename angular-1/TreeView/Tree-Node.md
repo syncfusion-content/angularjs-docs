@@ -2,7 +2,7 @@
 layout: post
 title: Tree-Node
 description: tree node
-platform: js
+platform: angular-1
 control: TreeView
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Behaviour-Settings
 description: behaviour settings
-platform: js
+platform: angular-1
 control: Slider
 documentation: ug
 ---

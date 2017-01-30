@@ -2,7 +2,7 @@
 layout: post
 title: appearance and styling
 description: appearance and styling
-platform: js
+platform: angular-1
 control: Control Name undefined
 documentation: ug
 ---

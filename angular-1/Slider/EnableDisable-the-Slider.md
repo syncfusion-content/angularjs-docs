@@ -2,7 +2,7 @@
 layout: post
 title: EnableDisable-the-Slider
 description: enable/disable the slider
-platform: js
+platform: angular-1
 control: Slider
 documentation: ug
 ---

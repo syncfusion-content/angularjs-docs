@@ -2,7 +2,7 @@
 layout: post
 title: template
 description: template
-platform: js
+platform: angular-1
 control: Control Name undefined
 documentation: ug
 ---

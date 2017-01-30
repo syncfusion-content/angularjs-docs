@@ -2,7 +2,7 @@
 layout: post
 title: orientation
 description: orientation
-platform: js
+platform: angular-1
 control: Control Name undefined
 documentation: ug
 ---
