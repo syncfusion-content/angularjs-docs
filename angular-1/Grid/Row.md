@@ -22,7 +22,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
   <body ng-controller="detailTemplateCtrl">
-      <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-detailstemplate="detailTemp"  e-detailsdatabound="detailgrid">
+      <div id="Grid" ej-grid e-datasource="data" e-detailstemplate="detailTemp" e-detailsdatabound="detailgrid">
         <div e-columns>
             <div e-column e-field="EmployeeID" ></div>
             <div e-column e-field="FirstName" ></div>
