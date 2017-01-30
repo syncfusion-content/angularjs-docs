@@ -2,7 +2,7 @@
 layout: post
 title: Persistence-Support
 description: persistence support
-platform: js
+platform: angular-1
 control: Slider
 documentation: ug
 ---
@@ -32,8 +32,8 @@ In an **HTML** page, add a **<div>** element to render it as a **Slider** widget
 
 Execution of above code will render the below output 
 
-![](Enable_persistence/persist_img1.png)
+![](Enable_persistence_images/persist_img1.png)
 
 Change the handle values and refresh the page will shows the output like below.
 
-![](Enable_persistence/persist_img2.png)
+![](Enable_persistence_images/persist_img2.png)

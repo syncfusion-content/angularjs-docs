@@ -2,7 +2,7 @@
 layout: post
 title: Checkboxes
 description: checkboxes
-platform: js
+platform: angular-1
 control: TreeView
 documentation: ug
 ---

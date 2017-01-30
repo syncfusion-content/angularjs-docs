@@ -2,7 +2,7 @@
 layout: post
 title: animation
 description: animation
-platform: js
+platform: angular-1
 control: Angular- Dialog
 documentation: ug
 ---

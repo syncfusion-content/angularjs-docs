@@ -2,7 +2,7 @@
 layout: post
 title: Full-Row-Selection
 description: full row selection
-platform: js
+platform: angular-1
 control: TreeView
 documentation: ug
 ---

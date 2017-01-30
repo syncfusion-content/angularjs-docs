@@ -2,7 +2,7 @@
 layout: post
 title: Multiple-Drag-and-Drop
 description: multiple drag and drop
-platform: js
+platform: angular-1
 control: TreeView
 documentation: ug
 ---
