@@ -2,8 +2,8 @@
 layout: post
 title: template
 description: template
-platform: angular-1
-control: rotator
+platform: Angular-1
+control: Control Name undefined
 documentation: ug
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title: orientation
 description: orientation
-platform: angular-1
-control: rotator
+platform: Angular-1
+control: Control Name undefined
 documentation: ug
 ---
 

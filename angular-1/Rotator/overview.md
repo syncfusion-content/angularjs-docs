@@ -2,7 +2,7 @@
 layout: post
 title: overview
 description: overview
-platform: angular-1
+platform: Angular-1
 control: rotator
 documentation: ug
 ---
