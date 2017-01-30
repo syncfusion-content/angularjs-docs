@@ -3,7 +3,7 @@ layout: post
 title: Behavior Settings
 description: Behavior Settings
 platform: angular-1
-control: Control Name undefined
+control: rotator
 documentation: ug
 ---
 
