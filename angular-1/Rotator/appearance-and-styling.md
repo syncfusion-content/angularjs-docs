@@ -2,8 +2,8 @@
 layout: post
 title: appearance and styling
 description: appearance and styling
-platform: Angular-1
-control: Control Name undefined
+platform: angular-1
+control: rotator
 documentation: ug
 ---
 
