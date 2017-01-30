@@ -399,7 +399,7 @@ N> For [`filterBarMode`](http://help.syncfusion.com/api/js/ejgrid#members:filter
 
 Filter bar message:
 
-The filter bar message is supported only for the [`filterType`](http://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "filterType") as filterbar. The filtered data with column name is displayed in the grid pager itself. By default [`showFilterBarMessage`](http://help.syncfusion.com/api/js/ejgrid#members:filtersettings-showfilterbarmessage "showFilterBarMessage") is true.
+The filter bar message is supported only for the [`filterType`](http://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "filterType") as filterbar. The filtered data with column name is displayed in the grid pager itself. By default [`showFilterBarStatus`](http://help.syncfusion.com/api/js/ejgrid#members:filtersettings-showfilterbarmessage "showFilterBarMessage") is true.
 
 The following code example describes the above behavior.
 
@@ -421,7 +421,7 @@ The following code example describes the above behavior.
     syncApp.controller('FilterbarCtrl', function ($scope,$rootScope) {
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
           $scope.data = window.gridData;
-          $scope.filterType = {showFilterBarMessage: true }
+          $scope.filterType = {showFilterBarStatus: true }
       });
 
 {% endhighlight %}
