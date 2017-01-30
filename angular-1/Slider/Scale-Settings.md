@@ -2,7 +2,7 @@
 layout: post
 title: Scale-Settings
 description: scale settings
-platform: js
+platform: angular-1
 control: Slider
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: data fields and configuration
 description: data fields and configuration
-platform: js
+platform: angular-1
 control: Control Name undefined
 documentation: ug
 ---

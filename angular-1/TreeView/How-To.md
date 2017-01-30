@@ -2,7 +2,7 @@
 layout: post
 title: How-To
 description: how to
-platform: js
+platform: angular-1
 control: TreeView
 documentation: ug
 ---
