@@ -1131,7 +1131,7 @@ The following code example describes the above behavior.
 
 {% endhighlight %}
 
-{% highlight javascript %}
+{% highlight cs %}
 public ActionResult CrudUpdate(EditableOrder value, string action)
 {
 	//Delete record in database
@@ -1184,7 +1184,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 
-{% highlight c# %}
+{% highlight cs %}
 
 	public ActionResult BatchUpdate(string action, List<EditableOrder> added, List<EditableOrder> changed, List<EditableOrder> deleted, int? key)
 		{
