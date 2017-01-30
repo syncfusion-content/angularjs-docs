@@ -2,7 +2,7 @@
 layout: post
 title: keyboard interaction
 description: keyboard interaction
-platform: Angular-1
+platform: js
 control: Control Name undefined
 documentation: ug
 ---

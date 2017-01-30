@@ -2,7 +2,7 @@
 layout: post
 title: data fields and configuration
 description: data fields and configuration
-platform: Angular-1
+platform: js
 control: Control Name undefined
 documentation: ug
 ---
@@ -82,5 +82,5 @@ Rotator provides the data binding support for the Rotator item. So you can bi
 
 
 
-![](data-fields-and-configuration_images\localdatabinding_img1.png)
+![](data fields and configuration_images\localdatabinding_img1.png)
 

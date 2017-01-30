@@ -2,7 +2,7 @@
 layout: post
 title: preview thumbnail
 description: preview thumbnail
-platform: Angular-1
+platform: js
 control: Control Name undefined
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: rtl support
 description: rtl support
-platform: Angular-1
+platform: js
 control: Control Name undefined
 documentation: ug
 ---

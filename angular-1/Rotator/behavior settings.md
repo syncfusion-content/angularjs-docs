@@ -2,7 +2,7 @@
 layout: post
 title: behavior settings
 description: behavior settings
-platform: Angular-1
+platform: js
 control: Control Name undefined
 documentation: ug
 ---
@@ -63,7 +63,7 @@ The “e-showpager” property turns on or off the pager support in the Rot
 
 
 
-![](behavior-settings_images/showpager_img1.png)
+![](behavior settings_images\showpager_img1.png)
 
 #### Pager position
 
@@ -112,7 +112,7 @@ $scope.position = ej.Rotator.PagerPosition.BottomLeft;
 
 {% endhighlight %}
 
-![](behavior-settings_images/pagerposition_img1.png)
+![](behavior settings_images\pagerposition_img1.png)
 
 
 

@@ -2,7 +2,7 @@
 layout: post
 title: display settings
 description: display settings
-platform: Angular-1
+platform: js
 control: Control Name undefined
 documentation: ug
 ---
@@ -65,7 +65,7 @@ This property specifies the number of Rotator Items to be displayed. The defau
 
 
 
-![](display-settings_images\displayitemscount_img1.png)
+![](display settings_images\displayitemscount_img1.png)
 
 ### Navigation steps
 
@@ -103,7 +103,7 @@ This property specifies the number of Rotator Items to navigate on a single 
 
 
 
-![](display-settings_images\navigationsteps_img1.png)
+![](display settings_images\navigationsteps_img1.png)
 
 ### Set Starting index
 
@@ -141,7 +141,7 @@ This property e-startindex sets the index of the slide that is displayed first
 
 
 
-![](display-settings_images\setstartingindex_img1.png)
+![](display settings_images\setstartingindex_img1.png)
 
 ### Frame space
 
@@ -179,7 +179,7 @@ This e-framespace property sets the space between the Rotator Items. The value
 
 
 
-![](display-settings_images\framespace_img1.png)
+![](display settings_images\framespace_img1.png)
 
 ### Animation settings
 
@@ -466,7 +466,7 @@ This feature allows you to add text along with the image in Rotator control.
 
 
 
-![](display-settings_images\imagewithcontents_img1.png)
+![](display settings_images\imagewithcontents_img1.png)
 
 
 

@@ -2,7 +2,7 @@
 layout: post
 title: appearance and styling
 description: appearance and styling
-platform: Angular-1
+platform: js
 control: Control Name undefined
 documentation: ug
 ---
@@ -42,7 +42,7 @@ This e-slideheight property sets the height of a Rotator Item. The value set
 
 
 
-![](appearance-and-styling_images\slideheight_img1.png)
+![](appearance and styling_images\slideheight_img1.png)
 
 ### Showing Play button
 
@@ -56,7 +56,7 @@ The e-showplaybutton  property enables play / pause button on Rotator. The defa
 
 
 
-![](appearance-and-styling_images\showingplaybutton_img1.png)
+![](appearance and styling_images\showingplaybutton_img1.png)
 
 ### Showing Navigate button
 
@@ -70,7 +70,7 @@ The e-shownavigatebutton” property turns on or off the slide buttons (next and
 
 
 
-![](appearance-and-styling_images\showingnavigatebutton_img1.png)
+![](appearance and styling_images\showingnavigatebutton_img1.png)
 
 ### Image captions
 
@@ -82,7 +82,7 @@ When the Rotator Item is an image, you can specify a caption for the Rotator�
 
 
 
-![](appearance-and-styling_images\imagecaptions_img1.png)
+![](appearance and styling_images\imagecaptions_img1.png)
 
 
 ### Supported Themes
@@ -141,7 +141,7 @@ Add the following code in your CSS.
 
 
 
-![](appearance-and-styling_images\CustomizeusingCSSClass_img1.png)
+![](appearance and styling_images\CustomizeusingCSSClass_img1.png)
 
 
 
