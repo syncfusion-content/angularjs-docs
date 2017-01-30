@@ -42,6 +42,7 @@ The following code example describes the above behavior.
 
 {% highlight javascript %}
      syncApp.controller('columnTemplateCtrl', function ($scope,$rootScope) {
+        //The datasource "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
            $scope.data = window.employeeView;
        });
 {% endhighlight %}
