@@ -897,7 +897,7 @@ The following code example describes the above behavior.
 		  removeUrl : "/Home/Delete",
     });
 
-     syncApp.controller('Adaptor', function ($scope,$rootScope) {
+     syncApp.controller('AdaptorCtrl', function ($scope,$rootScope) {
           $scope.data = dataManger;
           $scope.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true ,showDeleteConfirmDialog:true};
           $scope.toolbarItems = { showToolbar: true, toolbarItems: ["add", "edit", "delete", "update", "cancel"] }
