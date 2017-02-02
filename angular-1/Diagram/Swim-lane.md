@@ -18,15 +18,16 @@ Add a placeholder `div` element that can be used to initialize the diagram widge
 {% highlight html %}
 
 <body>
-<div ng-controller="diagramCtrl">
-  <div>
-       <ej-diagram id="diagram" 
-       e-height="500px"
-       e-width="700px"
-       </ej-diagram>
-   </div>
-</div>
+    <div ng-controller="diagramCtrl">
+        <div>
+            <ej-diagram id="diagram" e-height="500px" e-width="700px" </ej-diagram>
+        </div>
+    </div>
 </body>
+
+{% endhighlight %}
+
+{% highlight javascript %}
 
     syncApp.controller('diagramCtrl', function ($scope) {
     });
@@ -43,16 +44,16 @@ The following code example illustrates how to define a swimlane object.
 
 var nodes = [];
 var swimlane = {
-	name: "swimlaneNode",
-	//Changes the orientation
-	orientation: "horizontal",
-	//Sets the position and size
-	offsetX: 400,
-	offsetY: 200,
-	height: 100,
-	width: 700,
-	//Sets the type of object as swimlane
-	isSwimlane: true
+    name: "swimlaneNode",
+    //Changes the orientation
+    orientation: "horizontal",
+    //Sets the position and size
+    offsetX: 400,
+    offsetY: 200,
+    height: 100,
+    width: 700,
+    //Sets the type of object as swimlane
+    isSwimlane: true
 };
 nodes.push(swimlane);
 
@@ -65,20 +66,20 @@ For more information about adding a node/swimlane to the Diagram, refer to [Add 
 
 The following code example illustrates how to add a swimlane to the Diagram through `nodes` collection.
 
-{% highlight javascript %}
+{% highlight html %}
 
-<body>
-<div ng-controller="diagramCtrl">
-  <div>
-       <ej-diagram id="diagram" 
-       e-width="100%" 
-       e-height="100%"       
-       e-nodes="swimlane"
-       </ej-diagram>
-   </div>
+  <div ng-controller="diagramCtrl">
+    <div>
+        <ej-diagram id="diagram" e-width="100%" e-height="100%" e-nodes="nodes"> </ej-diagram>
+    </div>
 </div>
-    syncApp.controller('diagramCtrl', function ($scope) {
-    $scope.nodes = swimlane;
+
+{% endhighlight %}
+
+	{% highlight javascript %}
+
+    syncApp.controller('diagramCtrl', function($scope) {
+        $scope.nodes = swimlane;
     });
 
 {% endhighlight %}
@@ -93,30 +94,34 @@ Swimlane allows to define a header to textually describe it. The `header` proper
 
 //Defines the header and format its text
 var header = {
-	text: "Swimlane",
-	height: 50,
-	fillColor: "#C7D4DF",
-	fontColor: "black", fontSize: 11, fontFamily: "Arial",
-	bold: true, italic: true, textDecoration: "underline"
+    text: "Swimlane",
+    height: 50,
+    fillColor: "#C7D4DF",
+    fontColor: "black",
+    fontSize: 11,
+    fontFamily: "Arial",
+    bold: true,
+    italic: true,
+    textDecoration: "underline"
 };
 
 //Initializes swimlane with header
 var swimlane = {
-	type: "swimlane",
-	name: "swimlaneNode",
-	orientation: "horizontal",
-	offsetX: 400,
-	offsetY: 200,
-	height: 100,
-	width: 700,
-	isSwimlane: true,
-	//Defines header
-	header:header
+    type: "swimlane",
+    name: "swimlaneNode",
+    orientation: "horizontal",
+    offsetX: 400,
+    offsetY: 200,
+    height: 100,
+    width: 700,
+    isSwimlane: true,
+    //Defines header
+    header: header
 };
 
-    syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.nodes = swimlane;
-    });
+});
 
 {% endhighlight %}
 
@@ -129,9 +134,9 @@ You can hide the swimlane headers. The following code example illustrates how to
 {% highlight javascript %}
 
 var header = {
-	text: "Swimlane",
-	//Sets "0" to hide header
-	height: 0
+    text: "Swimlane",
+    //Sets "0" to hide header
+    height: 0
 };
 
 {% endhighlight %}
@@ -149,28 +154,28 @@ To create an empty lane, you need to define an object with `isLane` property tha
 
 //Defines an empty lane
 var lane = {
-	name: "lane1",
-	fillColor: "#f5f5f5",
-	height: 120,
+    name: "lane1",
+    fillColor: "#f5f5f5",
+    height: 120,
 
-	//Sets the object as Lane
-	isLane:"true"
+    //Sets the object as Lane
+    isLane: "true"
 };
 
 //Initializes swimlane with a header and a lane
 var swimlane = {
-	type: "swimlane",
-	name: "swimlaneNode",
-	orientation: "horizontal",
-	offsetX: 400,
-	offsetY: 200,
-	height: 100,
-	width: 700,
-	isSwimlane: true,
-	//Defines header - header defined in the headers section
-	header:header,
-	//Defines lanes collection
-	lanes: [lane]
+    type: "swimlane",
+    name: "swimlaneNode",
+    orientation: "horizontal",
+    offsetX: 400,
+    offsetY: 200,
+    height: 100,
+    width: 700,
+    isSwimlane: true,
+    //Defines header - header defined in the headers section
+    header: header,
+    //Defines lanes collection
+    lanes: [lane]
 };
 
 {% endhighlight %}
@@ -184,41 +189,45 @@ You can limit the size of a lane with its `minWidth`, `minHeight`, `maxWidth`, a
 
 //Defines the lane header
 var laneHeader = {
-	text: "swimlane label",
-	fillColor: "#C7D4DF",
-	fontColor: "black", fontSize: 15, fontFamily: "Arial",
-	bold: false, italic: false, textDecoration: "none"
+    text: "swimlane label",
+    fillColor: "#C7D4DF",
+    fontColor: "black",
+    fontSize: 15,
+    fontFamily: "Arial",
+    bold: false,
+    italic: false,
+    textDecoration: "none"
 };
 
 //Initializes the lane
 var lane = {
-	name: "lane1",
-	fillColor: "#f5f5f5",
-	height: 120,
-	isLane: true,
-	//Specifies the lane header
-	header: laneHeader,
-	//Specifies the minimum and maximum size of the lane
-	minWidth: 500,
-	maxWidth: 700,
-	minHeight: 120,
-	maxHeight: 200,
+    name: "lane1",
+    fillColor: "#f5f5f5",
+    height: 120,
+    isLane: true,
+    //Specifies the lane header
+    header: laneHeader,
+    //Specifies the minimum and maximum size of the lane
+    minWidth: 500,
+    maxWidth: 700,
+    minHeight: 120,
+    maxHeight: 200,
 };
 
 //Adds lanes to swimlane
 var swimlane = {
-	type: "swimlane",
-	name: "swimlaneNode",
-	orientation: "horizontal",
-	offsetX: 400,
-	offsetY: 200,
-	height: 100,
-	width: 700,
-	isSwimlane: true,
-	//Defines header - header defined in the headers section
-	header:header,
-	//Adds lanes to swimlane
-	lanes: [lane]
+    type: "swimlane",
+    name: "swimlaneNode",
+    orientation: "horizontal",
+    offsetX: 400,
+    offsetY: 200,
+    height: 100,
+    width: 700,
+    isSwimlane: true,
+    //Defines header - header defined in the headers section
+    header: header,
+    //Adds lanes to swimlane
+    lanes: [lane]
 };
 
 {% endhighlight %}
@@ -230,50 +239,49 @@ To add nodes to a lane, You need to add them to the `children` collection of lan
 {% highlight javascript %}
 
 //Defines children of lane
-var children = [
-{
-	name: "node",
-	width: 70,
-	height: 30,
-	labels: [{
-		text: "Node",
-	}],
-	// Specifies the margin values of the child
-	marginLeft: 70,
-	marginTop: 1
+var children = [{
+    name: "node",
+    width: 70,
+    height: 30,
+    labels: [{
+        text: "Node",
+    }],
+    // Specifies the margin values of the child
+    marginLeft: 70,
+    marginTop: 1
 }];
 
 //Initializes the lane
 var lane = {
-	name: "lane1",
-	fillColor: "#f5f5f5",
-	height: 120,
-	isLane: true,
-	//Defines header - as above snippet
-	header: laneHeader,
-	//Adds nodes to lane
-	children:children,
-	//Specifies the minimum and maximum size of the lane
-	minWidth: 500,
-	maxWidth: 700,
-	minHeight: 120,
-	maxHeight: 200,
+    name: "lane1",
+    fillColor: "#f5f5f5",
+    height: 120,
+    isLane: true,
+    //Defines header - as above snippet
+    header: laneHeader,
+    //Adds nodes to lane
+    children: children,
+    //Specifies the minimum and maximum size of the lane
+    minWidth: 500,
+    maxWidth: 700,
+    minHeight: 120,
+    maxHeight: 200,
 };
 
 //Adds lanes to swimlane
 var swimlane = {
-	type: "swimlane",
-	name: "swimlaneNode",
-	orientation: "horizontal",
-	offsetX: 400,
-	offsetY: 200,
-	height: 100,
-	width: 700,
-	isSwimlane: true,
-	//Defines header - header defined in the headers section
-	header:header,
-	//Adds lanes to swimlane
-	lanes: [lane]
+    type: "swimlane",
+    name: "swimlaneNode",
+    orientation: "horizontal",
+    offsetX: 400,
+    offsetY: 200,
+    height: 100,
+    width: 700,
+    isSwimlane: true,
+    //Defines header - header defined in the headers section
+    header: header,
+    //Adds lanes to swimlane
+    lanes: [lane]
 };
 
 {% endhighlight %}
@@ -294,35 +302,40 @@ The following code example illustrates how to add a phase on initializing swimla
 
 //Creates a phase
 var phase1 = {
-	name: "Phase1",
-	//Length of the first region
-	offset: 300,
-	//Initializes labels for phases
-	label: { text: "Phase1" },
-	//Specifies the appearance of separator
-	lineWidth: 1,
-	lineDashArray: "3,3",
-	lineColor: "#606060"
+    name: "Phase1",
+    //Length of the first region
+    offset: 300,
+    //Initializes labels for phases
+    label: {
+        text: "Phase1"
+    },
+    //Specifies the appearance of separator
+    lineWidth: 1,
+    lineDashArray: "3,3",
+    lineColor: "#606060"
 };
 
 var phase2 = {
-	name: "Phase2",
-	label: { text: "Phase2" }
+    name: "Phase2",
+    label: {
+        text: "Phase2"
+    }
 };
 
 var swimlane = {
-	type: "swimlane",
-	name: "swimlaneNode",
-	orientation: "horizontal",
-	offsetX: 400, offsetY: 200,
-	height: 100,width: 500,
-	//Initializes the phase collection
-	phases: [phase1, phase2],
-	//Adds lanes and header as mentioned in header and lane section
-	lanes: [lane],
-	header: header
+    type: "swimlane",
+    name: "swimlaneNode",
+    orientation: "horizontal",
+    offsetX: 400,
+    offsetY: 200,
+    height: 100,
+    width: 500,
+    //Initializes the phase collection
+    phases: [phase1, phase2],
+    //Adds lanes and header as mentioned in header and lane section
+    lanes: [lane],
+    header: header
 };
-
 
 {% endhighlight %}
 

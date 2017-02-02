@@ -21,28 +21,31 @@ A node can be created and added to the Diagram, either programmatically or inter
 
 To create a node, You have to define the node object and add that to `nodes` collection of the Diagram model. The following code example illustrates how to add a node to the Diagram.
 
-{% highlight javascript %}
+{% highlight html %}
+
 <div ng-controller="diagramCtrl">
-   <ej-diagram id="diagram" e-height="600px" e-width="100%"
-        e-nodes="nodes">
-   </ej-diagram>
+    <ej-diagram id="diagram" e-height="600px" e-width="100%" e-nodes="nodes">
+    </ej-diagram>
 </div>
 
-    var nodes =
-    [{
-    name: "node1", 
-    width: 100,
-    height: 100, 
-    offsetX: 250, 
-    offsetY: 250,
-    fillColor: "darkcyan", 
-    borderWidth: 2
-    },
-    ];
-    
-syncApp.controller('diagramCtrl', function ($scope) {
-    $scope.nodes = nodes;   
-});
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    var nodes = [{
+       name: "node1",
+       width: 100,
+       height: 100,
+       offsetX: 250,
+       offsetY: 250,
+       fillColor: "darkcyan",
+       borderWidth: 2
+   }, ];
+
+   syncApp.controller('diagramCtrl', function($scope) {
+       $scope.nodes = nodes;
+   });
+
 {% endhighlight %}
 
 ![](/angular-1/Diagram/Node_images/Node_img2.png)
@@ -62,28 +65,29 @@ The following table illustrates how pivot relates offset values with node bounda
 
 The following code illustrates how to change the `pivot` value.
 
-{% highlight javascript %}
+{% highlight html %}
+
 <div ng-controller="diagramCtrl">
-        <ej-diagram id="diagram"
-         e-height="600px" 
-         e-width="100%"
-         e-nodes="nodes">
-        </ej-diagram>
+    <ej-diagram id="diagram" e-height="600px" e-width="100%" e-nodes="nodes">
+    </ej-diagram>
 </div>
 
-    var nodes =
-    [{
+{% endhighlight %}
+
+{% highlight javascript %}
+
+var nodes = [{
     name: "node1",
     width: 100,
     height: 100,
     offsetX: 250,
     offsetY: 250,
     shape: "rectangle",
-    pivot: ej.datavisualization.Diagram.Point(0, 0) },
-    ];
-    syncApp.controller('diagramCtrl', function ($scope) {
-    $scope.nodes = nodes;   
-    });
+    pivot: ej.datavisualization.Diagram.Point(0, 0)
+}, ];
+syncApp.controller('diagramCtrl', function($scope) {
+    $scope.nodes = nodes;
+});
 
 {% endhighlight %}
 
@@ -97,31 +101,32 @@ Diagram allows to add different kind of nodes. To explore the types of nodes, re
 
 You can customize the appearance of a node by changing its font, fill colors, patterns, line weight and style, or shadow. The following code illustrates how to customize the appearance of the shape.
 
-{% highlight javascript %}
+{% highlight html %}
+
 <div ng-controller="diagramCtrl">
-   <ej-diagram id="diagram"
-    e-height="600px" 
-    e-width="100%"
-    e-nodes="nodes">
+    <ej-diagram id="diagram" e-height="600px" e-width="100%" e-nodes="nodes">
     </ej-diagram>
 </div>
-    
-    var nodes =
-    [{
-    name: "node1", 
-    width: 100,
-    height: 100, 
-    offsetX: 250, 
-    offsetY: 250,
-    fillColor: "darkcyan", 
-    borderWidth: 2,
-    borderColor: "black",
-	borderDashArray: "5 5",
-    },
-    ];
-    syncApp.controller('diagramCtrl', function ($scope) {
-    $scope.nodes = nodes;   
-});
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    var nodes = [{
+       name: "node1",
+       width: 100,
+       height: 100,
+       offsetX: 250,
+       offsetY: 250,
+       fillColor: "darkcyan",
+       borderWidth: 2,
+       borderColor: "black",
+       borderDashArray: "5 5",
+   }, ];
+   syncApp.controller('diagramCtrl', function($scope) {
+       $scope.nodes = nodes;
+   });
+
 {% endhighlight %}
 
 ![](/angular-1/Diagram/Node_images/Node_img5.png)
@@ -135,59 +140,77 @@ There are two types of gradients.
 
 The `gradient` property of node allows you to define and applies the gradient effect to that node.
 
-{% highlight javascript %}
+{% highlight html %}
+
 <div ng-controller="diagramCtrl">
-   <ej-diagram id="diagram" 
-   e-height="600px" 
-   e-width="100%"
-    e-nodes="nodes">
+    <ej-diagram id="diagram" e-height="600px" e-width="100%" e-nodes="nodes">
     </ej-diagram>
 </div>
-//Creates linear gradient
 
+{% endhighlight %}
+
+{% highlight javascript %}
+
+//Creates linear gradient
 var linearGradient = {
-	type: "linear",
-	//Start point of linear gradient
-	x1: 0, y1: 0,
-	//End point of linear gradient
-	x2: 50, y2: 50,
-	//Sets an array of stop objects
-	stops: [
-		{ color: "white", offset: 0 },
-		{ color: "darkCyan", offset: 100 }
-	]
+    type: "linear",
+    //Start point of linear gradient
+    x1: 0,
+    y1: 0,
+    //End point of linear gradient
+    x2: 50,
+    y2: 50,
+    //Sets an array of stop objects
+    stops: [{
+            color: "white",
+            offset: 0
+        },
+        {
+            color: "darkCyan",
+            offset: 100
+        }
+    ]
 };
 
 //Creates radial gradient
 
 var radialGradient = {
-	type: "radial",
-	//Center point of outer circle
-	cx: 50, cy: 50,
-	//Center point of inner circle
-	fx: 25, fy: 25,
-	//Radius of a radial gradient
-	r: 50,
-	//Sets an array of stop objects
-	stops: [
-		{ color: "white", offset: 0 },
-		{ color: "darkCyan", offset: 100 }
-	]
+    type: "radial",
+    //Center point of outer circle
+    cx: 50,
+    cy: 50,
+    //Center point of inner circle
+    fx: 25,
+    fy: 25,
+    //Radius of a radial gradient
+    r: 50,
+    //Sets an array of stop objects
+    stops: [{
+            color: "white",
+            offset: 0
+        },
+        {
+            color: "darkCyan",
+            offset: 100
+        }
+    ]
 };
 
 var nodes = [{
-	name: "node1",
-	width: 100, height: 100,
-	offsetX: 250, offsetY: 250,
-	//Sets styles to a node to customize the appearance
-	fillColor: "darkcyan",
-	borderWidth: 2,
-	gradient: linearGradient
+    name: "node1",
+    width: 100,
+    height: 100,
+    offsetX: 250,
+    offsetY: 250,
+    //Sets styles to a node to customize the appearance
+    fillColor: "darkcyan",
+    borderWidth: 2,
+    gradient: linearGradient
 }];
-    syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.nodes = nodes;
-   
 });
+
 {% endhighlight %}
 
 ![](/angular-1/Diagram/Node_images/Node_img6.png)
@@ -197,6 +220,7 @@ var nodes = [{
 **Diagram** provides support to add **shadow** effect to a node that is disabled by default. It can be enabled with the `constraints` property of node. The following code illustrates how to drop shadow.
 
 {% highlight javascript %}
+
 var nodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
 
 //Enables Shadow effect for a node.
@@ -204,16 +228,20 @@ var constraints = nodeConstraints.Default | nodeConstraints.Shadow;
 
 // Defines JSON to create path node
 var nodes = [{
-	name: "node", offsetX: 100, offsetY: 100,
-	height: 100, width:100,
-	//Sets shape of node
-	shape: "rectangle",
-	//Enables Shadow for the node.
-	constraints: constraints
+    name: "node",
+    offsetX: 100,
+    offsetY: 100,
+    height: 100,
+    width: 100,
+    //Sets shape of node
+    shape: "rectangle",
+    //Enables Shadow for the node.
+    constraints: constraints
 }];
-    syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.nodes = nodes;
 });
+
 {% endhighlight %}
 
 
@@ -226,18 +254,21 @@ The following code illustrates how to disable shadow effect at runtime.
 var nodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
 
 //Enables Shadow effect for a node.
-var constraints = nodeConstraints.Default  & ~nodeConstraints.Shadow;
+var constraints = nodeConstraints.Default & ~nodeConstraints.Shadow;
 
 // Defines JSON to create path node
 var nodes = [{
-	name: "node", offsetX: 100, offsetY: 100,
-	height: 100, width:100,
-	//Sets shape of node
-	shape: "rectangle",
-	//Enables Shadow for the node.
-	constraints: constraints
+    name: "node",
+    offsetX: 100,
+    offsetY: 100,
+    height: 100,
+    width: 100,
+    //Sets shape of node
+    shape: "rectangle",
+    //Enables Shadow for the node.
+    constraints: constraints
 }];
-    syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.nodes = nodes;
 });
 
@@ -249,17 +280,25 @@ var nodes = [{
 The angle, translation, and opacity of the shadow can be customized with the `shadow` property of node. The following code example illustrates how to customize shadow.
 
 {% highlight javascript %}
+
 var nodes = [{
-	name: "node", offsetX: 100, offsetY: 100,
-	height: 100, width: 100,
-	//Sets shape of node 
-	shape: "rectangle",
-	//Enables Shadow for the node.
-	constraints: constraints,
-	//Customizes shadow effect
-	shadow: { opacity: 0.8, distance: 9, angle: 50}
+    name: "node",
+    offsetX: 100,
+    offsetY: 100,
+    height: 100,
+    width: 100,
+    //Sets shape of node 
+    shape: "rectangle",
+    //Enables Shadow for the node.
+    constraints: constraints,
+    //Customizes shadow effect
+    shadow: {
+        opacity: 0.8,
+        distance: 9,
+        angle: 50
+    }
 }];
-    syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.nodes = nodes;
 });
 
@@ -277,34 +316,50 @@ To explore the properties of expandIcon and collapseIcon, refer to [Icon Propert
 
 The `shape` property of icon allows to define the shape of the icon. The following code example illustrates how to create icon of various shapes.
 
-{% highlight javascript %}
+{% highlight html %}
+
 <div ng-controller="diagramCtrl">
-   <ej-diagram id="diagram"
-       e-height="600px"
-       e-width="100%"
-       e-nodes="nodes"
-       e-connectors="connectors">
-   </ej-diagram>      
+    <ej-diagram id="diagram" e-height="600px" e-width="100%" e-nodes="nodes" e-connectors="connectors">
+    </ej-diagram>
 </div>
-var nodes =
-[{
-    name: "node1", width: 100,
-    height: 100, offsetX: 100,
-    offsetY: 100, shape: "rectangle",
-    expandIcon: { shape: "arrowdown", width: 10, height: 10, },
-    collapseIcon: { shape: "arrowup", width: 10,  height: 10, }
-},
-{
-    name: "node2", offsetX: 100,
-    offsetY: 100, height: 100,
-    width: 100, shape: "rectangle"
-}
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+var nodes = [{
+        name: "node1",
+        width: 100,
+        height: 100,
+        offsetX: 100,
+        offsetY: 100,
+        shape: "rectangle",
+        expandIcon: {
+            shape: "arrowdown",
+            width: 10,
+            height: 10,
+        },
+        collapseIcon: {
+            shape: "arrowup",
+            width: 10,
+            height: 10,
+        }
+    },
+    {
+        name: "node2",
+        offsetX: 100,
+        offsetY: 100,
+        height: 100,
+        width: 100,
+        shape: "rectangle"
+    }
 ];
-var connectors = 
-[{
-    name: "connect", sourceNode: "node1", targetNode:"node2"
+var connectors = [{
+    name: "connect",
+    sourceNode: "node1",
+    targetNode: "node2"
 }];
-    syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.nodes = nodes;
     $scope.connectors = connectors;
 

@@ -39,44 +39,44 @@ To explore the backgroundImage properties, refer [Background Image](/api/js/ejDi
 
 The following code illustrates how to stretch and align the background image.
 
-{% highlight javascript %}
+{% highlight html %}
+
 <div ng-controller="diagramCtrl">
-            <div>
-             <ej-diagram id="diagramCore" e-height="500px" e-width="700px" e-nodes="nodes" e-backgroundcolor="backgroundColor"
-                    e-backgroundImage="backgroundImage"
-                    e-pagesettings-pageheight="pageSettings.pageHeight"
-                    e-pagesettings-pagewidth="pageSettings.pageWidth"
-                    e-pagesettings-pagebackgroundcolor="pageSettings.pageBackgroundColor"
-                    e-pagesettings-pageborderwidth="pageSettings.pageBorderWidth"
-                    e-pagesettings-pagebordercolor="pageSettings.pageBorderColor"
-                    e-pagesettings-pagemargin="pageSettings.pageMargin"
-                    e-pagesettings-showpagebreak="pageSettings.showPageBreak"
-                    e-pagesettings-pageorientation="pageSettings.pageOrientation"
-                    e-pagesettings-multiplepage="pageSettings.multiplePage">
-                </ej-diagram>
-            </div>
+    <div>
+        <ej-diagram id="diagramCore" e-height="500px" e-width="700px" e-nodes="nodes" e-backgroundcolor="backgroundColor" e-backgroundImage="backgroundImage" e-pagesettings-pageheight="pageSettings.pageHeight" 
+        e-pagesettings-pagewidth="pageSettings.pageWidth" e-pagesettings-pagebackgroundcolor="pageSettings.pageBackgroundColor" e-pagesettings-pageborderwidth="pageSettings.pageBorderWidth"
+        e-pagesettings-pagebordercolor="pageSettings.pageBorderColor" e-pagesettings-pagemargin="pageSettings.pageMargin" e-pagesettings-showpagebreak="pageSettings.showPageBreak"
+        e-pagesettings-pageorientation="pageSettings.pageOrientation" e-pagesettings-multiplepage="pageSettings.multiplePage">
+        </ej-diagram>
+    </div>
 </div>
-    syncApp.controller('diagramCtrl', function ($scope) {
-    $scope.backgroundColor = "whitesmoke";
-    $scope.backgroundImage = {
-          alignment:ej.datavisualization.Diagram.ImageAlignment.XMidYMin,
-          scale:ej.datavisualization.Diagram.scaleConstraints.Meet,
-          source:"airplane.png"
-           }
-    $scope.pageSettings = {
-        //Sets page size
-        pageWidth: 500,
-        pageHeight: 500,
-        //Customizes the appearance of page
-        pageBorderWidth: 4,
-        pageBackgroundColor: "White",
-        pageBorderColor: "lightgray",
-        pageMargin: 25,
-       showPageBreak: true,
-       multiplePage: true,
-       pageOrientation: ej.datavisualization.Diagram.PageOrientations.Portrait
-    };
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    syncApp.controller('diagramCtrl', function($scope) {
+        $scope.backgroundColor = "whitesmoke";
+        $scope.backgroundImage = {
+            alignment: ej.datavisualization.Diagram.ImageAlignment.XMidYMin,
+            scale: ej.datavisualization.Diagram.scaleConstraints.Meet,
+            source: "airplane.png"
+        }
+        $scope.pageSettings = {
+            //Sets page size
+            pageWidth: 500,
+            pageHeight: 500,
+            //Customizes the appearance of page
+            pageBorderWidth: 4,
+            pageBackgroundColor: "White",
+            pageBorderColor: "lightgray",
+            pageMargin: 25,
+            showPageBreak: true,
+            multiplePage: true,
+            pageOrientation: ej.datavisualization.Diagram.PageOrientations.Portrait
+        };
     });
+
 {% endhighlight %}
 
 ## MultiplePage and PageBreaks
@@ -88,28 +88,30 @@ When MultiplePage is enabled, size of the page dynamically increases or decrea
 `multiplePage` and `showPageBreak` properties of page settings allow you to enable/disable multiple pages and page breaks respectively.
 The following code illustrates how to enable multiple page and page break lines.
 
-{% highlight javascript %}
+{% highlight html %}
 
 <div ng-controller="diagramCtrl">
-            <div>
-             <ej-diagram id="diagramCore" e-height="500px" e-width="700px" 
-                    e-pagesettings-pageheight="pageSettings.pageHeight"
-                    e-pagesettings-pagewidth="pageSettings.pageWidth"
-                    e-pagesettings-showpagebreak="pageSettings.showPageBreak"
-                    e-pagesettings-multiplepage="pageSettings.multiplePage">
-                </ej-diagram>
-            </div>
+    <div>
+        <ej-diagram id="diagramCore" e-height="500px" e-width="700px" e-pagesettings-pageheight="pageSettings.pageHeight" e-pagesettings-pagewidth="pageSettings.pageWidth" 
+        e-pagesettings-showpagebreak="pageSettings.showPageBreak" e-pagesettings-multiplepage="pageSettings.multiplePage">
+        </ej-diagram>
+    </div>
 </div>
-    syncApp.controller('diagramCtrl', function ($scope) {
-    $scope.pageSettings = {
-         //Sets page size
-         pageWidth: 500,
-         pageHeight: 500,
-         //Enables the page break lines
-         showPageBreak: true,
-         //Enables the multiple page
-         multiplePage: true,
-    };
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    syncApp.controller('diagramCtrl', function($scope) {
+        $scope.pageSettings = {
+            //Sets page size
+            pageWidth: 500,
+            pageHeight: 500,
+            //Enables the page break lines
+            showPageBreak: true,
+            //Enables the multiple page
+            multiplePage: true,
+        };
     });
 
 {% endhighlight %}
@@ -121,25 +123,27 @@ The following code illustrates how to enable multiple page and page break lines.
 
 The following code example illustrates how to define boundaryConstraints.
 
-{% highlight js %}
+{% highlight html %}
 
 <div ng-controller="diagramCtrl">
-            <div>
-             <ej-diagram id="diagramCore" e-height="500px" e-width="700px" 
-                    e-pagesettings-pageheight="pageSettings.pageHeight"
-                    e-pagesettings-pagewidth="pageSettings.pageWidth"
-                    e-pagesettings-boundaryConstraints="pageSettings.boundaryConstraints"
-                </ej-diagram>
-            </div>
+    <div>
+        <ej-diagram id="diagramCore" e-height="500px" e-width="700px" e-pagesettings-pageheight="pageSettings.pageHeight"
+         e-pagesettings-pagewidth="pageSettings.pageWidth" e-pagesettings-boundaryConstraints="pageSettings.boundaryConstraints" </ej-diagram>
+    </div>
 </div>
-    syncApp.controller('diagramCtrl', function ($scope) {
-    $scope.pageSettings = {
-         //Sets page size
-         pageWidth: 500,
-         pageHeight: 500,
-         //Allows to drag within the diagram content
-         boundaryConstraints: ej.datavisualization.Diagram.BoundaryConstraints.Diagram; 
-    };
+
+  {% endhighlight %}
+
+{% highlight javascript %}
+
+    syncApp.controller('diagramCtrl', function($scope) {
+        $scope.pageSettings = {
+            //Sets page size
+            pageWidth: 500,
+            pageHeight: 500,
+            //Allows to drag within the diagram content
+            boundaryConstraints: ej.datavisualization.Diagram.BoundaryConstraints.Diagram;
+        };
     });
   
   {% endhighlight %}

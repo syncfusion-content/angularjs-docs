@@ -51,11 +51,16 @@ The following code example illustrates how to save the existing property values.
 var diagram = $("#diagram").ejDiagram("instance");
 
 //Creates a custom entry and adds that to history manager
-var entry = { object: node, prevState: node.empInfo };
+var entry = {
+    object: node,
+    prevState: node.empInfo
+};
 diagram.model.historyManager.push(entry);
 
 //Updates the new information
-var newValue = { role: "New role" };
+var newValue = {
+    role: "New role"
+};
 node.empInfo = newValue;
 
 {% endhighlight %}
@@ -65,7 +70,9 @@ node.empInfo = newValue;
 {% highlight javascript %}
 
 //Updates the new information
-var newValue = { role: "New role" };
+var newValue = {
+    role: "New role"
+};
 node.empInfo = newValue;
 
 {% endhighlight %}
@@ -75,35 +82,37 @@ node.empInfo = newValue;
 You need to define the methods to handle the custom changes and you need to assign that to `undo` and `redo` properties of `historyManager`.
 The following code example illustrates how to define methods to handle the custom changes.
 
-{% highlight javascript %}
+{% highlight html %}
 
 <div ng-controller="diagramCtrl">
-     <ej-diagram id="diagramCore"
-      e-height="500px" 
-      e-width="700px"
-      e-historyManager="historyManager">
-     </ej-diagram>
+    <ej-diagram id="diagramCore" e-height="500px" e-width="700px" e-historyManager="historyManager">
+    </ej-diagram>
 </div>
-syncApp.controller('diagramCtrl', function ($scope) {
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.historyManager = {
-		//Called to revert a custom action
-		undo: customUndoRedo,
-		//Called to restore the reverted custom action
-		redo: customUndoRedo
-	};
+        //Called to revert a custom action
+        undo: customUndoRedo,
+        //Called to restore the reverted custom action
+        redo: customUndoRedo
+    };
 });
 
 //Method to handle the custom action
 function customUndoRedo(args) {
-	var diagram = $("#diagram").ejDiagram("instance");
-	var node = args.object;
-	var currentState = node.empInfo;
+    var diagram = $("#diagram").ejDiagram("instance");
+    var node = args.object;
+    var currentState = node.empInfo;
 
-	//Resets the state
-	node.empInfo = args.prevState;
+    //Resets the state
+    node.empInfo = args.prevState;
 
-	//Saves the previous state
-	args.prevState = currentState;
+    //Saves the previous state
+    args.prevState = currentState;
 }
 
 {% endhighlight %}
@@ -123,11 +132,11 @@ diagram.model.historyManager.startGroupAction();
 
 //Makes the changes
 for (var i = 0; i < group.children.length; i++) {
-	var option = {};
-	var item = group.children[i];
-	// Updates the fillColor for all the child elements.
-	option.fillColor = args.style.backgroundColor;
-	diagram.updateNode(item.name, option);
+    var option = {};
+    var item = group.children[i];
+    // Updates the fillColor for all the child elements.
+    option.fillColor = args.style.backgroundColor;
+    diagram.updateNode(item.name, option);
 }
 
 //Ends grouping the changes

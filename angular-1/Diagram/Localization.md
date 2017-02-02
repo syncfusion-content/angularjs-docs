@@ -14,51 +14,52 @@ documentation: ug
 
 The following code illustrates how to provide localization support for Context Menu items.
 
-{% highlight javascript %}
+{% highlight html %}
 
-  <div ng-controller="diagramCtrl">  
-        <div>
-                <ej-diagram id="DiagramContent" e-width="100%" e-height="700px"
-                           e-nodes="nodes"
-                            e-locale="locale">
-                </ej-diagram>
-            </div>
-   </div>
-   
+ <div ng-controller="diagramCtrl">
+    <div>
+        <ej-diagram id="DiagramContent" e-width="100%" e-height="700px" e-nodes="nodes" e-locale="locale">
+        </ej-diagram>
+    </div>
+</div>
+
+   {% endhighlight %}
+
+   {% highlight javascript %}
+
 // Defines the context menu items with spanish language
-
 ej.datavisualization.Diagram.Locale["es-ES"] = {
-	cut: "Corte",
-	copy: "Copia",
-	paste: "Pasta",
-	undo: "Deshacer",
-	redo: "Rehacer",
-	selectAll: "Seleccionar todo",
-	grouping: "Agrupación",
-	group: "Grupo",
-	ungroup: "Desagrupar",
-	order: "Fin",
-	bringToFront: "Traer a delante",
-	moveForward: "Movimiento adelante",
-	sendToBack: "Enviar a espalda",
-	sendBackward: "Enviar hacia atrás"
+    cut: "Corte",
+    copy: "Copia",
+    paste: "Pasta",
+    undo: "Deshacer",
+    redo: "Rehacer",
+    selectAll: "Seleccionar todo",
+    grouping: "Agrupación",
+    group: "Grupo",
+    ungroup: "Desagrupar",
+    order: "Fin",
+    bringToFront: "Traer a delante",
+    moveForward: "Movimiento adelante",
+    sendToBack: "Enviar a espalda",
+    sendBackward: "Enviar hacia atrás"
 };
 
-	var nodes = [{
-		name: "rectangle1",
-		offsetY: 100,
-		labels: [{
-			"text": "Rectangle1"
-		}]
-		}];
-	
-   //Initializes the Diagram.
-    syncApp.controller('diagramCtrl', function ($scope) {
-    $scope.nodes = nodes;   
+var nodes = [{
+    name: "rectangle1",
+    offsetY: 100,
+    labels: [{
+        "text": "Rectangle1"
+    }]
+}];
+
+//Initializes the Diagram.
+syncApp.controller('diagramCtrl', function($scope) {
+    $scope.nodes = nodes;
     $scope.locale = "es-ES";
     $scope.localeText = ["es-ES"];
 });
-	
+
 {% endhighlight %}
 
 ![](/angular-1/Diagram/Localization_images/Localization_img1.png)

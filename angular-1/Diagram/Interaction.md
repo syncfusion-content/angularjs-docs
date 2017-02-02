@@ -116,7 +116,7 @@ The following code illustrates how to drag nodes over multiple diagrams.
     &lt;/body&gt;
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
     
         //Enables the FloatElements constraints
         var constraints = ej.datavisualization.Diagram.DiagramConstraints.Default | ej.datavisualization.Diagram.DiagramConstraints.FloatElements;

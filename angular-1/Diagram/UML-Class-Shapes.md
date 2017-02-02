@@ -21,7 +21,7 @@ Also, you need to define the name, attributes and methods of the class using the
  
 The following code example illustrates how to create a class.
 
-{% highlight javascript %}
+{% highlight html %}
 
 <div ng-controller="diagramCtrl">
     <ej-diagram id="diagram"
@@ -31,42 +31,48 @@ The following code example illustrates how to create a class.
     </ej-diagram>
 </div>
 
+{% endhighlight %}	
+
+{% highlight javascript %}
+
 var nodes = [{
-		name: "Patient",
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		//Sets type of shape
-		type: "umlclassifier",
-		//Sets the type of classifier
-		classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
-        //Sets the class object
-        "class": {
-                //Name of a class header
-                 name: "Patient", 
-                 //Sets the collection of attributes
-              attributes: [{
-                  name: "accepted", 
-                  type: "Date",
-                  //sets the scope value for class member
-                  scope:"protected"
-                          }, 
-                   {
-                   name: "prescription", 
-                   type: "String[*]" 
-                            }],
-                   //Sets the collection of methods
-                 methods: [{ 
-                    name: "getHistory", 
-                 //sets the arguments for methods
-                 arguments: [{ 
-                     name: "Date"
-                              }], 
-                      type: "History" }]
-                      },
-	}];
- syncApp.controller('diagramCtrl', function ($scope) {
+    name: "Patient",
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    //Sets type of shape
+    type: "umlclassifier",
+    //Sets the type of classifier
+    classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+    //Sets the class object
+    "class": {
+        //Name of a class header
+        name: "Patient",
+        //Sets the collection of attributes
+        attributes: [{
+                name: "accepted",
+                type: "Date",
+                //sets the scope value for class member
+                scope: "protected"
+            },
+            {
+                name: "prescription",
+                type: "String[*]"
+            }
+        ],
+        //Sets the collection of methods
+        methods: [{
+            name: "getHistory",
+            //sets the arguments for methods
+            arguments: [{
+                name: "Date"
+            }],
+            type: "History"
+        }]
+    },
+}];
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -87,37 +93,38 @@ The following code example illustrates how to create an interface.
 {% highlight javascript %}
 
 var nodes = [{
-		name: "Bank",
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		//Sets type of shape
-		type: "umlclassifier", 
-		//Sets the type of classifier
-		classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
-        //Sets the interface object
-        interface: {
-             name: "Bank Account", 
-             attributes: [{
-                   name: "ownar", 
-                   type: "String[*]" 
-                           }, 
-                           {
-                   name: "balance", 
-                   type: "Dollars" 
-                           }],
-               methods: [{ 
-                   name: "deposit", 
-                arguments: [{ 
-                    name:"amount",
-                    type:"Dollars"
-                            }], 
-                         }]
-                       },
-	}];
+    name: "Bank",
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    //Sets type of shape
+    type: "umlclassifier",
+    //Sets the type of classifier
+    classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+    //Sets the interface object
+    interface: {
+        name: "Bank Account",
+            attributes: [{
+                    name: "ownar",
+                    type: "String[*]"
+                },
+                {
+                    name: "balance",
+                    type: "Dollars"
+                }
+            ],
+            methods: [{
+                name: "deposit",
+                arguments: [{
+                    name: "amount",
+                    type: "Dollars"
+                }],
+            }]
+    },
+}];
 
- syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -135,35 +142,36 @@ The following code example illustrates how to create an enumeration.
  {% highlight javascript %}
  
  var nodes = [{
-		name: "Enums",
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		//Sets type of shape
-		type: "umlclassifier", 
-		//Sets the type of classifier
-		classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
-        //Sets the enumeration object
-         enumeration:{
-             name: "AccountType", 
-             //sets the members of enumeration
-              members: [{ 
-                    name: "Checking Account" 
-                        }, 
-                         {
-                     name: "Savings Account" 
-                          },
-                           {                     
-                      name:"Credit Account"
-                               } 
-                          ]}
-	}]
-    
-  syncApp.controller('diagramCtrl', function ($scope) {
-    //Sets nodes collection to Diagram model.
-    $scope.nodes = nodes;
-});
+     name: "Enums",
+     offsetX: 100,
+     offsetY: 100,
+     borderWidth: 2,
+     borderColor: "black",
+     //Sets type of shape
+     type: "umlclassifier",
+     //Sets the type of classifier
+     classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration,
+     //Sets the enumeration object
+     enumeration: {
+         name: "AccountType",
+         //sets the members of enumeration
+         members: [{
+                 name: "Checking Account"
+             },
+             {
+                 name: "Savings Account"
+             },
+             {
+                 name: "Credit Account"
+             }
+         ]
+     }
+ }]
+
+ syncApp.controller('diagramCtrl', function($scope) {
+     //Sets nodes collection to Diagram model.
+     $scope.nodes = nodes;
+ });
 
 {% endhighlight %}	
 
@@ -192,32 +200,40 @@ Association is basically a set of links that connects elements of an UML model. 
 
 The `association` property allows you to define the type of association. The default value of `association` is "Directional". The following code example illustrates how to create an association.
 
+{% highlight html %}
+
+<div ng-controller="diagramCtrl">
+    <ej-diagram id="diagram" e-height="500px" e-width="700px" e-connectors="connectors">
+    </ej-diagram>
+</div>
+
+{% endhighlight %}
+
 {% highlight javascript %}
 
 var connectors = [{
-        name: "connect1", 
-        sourcePoint:{
-               x:100,
-               y:200
-             }, 
-         targetPoint: 
-            {
-               x:300
-               ,y:200
-             }, 
-          segments: [{ 
-                type: "straight" 
-              }], 
-           shape: {
-                  type: "umlclassifier",
-                  //Sets the type of the relationships as association
-                  relationship: ej.datavisualization.Diagram.ClassifierShapes.Association,
-                  //Sets the type of association
-                  association: ej.datavisualization.Diagram.AssociationFlows.Directional,
-              }
-	}];
- 
-  syncApp.controller('diagramCtrl', function ($scope) {
+    name: "connect1",
+    sourcePoint: {
+        x: 100,
+        y: 200
+    },
+    targetPoint: {
+        x: 300,
+        y: 200
+    },
+    segments: [{
+        type: "straight"
+    }],
+    shape: {
+        type: "umlclassifier",
+        //Sets the type of the relationships as association
+        relationship: ej.datavisualization.Diagram.ClassifierShapes.Association,
+        //Sets the type of association
+        association: ej.datavisualization.Diagram.AssociationFlows.Directional,
+    }
+}];
+
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets connectors collection to Diagram model.
     $scope.connectors = connectors;
 });
@@ -238,27 +254,26 @@ The following code example illustrates how to create an aggregation.
 {% highlight javascript %}
 
 var connectors = [{
-        name: "connect1", 
-        sourcePoint:{
-               x:100,
-               y:200
-             }, 
-         targetPoint: 
-            {
-               x:300
-               ,y:200
-             }, 
-          segments: [{ 
-                type: "straight" 
-              }], 
-           shape: {
-                  type: "umlclassifier",
-                  //Sets the type of the relationships as aggregation
-                  relationship: ej.datavisualization.Diagram.ClassifierShapes.Aggregation,
-                  }
-	}];
-    
-  syncApp.controller('diagramCtrl', function ($scope) {
+    name: "connect1",
+    sourcePoint: {
+        x: 100,
+        y: 200
+    },
+    targetPoint: {
+        x: 300,
+        y: 200
+    },
+    segments: [{
+        type: "straight"
+    }],
+    shape: {
+        type: "umlclassifier",
+        //Sets the type of the relationships as aggregation
+        relationship: ej.datavisualization.Diagram.ClassifierShapes.Aggregation,
+    }
+}];
+
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets connectors collection to Diagram model.
     $scope.connectors = connectors;
 });
@@ -277,27 +292,26 @@ The following code example illustrates how to create a composition.
 {% highlight javascript %}
 
 var connectors = [{
-        name: "connect1", 
-        sourcePoint:{
-               x:100,
-               y:200
-             }, 
-         targetPoint: 
-            {
-               x:300
-               ,y:200
-             }, 
-          segments: [{ 
-                type: "straight" 
-              }], 
-           shape: {
-                  type: "umlclassifier",
-                  //Sets the type of the relationships as composition
-                  relationship: ej.datavisualization.Diagram.ClassifierShapes.Composition,
-                  }
-	}];
- 
-  syncApp.controller('diagramCtrl', function ($scope) {
+    name: "connect1",
+    sourcePoint: {
+        x: 100,
+        y: 200
+    },
+    targetPoint: {
+        x: 300,
+        y: 200
+    },
+    segments: [{
+        type: "straight"
+    }],
+    shape: {
+        type: "umlclassifier",
+        //Sets the type of the relationships as composition
+        relationship: ej.datavisualization.Diagram.ClassifierShapes.Composition,
+    }
+}];
+
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets connectors collection to Diagram model.
     $scope.connectors = connectors;
 });
@@ -316,27 +330,26 @@ To create a dependency, you need to define the `relationship` property of connec
 {% highlight javascript %}
 
 var connectors = [{
-        name: "connect1", 
-        sourcePoint:{
-               x:100,
-               y:200
-             }, 
-         targetPoint: 
-            {
-               x:300
-               ,y:200
-             }, 
-          segments: [{ 
-                type: "straight" 
-              }], 
-           shape: {
-                  type: "umlclassifier",
-                  //Sets the type of the relationships as dependency
-                  relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency,
-                  }
-	}]
-    
-      syncApp.controller('diagramCtrl', function ($scope) {
+    name: "connect1",
+    sourcePoint: {
+        x: 100,
+        y: 200
+    },
+    targetPoint: {
+        x: 300,
+        y: 200
+    },
+    segments: [{
+        type: "straight"
+    }],
+    shape: {
+        type: "umlclassifier",
+        //Sets the type of the relationships as dependency
+        relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency,
+    }
+}]
+
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets connectors collection to Diagram model.
     $scope.connectors = connectors;
 });
@@ -356,28 +369,27 @@ The following code example illustrates how to create an inheritance.
 
 {% highlight javascript %}
 
-var connectors =  [{
-        name: "connect1", 
-        sourcePoint:{
-               x:100,
-               y:200
-             }, 
-         targetPoint: 
-            {
-               x:300
-               ,y:200
-             }, 
-          segments: [{ 
-                type: "straight" 
-              }], 
-           shape: {
-                  type: "umlclassifier",
-                  //Sets the type of the relationships as inheritance
-                  relationship: ej.datavisualization.Diagram.ClassifierShapes.Inheritance,
-                  }
-	}];
+var connectors = [{
+    name: "connect1",
+    sourcePoint: {
+        x: 100,
+        y: 200
+    },
+    targetPoint: {
+        x: 300,
+        y: 200
+    },
+    segments: [{
+        type: "straight"
+    }],
+    shape: {
+        type: "umlclassifier",
+        //Sets the type of the relationships as inheritance
+        relationship: ej.datavisualization.Diagram.ClassifierShapes.Inheritance,
+    }
+}];
 
-  syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets connectors collection to Diagram model.
     $scope.connectors = connectors;
 });
@@ -402,53 +414,59 @@ The following code example illustrates how to customize the multiplicity.
 {% highlight javascript %}
 
 var connectors = [{
-        name: "connect1", 
-        sourcePoint:{
-               x:100,
-               y:200
-             }, 
-         targetPoint: 
-            {
-               x:300
-               ,y:200
-             }, 
-              labels: [{
-				  margin:{
-                    top:10,
-                    left:10,
-                    right:10,
-                    bottom:20}
-			       }
-		            ],
-          segments: [{ 
-                type: "straight" 
-              }], 
-           shape: {
-                  type: "umlclassifier",
-                  relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency,
-                  //Sets the type of multiplicity
-                  multiplicity:{
-                  //Sets the type of multiplicity
-                  type:"onetomany",
-                  //Sets the source label
-                  source: { 
-                  //Sets the optionality/cardinality for the connector
-                  optional: true, 
-                  //Specifies interval for number of instances of described element
-                  lowerBounds: 89, 
-                  upperBounds: 67 }, 
-                  //Sets the target label
-                  target: { optional: true, lowerBounds: 78, upperBounds: 90 }}
-              }
-	}]
-    
-    
-  syncApp.controller('diagramCtrl', function ($scope) {
+    name: "connect1",
+    sourcePoint: {
+        x: 100,
+        y: 200
+    },
+    targetPoint: {
+        x: 300,
+        y: 200
+    },
+    labels: [{
+        margin: {
+            top: 10,
+            left: 10,
+            right: 10,
+            bottom: 20
+        }
+    }],
+    segments: [{
+        type: "straight"
+    }],
+    shape: {
+        type: "umlclassifier",
+        relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency,
+        //Sets the type of multiplicity
+        multiplicity: {
+            //Sets the type of multiplicity
+            type: "onetomany",
+            //Sets the source label
+            source: {
+                //Sets the optionality/cardinality for the connector
+                optional: true,
+                //Specifies interval for number of instances of described element
+                lowerBounds: 89,
+                upperBounds: 67
+            },
+            //Sets the target label
+            target: {
+                optional: true,
+                lowerBounds: 78,
+                upperBounds: 90
+            }
+        }
+    }
+}]
+
+
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets connectors collection to Diagram model.
     $scope.connectors = connectors;
 });
 
- {% endhighlight %}
+{ % endhighlight %
+}
 
 ![](/angular-1/Diagram/Shapes_images/Shapes_img149.png)
 

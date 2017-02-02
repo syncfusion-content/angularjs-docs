@@ -22,30 +22,40 @@ Diagram provides support to add different kind of nodes. They are as follows.
 
 Texts can be added to the Diagram as text nodes. For text nodes, the `type` should be set as "text". In addition, you need to define the `textBlock` object that is used to define the `text` to be added and to customize the appearance of that text. The following code illustrates how to create a text node.
 
+{% highlight html %}
+
+<div ng-controller="diagramCtrl">
+    <ej-diagram id="diagram" e-height="500px" e-width="700px" e-nodes="nodes">
+    </ej-diagram>
+</div>
+
+{% endhighlight %}
+
 {% highlight javascript %}
 
 var diagram = ej.datavisualization.Diagram;
 //Creates a html node
 var nodes = [{
-	name: "textNode",
-	offsetX: 100,
-	offsetY: 100,
-	width: 100,
-	height: 50,
-	//Sets type of the node
-	type: diagram.Shapes.Text,
-	//Customizes the appearances such as text, font, fill, and stroke.
-	textBlock: {
-		text: "Text Node",
-		fontColor: "black",
-		textAlign: diagram.TextAlign.Center
-	}
+    name: "textNode",
+    offsetX: 100,
+    offsetY: 100,
+    width: 100,
+    height: 50,
+    //Sets type of the node
+    type: diagram.Shapes.Text,
+    //Customizes the appearances such as text, font, fill, and stroke.
+    textBlock: {
+        text: "Text Node",
+        fontColor: "black",
+        textAlign: diagram.TextAlign.Center
+    }
 }];
 
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
+
 {% endhighlight %}
 
 ![](/angular-1/Diagram/Shapes_images/Shapes_img59.png)
@@ -60,15 +70,23 @@ The following code illustrates how an **Image** node is created.
 var diagram = ej.datavisualization.Diagram;
 //Creates an Image node
 var nodes = [{
-	name: "imageNode", offsetX: 100, offsetY: 100,
-	width: 50, height: 50,
-	
-	//Sets type of the node as Image
-	type: diagram.Shapes.Image,
-	
-	//Sets url of the image
-	source: "sample/syncfusion.png"
+    name: "imageNode",
+    offsetX: 100,
+    offsetY: 100,
+    width: 50,
+    height: 50,
+
+    //Sets type of the node as Image
+    type: diagram.Shapes.Image,
+
+    //Sets url of the image
+    source: "sample/syncfusion.png"
 }];
+
+syncApp.controller('diagramCtrl', function($scope) {
+    //Sets nodes collection to Diagram model.
+    $scope.nodes = nodes;
+});
 
 {% endhighlight %}
 
@@ -87,28 +105,31 @@ You can stretch and align the image content anywhere but within the node boundar
 The `contentAlignment` property of node allows to align an image within the node boundary. The `scale` property of node allows to stretch the image as you desired (either to maintain proportion or to stretch). By default, the `scale` property of node is set as "meet".
 The following code illustrates how to scale or stretch the content of the image node.
 
-{% highlight javascript %}
+{% highlight html %}
+
 <div ng-controller="diagramCtrl">
-    <ej-diagram id="diagram"
-                e-height="500px"
-                e-width="700px"
-                e-nodes="nodes">
+    <ej-diagram id="diagram" e-height="500px" e-width="700px" e-nodes="nodes">
     </ej-diagram>
 </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
 // Defines JSON to create node with image
 var nodes = [{
-	name: "imageNode", 
-	width: 100, 
-	height: 60, 
-	offsetX: 40, 
-	offsetY: 40,
-	type: ej.datavisualization.Diagram.Shapes.Image,
-	source: "sample/emlpoyee.png"
-	borderWidth:3,
-	borderColor:"white",
+    name: "imageNode",
+    width: 100,
+    height: 60,
+    offsetX: 40,
+    offsetY: 40,
+    type: ej.datavisualization.Diagram.Shapes.Image,
+    source: "sample/emlpoyee.png",
+    borderWidth: 3,
+    borderColor: "white",
 }];
 //Initializes Diagram
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -135,9 +156,9 @@ The following tables illustrates all the possible scale options for the image no
 <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
 <!—define html element-->
 <script id="htmlTemplate" type="text/x-jsrender">
-	<div style="margin-left: 32px; margin-top: 18px">
-		<input type="button" value="{{"{{"}}:value{{}}}}" />
-	</div>
+    <div style="margin-left: 32px; margin-top: 18px">
+        <input type="button" value="{{" {{ "}}:value{{}}}}" />
+    </div>
 </script>
 
 {% endhighlight %}
@@ -146,16 +167,24 @@ The following tables illustrates all the possible scale options for the image no
 
 // Defines JSON to create node with HTML element
 var nodes = [{
-	name: "htmlNode", offsetX: 100, offsetY: 100,
-	width: 120, height: 60,
-	
-	//Sets type as Html
-	type: ej.datavisualization.Diagram.Shapes.Html,
-	
-	//Sets id of html template
-	templateId: "htmlTemplate",
-	value: "Button"
+    name: "htmlNode",
+    offsetX: 100,
+    offsetY: 100,
+    width: 120,
+    height: 60,
+
+    //Sets type as Html
+    type: ej.datavisualization.Diagram.Shapes.Html,
+
+    //Sets id of html template
+    templateId: "htmlTemplate",
+    value: "Button"
 }];
+//Initializes Diagram
+syncApp.controller('diagramCtrl', function($scope) {
+    //Sets nodes collection to Diagram model.
+    $scope.nodes = nodes;
+});
 
 {% endhighlight %}
 
@@ -173,9 +202,9 @@ N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is 
 <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
 <!--define html element-->
 <script id="svgTemplate" type="text/x-jsrender">
-	<g>	
-		<path d="M 58.813 0 H 3.182 L 30.998 24.141 L 58.813 0 Z M 32.644 34.425 C 32.133 34.87 31.567 35.095 31 35.095 S 29.867 34.87 29.353 34.425 L 1 9.826V 60 H 61 V 9.826 L 32.644 34.425Z"></path>
-	</g>
+    <g>
+        <path d="M 58.813 0 H 3.182 L 30.998 24.141 L 58.813 0 Z M 32.644 34.425 C 32.133 34.87 31.567 35.095 31 35.095 S 29.867 34.87 29.353 34.425 L 1 9.826V 60 H 61 V 9.826 L 32.644 34.425Z"></path>
+    </g>
 </script>
 
 {% endhighlight %}
@@ -184,15 +213,24 @@ N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is 
 
 // Defines JSON to create node with HTML element
 var nodes = [{
-	name: "NativeNode", offsetX: 100, offsetY: 100,
+    name: "NativeNode",
+    offsetX: 100,
+    offsetY: 100,
 
-	//Sets type as Native
-	type: ej.datavisualization.Diagram.Shapes.Native,
+    //Sets type as Native
+    type: ej.datavisualization.Diagram.Shapes.Native,
 
-	//Sets id of SVG element
-	templateId: "svgTemplate",
-	labels: [{text: "Mail"}]
+    //Sets id of SVG element
+    templateId: "svgTemplate",
+    labels: [{
+        text: "Mail"
+    }]
 }];
+//Initializes Diagram
+syncApp.controller('diagramCtrl', function($scope) {
+    //Sets nodes collection to Diagram model.
+    $scope.nodes = nodes;
+});
 
 {% endhighlight %}
 
@@ -213,40 +251,43 @@ The following code illustrates how to scale or stretch the content of the node.
 <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
 <!--define html element-->
 <script id="svgTemplate" type="text/x-jsrender">
-	<g>	
-		<ellipse  ry="35" rx="37" id="svg_1" cy="139" cx="215.5"  />
-	</g>
+    <g>
+        <ellipse ry="35" rx="37" id="svg_1" cy="139" cx="215.5" />
+    </g>
 </script>
 
 {% endhighlight %}
 
-{% highlight javascript %}
+{% highlight html %}
+
 <div ng-controller="diagramCtrl">
-    <ej-diagram id="diagram"
-                e-height="500px"
-                e-width="700px"
-                e-nodes="nodes">
+    <ej-diagram id="diagram" e-height="500px" e-width="700px" e-nodes="nodes">
     </ej-diagram>
 </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
 // Defines JSON to create node with SVG element
 var nodes = [{
-	name: "NativeNode", 
-	width: 100, 
-	height: 60, 
-	offsetX: 40, 
-	offsetY: 40,
-	fillColor:"darkcyan",
-	borderWidth:3,
-	borderColor:"black",
+    name: "NativeNode",
+    width: 100,
+    height: 60,
+    offsetX: 40,
+    offsetY: 40,
+    fillColor: "darkcyan",
+    borderWidth: 3,
+    borderColor: "black",
 
-	//Sets type as Native
-	type: ej.datavisualization.Diagram.Shapes.Native,
+    //Sets type as Native
+    type: ej.datavisualization.Diagram.Shapes.Native,
 
-	//Sets id of SVG element
-	templateId: "svgTemplate",
+    //Sets id of SVG element
+    templateId: "svgTemplate",
 }];
 //Initializes Diagram
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -270,26 +311,26 @@ The following code example illustrates how to create a basic shape.
 {% highlight javascript %}
 
 var nodes = [{
-		name: "node",
-		width: 100,
-		height: 70,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
+    name: "node",
+    width: 100,
+    height: 70,
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
 
-		//Specifies the radius of rounded corner
-		cornerRadius:10,
+    //Specifies the radius of rounded corner
+    cornerRadius: 10,
 
-		//Sets the type of shape
-		type: ej.datavisualization.Diagram.Shapes.Basic,
+    //Sets the type of shape
+    type: ej.datavisualization.Diagram.Shapes.Basic,
 
-		//Sets the type of basic shape
-		shape: ej.datavisualization.Diagram.BasicShapes.Rectangle
-	}];
-    
+    //Sets the type of basic shape
+    shape: ej.datavisualization.Diagram.BasicShapes.Rectangle
+}];
+
 //Initializes Diagram
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -309,18 +350,25 @@ Path node is a commonly used basic shape that allows visually to represent the g
 {% highlight javascript %}
 
 // Defines JSON to create path node
-
 var nodes = [{
-	name: "pathNode", offsetX: 100, offsetY: 100,
-	width: 120, height: 60,
-	//By default, the type is considered as "basic"
+    name: "pathNode",
+    offsetX: 100,
+    offsetY: 100,
+    width: 120,
+    height: 60,
+    //By default, the type is considered as "basic"
 
-	//Sets shape as Path
-	shape: Diagram.BasicShapes.Path,
+    //Sets shape as Path
+    shape: ej.datavisualization.Diagram.BasicShapes.Path,
 
-	//Defines svg pathdata
-	pathData: "M35.2441,25 L22.7161,49.9937 L22.7161,0.00657536 L35.2441,25 z M22.7167,25 L-0.00131226,25 M35.2441,49.6337 L35.2441,0.368951 M35.2441,25 L49.9981,25"
+    //Defines svg pathdata
+    pathData: "M35.2441,25 L22.7161,49.9937 L22.7161,0.00657536 L35.2441,25 z M22.7167,25 L-0.00131226,25 M35.2441,49.6337 L35.2441,0.368951 M35.2441,25 L49.9981,25"
 }];
+//Initializes Diagram
+syncApp.controller('diagramCtrl', function($scope) {
+    //Sets nodes collection to Diagram model.
+    $scope.nodes = nodes;
+});
 
 {% endhighlight %}
 
@@ -336,22 +384,22 @@ The flow shapes are used to represent the process flow. It is used for analyzing
 
 {% highlight javascript %}
 
-var node = [{
-		name: "node",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		//Sets the type of shape
-		type: ej.datavisualization.Diagram.Shapes.Flow,
-		//Sets the type of flow shape
-		shape: ej.datavisualization.Diagram.FlowShapes.Document
-	}];
+var nodes = [{
+    name: "node",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    //Sets the type of shape
+    type: ej.datavisualization.Diagram.Shapes.Flow,
+    //Sets the type of flow shape
+    shape: ej.datavisualization.Diagram.FlowShapes.Document
+}];
 
 //Initializes Diagram
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });

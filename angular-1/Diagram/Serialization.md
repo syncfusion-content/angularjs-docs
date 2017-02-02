@@ -61,17 +61,16 @@ When they are defined as function, it is not serialized.
 
 {% highlight javascript %}
 
-function nodeCollectionChange(args) {
-}
+function nodeCollectionChange(args) {}
 
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     // Sets the nodes to Diagram model
     $scope.nodeCollectionChange = "nodeCollectionChange";
 });
 
-syncApp.controller('diagramCtrl', function ($scope) {
-	//Event is not serialized, since it is defined as a function
-	$scope.nodeCollectionChange = nodeCollectionChange
+syncApp.controller('diagramCtrl', function($scope) {
+    //Event is not serialized, since it is defined as a function
+    $scope.nodeCollectionChange = nodeCollectionChange
 });
 
 {% endhighlight %}
@@ -82,9 +81,9 @@ syncApp.controller('diagramCtrl', function ($scope) {
 
 <!-- Template content needs to be retained while loading the diagram.-->
 <script id="htmlTemplate" type="text/x-jsrender">
-	<div>
-		<input type="button" value="button" style="color: #ffffff; background-color: #fbb139; border-color: #f89b1c" />
-	</div>
+    <div>
+        <input type="button" value="button" style="color: #ffffff; background-color: #fbb139; border-color: #f89b1c" />
+    </div>
 </script>
 
 {% endhighlight %}
@@ -100,11 +99,10 @@ diagram.load(json);
 {% highlight html %}
 
 <style>
-	<!-- css class needs to be retained while loading the Diagram.-->
-	.nodeCss {
-		fill: black;
-		stroke: cyan;
-	}
+    <!-- css class needs to be retained while loading the Diagram.-->.nodeCss {
+        fill: black;
+        stroke: cyan;
+    }
 </style>
 
 {% endhighlight %}

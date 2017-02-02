@@ -11,26 +11,28 @@ documentation: ug
 
 The Diagram model represents the data to render the Diagram and to manipulate the Diagram elements. The following code illustrates how to define Diagram model.
 
-{% highlight javascript %}
+{% highlight html %}
 
 //Creates diagram
+
 <div ng-controller="diagramCtrl">
     <div>
-        <ej-diagram id="diagram" 
-        e-width="100%" 
-        e-height="600px"
-        e-pagesettings-pageWidth="pageSettings.pageWidth"
+        <ej-diagram id="diagram" e-width="100%" e-height="600px" e-pagesettings-pageWidth="pageSettings.pageWidth" 
         e-pagesettings-pageHeight="pageSettings.pageHeight">
         </ej-diagram>
     </div>
 </div>
 
-    syncApp.controller('diagramCtrl', function ($scope) {
-    $scope.pageSettings = {
-    pageWidth: 2000,
-    pageHeight: 2000,
-    };
-});
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    syncApp.controller('diagramCtrl', function($scope) {
+      $scope.pageSettings = {
+          pageWidth: 2000,
+          pageHeight: 2000,
+      };
+  });
 
 {% endhighlight %}
 

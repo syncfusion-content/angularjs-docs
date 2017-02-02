@@ -32,23 +32,28 @@ The `sourceId` property of overview should be set with the corresponding Diagram
 
 {% endhighlight %}
 
-{% highlight javascript %}
-<div  ng-controller="diagramCtrl">
-     <div>
-     <ej-diagram id="diagram" e-width="100%" e-height="600px">
-     </ej-diagram>
-      </div>
-      <div class="row">
-       <ej-overview id="Overview" e-width="100%" e-height="560px"
-           e-sourceid="sourceID">
-       </ej-overview>
-       </div>
-</div>
-    syncApp.controller('diagramCtrl', function ($scope) {
-    // Relates Diagram with overview
-    $scope.sourceID = "diagram";
-});
+{% highlight html %}
 
+<div ng-controller="diagramCtrl">
+    <div>
+        <ej-diagram id="diagram" e-width="100%" e-height="600px">
+        </ej-diagram>
+    </div>
+    <div class="row">
+        <ej-overview id="Overview" e-width="100%" e-height="560px" e-sourceid="sourceID">
+        </ej-overview>
+    </div>
+</div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    syncApp.controller('diagramCtrl', function($scope) {
+        // Relates Diagram with overview
+        $scope.sourceID = "diagram";
+    });
+    
 {% endhighlight %}
 
 ## Zoom and Pan

@@ -15,67 +15,67 @@ documentation: ug
 
 You can add a label to a node/connector by defining the label object and adding that to the `labels` collection of node/connector. The `text` property of label defines the text to be displayed. The following code illustrates how to create a Label. 
 
-{% highlight javascript %}
+{% highlight html %}
 
 <div ng-controller="diagramCtrl">
     <div>
-        <ej-diagram id="diagramCore" 
-            e-height="500px" 
-            e-width="700px" 
-            e-nodes="nodes" 
-            e-connectors="connectors">
+        <ej-diagram id="diagramCore" e-height="500px" e-width="700px" e-nodes="nodes" e-connectors="connectors">
         </ej-diagram>
     </div>
 </div>
 
+{% endhighlight %}
+
+{% highlight javascript %}
+
 var nodes = [{
-		name: "node",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderColor: "black",
-		fillColor: "#1BA0E2",
-		//Initializes labels collection
-		labels: [
-			// Defines JSON to create a label
-			{
-				//Defines the text to be displayed
-				text: "Label"
-			}
-		]
-	}];
-   var connectors =[{
-		name: "connector1",
-		sourcePoint: {
-			x: 200,
-			y: 50
-		},
-		targetPoint: {
-			x: 300,
-			y: 150
-		},
-		segments: [{
-			type: "orthogonal",
-			length: 50,
-			direction: "bottom"
-		}],
-		//Initializes labels collection
-		labels: [
-			//Defines JSON to create a label
-			{
-				//Defines the text to be displayed
-				text: "Label",
-				//Defines the background color of the text block
-				fillColor: "white"
-			}
-		]
-	}]
-    
+    name: "node",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderColor: "black",
+    fillColor: "#1BA0E2",
+    //Initializes labels collection
+    labels: [
+        // Defines JSON to create a label
+        {
+            //Defines the text to be displayed
+            text: "Label"
+        }
+    ]
+}];
+var connectors = [{
+    name: "connector1",
+    sourcePoint: {
+        x: 200,
+        y: 50
+    },
+    targetPoint: {
+        x: 300,
+        y: 150
+    },
+    segments: [{
+        type: "orthogonal",
+        length: 50,
+        direction: "bottom"
+    }],
+    //Initializes labels collection
+    labels: [
+        //Defines JSON to create a label
+        {
+            //Defines the text to be displayed
+            text: "Label",
+            //Defines the background color of the text block
+            fillColor: "white"
+        }
+    ]
+}]
+
 //Initializes Diagram
-syncApp.controller('diagramCtrl', function ($scope) {
-     $scope.nodes = nodes;
-     $scope.connectors = connectors;
+syncApp.controller('diagramCtrl', function($scope) {
+    $scope.nodes = nodes;
+    $scope.connectors = connectors;
 });
 
 {% endhighlight %}
@@ -88,17 +88,27 @@ To explore more label properties, refer to [Label Properties](/api/js/ejdiagram#
 
 Labels can be added at runtime by using the client side method `addLabel`. The following code illustrates how to add a label to a node. 
 
-{% highlight js %}
+{% highlight javascript %}
 
         var diagram = $("#sourceDiagram").ejDiagram("instance");
 
-        // Defines JSON to create a label
-        var label = { name: "label", text: "Node" };
-        diagram.addLabel("node1", label); 
-		
-		//Insert label at a specific index of labels collection
-    	var label = { name: "label", text: "New Label", offset: { x: 0.1, y: 0.1 } };
-    	diagram.insertLabel("node1", label, 1); 
+ // Defines JSON to create a label
+ var label = {
+     name: "label",
+     text: "Node"
+ };
+ diagram.addLabel("node1", label);
+
+ //Insert label at a specific index of labels collection
+ var label = {
+     name: "label",
+     text: "New Label",
+     offset: {
+         x: 0.1,
+         y: 0.1
+     }
+ };
+ diagram.insertLabel("node1", label, 1);
 
 {% endhighlight %}
 
@@ -115,7 +125,10 @@ The following code example illustrates how to change the label properties.
 
 var diagram = $("#diagram").ejDiagram("instance");
 var selectedObject = diagram.model.selectedItems.children[0];
-diagram.updateLabel(selectedObject.name, selectedObject.labels[0], { text: "label", fillColor: "red" });
+diagram.updateLabel(selectedObject.name, selectedObject.labels[0], {
+    text: "label",
+    fillColor: "red"
+});
 
 {% endhighlight %}
 
@@ -154,33 +167,33 @@ The following codes illustrates how to align labels.
 
 {% highlight javascript %}
 
-var nodes =  [{
-		name: "node",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderColor: "black",
-		fillColor: "#1BA0E2",
-		labels: [{
-			text: "Label",
-			// Sets offset to label
-			offset: {
-				x: 0,
-				y: 0.5
-			},
-			// Sets to align label horizontally relative to given offset 
-			horizontalAlignment: ej.datavisualization.Diagram.HorizontalAlignment.Left,
-			// Sets to align label vertically relative to given offset
-			verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Center,
-			// Sets text alignment to label
-			textAlign: ej.datavisualization.Diagram.TextAlign.Center
-		}]
-	}],
-//Initializes Diagram
-syncApp.controller('diagramCtrl', function ($scope) {
-     $scope.nodes = nodes;
-});
+var nodes = [{
+        name: "node",
+        width: 100,
+        height: 100,
+        offsetX: 100,
+        offsetY: 100,
+        borderColor: "black",
+        fillColor: "#1BA0E2",
+        labels: [{
+            text: "Label",
+            // Sets offset to label
+            offset: {
+                x: 0,
+                y: 0.5
+            },
+            // Sets to align label horizontally relative to given offset 
+            horizontalAlignment: ej.datavisualization.Diagram.HorizontalAlignment.Left,
+            // Sets to align label vertically relative to given offset
+            verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Center,
+            // Sets text alignment to label
+            textAlign: ej.datavisualization.Diagram.TextAlign.Center
+        }]
+    }]
+    //Initializes Diagram
+    syncApp.controller('diagramCtrl', function($scope) {
+        $scope.nodes = nodes;
+    });
 
 {% endhighlight %}
 
@@ -194,52 +207,90 @@ syncApp.controller('diagramCtrl', function ($scope) {
  
  Following code example illustrates how to align connector labels.
  
+  {% highlight html %}
+
+ <div ng-controller="diagramCtrl">
+    <div>
+        <ej-diagram id="diagramCore" e-height="500px" e-width="700px" e-nodes="nodes" e-defaultsettings-node="defaultSettings.node" e-defaultsettings-connector="defaultSettings.connector">
+        </ej-diagram>
+    </div>
+</div>
+
+{% endhighlight %}
+
  {% highlight javascript %}
 
- var nodes = [
-   { name: "node1", width: 50, height: 40, offsetX: 200, offsetY: 200, labels: [{ "text": "Task 1" }] },
-   { name: "node2", width: 50, height: 40, offsetX: 400, offsetY: 200, labels: [{ "text": "Task 2" }] }
-  ];
-  var connectors = [
-  { name: "connector1", sourceNode: "node1", targetNode: "node2"}
-  ];
-  
+ var nodes = [{
+         name: "node1",
+         width: 50,
+         height: 40,
+         offsetX: 200,
+         offsetY: 200,
+         labels: [{
+             "text": "Task 1"
+         }]
+     },
+     {
+         name: "node2",
+         width: 50,
+         height: 40,
+         offsetX: 400,
+         offsetY: 200,
+         labels: [{
+             "text": "Task 2"
+         }]
+     }
+ ];
+ var connectors = [{
+     name: "connector1",
+     sourceNode: "node1",
+     targetNode: "node2"
+ }];
+
  //Initializes Diagram
- syncApp.controller('diagramCtrl', function ($scope) {
-    $scope.nodes = nodes;
-    $scope.connectors = connectors;
-    $scope.defaultSettings = {
+ syncApp.controller('diagramCtrl', function($scope) {
+     $scope.nodes = nodes;
+     $scope.connectors = connectors;
+     $scope.defaultSettings = {
          connector: {
-                    segments: [{ type: "orthogonal" }], 
-					// Sets labels for segments
-					labels: [{
-                            text: "0",
-                            fontColor: "black",
-							
-							// Aligns the label either top or left(before) of the connector segment
-                            alignment: "before",
-							
-							// Sets the position of the label with respect to the segment
-                            segmentOffset: 0
-                        },{
-                            text: "1",
-                            fontColor: "black",
-							
-							// Aligns the label either bottom or right(after) of the connector segment
-                            alignment: "after",
-							
-							// Sets segmentOffset as 1
-                            segmentOffset: 1,
-							
-							// Enables boundaryConstraints for the label should be docked within the label bounds
-                            boundaryConstraints: true,
-							
-                        }], lineWidth: 2
-						},
-						node: { borderColor: "#000000", fillColor: "#1BA0E2", labels: [{ "fontColor": "black", }]},
-                };
+             segments: [{
+                 type: "orthogonal"
+             }],
+             // Sets labels for segments
+             labels: [{
+                 text: "0",
+                 fontColor: "black",
+
+                 // Aligns the label either top or left(before) of the connector segment
+                 alignment: "before",
+
+                 // Sets the position of the label with respect to the segment
+                 segmentOffset: 0
+             }, {
+                 text: "1",
+                 fontColor: "black",
+
+                 // Aligns the label either bottom or right(after) of the connector segment
+                 alignment: "after",
+
+                 // Sets segmentOffset as 1
+                 segmentOffset: 1,
+
+                 // Enables boundaryConstraints for the label should be docked within the label bounds
+                 boundaryConstraints: true,
+
+             }],
+             lineWidth: 2
+         },
+         node: {
+             borderColor: "#000000",
+             fillColor: "#1BA0E2",
+             labels: [{
+                 "fontColor": "black",
+             }]
+         },
+     };
  });
-	
 		
 {% endhighlight %}
 
@@ -249,30 +300,50 @@ By default, connector labels will be aligned with respect to the segments. The `
 
 {% highlight javascript %}
 
- var nodes = [
-          { name: "node1", width: 50, height: 40, offsetX: 200, offsetY: 200, labels: [{ "text": "Task 1" }] },
-          { name: "node2", width: 50, height: 40, offsetX: 400, offsetY: 200, labels: [{ "text": "Task 2" }] }
-];
- var connectors = [
-		  { name: "connector1", sourceNode: "node1", targetNode: "node2",
-		  lineWidth: 2,
-		  segments: [{ type: "orthogonal" }],
-		  
-		  // Sets labels for segments
-		   labels: [{
-		   text: "0",
-		   fontColor: "black",
-		   
-		   //Sets the relativeMode as segmentpath
-		   relativeMode: "segmentpath",
-		   }]
+ var nodes = [{
+         name: "node1",
+         width: 50,
+         height: 40,
+         offsetX: 200,
+         offsetY: 200,
+         labels: [{
+             "text": "Task 1"
+         }]
+     },
+     {
+         name: "node2",
+         width: 50,
+         height: 40,
+         offsetX: 400,
+         offsetY: 200,
+         labels: [{
+             "text": "Task 2"
+         }]
+     }
+ ];
+ var connectors = [{
+     name: "connector1",
+     sourceNode: "node1",
+     targetNode: "node2",
+     lineWidth: 2,
+     segments: [{
+         type: "orthogonal"
+     }],
+
+     // Sets labels for segments
+     labels: [{
+         text: "0",
+         fontColor: "black",
+
+         //Sets the relativeMode as segmentpath
+         relativeMode: "segmentpath",
+     }]
  }];
-		  
-	syncApp.controller('diagramCtrl', function ($scope) {
-    $scope.nodes = nodes;
-    $scope.connectors = connectors;
+
+ syncApp.controller('diagramCtrl', function($scope) {
+     $scope.nodes = nodes;
+     $scope.connectors = connectors;
  });
-	
 		
 {% endhighlight %}
 
@@ -283,32 +354,33 @@ The following code example illustrates how to align a label based on its `offset
 
 {% highlight javascript %}
 
-var nodes = [{
-		name: "node",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderColor: "black",
-		fillColor: "#1BA0E2",
-		labels: [{
-			text: "Label",
-			offset: {
-				x: 0.5,
-				y: 1
-			},
-			horizontalAlignment: ej.datavisualization.Diagram.HorizontalAlignment.Center,
-			verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Top,
-			//Sets margin to add label outside a node 
-			margin: {
-				top: 10
-			}
-		}]
-	}];
-//Initializes Diagram
-syncApp.controller('diagramCtrl', function ($scope) {
-    $scope.nodes = nodes;
-});
+ var nodes = [{
+     name: "node",
+     width: 100,
+     height: 100,
+     offsetX: 100,
+     offsetY: 100,
+     borderColor: "black",
+     fillColor: "#1BA0E2",
+     labels: [{
+         text: "Label",
+         offset: {
+             x: 0.5,
+             y: 1
+         },
+         horizontalAlignment: ej.datavisualization.Diagram.HorizontalAlignment.Center,
+         verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Top,
+         //Sets margin to add label outside a node 
+         margin: {
+             top: 10
+         }
+     }]
+ }];
+ //Initializes Diagram
+ syncApp.controller('diagramCtrl', function($scope) {
+     $scope.nodes = nodes;
+ });
+
 {% endhighlight %}
 
 ![](/angular-1/Diagram/Label_images/Label_img13.png)
@@ -320,23 +392,24 @@ The `textAlign` property of label allows you to set how the text should be align
 {% highlight javascript %}
 
 var nodes = [{
-		name: "node",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderColor: "black",
-		fillColor: "#1BA0E2",
-		// Sets text alignment for a label
-		labels: [{
-			text: "Text Align is set as Left",
-			textAlign: ej.datavisualization.Diagram.TextAlign.Left
-		}]
-	}];
+    name: "node",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderColor: "black",
+    fillColor: "#1BA0E2",
+    // Sets text alignment for a label
+    labels: [{
+        text: "Text Align is set as Left",
+        textAlign: ej.datavisualization.Diagram.TextAlign.Left
+    }]
+}];
 
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.nodes = nodes;
 });
+
 {% endhighlight %}
 
 ![](/angular-1/Diagram/Label_images/Label_img14.png)
@@ -355,23 +428,24 @@ When text overflows node boundaries, you can control it by using text wrapping. 
 {% highlight javascript %}
 
 var nodes = [{
-		name: "node",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderColor: "black",
-		fillColor: "#1BA0E2",
-		//Enables Text-wrapping
-		labels: [{
-			text: "Label Text Wrapping",
-			wrapping: ej.datavisualization.Diagram.TextWrapping.Wrap
-		}]
-	}];
+    name: "node",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderColor: "black",
+    fillColor: "#1BA0E2",
+    //Enables Text-wrapping
+    labels: [{
+        text: "Label Text Wrapping",
+        wrapping: ej.datavisualization.Diagram.TextWrapping.Wrap
+    }]
+}];
 
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.nodes = nodes;
 });
+
 {% endhighlight %}
 
 ![](/angular-1/Diagram/Label_images/Label_img19.png)
@@ -389,28 +463,29 @@ You can change the font style of the labels with the font specific properties(`f
 {% highlight javascript %}
 
 var nodes = [{
-		name: "node",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderColor: "black",
-		fillColor: "#1BA0E2",
-		labels: [{
-			text: "Label Text",
-			//Sets styles to a label 
-			fontSize: 12,
-			fontFamily: "TimesNewRoman",
-			fontColor: "black",
-			bold: true,
-			italic: true,
-			textDecoration: ej.datavisualization.Diagram.TextDecorations.Underline
-		}]
-	}];
+    name: "node",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderColor: "black",
+    fillColor: "#1BA0E2",
+    labels: [{
+        text: "Label Text",
+        //Sets styles to a label 
+        fontSize: 12,
+        fontFamily: "TimesNewRoman",
+        fontColor: "black",
+        bold: true,
+        italic: true,
+        textDecoration: ej.datavisualization.Diagram.TextDecorations.Underline
+    }]
+}];
 
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.nodes = nodes;
 });
+
 {% endhighlight %}
 
 ![](/angular-1/Diagram/Label_images/Label_img23.png)
@@ -420,27 +495,28 @@ The fill, border and opacity appearances of the text can also be customized with
 {% highlight javascript %}
 
 var nodes = [{
-		name: "node",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderColor: "black",
-		fillColor: "#1BA0E2",
-		labels: [{
-			text: "Label Text",
-			//Customizes background and borders of a label 
-			fillColor: "white",
-			borderColor: "black",
-			borderWidth: 1,
-			//Customize transparency of a label
-			opacity: 0.7
-		}]
-	}];
+    name: "node",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderColor: "black",
+    fillColor: "#1BA0E2",
+    labels: [{
+        text: "Label Text",
+        //Customizes background and borders of a label 
+        fillColor: "white",
+        borderColor: "black",
+        borderWidth: 1,
+        //Customize transparency of a label
+        opacity: 0.7
+    }]
+}];
 
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.nodes = nodes;
 });
+
 {% endhighlight %}
 
 ![](/angular-1/Diagram/Label_images/Label_img24.png)
@@ -453,44 +529,44 @@ A **Label** can be displaced from its original position to any preferred locatio
 
 var nodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
 var nodes = [{
-	name: "node",
-	width: 100,
-	height: 100,
-	offsetX: 100,
-	offsetY: 100,
-	borderColor: "black",
-	fillColor: "#1BA0E2",
-	//Enables Label Dragging for node.
-	constraints: nodeConstraints.Default | nodeConstraints.DragLabel,
-	labels: [{
-		text: "Label Text"
-	}]
+    name: "node",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderColor: "black",
+    fillColor: "#1BA0E2",
+    //Enables Label Dragging for node.
+    constraints: nodeConstraints.Default | nodeConstraints.DragLabel,
+    labels: [{
+        text: "Label Text"
+    }]
 }];
 
 var connectorConstraints = ej.datavisualization.Diagram.ConnectorConstraints;
 var connectors = [{
-	name: "connector1",
-	sourcePoint: {
-		x: 200,
-		y: 50
-	},
-	targetPoint: {
-		x: 300,
-		y: 150
-	},
-	segments: [{
-		type: "orthogonal",
-		length: 50,
-		direction: "bottom"
-	}],
-	//Enables Label Dragging for connector. 
-	constraints: connectorConstraints.Default | connectorConstraints.DragLabel,
-	labels: [{
-		text: "Label "
-	}]
+    name: "connector1",
+    sourcePoint: {
+        x: 200,
+        y: 50
+    },
+    targetPoint: {
+        x: 300,
+        y: 150
+    },
+    segments: [{
+        type: "orthogonal",
+        length: 50,
+        direction: "bottom"
+    }],
+    //Enables Label Dragging for connector. 
+    constraints: connectorConstraints.Default | connectorConstraints.DragLabel,
+    labels: [{
+        text: "Label "
+    }]
 }];
 
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.nodes = nodes;
     $scope.connectors = connectors;
 });
@@ -506,23 +582,24 @@ You can rotate the labels to any desired angle. Labels are rotated to the angle 
 {% highlight javascript %}
 
 var nodes = [{
-		name: "node",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderColor: "black",
-		fillColor: "#1BA0E2",
-		labels: [{
-			text: "Label",
-			//Sets label's rotation Angle
-			rotateAngle: 45
-		}]
-	}]
+    name: "node",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderColor: "black",
+    fillColor: "#1BA0E2",
+    labels: [{
+        text: "Label",
+        //Sets label's rotation Angle
+        rotateAngle: 45
+    }]
+}]
 
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.nodes = nodes;
 });
+
 {% endhighlight %}
 
 ![](/angular-1/Diagram/Label_images/Label_img26.png)
@@ -546,7 +623,7 @@ var diagram = $("#diagram").ejDiagram("instance");
 var node = diagram.model.selectedItems.children[0];
 //Sets label mode as Edit 
 var options = {
-	mode: ej.datavisualization.Diagram.LabelEditMode.Edit
+    mode: ej.datavisualization.Diagram.LabelEditMode.Edit
 };
 diagram.updateLabel(node.name, node.labels[0], options);
 
@@ -561,23 +638,24 @@ Diagram allows to create read only labels. You have to set the `readOnly` proper
 {% highlight javascript %}
 
 var nodes = [{
-		name: "node",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderColor: "black",
-		fillColor: "#1BA0E2",
-		//Sets label as read-only
-		labels: [{
-			text: "Label",
-			readOnly: true
-		}]
-	}];
+    name: "node",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderColor: "black",
+    fillColor: "#1BA0E2",
+    //Sets label as read-only
+    labels: [{
+        text: "Label",
+        readOnly: true
+    }]
+}];
 
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.nodes = nodes;
 });
+
 {% endhighlight %}
 
 ## Multiple labels
@@ -587,38 +665,39 @@ You can add any number of labels to a node or connector. The following code illu
 {% highlight javascript %}
 
 var nodes = [{
-		name: "node",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderColor: "black",
-		fillColor: "#1BA0E2",
-		//Adds multiple labels to a node
-		labels: [{
-			text: "Left",
-			offset: {
-				x: 0.12,
-				y: 0.1
-			}
-		}, {
-			text: "Center",
-			offset: {
-				x: 0.5,
-				y: 0.5
-			}
-		}, {
-			text: "Right",
-			offset: {
-				x: 0.82,
-				y: 0.9
-			}
-		}]
-	}]; 
+    name: "node",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderColor: "black",
+    fillColor: "#1BA0E2",
+    //Adds multiple labels to a node
+    labels: [{
+        text: "Left",
+        offset: {
+            x: 0.12,
+            y: 0.1
+        }
+    }, {
+        text: "Center",
+        offset: {
+            x: 0.5,
+            y: 0.5
+        }
+    }, {
+        text: "Right",
+        offset: {
+            x: 0.82,
+            y: 0.9
+        }
+    }]
+}];
 
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.nodes = nodes;
 });
+
 {% endhighlight %}
 
 ![](/angular-1/Diagram/Label_images/Label_img28.png)

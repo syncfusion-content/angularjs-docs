@@ -27,18 +27,20 @@ For more information about Diagram constraints, refer to [Diagram Constraints](/
 
 The following example illustrates how to disable page editing.
 
-{% highlight javascript %}
+{% highlight html %}
 
 <<div ng-controller="diagramCtrl">
-   <ej-diagram id="diagram" 
-          e-height="600px" 
-          e-width="100%"
-          e-constraints="constraints">
+    <ej-diagram id="diagram" e-height="600px" e-width="100%" e-constraints="constraints">
     </ej-diagram>
-</div>
+    </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
 var DiagramConstraints = ej.datavisualization.Diagram.DiagramConstraints;
 //Disables PageEditing
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.constraints = DiagramConstraints.Default & ~DiagramConstraints.PageEditable;
 });
 
@@ -71,11 +73,11 @@ The following code illustrates how to disable rotation.
 //Disables rotation
 var NodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
 var nodes = [{
-	name: "node",
-	constraints: NodeConstraints.Default & ~NodeConstraints.Rotate
+    name: "node",
+    constraints: NodeConstraints.Default & ~NodeConstraints.Rotate
 }];
 
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -107,11 +109,11 @@ The following code illustrates how to disable selection.
 //Disables selection
 var ConnectorConstraints = ej.datavisualization.Diagram.ConnectorConstraints;
 var connectors = [{
-	name: "connector",
-	constraints: ConnectorConstraints.Default & ~ConnectorConstraints.Select
+    name: "connector",
+    constraints: ConnectorConstraints.Default & ~ConnectorConstraints.Select
 }];
 
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.connectors = connectors;
 });
@@ -135,14 +137,14 @@ The following code illustrates how to disable creating connections with a port.
 
 var PortConstraints = ej.datavisualization.Diagram.PortConstraints;
 var nodes = [{
-	name: "node",
-	ports: [{
-		//Sets the port as not connectable
-		constraints: PortConstraints.None
-	}]
+    name: "node",
+    ports: [{
+        //Sets the port as not connectable
+        constraints: PortConstraints.None
+    }]
 }];
 
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -165,12 +167,12 @@ The following code illustrates how to hide rotator.
 {% highlight javascript %}
 
 var SelectorConstraints = ej.datavisualization.Diagram.SelectorConstraints;
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.selectedItems = {
-		//Hides rotator
-		constraints:SelectorConstraints.All & ~SelectorConstraints.Rotator
-	};
+        //Hides rotator
+        constraints: SelectorConstraints.All & ~SelectorConstraints.Rotator
+    };
 });
 
 {% endhighlight %}
@@ -192,12 +194,12 @@ The following code illustrates how to show only horizontal gridlines.
 
 {% highlight javascript %}
 
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
-    $scope.snapSettings =  {
-		//Shows horizontal gridlines
-		snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowHorizontalLines
-	}
+    $scope.snapSettings = {
+        //Shows horizontal gridlines
+        snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowHorizontalLines
+    }
 });
 
 {% endhighlight %}
@@ -214,21 +216,27 @@ The following code example illustrates how to inherit the line bridging behavior
 var ConnectorConstraints = ej.datavisualization.Diagram.ConnectorConstraints;
 var DiagramConstraints = ej.datavisualization.Diagram.DiagramConstraints;
 var connectors = [{
-	name: "connector",
-	sourcePoint: { x: 100, y: 100 },
-	targetPoint: { x: 200, y: 200 },
+    name: "connector",
+    sourcePoint: {
+        x: 100,
+        y: 100
+    },
+    targetPoint: {
+        x: 200,
+        y: 200
+    },
 
-	//Sets to inherit bridging from model
-	constraints: ConnectorConstraints.Default | ConnectorConstraints.InheritBridging
+    //Sets to inherit bridging from model
+    constraints: ConnectorConstraints.Default | ConnectorConstraints.InheritBridging
 }];
 
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.connectors = connectors;
     //Sets nodes collection to Diagram model.
-    $scope.snapSettings =  {
-		//Shows horizontal gridlines
-		snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowHorizontalLines
-	}
+    $scope.snapSettings = {
+        //Shows horizontal gridlines
+        snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowHorizontalLines
+    }
 });
 
 {% endhighlight %}

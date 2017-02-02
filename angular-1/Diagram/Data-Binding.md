@@ -28,71 +28,71 @@ To map the user defined JSON data with Diagram, you have to configure the fields
 {% highlight javascript %}
 
 //Initializes local data
-
 var data = [{
-	"Name": "Director"
-},{
-	"Name": "Manager",
-	"ReportingPerson": "Director"
-},{
-	"Name": "TeamLead",
-	"ReportingPerson": "Director"
-},{
-	"Name": "Software Developer",
-	"ReportingPerson": "TeamLead"
-},{
-	"Name": "Testing engineer",
-	"ReportingPerson": "TeamLead"
-},{
-	"Name": "Software Developer",
-	"ReportingPerson": "Manager"
-},{
-	"Name": "Testing engineer",
-	"ReportingPerson": "Manager"
+    "Name": "Director"
+}, {
+    "Name": "Manager",
+    "ReportingPerson": "Director"
+}, {
+    "Name": "TeamLead",
+    "ReportingPerson": "Director"
+}, {
+    "Name": "Software Developer",
+    "ReportingPerson": "TeamLead"
+}, {
+    "Name": "Testing engineer",
+    "ReportingPerson": "TeamLead"
+}, {
+    "Name": "Software Developer",
+    "ReportingPerson": "Manager"
+}, {
+    "Name": "Testing engineer",
+    "ReportingPerson": "Manager"
 }];
 
 //Binds the JSON(local data) with node
 
 function nodeTemplate(diagram, node) {
-	// Sets the Name field of JSON data as label.
-	node.labels[0].text = node.Name;
+    // Sets the Name field of JSON data as label.
+    node.labels[0].text = node.Name;
 }
 
 //Initializes Diagram
-   syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     //Uses layout to auto-arrange nodes on the Diagram page
-    $scope.layout = { 
-      type: "hierarchicaltree" };
+    $scope.layout = {
+        type: "hierarchicaltree"
+    };
     $scope.defaultSettings = {
-      node: {
-		 width: 100,
-		 height: 40,
-		fillColor: "darkcyan",
-		labels: [{
-			name: "label1",
-			bold: true,
-			fontColor: "white"
-			}]
-		},
-		connector: {
-			segments: [{
-				type: "orthogonal"
-			}],
-			targetDecorator: {
-				shape: "none"
-			}
-			}
-     };
+        node: {
+            width: 100,
+            height: 40,
+            fillColor: "darkcyan",
+            labels: [{
+                name: "label1",
+                bold: true,
+                fontColor: "white"
+            }]
+        },
+        connector: {
+            segments: [{
+                type: "orthogonal"
+            }],
+            targetDecorator: {
+                shape: "none"
+            }
+        }
+    };
     $scope.nodeTemplate = "nodeTemplate";
     $scope.dataSourceSettings = {
-        	// Defines the unique field of each JSON data
-			id: "Name",
-			// Defines the parent field which builds the relationship
-			parent: "ReportingPerson",
-			//Sets the local data source to the diagram.
-			dataSource: data 
-         };
-    });
+        // Defines the unique field of each JSON data
+        id: "Name",
+        // Defines the parent field which builds the relationship
+        parent: "ReportingPerson",
+        //Sets the local data source to the diagram.
+        dataSource: data
+    };
+});
 	
 {% endhighlight %}
 
@@ -111,51 +111,52 @@ To bind remote data to the Diagram, you have to configure the fields of `dataSou
 {% highlight javascript %}
 
 //Initializes Diagram
- syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     //Uses layout to auto-arrange nodes on the Diagram page
-    $scope.layout = { 
-   		type: "hierarchicaltree"};
+    $scope.layout = {
+        type: "hierarchicaltree"
+    };
     $scope.defaultSettings = {
-     	node: {
-				width: 100,
-				height: 40,
-				fillColor: "darkcyan",
-				labels: [{
-					name: "label1",
-					bold: true,
-					fontColor: "white"
-				}],
-				borderColor: "none"
-			},
-    	connector: {
-				segments: [{
-					type: "orthogonal"
-				}]
-			}
-         };
+        node: {
+            width: 100,
+            height: 40,
+            fillColor: "darkcyan",
+            labels: [{
+                name: "label1",
+                bold: true,
+                fontColor: "white"
+            }],
+            borderColor: "none"
+        },
+        connector: {
+            segments: [{
+                type: "orthogonal"
+            }]
+        }
+    };
     $scope.nodeTemplate = "nodeTemplate";
-    		//Configures data source
+    //Configures data source
     $scope.dataSourceSettings = {
-        	//Initializes the data manager
-			dataSource: ej.DataManager({
-				// Specifies the remote data service
-				url: "[http://mvc.syncfusion.com/Services/Northwnd.svc/](http://mvc.syncfusion.com/Services/Northwnd.svc/)"
-			  }),
-			//Defines the query to retrieve data
-			query: ej.Query().from("Employees").select("EmployeeID, ReportsTo, FirstName"),
-			// Defines the table name
-			tableName: "Employees",
-			// Defines the unique field
-			id: "EmployeeID",
-			// Define the field to relate objects
-			parent: "ReportsTo"
-         };
-    });
+        //Initializes the data manager
+        dataSource: ej.DataManager({
+            // Specifies the remote data service
+            url: "[http://mvc.syncfusion.com/Services/Northwnd.svc/](http://mvc.syncfusion.com/Services/Northwnd.svc/)"
+        }),
+        //Defines the query to retrieve data
+        query: ej.Query().from("Employees").select("EmployeeID, ReportsTo, FirstName"),
+        // Defines the table name
+        tableName: "Employees",
+        // Defines the unique field
+        id: "EmployeeID",
+        // Define the field to relate objects
+        parent: "ReportsTo"
+    };
+});
 
 //Binds custom JSON with node
 
 function nodeTemplate(diagram, node) {
-	node.labels[0].text = node.FirstName;
+    node.labels[0].text = node.FirstName;
 }
 
 {% endhighlight %}
@@ -169,120 +170,121 @@ The Diagram provides support to populate the Diagram from the **HTML table**. I
 The following code illustrates how to convert HTML table to the Diagram.
 
 {% highlight html %}
+
 <!-- HTML Table -->
 <table id="htmlbinding">
-	<thead>
-		<tr>
-			<th>Id</th>
-			<th>Designation</th>
-			<th>Color</th>
-			<th>ReportingPerson</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>parent</td>
-			<td>Managing Director</td>
-			<td>#822b86</td>
-			<td>null</td>
-		</tr>
-		<tr>
-			<td>1</td>
-			<td>Project manager</td>
-			<td>#3c418d</td>
-			<td>parent</td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td>Project manager</td>
-			<td>#108d8d</td>
-			<td>parent</td>
-		</tr>
-		<tr>
-			<td>3</td>
-			<td>Product Lead</td>
-			<td>#3c418d</td>
-			<td>1</td>
-		</tr>
-		<tr>
-			<td>4</td>
-			<td>Product Lead</td>
-			<td>#3c418d</td>
-			<td>1</td>
-		</tr>
-		<tr>
-			<td>5</td>
-			<td>Product Lead</td>
-			<td>#108d8d</td>
-			<td>2</td>
-		</tr>
-		<tr>
-			<td>6</td>
-			<td>Product Lead</td>
-			<td>#108d8d</td>
-			<td>2</td>
-		</tr>
-		<tr>
-			<td>7</td>
-			<td>S/W engineer</td>
-			<td>#3c418d</td>
-			<td>4</td>
-		</tr>
-		<tr>
-			<td>8</td>
-			<td>S/W engineer</td>
-			<td>#3c418d</td>
-			<td>4</td>
-		</tr>
-	</tbody>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Designation</th>
+            <th>Color</th>
+            <th>ReportingPerson</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>parent</td>
+            <td>Managing Director</td>
+            <td>#822b86</td>
+            <td>null</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Project manager</td>
+            <td>#3c418d</td>
+            <td>parent</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Project manager</td>
+            <td>#108d8d</td>
+            <td>parent</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Product Lead</td>
+            <td>#3c418d</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Product Lead</td>
+            <td>#3c418d</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Product Lead</td>
+            <td>#108d8d</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Product Lead</td>
+            <td>#108d8d</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>S/W engineer</td>
+            <td>#3c418d</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>S/W engineer</td>
+            <td>#3c418d</td>
+            <td>4</td>
+        </tr>
+    </tbody>
 </table>
+
 {% endhighlight %}
+
 {% highlight javascript %}
 
 //Binds custom JSON with node
-
 function nodeTemplate(diagram, node) {
-	node.labels[0].text = node.Designation;
-	node.fillColor = node.Color;
+    node.labels[0].text = node.Designation;
+    node.fillColor = node.Color;
 }
 
- syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     //Uses layout to auto-arrange nodes on the Diagram page
-    $scope.layout = { 
-			type: "hierarchicaltree"
-               };
+    $scope.layout = {
+        type: "hierarchicaltree"
+    };
     $scope.defaultSettings = {
-     //Sets the default properties for nodes and connectors.
-			node: {
-				width: 120,
-				height: 40,
-				shape: "rectangle",
-				borderColor: "transparent",
-				labels: [{
-					name: "label1",
-					fontColor: "#ffffff"
-				}]
-			},
-			connector: {
-				segments: [{
-					"type": "orthogonal"
-				}],
-				targetDecorator: {
-					fillColor: "#4F4F4F",
-					borderColor: "#4F4F4F"
-				}
-			}
+        //Sets the default properties for nodes and connectors.
+        node: {
+            width: 120,
+            height: 40,
+            shape: "rectangle",
+            borderColor: "transparent",
+            labels: [{
+                name: "label1",
+                fontColor: "#ffffff"
+            }]
+        },
+        connector: {
+            segments: [{
+                "type": "orthogonal"
+            }],
+            targetDecorator: {
+                fillColor: "#4F4F4F",
+                borderColor: "#4F4F4F"
+            }
+        }
     };
     $scope.nodeTemplate = "nodeTemplate";
-    		//Configures data source
+    //Configures data source
     $scope.dataSourceSettings = {
-        	id: "Id",
-			parent: "ReportingPerson",
-			//Defines data source with html table
-			dataSource: ej.DataManager($("#htmlbinding")),
-         };
-    });
-
+        id: "Id",
+        parent: "ReportingPerson",
+        //Defines data source with html table
+        dataSource: ej.DataManager($("#htmlbinding")),
+    };
+});
 
 {% endhighlight %}
 

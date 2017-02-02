@@ -27,34 +27,36 @@ Ports act as the connection points of node and allows to create connections with
 
 To add a connection port, you need to define the port object and add it to node's `ports` collection. The `offset` property of port accepts an object of fractions and used to determine the position of ports. The following code illustrates how to add ports when initializing the node.
 
-{% highlight javascript %}
+{% highlight html %}
 
 <div ng-controller="diagramCtrl">
-     <ej-diagram id="diagramCore"
-      e-height="500px" 
-      e-width="700px"
-      e-nodes="nodes">
-     </ej-diagram>
+    <ej-diagram id="diagramCore" e-height="500px" e-width="700px" e-nodes="nodes">
+    </ej-diagram>
 </div>
 
+{% endhighlight %} 
+
+{% highlight javascript %}
+
 var nodes = [{
-	width: 100,
-	height: 100,
-	// Defines a collection of ports
-	ports: [
-		//Defines JSON to create port
-		{
-		//Sets the port name
-		name: "port1",
-		// Specifies the port offset – fraction value relative to node bounds
-		offset: {
-			x: 0,
-			y: 0.5
-		},
-	}]
+    width: 100,
+    height: 100,
+    // Defines a collection of ports
+    ports: [
+        //Defines JSON to create port
+        {
+            //Sets the port name
+            name: "port1",
+            // Specifies the port offset – fraction value relative to node bounds
+            offset: {
+                x: 0,
+                y: 0.5
+            },
+        }
+    ]
 }];
 
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     // Sets the nodes to Diagram model
     $scope.nodes = nodes;
 });
@@ -68,19 +70,36 @@ You can add ports at runtime by using the client side method `addPorts`. The fol
 {% highlight javascript %}
 
 // Defines a collection of ports that have to be added at runtime
-var ports = [
-	{
-		name: "port1",
-		// Specifies the port offset – fraction value relative
-		to node bounds – determines the position of port on node
-		offset: {	
-			x: 0,	
-			y: 0.5
-		}
-	},
-	{ name: "port2",offset: {x: 1,y: 0.5 }},
-	{ name: "port3",offset: {x: 0.5,y: 0 }},
-	{ name: "port4",offset: {x: 0.5,y: 1 }}
+var ports = [{
+        name: "port1",
+        // Specifies the port offset – fraction value relative
+        to node bounds– determines the position of port on node
+        offset: {
+            x: 0,
+            y: 0.5
+        }
+    },
+    {
+        name: "port2",
+        offset: {
+            x: 1,
+            y: 0.5
+        }
+    },
+    {
+        name: "port3",
+        offset: {
+            x: 0.5,
+            y: 0
+        }
+    },
+    {
+        name: "port4",
+        offset: {
+            x: 0.5,
+            y: 1
+        }
+    }
 ];
 
 // Gets the instance for the Diagram
@@ -103,7 +122,10 @@ The client side API `updatePort` is used to update the ports at run time. The fo
 var diagram = $("#diagram").ejDiagram("instance");
 var selectedObject = diagram.model.selectedItems.children[0];
 var visibility = ej.datavisualization.Diagram.PortVisibility.Visible;
-diagram.updatePort(selectedObject.name, selectedObject.ports[0], { fillColor: "red", visibility: visibility });
+diagram.updatePort(selectedObject.name, selectedObject.ports[0], {
+    fillColor: "red",
+    visibility: visibility
+});
 
 {% endhighlight %}
 
@@ -122,23 +144,34 @@ The following code illustrates how to change the appearance of port.
 {% highlight javascript %}
 
 var ports = [{
-	// Specifies the port position
-	offset: {
-		x: 1,
-		y: 0.5
-	},
-	//Defines the shape of port
-	shape: ej.datavisualization.Diagram.PortShapes.Circle,
-	//Specifies the port visibility
-	visibility: true,
-	//Customizes the appearance
-	fillColor: "yellow",
-	size: 12,
-	borderColor: "black",
-	borderWidth: 2
+    // Specifies the port position
+    offset: {
+        x: 1,
+        y: 0.5
+    },
+    //Defines the shape of port
+    shape: ej.datavisualization.Diagram.PortShapes.Circle,
+    //Specifies the port visibility
+    visibility: true,
+    //Customizes the appearance
+    fillColor: "yellow",
+    size: 12,
+    borderColor: "black",
+    borderWidth: 2
 }];
 
-var nodes = [{ name: "node", ports: ports }];
+var nodes = [{
+    name: "node",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    ports: ports
+}];
+syncApp.controller('diagramCtrl', function($scope) {
+    // Sets the nodes to Diagram model
+    $scope.nodes = nodes;
+});
 
 {% endhighlight %}
 

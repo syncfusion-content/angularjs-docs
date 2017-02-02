@@ -19,7 +19,8 @@ Create an HTML page and add the scripts references in the order mentioned in the
 
 <!DOCTYPE html>
 <html ng-app="defaultApp">
-   <head>
+
+<head>
     <link rel="stylesheet" href="http://cdn.syncfusion.com/14.3.0.49/js/web/bootstrap-  theme/ej.web.all.min.css" />
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js" type="text/javascript"></script>
@@ -29,9 +30,11 @@ Create an HTML page and add the scripts references in the order mentioned in the
     <script src="http://js.syncfusion.com/demos/web/scripts/xljsondata.js" type="text/javascript"></script>
     <script src="https://code.angularjs.org/1.4.0-rc.2/angular-route.min.js"></script>
     <script src="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.widget.angular.min.js"></script>
-   </head>
-   <body>
-   </body>
+</head>
+
+<body>
+</body>
+
 </html>
 
 {% endhighlight %}
@@ -45,10 +48,12 @@ Add a placeholder `div` element that can be used to initialize the diagram widge
 {% highlight html %}
 
 <!DOCTYPE html>
-<html ng-app="defaultApp">  
-    <body ng-controller="diagramCtrl">
-          <ej-diagram id="diagramCore"  e-height="600px" e-width="100%"></ej-diagram>
-    </body>
+<html ng-app="defaultApp">
+
+<body ng-controller="diagramCtrl">
+    <ej-diagram id="diagramCore" e-height="600px" e-width="100%"></ej-diagram>
+</body>
+
 </html>
 
 {% endhighlight %}
@@ -56,14 +61,14 @@ Add a placeholder `div` element that can be used to initialize the diagram widge
 {% highlight html %}
 
 <!DOCTYPE html>
-<html>    
-   <body>
-      <script>
+<html>
+
+<body>
+    <script>
         var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
-        syncApp.controller('diagramCtrl', function ($scope,$rootScope) {
-        });
-      </script>
-    </body>
+        syncApp.controller('diagramCtrl', function($scope, $rootScope) {});
+    </script>
+</body>
 </html>
 
 {% endhighlight %}
@@ -78,10 +83,12 @@ Let us create and add a `node` (JSON data) with specific position, size, label a
 {% highlight html %}
 
 <!DOCTYPE html>
-<html ng-app="defaultApp">  
-    <body ng-controller="diagramCtrl">
-          <ej-diagram id="diagramCore" e-height="600px" e-width="100%" e-nodes="nodes" e-connectors="connectors"></ej-diagram>
-    </body>
+<html ng-app="defaultApp">
+
+<body ng-controller="diagramCtrl">
+    <ej-diagram id="diagramCore" e-height="600px" e-width="100%" e-nodes="nodes" e-connectors="connectors"></ej-diagram>
+</body>
+
 </html>
 
 {% endhighlight %}
@@ -89,37 +96,38 @@ Let us create and add a `node` (JSON data) with specific position, size, label a
 {% highlight html %}
 
 <!DOCTYPE html>
-<html>    
-   <body>
-      <script>
+<html>
+
+<body>
+    <script>
         var nodes = [{
-            // Unique name for the node
-            name: "Start",
-            // Position of the node
-            offsetX: 300,
-            offsetY: 50,
-            // Size of the node
-            width: 140,
-            height: 50,
-            // Text(label) added to the node
-            labels: [{
-                text: "Start"
-            }],
-            // Shape for the node
-            type: "flow",
-            shape: "terminator"
-        },
-        {
-            name: "Init", 
-            offsetX: 300, 
-            offsetY: 140,
-            width: 140, 
-            height: 50,
-            labels: [{ 
-                text: "var i = 0;" 
-            }], 
-            type: "flow",
-            shape: "process"
+                // Unique name for the node
+                name: "Start",
+                // Position of the node
+                offsetX: 300,
+                offsetY: 50,
+                // Size of the node
+                width: 140,
+                height: 50,
+                // Text(label) added to the node
+                labels: [{
+                    text: "Start"
+                }],
+                // Shape for the node
+                type: "flow",
+                shape: "terminator"
+            },
+            {
+                name: "Init",
+                offsetX: 300,
+                offsetY: 140,
+                width: 140,
+                height: 50,
+                labels: [{
+                    text: "var i = 0;"
+                }],
+                type: "flow",
+                shape: "process"
             }
         ];
         var connectors = [{
@@ -129,17 +137,19 @@ Let us create and add a `node` (JSON data) with specific position, size, label a
             sourceNode: "Start",
             targetNode: "Init",
             // An empty orthogonal segment
-            segments: [{ type: "orthogonal" }]
+            segments: [{
+                type: "orthogonal"
+            }]
         }];
         var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
-        syncApp.controller('diagramCtrl', function ($scope, $rootScope) {
+        syncApp.controller('diagramCtrl', function($scope, $rootScope) {
             $scope.nodes = nodes;
             $scope.connectors = connectors;
         });
-        </script>
-    </body>
-</html>
+    </script>
+</body>
 
+</html>
 {% endhighlight %}
 
 N> `labels` property is an array, which indicates that more than one label can be added to a node.
@@ -156,14 +166,40 @@ Added nodes and connector connecting node will be displayed in diagram as shown 
 
 {% highlight javascript %}
 
-var data = [
-	{ Name: "Elizabeth", Role: "Director" },
-	{ Name: "Christina", ReportingPerson: "Elizabeth", Role: "Manager" },
-	{ Name: "Yoshi", ReportingPerson: "Christina", Role: "Lead" },
-	{ Name: "Philip", ReportingPerson: "Christina", Role: "Lead" },
-	{ Name: "Yang", ReportingPerson: "Elizabeth", Role: "Manager" },
-	{ Name: "Roland", ReportingPerson: "Yang", Role: "Lead" },
-	{ Name: "Yvonne", ReportingPerson: "Yang", Role: "Lead" }
+var data = [{
+        Name: "Elizabeth",
+        Role: "Director"
+    },
+    {
+        Name: "Christina",
+        ReportingPerson: "Elizabeth",
+        Role: "Manager"
+    },
+    {
+        Name: "Yoshi",
+        ReportingPerson: "Christina",
+        Role: "Lead"
+    },
+    {
+        Name: "Philip",
+        ReportingPerson: "Christina",
+        Role: "Lead"
+    },
+    {
+        Name: "Yang",
+        ReportingPerson: "Elizabeth",
+        Role: "Manager"
+    },
+    {
+        Name: "Roland",
+        ReportingPerson: "Yang",
+        Role: "Lead"
+    },
+    {
+        Name: "Yvonne",
+        ReportingPerson: "Yang",
+        Role: "Lead"
+    }
 ];
 
 {% endhighlight %}
@@ -172,7 +208,7 @@ var data = [
 
 * You can configure this "Employee Information" with Diagram, so that the node and connector are automatically generated using mapping properties. The following code examples show how dataSourceSetting is used to map id and parent with property name identifiers for employee information.
 
-{% highlight javascript %}
+{% highlight html %}
 
 <ej-diagram id="diagram" e-height="450px"
                             e-layout-type="layout.type"
@@ -200,36 +236,62 @@ Following code examples indicate how to define the default appearance of node an
 
 //To represent the roles
 var codes = {
-	Director: "rgb(0, 139,139)",
-	Manager: "rgb(30, 30,113)",
-	Lead: "rgb(0, 100,0)"
+    Director: "rgb(0, 139,139)",
+    Manager: "rgb(30, 30,113)",
+    Lead: "rgb(0, 100,0)"
 }
 
 // Bind custom data with node
 function nodeTemplate(diagram, node) {
-	node.labels[0].text = node.Name;
-	node.fillColor = codes[node.Role];
+    node.labels[0].text = node.Name;
+    node.fillColor = codes[node.Role];
 }
 var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
-syncApp.controller('diagramCtrl', function ($scope, $rootScope) {
+syncApp.controller('diagramCtrl', function($scope, $rootScope) {
     $scope.layout = {
-        type: "organizationalchart", orientation: "toptobottom", horizontalSpacing: 25, verticalSpacing: 35,
-        marginX: 3, marginY: 3
+        type: "organizationalchart",
+        orientation: "toptobottom",
+        horizontalSpacing: 25,
+        verticalSpacing: 35,
+        marginX: 3,
+        marginY: 3
     };
     $scope.defaultSettings = {
         node: {
-            constraints: ej.datavisualization.Diagram.NodeConstraints.Select | ej.datavisualization.Diagram.NodeConstraints.PointerEvents, fillColor: "#88C65C", width: 100,
-            height: 40, borderColor: "black", borderWidth: 1, labels: [{ name: "label1", fontColor: "white", fontSize: 12, margin: { left: 10, right: 10 } }]
+            constraints: ej.datavisualization.Diagram.NodeConstraints.Select | ej.datavisualization.Diagram.NodeConstraints.PointerEvents,
+            fillColor: "#88C65C",
+            width: 100,
+            height: 40,
+            borderColor: "black",
+            borderWidth: 1,
+            labels: [{
+                name: "label1",
+                fontColor: "white",
+                fontSize: 12,
+                margin: {
+                    left: 10,
+                    right: 10
+                }
+            }]
         },
         connector: {
-            lineColor: "#000000", segments: [{ type: "orthogonal" }], targetDecorator: { shape: "none" },
+            lineColor: "#000000",
+            segments: [{
+                type: "orthogonal"
+            }],
+            targetDecorator: {
+                shape: "none"
+            },
             constraints: ej.datavisualization.Diagram.ConnectorConstraints.None
         }
     };
     $scope.nodeTemplate = "nodeTemplate";
-    $scope.dataSourceSettings = { id: "Name",parent: "ReportingPerson",dataSource: data}
-    };
-);
+    $scope.dataSourceSettings = {
+        id: "Name",
+        parent: "ReportingPerson",
+        dataSource: data
+    }
+};);
 
 {% endhighlight %}
 

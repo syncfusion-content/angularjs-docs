@@ -15,22 +15,25 @@ documentation: ug
 
 The `snapSettings.snapConstraints` enables you to show/hide the gridlines. The following code example illustrates how to show or hide gridlines.
 
-{% highlight javascript %}
+{% highlight html %}
 
 <div ng-controller="diagramCtrl">
-       <ej-diagram id="diagramCore" e-height="500px" e-width="700px" 
-              e-snapsettings="snapSettings">
-       </ej-diagram>
- </div>
+    <ej-diagram id="diagramCore" e-height="500px" e-width="700px" e-snapsettings="snapSettings">
+    </ej-diagram>
+</div>
+
+ {% endhighlight %}
+
+{% highlight javascript %}
  
 //Shows both horizontal and vertical gridlines
 var snapSettings = {
-	snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowLines
+    snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowLines
 };
 
-    syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.snapSettings = snapSettings
-    });
+});
 
 {% endhighlight %}
 
@@ -43,32 +46,34 @@ To show only horizontal/vertical gridlines or to hide gridlines, refer to [Const
 You can customize the appearance of the gridlines by using a set of predefined properties. To explore those properties, refer to [Gridlines](/api/js/ejDiagram#snapsettings:horizontalgridlines "Gridlines")
 The `horizontalGridLines` and `verticalGridLines` properties allow to customize the appearance of the gridlines. The following code example illustrates how to customize the appearance of gridlines.
 
-{% highlight javascript %}
+{% highlight html %}
 
 <div ng-controller="diagramCtrl">
-       <ej-diagram id="diagramCore" e-height="500px" e-width="700px" 
-              e-snapsettings-horizontalGridLines="snapSettings.horizontalGridLines"
-              e-snapsettings-verticalGridLines="snapSettings.verticalGridLines"
-              e-snapsettings-snapConstraints="snapSettings.snapConstraints">
-       </ej-diagram>
- </div>
+    <ej-diagram id="diagramCore" e-height="500px" e-width="700px" e-snapsettings-horizontalGridLines="snapSettings.horizontalGridLines" 
+	e-snapsettings-verticalGridLines="snapSettings.verticalGridLines" e-snapsettings-snapConstraints="snapSettings.snapConstraints">
+    </ej-diagram>
+</div>
  
+ {% endhighlight %}
+
+ {% highlight javascript %}
+
 var snapSettings = {
-	snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowLines,
-	// Customizes the line color and line style to the gridlines.
-	horizontalGridLines: {
-		lineColor: "blue",
-		lineDashArray: "2 2"
-	},
-	verticalGridLines: {
-		lineColor: "blue",
-		lineDashArray: "2 2"
-	}
+    snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowLines,
+    // Customizes the line color and line style to the gridlines.
+    horizontalGridLines: {
+        lineColor: "blue",
+        lineDashArray: "2 2"
+    },
+    verticalGridLines: {
+        lineColor: "blue",
+        lineDashArray: "2 2"
+    }
 };
 
-    syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.snapSettings = snapSettings
-    });
+});
 
 {% endhighlight %}
 
@@ -83,23 +88,23 @@ The following code example illustrates how to customize the thickness of lines a
 {% highlight javascript %}
 
 var snapSettings = {
-	snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowLines,
-	horizontalGridLines: {
-		// Defines the thickness and intervals for a pattern of lines
-		linesInterval: [1.25, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 15],
-		lineColor: "blue",
-		lineDashArray: "2 2"
-	},
-	verticalGridLines: {
-		linesInterval: [1.25, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 15],
-		lineColor: "blue",
-		lineDashArray: "2 2"
-	}
+    snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowLines,
+    horizontalGridLines: {
+        // Defines the thickness and intervals for a pattern of lines
+        linesInterval: [1.25, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 15],
+        lineColor: "blue",
+        lineDashArray: "2 2"
+    },
+    verticalGridLines: {
+        linesInterval: [1.25, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 15],
+        lineColor: "blue",
+        lineDashArray: "2 2"
+    }
 };
 
-    syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.snapSettings = snapSettings
-    });
+});
 
 {% endhighlight %}
 
@@ -117,12 +122,12 @@ Snapping to gridlines can be enabled/disabled with the `snapSettings.snapConstra
 
 //Enables snapping to both the horizontal and vertical lines.
 snapSettings = {
-	snapConstraints: ej.datavisualization.Diagram.SnapConstraints.SnapToLines
+    snapConstraints: ej.datavisualization.Diagram.SnapConstraints.SnapToLines
 };
 
-    syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.snapSettings = snapSettings
-    });
+});
 
 {% endhighlight %}
 
@@ -132,28 +137,30 @@ To enable/disable snapping to horizontal/vertical lines, refer to [Constraints] 
 
 By default, the objects are snapped towards the nearest gridline. The gridline or position towards where the diagram object snaps can be customized with the property, `snapInterval`. The following code example illustrates how to customize the snap intervals.
 
-{% highlight javascript %}
+{% highlight html %}
 
 <div ng-controller="diagramCtrl">
-       <ej-diagram id="diagramCore" e-height="500px" e-width="700px" 
-              e-snapsettings-horizontalGridLines="snapSettings.horizontalGridLines"
-              e-snapsettings-verticalGridLines="snapSettings.verticalGridLines"
-              e-snapsettings-snapConstraints="snapSettings.snapConstraints">
-       </ej-diagram>
- </div>
-    syncApp.controller('diagramCtrl', function ($scope) {
-    $scope.snapSettings = {
-        	horizontalGridLines:{
-			//Defines a set of intervals where the object is snapped.
-			//In this example, the object is snapped to every 10px.
-			snapInterval :[10]
-		},
-		verticalGridLines:{
-			//The object is snapped to every 10px.
-			snapInterval:[10]
-		},
-		snapConstraints:ej.datavisualization.Diagram.SnapConstraints.All
-	};    
+    <ej-diagram id="diagramCore" e-height="500px" e-width="700px" e-snapsettings-horizontalGridLines="snapSettings.horizontalGridLines"
+	 e-snapsettings-verticalGridLines="snapSettings.verticalGridLines" e-snapsettings-snapConstraints="snapSettings.snapConstraints">
+    </ej-diagram>
+</div>
+{% endhighlight %}
+
+ {% highlight javascript %}
+
+       syncApp.controller('diagramCtrl', function($scope) {
+        $scope.snapSettings = {
+            horizontalGridLines: {
+                //Defines a set of intervals where the object is snapped.
+                //In this example, the object is snapped to every 10px.
+                snapInterval: [10]
+            },
+            verticalGridLines: {
+                //The object is snapped to every 10px.
+                snapInterval: [10]
+            },
+            snapConstraints: ej.datavisualization.Diagram.SnapConstraints.All
+        };
     });
 
 {% endhighlight %}
@@ -164,20 +171,22 @@ The snap-to-object provides visual cues to assist with aligning and spacing Diag
 
 The `enableSnapToObject` property allows you to enable/disable smart guides. The following code example illustrates how to enable/disable the smart guides.
 
-{% highlight javascript %}
-
+{% highlight html %}
 
 <div ng-controller="diagramCtrl">
-       <ej-diagram id="diagramCore" e-height="500px" e-width="700px" 
-              e-snapsettings-enableSnapToObject="snapSettings.enableSnapToObject">
-       </ej-diagram>
- </div>
+    <ej-diagram id="diagramCore" e-height="500px" e-width="700px" e-snapsettings-enableSnapToObject="snapSettings.enableSnapToObject">
+    </ej-diagram>
+</div>
+
+ {% endhighlight %}
+
+ {% highlight javascript %}
  
-    syncApp.controller('diagramCtrl', function ($scope) {
-    $scope.snapSettings = {
-    enableSnapToObject:true,
-	};    
-    });
+    syncApp.controller('diagramCtrl', function($scope) {
+     $scope.snapSettings = {
+         enableSnapToObject: true,
+     };
+ });
 
 {% endhighlight %}
 

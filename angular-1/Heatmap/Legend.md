@@ -17,16 +17,16 @@ Legend can be created with color mapping as shown below.
 
 {% highlight html %}
 
-  <div ej-heatmaplegend id="heatmap_legend"
-       e-colormappingcollection="colorMappingCollection"
-       e-height="50px"
-       e-width="75%"
-       e-showlabel="true">
-   <div e-colormappingcollection>
-       <div e-colormapping e-value="0" e-color="#8ec8f8"></div>
-       <div e-colormapping e-value="100" e-color="#0d47a1"></div>
-   </div>
- </div>
+<div ej-heatmaplegend id="heatmap_legend" e-colormappingcollection="colorMappingCollection" e-height="50px" e-width="75%" e-showlabel="true">
+    <div e-colormappingcollection>
+        <div e-colormapping e-value="0" e-color="#8ec8f8"></div>
+        <div e-colormapping e-value="100" e-color="#0d47a1"></div>
+    </div>
+</div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
 
 syncApp.controller('heatmapCtrl', function ($scope) {
 });
@@ -47,17 +47,16 @@ There are two modes for Legend
 
 {% highlight html %} 
 
-<div ej-heatmaplegend id="heatmap_legend"
-     e-colormappingcollection="colorMappingCollection"
-     e-height="50px"
-     e-width="75%"
-     e-showlabel="true"
-     e-legendmode="ej.heatmap.legendmode.gradient">
+<div ej-heatmaplegend id="heatmap_legend" e-colormappingcollection="colorMappingCollection" e-height="50px" e-width="75%" e-showlabel="true" e-legendmode="ej.heatmap.legendmode.gradient">
     <div e-colormappingcollection>
         <div e-colormapping e-value="0" e-color="#8ec8f8"></div>
         <div e-colormapping e-value="100" e-color="#0d47a1"></div>
     </div>
 </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
 
 syncApp.controller('heatmapCtrl', function ($scope) {
 });
@@ -70,17 +69,16 @@ syncApp.controller('heatmapCtrl', function ($scope) {
 
 {% highlight html %} 
 
-<div ej-heatmaplegend id="heatmap_legend"
-     e-colormappingcollection="colorMappingCollection"
-     e-height="50px"
-     e-width="75%"
-     e-showlabel="true"
-     e-legendmode="ej.HeatMap.LegendMode.List">
+<div ej-heatmaplegend id="heatmap_legend" e-colormappingcollection="colorMappingCollection" e-height="50px" e-width="75%" e-showlabel="true" e-legendmode="ej.HeatMap.LegendMode.List">
     <div e-colormappingcollection>
         <div e-colormapping e-value="0" e-color="#8ec8f8"></div>
         <div e-colormapping e-value="100" e-color="#0d47a1"></div>
     </div>
 </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
 
 syncApp.controller('heatmapCtrl', function ($scope) {
 });
@@ -99,17 +97,15 @@ There are 2 types of Orientation, applicable for Gradient and List Mode
 
 {% highlight html %} 
 
-<div ej-heatmaplegend id="heatmap_legend"
-     e-colormappingcollection="colorMappingCollection"
-     e-height="50px"
-     e-width="75%"
-     e-showlabel="true"
-     e-legendmode="ej.HeatMap.LegendMode.List">
+<div ej-heatmaplegend id="heatmap_legend" e-colormappingcollection="colorMappingCollection" e-height="50px" e-width="75%" e-showlabel="true" e-legendmode="ej.HeatMap.LegendMode.List">
     <div e-colormappingcollection>
         <div e-colormapping e-value="0" e-color="#8ec8f8"></div>
         <div e-colormapping e-value="100" e-color="#0d47a1"></div>
     </div>
 </div>
+{% endhighlight %}
+
+{% highlight javascript %}
 
 syncApp.controller('heatmapCtrl', function ($scope) {
 });
@@ -122,18 +118,16 @@ syncApp.controller('heatmapCtrl', function ($scope) {
 
 {% highlight html %} 
 
-<div ej-heatmaplegend id="heatmap_legend"
-     e-colormappingcollection="colorMappingCollection"
-     e-height="50px"
-     e-width="75%"
-     e-showlabel="true"
-     e-legendmode="ej.HeatMap.LegendMode.List"
-     e-orientation=" ej.HeatMap.LegendOrientation.Vertical">
+<div ej-heatmaplegend id="heatmap_legend" e-colormappingcollection="colorMappingCollection" e-height="50px" e-width="75%" e-showlabel="true" e-legendmode="ej.HeatMap.LegendMode.List" e-orientation=" ej.HeatMap.LegendOrientation.Vertical">
     <div e-colormappingcollection>
         <div e-colormapping e-value="0" e-color="#8ec8f8"></div>
         <div e-colormapping e-value="100" e-color="#0d47a1"></div>
     </div>
 </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
 
 syncApp.controller('heatmapCtrl', function ($scope) {
 });

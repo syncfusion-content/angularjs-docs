@@ -16,17 +16,19 @@ In color mapping, when white color is set to value 0 and red color is set for va
 {% highlight html %}
 
 <div ng-controller="heatmapCtrl">
-    <ej-heatmap id="HeatMap"
-                e-width="100%"
-                e-height="300px">
+    <ej-heatmap id="HeatMap" e-width="100%" e-height="300px">
         <div>
-        <e-colormappingcollection>
-            <div e-colormapping e-value="0" e-color="#8ec8f8"></div>
-            <div e-colormapping e-value="100" e-color="#0d47a1"></div>
-        </e-colormappingcollection>
-            </div>
+            <e-colormappingcollection>
+                <div e-colormapping e-value="0" e-color="#8ec8f8"></div>
+                <div e-colormapping e-value="100" e-color="#0d47a1"></div>
+            </e-colormappingcollection>
+        </div>
     </ej-heatmap>
-  </div>
+</div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
 
 syncApp.controller('heatmapCtrl', function ($scope) {
 });

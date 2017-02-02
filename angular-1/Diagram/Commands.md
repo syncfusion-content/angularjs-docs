@@ -202,23 +202,23 @@ The following code illustrates how to zoom-in/zoom out the Diagram.
 {% highlight javascript %}
 
 function Zoom() {
-	var diagram = $("#diagram").ejDiagram("instance");
-	var zoom = {
-		// Sets the zoomFactor
-		zoomFactor: 0.2,
-		// Sets the zoomCommand as zoomIn to zoom-in the Diagram
-		zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomIn,
-		// for zoomOut
-		//zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomOut
+    var diagram = $("#diagram").ejDiagram("instance");
+    var zoom = {
+        // Sets the zoomFactor
+        zoomFactor: 0.2,
+        // Sets the zoomCommand as zoomIn to zoom-in the Diagram
+        zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomIn,
+        // for zoomOut
+        //zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomOut
 
-		//Defines the focusPoint to zoom the Diagram with respect to any point
-		//When you do not set focus point, zooming is performed with reference to the center of current Diagram view.
-		focusPoint: {
-			x: 100,
-			y: 100
-		}
-	};
-	diagram.zoomTo(zoom);
+        //Defines the focusPoint to zoom the Diagram with respect to any point
+        //When you do not set focus point, zooming is performed with reference to the center of current Diagram view.
+        focusPoint: {
+            x: 100,
+            y: 100
+        }
+    };
+    diagram.zoomTo(zoom);
 }
 
 {% endhighlight %}
@@ -270,10 +270,10 @@ The following code illustrates how to execute the bringIntoView command.
 var diagram = $("#DiagramContent").ejDiagram("instance");
 //Brings the specified rectangular region of the Diagram content to the viewport of the page.
 diagram.bringIntoView({
-	x: 700,
-	y: 500,
-	width: 100,
-	height: 100
+    x: 700,
+    y: 500,
+    width: 100,
+    height: 100
 });
 
 {% endhighlight %}
@@ -289,10 +289,10 @@ The following code illustrates how to execute the bringToCenter command.
 var diagram = $("#DiagramContent").ejDiagram("instance");
 //Brings the specified rectangular region of the Diagram content to the center of the viewport.
 diagram.bringToCenter({
-	x: 700,
-	y: 500,
-	width: 100,
-	height: 100
+    x: 700,
+    y: 500,
+    width: 100,
+    height: 100
 });
 
 {% endhighlight %}
@@ -302,19 +302,25 @@ diagram.bringToCenter({
 `fitToPage` command helps to fit the Diagram content into the view with respect to either width, height, or at the whole.
 
 <table>
-<tr>
-<th>
-Command</th><th>
-Parameter</th><th>
-Description</th></tr>
-<tr>
-<td>
-           fitToPage </td><td>
-<b>mode</b> (string) Value accepted: ej.datavisualization.Diagram.FitMode    <b>region</b> (string) Value accepted-ej.datavisualization.Diagram.Region   <b>margin</b> (object) </td><td>
-<b>FitToPage</b> command fits the <b>Diagram</b> into the view. The area/bounds to be fit into view is specified through the parameters.
-<b>mode</b> – [FitToMode](#fittomode).
-<b>region</b> – [Region](#region).
-<b>margin</b> – Space that is to be left in between the content and viewport. </td></tr>
+    <tr>
+        <th>
+            Command</th>
+        <th>
+            Parameter</th>
+        <th>
+            Description</th>
+    </tr>
+    <tr>
+        <td>
+            fitToPage </td>
+        <td>
+            <b>mode</b> (string) Value accepted: ej.datavisualization.Diagram.FitMode    <b>region</b> (string) Value accepted-ej.datavisualization.Diagram.Region   <b>margin</b> (object) </td>
+        <td>
+            <b>FitToPage</b> command fits the <b>Diagram</b> into the view. The area/bounds to be fit into view is specified through the parameters.
+            <b>mode</b> – [FitToMode](#fittomode).
+            <b>region</b> – [Region](#region).
+            <b>margin</b> – Space that is to be left in between the content and viewport. </td>
+    </tr>
 </table>
 
 The following code illustrates how to execute FitToPage command.
@@ -323,11 +329,12 @@ The following code illustrates how to execute FitToPage command.
 
 //Fits to page – fit Diagram based on elements
 diagram.fitToPage("page", "content", {
-	left: 25,
-	top: 25,
-	right: 25,
-	bottom: 25
+    left: 25,
+    top: 25,
+    right: 25,
+    bottom: 25
 });
+
 {% endhighlight %}
 
 ### FitToMode
@@ -356,36 +363,35 @@ The following code example illustrates how to define a custom command.
 
 {% highlight javascript %}
 
+syncApp.controller('diagramCtrl', function($scope) {
+            // Sets the nodes to Diagram model
+            $scope.commandManager = {
+                commands: {
+                    //Commands to clone the selected item
+                    "clone": {
+                        //Method to define whether the command can be executed at the current moment
+                        canExecute: function(args) {
+                            //Defines that the clone command can be executed, if and only if the selection list is not empty.
+                            if (args.model.selectedItems.length) {
+                                return true;
+                            }
+                        },
 
-syncApp.controller('diagramCtrl', function ($scope) {
-    // Sets the nodes to Diagram model
-    $scope.commandManager =  {
-	commands: {
-		//Commands to clone the selected item
-		"clone": {
-			//Method to define whether the command can be executed at the current moment
-			canExecute: function (args) {
-				//Defines that the clone command can be executed, if and only if the selection list is not empty.
-				if (args.model.selectedItems.length) {
-					return true;
-				}
-			},
+                        //Command handler
+                        execute: function(args) {
+                            //Logic to clone the selected element
+                            diagram.copy();
+                            diagram.paste();
+                        },
 
-			//Command handler
-			execute: function (args) {
-				//Logic to clone the selected element
-				diagram.copy();
-				diagram.paste();
-			},
-
-			//Defines that the clone command has to be executed on the recognition of Shift+C key press.
-			gesture: {
-				key: ej.datavisualization.Diagram.Keys.C,
-				keyModifiers: ej.datavisualization.Diagram.KeyModifiers.Shift
-			}
-		}
-		};
-});
+                        //Defines that the clone command has to be executed on the recognition of Shift+C key press.
+                        gesture: {
+                            key: ej.datavisualization.Diagram.Keys.C,
+                            keyModifiers: ej.datavisualization.Diagram.KeyModifiers.Shift
+                        }
+                    }
+                };
+            });
 
 {% endhighlight %}
 
@@ -397,33 +403,33 @@ The following code example illustrates how to disable a command and how to modif
 
 {% highlight javascript %}
 
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     // Sets the nodes to Diagram model
-    $scope.commandManager =  {
-		commands: {
-			//Assigns null value to an existing command and disables its execution
-			"nudgeUp": null,
-			"nudgeDown": null,
-			"nudgeRight": null,
+    $scope.commandManager = {
+        commands: {
+            //Assigns null value to an existing command and disables its execution
+            "nudgeUp": null,
+            "nudgeDown": null,
+            "nudgeRight": null,
 
-			//Modifies the existing command - nudgeLeft
-			"nudgeLeft": {
-				canExecute: function (args)
-					if (args.model.selectedItems.length) {
-						return true;
-					}
-				},
+            //Modifies the existing command - nudgeLeft
+            "nudgeLeft": {
+                canExecute: function(args)
+                if (args.model.selectedItems.length) {
+                    return true;
+                }
+            },
 
-				//Command handler
-				execute: function (args) {
-					diagram.nudge("left");
-				},
+            //Command handler
+            execute: function(args) {
+                diagram.nudge("left");
+            },
 
-				gesture: {
-					key: ej.datavisualization.Diagram.Keys.Left
-				}
-			}
-		};
+            gesture: {
+                key: ej.datavisualization.Diagram.Keys.Left
+            }
+        }
+    };
 });
 
 {% endhighlight %}

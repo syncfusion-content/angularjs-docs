@@ -25,33 +25,35 @@ The `sourcePoint` and `targetPoint` properties of connector allow you to define 
 {% highlight javascript %}
 
 <div ng-controller="diagramCtrl">
-<ej-diagram id="diagramCore" 
-     e-height="500px" 
-     e-width="700px"
-     e-connectors="connectors">
-   </ej-diagram>
+    <ej-diagram id="diagramCore" e-height="500px" e-width="700px" e-connectors="connectors">
+    </ej-diagram>
 </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
 //Creates connector
 var connectors = [
-	// Defines JSON
-	{
-		//Name of the connector
-		name: "connector",
-		//Sets source and target points
-		sourcePoint: {
-			x: 100,
-			y: 100
-		},
-		targetPoint: {
-			x: 200,
-			y: 200
-		}
-	}
+    // Defines JSON
+    {
+        //Name of the connector
+        name: "connector",
+        //Sets source and target points
+        sourcePoint: {
+            x: 100,
+            y: 100
+        },
+        targetPoint: {
+            x: 200,
+            y: 200
+        }
+    }
 ];
 
-     //Initializes Diagram
-    syncApp.controller('diagramCtrl', function ($scope) {
-  	//Assigns connectors collection to the Diagram
+//Initializes Diagram
+syncApp.controller('diagramCtrl', function($scope) {
+    //Assigns connectors collection to the Diagram
     $scope.connectors = connectors;
 });
 
@@ -67,15 +69,15 @@ Connectors can be added at runtime with the client side method, `add`. The follo
 
 // Defines JSON
 var connector = {
-	name: "connector",
-	sourcePoint: {
-		x: 100,
-		y: 100
-	},
-	targetPoint: {
-		x: 200,
-		y: 200
-	}
+    name: "connector",
+    sourcePoint: {
+        x: 100,
+        y: 100
+    },
+    targetPoint: {
+        x: 200,
+        y: 200
+    }
 };
 var diagram = $("#DiagramContent").ejDiagram("instance");
 // Adds to the Diagram
@@ -110,9 +112,9 @@ The client side method, `updateConnector` is used to update the connectors at ru
 
 var diagram = $("#DiagramContent").ejDiagram("instance");
 diagram.updateConnector("connectorName", {
-	lineColor: "#1BA0E2",
-	lineWidth: 5,
-	lineDashArray: "5,5"
+    lineColor: "#1BA0E2",
+    lineWidth: 5,
+    lineDashArray: "5,5"
 });
 
 {% endhighlight %}
@@ -121,56 +123,71 @@ diagram.updateConnector("connectorName", {
 
 The `SourceNode` and `targetNode` properties allow to define the nodes to be connected. The following code example illustrates how to connect two nodes.
 
-{% highlight javascript %}
+{% highlight html %}
 
 <div ng-controller="diagramCtrl">
-<ej-diagram id="diagramCore" 
-     e-height="500px" 
-     e-width="700px"
-     e-nodes="nodes"
-     e-defaultsettings="defaultSettings"
-     e-connectors="connectors">
-   </ej-diagram>
+    <ej-diagram id="diagramCore" e-height="500px" e-width="700px" e-nodes="nodes" e-defaultsettings="defaultSettings" e-connectors="connectors">
+    </ej-diagram>
 </div>
 
+{% endhighlight %}
+
+{% highlight javascript %}
+
 // Defines JSON to create tasks
-var task1 = { name: "task1", offsetX: 200, offsetY: 200, labels: [{ text: "Task 1" }] };
-var task2 = { name: "task2", offsetX: 400, offsetY: 200, labels: [{ text: "Task 2" }] };
+var task1 = {
+    name: "task1",
+    offsetX: 200,
+    offsetY: 200,
+    labels: [{
+        text: "Task 1"
+    }]
+};
+var task2 = {
+    name: "task2",
+    offsetX: 400,
+    offsetY: 200,
+    labels: [{
+        text: "Task 2"
+    }]
+};
 
 //Adds tasks to nodes collection
 var nodes = [
-	task1,
-	task2
+    task1,
+    task2
 ];
 
 var connectors = [{
-	//Name of the connector
-	name: "flow1",
+    //Name of the connector
+    name: "flow1",
 
-	//Name of the source and target nodes
-	sourceNode: "task1",
-	targetNode: "task2"
+    //Name of the source and target nodes
+    sourceNode: "task1",
+    targetNode: "task2"
 }];
 
-     //Initializes Diagram
-    syncApp.controller('diagramCtrl', function ($scope) {
-   	//Sets nodes collection to the Diagram model
+//Initializes Diagram
+syncApp.controller('diagramCtrl', function($scope) {
+    //Sets nodes collection to the Diagram model
     $scope.nodes = nodes;
-  	//Assigns connectors collection to the Diagram
+    //Assigns connectors collection to the Diagram
     $scope.connectors = connectors;
-   //Defines the properties that carry the common values
+    //Defines the properties that carry the common values
     $scope.defaultSettings = {
-		//Defines the common values for the nodes
-		node: {
-			width: 100,
-			height: 50,
-			fillColor: "darkCyan",
-			borderColor: "black",
-			type: ej.datavisualization.Diagram.Shapes.Flow,
-			shape: ej.datavisualization.Diagram.FlowShapes.Process,
-			labels: [{ fontColor: "white" }]
-		}
-	}
+        //Defines the common values for the nodes
+        node: {
+            width: 100,
+            height: 50,
+            fillColor: "darkCyan",
+            borderColor: "black",
+            type: ej.datavisualization.Diagram.Shapes.Flow,
+            shape: ej.datavisualization.Diagram.FlowShapes.Process,
+            labels: [{
+                fontColor: "white"
+            }]
+        }
+    }
 });
 
 {% endhighlight %}
@@ -185,70 +202,111 @@ The `sourcePort` and `targetPort` properties allow to create connections between
 The following code example illustrates how to create port to port connections.
 
 
-{% highlight javascript %}
+{% highlight html %}
 
 <div ng-controller="diagramCtrl">
-<ej-diagram id="diagramCore" 
-     e-height="500px" 
-     e-width="700px"
-     e-nodes="nodes"
-     e-defaultsettings="defaultSettings"
-     e-connectors="connectors">
-   </ej-diagram>
+    <ej-diagram id="diagramCore" e-height="500px" e-width="700px" e-nodes="nodes" e-defaultsettings="defaultSettings" e-connectors="connectors">
+    </ej-diagram>
 </div>
 
+{% endhighlight %}
+
+{% highlight javascript %}
+
 //Defines ports for task2
-var ports = [
-	{ name: "in", offset: { x: 1, y: 0.65 }, shape: "circle", visibility: "visible", fillColor: "black" },
-	{ name: "out", offset: { x: 1, y: 0.35 }, shape: "circle", visibility: "visible", fillColor: "black" }
+var ports = [{
+        name: "in",
+        offset: {
+            x: 1,
+            y: 0.65
+        },
+        shape: "circle",
+        visibility: "visible",
+        fillColor: "black"
+    },
+    {
+        name: "out",
+        offset: {
+            x: 1,
+            y: 0.35
+        },
+        shape: "circle",
+        visibility: "visible",
+        fillColor: "black"
+    }
 ];
 
 // Defines JSON to create tasks
-var task1 = { name: "task1", offsetX: 350, offsetY: 300, labels: [{ text: "Task 1" }] };
-var task2 = { name: "task2", offsetX: 200, offsetY: 250, labels: [{ text: "Task 2" }],
-	// Adds ports to node
-	ports: ports };
-var task3 = { name: "task3", offsetX: 350, offsetY: 200, labels: [{ text: "Task 3" }] };
+var task1 = {
+    name: "task1",
+    offsetX: 350,
+    offsetY: 300,
+    labels: [{
+        text: "Task 1"
+    }]
+};
+var task2 = {
+    name: "task2",
+    offsetX: 200,
+    offsetY: 250,
+    labels: [{
+        text: "Task 2"
+    }],
+    // Adds ports to node
+    ports: ports
+};
+var task3 = {
+    name: "task3",
+    offsetX: 350,
+    offsetY: 200,
+    labels: [{
+        text: "Task 3"
+    }]
+};
 
 //Adds tasks to nodes collection
 var nodes = [task1, task2, task3];
 var connectors = [{
-	name: "flow1",
-	sourceNode: "task1",
-	targetNode: "task2",
-	//Name of the target port defined in the target node
-	targetPort: "in"
-},{
-	name: "flow2",
-	sourceNode: "task2",
-	targetNode: "task3",
-	//Name of the source port defined in the source node
-	sourcePort: "out"
+    name: "flow1",
+    sourceNode: "task1",
+    targetNode: "task2",
+    //Name of the target port defined in the target node
+    targetPort: "in"
+}, {
+    name: "flow2",
+    sourceNode: "task2",
+    targetNode: "task3",
+    //Name of the source port defined in the source node
+    sourcePort: "out"
 }];
 
-   //Initializes Diagram
-    syncApp.controller('diagramCtrl', function ($scope) {
-   	//Sets nodes collection to the Diagram model
+//Initializes Diagram
+syncApp.controller('diagramCtrl', function($scope) {
+    //Sets nodes collection to the Diagram model
     $scope.nodes = nodes;
-  	//Assigns connectors collection to the Diagram
+    //Assigns connectors collection to the Diagram
     $scope.connectors = connectors;
-   //Defines the properties that carry the common values
+    //Defines the properties that carry the common values
     $scope.defaultSettings = {
-	    //Defines the common values for the nodes
+        //Defines the common values for the nodes
         node: {
-			width: 100,
-			height: 50,
-			fillColor: "darkCyan",
-			borderColor: "black",
-			type: ej.datavisualization.Diagram.Shapes.Flow,
-			shape: ej.datavisualization.Diagram.FlowShapes.Process,
-			labels: [{ fontColor: "white" }]
-		}
-		//Defines common values for connectors
-		connector: {
-			segments: [{ type: "orthogonal" }]
-		}
-	}
+            width: 100,
+            height: 50,
+            fillColor: "darkCyan",
+            borderColor: "black",
+            type: ej.datavisualization.Diagram.Shapes.Flow,
+            shape: ej.datavisualization.Diagram.FlowShapes.Process,
+            labels: [{
+                fontColor: "white"
+            }]
+        }
+        //Defines common values for connectors
+        connector: {
+            segments: [{
+                type: "orthogonal"
+            }]
+        }
+    }
 });
 
 {% endhighlight %}
@@ -265,21 +323,27 @@ Straight segment allows to create a straight line.
 To create a straight line, you should specify the `type` of the segment as "straight" and add a straight segment to `segments` collection. The following code example illustrates how to create a default straight segment.
 
 {% highlight javascript %}
+
 var connectors = [];
 //Defines JSON
 var connector = {
-	name: "connector",
-	sourcePoint: { x: 100, y: 100 },
-	targetPoint: { x: 200, y: 200 },
+    name: "connector",
+    sourcePoint: {
+        x: 100,
+        y: 100
+    },
+    targetPoint: {
+        x: 200,
+        y: 200
+    },
 
-	//Defines segment collection
-	segments: [
-	{
-		//When there is no previous segment, line starts from source point
-		//When the end point is not specified, line ends at target point
-		//Defines the type of the segment
-		type: "straight"
-	}]
+    //Defines segment collection
+    segments: [{
+        //When there is no previous segment, line starts from source point
+        //When the end point is not specified, line ends at target point
+        //Defines the type of the segment
+        type: "straight"
+    }]
 };
 connectors.push(connector);
 
@@ -294,17 +358,26 @@ The `point` property of straight segment allows you to define the end point of i
 var connectors = [];
 //Defines JSON
 var connector = {
-	name: "connector",
-	sourcePoint: { x: 100, y: 100 },
-	targetPoint: { x: 200, y: 300 },
-	//Defines segment collection
-	segments: [{
-		// Defines the type of the segment
-		type: "straight",
-		// Defines the end point of the segment
-		point: { x: 100, y: 200 }
-		// Additional straight line will be drawn from this end point to the target point
-	}]
+    name: "connector",
+    sourcePoint: {
+        x: 100,
+        y: 100
+    },
+    targetPoint: {
+        x: 200,
+        y: 300
+    },
+    //Defines segment collection
+    segments: [{
+        // Defines the type of the segment
+        type: "straight",
+        // Defines the end point of the segment
+        point: {
+            x: 100,
+            y: 200
+        }
+        // Additional straight line will be drawn from this end point to the target point
+    }]
 };
 connectors.push(connector);
 
@@ -323,14 +396,20 @@ Set the segment `type` as "orthogonal" to create a default orthogonal segment. T
 var connectors = [];
 //Defines JSON
 var connector = {
-	name: "connector",
-	sourcePoint: { x: 100, y: 100 },
-	targetPoint: { x: 200, y: 200 },
-	//Defines segment collection
-	segments: [{
-		// Define the type of the segment
-		type: "orthogonal"
-	}]
+    name: "connector",
+    sourcePoint: {
+        x: 100,
+        y: 100
+    },
+    targetPoint: {
+        x: 200,
+        y: 200
+    },
+    //Defines segment collection
+    segments: [{
+        // Define the type of the segment
+        type: "orthogonal"
+    }]
 };
 connectors.push(connector);
 
@@ -345,17 +424,23 @@ The `length` and `direction` properties allow to define the flow and length of s
 var connectors = [];
 //Defines JSON
 var connector = {
-	name: "connector",
-	sourcePoint: { x: 100, y: 100 },
-	targetPoint: { x: 200, y: 200 },
-	//Defines segment collection
-	segments: [{
-		// Orthogonal segment of 50px length to the bottom
-		type: "orthogonal",
-		length: 50,
-		direction: "bottom"
-		// Additional orthogonal segments will be added from the end of the last segment to the target point
-	}]
+    name: "connector",
+    sourcePoint: {
+        x: 100,
+        y: 100
+    },
+    targetPoint: {
+        x: 200,
+        y: 200
+    },
+    //Defines segment collection
+    segments: [{
+        // Orthogonal segment of 50px length to the bottom
+        type: "orthogonal",
+        length: 50,
+        direction: "bottom"
+        // Additional orthogonal segments will be added from the end of the last segment to the target point
+    }]
 };
 connectors.push(connector);
 
@@ -384,14 +469,20 @@ To create a bezier segment, the `segment.type` is set as `bezier`. The following
 var connectors = [];
 //Defines JSON
 var connector = {
-	name: "connector",
-	sourcePoint: { x: 100, y: 100 },
-	targetPoint: { x: 200, y: 200 },
-	//Defines segment collection
-	segments: [{
-		// Defines the type of the segment
-		type: "bezier"
-	}]
+    name: "connector",
+    sourcePoint: {
+        x: 100,
+        y: 100
+    },
+    targetPoint: {
+        x: 200,
+        y: 200
+    },
+    //Defines segment collection
+    segments: [{
+        // Defines the type of the segment
+        type: "bezier"
+    }]
 };
 connectors.push(connector);
 
@@ -406,19 +497,30 @@ The `point1` and `point2` properties of bezier segment enable you to set the con
 var connectors = [];
 //Defines JSON
 var connector = {
-	name: "connector",
-	sourcePoint: { x: 100, y: 200 },
-	targetPoint: { x: 250, y: 200 },
-	//Defines segment collection
-	segments: [
-		{
-			// Defines the type of the segment
-			type: "bezier",
-			// First control point: an absolute position from the page origin
-			point1: { x: 125, y: 75 },
-			// Second control point: an absolute position from the page origin
-			point2: { x: 225, y: 75 }
-		}]
+    name: "connector",
+    sourcePoint: {
+        x: 100,
+        y: 200
+    },
+    targetPoint: {
+        x: 250,
+        y: 200
+    },
+    //Defines segment collection
+    segments: [{
+        // Defines the type of the segment
+        type: "bezier",
+        // First control point: an absolute position from the page origin
+        point1: {
+            x: 125,
+            y: 75
+        },
+        // Second control point: an absolute position from the page origin
+        point2: {
+            x: 225,
+            y: 75
+        }
+    }]
 };
 connectors.push(connector);
 
@@ -433,19 +535,30 @@ The `vactor1` and `vector2` properties of bezier segment enable you to define th
 
 //Defines JSON
 var connector = {
-	name: "connector",
-	sourcePoint: { x: 100, y: 200 },
-	targetPoint: { x: 250, y: 200 },
-	//Defines segment collection
-	segments: [
-	{
-		// Defines the type of the segment
-		type: "bezier",
-		// Length and angle between the source point and the first control point
-		vector1: { angle: 270, distance: 75 },
-		// Length and angle between the target point and the second control point
-		vector2: { angle: 270, distance: 75 }
-	}]
+    name: "connector",
+    sourcePoint: {
+        x: 100,
+        y: 200
+    },
+    targetPoint: {
+        x: 250,
+        y: 200
+    },
+    //Defines segment collection
+    segments: [{
+        // Defines the type of the segment
+        type: "bezier",
+        // Length and angle between the source point and the first control point
+        vector1: {
+            angle: 270,
+            distance: 75
+        },
+        // Length and angle between the target point and the second control point
+        vector2: {
+            angle: 270,
+            distance: 75
+        }
+    }]
 };
 connectors.push(connector);
 
@@ -462,23 +575,29 @@ Multiple segments can be defined one after another. To create a connector with m
 var connectors = [];
 //Defines JSON
 var connector = {
-	name: "connector",
-	sourcePoint: { x: 100, y: 200 },
-	targetPoint: { x: 250, y: 300 },
-	//Defines segment collection
-	segments: [{
-		// Segment of length 100px to the bottom
-		type: "orthogonal",
-		length: 150,
-		direction: "bottom"
-	},{
-		//Defines a segment of 150px length to the right
-		type: "orthogonal",
-		direction: "right",
-		length: 150
-	}
-	//Additional orthogonal segments will be added from the end of the last segment to the target point
-	]
+    name: "connector",
+    sourcePoint: {
+        x: 100,
+        y: 200
+    },
+    targetPoint: {
+        x: 250,
+        y: 300
+    },
+    //Defines segment collection
+    segments: [{
+            // Segment of length 100px to the bottom
+            type: "orthogonal",
+            length: 150,
+            direction: "bottom"
+        }, {
+            //Defines a segment of 150px length to the right
+            type: "orthogonal",
+            direction: "right",
+            length: 150
+        }
+        //Additional orthogonal segments will be added from the end of the last segment to the target point
+    ]
 };
 connectors.push(connector);
 
@@ -499,53 +618,71 @@ var DecoratorShapes = ej.datavisualization.Diagram.DecoratorShapes;
 var connectors = [];
 //Defines JSON
 var connector = {
-	name: "connector",
-	sourcePoint: { x: 100, y: 100 },
-	targetPoint: { x: 200, y: 200 },
-	// Decorator shape- circle
-	sourceDecorator: {
-		shape: DecoratorShapes.Circle,
-		width: 10,
-		height: 10
-	},
-	// Decorator shape - Arrow
-	targetDecorator: {
-		shape: DecoratorShapes.Arrow,
-		width: 10,
-		height: 10
-	}
+    name: "connector",
+    sourcePoint: {
+        x: 100,
+        y: 100
+    },
+    targetPoint: {
+        x: 200,
+        y: 200
+    },
+    // Decorator shape- circle
+    sourceDecorator: {
+        shape: DecoratorShapes.Circle,
+        width: 10,
+        height: 10
+    },
+    // Decorator shape - Arrow
+    targetDecorator: {
+        shape: DecoratorShapes.Arrow,
+        width: 10,
+        height: 10
+    }
 };
 connectors.push(connector);
 
 var connector2 = {
-	name: "connector2",
-	sourcePoint: { x: 300, y: 100 },
-	targetPoint: { x: 400, y: 200 },
-	// Decorator shape - Open arrow
-	sourceDecorator: {
-		shape: DecoratorShapes.Diamond,
-		width: 10,
-		height: 10
-	},
-	// Decorator shape - Diamond
-	targetDecorator: {
-		shape: DecoratorShapes.OpenArrow,
-		width: 10,
-		height: 10
-	}
+    name: "connector2",
+    sourcePoint: {
+        x: 300,
+        y: 100
+    },
+    targetPoint: {
+        x: 400,
+        y: 200
+    },
+    // Decorator shape - Open arrow
+    sourceDecorator: {
+        shape: DecoratorShapes.Diamond,
+        width: 10,
+        height: 10
+    },
+    // Decorator shape - Diamond
+    targetDecorator: {
+        shape: DecoratorShapes.OpenArrow,
+        width: 10,
+        height: 10
+    }
 };
 connectors.push(connector2);
 
 var connector3 = {
-	name: "connector3",
-	sourcePoint: { x: 500, y: 100 },
-	targetPoint: { x: 600, y: 200 },
+    name: "connector3",
+    sourcePoint: {
+        x: 500,
+        y: 100
+    },
+    targetPoint: {
+        x: 600,
+        y: 200
+    },
 
-	// Decorator shape - Path
-	targetDecorator: {
-		shape: DecoratorShapes.Path,
-		pathData: "M 376.892,225.284L 371.279,211.95L 376.892,198.617L 350.225,211.95L 376.892,225.284 Z"
-	}
+    // Decorator shape - Path
+    targetDecorator: {
+        shape: DecoratorShapes.Path,
+        pathData: "M 376.892,225.284L 371.279,211.95L 376.892,198.617L 350.225,211.95L 376.892,225.284 Z"
+    }
 };
 connectors.push(connector3);
 
@@ -562,23 +699,37 @@ The `sourcePadding` and `targetPadding` properties of connector define the space
 {% highlight javascript %}
 
 // Defines JSON to create tasks
-var task1 = { name: "task1", offsetX: 200, offsetY: 200, labels: [{ text: "Task 1" }] };
-var task2 = { name: "task2", offsetX: 400, offsetY: 200, labels: [{ text: "Task 2" }] };
+var task1 = {
+    name: "task1",
+    offsetX: 200,
+    offsetY: 200,
+    labels: [{
+        text: "Task 1"
+    }]
+};
+var task2 = {
+    name: "task2",
+    offsetX: 400,
+    offsetY: 200,
+    labels: [{
+        text: "Task 2"
+    }]
+};
 
 //Adds tasks to nodes collection
 var nodes = [
-	task1,
-	task2
+    task1,
+    task2
 ];
 
 var connectors = [{
-	name: "flow1",
-	sourceNode: "task1",
-	targetNode: "task2",
-	// Space between source point and source object
-	sourcePadding: 5,
-	// Space between target point and target object
-	targetPadding: 10
+    name: "flow1",
+    sourceNode: "task1",
+    targetNode: "task2",
+    // Space between source point and source object
+    sourcePadding: 5,
+    // Space between target point and target object
+    targetPadding: 10
 }];
 
 {% endhighlight %}
@@ -591,28 +742,38 @@ The `connectorPadding` property of node defines the space to be left between the
 
 // Defines JSON to create tasks
 var task1 = {
-	name: "task1",
-	offsetX: 200,
-	offsetY: 200,
-	labels: [{ text: "Task 1" }],
-	//Space between the node and its edges
-	connectorPadding: 5
+    name: "task1",
+    offsetX: 200,
+    offsetY: 200,
+    labels: [{
+        text: "Task 1"
+    }],
+    //Space between the node and its edges
+    connectorPadding: 5
 };
 
-var task2 = { name: "task2", offsetX: 400, offsetY: 200, labels: [{ text: "Task 2" }] };
+var task2 = {
+    name: "task2",
+    offsetX: 400,
+    offsetY: 200,
+    labels: [{
+        text: "Task 2"
+    }]
+};
 
 //Adds tasks to nodes collection
 var nodes = [
-	task1,
-	task2
+    task1,
+    task2
 ];
 var connectors = [
-//Defines JSON
-{
-	name: "flow1",
-	sourceNode: "task1",
-	targetNode: "task2"
-}];
+    //Defines JSON
+    {
+        name: "flow1",
+        sourceNode: "task1",
+        targetNode: "task2"
+    }
+];
 
 {% endhighlight %}
 
@@ -624,33 +785,52 @@ The `connectorPadding` property of port defines the space between the ports and 
 
 // Defines JSON to create tasks
 var ports = [{
-	name: "port",
-	offset: { x: 0, y: 0.5 },
-	shape: "circle",
-	visibility: "visible",
-	fillColor: "black",
-	//Space between port and its edges
-	connectorPadding: 5
+    name: "port",
+    offset: {
+        x: 0,
+        y: 0.5
+    },
+    shape: "circle",
+    visibility: "visible",
+    fillColor: "black",
+    //Space between port and its edges
+    connectorPadding: 5
 }];
 
-var task1 = { name: "task1", offsetX: 200, offsetY: 200, labels: [{ text: "Task 1" }] };
-var task2 = { name: "task2", offsetX: 400, offsetY: 200, labels: [{ text: "Task 2" }], ports: ports };
+var task1 = {
+    name: "task1",
+    offsetX: 200,
+    offsetY: 200,
+    labels: [{
+        text: "Task 1"
+    }]
+};
+var task2 = {
+    name: "task2",
+    offsetX: 400,
+    offsetY: 200,
+    labels: [{
+        text: "Task 2"
+    }],
+    ports: ports
+};
 
 //Adds tasks to nodes collection
 
 var nodes = [
-	task1,
-	task2
+    task1,
+    task2
 ];
 
 var connectors = [
-//Defines JSON
-{
-	name: "flow1",
-	sourceNode: "task1",
-	targetNode: "task2",
-	targetPort: "port"
-}];
+    //Defines JSON
+    {
+        name: "flow1",
+        sourceNode: "task1",
+        targetNode: "task2",
+        targetPort: "port"
+    }
+];
 
 {% endhighlight %}
 
@@ -661,35 +841,43 @@ var connectors = [
 Line Bridging creates a bridge for lines to smartly cross over other lines, at points of intersection. When two line connectors meet each other, the line with the higher z-order (upper one) draws an arc over the underlying connector.
 Bridging can be enabled/disabled either with the `connector.constraints` or `diagram.constraints`. The following code example illustrates how to enable line bridging.
 
-{% highlight javascript %}
+{% highlight html %}
 
 <div ng-controller="diagramCtrl">
-       <ej-diagram id="diagram" 
-             e-height="500px"
-             e-width="100%"
-             e-connectors="connectors"
-              e-constraints="constraints">
-        </ej-diagram>
+    <ej-diagram id="diagram" e-height="500px" e-width="100%" e-connectors="connectors" e-constraints="constraints">
+    </ej-diagram>
 </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
 
 var Diagram = ej.datavisualization.Diagram;
 //Enables briding for a single connector
 var connector = {
-	name: "connector1",
-	sourcePoint: { x: 100, y: 100 },
-	targetPoint: { x: 200, y: 200 },
-	constraints: Diagram.ConnectorConstraints.Default
-		// Removes inherit bridging or else bridging is enabled/disabled based on the Diagram constraints
-		& ~Diagram.ConnectorConstraints.InheritBridging
-		//Includes bridging
-		| Diagram.ConnectorConstraints.Bridging
+    name: "connector1",
+    sourcePoint: {
+        x: 100,
+        y: 100
+    },
+    targetPoint: {
+        x: 200,
+        y: 200
+    },
+    constraints: Diagram.ConnectorConstraints.Default
+        // Removes inherit bridging or else bridging is enabled/disabled based on the Diagram constraints
+        &
+        ~Diagram.ConnectorConstraints.InheritBridging
+        //Includes bridging
+        |
+        Diagram.ConnectorConstraints.Bridging
 };
 //Enables bridging for every connector added in the model
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.connectors = connectors;
     $scope.constraints: Diagram.DiagramConstraints.Default |
-	Diagram.DiagramConstraints.Bridging
-    });
+        Diagram.DiagramConstraints.Bridging
+});
 
 {% endhighlight %}
 
@@ -703,15 +891,15 @@ The following code example illustrates how to draw the bridge at the bottom dire
 
 {% highlight javascript %}
 
-var DiagramConstraints= ej.datavisualization.Diagram.DiagramConstraints;
+var DiagramConstraints = ej.datavisualization.Diagram.DiagramConstraints;
 
 //Enables bridging for every connector added in the model
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.connectors = connectors;
     //Sets the bridge direction
-	bridgeDirection: "bottom",
-	//Enables bridging
-	constraints:DiagramConstraints.Default | DiagramConstraints.Bridging
+    bridgeDirection: "bottom",
+        //Enables bridging
+        constraints: DiagramConstraints.Default | DiagramConstraints.Bridging
 });
 
 {% endhighlight %}
@@ -727,24 +915,39 @@ Corner radius allows to create connectors with rounded corners. The radius of th
 {% highlight javascript %}
 
 // Defines JSON to create tasks
-var task1 = { name: "task1", offsetX: 200, offsetY: 200, labels: [{ text: "Task 1" }] };
-var task2 = { name: "task2", offsetX: 350, offsetY: 300, labels: [{ text: "Task 2" }] };
+var task1 = {
+    name: "task1",
+    offsetX: 200,
+    offsetY: 200,
+    labels: [{
+        text: "Task 1"
+    }]
+};
+var task2 = {
+    name: "task2",
+    offsetX: 350,
+    offsetY: 300,
+    labels: [{
+        text: "Task 2"
+    }]
+};
 
 //Adds tasks to nodes collection
 var nodes = [
-	task1,
-	task2
+    task1,
+    task2
 ];
 
 var connectors = [
-//Defines JSON
-{
-	name: "flow1",
-	sourceNode: "task1",
-	targetNode: "task2",
-	//Sets the radius for the rounded corner
-	cornerRadius: 10
-}];
+    //Defines JSON
+    {
+        name: "flow1",
+        sourceNode: "task1",
+        targetNode: "task2",
+        //Sets the radius for the rounded corner
+        cornerRadius: 10
+    }
+];
 
 {% endhighlight %}
 
@@ -762,19 +965,25 @@ The following code example illustrates how to customize the segment appearance.
 
 //Customizes the appearance of the connector
 var connectors = [{
-	name: "connector",
-	sourcePoint: { x: 100, y: 100 },
-	targetPoint: { x: 200, y: 200 },
-	//Stroke width of the line
-	lineWidth: 2,
-	//Stroke color
-	lineColor: "green",
-	//Line style
-	lineDashArray: "2,2",
-	//Opacity of the line
-	opacity: 0.8,
-	//Defined in the decorator appearance section
-	targetDecorator: targetDecorator
+    name: "connector",
+    sourcePoint: {
+        x: 100,
+        y: 100
+    },
+    targetPoint: {
+        x: 200,
+        y: 200
+    },
+    //Stroke width of the line
+    lineWidth: 2,
+    //Stroke color
+    lineColor: "green",
+    //Line style
+    lineDashArray: "2,2",
+    //Opacity of the line
+    opacity: 0.8,
+    //Defined in the decorator appearance section
+    targetDecorator: targetDecorator
 }];
 
 {% endhighlight %}
@@ -784,20 +993,21 @@ var connectors = [{
 The following code example illustrates how to customize the appearance of the decorator.
 
 {% highlight javascript %}
-//Customizes the appearance of decorator
 
+//Customizes the appearance of decorator
 var targetDecorator = {
-	//Defines the shape
-	shape: ej.datavisualization.Diagram.DecoratorShapes.Arrow,
-	//Fills color of the decorator
-	fillColor: "red",
-	//Stroke color
-	borderColor: "green",
-	//Stroke width
-	borderWidth: 2,
-	width: 10,
-	height: 10
+    //Defines the shape
+    shape: ej.datavisualization.Diagram.DecoratorShapes.Arrow,
+    //Fills color of the decorator
+    fillColor: "red",
+    //Stroke color
+    borderColor: "green",
+    //Stroke width
+    borderWidth: 2,
+    width: 10,
+    height: 10
 };
+
 {% endhighlight %}
 
 ![](/angular-1/Diagram/Connector_images/Connector_img23.png)

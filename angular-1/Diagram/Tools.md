@@ -23,26 +23,25 @@ var diagram = $("#diagram").ejDiagram("instance");
 
 //JSON to create a rectangle
 diagram.model.drawType = {
-	type: ej.datavisualization.Diagram.Shapes.Basic,
-	shape: "rectangle",
-	//customize the appearance of the shape
-	fillColor: "#fcbc7c",
-	borderColor: "#f89b4c",
-	labels: [{
-		"text": "Rectangle"
-	}]
+    type: ej.datavisualization.Diagram.Shapes.Basic,
+    shape: "rectangle",
+    //customize the appearance of the shape
+    fillColor: "#fcbc7c",
+    borderColor: "#f89b4c",
+    labels: [{
+        "text": "Rectangle"
+    }]
 };
 
 //To draw an object once, activate draw once
 diagram.update({
-	tool: ej.datavisualization.Diagram.Tool.DrawOnce,
+    tool: ej.datavisualization.Diagram.Tool.DrawOnce,
 });
 
 //To draw an object multiple times, activate continuous draw tool
 diagram.update({
-	tool: ej.datavisualization.Diagram.Tool.ContinousDraw,
+    tool: ej.datavisualization.Diagram.Tool.ContinousDraw,
 });
-
 {% endhighlight %}
 
 ![](/angular-1/Diagram/Tools_images/Tools_img1.png)
@@ -53,18 +52,18 @@ The following code example illustrates how to draw a path.
 
 var diagram = $("#diagram").ejDiagram("instance");
 diagram.model.drawType = {
-	name: "Path",
-	fillColor: "#fbe172",
-	labels: [{
-		text: "Path"
-	}],
-	shape: "path",
-	pathData: "M13.560 67.524 L 21.941 41.731 L 0.000 25.790 L 27.120 25.790 L 35.501 0.000 L 43.882 25.790 L 71.000 25.790 L 49.061 41.731 L 57.441 67.524 L 35.501 51.583 z"
+    name: "Path",
+    fillColor: "#fbe172",
+    labels: [{
+        text: "Path"
+    }],
+    shape: "path",
+    pathData: "M13.560 67.524 L 21.941 41.731 L 0.000 25.790 L 27.120 25.790 L 35.501 0.000 L 43.882 25.790 L 71.000 25.790 L 49.061 41.731 L 57.441 67.524 L 35.501 51.583 z"
 };
 
 //To draw an object once, activate draw once
 diagram.update({
-	tool: ej.datavisualization.Diagram.Tool.DrawOnce,
+    tool: ej.datavisualization.Diagram.Tool.DrawOnce,
 });
 
 {% endhighlight %}
@@ -80,14 +79,14 @@ To draw connectors, you have to set the JSON of the connector to `drawType` prop
 var diagram = $("#diagram").ejDiagram("instance");
 //JSON to create a straight line connector
 diagram.model.drawType = {
-	type: "connector",
-	segments: [{
-		type: "straight"
-	}]
+    type: "connector",
+    segments: [{
+        type: "straight"
+    }]
 };
 //To draw an object once, activate draw once
 diagram.update({
-	tool: ej.datavisualization.Diagram.Tool.DrawOnce
+    tool: ej.datavisualization.Diagram.Tool.DrawOnce
 });
 
 {% endhighlight %}
@@ -103,10 +102,12 @@ Diagram allows you to create a textNode as soon as you click on the Diagram pag
 var diagram = $("#diagram").ejDiagram("instance");
 
 //JSON to draw a text 
-diagram.model.drawType = { type: "text" };
+diagram.model.drawType = {
+    type: "text"
+};
 
 diagram.update({
-	tool: ej.datavisualization.Diagram.Tool.DrawOnce
+    tool: ej.datavisualization.Diagram.Tool.DrawOnce
 });
 
 {% endhighlight %}
@@ -138,13 +139,13 @@ You can set the desired tool to the `tool` property of the Diagram model. The fo
 {% highlight javascript %}
 
 // To Enable Single Tool 
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     $scope.tool = ej.datavisualization.Diagram.Tool.SingleSelect;
- });
+});
 
 // Enables multiple tools
-syncApp.controller('diagramCtrl', function ($scope) {
-    $scope.tool =  ej.datavisualization.Diagram.Tool.SingleSelect | ej.datavisualization.Diagram.Tool.ZoomPan;
- });
+syncApp.controller('diagramCtrl', function($scope) {
+    $scope.tool = ej.datavisualization.Diagram.Tool.SingleSelect | ej.datavisualization.Diagram.Tool.ZoomPan;
+});
 
 {% endhighlight %}

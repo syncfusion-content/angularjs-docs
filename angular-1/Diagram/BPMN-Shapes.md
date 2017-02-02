@@ -11,33 +11,36 @@ documentation: ug
 
 BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a BPMN shape, the `type` of the node should be set as "bpmn" and its `shape` should be set as any one of the built-in shape. [BPMN Shapes](/api/js/global#bpmnshapes "BPMN Shapes"). The following code example illustrates how to create a simple business process. 
 
-{% highlight javascript %}
+{% highlight html %}
+
 <div ng-controller="diagramCtrl">
-    <ej-diagram id="diagram"
-                e-height="500px"
-                e-width="700px"
-                e-nodes="nodes">
+    <ej-diagram id="diagram" e-height="500px" e-width="700px" e-nodes="nodes">
     </ej-diagram>
 </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
 var nodes = [{
-		name: "node",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		labels: [{
-			text: "End Event"
-		}],
-		//Sets the type of shape as BPMN
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		//Sets the type of bpmn shape
-		shape: ej.datavisualization.Diagram.BPMNShapes.Event,
-		//Sets type of the Event
-		event: ej.datavisualization.Diagram.BPMNEvents.End
-	}];
-syncApp.controller('diagramCtrl', function ($scope) {
+    name: "node",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    labels: [{
+        text: "End Event"
+    }],
+    //Sets the type of shape as BPMN
+    type: ej.datavisualization.Diagram.Shapes.BPMN,
+    //Sets the type of bpmn shape
+    shape: ej.datavisualization.Diagram.BPMNShapes.Event,
+    //Sets type of the Event
+    event: ej.datavisualization.Diagram.BPMNEvents.End
+}];
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -75,24 +78,24 @@ The `event` property of the node allows you to define the type of the event. The
 {% highlight javascript %}
 
 var nodes = [{
-		name: "node",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		//Sets the type as BPMN
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		//Sets the shape as BPMN Event
-		shape: ej.datavisualization.Diagram.BPMNShapes.Event,
-		//Sets type of the Event
-		event: ej.datavisualization.Diagram.BPMNEvents.End,
-		//Sets sub-type of the Event
-		trigger: ej.datavisualization.Diagram.BPMNTriggers.None
-	}];
-    
-syncApp.controller('diagramCtrl', function ($scope) {
+    name: "node",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    //Sets the type as BPMN
+    type: ej.datavisualization.Diagram.Shapes.BPMN,
+    //Sets the shape as BPMN Event
+    shape: ej.datavisualization.Diagram.BPMNShapes.Event,
+    //Sets type of the Event
+    event: ej.datavisualization.Diagram.BPMNEvents.End,
+    //Sets sub-type of the Event
+    trigger: ej.datavisualization.Diagram.BPMNTriggers.None
+}];
+
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -126,21 +129,21 @@ Gateway is used to control the flow of a process. It is represented as a diamond
 {% highlight javascript %}
 
 var nodes = [{
-		name: "node",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		//Sets the shape as Gateway
-		shape: ej.datavisualization.Diagram.BPMNShapes.Gateway,
-		//Sets the type of BPMN Gateway
-		gateway: ej.datavisualization.Diagram.BPMNGateways.None,
-	}];
+    name: "node",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    type: ej.datavisualization.Diagram.Shapes.BPMN,
+    //Sets the shape as Gateway
+    shape: ej.datavisualization.Diagram.BPMNShapes.Gateway,
+    //Sets the type of BPMN Gateway
+    gateway: ej.datavisualization.Diagram.BPMNGateways.None,
+}];
 
-syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -177,20 +180,20 @@ To create a BPMN activity, you need to set the `shape` as "activity". You also n
 {% highlight javascript %}
 
 var nodes = [{
-		name: "node",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		//Sets the bpmn shape as activity
-		shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-		//Sets the type of BPMN Activity
-		activity: ej.datavisualization.Diagram.BPMNActivity.Task,
-	}];
-syncApp.controller('diagramCtrl', function ($scope) {
+    name: "node",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    type: ej.datavisualization.Diagram.Shapes.BPMN,
+    //Sets the bpmn shape as activity
+    shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+    //Sets the type of BPMN Activity
+    activity: ej.datavisualization.Diagram.BPMNActivity.Task,
+}];
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -208,25 +211,25 @@ The `task` property of node allows you to define the `type` of task such as send
 {% highlight javascript %}
 
 var nodes = [{
-		name: "task",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		//Sets the type of bpmn shape
-		shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-		//Sets the type of BPMN Activity
-		activity: ej.datavisualization.Diagram.BPMNActivity.Task,
-		//Sets the type of BPMN Task Activity
-		task: {
-			type: ej.datavisualization.Diagram.BPMNTasks.Send
-		}
-	}];
-    
-    syncApp.controller('diagramCtrl', function ($scope) {
+    name: "task",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    type: ej.datavisualization.Diagram.Shapes.BPMN,
+    //Sets the type of bpmn shape
+    shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+    //Sets the type of BPMN Activity
+    activity: ej.datavisualization.Diagram.BPMNActivity.Task,
+    //Sets the type of BPMN Task Activity
+    task: {
+        type: ej.datavisualization.Diagram.BPMNTasks.Send
+    }
+}];
+
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -255,25 +258,25 @@ A sub-process is a group of tasks which is used to hide or reveal details of add
  {% highlight javascript %}
 
 var nodes = [{
-		name: "node",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		//Sets the type of bpmn shape
-		shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-		//Sets the type of BPMN Activity
-		activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
-		//Sets the state of BPMN Subprocess
-		subProcess: {
-			collapsed: true,
-		}
-	}];
-    
-syncApp.controller('diagramCtrl', function ($scope) {
+    name: "node",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    type: ej.datavisualization.Diagram.Shapes.BPMN,
+    //Sets the type of bpmn shape
+    shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+    //Sets the type of BPMN Activity
+    activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
+    //Sets the state of BPMN Subprocess
+    subProcess: {
+        collapsed: true,
+    }
+}];
+
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -294,25 +297,25 @@ A Sub-process is defined as an Event Sub-process when it is triggered by an even
  {% highlight javascript %}
 
 var nodes = [{
-		name: "eventSubProcess",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-		activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
-		//Creates event subprocess
-		subProcess: {
-			type: ej.datavisualization.Diagram.BPMNSubProcessTypes.Event,
-			event: ej.datavisualization.Diagram.BPMNEvents.Start,
-			trigger: ej.datavisualization.Diagram.BPMNTriggers.Message
-		}
-	}];
-    
-    syncApp.controller('diagramCtrl', function ($scope) {
+    name: "eventSubProcess",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    type: ej.datavisualization.Diagram.Shapes.BPMN,
+    shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+    activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
+    //Creates event subprocess
+    subProcess: {
+        type: ej.datavisualization.Diagram.BPMNSubProcessTypes.Event,
+        event: ej.datavisualization.Diagram.BPMNEvents.Start,
+        trigger: ej.datavisualization.Diagram.BPMNTriggers.Message
+    }
+}];
+
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -328,29 +331,43 @@ An transaction is a set of activities that logically belong together, in which a
  {% highlight javascript %}
 
 var nodes = [{
-		name: "transactionSubProcess",
-		width: 130,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-		activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
-		//Creates tranaction subprocess
-		subProcess: {
-			type: ej.datavisualization.Diagram.BPMNSubProcessTypes.Transaction,
-			// Defines a collection of events to be attached 
-			events: [
-				//Defines type of the event and the position relative to the subprocess. 
-				{ event: "intermediate", trigger: "cancel", offset: { x: 0.25, y: 1 } },
-				{ event: "intermediate", trigger: "error", offset: { x: 0.75, y: 1 } }
-			]
-		}
-	}];
-    
- syncApp.controller('diagramCtrl', function ($scope) {
+    name: "transactionSubProcess",
+    width: 130,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    type: ej.datavisualization.Diagram.Shapes.BPMN,
+    shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+    activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
+    //Creates tranaction subprocess
+    subProcess: {
+        type: ej.datavisualization.Diagram.BPMNSubProcessTypes.Transaction,
+        // Defines a collection of events to be attached 
+        events: [
+            //Defines type of the event and the position relative to the subprocess. 
+            {
+                event: "intermediate",
+                trigger: "cancel",
+                offset: {
+                    x: 0.25,
+                    y: 1
+                }
+            },
+            {
+                event: "intermediate",
+                trigger: "error",
+                offset: {
+                    x: 0.75,
+                    y: 1
+                }
+            }
+        ]
+    }
+}];
+
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -364,37 +381,73 @@ var nodes = [{
 Processes is a array collection that defines the children values for BPMN subprocess.
 
 {% highlight javascript %}
+
 <div id="diagram"></div>
 <script type="text/javascript">
-var nodes = [{
-        name: "group", offsetX: 500, offsetY: 300, width: 300, height: 200,
-        type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Group,
+    var nodes = [{
+        name: "group",
+        offsetX: 500,
+        offsetY: 300,
+        width: 300,
+        height: 200,
+        type: "bpmn",
+        shape: ej.datavisualization.Diagram.BPMNShapes.Group,
         children: [{
-            name: "node", marginLeft: 15, marginTop: 15, width: 250, height: 150,
-            type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Activity, activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
+            name: "node",
+            marginLeft: 15,
+            marginTop: 15,
+            width: 250,
+            height: 150,
+            type: "bpmn",
+            shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+            activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
             subProcess: {
                 collapsed: false,
                 Processes: [{
-                    name: "subnode01", marginLeft: 20, marginTop: 50, width: 30, height: 30,
-                    type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Event
-                },
+                        name: "subnode01",
+                        marginLeft: 20,
+                        marginTop: 50,
+                        width: 30,
+                        height: 30,
+                        type: "bpmn",
+                        shape: ej.datavisualization.Diagram.BPMNShapes.Event
+                    },
                     {
-                        name: "subnode02", marginLeft: 90, marginTop: 25, width: 100, height: 80,
-                        type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Activity, activity: ej.datavisualization.Diagram.BPMNActivity.Task, task: { type: "user" }, annotation: { text: "Review Customer Rating", length: 125, angle: 24, width: 100, height: 30 }
-                    }]
+                        name: "subnode02",
+                        marginLeft: 90,
+                        marginTop: 25,
+                        width: 100,
+                        height: 80,
+                        type: "bpmn",
+                        shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+                        activity: ej.datavisualization.Diagram.BPMNActivity.Task,
+                        task: {
+                            type: "user"
+                        },
+                        annotation: {
+                            text: "Review Customer Rating",
+                            length: 125,
+                            angle: 24,
+                            width: 100,
+                            height: 30
+                        }
+                    }
+                ]
             }
         }]
     }];
-var connectors = [{
-        name: "connector1", sourceNode: "subnode01", targetNode: "subnode02"
+    var connectors = [{
+        name: "connector1",
+        sourceNode: "subnode01",
+        targetNode: "subnode02"
     }];
 
- syncApp.controller('diagramCtrl', function ($scope) {
-    //Sets nodes collection to Diagram model.
-    $scope.nodes = nodes;
-});
-
+    syncApp.controller('diagramCtrl', function($scope) {
+        //Sets nodes collection to Diagram model.
+        $scope.nodes = nodes;
+    });
 </script>
+
 {% endhighlight %}
 
 ![](/angular-1/Diagram/Shapes_images/Shapes_img151.png)
@@ -408,41 +461,41 @@ Loop is a task that is internally being looped. The `loop` property of task allo
 var diagram = $("#diagram").ejDiagram("instance");
 
 var node = {
-	name: "task",
-	width: 100,
-	height: 100,
-	offsetX: 100,
-	offsetY: 100,
-	borderWidth: 2,
-	borderColor: "black",
-	type: ej.datavisualization.Diagram.Shapes.BPMN,
-	//Sets the type of BPMN shape
-	shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-	//Sets the type of BPMN Activity
-	activity: ej.datavisualization.Diagram.BPMNActivity.Task,
-	//Sets the type of bpmn loops.
-	task: {
-		loop: ej.datavisualization.Diagram.BPMNLoops.Standard
-	}
+    name: "task",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    type: ej.datavisualization.Diagram.Shapes.BPMN,
+    //Sets the type of BPMN shape
+    shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+    //Sets the type of BPMN Activity
+    activity: ej.datavisualization.Diagram.BPMNActivity.Task,
+    //Sets the type of bpmn loops.
+    task: {
+        loop: ej.datavisualization.Diagram.BPMNLoops.Standard
+    }
 };
 diagram.add(node);
 
 node = {
-	name: "subprocess",
-	width: 100,
-	height: 100,
-	offsetX: 300,
-	offsetY: 100,
-	borderWidth: 2,
-	borderColor: "black",
-	type: ej.datavisualization.Diagram.Shapes.BPMN,
-	shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-	//Sets the type of BPMN activity
-	activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
-	//Sets the type of bpmn loops.
-	subProcess: {
-		loop: ej.datavisualization.Diagram.BPMNLoops.Standard
-	}
+    name: "subprocess",
+    width: 100,
+    height: 100,
+    offsetX: 300,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    type: ej.datavisualization.Diagram.Shapes.BPMN,
+    shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+    //Sets the type of BPMN activity
+    activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
+    //Sets the type of bpmn loops.
+    subProcess: {
+        loop: ej.datavisualization.Diagram.BPMNLoops.Standard
+    }
 };
 diagram.add(node);
 
@@ -467,42 +520,42 @@ Compensation is triggered when operation is partially failed and you can enable 
 var nodes = [];
 
 nodes.push({
-	name: "task",
-	width: 100,
-	height: 100,
-	offsetX: 100,
-	offsetY: 100,
-	borderWidth: 2,
-	borderColor: "black",
-	type: ej.datavisualization.Diagram.Shapes.BPMN,
-	shape: ej.datavisualization.Diagram.BPMNShapes.Activity
-	//Sets the type of BPMN Activity
-	activity: ej.datavisualization.Diagram.BPMNActivity.Task,
-	//Creates compensation task
-	task: {
-		compensation: true
-	}
+    name: "task",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    type: ej.datavisualization.Diagram.Shapes.BPMN,
+    shape: ej.datavisualization.Diagram.BPMNShapes.Activity
+    //Sets the type of BPMN Activity
+    activity: ej.datavisualization.Diagram.BPMNActivity.Task,
+    //Creates compensation task
+    task: {
+        compensation: true
+    }
 });
 
 nodes.push({
-	name: "subprocess",
-	width: 100,
-	height: 100,
-	offsetX: 300,
-	offsetY: 100,
-	borderWidth: 2,
-	borderColor: "black",
-	type: ej.datavisualization.Diagram.Shapes.BPMN,
-	shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-	//Sets the type of BPMN Activity
-	activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
-	//Creates compensation subprocess 
-	subProcess: {
-		compensation: true
-	}
+    name: "subprocess",
+    width: 100,
+    height: 100,
+    offsetX: 300,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    type: ej.datavisualization.Diagram.Shapes.BPMN,
+    shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+    //Sets the type of BPMN Activity
+    activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
+    //Creates compensation subprocess 
+    subProcess: {
+        compensation: true
+    }
 });
 
- syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -518,24 +571,24 @@ A call activity is a global sub-process that is reused at various points of the 
 {% highlight javascript %}
 
 var nodes = [{
-		name: "task",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-		//Sets the type of BPMN Activity
-		activity: ej.datavisualization.Diagram.BPMNActivity.Task,
-		//Creates a call task
-		task: {
-			call: true
-		}
-	}];
-    
- syncApp.controller('diagramCtrl', function ($scope) {
+    name: "task",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    type: ej.datavisualization.Diagram.Shapes.BPMN,
+    shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+    //Sets the type of BPMN Activity
+    activity: ej.datavisualization.Diagram.BPMNActivity.Task,
+    //Creates a call task
+    task: {
+        call: true
+    }
+}];
+
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -551,23 +604,23 @@ An ad hoc subprocess is a group of tasks that are executed in any order or skipp
 {% highlight javascript %}
 
 var nodes = [{
-		name: "task",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-		activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
-		//Creates ad hoc subprocess
-		subProcess: {
-			adhoc: true
-		}
-	}];
-    
- syncApp.controller('diagramCtrl', function ($scope) {
+    name: "task",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    type: ej.datavisualization.Diagram.Shapes.BPMN,
+    shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+    activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
+    //Creates ad hoc subprocess
+    subProcess: {
+        adhoc: true
+    }
+}];
+
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -583,23 +636,23 @@ Boundary represents the type of task that is being processed. The `boundary` pro
 {% highlight javascript %}
 
 var nodes = [{
-		name: "task",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-		activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
-		//Adds boundary to a subprocess 
-		subProcess: {
-			boundary: ej.datavisualization.Diagram.BPMNBoundary.Call
-		}
-	}];
+    name: "task",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    type: ej.datavisualization.Diagram.Shapes.BPMN,
+    shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+    activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
+    //Adds boundary to a subprocess 
+    subProcess: {
+        boundary: ej.datavisualization.Diagram.BPMNBoundary.Call
+    }
+}];
 
- syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -621,25 +674,25 @@ A data object represents information flowing through the process, such as data p
 {% highlight javascript %}
 
 var nodes = [{
-		name: "dataObject",
-		width: 75,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		//Sets the type of the shape
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		//Sets the type of BPMN Shape
-		shape: ej.datavisualization.Diagram.BPMNShapes.DataObject,
-		//Sets collection as true when Dataobject is not a Single instance
-		data: {
-			type: ej.datavisualization.Diagram.BPMNDataObjects.Input,
-			collection: true
-		}
-	}];
-    
- syncApp.controller('diagramCtrl', function ($scope) {
+    name: "dataObject",
+    width: 75,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    //Sets the type of the shape
+    type: ej.datavisualization.Diagram.Shapes.BPMN,
+    //Sets the type of BPMN Shape
+    shape: ej.datavisualization.Diagram.BPMNShapes.DataObject,
+    //Sets collection as true when Dataobject is not a Single instance
+    data: {
+        type: ej.datavisualization.Diagram.BPMNDataObjects.Input,
+        collection: true
+    }
+}];
+
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -663,20 +716,20 @@ DataSource is used to store or access data associated with a business process. T
 {% highlight javascript %}
 
 var nodes = [{
-		name: "dataSource",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		//Sets type of the shape
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		//Sets the type of bpmn shape
-		shape: ej.datavisualization.Diagram.BPMNShapes.DataSource,
-	}];
-    
- syncApp.controller('diagramCtrl', function ($scope) {
+    name: "dataSource",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    //Sets type of the shape
+    type: ej.datavisualization.Diagram.Shapes.BPMN,
+    //Sets the type of bpmn shape
+    shape: ej.datavisualization.Diagram.BPMNShapes.DataSource,
+}];
+
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -699,32 +752,35 @@ A BPMN object can be associated with a text annotation which does not affect the
  {% highlight javascript %}
 
 var nodes = [{
-		name: "data",
-		width: 75,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		//Sets type of the shape
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		//Sets the type of bpmn shape
-		shape: ej.datavisualization.Diagram.BPMNShapes.DataObject,
-		//Sets collection as true when Dataobject is not a Single instance
-		data: { collection: true },
-		annotation: {
-			//Sets the text to annotate the bpmn shape
-			text: "Data Collection",
-			//Sets the angle between the bpmn shape and the annotation
-			angle: 45,
-			//Sets the dimensions of the text
-			width: 100, height: 40,
-			//Sets the distance between the bpmn shape and the annotation 
-			length: 150
-		} 
-	}];
+    name: "data",
+    width: 75,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    //Sets type of the shape
+    type: ej.datavisualization.Diagram.Shapes.BPMN,
+    //Sets the type of bpmn shape
+    shape: ej.datavisualization.Diagram.BPMNShapes.DataObject,
+    //Sets collection as true when Dataobject is not a Single instance
+    data: {
+        collection: true
+    },
+    annotation: {
+        //Sets the text to annotate the bpmn shape
+        text: "Data Collection",
+        //Sets the angle between the bpmn shape and the annotation
+        angle: 45,
+        //Sets the dimensions of the text
+        width: 100,
+        height: 40,
+        //Sets the distance between the bpmn shape and the annotation 
+        length: 150
+    }
+}];
 
- syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -740,20 +796,20 @@ A group is used to frame a part of the diagram, shows that elements included in 
  {% highlight javascript %}
 
 var nodes = [{
-		name: "group",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		//Sets type of the shape
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		//Sets the type of bpmn shape
-		shape: ej.datavisualization.Diagram.BPMNShapes.Group, 
-	}];
-    
- syncApp.controller('diagramCtrl', function ($scope) {
+    name: "group",
+    width: 100,
+    height: 100,
+    offsetX: 100,
+    offsetY: 100,
+    borderWidth: 2,
+    borderColor: "black",
+    //Sets type of the shape
+    type: ej.datavisualization.Diagram.Shapes.BPMN,
+    //Sets the type of bpmn shape
+    shape: ej.datavisualization.Diagram.BPMNShapes.Group,
+}];
+
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -779,29 +835,28 @@ The `association` property allows you to define the type of association.The foll
 {% highlight javascript %}
 
 var connectors = [{
-        name: "connect1", 
-        sourcePoint:{
-               x:100,
-               y:200
-             }, 
-         targetPoint: 
-            {
-               x:300
-               ,y:200
-             }, 
-          segments: [{ 
-                type: "straight" 
-              }], 
-           shape: {
-                  type: "bpmn",
-				  //Sets the type of the flow as association
-                  flow: "association",
-				  //Sets the type of association
-                  association: "bidirectional"
-              }
-	}];
+    name: "connect1",
+    sourcePoint: {
+        x: 100,
+        y: 200
+    },
+    targetPoint: {
+        x: 300,
+        y: 200
+    },
+    segments: [{
+        type: "straight"
+    }],
+    shape: {
+        type: "bpmn",
+        //Sets the type of the flow as association
+        flow: "association",
+        //Sets the type of association
+        association: "bidirectional"
+    }
+}];
 
- syncApp.controller('diagramCtrl', function ($scope) {
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.connectors = connectors;
 });
@@ -833,28 +888,27 @@ The `sequence` property allows you to define the type of sequence.The following 
 {% highlight javascript %}
 
 var connectors = [{
-        name: "connect1", 
-        sourcePoint:{
-               x:100,
-               y:200
-             }, 
-         targetPoint: 
-            {
-               x:300
-               ,y:200
-             }, 
-          segments: [{ 
-                type: "straight" 
-              }], 
-           shape: {
-                  type: "bpmn",
-                  flow: "sequence",
-				  //Sets the type of srquence flow
-                  sequence: "conditional"
-              }
-	}];
-    
- syncApp.controller('diagramCtrl', function ($scope) {
+    name: "connect1",
+    sourcePoint: {
+        x: 100,
+        y: 200
+    },
+    targetPoint: {
+        x: 300,
+        y: 200
+    },
+    segments: [{
+        type: "straight"
+    }],
+    shape: {
+        type: "bpmn",
+        flow: "sequence",
+        //Sets the type of srquence flow
+        sequence: "conditional"
+    }
+}];
+
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.connectors = connectors;
 });
@@ -886,27 +940,26 @@ The `message` property allows you to define the type of message.The following co
 {% highlight javascript %}
 
 var connectors = [{
-        name: "connect1", 
-        sourcePoint:{
-               x:100,
-               y:200
-             }, 
-         targetPoint: 
-            {
-               x:300
-               ,y:200
-             }, 
-          segments: [{ 
-                type: "straight" 
-              }], 
-           shape: {
-                  type: "bpmn",
-                  flow: "message",
-				  //Sets the type of message flow
-                  message: "initiatingmessage"
-              }
-	}]
- syncApp.controller('diagramCtrl', function ($scope) {
+    name: "connect1",
+    sourcePoint: {
+        x: 100,
+        y: 200
+    },
+    targetPoint: {
+        x: 300,
+        y: 200
+    },
+    segments: [{
+        type: "straight"
+    }],
+    shape: {
+        type: "bpmn",
+        flow: "message",
+        //Sets the type of message flow
+        message: "initiatingmessage"
+    }
+}]
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.connectors = connectors;
 });

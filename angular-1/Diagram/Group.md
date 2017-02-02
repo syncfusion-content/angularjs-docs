@@ -17,51 +17,52 @@ Group is used to cluster multiple nodes and connectors into a single element. It
 
 You can add a group to the Diagram model through `nodes` collection. To define an object as group, set its `type` property as "group" and you need to add the child objects to the `children` collection of the group. The following code illustrates how to create a group node.
 
-{% highlight javascript %}
+{% highlight html %}
 
 <div ng-controller="diagramCtrl">
- <ej-diagram id="diagram" 
-         e-height="500px" 
-         e-width="700px"
-         e-nodes="nodes">
- </ej-diagram>
+    <ej-diagram id="diagram" e-height="500px" e-width="700px" e-nodes="nodes">
+    </ej-diagram>
 </div>
 
+{% endhighlight %}
+
+{% highlight javascript %}
+
 var nodes = [{
-	//Sets the name
-	name: "group1",
-	// Sets the type as group
-	type: "group",
-	//Defines the collection of children
-	children: [{
-		name: "rectangle1",
-		offsetX: 100,
-		offsetY: 100,
-		width: 100,
-		height: 100,
-		type: "node",
-		fillColor: "darkCyan",
-		borderWidth: 2,
-		labels: [{
-			text: "rectangle1"
-		}]
-	},{
-		name: "rectangle2",
-		offsetX: 200,
-		offsetY: 200,
-		width: 100,
-		height: 100,
-		type: "node",
-		fillColor: "darkCyan",
-		borderWidth: 2,
-		labels: [{
-		text: "rectangle2"
-		}]
-	}]
+    //Sets the name
+    name: "group1",
+    // Sets the type as group
+    type: "group",
+    //Defines the collection of children
+    children: [{
+        name: "rectangle1",
+        offsetX: 100,
+        offsetY: 100,
+        width: 100,
+        height: 100,
+        type: "node",
+        fillColor: "darkCyan",
+        borderWidth: 2,
+        labels: [{
+            text: "rectangle1"
+        }]
+    }, {
+        name: "rectangle2",
+        offsetX: 200,
+        offsetY: 200,
+        width: 100,
+        height: 100,
+        type: "node",
+        fillColor: "darkCyan",
+        borderWidth: 2,
+        labels: [{
+            text: "rectangle2"
+        }]
+    }]
 }]
 
-    //Initialize Diagram
-    syncApp.controller('diagramCtrl', function ($scope) {
+//Initialize Diagram
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -77,33 +78,33 @@ The following code illustrates how a group node is added at run time.
 {% highlight javascript %}
 
 var group = {
-	name: "group1",
-	type: "group",
-	children: [{
-		name: "rectangle1",
-		offsetX: 100,
-		offsetY: 100,
-		width: 100,
-		height: 100,
-		type: "node",
-		fillColor: "darkCyan",
-		borderWidth: 2,
-		labels: [{
-			text: "rectangle1"
-		}]
-	}, {
-		name: "rectangle2",
-		offsetX: 200,
-		offsetY: 200,
-		width: 100,
-		height: 100,
-		type: "node",
-		fillColor: "darkCyan",
-		borderWidth: 2,
-		labels: [{
-			text: "rectangle2"
-		}]
-	}]
+    name: "group1",
+    type: "group",
+    children: [{
+        name: "rectangle1",
+        offsetX: 100,
+        offsetY: 100,
+        width: 100,
+        height: 100,
+        type: "node",
+        fillColor: "darkCyan",
+        borderWidth: 2,
+        labels: [{
+            text: "rectangle1"
+        }]
+    }, {
+        name: "rectangle2",
+        offsetX: 200,
+        offsetY: 200,
+        width: 100,
+        height: 100,
+        type: "node",
+        fillColor: "darkCyan",
+        borderWidth: 2,
+        labels: [{
+            text: "rectangle2"
+        }]
+    }]
 };
 
 
@@ -135,60 +136,60 @@ The `container` property of group should be defined and its `type` should be set
 {% highlight javascript %}
 
 var nodes = [{
-	type: "group",
-	name: "canvas",
-	offsetX: 400,
-	offsetY: 400,
-	
-	children: [{
-		type: "node",
-		name: "node1",
-		fillColor: "darkCyan",
-		width: 100,
-		height: 100
-	}, {
-		type: "node",
-		name: "node2",
-		// Sets the margin to define the space around the child node.
-		marginTop: 30,
-		marginLeft: 30,
-		fillColor: "white",
-		width: 100,
-		height: 100
-	}, {
-		type: "node",
-		name: "node3",
-		marginTop: 60,
-		marginLeft: 60,
-		fillColor: "darkCyan",
-		width: 100,
-		height: 100
-	}, {
-		type: "node",
-		name: "node4",
-		marginTop: 90,
-		marginLeft: 90,
-		fillColor: "white",
-		width: 100,
-		height: 100
-	}],
-	
-	//Sets the container as canvas.
-	container: {
-		type: "canvas"
-	},
-	fillColor: "#E7EBF4",
-	borderColor: "black",
-	
-	//Sets the padding to give space between the group border and group content.
-	paddingLeft: 30,
-	paddingTop: 30,
-	paddingRight: 30,
-	paddingBottom: 30
+    type: "group",
+    name: "canvas",
+    offsetX: 400,
+    offsetY: 400,
+
+    children: [{
+        type: "node",
+        name: "node1",
+        fillColor: "darkCyan",
+        width: 100,
+        height: 100
+    }, {
+        type: "node",
+        name: "node2",
+        // Sets the margin to define the space around the child node.
+        marginTop: 30,
+        marginLeft: 30,
+        fillColor: "white",
+        width: 100,
+        height: 100
+    }, {
+        type: "node",
+        name: "node3",
+        marginTop: 60,
+        marginLeft: 60,
+        fillColor: "darkCyan",
+        width: 100,
+        height: 100
+    }, {
+        type: "node",
+        name: "node4",
+        marginTop: 90,
+        marginLeft: 90,
+        fillColor: "white",
+        width: 100,
+        height: 100
+    }],
+
+    //Sets the container as canvas.
+    container: {
+        type: "canvas"
+    },
+    fillColor: "#E7EBF4",
+    borderColor: "black",
+
+    //Sets the padding to give space between the group border and group content.
+    paddingLeft: 30,
+    paddingTop: 30,
+    paddingRight: 30,
+    paddingBottom: 30
 }];
 
-    //Initialize Diagram
-    syncApp.controller('diagramCtrl', function ($scope) {
+//Initialize Diagram
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
@@ -207,46 +208,46 @@ The `container` property of group should be defined and its `type` should be set
 {% highlight javascript %}
 
 var nodes = [{
-	type: "group",
-	name: "Stack",
-	offsetX: 600,
-	offsetY: 200,
-	fillColor: "#E7EBF4",
-	borderColor: "black",
-	// Sets the minimum size for stack panel.
-	minHeight: 300,
-	minWidth: 300,
-	children: [{
-		type: "node",
-		name: "snode1",
-		fillColor: "darkCyan",
-		//Sets the horizontal Alignment for child node.
-		horizontalAlign: "left",
-		width: 100,
-		height: 100
-	}, {
-		type: "node",
-		name: "snode2",
-		fillColor: "darkCyan",
-		horizontalAlign: "right",
-		width: 100,
-		height: 100
-	}, {
-		type: "node",
-		name: "snode3",
-		fillColor: "darkCyan",
-		horizontalAlign: "stretch",
-		width: 100,
-		height: 100
-	}],
-	// Sets the container as stack.
-	container: {
-		type: "stack"
-	},
+    type: "group",
+    name: "Stack",
+    offsetX: 600,
+    offsetY: 200,
+    fillColor: "#E7EBF4",
+    borderColor: "black",
+    // Sets the minimum size for stack panel.
+    minHeight: 300,
+    minWidth: 300,
+    children: [{
+        type: "node",
+        name: "snode1",
+        fillColor: "darkCyan",
+        //Sets the horizontal Alignment for child node.
+        horizontalAlign: "left",
+        width: 100,
+        height: 100
+    }, {
+        type: "node",
+        name: "snode2",
+        fillColor: "darkCyan",
+        horizontalAlign: "right",
+        width: 100,
+        height: 100
+    }, {
+        type: "node",
+        name: "snode3",
+        fillColor: "darkCyan",
+        horizontalAlign: "stretch",
+        width: 100,
+        height: 100
+    }],
+    // Sets the container as stack.
+    container: {
+        type: "stack"
+    },
 }];
 
-    //Initialize Diagram
-    syncApp.controller('diagramCtrl', function ($scope) {
+//Initialize Diagram
+syncApp.controller('diagramCtrl', function($scope) {
     //Sets nodes collection to Diagram model.
     $scope.nodes = nodes;
 });
