@@ -108,7 +108,7 @@ Run the above code to render the following output.
 
      <input id="timepicker" ej-timepicker e-enabled="false" />
 
-{5 endhighlight %}
+{% endhighlight %}
 
 **Controller Section**
 
@@ -179,7 +179,6 @@ Run the above code to render the following output.
 <td>Sets the step value for increment the seconds value through arrow keys or mouse scroll.</td>
 <td>1</td>
 </tr>
-<tr>
 </table>
 
 **HTML View Section**
