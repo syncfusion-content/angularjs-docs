@@ -31,7 +31,7 @@ Refer the below German culture file in head section of HTML page after the refer
 
 **Controller Section**
 
-{% highlight javacsript %}
+{% highlight javascript %}
 
     <script>
         angular.module("ColorPickCtrl", ['ejangular']).controller("ColorPickCtrller", function ($scope) {
