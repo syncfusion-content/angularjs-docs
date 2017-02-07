@@ -59,7 +59,7 @@ You can use **e-height** and **e-width** property to customize TimePicker **widt
                     });
         </script>
 
-{% endHighlight %}
+{% endhighlight %}
 
 Run the above code to render the following output.
 
@@ -80,7 +80,7 @@ You can use **e-popupHeight** and **e-popupWidth** property to customize **TimeP
 
 **Controller Section**
 
-{% highlight javascipt %}
+{% highlight javascript %}
 
         <script type="text/javascript">
             angular.module("TimeCtrl", ['ejangular']).controller("TimeCtrller", function ($scope) {
