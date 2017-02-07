@@ -24,7 +24,7 @@ You can use **e-value** property to set default color for the **ColorPicker**. *
 
 **Controller Section**
 
-{% highlight javacsript %}
+{% highlight javascript %}
 
         <script>
             angular.module("ColorPickCtrl", ['ejangular']).controller("ColorPickCtrller", function ($scope) {
