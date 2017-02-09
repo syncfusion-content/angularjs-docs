@@ -465,8 +465,7 @@ syncApp.controller('diagramCtrl', function($scope) {
     $scope.connectors = connectors;
 });
 
-{ % endhighlight %
-}
+{ % endhighlight %}
 
 ![](/angular-1/Diagram/Shapes_images/Shapes_img149.png)
 
