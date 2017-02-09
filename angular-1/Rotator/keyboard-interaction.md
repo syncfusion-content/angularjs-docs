@@ -3,7 +3,7 @@ layout: post
 title: keyboard interaction
 description: keyboard interaction
 platform: angular-1
-control: Control Name undefined
+control: rotator
 documentation: ug
 ---
 

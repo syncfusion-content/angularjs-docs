@@ -3,7 +3,7 @@ layout: post
 title: template
 description: template
 platform: angular-1
-control: Control Name undefined
+control: rotator
 documentation: ug
 ---
 

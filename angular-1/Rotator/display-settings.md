@@ -3,7 +3,7 @@ layout: post
 title: display settings
 description: display settings
 platform: angular-1
-control: Control Name undefined
+control: rotator
 documentation: ug
 ---
 

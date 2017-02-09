@@ -46,9 +46,7 @@ Component events and captured and processed based on application needs. These ev
 **HTML View Section**
 
 {% highlight html %}
-
      <input id="colorpicker" ej-colorpicker e-value="value" e-close="colorchanged"/>
-
 {% endhighlight %}
 
 **Controller Section**
