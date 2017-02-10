@@ -58,7 +58,7 @@ To show tooltip on mouse over, the `tooltip` property of Diagram model needs to 
 <!--Define tooltip template-->
 <script type="text/x-jsrender" id="mouseovertooltip">
     <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
-        <span style="padding: 5px;"> {{"{{"}}:Designation{{}}}} </span>
+        <span style="padding: 5px;"> "{{:Designation}}"</span>
     </div>
 </script>
 
@@ -149,7 +149,7 @@ Diagram provides support to show tooltip around the node/connector that is hover
 <!--Define tooltip template-->
 <script type="text/x-jsrender" id="mouseovertooltip">
     <div style="background-color: #F08080; color: white; padding: 5px;">
-        <span> {{"{{"}}:Designation{{}}}} </span>
+        <span> "{{:Designation}}" </span>
     </div>
 </script>
 

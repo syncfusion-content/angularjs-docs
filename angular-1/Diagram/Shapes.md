@@ -156,9 +156,9 @@ The following tables illustrates all the possible scale options for the image no
 <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
 <!—define html element-->
 <script id="htmlTemplate" type="text/x-jsrender">
-    <div style="margin-left: 32px; margin-top: 18px">
-        <input type="button" value="{{" {{ "}}:value{{}}}}" />
-    </div>
+	<div style="margin-left: 32px; margin-top: 18px">
+		<input type="button" value="{{:value}}"/>
+	</div>
 </script>
 
 {% endhighlight %}
