@@ -5,7 +5,7 @@ description: getting started
 platform: Angular-1
 control: Toolbar
 documentation: ug
-keywords: ejtoolbar, toolbar, js toolbar 
+keywords: ejtoolbar, toolbar, angularjs toolbar 
 ---
 
 # Getting Started

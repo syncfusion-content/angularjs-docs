@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | ProgressBar | JavaScript | Syncfusion
+title: Overview
 description: overview
 platform: Angular-1
 control: ProgressBar

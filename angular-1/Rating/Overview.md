@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | Rating | JavaScript | Syncfusion
+title: Overview
 description: overview
 platform: Angular-1
 control: Rating
