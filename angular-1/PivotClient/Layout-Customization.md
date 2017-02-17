@@ -10,10 +10,62 @@ keywords: ejpivotclient, pivotclient, pivotclient widget, js pivotclient
 
 # Layout Customization
 
+## Size
+
+Allows you to render PivotClient in different sizes. You can set height and width under 'e-size' property. 
+
+## Set size in Pixels
+
+{% highlight html %}
+
+<div ng-controller="PivotClientCtrl">
+    <div id="PivotClient1" ej-pivotclient e-size="size" />
+</div>
+<script>
+    angular.module('PivotClientApp', ['ejangular']).controller('PivotClientCtrl', function ($scope) {
+        //..
+        $scope.size = {
+                width: "1000px" , height: "685px"
+        };
+    });
+</script>
+
+{% endhighlight %}
+
+PivotClient with decreased size from Default size
+
+![](Layout-Customization_images/small-size.png)
+
+## Set size in percentage
+
+You can set the PivotClient size in percentage also.
+
+N> Size of the parent container should be set in Pixels.
+
+{% highlight html %}
+
+<div id="control" style="width:1000px; height:800px">
+<div ng-controller="PivotClientCtrl">
+    <div id="PivotClient1" ej-pivotclient e-size="size" />
+</div>
+<script>
+    angular.module('PivotClientApp', ['ejangular']).controller('PivotClientCtrl', function ($scope) {
+        //..
+        $scope.size = {
+                width: "50%" , height: "80%"
+        };
+    });
+</script>
+</div>
+
+{% endhighlight %}
+
+N> PivotClient set with minimum height and width to show decent UI.
+
 ## Control Placement
 
 ### Tab View
-In Tab View representation, both Grid and Chart will be displayed in separate tabs. This could be set by using the [`controlPlacement`](/api/js/ejpivotclient#members:displaysettings-controlplacement) property under the `e-displaySettings` option.  By default, **Tab** value is set.
+In Tab View representation, both Grid and Chart will be displayed in separate tabs. This could be set by using the `e-controlPlacement` property under the `e-displaySettings` option.  By default, **Tab** value is set.
 
 {% highlight javascript %}
 
@@ -171,9 +223,33 @@ The Chart Type can also be changed dynamically through the toolbar icon.
 
 ![](Layout-Customization_images/chart-type-changed.png)
 
+### PivotTreeMap
+
+I> This feature is applicable only for OLAP data source bound from server-side.
+
+You can include the PivotTreeMap component as one of the chart types by setting `e-enablePivotTreeMap` property to true.
+
+{% highlight javascript %}
+
+<div ng-controller="PivotClientCtrl">
+    <div id="PivotClient1" ej-pivotclient e-enablePivotTreeMap="enablePivotTreeMap" />
+</div>
+<script>
+    angular.module('PivotClientApp', ['ejangular']).controller('PivotClientCtrl', function ($scope) {
+        //..
+        $scope.enablePivotTreeMap = true;
+    });
+</script>
+
+{% endhighlight %} 
+
+![](Layout-Customization_images/TreeMap1.png)
+
+![](Layout-Customization_images/TreeMap2.png)
+
 ## Report Toolbar
 
-Icons can be either enabled/disabled inside the report toolbar. This can be achieved by setting the properties under `e-toolbarIconSettings` option to false. The value is true by default.
+You can customize the display of toolbar by enabling/disabling the visibility of each of the icons.  This can be achieved by setting the properties under `e-toolbarIconSettings` option to false. The values are true by default.
 
 {% highlight javascript %}
 
