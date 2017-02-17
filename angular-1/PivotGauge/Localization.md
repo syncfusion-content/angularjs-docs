@@ -82,7 +82,7 @@ Initialize the OLAP datasource for PivotGauge widget by using **datasource** pro
 </div>
 <script>
     var dataSource = {
-            data: "http://bi.syncfusion.com/olap/msmdpump.dll;LocaleIdentifier=1036;"
+            data: "http://bi.syncfusion.com/olap/msmdpump.dll;Locale Identifier=1036;"
             //..
     };
     angular.module('PivotGaugeApp', ['ejangular']).controller('PivotGaugeCtrl', function ($scope) {

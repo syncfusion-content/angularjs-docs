@@ -32,7 +32,7 @@ Also hyperlink option provides separate events for row header, column header, va
 </div>
 <script>
     angular.module("PivotGridApp",["ejangular"]).controller('PivotGridCtrl', function ($scope) {
-        $scope.url = "/Olap";
+        //..
         $scope.hyperLinkSettings = {
             enableValueCellHyperlink: true,
             enableRowHeaderHyperlink: true,
@@ -59,7 +59,7 @@ The `e-cellSelection` event would be triggered as soon as the selection process 
 </div>
 <script>
     angular.module("PivotGridApp",["ejangular"]).controller('PivotGridCtrl', function ($scope) {
-        $scope.url = "/Olap";
+        //..
         $scope.cellClick = function(evt) {
             //This event lets you to perform required operation with the selected range of cells.
             cellvalue = evt.JSONRecords;
@@ -85,7 +85,7 @@ Cell context is enabled by setting the `e-enableCellContext` property to true. T
 </div>
 <script>
     angular.module("PivotGridApp",["ejangular"]).controller('PivotGridCtrl', function ($scope) {
-        $scope.url = "/Olap";
+        //..
         $scope.cellRightClick = function(evt) {
             //You can write your code here
         };
