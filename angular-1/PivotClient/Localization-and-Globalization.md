@@ -28,31 +28,8 @@ Following code example illustrates on how to localize PivotClient based on **Fre
         $scope.url: "/Olap"
     });
     ej.PivotClient.Locale["fr-FR"] = {
-        Sort: "Trier",
-        SelectField: "sélectionnez Champ",
-        LabelFilterLabel: "Afficher les éléments pour lesquels l'étiquette",
-        ValueFilterLabel: "Voir les articles pour lesquels",
-        LabelFilters: "Filtres d'étiquetage",
-        BeginsWith: "Commence par",
-        NotBeginsWith: "Non Commence par",
-        EndsWith: "Se termine par",
-        NotEndsWith: "Non Se termine par",
-        Contains: "Contient",
-        NotContains: "Ne contient pas",
-        ValueFilters: "Filtres de valeur",
-        ClearFilter: "Effacer le filtre",
-        Equals: "Équivaut à",            
-        Top10:"Top Count",		
-	    EqualTo: "Égal à",
-        NotEquals: "pas equals",
-        GreaterThan: "Plus grand que",
-        GreaterThanOrEqualTo: "Plus grand ou égal à",
-        LessThan: "LessThan",
-        LessThanOrEqualTo: "Moins que",
-        Between: "Entre",
-        NotBetween: "Entre pas",		
         DeferUpdate: "Différer Mise à jour",
-        MDXQuery: "de requêtes MDX",
+		MDXQuery: "de requêtes MDX",
         Column: "Colonne",
         Row: "Rangée",
         Slicer: "Tranche",
@@ -62,71 +39,7 @@ Following code example illustrates on how to localize PivotClient based on **Fre
         CubeDimensionBrowser: "Cube navigateur dimnesion",
         AddReport: "Ajouter un rapport",
         RemoveReport: "Retirer rapport",
-        CannotRemoveSingleReport: "Vous ne pouvez pas supprimer Rapport unique",
-        AreYouSureToDeleteTheReport: "Etes-vous sûr de vouloir supprimer le rapport",
-        RenameReport: "Renommer rapport",
-        SaveReport: "Enregistrer le rapport",
-        LoadReport: "Rapport de charge",
-        ToggleAxis: "Basculer Axis",
-        ExportToExcel: "Exporter vers Excel",
-        ExportToWord: "Exporter vers Word",
-        ExportToPdf: "Exporter vers Pdf",
-        FullScreen: "Plein écran",
-        Grid: "Grille",
-        Chart: "Graphiq",
-        OK: "Bien",
-        Cancel: "Annuler",
-        MeasureEditor: "Mesurer éditeur",
-        MemberEditor: "Sous la direction de membres",
-        Measures: "Mesures",
-        SortOrFilterColumn: " Tri/filtrage (colonne)",
-        SortOrFilterRow: "Tri/filtrage (ligne)",
-        SortingAndFiltering: " Trier et filtrer",
-        Sorting: " Tri",
-        Measure: "Mesurer",
-        Order: " Ordre",
-        Filtering: " Filtrage",
-        Condition: " Condition ",
-        Value: " Valeur ",
-        PreserveHierarchy: "Préserver hiérarchie ",
-        Ascending: " Croissant ",
-        Descending: " Descendant ",
-        Enable: " Permettre ",
-        Disable: " Désactiver ",
-        and: "et",	
-        ReportList: "Liste des rapports",		
-        Line: "ligne",
-        Spline: "spline",
-        Column: "colonne",
-        Area: "zone",
-        SplineArea: "spline zone",
-        StepLine: "étape ligne",
-        StepArea: "étape zone",
-        Pie: "tarte",
-        Bar: "bar",
-        StackingArea: "Stacking zone",
-        StackingColumn: "Colonne d'empilage",
-        StackingBar: "Stacking bar",
-        Pyramid: "pyramide",
-        Funnel: "entonnoir",
-        ChartTypes: "Types de graphiques",		
-        Doughnut: "Donut",
-        Scatter: "Scatter",
-        Bubble: "bulle",
-        TreeMap: "TreeMap",
-        Alert: "Alerte",
-        MDXAlertMsg: "S'il vous plaît ajouter une mesure, la dimension ou la hiérarchie dans un axe approprié pour afficher la requête MDX.",
-        FilterSortRowAlertMsg: "Dimension pas trouvé dans l'axe de la ligne. S'il vous plaît ajouter élément de dimension dans l'axe de ligne de tri / filtrage.",
-        FilterSortColumnAlertMsg: "Dimension se trouve pas dans l'axe de la colonne. S'il vous plaît ajouter élément de dimension dans l'axe de la colonne pour trier / filtrage",
-        FilterSortcolMeasureAlertMsg: "S'il vous plaît ajouter mesure à l'axe de la colonne",
-        FilterSortrowMeasureAlertMsg: "S'il vous plaît ajouter mesure à l'axe de rang.",
-        FilterSortElementAlertMsg: "Elément ne se trouve pas dans l'axe de la colonne. S'il vous plaît ajouter un élément dans l'axe de la colonne pour trier / filtrage.",
-        LoadReportAlertMsg: "S'il vous plaît sélectionner un rapport valide",
-        FilterMeasureSelectionAlertMsg: "S'il vous plaît sélectionnez une mesure valide.",
-        FilterConditionAlertMsg: "S'il vous plaît définir une condition valide.",
-        FilterStartValueAlertMsg: "S'il vous plaît définir une valeur de départ.",
-        FilterEndValueAlertMsg: "S'il vous plaît définir une valeur de fin.",
-        FilterInvalidAlertMsg: "Opération invalide!"
+        //...
     }
     ej.PivotGrid.Locale["fr-FR"] = {
         ToolTipRow: "Rangée",
@@ -143,32 +56,12 @@ Following code example illustrates on how to localize PivotClient based on **Fre
         Exit: "Quitter"
     }
     ej.PivotSchemaDesigner.Locale["fr-FR"] = {
-        ClearFilter: "Effacer le filtre",
-        SelectField: "Select Field",
-        Measures: "Les mesures",
-        Warning: "Attention",
-        AlertMsg: "Le champ que vous déplacez ne peut être placé dans cette zone du rapport",
-        Measures: "Les mesures",
-        Goal: "Objectif",
-        Status: "statut",
-        Trend: "Tendance",
-        Value: "valeur",
         AddToFilter: "Ajouter au filtre",
         AddToRow: "Ajouter à la rangée",
         AddToColumn: "Ajouter à la colonne",
         AddToValues: "Ajouter à la valeur",
         PivotTableFieldList: "Liste des champs PivotTable",
-        ChooseFieldsToAddToReport: "Choisissez les champs à ajouter à signaler :",
-        DragFieldBetweenAreasBelow: "champs de glisser entre les zones ci-dessous:",
-        ReportFilter: "Rapport Filtre",
-        ColumnLabel: "Colonne Étiquette",
-        RowLabel: "Label Row",
-        Values: "Valeurs",
-        DeferLayoutUpdate: "Différer la mise en page de mise à jour",
-        Update: "Mettre à jour",
-        OK: "D'accord",
-        Cancel: "Annuler",
-        Close: "Fermer"
+        //...
     }
 </script>
 
@@ -507,6 +400,241 @@ ChartTypes</td><td>
 <tr>
 <td>NotBetween</td>
 <td>Entre pas</td>
+</tr>
+
+<tr>
+    <td>DoesNotBeginsWith</td>
+    <td>N'a pas commence par</td>
+</tr>
+
+<tr>
+    <td>DoesNotEndsWith</td>
+    <td>Ne se termine par</td>
+</tr>
+
+<tr>
+    <td>DoesNotContains</td>
+    <td>Ne contient</td>
+</tr>
+
+<tr>
+    <td>DoesNotEquals</td>
+    <td>N'est pas égaux</td>
+</tr>
+
+<tr>
+    <td>IsGreaterThan</td>
+    <td>Est supérieure à</td>
+</tr>
+
+<tr>
+    <td>IsGreaterThanOrEqualTo</td>
+    <td>Est supérieure ou égale à</td>
+</tr>
+
+<tr>
+    <td>IsLessThan</td>
+    <td>Est inférieure à</td>
+</tr>
+
+<tr>
+    <td>IsLessThanOrEqualTo</td>
+    <td>Est inférieure ou égale à</td>
+</tr>
+
+<tr>
+    <td>IsLessThanOrEqualTo</td>
+    <td>Est inférieure ou égale à</td>
+</tr>
+
+<tr>
+    <td>Search</td>
+    <td>Recherchez</td>
+</tr>
+
+<tr>
+    <td>SetReportNameAlertMsg</td>
+    <td>Veuillez définir le nom du rapport</td>
+</tr>
+
+<tr>
+    <td>SetRecordNameAlertMsg</td>
+    <td>Veuillez définir nom d'enregistrement</td>
+</tr>
+
+<tr>
+    <td>Remove</td>
+    <td>Déposer</td>
+</tr>
+
+<tr>
+    <td>Rename</td>
+    <td>Renommer</td>
+</tr>
+
+<tr>
+    <td>DBReport</td>
+    <td>La manipulation en DB Rapport</td>
+</tr>
+
+<tr>
+    <td>SelectReport</td>
+    <td>Sélectionnez Rapport</td>
+</tr>
+
+<tr>
+    <td>SelectRecord</td>
+    <td>Sélectionnez Enreg</td>
+</tr>
+
+<tr>
+    <td>SaveAs</td>
+    <td>Enregistrer sous</td>
+</tr>
+
+<tr>
+    <td>Save</td>
+    <td>Sauvegarder</td>
+</tr>
+
+<tr>
+    <td>Save</td>
+    <td>Sauvegarder</td>
+</tr>
+
+<tr>
+    <td>Load</td>
+    <td>Charger</td>
+</tr>
+
+<tr>
+    <td>RenameRecord</td>
+    <td>L'enregistrement de nom</td>
+</tr>
+
+<tr>
+    <td>RemoveRecord</td>
+    <td>Effacer l'enregistrement</td>
+</tr>
+
+<tr>
+    <td>RecordName</td>
+    <td>Nom d'enregistrement</td>
+</tr>
+
+<tr>
+    <td>SelectRecordAlertMsg</td>
+    <td>Veuillez sélectionner un enregistrement valide</td>
+</tr>
+
+<tr>
+    <td>FilterInvalidAlertMsg</td>
+    <td>Opération non valide</td>
+</tr>
+
+<tr>
+    <td>FilterEndValueAlertMsg</td>
+    <td>Veuillez définir une valeur de fin</td>
+</tr>
+
+<tr>
+    <td>FilterStartValueAlertMsg</td>
+    <td>Veuillez définir une valeur de départ</td>
+</tr>
+
+<tr>
+    <td>FilterConditionAlertMsg</td>
+    <td>Veuillez définir une condition valide</td>
+</tr>
+
+<tr>
+    <td>FilterMeasureSelectionAlertMsg</td>
+    <td>Veuillez sélectionner une mesure valide</td>
+</tr>
+
+<tr>
+    <td>FilterSortElementAlertMsg</td>
+    <td>Élément non trouvé dans l'axe de la colonne. Veuillez ajouter un élément dans l'axe de la colonne pour trier/filtrage</td>
+</tr>
+
+<tr>
+    <td>FilterSortrowMeasureAlertMsg</td>
+    <td>Veuillez ajouter à la mesure de l'axe de rang</td>
+</tr>
+
+<tr>
+    <td>FilterSortcolMeasureAlertMsg</td>
+    <td>Veuillez ajouter à la mesure de l'axe de la colonne</td>
+</tr>
+
+<tr>
+    <td>FilterSortColumnAlertMsg</td>
+    <td>On ne trouve pas dans la dimension de l'axe de la colonne. Veuillez ajouter la dimension de l'axe de l'élément dans la colonne de tri et de filtrage</td>
+</tr>
+
+<tr>
+    <td>FilterSortRowAlertMsg</td>
+    <td>On ne trouve pas dans la dimension de l'axe de rang. Veuillez ajouter la dimension élément de la ligne de tri axe/filtrage</td>
+</tr>
+
+<tr>
+    <td>MDXAlertMsg</td>
+    <td>Veuillez ajouter une mesure, dimension ou de hiérarchie dans un axe approprié pour afficher la requête MDX</td>
+</tr>
+
+<tr>
+    <td>Alert</td>
+    <td>Alert</td>
+</tr>
+
+<tr>
+    <td>TreeMap</td>
+    <td>Carte d'arbres</td>
+</tr>
+
+<tr>
+    <td>Bubble</td>
+    <td>Bubble</td>
+</tr>
+
+<tr>
+    <td>Scatter</td>
+    <td>dispersion</td>
+</tr>
+
+<tr>
+    <td>Doughnut</td>
+    <td>Donut</td>
+</tr>
+
+<tr>
+    <td>Close</td>
+    <td>Fermer</td>
+</tr>
+
+<tr>
+    <td>ReportList</td>
+    <td>Liste des rapports</td>
+</tr>
+
+<tr>
+    <td>AddToSlicer</td>
+    <td>Ajouter à Slicer</td>
+</tr>
+
+<tr>
+    <td>AddToRow</td>
+    <td>Ajouter à la rangée</td>
+</tr>
+
+<tr>
+    <td>AddToColumn</td>
+    <td>Ajouter à la colonne</td>
+</tr>
+
+<tr>
+    <td>AddToColumn</td>
+    <td>Ajouter à la colonne</td>
 </tr>
 
 </table>

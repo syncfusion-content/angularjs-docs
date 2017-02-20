@@ -67,7 +67,7 @@ PivotChart widget supports responsive rendering based on the target device (desk
 {% highlight html %}
 
 <div ng-controller="PivotChartCtrl">
-    <div id="PivotChart1" ej-pivotchart e-dataSource="dataSource" e-isResponsive ="true" style="height: 460px; width: 950px;"/>
+    <div id="PivotChart1" ej-pivotchart e-dataSource="dataSource" e-isResponsive ="true" style="height: 460px; width: 100%;"/>
 </div>
 
 {% endhighlight %}

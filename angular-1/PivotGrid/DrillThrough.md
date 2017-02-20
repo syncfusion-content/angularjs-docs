@@ -10,9 +10,9 @@ keywords: ejpivotgrid, pivotgrid, pivotgrid widget, js pivotgrid
 
 # Drill Through
 
-I> This feature is applicable only for OLAP data source.
-
 Drill-through retrieves the raw items that are used to create a specific cell. To enable drill-through support, set `e-enableDrillThrough` property to true. Raw items are obtained through the `e-drillThrough` event, using which user can bind them to an external widget for precise view. 
+
+## Olap
 
 N> Drill-through is supported in PivotGrid only when we configure and enable drill-through action at the Cube. 
 
@@ -153,6 +153,33 @@ public Dictionary<string, object> DrillThroughDataTable(string currentReport, st
 
 {% endhighlight %}
 
-
 ![](DrillThrough_images/drill_data.png)
 
+## Relational
+
+To enable drill-through support, set `e-enableDrillThrough` property to true. Raw items are obtained through the `e-drillThrough` event.
+
+{% highlight html %}
+
+<div ng-controller="PivotGridCtrl">
+    <div id="PivotGrid1" ej-pivotgrid e-url="url" e-enableDrillThrough="true" e-drillThrough="drilledData" />
+</div>
+<script>
+    angular.module("PivotGridApp",["ejangular"]).controller('PivotGridCtrl', function ($scope) {
+        $scope.url = "/Olap";
+        $scope.drilledData = function (args) {
+            gridData = args.selectedData;
+            var dialogContent = ej.buildTag("div#Grid1", {height:"50px"})[0].outerHTML;
+            ejDialog = ej.buildTag("div#clientDialog.clientDialog", dialogContent, { "opacity": "1" }).attr("title", "Drill Through Information")[0].outerHTML;
+            $(ejDialog).appendTo("#" + this._id);
+            this.element.find(".clientDialog").ejDialog({ width: "70%", height: "100%", content: "#" + this._id, enableResize: false, close: ej.proxy(ej.Pivot.closePreventPanel, this) });
+            $("#Grid1").ejGrid({
+            dataSource: gridData
+        });
+    }
+})
+</script>
+
+{% endhighlight %}
+
+![](DrillThrough_images/DrillThroughRelational.png)
