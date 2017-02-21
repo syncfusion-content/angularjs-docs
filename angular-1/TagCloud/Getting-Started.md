@@ -5,7 +5,7 @@ description: getting started
 platform: Angular-1
 control: TagCloud
 documentation: ug
-keywords: ejtagcloud, tagcloud, js tagcloud
+keywords: ejtagcloud, tagcloud, angularjs tagcloud
 ---
 
 # Getting Started
