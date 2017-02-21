@@ -5,7 +5,7 @@ description: getting started
 platform: Angular-1
 control: WaitingPopup
 documentation: ug
-keywords: ejwaitingpopup, waitingpopup, js waitingpopup 
+keywords: ejwaitingpopup, waitingpopup, angularjs waitingpopup 
 ---
 
 # Getting Started

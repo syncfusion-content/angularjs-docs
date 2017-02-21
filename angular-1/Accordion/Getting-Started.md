@@ -5,7 +5,7 @@ description: getting started
 platform: Angular-1
 control: Accordion 
 documentation: ug
-keywords: ejaccordion, accordion, js accordion
+keywords: ejaccordion, accordion, angularjs accordion
 ---
 
 # Getting Started
