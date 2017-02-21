@@ -91,7 +91,6 @@ The following code example is used to render the **Rating** control with customi
     .e-rating .e-shape.active {
         background-position: 0 -112px;
     }
-
     .e-rating .e-shape.selected {
         background-position: 0 -84px;
     }
@@ -102,10 +101,7 @@ The following code example is used to render the **Rating** control with customi
     }    
 </style>
 
-
 {% endhighlight %}
-
-
 
 The following screenshot illustrates **Rating** with customized **shapeWidth** and **shapeHeight**.
 
@@ -154,10 +150,6 @@ The following code example is used to render the **Rating** control with **custo
 
 {% endhighlight %}
 
-{% highlight javascript %}
-
- Add the following styles.
-
 {% highlight css %}
 
 <style type="text/css">
@@ -165,7 +157,6 @@ The following code example is used to render the **Rating** control with **custo
        background-color: greenyellow;
    }
 </style>
-
 
 {% endhighlight %}
 
