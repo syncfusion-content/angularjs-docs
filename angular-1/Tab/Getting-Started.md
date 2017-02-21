@@ -3,9 +3,9 @@ layout: post
 title: Getting-Started | Tab | JavaScript | Syncfusion
 description: getting started 
 platform: Angular-1
-control: Tab Control
+control: Tab
 documentation: ug
-keywords: ejtab, tab, js tab 
+keywords: ejtab, tab, angularjs tab 
 ---
 
 # Getting Started 
