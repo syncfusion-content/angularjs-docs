@@ -17,7 +17,7 @@ The following screenshot illustrates the functionality of a Button control in Me
 
 ## Create Button Widget
 
-Essential JavaScript Button control has different functionalities such as Display as Only Image Content or Image Content with Text.
+Essential JavaScript Button control has different functionalities such as display only Image Content or Image Content with Text.
 
 1. Create an HTML file and add required scripts and CSS files to render the Essential JavaScript component as given in the [Getting Started](https://help.syncfusion.com/js/control-initialization).
 2. Essential JavaScript includes angular directives for all controls with the ej.widget.angular.min.js script file. All the Essential JS directives have been encapsulated into a single module called **ejangular**. To render our ej controls in angular, you need to refer the “angular.min.js” and “ej.widget.angular.min.js” in your application.
@@ -46,14 +46,14 @@ Essential JavaScript Button control has different functionalities such as Displa
 
 The ng-app directive explains the root element (<html> or <body> tags) of the application. You will assign a name to the ng-app directive, then you must create a module with that name. In this module, you will have to define your directives, services, filters and configurations.
 
-Properties can be bind to ejButton control using the prefix e- and particular property name as shown as below
+Properties can be bind to ejButton control using the prefix e- and particular property name as shown as below.
 
 Add &lt;Button&gt; element to create a Button control.
 
 {% highlight html %}
 
 <div class="case1">
-    <table>
+   <table>
         <tr>
             <td>
                 <input type="checkbox" id="play" ej-togglebutton e-showroundedcorner="true" e-size="large" e-contenttype="textandimage" e-defaulttext="Play" e-activetext="Pause" e-defaultprefixicon="e-icon e-play" e-activeprefixicon="e-icon e-pause" />
@@ -76,9 +76,8 @@ Add &lt;Button&gt; element to create a Button control.
                 </ul>
             </td>
         </tr>
-    </table>
+   </table>
 </div>      
-
 
 {% endhighlight %}
 
@@ -86,10 +85,12 @@ Add &lt;Button&gt; element to create a Button control.
 Add the following in the script section.
 
 {% highlight javascript %}
+
         angular.module('BtnCtrl', ['ejangular'])
            .controller('BtnCtrller', function ($scope) {
               
            });
+
 {% endhighlight %}
 
 
@@ -134,7 +135,8 @@ In a real-time scenario, MS Office Bold and Italic options work as **Toggle Butt
 Add **&lt;Button&gt;** element using the following code example.
 
 {% highlight html %}
-    <div class="case1">
+
+   <div class="case1">
         <table>
             <tr>
                 <td>
@@ -153,8 +155,7 @@ Add **&lt;Button&gt;** element using the following code example.
                 </td>
             </tr>
         </table>
-    </div>
-
+   </div>
 
 {% endhighlight %}
 
@@ -162,9 +163,10 @@ Add **&lt;Button&gt;** element using the following code example.
 
 Initialize &lt;Button&gt; script with required properties.
 
-Add the following function Definition from click event to Button function in the script section.
+Add the following function definition for Button in the script section.
 
 {% highlight javascript %}
+
         angular.module('BtnCtrl', ['ejangular'])
            .controller('BtnCtrller', function ($scope) {
               $scope.boldsetunset = function(e) {
@@ -191,6 +193,7 @@ Add the following function Definition from click event to Button function in the
                     }
               }
            });
+           
 {% endhighlight %}
 
 

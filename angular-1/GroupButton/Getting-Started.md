@@ -60,6 +60,7 @@ You can make use of ‘ej.web.all.min.js’ file which encapsulates all ‘ej’
 A simple HTML file with required CSS and script reference added to create GroupButton
 
 {% highlight html %}
+
     <!DOCTYPE html>
     <html>
     <head>
@@ -77,15 +78,15 @@ A simple HTML file with required CSS and script reference added to create GroupB
         </script>
     </body>
     </html>
+
 {% endhighlight %}
-
-
 
 ## GroupButton initialization
 
 GroupButton can be created using **&lt;DIV&gt;** tag or **&lt;SPAN&gt;** tag and corresponding child button elements can be rendered as **&lt;LI&gt;** tag or **&lt;HREF&gt;** tag. Below is the sample code to showcase the rendering the GroupButton with **&lt;LI&gt;** tags in HTML page,
 
 {% highlight html %}
+
 <div id="groupButton" ej-groupbutton e-groupbuttonmode="radiobutton" e-width="100%" e-showroundedcorner="true" >
 <ul>
     <li> Save </li>
@@ -97,6 +98,7 @@ GroupButton can be created using **&lt;DIV&gt;** tag or **&lt;SPAN&gt;** tag and
 {% endhighlight %}
 
 {% highlight js %}
+
 <script>
 angular.module('GroupBtnCtrl', ['ejangular'])
 .controller('GroupBtnCtller', function ($scope) {

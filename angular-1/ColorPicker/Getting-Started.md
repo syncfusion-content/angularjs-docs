@@ -13,34 +13,35 @@ This section explains briefly about how to create a **ColorPicker** in your appl
 
 In this example, you can learn how to customize **ColorPicker** control in a category Application. 
 
-![](/js/ColorPicker/Getting-Started_images/Getting-Started_img1.png) 
-
+![](Getting-Started_images/Getting-Started_img1.png) 
 
 ## Create ColorPicker Control
 
 Use the following steps to create the **ColorPicker** control.
 
 1. Create an HTML file and add required scripts and CSS files to render the Essential JavaScript component as given in the [Getting Started](https://help.syncfusion.com/js/control-initialization).
-2. Essential JavaScript includes angular directives for all controls with the ej.widget.angular.min.js script file. All the Essential JS directives have been encapsulated into a single module called **ejangular**. To render our ej controls in angular, you need to refer the “angular.min.js” and “ej.widget.angular.min.js” in your <application class=""></application>
+
+2. Essential JavaScript includes angular directives for all controls with the ej.widget.angular.min.js script file. All the Essential JS directives have been encapsulated into a single module called **ejangular**. To render our ej controls in angular, you need to refer the “angular.min.js” and “ej.widget.angular.min.js” in your application.
+
 {% highlight html %}
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" ng-app="ColorPickCtrl">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-    <title>Getting Started Essential JS</title>
-    <!-- Style sheet for default theme (flat azure) -->
-    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-    <!--Scripts-->
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-    <!--Add custom scripts here -->
-</head>
-<body ng-controller="ColorPickCtrller">
-    <input id="CategoryColor" ej-colorpicker e-value="#278787" />
-    <!--add the ColorPicker element here -->
-</body>
-</html>
+    <html xmlns="http://www.w3.org/1999/xhtml" ng-app="ColorPickCtrl">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+        <title>Getting Started Essential JS</title>
+        <!-- Style sheet for default theme (flat azure) -->
+        <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+        <!--Scripts-->
+        <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+        <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+        <!--Add custom scripts here -->
+    </head>
+    <body ng-controller="ColorPickCtrller">
+        <input id="CategoryColor" ej-colorpicker e-value="#278787" />
+        <!--add the ColorPicker element here -->
+    </body>
+    </html>
 
 {% endhighlight %}
 
@@ -48,7 +49,7 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
 Run the above code to render the following output.
 
-![](/js/ColorPicker/Getting-Started_images/Getting-Started_img2.png) 
+![](Getting-Started_images/Getting-Started_img2.png) 
 
 ## Initialize the other widgets
 
@@ -59,66 +60,62 @@ You can refer the following link for more information on creation of **ListBox**
 
 The following code example is used to create the Priority form using **ListBox** control and **ColorPicker** control.
 
-
-
 {% highlight html %}
 
-
-<div class="priorityWrapper">
-    <div class="row">
-        <div class="element-area">
-            <div class="frameWrapper">
-                <div id="control">
-                    <ul ej-listbox id="selectcheck">
-                        <li><span class="color high"></span>High</li>
-                        <li><span class="color normal"></span>Normal</li>
-                        <li><span class="color low"></span>Low</li>
-                    </ul>
+   <div class="priorityWrapper">
+   <div class="row">
+            <div class="element-area">
+                <div class="frameWrapper">
+                    <div id="control">
+                        <ul ej-listbox id="selectcheck">
+                            <li><span class="color high"></span>High</li>
+                            <li><span class="color normal"></span>Normal</li>
+                            <li><span class="color low"></span>Low</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="Properties">
+                    <table class="prop-grid">
+                        <tr class="row">
+                            <td class="column">Name
+                            </td>
+                            <td class="column">
+                                <input type="text" id="categoryName" ng-model="textval"/>
+                            </td>
+                        </tr>
+                        <tr class="row">
+                            <td class="column">Color
+                            </td>
+                            <td class="column">
+                                <!--Colorpicker element-->
+                                <input id="CategoryColor" ej-colorpicker e-value="#278787" />
+                            </td>
+                            <td class="column">
+                                <!--Add button for add the new category-->
+                                <button class="e-btn e-select" id="AddCategory" ej-button e-text="Add" e-height="21px" e-width="82px"></button>
+                                <input type="button" class="e-btn e-select" id="AddCategory" />
+                            </td>
+                        </tr>
+                        <tr class="row"></tr>
+                    </table>
                 </div>
             </div>
-            <div id="Properties">
-                <table class="prop-grid">
-                    <tr class="row">
-                        <td class="column">Name
-                        </td>
-                        <td class="column">
-                            <input type="text" id="categoryName" ng-model="textval"/>
-                        </td>
-                    </tr>
-                    <tr class="row">
-                        <td class="column">Color
-                        </td>
-                        <td class="column">
-                            <!--Colorpicker element-->
-                            <input id="CategoryColor" ej-colorpicker e-value="#278787" />
-                        </td>
-                        <td class="column">
-                            <!--Add button for add the new category-->
-                            <button class="e-btn e-select" id="AddCategory" ej-button e-text="Add" e-height="21px" e-width="82px"></button>
-                            <input type="button" class="e-btn e-select" id="AddCategory" />
-                        </td>
-                    </tr>
-                    <tr class="row"></tr>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
-
+   </div>
+   </div>
 
 {% endhighlight %}
-
 
 Add the following in the script section.
 
 {% highlight javascript %}
+
         angular.module('ColorPickCtrl', ['ejangular'])
            .controller('ColorPickCtrller', function ($scope) {
                     $scope.textval = "";
               }
            });
-{% endhighlight %}
 
+{% endhighlight %}
 
 Add the following style section to align form fields. 
 
@@ -194,14 +191,11 @@ Add the following style section to align form fields.
     }
 </style>
 
-
 {% endhighlight %}
-
-
 
 Run the above code to render the following output.
 
-![](/js/ColorPicker/Getting-Started_images/Getting-Started_img3.png) 
+![](Getting-Started_images/Getting-Started_img3.png) 
 
 ## Add value with Selected Color 
 
@@ -222,6 +216,7 @@ Initialize the click event for the button element in **&lt;script&gt;** tag.
 {% endhighlight %}
 
 {% highlight javascript %}
+
         angular.module('ColorPickCtrl', ['ejangular'])
            .controller('ColorPickCtrller', function ($scope) {
                 $scope.textval = "";
@@ -234,7 +229,9 @@ Initialize the click event for the button element in **&lt;script&gt;** tag.
                 }
               }
            });
+
 {% endhighlight %}
+
 {% highlight javascript %}
 
     jQuery(function ($) {
@@ -242,6 +239,7 @@ Initialize the click event for the button element in **&lt;script&gt;** tag.
         //initliaze the button with click event
         $("#AddCategory").ejButton({ text: "Add", click: "addCategoryValue", width: "82px", height: "21px" });
     });
+
     //The following function used to add the new value to the listbox control
     function addCategoryValue() {
         if ($("#categoryName").val() !== "") {
@@ -251,12 +249,9 @@ Initialize the click event for the button element in **&lt;script&gt;** tag.
         }
     }
 
-
 {% endhighlight %}
-
-
 
 The following screenshot illustrates the resultant output after you click **Add** button.
 
-![](/js/ColorPicker/Getting-Started_images/Getting-Started_img4.png) 
+![](Getting-Started_images/Getting-Started_img4.png)  
 
