@@ -120,6 +120,8 @@ In **Vertical** view, the same functionality is made applicable only in the **Mo
 </body>
 </html>
 
+{% endhighlight %}
+
 ### Cell Width
 
 The `e-cellwidth` property allows the Scheduler to set the width of the cells in pixels. The appointment width adjusts based on the cell width of the Scheduler.
