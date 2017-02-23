@@ -44,10 +44,5 @@ Selected first item.</td></tr>
 End</td><td>
 Selected last item.</td></tr>
 </table>
-The following code example is used to render the **Tab** element in **RTL** format. 
-
-Add the following **HTML** to render **Tab** with **keyboard** navigation.
-
-{% highlight html %}
 
 N> Need to set focus on Tab component to access the keyboard shortcuts.
