@@ -26,8 +26,6 @@ In an **HTML** page, add a **&lt;div&gt;** element to render **WaitingPopup** wi
 
 {% endhighlight %}
 
-{% endhighlight %}
-
  Add the following styles to render **WaitingPopup** widget.
 
 {% highlight css %}
@@ -40,7 +38,6 @@ In an **HTML** page, add a **&lt;div&gt;** element to render **WaitingPopup** wi
 </style>
 
 {% endhighlight %}
-
 
 The following screenshot illustrates the **WaitingPopup** when **showOnInit** is set to “**true**”.
 
@@ -136,5 +133,4 @@ Add the following styles to render **WaitingPopup** widget.
 
 The following screenshot illustrates a **WaitingPopup** when **show()** method is invoked.
 
-![](/js/WaitingPopup/Behavior-and-Settings_images/Behavior-and-Settings_img4.png) 
-
+![](/js/WaitingPopup/Behavior-and-Settings_images/Behavior-and-Settings_img4.png)
