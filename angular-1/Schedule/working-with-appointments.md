@@ -302,6 +302,8 @@ You can delete the appointments dynamically using the method `deleteAppointment`
 
 The below code example depicts the way to delete the appointments using GUID programmatically by calling the **deleteAppointment** function within the `e-appointmentclick` event, which triggers whenever the user clicks on an appointment.
 
+{% highlight html %}
+
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="ScheduleApp">
 <head>
@@ -342,6 +344,8 @@ The below code example depicts the way to delete the appointments using GUID pro
 
 The below code example depicts the way to delete the appointments using appointment data programmatically by calling the **deleteAppointment** function within the `e-appointmentclick` event, which triggers whenever the user clicks on an appointment.
 
+{% highlight html %}
+
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="ScheduleApp">
 <head>
@@ -374,7 +378,6 @@ The below code example depicts the way to delete the appointments using appointm
     </script>
 </body>
 </html>
-
 
 {% endhighlight %}
 
@@ -431,7 +434,6 @@ To stop the save, edit and delete actions on the Scheduler appointments, followi
 </body>
 </html>
 
-
 {% endhighlight %}
 
 ## Read Only
@@ -463,7 +465,6 @@ An interaction with the appointments of the Scheduler can be enabled/disabled th
     </script>
 </body>
 </html>
-
 
 {% endhighlight %}
 
@@ -498,7 +499,6 @@ The appointment time can be modified through the drag and drop behavior, by drag
     </script>
 </body>
 </html>
-
 
 {% endhighlight %}
 
@@ -546,7 +546,6 @@ The following code example shows how to cancel the dragging functionality with t
     </script>
 </body>
 </html>
-
 
 {% endhighlight %}
 
@@ -815,7 +814,6 @@ The following code example shows how to cancel the resizing functionality with t
 </body>
 </html>
 
-
 {% endhighlight %}
 
 ## Categorization
@@ -832,7 +830,7 @@ The `e-categorizesettings` holds the below categorize related properties such as
 
 We have below 6 default values for Categorize dataSource collection.
 
-{% highlight javascript %}
+{% highlight js %}
 
 categorizeSettings: {
     dataSource: [{
@@ -976,7 +974,7 @@ The prioritySettings holds the below priority related properties such as,
 
 We have below 4 default values for priority dataSource collection.
 
-{% highlight javascript %}
+{% highlight js %}
 
 prioritySettings: {
     dataSource: [{
