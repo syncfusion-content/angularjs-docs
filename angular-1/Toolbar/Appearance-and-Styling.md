@@ -46,7 +46,7 @@ The [showRoundedCorner](https://help.syncfusion.com/api/js/ejtoolbar#members:sho
 
 {% endhighlight %}
 
-![](/js/Toolbar/Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 
 ## Enabling Separator 
@@ -60,7 +60,7 @@ The [enableSeparator](https://help.syncfusion.com/api/js/ejtoolbar#members:enabl
 
 {% endhighlight %}
 
-![](/js/Toolbar/Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 ## Themes
 
@@ -102,4 +102,4 @@ The [cssClass](https://help.syncfusion.com/api/js/ejtoolbar#members:cssclass) pr
 
 {% endhighlight %}
 
-![](/js/Toolbar/Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)

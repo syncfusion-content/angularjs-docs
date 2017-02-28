@@ -41,7 +41,7 @@ angular.module('ProgressBarApp', ['ejangular'])
 
 The following screenshot displays the output for the above code.
 
-![](/js/ProgressBar/Define-value_images/Define-value_img1.png) 
+![](Define-value_images/Define-value_img1.png) 
 
 
 
@@ -75,4 +75,4 @@ angular.module('ProgressBarApp', ['ejangular'])
 
 The following screenshot displays the output.
 
-![](/js/ProgressBar/Define-value_images/Define-value_img2.png)
+![](Define-value_images/Define-value_img2.png)

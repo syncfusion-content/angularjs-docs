@@ -25,8 +25,8 @@ Add the following code in your **HTML** page.
 
 {% highlight html %}
 
-    <div id="toolbarcontent" ej-toolbar e-orientation="orient">
-    </div>
+<div id="toolbarcontent" ej-toolbar e-orientation="orient">
+</div>
 
 {% endhighlight %}
 
@@ -44,8 +44,8 @@ OR
 
 {% highlight html %}
 
-    <div id="toolbarcontent" ej-toolbar e-orientation="Horizontal">
-    </div>
+<div id="toolbarcontent" ej-toolbar e-orientation="Horizontal">
+</div>
 
 {% endhighlight %}
 
@@ -53,7 +53,7 @@ Build and run the application.
 
 The following screenshot illustrates a **Toolbar** with horizontal orientation.
 
-![](/js/Toolbar/Orientation_images/Orientation_img1.png)
+![](Orientation_images/Orientation_img1.png)
 
 ## Vertical
 
@@ -84,8 +84,8 @@ OR
 
 {% highlight js %}
   
-  <div id="toolbarcontent" ej-toolbar e-orientation="Vertical">
-  </div>
+<div id="toolbarcontent" ej-toolbar e-orientation="Vertical">
+</div>
 
 {% endhighlight %}
 
@@ -94,4 +94,4 @@ Build and run the application.
 
 The following screenshot illustrates a **Toolbar** with vertical orientation.
 
-![](/js/Toolbar/Orientation_images/Orientation_img2.png)
+![](Orientation_images/Orientation_img2.png)

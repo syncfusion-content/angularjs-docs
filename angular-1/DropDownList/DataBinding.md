@@ -267,7 +267,7 @@ By using URL property of “ej.DataManager” bind OData Version 4 Service link 
 
 {% highlight html %}
 
-     <input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="RegionDescription" e-value="RegionID" />
+<input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="RegionDescription" e-value="RegionID" />
      
 {% endhighlight %}
 
@@ -295,7 +295,7 @@ Using [ej.WebApiAdaptor](http://help.syncfusion.com/js/datamanager/data-adaptors
 
 {% highlight html %}
 
-    <input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="CustomerID" e-value="CustomerID" />
+<input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="CustomerID" e-value="CustomerID" />
      
 {% endhighlight %}
 
@@ -340,9 +340,9 @@ By using “[WebMethodAdaptor](http://help.syncfusion.com/js/datamanager/getting
 
 {% highlight html %}
 
-    <span> Please select... </span>
-    <input type="text" id="dropdown1" ej-dropdownlist e-datasource="dataList" e-query="queries" e-fields-text="Name" e-value="Country" />
-    
+<span> Please select... </span>
+<input type="text" id="dropdown1" ej-dropdownlist e-datasource="dataList" e-query="queries" e-fields-text="Name" e-value="Country" />
+
 {% endhighlight %}
 
 {% highlight c# %}
@@ -471,21 +471,21 @@ In client side, specify the URL of Data to url property and specify the type of 
 
 {% highlight javascript %}
 
-    <div class="ctrllabel"> Select an Employee</div>
-    <input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="Name" e-value="Role" />
-    
-    <script>
-      
-        var dataManager = ej.DataManager({
-            url: "/Dropdownlist/getData",
-            adaptor: new ej.UrlAdaptor()
-        });
-        angular.module('dropdownlistApp', ['ejangular'])
-          .controller('dropdownlistCtrl', function ($scope) {
-              $scope.data = dataManager;
-          });
+<div class="ctrllabel"> Select an Employee</div>
+<input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="Name" e-value="Role" />
 
-    </script>
+<script>
+    
+    var dataManager = ej.DataManager({
+        url: "/Dropdownlist/getData",
+        adaptor: new ej.UrlAdaptor()
+    });
+    angular.module('dropdownlistApp', ['ejangular'])
+        .controller('dropdownlistCtrl', function ($scope) {
+            $scope.data = dataManager;
+        });
+
+</script>
 
 {% endhighlight %}
 
@@ -496,45 +496,45 @@ When using remote data binding, the adaptor of "ej.DataManager" plays vital role
 
 {% highlight html %}
 
-     <input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="FirstName" e-value="LastName" />
+<input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="FirstName" e-value="LastName" />
      
 {% endhighlight %}
 
 {% highlight javascript %}
   
-        var customAdaptor = new ej.Adaptor().extend({
-            insert: function (dm, data) {
-                return dm.dataSource.json.push(data);
-            },
-            processQuery: ej.JsonAdaptor.prototype.processQuery
-            // reused process query from json adaptor
-        });
+var customAdaptor = new ej.Adaptor().extend({
+    insert: function (dm, data) {
+        return dm.dataSource.json.push(data);
+    },
+    processQuery: ej.JsonAdaptor.prototype.processQuery
+    // reused process query from json adaptor
+});
 
-        window.dropdownData = [{
-            FirstName: "John",
-            LastName: "Abraham"
-        }, {
-            FirstName: "Ben",
-            LastName: "Nick"
-        }, {
-            FirstName: "Andrew",
-            LastName: "Clarke"
-        }];
+window.dropdownData = [{
+    FirstName: "John",
+    LastName: "Abraham"
+}, {
+    FirstName: "Ben",
+    LastName: "Nick"
+}, {
+    FirstName: "Andrew",
+    LastName: "Clarke"
+}];
 
-        var dataManager = new ej.DataManager(window.dropdownData);
+var dataManager = new ej.DataManager(window.dropdownData);
 
-        // assigning custom adaptor to datamanager
-        dataManager.adaptor = new customAdaptor();
+// assigning custom adaptor to datamanager
+dataManager.adaptor = new customAdaptor();
 
-        // insert from custom adaptor usage
-        dataManager.insert({
-            FirstName: "Joel",
-            LastName: "Nick"
-        });
-        angular.module('dropdownlistApp', ['ejangular'])
-        .controller('dropdownlistCtrl', function ($scope) {
-            $scope.data = dataManager;
-        });
+// insert from custom adaptor usage
+dataManager.insert({
+    FirstName: "Joel",
+    LastName: "Nick"
+});
+angular.module('dropdownlistApp', ['ejangular'])
+.controller('dropdownlistCtrl', function ($scope) {
+    $scope.data = dataManager;
+});
 
 {% endhighlight %}
 
@@ -559,21 +559,21 @@ It loads the data on scrolling the list of items. This can be achieved by settin
 
 {% highlight html %}
 
-  <input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="ShipName" e-value="ShipCountry" e-itemscount="7" e-allowvirtualscrolling="true" e-virtualscrollmode="mode">
+<input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="ShipName" e-value="ShipCountry" e-itemscount="7" e-allowvirtualscrolling="true" e-virtualscrollmode="mode">
      
 {% endhighlight %}
 
 {% highlight javascript %}
    
-        var dataManager = ej.DataManager({
-            url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders"
-        });
+var dataManager = ej.DataManager({
+    url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders"
+});
 
-        angular.module('dropdownlistApp', ['ejangular'])
-        .controller('dropdownlistCtrl', function ($scope) {
-            $scope.data = dataManager;
-            $scope.mode = ej.VirtualScrollMode.Normal;
-        });
+angular.module('dropdownlistApp', ['ejangular'])
+.controller('dropdownlistCtrl', function ($scope) {
+    $scope.data = dataManager;
+    $scope.mode = ej.VirtualScrollMode.Normal;
+});
 
 {% endhighlight %}
 
@@ -585,20 +585,20 @@ N> In both modes, set of items will be fetched based on the count specified in t
 
 {% highlight html %}
 
-  <input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="ShipName" e-value="ShipCountry" e-itemscount="7" e-allowvirtualscrolling="true" e-virtualscrollmode="mode">
+<input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="ShipName" e-value="ShipCountry" e-itemscount="7" e-allowvirtualscrolling="true" e-virtualscrollmode="mode">
      
 {% endhighlight %}
 
 {% highlight javascript %}
-    
-        var dataManager = ej.DataManager({
-            url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders"
-        });
 
-        angular.module('dropdownlistApp', ['ejangular'])
-        .controller('dropdownlistCtrl', function ($scope) {
-            $scope.data = dataManager;
-            $scope.mode = ej.VirtualScrollMode.Continuous;
-        });
+var dataManager = ej.DataManager({
+    url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders"
+});
+
+angular.module('dropdownlistApp', ['ejangular'])
+.controller('dropdownlistCtrl', function ($scope) {
+    $scope.data = dataManager;
+    $scope.mode = ej.VirtualScrollMode.Continuous;
+});
 
 {% endhighlight %}

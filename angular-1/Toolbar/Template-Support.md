@@ -33,16 +33,16 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
 
 {% highlight js %}
 
-       var skillset = [
-             { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
-             { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
-             { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
-             { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
-        ];
-        angular.module('ToolbarApp', ['ejangular'])
-        .controller('ToolbarCtrl', function ($scope) {
-            $scope.dataList = skillset;
-        });
+var skillset = [
+        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
+        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
+        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
+        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
+];
+angular.module('ToolbarApp', ['ejangular'])
+.controller('ToolbarCtrl', function ($scope) {
+    $scope.dataList = skillset;
+});
 
 {% endhighlight %}
 

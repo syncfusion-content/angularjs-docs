@@ -68,7 +68,7 @@ Add the following the code sample to display the **Menu** control without separa
 
 The following screenshot displays the output for the above code. 
 
-![](/js/Menu/Separators_images/Separators_img1.png) 
+![](Separators_images/Separators_img1.png) 
 
 # Separators for Context Menu
 
@@ -122,5 +122,4 @@ We can add the separators for particular ContextMenu items by including **e-sepa
 
 The following screenshot displays the output for the above code. 
 
-![](/js/Menu/Separators_images/Separators_img2.png)
-
+![](Separators_images/Separators_img2.png)

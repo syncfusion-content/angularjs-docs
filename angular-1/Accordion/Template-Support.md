@@ -53,5 +53,4 @@ In **JavaScript**, you can load the contents or **HTML** elements directly insid
 
 {% endhighlight %}
 
-![](/js/Accordion/Template-Support_images/Template-Support_img1.png)
-
+![](Template-Support_images/Template-Support_img1.png)

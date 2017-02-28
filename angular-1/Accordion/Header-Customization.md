@@ -51,7 +51,7 @@ In an HTML page, define a div element that is a container for Accordion widg
 The following screenshot illustrates the Accordion control with collapsible headers.
 
 
-![](/js/Accordion/Header-customization_images/Header-customization_img1.png) 
+![](Header-customization_images/Header-customization_img1.png) 
 
 ## Enable Header Expand
 
@@ -94,7 +94,7 @@ Add the below code in order to set the mouseout event for accordion which will b
 Output for Accordion control that expands header on mouseout event is as follows.
 
 
-![](/js/Accordion/Header-customization_images/Header-customization_img2.png) 
+![](Header-customization_images/Header-customization_img2.png) 
 
 ## Set Selected Header
 
@@ -138,7 +138,7 @@ In an HTML page, define a div element that is a container for Accordion widg
 
 Output for Accordion control with the selected item by index is as follows.
 
-![](/js/Accordion/Header-customization_images/Header-customization_img3.png) 
+![](Header-customization_images/Header-customization_img3.png) 
 
 ## Multiple Selection
 
@@ -192,4 +192,4 @@ In an HTML page, define a &lt;div&gt; element that is a container for  Accor
 Output for Accordion control with the multiple selected items is as follows.
 
 
-![](/js/Accordion/Header-customization_images/Header-customization_img4.png)
+![](Header-customization_images/Header-customization_img4.png)

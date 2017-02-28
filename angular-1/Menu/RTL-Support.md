@@ -68,4 +68,4 @@ The following code depicts you on how to enable the **rtl** property of the **Me
 
 Following screenshot displays the output for the above code.
 
-![](/js/Menu/RTL-Support_images/RTL-Support_img1.png)
+![](RTL-Support_images/RTL-Support_img1.png)

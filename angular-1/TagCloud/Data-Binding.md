@@ -79,7 +79,4 @@ The following example depicts you the way to bind data to the **TagCloud** widge
 
 The following screenshot illustrates a **TagCloud** control using AngularJS data binding,
 
-![](/js/TagCloud/Data-Binding_images/Data-Binding_img1.png)
-
-
-
+![](Data-Binding_images/Data-Binding_img1.png)

@@ -26,7 +26,7 @@ Refer to the below code to disable the title in tagcloud.
 
 The following screenshot illustrates a **TagCloud** control when you disable title,
 
-![](/js/TagCloud/Title-Customization_images/Title-Customization_img1.png) 
+![](Title-Customization_images/Title-Customization_img1.png) 
 
 
 ## Title text
@@ -56,7 +56,7 @@ angular.module('tagCloudApp', ['ejangular'])
 
 The following screenshot illustrates the **TagCloud** control with customized title text.
 
-![](/js/TagCloud/Title-Customization_images/Title-Customization_img2.png)
+![](Title-Customization_images/Title-Customization_img2.png)
 
 
 ## Title image
@@ -111,4 +111,4 @@ Using CSS class you can resize the image content as follows.
 
 The following screenshot illustrates the **TagCloud** control with customized title image.
 
-![](/js/TagCloud/Title-Customization_images/Title-Customization_img3.png)
+![](Title-Customization_images/Title-Customization_img3.png)
