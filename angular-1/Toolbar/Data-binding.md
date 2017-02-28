@@ -82,11 +82,11 @@ The following code example depicts you the way to bind data to the **Toolbar** w
 
 {% highlight html %}
     
-    <div class="cols-sample-area">
-        <div id="toolbarcontent" ej-toolbar e-datasource="dataList" e-width="230px"
-        e-fields-id="iconid" e-fields-spritecssclass="spriteCss">
-        </div>
+<div class="cols-sample-area">
+    <div id="toolbarcontent" ej-toolbar e-datasource="dataList" e-width="230px"
+    e-fields-id="iconid" e-fields-spritecssclass="spriteCss">
     </div>
+</div>
 
 {% endhighlight %}
 
@@ -182,5 +182,4 @@ The following code example depicts you the way to bind data to the **Toolbar** w
 
 {% endhighlight %}
 
-![](/js/Toolbar/Data-binding_images/Data-binding_img1.png)
-
+![](Data-binding_images/Data-binding_img1.png)

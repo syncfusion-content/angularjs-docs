@@ -138,4 +138,4 @@ angular.module('MenuApp', ['ejangular'])
 
 The following screenshot displays the output of the above code.
 
-![](/js/Menu/Data-binding_images/Data-binding_img1.png)
+![](Data-binding_images/Data-binding_img1.png)

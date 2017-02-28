@@ -62,7 +62,7 @@ In an HTML page, define a &lt;div&gt; element that is a container for Accordi
 Output for Accordion control when panel height is set to auto so that the maximum content height and Fill for minimum content height in all the panels is as follows.
 
 
-![](/js/Accordion/Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
+![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 
 ## Rounded corner
 
@@ -108,7 +108,7 @@ In an HTML page, define a &lt;div&gt; element that is a container for  Accor
 Output for accordion widget when “showRoundedCorner” is set to “true” is as follows.
 
 
-![](/js/Accordion/Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
 
 ## Customize Accordion icon
 
@@ -166,7 +166,7 @@ In an HTML page, define a &lt;div&gt; element that is a container for Accordi
 Output for Accordion widget with customized icons is as follows.
 
 
-![](/js/Accordion/Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
 
 ## Animations
 
@@ -284,4 +284,4 @@ Define CSS class for customizing the Accordion.
 
 Output for Accordion with customized CSS property to hide the Accordion icon and format its content is as follows.
 
-![](/js/Accordion/Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
+![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)

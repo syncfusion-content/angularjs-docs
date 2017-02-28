@@ -18,13 +18,13 @@ Keyboard shortcut keys are,
 <table>
 <tr>
 <td>
-**Key**
+Key
 </td>
 <td>
-**Single selection**
+Single selection
 </td>
 <td>
-**Multi-selection**
+Multi-selection
 </td>
 </tr>
 <tr>

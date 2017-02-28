@@ -20,6 +20,7 @@ In the above screenshot, you can select Hobbies, Interests list and Social netwo
 **Essential JavaScript** **Checkbox** widget has built-in features like intermediate selections. You can easily create the Checkbox widget by using a simple input Checkbox element as follows.
 
 1. Create an HTML file and add required scripts and CSS files to render the Essential JavaScript component as given in the [Getting Started](https://help.syncfusion.com/js/control-initialization).
+
 2. Essential JavaScript includes angular directives for all controls with the ej.widget.angular.min.js script file. All the Essential JS directives have been encapsulated into a single module called **ejangular**. To render our ej controls in angular, you need to refer the “angular.min.js” and “ej.widget.angular.min.js” in your application.
 
 {% highlight html %}

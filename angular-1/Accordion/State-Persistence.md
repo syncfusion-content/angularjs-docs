@@ -52,4 +52,4 @@ In an HTML page, define a div element that is a container for Accordion widg
 Output after page refresh maintaining the previous state of Accordion widget is as follows.
 
 
-![](/js/Accordion/State-Persistence_images/State-Persistence_img1.png)
+![](State-Persistence_images/State-Persistence_img1.png)

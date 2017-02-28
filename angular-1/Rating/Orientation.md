@@ -44,5 +44,4 @@ The following code example is used to render the Rating control with **vertical*
 
 The following screenshot illustrates the **Rating** with **vertical orientation**.
 
-![](/js/Rating/Orientation_images/Orientation_img1.png) 
-
+![](Orientation_images/Orientation_img1.png)

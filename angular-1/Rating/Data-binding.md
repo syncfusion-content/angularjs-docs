@@ -64,5 +64,4 @@ Add the following code to render Rating with data binding.
 
 The following screenshot displays the output of **Rating** with **data binding** support.
 
-![](/js/Rating/Data-binding_images/Data-binding_img1.png) 
-
+![](Data-binding_images/Data-binding_img1.png)

@@ -45,11 +45,11 @@ The following screenshot displays **Uploadbox** control with customized file siz
 
 When you want to browse the file within the fileSize, you can browse and upload the files.
 
-![](/js/UploadBox/File-Size_images/File-Size_img1.png) 
+![](File-Size_images/File-Size_img1.png) 
 
 When you try to browse the file with exceeded fileSize, we cannot browse and upload the files.
 
-![](/js/UploadBox/File-Size_images/File-Size_img2.png) 
+![](File-Size_images/File-Size_img2.png) 
 
 
 ## Maximum File Upload Size in IIS
@@ -59,8 +59,6 @@ By default, the IIS web server allows for limited file size to be uploaded to th
 ### How to upload files up to 28.6 MB?
 
 In order to allow larger file size uploads, such as above 4MB, you can override it by modifying the “maxRequestLength” attribute in the web application’s configuration file **web.config**. The property _**maxRequestLength**_ indicates the maximum file upload size of 28.6MB, supported by ASP.NET. You cannot upload the files when the **fileSize** property is below the **maxRequestLength** value.
-
-
 
 Property
 
@@ -93,8 +91,6 @@ Add the following code to your **web.config** file.
 
 
 {% endhighlight %}
-
-
 
 N> maxRequestLength is measured in kilobytes.
 
@@ -137,12 +133,9 @@ You can add the following code to your **web.config** file in order to set that 
 
 {% endhighlight %}
 
-
-
 N> maxAllowedContentLength is measured in bytes.
 
-
-![](/js/UploadBox/File-Size_images/File-Size_img4.png) 
+![](File-Size_images/File-Size_img4.png) 
                        
 
 N> * When you configure both maxAllowedContentLength, maxRequestLength attributes, then maxAllowedContentLength is considered for execution.

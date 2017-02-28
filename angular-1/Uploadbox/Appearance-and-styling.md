@@ -71,7 +71,7 @@ For **JS**, configure **saveFiles.ashx** and **removeFiles.ashx** files as menti
 
 The following screenshot displays the output.
 
-![](/js/UploadBox/Appearance-and-styling_images/Appearance-and-styling_img1.png) 
+![](Appearance-and-styling_images/Appearance-and-styling_img1.png) 
 
 
 ## Customizing Upload Dialog
@@ -136,7 +136,7 @@ For **JS**, configure **saveFiles.ashx** and **removeFiles.ashx** files as menti
 The following screenshot displays the output.
 
 
-![](/js/UploadBox/Appearance-and-styling_images/Appearance-and-styling_img2.png) 
+![](Appearance-and-styling_images/Appearance-and-styling_img2.png) 
 
 
 ## Show or Hide File details 
@@ -232,7 +232,4 @@ In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadb
 
 The following screenshot displays the output.
 
-![](/js/UploadBox/Appearance-and-styling_images/Appearance-and-styling_img3.png)
-
-
-
+![](Appearance-and-styling_images/Appearance-and-styling_img3.png)

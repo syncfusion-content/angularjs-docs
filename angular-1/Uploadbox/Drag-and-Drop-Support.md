@@ -13,7 +13,7 @@ The **Uploadbox** control provides the drag and drop support. You can simply dr
 
 The following screenshot displays the drag and drop support.
 
-![](/js/UploadBox/Drag-and-Drop-Support_images/Drag-and-Drop-Support_img1.png) 
+![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img1.png) 
 
 ## Enable drag and drop 
 
@@ -66,7 +66,7 @@ In CSS, configure the custom styles for drag and drop.
 
 The following screenshot displays the output for the above code.
 
-![](/js/UploadBox/Drag-and-Drop-Support_images/Drag-and-Drop-Support_img2.png) 
+![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img2.png) 
 
 ## Drag Area text
 
@@ -92,7 +92,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to enable the drag and drop 
         .controller('UploadboxCtrl', function ($scope) {
             $scope.save = "saveFiles.ashx";
             $scope.remove= "removeFiles.ashx";
-     });
+    });
 
 {% endhighlight %}
 
@@ -119,7 +119,7 @@ In CSS, configure the custom styles for drag and drop.
 
  The following screenshot displays the output for the above code.
 
-![](/js/UploadBox/Drag-and-Drop-Support_images/Drag-and-Drop-Support_img3.png) 
+![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img3.png) 
 
 ## Adjust Drop area size
 
@@ -143,13 +143,13 @@ In the **HTML** page, add a **&lt;div&gt;** element to enable the drag and drop 
         .controller('UploadboxCtrl', function ($scope) {
             $scope.save = "saveFiles.ashx";
             $scope.remove= "removeFiles.ashx";
-    });
+   });
 
 {% endhighlight %}
 
 The following screenshot displays the output for the above code.
 
-![](/js/UploadBox/Drag-and-Drop-Support_images/Drag-and-Drop-Support_img4.png) 
+![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img4.png) 
 
 ## Drop area with Browse button behavior
 
@@ -180,7 +180,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to enable drag and drop in t
         .controller('UploadboxCtrl', function ($scope) {
             $scope.save = "saveFiles.ashx";
             $scope.remove= "removeFiles.ashx";
-        });
+    });
 
 {% endhighlight %}
 
@@ -205,5 +205,4 @@ In CSS, configure the custom styles for drag and drop.
 
 The following screenshot displays the output for the above code.
 
-![](/js/UploadBox/Drag-and-Drop-Support_images/Drag-and-Drop-Support_img5.png) 
-
+![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img5.png)

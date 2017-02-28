@@ -18,11 +18,7 @@ Based on the target content type context menu provides different actions. Refer 
 <textarea id="texteditor" ej-rte e-showcontextmenu="true">
             <p><b>Description:</b></p>
             <p>
-                The Rich Text Editor (RTE) control is easy to render in the
-                client side. Customers can easily edit the contents and get the HTML content for
-                the displayed content. A rich text editor control provides users with a toolbar
-                that helps them to apply rich text formats to the text entered in the text
-                area.
+                The Rich Text Editor (RTE) control is easy to render in the client side. Customers can easily edit the contents and get the HTML content for the displayed content. A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered in the text area.
             </p>
 </textarea>
 
@@ -124,18 +120,12 @@ angular.module('rteApp', ['ejangular'])
  <textarea id="texteditor" ej-rte>
             <p><b>Description:</b></p>
             <p>
-                The Rich Text Editor (RTE) control is easy to render in the
-                client side. Customers can easily edit the contents and get the HTML content for
-                the displayed content. A rich text editor control provides users with a toolbar
-                that helps them to apply rich text formats to the text entered in the text
-                area.
-            </p>
-        </textarea><p><b>Description:</b></p>
-        <p>The Rich Text Editor (RTE) control is easy to render in the
-        client side. Customers can easily edit the contents and get the HTML content for
-        the displayed content. A rich text editor control provides users with a toolbar
-        that helps them to apply rich text formats to the text entered in the text
-        area. </p>
+				The Rich Text Editor (RTE) control is easy to render in the
+			client side. Customers can easily edit the contents and get the HTML content for
+			the displayed content. A rich text editor control provides users with a toolbar
+			that helps them to apply rich text formats to the text entered in the text
+			area. 
+			</p>
 </textarea>
 
 <script>

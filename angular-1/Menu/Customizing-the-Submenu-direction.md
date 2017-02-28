@@ -103,7 +103,7 @@ Add the following code in your **HTML** page.
 
 The output for the above code example is as follows.          
 
-![](/js/Menu/Customizing-the-Submenu-direction_images/Customizing-the-Submenu-direction_img1.png) 
+![](Customizing-the-Submenu-direction_images/Customizing-the-Submenu-direction_img1.png) 
 
 You can even achieve auto positioning for Context Menu. Use the following code sample for context menu in order to open the submenu items of context menu in left side.
 
@@ -174,7 +174,4 @@ Add the following code in your style section.
 
 The output for the above code example is as follows.
 
-![](/js/Menu/Customizing-the-Submenu-direction_images/Customizing-the-Submenu-direction_img2.png) 
-
-
-
+![](Customizing-the-Submenu-direction_images/Customizing-the-Submenu-direction_img2.png)

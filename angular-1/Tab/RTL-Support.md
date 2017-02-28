@@ -37,4 +37,4 @@ Add the following **HTML** to render **Tab** with **RTL** format.
 
 The following screenshot illustrates the **Tab** with **RTL** format.
 
-![](/js/Tab/RTL-Support_images/RTL-Support_img1.png)
+![](RTL-Support_images/RTL-Support_img1.png)

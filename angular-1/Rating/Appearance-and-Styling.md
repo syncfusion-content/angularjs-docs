@@ -36,7 +36,7 @@ The following code example is used to render the **Rating** control without **to
 
 The following screenshot illustrates **Rating** without **Tooltip**.
 
-![](/js/Rating/Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
+![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 
 ## Adjusting Rating Size
 
@@ -105,7 +105,7 @@ The following code example is used to render the **Rating** control with customi
 
 The following screenshot illustrates **Rating** with customized **shapeWidth** and **shapeHeight**.
 
-![](/js/Rating/Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 ## Theme
 
@@ -163,5 +163,4 @@ The following code example is used to render the **Rating** control with **custo
 
 The following screenshot illustrates the **Rating** with customized style.
 
-![](/js/Rating/Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
-
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)

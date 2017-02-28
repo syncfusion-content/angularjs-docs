@@ -20,13 +20,18 @@ By default you can add any text or image to the Tooltip. To customize the toolti
         <img class="ctrImg" src="http://js.syncfusion.com/demos/web/images/tooltip/template-04.png" />
         <div class="new">Roslyn Succinctly</div>
 </div>
+
 <script type="text/javascript">
+
     angular.module('TooltipApp', ['ejangular'])
     .controller('TooltipCtrl', function ($scope) {
         $scope.content ='<div class="main"> <div class="poster"> <img src="http://js.syncfusion.com/demos/web/images/tooltip/template-2.png" width="150px" height="120px"> </div> <div class="def"> <h4> Roslyn Succinctly </h4><div class="description">Microsoft has only recently embraced the world of open source software, offering <a href="#">More...</a> </div>';
     });
+
 </script>
+
 <style>
+
     h4 {
         margin-top: 0px;
         margin-bottom: 2px;
@@ -65,6 +70,7 @@ By default you can add any text or image to the Tooltip. To customize the toolti
         line-height: 22px;
         margin-top: 10px;
     }
+
 </style>
     
 {% endhighlight %}
@@ -81,14 +87,18 @@ Tooltip title can be customized with the image or any HTML element.
     <img class="ctrImg" src="http://js.syncfusion.com/demos/web/images/tooltip/template-04.png" />
     <div class="new">Roslyn Succinctly</div>
 </div>
+
 <script type="text/javascript">
+
 angular.module('TooltipApp', ['ejangular'])
 .controller('TooltipCtrl', function ($scope) {
     $scope.title= '<div><img class="titleImg" src="http://js.syncfusion.com/demos/web/images/tooltip/template-2.png" /> <div class="description"> Roslyn Succinctly </div> </div> ';
     $scope.content ='<div class="main"> <div class="poster"> <img src="http://js.syncfusion.com/demos/web/images/tooltip/template-2.png" width="150px" height="120px"> </div> <div class="def"> <h4> Roslyn Succinctly </h4><div class="description">Microsoft has only recently embraced the world of open source software, offering <a href="#">More...</a> </div>';
 });
 </script>
+
 <style>
+
     .titleImg {
         width: 20px;
         height: 20px;
@@ -104,6 +114,7 @@ angular.module('TooltipApp', ['ejangular'])
     .description {
         height: 20px;
     }
+
 </style>
 
 {% endhighlight %}
@@ -183,6 +194,7 @@ Let see an example, this Tooltip will only hide after hovering the target for 20
 <div class="control">
      TypeScript lets you write <a id="test" ej-tooltip e-content="content" e-closemode="mode" e-autoclosetimeout="2000"><u> JavaScript</u> </a>the way you really want to.
 </div>
+
 <script>
     angular.module('TooltipApp', ['ejangular'])
     .controller('TooltipCtrl', function ($scope) {
@@ -204,6 +216,7 @@ A close button will be shown with the Tooltip. The button element (i.e. close bu
 <div class="control">
      TypeScript lets you write <a id="test" ej-tooltip e-content="content" e-closemode="mode"><u> JavaScript</u> </a>the way you really want to.
 </div>
+
 <script>
     angular.module('TooltipApp', ['ejangular'])
     .controller('TooltipCtrl', function ($scope) {
@@ -215,7 +228,7 @@ A close button will be shown with the Tooltip. The button element (i.e. close bu
 
 {% endhighlight %}
 
-![](ClosingBehaviour_images/sticky.png)
+![](Customization_images/sticky.png)
 
 You can also have Tooltip with a title, in which case the button will lye within it:
 
@@ -224,6 +237,7 @@ You can also have Tooltip with a title, in which case the button will lye within
   <div class="control">
         TypeScript lets you write <a id="test" ej-tooltip e-content="content" e-title="title" e-closemode="mode"><u> JavaScript</u> </a>the way you really want to.
   </div>
+  
    <script type="text/javascript">
         angular.module('TooltipApp', ['ejangular'])
         .controller('TooltipCtrl', function ($scope) {
@@ -235,5 +249,4 @@ You can also have Tooltip with a title, in which case the button will lye within
    
 {% endhighlight %}
 
-![](ClosingBehaviour_images/title.png)
-    
+![](Customization_images/title.png)

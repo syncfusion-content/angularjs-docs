@@ -32,5 +32,4 @@ Once the form is submitted by using **submit** button, it triggers the **saveFil
 
 The following screenshot displays the output.
 
-![](/js/UploadBox/Synchronous-Upload_images/Synchronous-Upload_img1.png) 
-
+![](Synchronous-Upload_images/Synchronous-Upload_img1.png) 

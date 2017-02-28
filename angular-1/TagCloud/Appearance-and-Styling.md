@@ -26,7 +26,7 @@ Refer to the following code to configure font sizes for a **TagCloud**.
 
 The following screenshot illustrates the **TagCloud** control with customized font sizes.
 
-![](/js/TagCloud/Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
+![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 
 
 ## Tag format
@@ -41,14 +41,14 @@ Refer to the following code to configure format option for a **TagCloud**.
 
 <table>
 <tr>
-    <td>
-        <span>Tag format cloud</span>
-        <div id="techwebcloud" ej-tagcloud e-datasource="dataList" e-format="list" e-titletext="Tech Sites List"></div>
-    </td>
-    <td>
-        <span>Tag format list</span>
-        <div id="techweblist" ej-tagcloud e-datasource="dataList" e-format="cloud" e-titletext="Tech Sites Cloud"></div>
-    </td>
+<td>
+<span>Tag format cloud</span>
+<div id="techwebcloud" ej-tagcloud e-datasource="dataList" e-format="list" e-titletext="Tech Sites List"></div>
+</td>
+<td>
+<span>Tag format list</span>
+<div id="techweblist" ej-tagcloud e-datasource="dataList" e-format="cloud" e-titletext="Tech Sites Cloud"></div>
+</td>
 </tr>
 </table>
 
@@ -56,7 +56,7 @@ Refer to the following code to configure format option for a **TagCloud**.
 
 The following screenshot illustrates the **TagCloud** control with customized formats.
 
-![](/js/TagCloud/Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
 
 
 ## Theme
@@ -137,4 +137,4 @@ Define CSS class for customizing the **TagCloud** widget.
 
 The following screenshot illustrates the **TagCloud** with customized CSS class,
 
-![](/js/TagCloud/Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
