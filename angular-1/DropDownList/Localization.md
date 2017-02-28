@@ -17,9 +17,9 @@ To localize the dropdownlist’s strings with your own localization, copy the de
 
 {% highlight javascript %}
 
-    ej.DropDownList.Locale["de-DE"] = {
-        emptyResultText: "Keine Vorschläge" //replace with your text  
-    };
+ej.DropDownList.Locale["de-DE"] = {
+    emptyResultText: "Keine Vorschläge" //replace with your text  
+};
     
 {% endhighlight %}
 
@@ -27,17 +27,19 @@ Set the locale property of the DropDownList to the new language.
 
 {% highlight javascript %}
 
-    <input type="text" id="selectcompany" ej-dropdownlist e-datasource="data" e-fields-text="CompanyName" e-fields-value="ContactName" e-width="260" e-showcheckbox="true" e-locale="de-DE" e-enablefiltersearch="true" e-enablepopupresize="true" />
+<input type="text" id="selectcompany" ej-dropdownlist e-datasource="data" e-fields-text="CompanyName" e-fields-value="ContactName" e-width="260" e-showcheckbox="true" e-locale="de-DE" e-enablefiltersearch="true" e-enablepopupresize="true" />
 
-    <script type="text/javascript">
-        var datalist = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Customers" });
-        angular.module('dropdownlistApp', ['ejangular'])
-        .controller('dropdownlistCtrl', function ($scope) {
-            $scope.data = datalist;
-            ej.DropDownList.Locale["de-DE"] = {
-                emptyResultText: "Keine Vorschlage" //replace with your text  
-            };
-        });
-    </script>
+<script type="text/javascript">
+
+var datalist = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Customers" });
+angular.module('dropdownlistApp', ['ejangular'])
+.controller('dropdownlistCtrl', function ($scope) {
+    $scope.data = datalist;
+    ej.DropDownList.Locale["de-DE"] = {
+        emptyResultText: "Keine Vorschlage" //replace with your text  
+    };
+});
+
+</script>
     
 {% endhighlight %}

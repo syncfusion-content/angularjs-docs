@@ -39,5 +39,5 @@ angular.module('ProgressBarApp', ['ejangular'])
 
 The following screenshot displays the output.
 
-![](/js/ProgressBar/State-Maintenance_images/State-Maintenance_img1.png) 
+![](State-Maintenance_images/State-Maintenance_img1.png) 
 

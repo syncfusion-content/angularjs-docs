@@ -11,13 +11,13 @@ documentation: ug
 
 GroupButton can populate the button items based on data source and by specifying the associated fields. 
 
-Refer the below table to know about the available fields
+Refer the below table to know about the available fields.
 
 <table>
 <tr>
 <td>
 text<br/><br/></td><td>
-Text to be displayed in button<br/><br/></td></tr>
+Text to be displayed in button.<br/><br/></td></tr>
 <tr>
 <td>
 prefixIcon<br/><br/></td><td>
@@ -29,19 +29,19 @@ Icon class name – suffixIcon will be displayed from the left margin of the but
 <tr>
 <td>
 contentType<br/><br/></td><td>
-Specifies content type of button item<br/><br/></td></tr>
+Specifies content type of button item.<br/><br/></td></tr>
 <tr>
 <td>
 imagePosition<br/><br/></td><td>
-Specifies position of the image in a button item<br/><br/></td></tr>
+Specifies position of the image in a button item.<br/><br/></td></tr>
 <tr>
 <td>
 Selected<br/><br/></td><td>
-Specifies the selection state of button item<br/><br/></td></tr>
+Specifies the selection state of button item.<br/><br/></td></tr>
 <tr>
 <td>
 URL<br/><br/></td><td>
-Used to include the URL tag to the button item<br/><br/></td></tr>
+Used to include the URL tag to the button item.<br/><br/></td></tr>
 <tr>
 <td>
 htmlAttribute<br/><br/></td><td>
@@ -57,9 +57,9 @@ It defines the image attributes such as height, width, styles, etc.<br/><br/></t
 
 To set the local JSON data, define a JSON array and initialize the GroupButton with **dataSource** property. Specify the column names in the fields’ property.
 
-N> the columns are bounded automatically when the fields are specified with the default names like id, text, etc...
+N> the columns are bounded automatically when the field's are specified with the default names like id, text, etc...
 
-Below is the sample to code to render the GroupButton JSON dataSource,
+Below is the sample to code to render the GroupButton JSON dataSource.
 
 {% highlight html %}
 
@@ -68,6 +68,7 @@ Below is the sample to code to render the GroupButton JSON dataSource,
 {% endhighlight %}
 
 {% highlight js %}
+
     <script>
         angular.module('GroupBtnCtrl', ['ejangular'])
         .controller('GroupBtnCtller', function ($scope) {
@@ -82,10 +83,10 @@ Below is the sample to code to render the GroupButton JSON dataSource,
             $scope.dataSource = groupdata;
         });
     </script>
+
 {% endhighlight %}
 
 ![](DataSource_images/DataSoruce_img1.jpeg)
-
 
 ## Remote Data
 
@@ -97,7 +98,8 @@ To bind remote data to the GroupButton, you can assign a service data as an inst
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight javascript %}
+
     <script>
         angular.module('GroupBtnCtrl', ['ejangular'])
         .controller('GroupBtnCtller', function ($scope) {   
@@ -108,5 +110,5 @@ To bind remote data to the GroupButton, you can assign a service data as an inst
             $scope.query = ej.Query().from("Orders").take(6);            
         });
     </script>
-{% endhighlight %}
 
+{% endhighlight %}

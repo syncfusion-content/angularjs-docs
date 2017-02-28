@@ -36,5 +36,5 @@ angular.module('ProgressBarApp', ['ejangular'])
 
 The following screenshot displays the output.
 
-![](/js/ProgressBar/Setting-Range_images/Setting-Range_img1.png) 
+![](Setting-Range_images/Setting-Range_img1.png) 
 

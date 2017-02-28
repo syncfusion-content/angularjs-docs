@@ -111,30 +111,29 @@ Summary<br/><br/></th></tr>
 
 {% highlight html %}
 
-    <textarea id="texteditor" ej-rte e-value="val" e-toolslist="toolsList" e-tools="tools"></textarea>
+<textarea id="texteditor" ej-rte e-value="val" e-toolslist="toolsList" e-tools="tools"></textarea>
 
-    <script type="text/javascript">
+<script type="text/javascript">
 
-         angular.module('rteApp', ['ejangular'])
-        .controller('RTECtrl', function ($scope) {
-            $scope.val= "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-                      " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.";
-            $scope.toolsList = ["lists"];
-            $scope.tools = {
-                lists: ["unorderedList"],
-                customUnorderedList: [{
-                    name: "UnorderedInsert",
-                    tooltip: "Custom UnorderedList",
-                    css: "e-rte-toolbar-icon e-rte-unlistitems customunOrdered",
-                    text: "Smiley",
-                    listImage: "url('../content/images/rte/Smiley-GIF.gif')"
-                }]
-            };
-        });
+angular.module('rteApp', ['ejangular'])
+.controller('RTECtrl', function ($scope) {
+$scope.val= "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+            " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.";
+$scope.toolsList = ["lists"];
+$scope.tools = {
+    lists: ["unorderedList"],
+    customUnorderedList: [{
+        name: "UnorderedInsert",
+        tooltip: "Custom UnorderedList",
+        css: "e-rte-toolbar-icon e-rte-unlistitems customunOrdered",
+        text: "Smiley",
+        listImage: "url('../content/images/rte/Smiley-GIF.gif')"
+    }]
+};
+});
 
-    </script>
-    
+</script>
+
 {% endhighlight %}
 
 ![](WorkingwithLists_images/unordered.png)
-

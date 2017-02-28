@@ -49,7 +49,7 @@ Add the following code in order to show the menu items only on click.
 
 Output screenshot for the above code example is as follows.
 
-![](/js/Menu/Miscellaneous_images/Miscellaneous_img1.png)
+![](Miscellaneous_images/Miscellaneous_img1.png)
 
 
 ## Animation
@@ -118,7 +118,7 @@ Add the following code to render menu using animation type.
 
 Output screenshot for the above code sample is as follows.
 
-![](/js/Menu/Miscellaneous_images/Miscellaneous_img2.png)
+![](Miscellaneous_images/Miscellaneous_img2.png)
 
 
 ## Title text
@@ -136,7 +136,7 @@ You can specify the title of the **Menu** control as follows.
 
 The following screenshot displays the output of the above code.
 
-![](/js/Menu/Miscellaneous_images/Miscellaneous_img3.png)
+![](Miscellaneous_images/Miscellaneous_img3.png)
 
 
 ## Show root level arrows
@@ -155,7 +155,7 @@ Refer to the below code example.
 
 The following screenshot displays the output of the above code.
 
-![](/js/Menu/Miscellaneous_images/Miscellaneous_img4.png)
+![](Miscellaneous_images/Miscellaneous_img4.png)
 
 
 ## Show sub level arrows
@@ -173,6 +173,4 @@ Refer to the below code example.
 
 The following screenshot displays the output of the above code.
 
-![](/js/Menu/Miscellaneous_images/Miscellaneous_img5.png)
-
-
+![](Miscellaneous_images/Miscellaneous_img5.png)

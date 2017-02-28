@@ -41,7 +41,7 @@ Add the following styles to render **WaitingPopup** widget.
 
 Execute the above code to render the following output.
 
-![](/js/WaitingPopup/Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
+![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 
 ## Template
 
@@ -137,7 +137,7 @@ N> Images for this sample are available ‘installed sample location /images/wai
 
 Execute the above code to render the following output.
 
-![](/js/WaitingPopup/Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
 
 ## CSS Class
 
@@ -181,7 +181,4 @@ Define CSS class for customizing the WaitingPopup widget.
 
 The following screenshot displays the output for the above code.
 
-![](/js/WaitingPopup/Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
-
-
-
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 

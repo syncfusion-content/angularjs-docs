@@ -114,7 +114,7 @@ The **Toolbar** property [hide](https://help.syncfusion.com/api/js/ejtoolbar#mem
 
 {% highlight html %}
     
-    <div id="toolbarcontent" ej-toolbar e-hide="true">
-    </div>
+<div id="toolbarcontent" ej-toolbar e-hide="true">
+</div>
 
 {% endhighlight %}

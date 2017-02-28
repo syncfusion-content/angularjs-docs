@@ -55,8 +55,7 @@ In an HTML page, define a &lt;div&gt; element that is a container for Accordi
 
 {% highlight html %}
 
-<div id="accordion" style="width: 500px" ej-accordion e-allowkeyboardnavigation="true">
-    
+<div id="accordion" style="width: 500px" ej-accordion e-allowkeyboardnavigation="true">    
 </div>
 
 {% endhighlight %}

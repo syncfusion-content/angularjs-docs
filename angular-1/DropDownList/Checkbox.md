@@ -10,7 +10,7 @@ keywords: Checkbox, dropdown, Selection Modes, Visual Mode, Delimiter
 
 # Checkbox
 
-DropDownList displays checkboxes to the left of each item when you set [showCheckbox](http://help.syncfusion.com/api/js/ejdropdownlist#members:showcheckbox) property to true. It allows you to select more than one item at a time from DropDownList. Popup list stays open until the user finishes selection. When you click on an item’s text or checkbox then the checkbox checked status get change.
+DropDownList displays checkboxes to the left of each item when you set [showCheckBox](http://help.syncfusion.com/api/js/ejdropdownlist#members:showcheckbox) property to true. It allows you to select more than one item at a time from DropDownList. Popup list stays open until the user finishes selection. When you click on an item’s text or checkbox then the checkbox checked status get change.
 
 {% highlight html %}
 

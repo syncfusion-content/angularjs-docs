@@ -52,4 +52,4 @@ In an HTML page, define a div element that is a container for Accordion widg
 Following screenshot is the output for Accordion control on enableMultipleOpen set to true.
 
 
-![](/js/Accordion/View-multiple-contents_images/View-multiple-contents_img1.png)
+![](View-multiple-contents_images/View-multiple-contents_img1.png)

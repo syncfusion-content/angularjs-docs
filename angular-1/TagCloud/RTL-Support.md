@@ -44,4 +44,4 @@ angular.module('tagCloudApp', ['ejangular'])
 
 The following screenshot illustrates the **TagCloud** control with RTL support.
 
-![](/js/TagCloud/RTL-Support_images/RTL-Support_img1.png)
+![](RTL-Support_images/RTL-Support_img1.png)

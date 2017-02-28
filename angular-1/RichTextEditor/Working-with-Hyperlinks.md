@@ -28,25 +28,21 @@ N> Leave this textbox blank if you want to display the full link as hyperlink in
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="texteditor" ej-rte e-toolslist="toolslist" e-tools="tools" e-value="val"></textarea>
 
 <script type="text/javascript">
 
-        $(function () {
-
-            $("#texteditor").ejRTE({
-                value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-                " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-                toolsList: ["links"],
-                tools: {
-                    links: ["createLink", "removeLink"]
-                }
-
-            });
-
-        });
+angular.module('rteApp', ['ejangular'])
+.controller('RTECtrl', function ($scope) {
+    $scope.val = "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," + " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.";
+    $scope.toolslist = ["links"];
+    $scope.tools = {
+        links: ["createLink", "removeLink"]
+    }         
+});
 
 </script>
+
 {% endhighlight %}
 
 N> hyperlinks on a picture are not always visible, but the pointer’s appearance will be changed on positioning the mouse pointer over it.
@@ -54,4 +50,3 @@ N> hyperlinks on a picture are not always visible, but the pointer’s appearanc
 ## Remove a hyperlink
 
 If you want to remove a hyperlink from a text or image, select the text or image with the hyperlink and click “Remove Hyperlink” tool from toolbar. It will keep the text or image.
-
