@@ -38,5 +38,5 @@ angular.module('ProgressBarApp', ['ejangular'])
 
 The following screenshot displays the output for the above code.
 
-![](/js/ProgressBar/Enabling-the-ProgressBar_images/Enabling-the-ProgressBar_img1.png) 
+![](Enabling-the-ProgressBar_images/Enabling-the-ProgressBar_img1.png) 
 

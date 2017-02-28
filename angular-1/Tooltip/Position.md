@@ -22,7 +22,8 @@ Lets position the Tooltips (stems) left center corner at the right center of the
     </a>
     <div class="desc">Delphi Succinctly</div>
 </div>
- <script type="text/javascript">
+
+<script type="text/javascript">
         angular.module('TooltipApp', ['ejangular'])
         .controller('TooltipCtrl', function ($scope) {
             $scope.content = "Learn the fundamentals of Delphi to build a variety of solutions for many devices and platforms.";

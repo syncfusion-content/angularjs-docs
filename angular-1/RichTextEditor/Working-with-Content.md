@@ -174,9 +174,9 @@ When you move the editor’s wrapper element into another DOM element, the edito
         <div id="target"></div>
         <button onclick="appendTo()">Append To</button>
         <button onclick="refresh()">Refresh</button>
-    </div>
+ </div>
     
-  <script type="text/javascript">
+ <script type="text/javascript">
         var editor = null;
         angular.module('rteApp', ['ejangular'])
         .controller('RTECtrl', function ($scope) {
@@ -190,7 +190,7 @@ When you move the editor’s wrapper element into another DOM element, the edito
             editor = $("#texteditor").ejRTE("instance");
             editor.refresh();
         }
-    </script>
+ </script>
 
 {% endhighlight %}
 
@@ -228,7 +228,7 @@ N> <BR>
 
  <textarea id="texteditor" ej-rte e-value="val" e-tools="tools" e-minwidth="100" e-isresponsive="true"></textarea>
  
-<script>
+ <script>
     angular.module('rteApp', ['ejangular'])
         .controller('RTECtrl', function ($scope) {
             $scope.val = "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images, it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.";
@@ -242,7 +242,7 @@ N> <BR>
     ddl.selectItemByIndex(7);
     var ddlSize = editor._fontSizeDDL.ejDropDownList("instance");
     ddlSize.selectItemByIndex(5);
-</script>
+ </script>
 
 {% endhighlight %}
 

@@ -49,7 +49,7 @@ In an HTML page, define a &lt;div&gt; element that is a container for Accordi
 Output for disabled Accordion control is as follows.
 
 
-![](/js/Accordion/Accordion-Panel-enabler_images/Accordion-Panel-enabler_img1.png) 
+![](Accordion-Panel-enabler_images/Accordion-Panel-enabler_img1.png) 
 
 ## Enable panel items
 
@@ -105,5 +105,4 @@ In an HTML page, define a &lt;div&gt; element that is a container for Accordi
 Output for Accordion control with some enabled and disabled items, where first panel is disabled and it can’t be expanded or collapsed is as follows.
 
 
-![](/js/Accordion/Accordion-Panel-enabler_images/Accordion-Panel-enabler_img2.png) 
-
+![](Accordion-Panel-enabler_images/Accordion-Panel-enabler_img2.png)

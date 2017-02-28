@@ -23,11 +23,11 @@ In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadb
 
 {% highlight js %}
 
-     angular.module('UploadboxApp', ['ejangular'])
-        .controller('UploadboxCtrl', function ($scope) {
-            $scope.save = "saveFiles.ashx";
-            $scope.remove= "removeFiles.ashx";
-      });
+angular.module('UploadboxApp', ['ejangular'])
+.controller('UploadboxCtrl', function ($scope) {
+    $scope.save = "saveFiles.ashx";
+    $scope.remove= "removeFiles.ashx";
+});
 
 {% endhighlight %}
 
@@ -36,4 +36,4 @@ For **JS**, configure **saveFiles.ashx** and **removeFiles.ashx** files as menti
 The following screenshot displays the output.
 
 
-![](/js/UploadBox/Enable-or-Disable_images/Enable-or-Disable_img1.png)
+![](Enable-or-Disable_images/Enable-or-Disable_img1.png)

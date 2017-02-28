@@ -101,7 +101,7 @@ Add the following code in your style section.
 
 The following screenshot displays the output for the above code.                                                                                                       
 
-![](/js/Menu/Icons-and-navigation_images/Icons-and-navigation_img1.png) 
+![](Icons-and-navigation_images/Icons-and-navigation_img1.png) 
 
 N> Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\samples\web\content\images<br/>
 
@@ -146,9 +146,9 @@ Add the following code in your **HTML** page.
 
 The following screenshot displays the output for the above code example.            
 
-![](/js/Menu/Icons-and-navigation_images/Icons-and-navigation_img2.png) 
+![](Icons-and-navigation_images/Icons-and-navigation_img2.png) 
 
 
 When you click on “**Google**” that is present under “Search engine”, it navigates to the link that you specified in the sample code. Then the output is as follows.
 
-![](/js/Menu/Icons-and-navigation_images/Icons-and-navigation_img3.png)
+![](Icons-and-navigation_images/Icons-and-navigation_img3.png)

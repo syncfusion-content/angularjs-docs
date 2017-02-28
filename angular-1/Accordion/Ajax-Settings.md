@@ -57,6 +57,4 @@ keywords: ejaccordion, accordion, angularjs accordion
 Output for Accordion control with loaded AJAX content is as follows.
 
 
-
-![](/js/Accordion/Ajax-settings_images/Ajax-settings_img1.png)
-
+![](Ajax-settings_images/Ajax-settings_img1.png)

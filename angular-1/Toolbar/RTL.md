@@ -19,4 +19,4 @@ This feature allows you to change the left-to-right alignment of the **Toolbar**
 
 {% endhighlight %}
 
-![](/js/Toolbar/RTL_images/RTL_img1.png)
+![](RTL_images/RTL_img1.png)
