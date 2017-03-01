@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Behavior-Settings
+title: Behavior-Settings
 description: Behavior Settings 
 platform: Angular-1
 control: Scroller
@@ -62,7 +62,7 @@ The autohide property of the Scroller, makes the scroller visible only when the 
 
 {% endhighlight %}
 
-Configuring Styles:
+Configuring Styles
 
 {% highlight html %}
 
