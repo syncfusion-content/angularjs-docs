@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Data-Binding
+title: Data-Binding
 description: Data Binding 
 platform: Angular-1
 control: Scroller
