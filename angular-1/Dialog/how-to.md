@@ -6,6 +6,7 @@ platform: angular-1
 control: Angular- Dialog
 documentation: ug
 ---
+
 ##How To?
 
 ### Create Multiple Dialogs
