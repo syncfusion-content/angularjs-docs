@@ -140,7 +140,7 @@ In AngularJS, **e-enablePersistence** property is used to maintain the state of 
 
 {% endhighlight %}
 
-{% highlight JS%}
+{% highlight JS %}
 
     <script>
     angular.module('DateTimeCtrl', ['ejangular'])
