@@ -13,17 +13,17 @@ In AngularJS, **DateTimePicker** Component has some default settings which helps
 
 **HTML View Section**
 
-{%highlight html%}
+{% highlight html %}
 
         <div class="control">
                <input type="text" id="dateTime1" ej-datetimepicker e-value="value"/>
           </div>
 
-{%endhighlight%}
+{% endhighlight %}
 
  **Controller Section**
 
-{%highlight JS%}
+{% highlight JS %}
 
     <script>
     angular.module('DateTimeCtrl', ['ejangular'])
@@ -32,7 +32,7 @@ In AngularJS, **DateTimePicker** Component has some default settings which helps
                 });
     </script>
 
-{%highlight%}
+{% endhighlight %}
 
 ## MinDateTime and MaxDateTime
 
@@ -42,15 +42,15 @@ In a real-time appointment scenario, the appointment is open only for a limited 
 
 **HTML View Section**
 
-{%highlight html%}
+{% highlight html %}
 
       <input type="text" id="dateTime1" ej-datetimepicker e-value="value" e-mindatetime="minDateTime" e-maxdatetime="maxDateTime"/>
 
-{%endhighlight%}
+{% endhighlight %}
 
  **Controller Section**
 
-{%highlight JS%}
+{% highlight JS %}
 
         <script>
         angular.module('DateTimeCtrl', ['ejangular'])
@@ -63,7 +63,7 @@ In a real-time appointment scenario, the appointment is open only for a limited 
                 });
         </script>
 
-{%endhighlight%}
+{% endhighlight %}
 
 ![](Behaviour_settings_images/datetime1.png)
 
@@ -74,15 +74,15 @@ In **DateTimePicker** Component, **e-showOtherMonths** API allow showing days in
 
 **HTML View Section**
 
-{%highlight html%}
+{% highlight html %}
 
         <input type="text" id="dateTime1" ej-datetimepicker e-value="value"   e-showothermonths="false"/>
 
-{%endhighlight}
+{% endhighlight  %}
 
  **Controller Section**
 
-{%highlight JS%}
+{% highlight JS %}
 
         <script>
         angular.module('DateTimeCtrl', ['ejangular'])
@@ -94,7 +94,7 @@ In **DateTimePicker** Component, **e-showOtherMonths** API allow showing days in
         </script>
 
 
-{%endhighlight%}
+{% endhighlight %}
 
 ![](Behaviour_settings_images/datetime2.png)
 
@@ -104,17 +104,17 @@ In AngularJS, **DateTimePicker** Component allows you to define the text represe
 
 **HTML View Section**
 
-{%highlight html%}
+{% highlight html %}
 
       <div class="control">
                <input type="text" id="dateTime1" ej-datetimepicker e-value="value"  e-datetimeformat="dateTimeFormat"/>
             </div>
 
-{%endhighlight%}
+{% endhighlight %}
 
  **Controller Section**
 
-{%highlight JS%}
+{% highlight JS %}
 
     <script>
     angular.module('DateTimeCtrl', ['ejangular'])
@@ -126,7 +126,7 @@ In AngularJS, **DateTimePicker** Component allows you to define the text represe
     </script>
 
 
-{%endhighlight%}
+{% endhighlight %}
 
 ![](Behaviour_settings_images/datetime3.png)
 
