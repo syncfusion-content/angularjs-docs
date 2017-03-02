@@ -34,9 +34,9 @@ The following code example describes the above behavior.
     <script id="tabGridContents" type="text/x-jsrender">
         <div class="tabcontrol" id="Test">
             <ul>
-                <li><a href="#gridTab{{:EmployeeID}}">Stock Grid</a></li>
+                <li><a href="#gridTab{{"{{"}}:EmployeeID{{}}}}">Stock Grid</a></li>
             </ul>
-            <div id="gridTab{{:EmployeeID}}">
+            <div id="gridTab{{"{{"}}:EmployeeID{{}}}}">
                 <div id="detailGrid"></div>
             </div>
         </div>
@@ -86,7 +86,7 @@ The following code example describes the above behavior.
 <script id="templateData" type="text/x-jsrender">
           <tr>
             <td class="photo">
-                <img src="~/../Content/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}" />
+                <img src="~/../Content/images/Employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}" />
             </td>
             <td class="details">
                 <table class="CardTable" cellpadding="3" cellspacing="2">
