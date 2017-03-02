@@ -42,7 +42,7 @@ In AngularJS, we can bind functions to event that occurs in the **DateTimePicker
 
 
 
-{%endhighlight}
+{%endhighlight%}
 
 ![](Databinding_images/datetime5.png)
 
