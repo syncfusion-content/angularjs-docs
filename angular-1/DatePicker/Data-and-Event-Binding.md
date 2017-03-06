@@ -33,7 +33,7 @@ Please refer the below code example,
      }
 
 
-{% endhihlight %}
+{% endhighlight %}
 
 ## Event handlers
 
