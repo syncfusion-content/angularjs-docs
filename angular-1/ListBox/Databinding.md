@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Databinding
 description: databinding
@@ -99,7 +99,7 @@ Here the CustomerID field is mapped with text property of the field object. The 
 
 [ASP.NET Web API](https://msdn.microsoft.com/en-us/library/hh833994%28v=vs.108%29.aspx) is a Framework for building HTTP services. You can retrieve data from ASP.NET Web API by using [ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/getting-started).
 
-{% highlight html %}
+{% highlight html %}    
 
 <div id="control">
         <ul id="selectcustomer" ej-listbox e-datasource="dataList" e-fields="fields"></ul>
