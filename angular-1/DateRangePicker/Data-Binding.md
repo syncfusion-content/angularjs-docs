@@ -36,7 +36,7 @@ In daterange picker , one-way binding can be achieved by using "e-" prefix with 
 
 Run the above code to get the below output.
 
-![](data-binding/one-way binding.png)
+![](data-binding_images/one-way-binding.png)
 
 Here, once the value of the date range picker is changed and the element is focused out , the value will be updated below the daterangepicker component.
 
@@ -69,4 +69,4 @@ Two-Way binding in Angular in daterangepicker is achieved by using (ng-model) at
 
 Run the above code to get the below output.
 
-![](data-binding/Two-way binding.png)
+![](data-binding_images/Two-way-binding.png)

@@ -10,7 +10,7 @@ documentation: ug
 
 ## Two-way Binding
 
-When data in the model changes, the view reflects the change, and when data in the view changes, the model updated as well. This happens immediately and automatically, which makes sure that the model and the view is updated always.Once we change the state of the **ej-checkBox** control changed then its value will have reflected in the paragraph html element in the webpage.
+When data in the model changes, the view reflects the change, and when data in the view changes, the model updated as well. This happens immediately and automatically, which makes sure that the model and the view is updated always.Once we change the state of the **ej-checkbox** control changed then its value will have reflected in the paragraph html element in the webpage.
 
 **HTML View Section**
 
