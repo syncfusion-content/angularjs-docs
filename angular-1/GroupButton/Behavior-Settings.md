@@ -26,13 +26,13 @@ EJ AngularJS GroupButton provides the two different types of modes called check 
      <div id="groupButton" ej-groupbutton e-groupButtonMode="'checkbox'">
         <ul>
             <li>
-                Save
+                Daily
             </li>
             <li>
-                Open
+                Weekly
             </li>
             <li>
-                Delete
+                Monthly
             </li>
         </ul>
      </div>

@@ -12,14 +12,14 @@ documentation: ug
 ## Two-way Binding
 
 When data in the model changes, the view reflects the change, and when data in the view changes, the model updated as well. This happens immediately and automatically, which makes sure that the model and the view is updated always.
- Once we change the state of the **ej-radioButton** control changed then its value will have reflected in the paragraph html element in the webpage.
+ Once we change the state of the **ej-radiobutton** control changed then its value will have reflected in the paragraph html element in the webpage.
 
 **HTML View Section**
 
 {%highlight html%}
 
     <td class="chkrad">
-         <input type="radiobutton" ej-radioButton id="radio1" e-value="Music"/>
+         <input type="radiobutton" ej-radiobutton id="radio1" e-value="Music"/>
             <label for="radio1">Music</label>
                 <p>The value of Music is: {{Music}} </p>
             </td>
@@ -48,8 +48,8 @@ The code will render the following output.
 
 ## Event Binding
 
-In AngularJS, **ej-radioButton** component can be used to bind events. The events that can be binded are beforeChange, change, create, destroy.
-beforeChange event of the **ej-radioButton** will be triggered before the RadioButton has been checked and unchecked.
+In AngularJS, **ej-radiobutton** component can be used to bind events. The events that can be binded are beforeChange, change, create, destroy.
+beforeChange event of the **ej-radiobutton** will be triggered before the RadioButton has been checked and unchecked.
 
 **HTML View Section**
 

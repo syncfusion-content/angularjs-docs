@@ -23,7 +23,7 @@ Please check with the below code example,
 
 {% endhighlight %}
 
-** Controller Section:**
+**Controller Section:**
 
 {% highlight javascript %}
 
