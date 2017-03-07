@@ -15,38 +15,38 @@ The autohide property of the Scroller, makes the scroller visible only when the 
 
 {% highlight html %}
 
-<div ng-controller="ScrollerCtrl">
-   <div class="control">
-        <div id="scrollcontent" ej-scroller e-height="height" e-width="width" e-autohide="hide">
-            <div>
-                <div class="sampleContent">
-                    <h3 style="font-size: 20px;">Syncfusion</h3>
-                    <div>
-                        <p>
-                            We are a world leader in software components. With close to a decade of experience, we have thousands of satisfied customers world-wide who have used our products to ship award winning software. We have won numerous industry awards which honors the top innovators and leaders in the software development industry.
-                            Since we provide building blocks that power applications, our work requires a level of understanding that is not required when working on applications. We are always looking for candidates with the right technical aptitude and the will to be masters in this programming trade we all love.
-                        </p>
-                        <h4 style="font-size: 20px;">What we do</h4>
-                        <ul>
-                            <li>
-                                We work to produce software building blocks that other developers use. As software has become more and more complex to produce it is commonly the case that more and more companies rely on software building blocks to produce complex software.
-                            </li>
-                            <br />
-                            <li>
-                                We work at a much lower level than typical application development. We write the plumbing that powers application development for thousands of developers worldwide. This does mean that we look for our team members to be significantly better than industry peers. You have to have a solid understanding of data structures and be seriously interested in programming. You should also have a passion for problem solving and excellence.
-                            </li>
-                            <br />
-                            <li>
-                                The nature of our work often requires us to work in areas where there are very few teams working world-wide. Consider the Windows Presentation Foundation or Silverlight. We started work, producing components for these platforms years before they became industry buzzwords. If you are truly looking to stay ahead of the curve there is no better place to work than Syncfusion.
-                            </li>
-                        </ul>
+    <div ng-controller="ScrollerCtrl">
+    <div class="control">
+            <div id="scrollcontent" ej-scroller e-height="height" e-width="width" e-autohide="hide">
+                <div>
+                    <div class="sampleContent">
+                        <h3 style="font-size: 20px;">Syncfusion</h3>
+                        <div>
+                            <p>
+                                We are a world leader in software components. With close to a decade of experience, we have thousands of satisfied customers world-wide who have used our products to ship award winning software. We have won numerous industry awards which honors the top innovators and leaders in the software development industry.
+                                Since we provide building blocks that power applications, our work requires a level of understanding that is not required when working on applications. We are always looking for candidates with the right technical aptitude and the will to be masters in this programming trade we all love.
+                            </p>
+                            <h4 style="font-size: 20px;">What we do</h4>
+                            <ul>
+                                <li>
+                                    We work to produce software building blocks that other developers use. As software has become more and more complex to produce it is commonly the case that more and more companies rely on software building blocks to produce complex software.
+                                </li>
+                                <br />
+                                <li>
+                                    We work at a much lower level than typical application development. We write the plumbing that powers application development for thousands of developers worldwide. This does mean that we look for our team members to be significantly better than industry peers. You have to have a solid understanding of data structures and be seriously interested in programming. You should also have a passion for problem solving and excellence.
+                                </li>
+                                <br />
+                                <li>
+                                    The nature of our work often requires us to work in areas where there are very few teams working world-wide. Consider the Windows Presentation Foundation or Silverlight. We started work, producing components for these platforms years before they became industry buzzwords. If you are truly looking to stay ahead of the curve there is no better place to work than Syncfusion.
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-   </div>
-</div>
-   
+    </div>
+    </div>
+    
 {% endhighlight %}
 
 {% highlight javascript %}
@@ -84,7 +84,7 @@ Configuring Styles
 
 Run the above code to get the below output.
 
-![](getting-started_images/auto hide.png) 
+![](Behavior-Settings_images/auto-hide.png) 
 
 Here , Since the Scroller has not been focused, scroll bars are hidden.
 
@@ -94,37 +94,37 @@ The scroll top and scroll left properties allows to move the scroll content and 
 
 {% highlight html %}
 
-<div ng-controller="ScrollerCtrl">
-   <div class="control">
-        <div id="scrollcontent" ej-scroller e-scrollTop="top" e-scrollLeft="left" e-height="300px" e-width="600px">
-            <div>
-                <div class="sampleContent">
-                    <h3 style="font-size: 20px;">Syncfusion</h3>
-                    <div>
-                        <p>
-                            We are a world leader in software components. With close to a decade of experience, we have thousands of satisfied customers world-wide who have used our products to ship award winning software. We have won numerous industry awards which honors the top innovators and leaders in the software development industry.
-                            Since we provide building blocks that power applications, our work requires a level of understanding that is not required when working on applications. We are always looking for candidates with the right technical aptitude and the will to be masters in this programming trade we all love.
-                        </p>
-                        <h4 style="font-size: 20px;">What we do</h4>
-                        <ul>
-                            <li>
-                                We work to produce software building blocks that other developers use. As software has become more and more complex to produce it is commonly the case that more and more companies rely on software building blocks to produce complex software.
-                            </li>
-                            <br />
-                            <li>
-                                We work at a much lower level than typical application development. We write the plumbing that powers application development for thousands of developers worldwide. This does mean that we look for our team members to be significantly better than industry peers. You have to have a solid understanding of data structures and be seriously interested in programming. You should also have a passion for problem solving and excellence.
-                            </li>
-                            <br />
-                            <li>
-                                The nature of our work often requires us to work in areas where there are very few teams working world-wide. Consider the Windows Presentation Foundation or Silverlight. We started work, producing components for these platforms years before they became industry buzzwords. If you are truly looking to stay ahead of the curve there is no better place to work than Syncfusion.
-                            </li>
-                        </ul>
+    <div ng-controller="ScrollerCtrl">
+    <div class="control">
+            <div id="scrollcontent" ej-scroller e-scrollTop="top" e-scrollLeft="left" e-height="300px" e-width="600px">
+                <div>
+                    <div class="sampleContent">
+                        <h3 style="font-size: 20px;">Syncfusion</h3>
+                        <div>
+                            <p>
+                                We are a world leader in software components. With close to a decade of experience, we have thousands of satisfied customers world-wide who have used our products to ship award winning software. We have won numerous industry awards which honors the top innovators and leaders in the software development industry.
+                                Since we provide building blocks that power applications, our work requires a level of understanding that is not required when working on applications. We are always looking for candidates with the right technical aptitude and the will to be masters in this programming trade we all love.
+                            </p>
+                            <h4 style="font-size: 20px;">What we do</h4>
+                            <ul>
+                                <li>
+                                    We work to produce software building blocks that other developers use. As software has become more and more complex to produce it is commonly the case that more and more companies rely on software building blocks to produce complex software.
+                                </li>
+                                <br />
+                                <li>
+                                    We work at a much lower level than typical application development. We write the plumbing that powers application development for thousands of developers worldwide. This does mean that we look for our team members to be significantly better than industry peers. You have to have a solid understanding of data structures and be seriously interested in programming. You should also have a passion for problem solving and excellence.
+                                </li>
+                                <br />
+                                <li>
+                                    The nature of our work often requires us to work in areas where there are very few teams working world-wide. Consider the Windows Presentation Foundation or Silverlight. We started work, producing components for these platforms years before they became industry buzzwords. If you are truly looking to stay ahead of the curve there is no better place to work than Syncfusion.
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-   </div>
-</div>
+    </div>
+    </div>
     
 {% endhighlight %}
 
@@ -162,7 +162,7 @@ Configuring Styles.
 
 Run the above code to get th below output.
 
-![](getting-started_images/scroll left.png) 
+![](Behavior-Settings_images/scroll-left.png) 
 
 Here, the scrollers and the content are moved to the value being given in the code.
 
@@ -172,37 +172,37 @@ The enable persistence property of the scroller saves the current position of th
 
 {% highlight html %}
 
-<body ng-controller="ScrollerCtrl">
-   <div class="control">
-        <div id="scrollcontent" ej-scroller e-height="height" e-width="width" e-enablePersistence="enable">
-            <div>
-                <div class="sampleContent">
-                    <h3 style="font-size: 20px;">Syncfusion</h3>
-                    <div>
-                        <p>
-                            We are a world leader in software components. With close to a decade of experience, we have thousands of satisfied customers world-wide who have used our products to ship award winning software. We have won numerous industry awards which honors the top innovators and leaders in the software development industry.
-                            Since we provide building blocks that power applications, our work requires a level of understanding that is not required when working on applications. We are always looking for candidates with the right technical aptitude and the will to be masters in this programming trade we all love.
-                        </p>
-                        <h4 style="font-size: 20px;">What we do</h4>
-                        <ul>
-                            <li>
-                                We work to produce software building blocks that other developers use. As software has become more and more complex to produce it is commonly the case that more and more companies rely on software building blocks to produce complex software.
-                            </li>
-                            <br />
-                            <li>
-                                We work at a much lower level than typical application development. We write the plumbing that powers application development for thousands of developers worldwide. This does mean that we look for our team members to be significantly better than industry peers. You have to have a solid understanding of data structures and be seriously interested in programming. You should also have a passion for problem solving and excellence.
-                            </li>
-                            <br />
-                            <li>
-                                The nature of our work often requires us to work in areas where there are very few teams working world-wide. Consider the Windows Presentation Foundation or Silverlight. We started work, producing components for these platforms years before they became industry buzzwords. If you are truly looking to stay ahead of the curve there is no better place to work than Syncfusion.
-                            </li>
-                        </ul>
+    <body ng-controller="ScrollerCtrl">
+    <div class="control">
+            <div id="scrollcontent" ej-scroller e-height="height" e-width="width" e-enablePersistence="enable">
+                <div>
+                    <div class="sampleContent">
+                        <h3 style="font-size: 20px;">Syncfusion</h3>
+                        <div>
+                            <p>
+                                We are a world leader in software components. With close to a decade of experience, we have thousands of satisfied customers world-wide who have used our products to ship award winning software. We have won numerous industry awards which honors the top innovators and leaders in the software development industry.
+                                Since we provide building blocks that power applications, our work requires a level of understanding that is not required when working on applications. We are always looking for candidates with the right technical aptitude and the will to be masters in this programming trade we all love.
+                            </p>
+                            <h4 style="font-size: 20px;">What we do</h4>
+                            <ul>
+                                <li>
+                                    We work to produce software building blocks that other developers use. As software has become more and more complex to produce it is commonly the case that more and more companies rely on software building blocks to produce complex software.
+                                </li>
+                                <br />
+                                <li>
+                                    We work at a much lower level than typical application development. We write the plumbing that powers application development for thousands of developers worldwide. This does mean that we look for our team members to be significantly better than industry peers. You have to have a solid understanding of data structures and be seriously interested in programming. You should also have a passion for problem solving and excellence.
+                                </li>
+                                <br />
+                                <li>
+                                    The nature of our work often requires us to work in areas where there are very few teams working world-wide. Consider the Windows Presentation Foundation or Silverlight. We started work, producing components for these platforms years before they became industry buzzwords. If you are truly looking to stay ahead of the curve there is no better place to work than Syncfusion.
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-   </div>
-    
+    </div>
+        
 {% endhighlight %}
 
 {% highlight javascript %}
@@ -240,7 +240,7 @@ Configuring Styles.
 
 Run the above code to get the below output.
 
-![](getting-started_images/enable persistence.png) 
+![](Behavior-Settings_images/enable-persistence.png) 
 
 Here, the scroller has been scrolled and reloaded but the scroller retains in the same position whereas without enabling enablePersistence property, the scrollers will be moved to the initial position.
 
@@ -250,37 +250,37 @@ The target pane property of the scroller allows us to target a particular area t
 
 {% highlight html %}
 
-<body ng-controller="ScrollerCtrl">
-   <div class="control">
-            <div ej-scroller e-targetPane="target" e-height="300px" e-width="700px">
-                <div class="sampleContent" id="sampleContent1">
-                    <h3 style="font-size: 20px;">Syncfusion</h3>
-                    <p>
-                        We are a world leader in software components. With close to a decade of experience, we have thousands of satisfied customers world-wide who have used our products to ship award winning software. We have won numerous industry awards which honors the top innovators and leaders in the software development industry.
-                        Since we provide building blocks that power applications, our work requires a level of understanding that is not required when working on applications. We are always looking for candidates with the right technical aptitude and the will to be masters in this programming trade we all love.
-                    </p>
-                </div>
-                <div class="sampleContent" id="sampleContent2">
-                    <div style='width: 700px;'>
-                        <h4 style="font-size: 20px;">What we do</h4>
-                        <ul>
-                            <li>
-                                We work to produce software building blocks that other developers use. As software has become more and more complex to produce it is commonly the case that more and more companies rely on software building blocks to produce complex software.
-                            </li>
-                            <br />
-                            <li>
-                                We work at a much lower level than typical application development. We write the plumbing that powers application development for thousands of developers worldwide. This does mean that we look for our team members to be significantly better than industry peers. You have to have a solid understanding of data structures and be seriously interested in programming. You should also have a passion for problem solving and excellence.
-                            </li>
-                            <br />
-                            <li>
-                                The nature of our work often requires us to work in areas where there are very few teams working world-wide. Consider the Windows Presentation Foundation or Silverlight. We started work, producing components for these platforms years before they became industry buzzwords. If you are truly looking to stay ahead of the curve there is no better place to work than Syncfusion.
-                            </li>
-                        </ul>
+    <body ng-controller="ScrollerCtrl">
+    <div class="control">
+                <div ej-scroller e-targetPane="target" e-height="300px" e-width="700px">
+                    <div class="sampleContent" id="sampleContent1">
+                        <h3 style="font-size: 20px;">Syncfusion</h3>
+                        <p>
+                            We are a world leader in software components. With close to a decade of experience, we have thousands of satisfied customers world-wide who have used our products to ship award winning software. We have won numerous industry awards which honors the top innovators and leaders in the software development industry.
+                            Since we provide building blocks that power applications, our work requires a level of understanding that is not required when working on applications. We are always looking for candidates with the right technical aptitude and the will to be masters in this programming trade we all love.
+                        </p>
+                    </div>
+                    <div class="sampleContent" id="sampleContent2">
+                        <div style='width: 700px;'>
+                            <h4 style="font-size: 20px;">What we do</h4>
+                            <ul>
+                                <li>
+                                    We work to produce software building blocks that other developers use. As software has become more and more complex to produce it is commonly the case that more and more companies rely on software building blocks to produce complex software.
+                                </li>
+                                <br />
+                                <li>
+                                    We work at a much lower level than typical application development. We write the plumbing that powers application development for thousands of developers worldwide. This does mean that we look for our team members to be significantly better than industry peers. You have to have a solid understanding of data structures and be seriously interested in programming. You should also have a passion for problem solving and excellence.
+                                </li>
+                                <br />
+                                <li>
+                                    The nature of our work often requires us to work in areas where there are very few teams working world-wide. Consider the Windows Presentation Foundation or Silverlight. We started work, producing components for these platforms years before they became industry buzzwords. If you are truly looking to stay ahead of the curve there is no better place to work than Syncfusion.
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-   
+    
 {% endhighlight %}
 
 {% highlight javascript %}
@@ -332,5 +332,5 @@ Configuring Styles.
 
 Run the above code the get the below output.
 
-![](getting-started_images/targetpane.png)
+![](Behavior-Settings_images/targetpane.png)
 

@@ -49,68 +49,68 @@ AngularJS provides classes and properties on the form and its inputs so that you
 
 {% highlight html %}
 
-<div align="center" class="div" ng-controller="dateRangeCtrl" >
-        <h1><b> Trip Planner </b></h1>
-        <ng-form name="myForm">
-            <div>
-                <table>
-                    <tr>
-                        <td>Name :</td>
-                        <td colspan="2"><input type="text" class="e-textbox" id="name" ng-model="val" /></td>
-                    </tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr>
-                        <td>Trip Way:</td>
+        <div align="center" class="div" ng-controller="dateRangeCtrl" >
+                <h1><b> Trip Planner </b></h1>
+                <ng-form name="myForm">
+                    <div>
+                        <table>
+                            <tr>
+                                <td>Name :</td>
+                                <td colspan="2"><input type="text" class="e-textbox" id="name" ng-model="val" /></td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <td>Trip Way:</td>
 
 
-                        <td>
-                            <input type="radio" ej-radiobutton id="radio1" name="trip" value="one way" /><label for="radio1">One Way</label>
-                        </td>
-                        <td colspan="2">
-                            <input type="radio" ej-radiobutton id="radio2" name="trip" value="two way" /><label for="radio2">Two Way</label>
-                        </td>
-                    </tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr>
-                        <td>Date Range:</td>
-                        <td colspan="2">
-                            <input type="text" id="daterange" e-value="daterange" name="daterange" ej-daterangepicker e-width="100%" required ng-required="req_Date" />
+                                <td>
+                                    <input type="radio" ej-radiobutton id="radio1" name="trip" value="one way" /><label for="radio1">One Way</label>
+                                </td>
+                                <td colspan="2">
+                                    <input type="radio" ej-radiobutton id="radio2" name="trip" value="two way" /><label for="radio2">Two Way</label>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <td>Date Range:</td>
+                                <td colspan="2">
+                                    <input type="text" id="daterange" e-value="daterange" name="daterange" ej-daterangepicker e-width="100%" required ng-required="req_Date" />
 
-                        </td>
-                    </tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr>
-                        <td></td>
-                        <td colspan="2" align="center">
-                            <button id="submit" ej-button e-showroundedcorner="true" type="submit" e-size="large" e-text="Submit" e-click="submitForm"></button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </ng-form>
-   </div>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <td></td>
+                                <td colspan="2" align="center">
+                                    <button id="submit" ej-button e-showroundedcorner="true" type="submit" e-size="large" e-text="Submit" e-click="submitForm"></button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </ng-form>
+        </div>
 
 {% endhighlight %}
 
 {% highlight javascript %}
 
-<script>
-    angular.module('syncApp', ['ejangular'])
-      .controller('dateRangeCtrl', function ($scope) {
-           $scope.val = "Name";
-           $scope.submitForm = function () {
-               if ($scope.myForm.$valid) {
-                   alert('Form Sumbitted');
-               }
-               else alert('Something Wrong with form');
-           };
-             $scope.daterange = "";
-             $scope.req_Date = true;
-       });
-</script>
+        <script>
+            angular.module('syncApp', ['ejangular'])
+            .controller('dateRangeCtrl', function ($scope) {
+                $scope.val = "Name";
+                $scope.submitForm = function () {
+                    if ($scope.myForm.$valid) {
+                        alert('Form Sumbitted');
+                    }
+                    else alert('Something Wrong with form');
+                };
+                    $scope.daterange = "";
+                    $scope.req_Date = true;
+            });
+        </script>
 
 {% endhighlight %}
 
@@ -118,31 +118,31 @@ Run the above code with mentioned CSS files to get the below mentioned outputs.
 
 **Untouched**
 
-![](validation/untouched.png)
+![](validation_images/untouched.png)
 
 **Untouched and dirty**
 
 This class is applied when the daterangepicker value has been changed using the calendar icon without touching the input element of the datarangrpicker.
 
-![](validation/untouched dirty.png)
+![](validation_images/untouched-dirty.png)
 
 **Touched and pristine**
 
-![](validation/touched pristine.png)
+![](validation_images/touched-pristine.png)
 
 **Touched and Dirty**
 
-![](validation/touched dirty.png)
+![](validation_images/touched-dirty.png)
 
 **Valid**
 
 Here valid and invalid properties are used based on the form validation by using ng-required attribute to the daterangepicker component.
 
-![](validation/valid.png)
+![](validation_images/valid.png)
 
 **Invalid**
 
 Here the value of the daterangepicker is not hence invalid message is shown.
 
-![](validation/invalid.png)
+![](validation_images/invalid.png)
 

@@ -36,7 +36,7 @@ In buttons, One-way binding can be achieved by using "e-" prefixed with the prop
 
 Run the above code to get the below output.
 
-![](data-binding/one-way binding.png)
+![](Data-Binding_images/one-way binding.png)
 
 ## Event Binding
 
@@ -67,5 +67,5 @@ The event binding allows you to add an event handler for a specified event so th
 
 Run the above code to get the below output.
 
-![](data-binding/event binding.png)
+![](Data-Binding_images/event binding.png)
 
