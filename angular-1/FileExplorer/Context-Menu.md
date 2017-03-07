@@ -100,8 +100,8 @@ The presence of the context menu can be controlled by the [showContextMenu](http
 {% highlight javascript %}
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
-        $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-        $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+        $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+        $scope.ajaxaction = http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations
     });
 
 {% endhighlight %}
@@ -148,8 +148,8 @@ To add/remove/re-arrange context menu items, you need to use [contextMenuSetting
 {% highlight javascript %}
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
-        $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-        $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",
+        $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+        $scope.ajaxaction = http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations,
         $scope.contextMenuSettings: {
             //define the ContextMenu items
             items: {
@@ -245,8 +245,8 @@ You would be notified with events when you try to open the context menu items (*
 {% highlight javascript %}
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
-        $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-        $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+        $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+        $scope.ajaxaction = http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations
     });
     function menuBeforeOpen(args){
         //you add/remove the context menu items in run time
