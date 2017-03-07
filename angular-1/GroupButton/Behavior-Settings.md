@@ -15,9 +15,9 @@ EJ AngularJS GroupButton has some default behavior settings which helps you to c
 
 EJ AngularJS GroupButton provides the two different types of modes called check box mode, radio button mode. We can achive this using this **e-groupButtonMode** API which can be set through scope varibale. Setting a checkbox mode, we can perform the multiple actions in a single group. In this case, you can toggle the all the buttons state and perform the actions, since it all will behave as individual button in a group of button. 
 
-** Radio Button Mode :** we can perform the only single action with all related actions in a group of button.
+**Radio Button Mode** - we can perform the only single action with all related actions in a group of button.
 
-** Checkbox Mode :** Here, multiple button can be selected, please check with the below use case for this mode.
+**Checkbox Mode** - Here, multiple button can be selected, please check with the below use case for this mode.
 
 **HtML View Section:**
 
@@ -26,13 +26,13 @@ EJ AngularJS GroupButton provides the two different types of modes called check 
      <div id="groupButton" ej-groupbutton e-groupButtonMode="'checkbox'">
         <ul>
             <li>
-                Save
+                Daily
             </li>
             <li>
-                Open
+                Weekly
             </li>
             <li>
-                Delete
+                Monthly
             </li>
         </ul>
      </div>
@@ -61,13 +61,13 @@ EJ AngularJS GroupButton provides the two different types of modes called check 
      <div id="groupButton" ej-groupbutton>
         <ul>
             <li>
-                Save
+                Credit Card
             </li>
             <li>
-                Open
+                Debit Card
             </li>
             <li>
-                Delete
+                Net Banking
             </li>
         </ul>
      </div>
@@ -103,14 +103,14 @@ This property will accept the array values and its value will be differ based on
 
      <div id="groupButton" ej-groupbutton e-selectedItemIndex="index">
         <ul>
-            <li>
-                Save
+           <li>
+                Credit Card
             </li>
             <li>
-                Open
+                Debit Card
             </li>
             <li>
-                Delete
+                Net Banking
             </li>
         </ul>
      </div>

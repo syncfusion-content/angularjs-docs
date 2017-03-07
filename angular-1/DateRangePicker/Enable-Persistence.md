@@ -32,6 +32,6 @@ The value of DateRangePicker can be sustained even after form post back and page
 
 Run the above code to get the below output.
 
-![](enable-persistence/persistence.png)
+![](enable-persistence_images/persistence.png)
 
 The DateRangePicker Model value will be stored in local storage / cookies of browser before page refreshes and reinitialized with the restored model after refresh

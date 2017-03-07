@@ -35,5 +35,5 @@ Buttons are provided with built-in right to left alignment of the button content
 
 Run the above code to get the below output.
 
-![](rtl/RTL.png)
+![](RTL_images/RTL.png)
 

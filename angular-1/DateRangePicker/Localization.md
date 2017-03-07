@@ -33,4 +33,4 @@ DateRangePicker has been provided with Built-in localization support, so that it
 
 Run the above code to get the below output.
 
-![](localization/localization.png)
+![](localization_images/localization.png)
