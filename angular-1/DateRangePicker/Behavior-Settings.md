@@ -17,7 +17,7 @@ Behavior Settings in **DateRangePicker** refers to the default behavior of the *
 
 ### Value
 
-**DateRangePicker** value can be selected by picking two date values from available two **DatePicker** calendars or you can bind it by using e-value property.
+**DateRangePicker** value can be selected by picking two date values from available two calendars or you can bind it by using e-value property.
 
 The value property can be bound to the **DateRangePicker** as used in the snippet below.
 
@@ -44,18 +44,18 @@ The value property can be bound to the **DateRangePicker** as used in the snippe
 
 Run the above code to get the below output.
 
-![](behavior-settings/value.png)
+![](behavior-settings_images/value.png)
 
 ### StartDate and EndDate
 
-Start Date and End Date properties allows to set the starting and ending date of DateRangePicker. Start Date and End Date of the date range can be pick from DatePicker calendars or we can use the e-StartDate and e-endDate properties to bind their values.
+Start Date and End Date properties allows to set the starting and ending date of DateRangePicker. Start Date and End Date of the date range can be pick from DatePicker calendars or we can use the e-startdate and e-enddate properties to bind their values.
 
-Start Date and End Date of range, can be bound by using e-startDate and e-endDate as used in the snippet below:
+Start Date and End Date of range, can be bound by using e-startdate and e-enddate as used in the snippet below:
 
 {% highlight html %}
 
 <div ng-controller="dateRangeCtrl" >
-   <input type="text" id="daterange" ej-daterangepicker e-startDate="startDate" e-endDate="endDate" e-width="300px" />    
+   <input type="text" id="daterange" ej-daterangepicker e-startdate="startDate" e-enddate="endDate" e-width="300px" />    
 </div>
 
 {% endhighlight %}
@@ -74,7 +74,7 @@ Start Date and End Date of range, can be bound by using e-startDate and e-endDat
 
 Run the above code to get the below output.
 
-![](behavior-settings/start and end date.png) 
+![](behavior-settings_images/start_and_end_date.png) 
 
 ### Preset Ranges
 
@@ -106,11 +106,11 @@ We can make use of preset range for easy selection of a date range in the popup 
 
 Run the above code to get the below output.
 
-![](behavior-settings/ranges.png) 
+![](behavior-settings_images/ranges.png) 
 
 ### Enable TimePicker 
 
-Daterangepicker comes inbuilt with Timepicker control that lets you select the time range along with date range. Both start date and end date, have separate Time Pickers. Enabling the time picker can be bounded with the enableTimePicker property as shown in the below snippet.
+DateRangePicker comes inbuilt with Timepicker control that lets you select the time range along with date range. Both start date and end date, have separate Time Pickers. Enabling the time picker can be bounded with the enableTimePicker property as shown in the below snippet.
 
 {% highlight html %}
 
@@ -133,4 +133,4 @@ Daterangepicker comes inbuilt with Timepicker control that lets you select the t
  
 Run the above code to get the below output.
 
-![](behavior-settings/enable time.png) 
+![](behavior-settings_images/enable_time.png) 

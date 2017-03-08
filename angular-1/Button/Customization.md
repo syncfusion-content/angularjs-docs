@@ -42,7 +42,7 @@ You can bound the buttons of different size using e-size property. Here, we have
 
 Run the above code to get the below output.
 
-![](customization/size.png)
+![](customization_images/size.png)
 
 ## Content Type
 
@@ -79,7 +79,7 @@ Button control supports built-in icon libraries. The icons are added inside a bu
 
 Run the above code to get the below output.
 
-![](customization/content type.png)
+![](customization_images/content-type.png)
 
 ## Image position 
 
@@ -112,7 +112,7 @@ The e-imagePosition property of the button allows you to position the image with
 
 Run the above code to get the below output.
 
-![](customization/image position.png)
+![](customization_images/image-position.png)
 
 ## Button Type
 
@@ -179,5 +179,5 @@ The e-timeInterval property is used to specify the time Interval for triggering 
 
 Run the above code to get the below output.
 
-![](customization/repeat button.png)
+![](customization_images/repeat-button.png)
 

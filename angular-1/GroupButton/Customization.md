@@ -51,15 +51,15 @@ By default GroupButton has standard height and width. You can change this height
 {% highlight html %}
 
      <div id="groupButton" ej-groupbutton e-selectedItemIndex="index" e-height="height" e-width="width">
-        <ul>
+          <ul>
             <li>
-                Save
+                Credit Card
             </li>
             <li>
-                Open
+                Debit Card
             </li>
             <li>
-                Delete
+                Net Banking
             </li>
         </ul>
      </div>
@@ -126,17 +126,7 @@ Simply you can use these Built-in icons by mentioning the icon class name as val
 {% highlight html %}
 
      <div id="groupButton" ej-groupbutton e-dataSource="dataSource">
-        <ul>
-            <li>
-                Save
-            </li>
-            <li>
-                Open
-            </li>
-            <li>
-                Delete
-            </li>
-        </ul>
+        
      </div>
 
 {% endhighlight %}
@@ -169,7 +159,19 @@ EJ AngularJS GroupButton has two Built-in orientation support called vertical an
 
 {% highlight html %}
 
-	 <div id="groupButton" ej-groupbutton e-dataSource="dataSource" e-orientation="orientation" e-width="300px"></div>
+	 <div id="groupButton" ej-groupbutton e-orientation="orientation" e-width="300px">
+       <ul>
+            <li>
+                Credit Card
+            </li>
+            <li>
+                Debit Card
+            </li>
+            <li>
+                Net Banking
+            </li>
+        </ul>
+     </div>
 
 {% endhighlight %}
 
@@ -177,10 +179,6 @@ EJ AngularJS GroupButton has two Built-in orientation support called vertical an
 
 {% highlight js %}
 
-        var data = [
-                { contentType: "imageonly", prefixIcon: "e-icon e-bold_01" },
-                { contentType: "imageonly", prefixIcon: "e-icon e-italic_01" },
-                { contentType: "imageonly", prefixIcon: "e-icon e-underline_01" }];
         angular.module("myApp", ['ejangular']).controller("groupbutton", function ($scope) {
 		 $scope.orientation =  ej.Orientation.Vertical;
 		 $scope.dataSource = data;

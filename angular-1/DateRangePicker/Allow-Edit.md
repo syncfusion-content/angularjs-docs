@@ -32,4 +32,4 @@ Editing the value of the daterangepicker in the input box can be disabled by set
 
 Run the above code to get the below output.
 
-![](allow-edit/allow edit.png)
+![](allow-edit_images/allow-edit.png)
