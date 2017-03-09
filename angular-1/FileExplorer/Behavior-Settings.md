@@ -26,8 +26,8 @@ By default it having the value “*.*”, so it allows all the file types. In ca
 {% highlight javascript %}
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
-        $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-        $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+        $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+        $scope.ajaxaction = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"
     });
 
 {% endhighlight %}
@@ -69,8 +69,8 @@ If you want to customize read action alone, the AJAX **url** and **dataType** ar
 {% highlight javascript %}
 
         angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
-            $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-            $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",
+            $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+            $scope.ajaxaction = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations",
             $scope.ajaxSettings= { read: { url: ajaxJSONPActionHandler, dataType: "jsonp" } }
         });
         

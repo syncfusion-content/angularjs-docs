@@ -161,8 +161,8 @@ Once added the element you can initialize the control from the script section li
 
 {% highlight html %}
 angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
-    $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-    $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+    $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+    $scope.ajaxaction = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"
 
 });
 {% endhighlight %}
