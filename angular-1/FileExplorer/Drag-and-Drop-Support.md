@@ -22,8 +22,8 @@ You can enable or disable this support by using “**allowDragAndDrop**” API o
 {% highlight javascript %}
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
-        $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-        $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+        $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+        $scope.ajaxaction = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"
     });
 
 {% endhighlight %}
