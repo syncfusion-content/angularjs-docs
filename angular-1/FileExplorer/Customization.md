@@ -22,8 +22,8 @@ The dimension of the FileExplorer can be customized through [height](http://help
 {% highlight javascript %}
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
-        $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-        $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+        $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+        $scope.ajaxaction = http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations
     });
 
 {% endhighlight %}
@@ -44,8 +44,8 @@ The visibility of the navigation pane can be controlled by the [showNavigationPa
 {% highlight javascript %}
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
-        $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-        $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+        $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+        $scope.ajaxaction = http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations
     });
 
 {% endhighlight %}
@@ -80,8 +80,8 @@ Also the layout views can be changed through the [layout](http://help.syncfusion
 {% highlight javascript %}
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
-        $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-        $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+        $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+        $scope.ajaxaction = http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations
     });
 
 {% endhighlight %}
@@ -102,8 +102,8 @@ The behavior of the columns can be customized through the [columns](http://help.
 {% highlight javascript %}
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
-        $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-        $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",
+        $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+        $scope.ajaxaction = http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations,
         $scope.gridSettings={
 
                     // disables the sorting functionality in grid view
@@ -140,8 +140,8 @@ The footer displays the details of the current selected files and folders, and t
 {% highlight javascript %}
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
-        $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-        $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+        $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+        $scope.ajaxaction = http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations
     });
 
 {% endhighlight %}

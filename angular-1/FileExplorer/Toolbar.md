@@ -137,8 +137,8 @@ The visibility of the toolbar can be customized through the [showToolbar](https:
 {% highlight javascript %}
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
-        $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-        $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+        $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+        $scope.ajaxaction = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"
     });
 
 {% endhighlight %}
@@ -157,8 +157,8 @@ As you can see the available toolbar items from [here](#toolbar-items). From the
 {% highlight javascript %}
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
-        $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-        $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",
+        $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+        $scope.ajaxaction = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations",
         
         // denotes the order of the tools categories
         
@@ -190,8 +190,8 @@ The FileExplorer allows the following filter types in the search functionality.
 {% highlight javascript %}
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
-        $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-        $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",
+        $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+        $scope.ajaxaction = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations",
         $scope.filterSettings: {
 
                     // it enables the case sensitive search
@@ -230,8 +230,8 @@ You can find an online demo sample of FileExplorer with custom tool from [here](
        angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
            $scope.toolsList = ["layout", "creation", "navigation", "addressBar", "editing", "copyPaste", "getProperties", "customTool", "searchBar"];
            $scope.tools = ej.FileExplorer.prototype.defaults.tools;
-           $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-           $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",
+           $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+           $scope.ajaxaction = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations",
             $scope.tools.customTool = [{
                 name: "Help",
                 tooltip: "Help ",
@@ -307,8 +307,8 @@ This property has the below sub properties with the default values:
 {% highlight javascript %}
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
-        $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-        $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",
+        $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+        $scope.ajaxaction = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations",
         $scope.uploadSettings: {
 
                     // it disables the multi file upload functionality

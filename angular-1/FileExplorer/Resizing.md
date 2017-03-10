@@ -22,8 +22,8 @@ The resize behavior can be enabled through the [enableResize](https://help.syncf
 {% highlight javascript %}
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
-        $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-        $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+        $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+        $scope.ajaxaction = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"
     });
 
 {% endhighlight %}
@@ -41,8 +41,8 @@ By enabling the [isResponsive](https://help.syncfusion.com/api/js/ejfileexplorer
 {% highlight javascript %}
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
-        $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-        $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+        $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+        $scope.ajaxaction = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"
     });
 
 {% endhighlight %}
@@ -60,8 +60,8 @@ You can restrict the dimension of the FileExplorer by setting the [minHeight](ht
 {% highlight javascript %}
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
-        $scope.path = "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-        $scope.ajaxaction = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+        $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+        $scope.ajaxaction = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"
     });
 
 {% endhighlight %}
