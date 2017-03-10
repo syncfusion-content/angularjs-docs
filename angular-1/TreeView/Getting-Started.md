@@ -136,7 +136,7 @@ angular.module('treeApp', ['ejangular'])
 
 {% highlight html %} 
 var dataManager = ej.DataManager({
-url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+url: "//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/"
 });
 // Query creation
 var query = ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
