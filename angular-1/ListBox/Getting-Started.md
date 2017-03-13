@@ -109,7 +109,8 @@ The below table depicts the properties of **ListBox** widget that supports model
 <tr>
 <td>
 ejListbox</td><td>
-valuedataSource</td></tr>
+value
+dataSource</td></tr>
 </table>
 
 
