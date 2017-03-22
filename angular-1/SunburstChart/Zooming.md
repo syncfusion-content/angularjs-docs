@@ -23,8 +23,9 @@ The following code shows how to initialize the zooming.
 ![](Zooming_images/Zooming_img1.gif)
 
 ## Zooming toolbar
+
 By default, zooming toolbar will be enabled while zooming the segment.It contains both back and reset option.
-You can align the zooming toolbar position by using `e-zoomsettings-toolbarHorizontalAlignment` and `e-zoomsettings-toolbarVerticalAlignment` property.
+You can align the zooming toolbar position by using `e-zoomsettings-toolbarHorizontalAlignment` and `e-zoomsettings-toolbarverticalalignment` property.
 
 
 {% highlight js %}

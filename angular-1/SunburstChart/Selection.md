@@ -8,7 +8,8 @@ documentation: ug
 ---
 
 # Selection 
-EjSunburstChart provides selection support for the points on mouse click. To enable the selection , set the `e-selectionsettings-enable` property to true in the `e-selectionsettings`. 
+
+SunburstChart provides selection support for the points on mouse click. To enable the selection , set the `e-selectionsettings-enable` property to true in the `e-selectionsettings`. 
 
 {% highlight js %}
 
@@ -23,7 +24,7 @@ EjSunburstChart provides selection support for the points on mouse click. To ena
  
 ## Selection Display mode
 
- You can customize the selected  segment appearance by using color or opacity. You can choose between color or opacity using the `e-selectionsettings-type` property in the selection Settings.
+ You can customize the selected  segment appearance by using *color or opacity*. You can choose between color or opacity using the `e-selectionsettings-type` property in the selection Settings.
 
 *	selectionByColor – To display the selected segment appearance using color.
 *	selectionByOpacity – To display the selected segment appearance using opacity.

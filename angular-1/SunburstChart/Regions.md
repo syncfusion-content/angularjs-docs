@@ -11,11 +11,11 @@ documentation: ug
 
 The Sunburst region represents the entire chart and all its elements. It includes all the chart elements like Legend, DataLabel, Levels etc. The major properties of the Sunburst Chart are as follows
 
-`datasource` – Provides the data that are used to generate the chart.
-`valueMemberPath`- Property based on the which the data segment are rendered in the Sunburst chart 
-`legend` – displays the legend of the Sunburst Chart
-`levels`- displays the hierarchical levels for the chart 
-`datalabel`– displays the datalabels for the Sunburst Chart
+* `datasource` – Provides the data that are used to generate the chart.
+* `valueMemberPath`- Property based on the which the data segment are rendered in the Sunburst chart 
+* `legend` – displays the legend of the Sunburst Chart
+* `levels`- displays the hierarchical levels for the chart 
+* `datalabel`– displays the datalabels for the Sunburst Chart
 
 ## Start and End Angle
 Start and End Angle

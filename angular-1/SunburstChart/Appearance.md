@@ -40,7 +40,9 @@ The Sunburst Chart rendered with palette colors
 
  
 ## Built- in Themes
+
 The Sunburst Chart supports different themes. 
+
 *	flatlight
 *	flatdark
 *	gradientlight
@@ -61,7 +63,6 @@ The Sunburst Chart supports different themes.
 You can set your desired theme by using the **e-theme** property. **Flat light** is the default theme used in the Sunburst Chart.
 
 {% highlight js %}
-
 
 <div id="container" ej-sunburstchart e-theme="flatdark" >					
 </div>

@@ -2894,7 +2894,7 @@ To render a Box and Whisker Chart, set the series `e-type` as **"boxandwhisker"*
 
 ### BoxPlotMode
 
-You can change the rendering mode of the  Box and Whisker series using the `e-boxplotmode` property. The default value of `e-boxplotmode` is **"exclusive"**.The other boxPlotModes available are `inclusive` and *normal*. 
+You can change the rendering mode of the  Box and Whisker series using the `e-boxplotmode` property. The default value of `e-boxplotmode` is **"exclusive"**.The other boxPlotModes available are `inclusive` and `normal`. 
 
 {% highlight html %}
 
