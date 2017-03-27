@@ -2850,8 +2850,129 @@ To customize the error bar cap *visibility, length, width* and *fill* color, you
 
 ![](Chart-Types_images/Chart-Types_img80.png)
 
+## Box and Whisker Chart 
+
+To render a Box and Whisker Chart, set the series `e-type` as **"boxandwhisker"** in the chart series. Box and Whisker chart requires
+2 fields (x and y) to plot a segment. The feild y requires n number of data or it should  contain minimum five values to plot a segment.
+
+{% highlight html %}
 
 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+<head>
+    <title>Essential Studio for AngularJS: Chart</title>
+    <!--CSS and Script file References -->
+</head>
+<body ng-controller="ChartCtrl">
+    <div id="container" ej-chart>
+        <e-series>
+            <e-series e-type="boxandwhisker" e-datasource="datasource" e-xname="x" e-yname="y"></e-series>
+        </e-series>
+    </div>
+    <script>
+        var chartData = [
+             { x: 'Development',        
+               y:[22,22,23,25,25,25,26,27,27,28,28,29,30,32,34,32,34,36,35,38] },
+             { x: 'Testing', y: [22,33,23,25,26,28,29,30,34,33,32,31,50] },
+             { x: 'HR', y: [22,24,25,30,32,34,36,38,39,41,35,36,40,56] },
+             { x: 'Finance', y: [26,27,28,30,32,34,35,37,35,37,45] },
+             { x: 'R&D', y: [26, 27, 29, 32, 34, 35, 36, 37, 38, 39, 41, 43, 58] },
+             // ...
+        ];
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+            $scope.datasource = chartData;
+        });
+    </script>
+</body>
+</html>
 
 
+{% endhighlight %}
 
+![](=Chart-Types_images/Chart-Types_img90.png)
+
+### BoxPlotMode
+
+You can change the rendering mode of the  Box and Whisker series using the `e-boxplotmode` property. The default value of `e-boxplotmode` is **"exclusive"**.The other boxPlotModes available are `inclusive` and `normal`. 
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+<head>
+    <title>Essential Studio for AngularJS: Chart</title>
+    <!--CSS and Script file References -->
+</head>
+<body ng-controller="ChartCtrl">
+    <div id="container" ej-chart>
+        <e-series>
+            <e-series e-boxplotmode="inclusive"></e-series>
+        </e-series>
+    </div>
+    <script>
+       // Add the dataSource
+      //… 
+    </script>
+</body>
+</html>
+
+{% endhighlight %}
+
+### ShowMedian
+
+Box and Whisker `e-showMedian` property is used to show the box and whisker average value. The default value of `e-showmedian` is **"false"**.  
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+<head>
+    <title>Essential Studio for AngularJS: Chart</title>
+    <!--CSS and Script file References -->
+</head>
+<body ng-controller="ChartCtrl">
+    <div id="container" ej-chart>
+        <e-series>
+            <e-series e-showMedian="true"></e-series>
+        </e-series>
+    </div>
+    <script>
+       // Add the dataSource
+      //… 
+    </script>
+</body>
+</html>
+
+
+{% endhighlight %}
+
+![](/js/Chart/Chart-Types_images/Chart-Types_img91.png)
+
+###  Customize the Outlier
+
+Outlier symbol, width and height can be customized using outlierSettings through `e-outliersettings` property. By default Outlier symbol is displayed as circle with a height and width of 6 pixels.
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+<head>
+    <title>Essential Studio for AngularJS: Chart</title>
+    <!--CSS and Script file References -->
+</head>
+<body ng-controller="ChartCtrl">
+    <div id="container" ej-chart>
+        <e-series e-outlierSettings-shape="triangle"
+                  e-outlierSettings-size-height="10"
+                  e-outlierSettings-size-width="10">
+        </e-series>    </div>
+    <script>
+       // Add the dataSource
+      //… 
+    </script>
+</body>
+</html>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img92.png)
+
+[Click](http://ngjq.syncfusion.com/#/chart/boxandwhisker) here to view the Box and Whisker Chart online demo sample.
