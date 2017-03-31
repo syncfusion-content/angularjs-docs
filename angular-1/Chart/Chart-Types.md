@@ -869,7 +869,7 @@ To render a Stacked Column Chart, set the `e-type` as **"stackingColumn"** in th
 ![](Chart-Types_images/Chart-Types_img21.png)
 
 
-### Group stacked columns
+### Cluster / Group stacked columns
 
 You can use the `e-stackinggroup` property to group the stacked columns. Columns with same group name are stacked on top of each other.
 
@@ -969,7 +969,7 @@ To render a 100% Stacked Column Chart, set the `e-type` as **"stackingColumn100"
 ![](Chart-Types_images/Chart-Types_img24.png)
 
 
-### Group 100% stacked columns
+### Cluster / Group 100% stacked columns
 
 By using the `e-stackinggroup` property, you can group the 100% stacking columns. Columns with same group name are stacked on top of each other. 
 
@@ -1136,7 +1136,7 @@ To render a Stacked Bar Chart, set the `e-type` as **"stackingBar"** in the char
 
 
 
-### Group stacked bars
+### Cluster / Group stacked bars
 
 You can use the `e-stackinggroup` property to group the stacking bars with the same group name. 
 
