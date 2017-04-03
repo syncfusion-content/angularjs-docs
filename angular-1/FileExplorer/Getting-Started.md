@@ -167,6 +167,8 @@ angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scop
 });
 {% endhighlight %}
 
+To perform the server side actions using local web API service, please refer the [link](https://help.syncfusion.com/js/fileexplorer/how-to#service-for-fileexplorer)
+
 Once you completed the above steps, you get an output like below,
 
 ![](Getting-Started_images/Getting-Started_img1.png)
