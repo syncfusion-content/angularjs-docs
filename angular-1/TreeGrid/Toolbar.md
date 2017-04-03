@@ -61,7 +61,7 @@ The following screenshot displays the toolbar option in TreeGrid control.
 
 ![](Toolbar_images/Toolbar_img1.png)
 
-N> To perform add,edit,delete,cancel,update using Toolbar items we need to enable add/edit/delete using editSettings [`editSettings`](https://help.syncfusion.com/api/js/ejtreegrid#members:editsettings "editSettings").
+N> To perform add,edit,delete,cancel,update using Toolbar items we need to enable add/edit/delete using [`editSettings`](https://help.syncfusion.com/api/js/ejtreegrid#members:editsettings "editSettings").
   
 ## Custom Toolbar Items
 
