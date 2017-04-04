@@ -9,46 +9,137 @@ documentation: ug
 
 # Toolbar
 
-Gantt control contains toolbar options for editing, searching, expanding and collapsing all records, indent, out dent, delete and add task. You can enable toolbar using the following code example.
+In Gantt we can show/hide the Toolbar by using [`toolbarSettings.showToolbar`](https://help.syncfusion.com/api/js/ejgantt#members:toolbarsettings-showtoolbar "showToolbar") property.We can add default toolbar items by [`toolbarSettings.toolbarItems`](https://help.syncfusion.com/api/js/ejgantt#members:toolbarsettings-toolbaritems "toolbarItems"). User can also create a custom toolbar items by using [`toolbarSettings.customToolbarItems`](https://help.syncfusion.com/api/js/ejgantt#members:toolbarsettings-customToolbarItems "customToolbarItems").
 
-{% highlight javascript %}
+## Default Toolbar Items
+Using Gantt default toolbar items we can perform below operations.
 
-<body ng-controller="GanttCtrl">
-   <!--Add  Gantt control here-->    
-   <div id="GanttContainer" ej-gantt
-      //...
-      e-toolbarsettings="toolbarSettings" 
-      >
-   </div>
-  <script>
-    var toolbarSettings= {
-               showToolbar: true,
-            toolbarItems: [
-                ej.Gantt.ToolbarItems.Add, //TO ADD THE NEW TASK 
-                ej.Gantt.ToolbarItems.Edit, //TO MODIFY THE SELECTED TASK DETAILS
-                ej.Gantt.ToolbarItems.Delete, //TO DELETE THE SELECTED TASK
-                ej.Gantt.ToolbarItems.Update, //TO SAVE THE MODIFIED TASK DETAILS
-                ej.Gantt.ToolbarItems.Cancel, //TO CANCEL THE MODIFIED TASK DETAILS
-                ej.Gantt.ToolbarItems.Indent, //TO INDENT THE SELECTED TASK 
-                ej.Gantt.ToolbarItems.Outdent, //TO OUTDENT THE SELECTED TASK
-                ej.Gantt.ToolbarItems.ExpandAll, //TO EXPAND ALL THE TASKS IN GANTT
-                ej.Gantt.ToolbarItems.CollapseAll, //TO COLLAPSE ALL THE TASK IN GANTT
-                ej.Gantt.ToolbarItems.Search, //TO FIND THE TASK
-                ej.Gantt.ToolbarItems.PrevTimeSpan, //TO SHIFT THE PROJECT TO PREVIOUS TIME SCALE
-                ej.Gantt.ToolbarItems.NextTimeSpan //TO SHIFT THE PROJECT TO NEXT TIME SCALE
-            ],
-            }
-    angular.module('listCtrl', ['ejangular'])
-        .controller('GanttCtrl', function($scope) {
-            //...
-            $scope.toolbarSettings = "toolbarSettings";
+* **Add**- To add new task.
+
+* **Edit**-To edit a selected task.
+
+* **Delete**- To delete a selected task.
+		   
+* **Cancel**- To cancel the edited changes in a task.
+		   
+* **Update**- To save the edited changes in a task.
+		   
+* **ExpandAll**- To expand all the Gantt rows.
+		   
+* **CollapseAll**- To collapse all the Gantt rows.
+
+* **Indent**- To indent the selected task in Gantt.
+		   
+* **Outdent**- To outdent the selected task in Gantt.
+		   
+* **CriticalPath**- To support critical path in Gantt.
+
+* **PrevTimeSpan**- To navigate the Gantt timeline to previous time span.
+
+* **NextTimeSpan**- To navigate the Gantt timeline to Next time span.
+
+* **Search**- To perform search operation in Gantt.
+		   
+* **ExcelExport**- To export Gantt in Excel format.
+
+* **PdfExport**- To export Gantt in Pdf format.
+
+We can enable Gantt toolbar by using below code example:
+{% highlight js %}
+    <body ng-controller="GanttCtrl">                
+           <div id="angulargantt" ej-gantt e-toolbarsettings="toolbarSettings"></div>            
+    <script>       
+        var toolbarSettings =
+            {
+             showToolbar: true,
+             toolbarItems: [
+                ej.Gantt.ToolbarItems.Add, 
+                ej.Gantt.ToolbarItems.Edit, 
+                ej.Gantt.ToolbarItems.Delete,
+                ej.Gantt.ToolbarItems.Update,
+                ej.Gantt.ToolbarItems.Cancel,
+                ej.Gantt.ToolbarItems.Indent, 
+                ej.Gantt.ToolbarItems.Outdent,
+                ej.Gantt.ToolbarItems.ExpandAll,
+                ej.Gantt.ToolbarItems.CollapseAll,
+                ej.Gantt.ToolbarItems.Search,
+		        ej.Gantt.ToolbarItems.PrevTimeSpan,
+                ej.Gantt.ToolbarItems.NextTimeSpan,
+		        ej.Gantt.ToolbarItems.CriticalPath,
+		        ej.Gantt.ToolbarItems.ExcelExport,
+		        ej.Gantt.ToolbarItems.PdfExport
+            ]
+        }       
+        angular.module('listCtrl', ['ejangular'])
+        .controller('GanttCtrl', function ($scope) {      
+            $scope.toolbarSettings = toolbarSettings;
         });
-</script>
+    </script>   
 </body>
-
 {% endhighlight %}
-
-The following screenshot shows the toolbar option in Gantt control.
+The following screenshot displays the toolbar option in Gantt control.
 
 ![](Toolbar_images/Toolbar_img1.png)
+
+N> To perform add,edit,delete,cancel,update,indent,outdent using Toolbar items we need to enable add/edit/delete/indent using [`editSettings`](https://help.syncfusion.com/api/js/ejGantt#members:editsettings "editSettings").
+  
+## Custom Toolbar Items
+
+CustomToolbarItems allows us to insert custom icons and custom template in Gantt toolbar. By using below properties we can customize Gantt toolbar as per our requirement.
+
+* **text**- To insert the custom icons in toolbar using CSS class name selector.
+
+* **templateID**-To insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to Gantt toolbar.
+
+* **tooltipText**-Displays tooltip text for the custom icons. 
+
+To insert EJ Controls in Gantt toolbar we need to initiate the control in [`create`](https://help.syncfusion.com/api/js/ejgantt#events:create "create") client side event.In [`toolbarClick`](https://help.syncfusion.com/api/js/ejgantt#events:toolbarclick "toolbarclick") client side event we can bind actions to the custom toolbar items.
+
+{% highlight html %}
+   <body ng-controller="GanttCtrl">
+    <script id="ColumnVisibility" type="text/ng-template">
+        <input id="dropdownContainer" />
+    </script>                
+           <div id="angulargantt" ej-gantt 
+                     e-toolbarsettings="toolbarSettings"                    
+                     e-create="create"
+                     e-toolbarclick="toolbarClick">
+            </div>            
+    <script>       
+        var toolbarSettings =
+            {
+                showToolbar: true,
+                customToolbarItems: [
+                            { templateID: "#ColumnVisibility", tooltipText: "Column Visibility" },
+                            { text: "Reset", tooltipText: "Reset" }],
+            }       
+        angular.module('listCtrl', ['ejangular'])
+        .controller('GanttCtrl', function ($scope) {           
+            $scope.toolbarClick= function (args) {
+                if (args.itemName == "Reset") {
+                    //we can bind the custom actions here
+                }
+            },
+            $scope.create= function (args) {
+                //Here we can append custom EJ controls
+                $("#dropdownContainer").ejDropDownList({});
+            }            
+            $scope.toolbarSettings = toolbarSettings;
+        });
+    </script>
+    <style type="text/css" class="cssStyles">
+        #angulargantt_ColumnVisibility {
+            padding-top: 2px;
+            padding-bottom: 0px;
+        }
+
+        .Reset:before {
+            content: "\e677";
+        }
+    </style>
+</body>
+{% endhighlight %}
+
+![](Toolbar_images/Toolbar_img2.png)
+	
 
