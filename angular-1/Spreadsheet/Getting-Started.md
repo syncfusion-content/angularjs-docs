@@ -110,6 +110,7 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
    <script>
     var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
     syncApp.controller('SpreadsheetCtrl', function ($scope,$rootScope) {
+    // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
     $scope.sheetData = [{ rangeSettings: [{ dataSource: window.defaultData, startCell:'A1' }] }];
     });
    </script>
