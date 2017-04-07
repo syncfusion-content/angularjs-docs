@@ -23,8 +23,6 @@ If you want to insert an image from online source like Google, Ping, etc., you n
 
 <script type="text/javascript">
 
-var fileService = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction";
-
 angular.module('rteApp', ['ejangular'])
 .controller('RTECtrl', function ($scope) {
 $scope.toolslist = ["images"];
@@ -132,15 +130,15 @@ The General and Advanced tabs in the RTE Image browser can be removed by setting
 
     <script>
 
-        var fileService = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction";
+        var fileService = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
         angular.module('rteApp', ['ejangular'])
         .controller('RTECtrl', function ($scope) {
             $scope.toolslist = ["images"];
             $scope.tools = {
                 images: ["image"]
             };
-            $scope.imageBrowser = { filePath: "http://mvc.syncfusion.com/OdataServices/FileBrowser/", ajaxAction: fileService, extensionAllow: "*.png, *.gif, *.jpg, *.jpeg, *.docx" };
-            $scope.fileBrowser = { filePath: "http://mvc.syncfusion.com/OdataServices/FileBrowser/", ajaxAction: fileService, extensionAllow: "*.txt, *.png, *.pdf,*.jpeg" };
+            $scope.imageBrowser = { filePath: "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/", ajaxAction: fileService, extensionAllow: "*.png, *.gif, *.jpg, *.jpeg, *.docx" };
+            $scope.fileBrowser = { filePath: "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/", ajaxAction: fileService, extensionAllow: "*.txt, *.png, *.pdf,*.jpeg" };
             $scope.create=function (args) {
                 this._explorerObj.removeToolbarItem("NewFolder");
             }

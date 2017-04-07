@@ -135,7 +135,7 @@ The following screenshot illustrates the **Tab** with disabled format.
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
 
 
- ## Enabling Reload Icon
+## Enabling Reload Icon
  
 Without refresh/reload the whole page, you can reload a particular **Tab** using **Reload** icon. The **Reload** icon is appeared at right corner of the **Tab** by enabling the property [showReloadIcon](https://help.syncfusion.com/api/js/ejtab#members:showreloadicon) to ‘**true**’. When you move cursor over the **Tab** headers, the **Reload** icon is displayed. By default the property value is set to ‘**false**’.   
 

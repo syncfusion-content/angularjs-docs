@@ -218,5 +218,6 @@ Export Helper functions are available in the Assembly `Syncfusion.EJ.Export`, wh
 
 ### Word Export
 ![](ImportAndExport_images/export_word_images.png)
+
 ### PDF Export
 ![](ImportAndExport_images/export_pdf_images.png)

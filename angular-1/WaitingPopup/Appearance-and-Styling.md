@@ -55,7 +55,7 @@ The following steps explains that how to display a text and image using template
 {% highlight html %}
 
 <div class="control">
-    <div id="waitingPopUp" ej-waitingpopup e-cssclass="customcss" e-showoninit="true" e-template="#content"></div>
+    <div id="waitingPopUp" ej-waitingpopup e-cssclass="customcss" e-showoninit="true" e-template="#template"></div>
 </div>  
 
 {% endhighlight %}
@@ -130,6 +130,7 @@ N> Images for this sample are available ‘installed sample location /images/wai
        cursor: default;
        height: 112px;
        width: 275px;
+       color:white;
    }
 </style>
 

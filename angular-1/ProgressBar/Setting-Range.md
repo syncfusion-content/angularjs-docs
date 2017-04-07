@@ -17,7 +17,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar wi
 {% highlight html %}
 
    <div class="control">
-    <div id="progressbar" ej-progressbar e-minvalue="40" e-maxvalue="80" e-value="60" e-height="20" e-width="500" e-create="create"></div>
+    <div id="progressbar" ej-progressbar e-minvalue="40" e-maxvalue="80" e-value="80" e-height="20" e-width="500" e-create="create"></div>
    </div>
 
 {% endhighlight %}
