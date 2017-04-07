@@ -127,21 +127,24 @@ N> ODataAdaptor is the default adaptor for DataManager. On binding to other web 
 	
 {% highlight html %}
 
-	<select id="dropdown1" ej-dropdownlist e-datasource="dataList" e-value="value" e-fields-text="CustomerID"/>
+	<select id="dropdown1" ej-dropdownlist e-datasource="dataList"  e-fields-text="text"/>
 	
 {% endhighlight %}
 	
 {% highlight javascript %}	
 	
-            <script>
+       <script>
 			
-            var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Customers");
-			
-		   angular.module('dropdownlistApp', ['ejangular']).controller('dropdownlistCtrl', function ($scope) {
+              var  Customers = [
+                 { id: "1", text: "ALFKI" }, { id: "2", text: "ANATR" }, { id: "3", text: "ANTON" },
+                 { id: "4", text: "AROUT" }, { id: "5", text: "BERGS" }, { id: "6", text: "BLAUS" }
+            ];
+			var dataManager = ej.DataManager(Customers);
+            angular.module('dropdownlistApp', ['ejangular']).controller('dropdownlistCtrl', function ($scope) {
 	             $scope.dataList = dataManager;
-                }); 
+				  });
 
-            </script>
+       </script>
 			
 {% endhighlight %}
 	
