@@ -92,7 +92,7 @@ A simple HTML file with required CSS and script reference added to create TreeVi
 
 ## TreeView using Data Binding
 
-You can bind local data or remote data source to create a TreeView as shown below code example.
+You can bind local data source to create a TreeView as shown below code example.
 
 {% highlight html %}
 <div id="treeView" e-showCheckbox="true" ej-treeview e-fields-datasource="dataList" e-fields-id="id" e-fields-parentid="pid" e-fields-text="name" e-fields-haschild="hasChild" e-fields-expanded="expanded" />
@@ -127,29 +127,6 @@ angular.module('treeApp', ['ejangular'])
      });       
  {% endhighlight %}
  
-## Initialize the TreeView with remote DataSource
-
-{% highlight html %} 
-<div id="treeView" ej-treeview e-fields-datasource="dataList" e-fields-query="query" e-fields-id="CategoryID" e-fields-text="CategoryName" e-fields-child="child" />                        
-{% endhighlight %}
-
-
-{% highlight html %} 
-var dataManager = ej.DataManager({
-url: "//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/"
-});
-// Query creation
-var query = ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
-         
-			
-					
-angular.module('treeApp', ['ejangular']).controller('TreeCtrl', function ($scope) {
-	$scope.dataList = dataManager;    
-        $scope.query = query;
-        $scope.child = { dataSource: dataManager, tableName: "Products", id: "ProductID", parentId: "CategoryID", text: "ProductName"
-        };
-});
-{% endhighlight %}
 
 ## Two-way Binding
 
