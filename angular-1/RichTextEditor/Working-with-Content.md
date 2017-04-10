@@ -43,7 +43,7 @@ The editor offers you to add external CSS file to style the &lt; iframe &gt; ele
 
 {% highlight javascript %}
 
-<textarea id="texteditor" ej-rte e-value="val"></textarea>
+<textarea id="texteditor" ej-rte e-value="val" e-create="addCssToIframe"></textarea>
  
  <script type="text/javascript">
 
@@ -257,7 +257,7 @@ N> <BR>
 angular.module('rteApp', ['ejangular'])
 .controller('RTECtrl', function ($scope) {
     $scope.val = "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images, it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.";
-    $scope.atrrib = { style: 'font-family:Arial;font-size:14px' };
+    $scope.attrib = { style: 'font-family:Arial;font-size:14px' };
 });
 
 </script>

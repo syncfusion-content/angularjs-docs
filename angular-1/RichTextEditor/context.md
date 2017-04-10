@@ -16,10 +16,10 @@ Based on the target content type context menu provides different actions. Refer 
 {% highlight html %}
 
 <textarea id="texteditor" ej-rte e-showcontextmenu="true">
-            <p><b>Description:</b></p>
-            <p>
-                The Rich Text Editor (RTE) control is easy to render in the client side. Customers can easily edit the contents and get the HTML content for the displayed content. A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered in the text area.
-            </p>
+<p><b>Description:</b></p>
+<p>
+The Rich Text Editor (RTE) control is easy to render in the client side. Customers can easily edit the contents and get the HTML content for the displayed content. A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered in the text area.
+</p>
 </textarea>
 
 //or
@@ -81,16 +81,17 @@ However we can disable the context menu by using ShowContextMenu API and it need
 
 {% highlight html %}
 
- <textarea id="texteditor" ej-rte e-contextmenuclick="menuclick">
-        <p><b>Description:</b></p>
-        <p>
-        The Rich Text Editor (RTE) control is easy to render in the
-        client side. Customers can easily edit the contents and get the HTML content for
-        the displayed content. A rich text editor control provides users with a toolbar
-        that helps them to apply rich text formats to the text entered in the text
-        area.
-        </p>
+<textarea id="texteditor" ej-rte e-contextmenuclick="menuclick">
+<p><b>Description:</b></p>
+<p>
+The Rich Text Editor (RTE) control is easy to render in the
+client side. Customers can easily edit the contents and get the HTML content for
+the displayed content. A rich text editor control provides users with a toolbar
+that helps them to apply rich text formats to the text entered in the text
+area.
+</p>
 </textarea>
+
 <script>
 
 angular.module('rteApp', ['ejangular'])
@@ -113,19 +114,19 @@ angular.module('rteApp', ['ejangular'])
 
 ## Removing an item from the context menu
 
-  To remove a menu-item from the editor contextmenu, you have to use the ‘removeMenuOption’ method from the ejRTE object and find the method and parameter details with the [API-document](http://help.syncfusion.com/api/js/ejrte#methods:removeMenuOption "").
+  To remove a menu-item from the editor contextmenu, you have to use the ‘removeMenuOption’ method from the ejRTE object and find the method and parameter details with the [API-document]("http://help.syncfusion.com/api/js/ejrte#methods:removeMenuOption").
 
 {% highlight html %}
 
- <textarea id="texteditor" ej-rte>
-            <p><b>Description:</b></p>
-            <p>
-				The Rich Text Editor (RTE) control is easy to render in the
-			client side. Customers can easily edit the contents and get the HTML content for
-			the displayed content. A rich text editor control provides users with a toolbar
-			that helps them to apply rich text formats to the text entered in the text
-			area. 
-			</p>
+<textarea id="texteditor" ej-rte>
+<p><b>Description:</b></p>
+<p>
+The Rich Text Editor (RTE) control is easy to render in the
+client side. Customers can easily edit the contents and get the HTML content for
+the displayed content. A rich text editor control provides users with a toolbar
+that helps them to apply rich text formats to the text entered in the text
+area. 
+</p>
 </textarea>
 
 <script>

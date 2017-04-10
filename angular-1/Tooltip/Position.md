@@ -68,8 +68,10 @@ Let's append our Tooltip to a custom 'frame' container:
 
 {% highlight html %}
 
-<div class="control">
-    TypeScript lets you write <a id="test" ej-tooltip e-content="content"><u> JavaScript</u> </a>the way you really want to.
+<div class="frame">
+    <div class="control">
+        TypeScript lets you write <a id="test" ej-tooltip e-content="content" e-containment="containment"><u> JavaScript</u> </a>the way you really want to.
+    </div>
 </div>
 
 <script>
