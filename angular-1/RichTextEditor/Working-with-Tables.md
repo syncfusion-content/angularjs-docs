@@ -27,10 +27,10 @@ By default, [Insert Table](http://help.syncfusion.com/api/js/ejrte#members:tools
 
 angular.module('rteApp', ['ejangular'])
 .controller('RTECtrl', function ($scope) {
-    $scope.toolslist = ["images"];
-    $scope.tools = {
-        images: ["image"]
-    }         
+    $scope.toolslist = ["tables"];
+    $scopetools = {
+            tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColumnRight", "deleteRow", "deleteColumn", "deleteTable"]
+    };    
 });
 
 </script>

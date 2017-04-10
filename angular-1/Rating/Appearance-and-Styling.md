@@ -26,7 +26,7 @@ The following code example is used to render the **Rating** control without **to
          <td valign="top">Rating:
          </td>
          <td>
-            <input id="rating" type="text" />
+            <input id="rating" type="text" ej-rating e-showtooltip="false" />
          </td>
       </tr>
    </table>

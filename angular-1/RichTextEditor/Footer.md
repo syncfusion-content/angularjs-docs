@@ -34,8 +34,6 @@ You can paste HTML text into Source view. If you cut or copy from HTML source su
 
  <textarea id="texteditor" ej-rte e-showfooter="true" e-showhtmlsource="true"></textarea>
 
-</script>
-
 {% endhighlight %}
 
 N> Source view is useful for working directly with raw HTML text, so this tool is mainly used for advanced users who would like to have more control over the source of their content. 

@@ -35,7 +35,6 @@ Add the following code in your **HTML** page.
             <li><a>Open</a></li>
             <li><a>Edit</a></li>
             <li><a>Save</a></li>
-            <li class="separator"></li>
             <li><a>Save as</a></li>
             <li><a>Print</a></li>
             <li><a>Properties</a></li>

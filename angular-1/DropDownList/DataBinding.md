@@ -245,7 +245,7 @@ OData is a standardized protocol for creating and consuming data. Provide the [
 
 {% highlight html %}
 
- <input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="ShipCountry" e-value="OrderID" />
+ <input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="ShipCountry" e-fields-value="OrderID" />
      
 {% endhighlight %}
 
@@ -267,7 +267,7 @@ By using URL property of “ej.DataManager” bind OData Version 4 Service link 
 
 {% highlight html %}
 
-<input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="RegionDescription" e-value="RegionID" />
+<input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="RegionDescription" e-fields-value="RegionID" />
      
 {% endhighlight %}
 
@@ -295,7 +295,7 @@ Using [ej.WebApiAdaptor](http://help.syncfusion.com/js/datamanager/data-adaptors
 
 {% highlight html %}
 
-<input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="CustomerID" e-value="CustomerID" />
+<input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="CustomerID" e-fields-value="CustomerID" />
      
 {% endhighlight %}
 
@@ -341,7 +341,7 @@ By using “[WebMethodAdaptor](http://help.syncfusion.com/js/datamanager/getting
 {% highlight html %}
 
 <span> Please select... </span>
-<input type="text" id="dropdown1" ej-dropdownlist e-datasource="dataList" e-query="queries" e-fields-text="Name" e-value="Country" />
+<input type="text" id="dropdown1" ej-dropdownlist e-datasource="dataList" e-query="queries" e-fields-text="Name" e-fields-value="Country" />
 
 {% endhighlight %}
 
@@ -472,7 +472,7 @@ In client side, specify the URL of Data to url property and specify the type of 
 {% highlight javascript %}
 
 <div class="ctrllabel"> Select an Employee</div>
-<input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="Name" e-value="Role" />
+<input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="Name" e-fields-value="Role" />
 
 <script>
     
@@ -496,7 +496,7 @@ When using remote data binding, the adaptor of "ej.DataManager" plays vital role
 
 {% highlight html %}
 
-<input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="FirstName" e-value="LastName" />
+<input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="FirstName" e-fields-value="LastName" />
      
 {% endhighlight %}
 
@@ -559,7 +559,7 @@ It loads the data on scrolling the list of items. This can be achieved by settin
 
 {% highlight html %}
 
-<input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="ShipName" e-value="ShipCountry" e-itemscount="7" e-allowvirtualscrolling="true" e-virtualscrollmode="mode">
+<input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="ShipName" e-fields-value="ShipCountry" e-itemscount="7" e-allowvirtualscrolling="true" e-virtualscrollmode="mode">
      
 {% endhighlight %}
 
@@ -585,7 +585,7 @@ N> In both modes, set of items will be fetched based on the count specified in t
 
 {% highlight html %}
 
-<input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="ShipName" e-value="ShipCountry" e-itemscount="7" e-allowvirtualscrolling="true" e-virtualscrollmode="mode">
+<input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="ShipName" e-fields-value="ShipCountry" e-itemscount="7" e-allowvirtualscrolling="true" e-virtualscrollmode="mode">
      
 {% endhighlight %}
 
