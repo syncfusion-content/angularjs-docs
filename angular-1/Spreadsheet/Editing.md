@@ -122,8 +122,9 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
     var dataManager = ej.DataManager({
-                url: "http://js.syncfusion.com/demos/ejServices/wcf/Northwind.svc/Orders",
-                crossDomain: true
+                url: "Home/Default",
+                adaptor: "UrlAdaptor",
+                batchUrl: "Home/BatchUpdate"
             });
     syncApp.controller('SpreadsheetCtrl', function ($scope,$rootScope) {
          $scope.sheetData = [{
@@ -138,4 +139,12 @@ function loadComplete(args) {
         this.saveBatchChanges(this.getActiveSheetIndex());
     }
 }
+{% endhighlight %}
+
+{% highlight c# %}
+
+public ActionResult BatchUpdate( List<ItemDetail> changed,  List<ItemDetail> added,  List<ItemDetail> deleted, string action, string key)
+        {
+            //Save the batch changes
+        }
 {% endhighlight %}
