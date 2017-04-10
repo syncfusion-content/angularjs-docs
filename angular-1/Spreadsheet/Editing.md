@@ -124,7 +124,8 @@ var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
     var dataManager = ej.DataManager({
                 url: "Home/Default",
                 adaptor: "UrlAdaptor",
-                batchUrl: "Home/BatchUpdate"
+                batchUrl: "Home/BatchUpdate" 
+                //  "Home/Default" and "Home/BatchUpdate" referred from the service.
             });
     syncApp.controller('SpreadsheetCtrl', function ($scope,$rootScope) {
          $scope.sheetData = [{
@@ -140,6 +141,8 @@ function loadComplete(args) {
     }
 }
 {% endhighlight %}
+
+The code snippets to specify the BatchUpdate in server side are as follows,
 
 {% highlight c# %}
 
