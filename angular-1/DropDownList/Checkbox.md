@@ -179,7 +179,8 @@ You can check/uncheck all the list items at run time by using [checkAll](http://
 {% highlight html %}
 
     <input type="text" id="dropdown1" ej-dropdownlist e-width="300" e-datasource="data" e-fields-text="text" e-fields-value="value" e-showcheckbox="true" />
-     
+    <button id="start" ej-button e-defaultText="Check All" e-activeText="Uncheck All" e-change="onCheckUncheckAll"></button>
+
 {% endhighlight %}
 
 {% highlight javascript %}
@@ -191,13 +192,7 @@ You can check/uncheck all the list items at run time by using [checkAll](http://
         dropdownObj = $('#dropdown1').data("ejDropDownList");
 		
        // Render button and trigger change event on it
-	   
-        $("#btnchkunchk").ejToggleButton({
-            "change": "onCheckUncheckAll",
-            "defaultText": "Check All",
-            "activeText": "Uncheck All"
-        });
-		
+
 		function onCheckUncheckAll(args) {
 			if (args.isChecked) dropdownObj.checkAll();
 			else dropdownObj.unCheckAll();

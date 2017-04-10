@@ -200,12 +200,6 @@ To select an item initially you can pass the item’s value via [value](http://h
 
 N> To retrieve the selected item’s LI elements and value you can use [getSelectedItem](http://help.syncfusion.com/api/js/ejdropdownlist#methods:getselecteditem), [getSelectedValue](http://help.syncfusion.com/api/js/ejdropdownlist#methods:getselectedvalue) methods respectively.
 
-{% highlight html %}
-
-     <input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="text" e-fields-value="value" e-selectedIndex="0" />
-     
-{% endhighlight %}
-
 {% highlight javascript %}
 	
   //create an instance from an existing DropDownList.

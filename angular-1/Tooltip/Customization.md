@@ -148,6 +148,22 @@ No effect takes place<br/></td></tr>
 
 Let's create a Tooltip that slides down when shown using the [animation](http://help.syncfusion.com/api/js/ejtooltip#members:animation) property:
 
+{% highlight html %}
+
+<div class="control">
+     TypeScript lets you write <a id="test" ej-tooltip e-content="content" e-animation="animation"><u> JavaScript</u> </a>the way you really want to.
+</div>
+
+<script>
+    angular.module('TooltipApp', ['ejangular'])
+    .controller('TooltipCtrl', function ($scope) {
+        $scope.content = "JavaScript is the programming language of HTML and the Web.";
+        $scope.animation = { effect: "slide", speed: 1000 };
+    });
+</script>
+    
+{% endhighlight %}
+
 ### Custom Animation
 
 Custom animation effect for both Tooltip show/hide can also be done by [show](http://help.syncfusion.com/api/js/ejtooltip#methods:show) and [hide](http://help.syncfusion.com/api/js/ejtooltip#methods:hide) method.

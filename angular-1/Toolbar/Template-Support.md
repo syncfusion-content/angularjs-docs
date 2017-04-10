@@ -48,4 +48,4 @@ angular.module('ToolbarApp', ['ejangular'])
 
 The following screenshot displays a Toolbar with embedded controls.
 
-![](Template-Support_images/Template.png)
+![](Template-Support_images/Template-Support_img1.png)

@@ -24,7 +24,7 @@ You can bind the local JSON array data source to the DropDownList using [dataSou
 
 {% highlight html %}
 
-    <input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="text" e-fields-valuye="value" />
+    <input type="text" id="dropdown1" ej-dropdownlist e-datasource="data" e-fields-text="text" e-fields-value="value" />
 
 {% endhighlight %}
 

@@ -43,7 +43,7 @@ Add the following **HTML** to render sub **Tab** with **AJAX** content.
     </div>
     <div id="sandwich" style="background-color: #F5F5F5">
         <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        <div id="sandwichType" e-contenttype="html" e-async="true">
+        <div id="sandwichType" ej-tab e-contenttype="html" e-async="true">
             <ul>
                 <li>
                     <a href="../Content/gardenVeggie.html">Garden Veggie </a>
@@ -57,36 +57,7 @@ Add the following **HTML** to render sub **Tab** with **AJAX** content.
             </ul>
         </div>
     </div>
-</div>    <ul>
-        <li><a href="#pizza">Pizza Menu</a></li>
-        <li><a href="#sandwich">Sandwich Menu</a></li>
-    </ul>
-    <div id="pizza" style="background-color: #F5F5F5">
-        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        <div id="pizzaType">
-            <ul>
-                <li>
-                    <a href="content/cornSpinach.html">Corn & Spinach </a></li>
-                <li>
-                    <a href="Content/chickenDelite.html">Chicken Delite </a></li>
-            </ul>
-        </div>
-    </div>
-    <div id="sandwich" style="background-color: #F5F5F5">
-        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        <div id="sandwichType">
-            <ul>
-                <li>
-                    <a href="Content/gardenVeggie.html">Garden Veggie </a></li>
-                <li>
-                    <a href="Content/chickenTikka.html">Chicken Tikka </a></li>
-                <li>
-                    <a href="Content/paneerTikka.html">Paneer Tikka </a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
+</div>  
 
 {% endhighlight %}
 
