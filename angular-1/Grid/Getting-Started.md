@@ -101,9 +101,9 @@ In the above code snippet, `ej-grid` denotes the control directive for the Syncf
     <script>
         angular.module('listCtrl', ['ejangular'])
             .controller('DataBindingCtrl', function ($scope) {
-                 //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-                $scope.data = window.gridData;
-                $scope.cols = ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"];
+                 //The datasource "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+                $scope.data = window.employeeView;
+                $scope.cols = ["EmployeeID", "FirstName", "LastName", "City", "Country"]
             });
     </script>
 </body>
