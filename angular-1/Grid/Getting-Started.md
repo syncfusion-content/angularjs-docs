@@ -87,7 +87,7 @@ In the above code snippet, `ej-grid` denotes the control directive for the Syncf
 
 ## Data Binding
 
-[`Data binding`](http://helpjs.syncfusion.com/js/grid/data-binding) in the grid is achieved by using the [`ej.DataManager`](http://helpjs.syncfusion.com/js/datamanager/overview) that supports both RESTful JSON data services binding and local JSON array binding.  To set the data source to the grid, the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:columns-datasource) property is assigned with the instance of the `ej.DataManger`. For demonstration purpose, [Northwind OData service](http://mvc.syncfusion.com/Services/Northwnd.svc/) is used in this tutorial. Refer to the following code example.
+[`Data binding`](http://helpjs.syncfusion.com/js/grid/data-binding) in the grid is achieved by assigning a array of JavaScript objects to the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:columns-datasource) property. Refer to the following code example.
 
 {% highlight html %}
 
@@ -101,9 +101,9 @@ In the above code snippet, `ej-grid` denotes the control directive for the Syncf
     <script>
         angular.module('listCtrl', ['ejangular'])
             .controller('DataBindingCtrl', function ($scope) {
-                 //The datasource "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-                $scope.data = window.employeeView;
-                $scope.cols = ["EmployeeID", "FirstName", "LastName", "City", "Country"]
+                 //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+                $scope.data = window.gridData;
+                $scope.cols = ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"];
             });
     </script>
 </body>
