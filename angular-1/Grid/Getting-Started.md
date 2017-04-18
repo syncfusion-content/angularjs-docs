@@ -87,7 +87,7 @@ In the above code snippet, `ej-grid` denotes the control directive for the Syncf
 
 ## Data Binding
 
-[`Data binding`](http://helpjs.syncfusion.com/js/grid/data-binding) in the grid is achieved by using the [`ej.DataManager`](http://helpjs.syncfusion.com/js/datamanager/overview) that supports both RESTful JSON data services binding and local JSON array binding.  To set the data source to the grid, the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:columns-datasource) property is assigned with the instance of the `ej.DataManger`. For demonstration purpose, [Northwind OData service](http://mvc.syncfusion.com/Services/Northwnd.svc/) is used in this tutorial. Refer to the following code example.
+[`Data binding`](http://helpjs.syncfusion.com/js/grid/data-binding) in the grid is achieved by assigning an array of JavaScript objects to the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:columns-datasource) property. Refer to the following code example.
 
 {% highlight html %}
 
@@ -96,12 +96,14 @@ In the above code snippet, `ej-grid` denotes the control directive for the Syncf
     <title>Essential Studio for AngularJS: Flat Grid</title>
 </head>
 <body ng-controller="DataBindingCtrl">
-    <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true">
+    <div id="Grid" ej-grid e-datasource="data" e-columns="cols" e-allowpaging="true">
     </div>
     <script>
         angular.module('listCtrl', ['ejangular'])
             .controller('DataBindingCtrl', function ($scope) {
-                $scope.data = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
+                 //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+                $scope.data = window.gridData;
+                $scope.cols = ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"];
             });
     </script>
 </body>
@@ -112,8 +114,6 @@ In the above code snippet, `ej-grid` denotes the control directive for the Syncf
 ![](Getting-started_images/Getting-started_img2.png)
 {:.image }
 
-
-N> ODataAdaptor is the default adaptor for the DataManager. On binding to other web services, proper [data adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors)  needs to be set on `adaptor` option of the DataManager.
 
 ## Enable Paging
 
@@ -127,13 +127,15 @@ N> ODataAdaptor is the default adaptor for the DataManager. On binding to other 
     <title>Essential Studio for AngularJS: Flat Grid</title>
 </head>
 <body ng-controller="PagingCtrl">
-    <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-pagesettings="pageset">
+    <div id="Grid" ej-grid e-datasource="data" e-columns="cols" e-allowpaging="true" e-pagesettings="pageset">
     </div>
     <script>
         angular.module('listCtrl', ['ejangular'])
             .controller('PagingCtrl', function ($scope) {
-                $scope.data = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");;
+                //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+                $scope.data = window.gridData;
                 $scope.pageset = { pageSize: 8 };
+                $scope.cols = ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"];
             });
     </script>
 </body>
@@ -161,12 +163,14 @@ N> _1.Pager settings can be customized by using the `e-pagesettings-pagesize` pr
     <title>Essential Studio for AngularJS: Flat Grid</title>
 </head>
 <body ng-controller="FilteringCtrl">
-    <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-pagesettings-pagesize="8" e-allowfiltering="true" }>
+    <div id="Grid" ej-grid e-datasource="data" e-columns="cols" e-allowpaging="true" e-pagesettings-pagesize="8" e-allowfiltering="true" }>
     </div>
     <script>
         angular.module('listCtrl', ['ejangular'])
             .controller('FilteringCtrl', function ($scope) {
-                $scope.data = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
+                //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+                $scope.data = window.gridData;
+                $scope.cols = ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"];
             });
     </script>
 </body>
@@ -188,12 +192,14 @@ N> _1.Pager settings can be customized by using the `e-pagesettings-pagesize` pr
     <title>Essential Studio for AngularJS: Flat Grid</title>
 </head>
 <body ng-controller="GroupingCtrl">
-    <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-pagesettings-pagesize="8" e-allowgrouping="true" }>
+    <div id="Grid" ej-grid e-datasource="data" e-columns="cols" e-allowpaging="true" e-pagesettings-pagesize="8" e-allowgrouping="true" }>
     </div>
     <script>
         angular.module('listCtrl', ['ejangular'])
             .controller('GroupingCtrl', function ($scope) {
-                $scope.data = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
+                //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+                $scope.data = window.gridData;
+                $scope.cols = ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"];
             });
     </script>
 </body>
@@ -213,13 +219,15 @@ Refer to the following code example for initial grouping.
     <title>Essential Studio for AngularJS: Flat Grid</title>
 </head>
 <body ng-controller="GroupingCtrl">
-    <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-pagesettings-pagesize="8" e-allowgrouping="true" e-groupsettings="grouping">
+    <div id="Grid" ej-grid e-datasource="data" e-columns="cols" e-allowpaging="true" e-pagesettings-pagesize="8" e-allowgrouping="true" e-groupsettings="grouping">
     </div>
     <script>
         angular.module('listCtrl', ['ejangular'])
             .controller('GroupingCtrl', function ($scope) {
-                $scope.data = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
-                $scope.grouping = { groupedColumns: ["ItemType"] };
+                //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+                $scope.data = window.gridData;
+                $scope.grouping = { groupedColumns: ["ShipCountry", "CustomerID"] };
+                $scope.cols = ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"];
             });
     </script>
 </body>
@@ -241,15 +249,17 @@ Refer to the following code example for initial grouping.
     <title>Essential Studio for AngularJS: Flat Grid</title>
 </head>
 <body ng-controller="SummaryCtrl">
-    <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-pagesettings-pagesize="8" e-allowgrouping="true" e-groupsettings="grouping" e-showsummary="true" e-summaryrows="summaryRows">
+    <div id="Grid" ej-grid e-datasource="data" e-columns="cols" e-allowpaging="true" e-pagesettings-pagesize="8" e-allowgrouping="true" e-groupsettings="grouping" e-showsummary="true" e-summaryrows="summaryRows">
     </div>
     <script>
         angular.module('listCtrl', ['ejangular'])
        .controller('SummaryCtrl', function ($scope) {
-           $scope.data = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");;
-           $scope.grouping = { groupedColumns: ["ItemType"] };
+           //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+           $scope.data = window.gridData;
+           $scope.cols = ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"];
+           $scope.grouping = { groupedColumns: ["CustomerID"] };
            $scope.summaryRows = [
-                            { title: "Sum", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Stock", dataMember: "Stock" }] },
+                            { title: "Sum", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }] },
            ];
        });
     </script>
