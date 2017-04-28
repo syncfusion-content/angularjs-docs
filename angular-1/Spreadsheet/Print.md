@@ -9,7 +9,7 @@ documentation: ug
 
 # Print
 
-This feature is used for produce text and graphics from a computer screen or file onto a sheet of paper. You can use [`allowprinting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:printsettings-allowprinting "allowPrinting") property in [`e-printsettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:printsettings "printsettings") to enable/disable the print operation.
+This feature is used for produce text and graphics from a computer screen or file onto a sheet of paper. You can use `allowprinting` property in `e-printsettings` to enable/disable the print operation.
 
 You have following options in printing.
 
@@ -73,7 +73,7 @@ Print dialog with selected area print in chrome browser
 You have an option to print the spreadsheet with gridlines or without gridlines. You can do this by one of the following ways,
 
 * Check the Gridlines option under Show group of PAGE LAYOUT tab in ribbon to print with Gridlines.
-* Using [`showGridlines`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-showgridlines "showGridlines") property to enable / disable the gridlines.
+* Using `showGridlines` property to enable / disable the gridlines.
 
 The following code example describes the above behavior.
 
@@ -104,7 +104,7 @@ Print dialog without gridlines in chrome browser
 You have an option to print the spreadsheet with gridlines or without headers. You can do this by one of the following ways,
 
 * Check the Headings option under Show group of PAGE LAYOUT tab in ribbon. 
-* Using [`showHeadings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-showheadings "showHeadings") property to enable / disable headings.
+* Using `showHeadings` property to enable / disable headings.
 
 The following code example describes the above behavior.
 

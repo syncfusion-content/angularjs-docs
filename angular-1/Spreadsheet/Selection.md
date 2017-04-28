@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Selection
 
-Selection provides an interactive support to highlight cell, row, or column that you select. Selection can be done through Mouse, Touch or Keyboard interaction. To enable selection, set [`e-allowselection`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowselection "allowSelection") as `true`.
+Selection provides an interactive support to highlight cell, row, or column that you select. Selection can be done through Mouse, Touch or Keyboard interaction. To enable selection, set `e-allowselection` as `true`.
 
 ## Selection Modes
 
-The mode of selection can be single or range selection. The default selection mode can be set using [`selectionunit`](http://help.syncfusion.com/api/js/ejspreadsheet#members:selectionsettings-selectionunit "selectionUnit") in [`e-selectionsettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:selectionsettings "selectionSettings").
+The mode of selection can be single or range selection. The default selection mode can be set using `selectionunit` in `e-selectionsettings`.
 The two types of selection mode are as follows,
 
 * Single - `ej.Spreadsheet.SelectionUnit.Single`
@@ -27,7 +27,7 @@ There are four types of selection in Spreadsheet,
 3. Column Selection
 4. Sheet Selection
 
-You can set default [`selectiontype`](http://help.syncfusion.com/api/js/ejspreadsheet#members:selectionsettings-selectiontype "selectionType") in [`e-selectionsettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:selectionsettings "selectionSettings").
+You can set default `selectiontype` in `e-selectionsettings`.
 
 ### Cell Selection 
 
@@ -85,7 +85,7 @@ function loadComplete() {
 The following output is displayed as a result of the above code example.
 ![](Selection_images/Selection_img2.png)
 
-N> This type can be set as default by setting [`selectiontype`](http://help.syncfusion.com/api/js/ejspreadsheet#members:selectionsettings-selectiontype "selectiontype") property in [`e-selectionsettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:selectionsettings "selectionSettings") as `ej.Spreadsheet.SelectionType.Row`
+N> This type can be set as default by setting `selectiontype` property in `e-selectionsettings` as `ej.Spreadsheet.SelectionType.Row`
 
 ### Column Selection
 
@@ -114,7 +114,7 @@ function loadComplete() {
 The following output is displayed as a result of the above code example.
 ![](Selection_images/Selection_img3.png)
 
-N> This type can be set as default by setting [`selectiontype`](http://help.syncfusion.com/api/js/ejspreadsheet#members:selectionsettings-selectiontype "selectionType") property in [`e-selectionsettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:selectionsettings "selectionSettings") as `ej.Spreadsheet.SelectionType.Column`
+N> This type can be set as default by setting `selectiontype` property in `e-selectionsettings`as `ej.Spreadsheet.SelectionType.Column`
 
 ### Sheet Selection
 

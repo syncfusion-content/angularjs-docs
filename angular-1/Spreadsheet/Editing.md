@@ -9,9 +9,9 @@ documentation: ug
 
 # Editing 
 
-You can edit the contents of a cell directly in the cell. You can also do this by typing in the formula bar. When you edit the cell, Spreadsheet is operating in edit mode. In editing mode formatting options are not available. You can use [`e-allowediting`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowediting "allowEditing") property to enable/disable editing feature.
+You can edit the contents of a cell directly in the cell. You can also do this by typing in the formula bar. When you edit the cell, Spreadsheet is operating in edit mode. In editing mode formatting options are not available. You can use `e-allowediting` property to enable/disable editing feature.
 
-N> By default [`e-allowediting`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowediting "allowEditing") property is set to true.
+N> By default `e-allowediting` property is set to true.
 
 ## Edit cell content
 
@@ -65,7 +65,7 @@ The following output is displayed as a result of the above code example.
 
 ## Read-Only cells
 
-You can restrict/prevent the editing in the specified range. You can use [`e-allowlockCell`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowlockcell "allowLockCell") property to enable/disable the lock cells. You can do using following ways,
+You can restrict/prevent the editing in the specified range. You can use `e-allowlockCell` property to enable/disable the lock cells. You can do using following ways,
 
 * Using [`lockCells`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:lockcells "lockCells") method to lock the specified range. Then you need to protect the sheet using [`protectSheet`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:protectsheet "protectSheet") method to restrict the editing.
 * Using "Lock Cells" option under Changes group of REVIEW tab in ribbon. Then Using "Protect Sheet" option under Changes group of REVIEW tab in ribbon to restrict editing.
@@ -109,7 +109,7 @@ The following events will trigger when editing and saving the cell.
 
 ## Data binding
 
-You can bind the data to Spreadsheet using data manager. You can refer [`Data Binding`](http://help.syncfusion.com/angular-1/data-binding# "Data Binding") to know more about this. You can use [`saveBatchChanges`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:savebatchchanges "saveBatchChanges") method to update the changes in server.  
+You can bind the data to Spreadsheet using data manager. You can refer [`Data Binding`](http://help.syncfusion.com/angular-1/spreadsheet/data-binding "Data Binding") to know more about this. You can use [`saveBatchChanges`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:savebatchchanges "saveBatchChanges") method to update the changes in server.  
 
 The following code example describes the above behavior.
 
