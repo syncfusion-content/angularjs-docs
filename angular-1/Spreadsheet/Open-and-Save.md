@@ -25,11 +25,11 @@ function loadFromJSON() {
 {% endhighlight %}
 
 
-When you open an excel file, it needs to be read and converted to client side Spreadsheet model. The converted client side Spreadsheet model is sent as JSON which is used to render Spreadsheet. Similarly, when you save the Spreadsheet, the client Spreadsheet model is sent to the server as JSON for processing and saved. [`Server configuration`](https://help.syncfusion.com/js/spreadsheet/open-and-save#server-configuration "Server configuration") is used for this process.
+When you open an excel file, it needs to be read and converted to client side Spreadsheet model. The converted client side Spreadsheet model is sent as JSON which is used to render Spreadsheet. Similarly, when you save the Spreadsheet, the client Spreadsheet model is sent to the server as JSON for processing and saved. [`Server configuration`](https://help.syncfusion.com/angular-1/spreadsheet/open-and-save#server-configuration "Server configuration") is used for this process.
 
 ## Open 
 
-The Spreadsheet can open excel documents as like excel application with its data, style, format. To enable open option in Spreadsheet set [`e-allowimport`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowimport "allowImport") option as `true`. Since Spreadsheet uses a server side helper to open document, set [`importmapper`](http://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings-importmapper "importMapper") in [`e-importsettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings "importSettings") to map server action.
+The Spreadsheet can open excel documents as like excel application with its data, style, format. To enable open option in Spreadsheet set `e-allowimport` option as `true`. Since Spreadsheet uses a server side helper to open document, set `importmapper` in `e-importsettings` to map server action.
 
 {% highlight html %}
 <body ng-controller="SpreadsheetCtrl">
@@ -60,7 +60,7 @@ You can open excel documents in following ways,
 ### Initial settings
 
 The Spreadsheet can load excel documents initially. The document can be specified either from client side or in server side.
-To load excel documents initially from client side, set [`importurl`](http://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings-importurl "importUrl") as excel file URL in [`e-importsettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings "importSettings"). The code snippets for document initial load on client side are as follows,
+To load excel documents initially from client side, set `importurl` as excel file URL in `e-importsettings`. The code snippets for document initial load on client side are as follows,
 
 {% highlight html %}
 <body ng-controller="SpreadsheetCtrl">
@@ -76,7 +76,7 @@ var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
     });
 {% endhighlight %}
 
-To load excel documents initially from server side, set [`importonload`](http://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings-importonload "importOnLoad") as `true` and assign document stream or URL in the server. The code snippets for document initial load from server side are as follows,
+To load excel documents initially from server side, set `importonload` as `true` and assign document stream or URL in the server. The code snippets for document initial load from server side are as follows,
 
 {% highlight html %}
 <body ng-controller="SpreadsheetCtrl">
@@ -177,7 +177,7 @@ You can dynamically open excel document by clicking the file menu in ribbon and 
 
 ## Save
 
-The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`allowexporting`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option in [`e-exportsettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") as `true`. Since Spreadsheet uses server side helper to save documents set [`excelurl`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-excelurl "excelUrl") in [`e-exportsettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") option.
+The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set `allowexporting` option in `e-exportsettings` as `true`. Since Spreadsheet uses server side helper to save documents set `excelurl` in `e-exportsettings` option.
 
 {% highlight html %}
 
