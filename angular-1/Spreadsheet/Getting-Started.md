@@ -77,7 +77,7 @@ The code example for defining controls in AngularJS is as follows,
 
 {% endhighlight %}
 
-The Spreadsheet is rendered based on [`e-scrollsettings-width`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-width "width") and [`e-scrollsettings-height`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-height "height") property.
+The Spreadsheet is rendered based on `e-scrollsettings-width` and `e-scrollsettings-height` property.
 
 {% highlight html %}
 
@@ -100,7 +100,7 @@ Now, the Spreadsheet is rendered with default row and column count.
 
 ## Populate Spreadsheet with data
 
-Now, this section explains how to populate JSON data to the Spreadsheet. You can set [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property in [`e-sheets`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets "sheet") settings to populate JSON data in Spreadsheet.
+Now, this section explains how to populate JSON data to the Spreadsheet. You can set `dataSource` property in `e-sheets` settings to populate JSON data in Spreadsheet.
 
 {% highlight html %}
 
@@ -123,7 +123,7 @@ N> For more details about `data binding` refer following [`link`](http://help.sy
 
 ## Apply Conditional Formatting
 
-Conditional formatting helps you to apply formats to a cell or range with certain color based on the cells values. You can use [`e-allowconditionalformats`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowconditionalformats "allowConditionalFormats") property to enable/disable Conditional formats.
+Conditional formatting helps you to apply formats to a cell or range with certain color based on the cells values. You can use `e-allowconditionalformats` property to enable/disable Conditional formats.
 
 To apply conditional formats for a range use [`setCFRule`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcformat-setcfrule "setCFRule") method. The following code example illustrates this,
 
@@ -150,7 +150,7 @@ N> For more details about `Conditional Formatting` refer following [`link`](http
 
 ## Export Spreadsheet as Excel File
 
-The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`e-exportsettings-allowexporting`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option as `true`and Specify [`e-exportsettings-excelUrl`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-excelurl "excelUrl") option to save documents using server side helper. The following code example illustrates this,
+The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set `e-exportsettings-allowexporting` option as `true`and Specify `e-exportsettings-excelUrl` option to save documents using server side helper. The following code example illustrates this,
 
 {% highlight html %}
 

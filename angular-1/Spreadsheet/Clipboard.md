@@ -9,8 +9,8 @@ documentation: ug
 
 # Clipboard
 
-The Spreadsheet provides support for the clipboard operations (cut, copy, and paste). Clipboard operations can be enabled or disabled by setting [`e-allowclipboard`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowclipboard "allowClipboard") property in Spreadsheet.
-By default [`e-allowclipboard`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowclipboard "allowClipboard") property is `true`.  
+The Spreadsheet provides support for the clipboard operations (cut, copy, and paste). Clipboard operations can be enabled or disabled by setting `e-allowclipboard` property in Spreadsheet.
+By default `e-allowclipboard` property is `true`.  
 
 ## Cut
 
