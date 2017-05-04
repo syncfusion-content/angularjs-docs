@@ -11,7 +11,7 @@ documentation: ug
 
 ### Save signature image with user defined format
 
-By default, the downloaded image form the signature canvas will be in **png** format. We can define our own format to download the image with e-**saveimageformat** property. And we can also save the image along with the background by using the **e-savewithbackground** property.
+By default, the downloaded image from the signature canvas will be in **png** format. We can define our own format to download the image with e-**saveimageformat** property. And we can also save the image along with the background by using the **e-savewithbackground** property.
 
 The following code example is used to download drawn image on the Signature control.
 
@@ -22,11 +22,8 @@ The following code example is used to download drawn image on the Signature cont
 <div id="apisignature" ej-signature e-height="400px" e-isresponsive="true" e-backgroundimage="http://js.syncfusion.com/demos/web/content/images/signature/water.png" e-savewithbackground="true"></div>
 
     </div>
-  <a id="download">
-        <input id="signsave" class="e-btn" type="button" value="Save" ej-button e-width="50px" e-size="normal" e-showroundedcorner="true" e-click="onsave" />
-    </a>
 
-
+<input id="signsave" class="e-btn" type="button" value="Save" ej-button e-width="50px" e-size="normal" e-showroundedcorner="true" e-click="onsave" />
 
 {% endhighlight %}
 
@@ -38,20 +35,8 @@ Add the following script to define the download format for the canvas.
 
 syncApp.controller('signatureCtrl', function ($scope) {
             $scope.onsave = function (args) {
-                var clientPng = document.getElementById('download');
-                if (clientPng.addEventListener)
-                    clientPng.addEventListener('click', downloadClient, false);
-                else
-                    clientPng.attachEvent('onclick', downloadClient, false);
-
-                function downloadClient(e) {
-                    var sign = $("#apisignature").ejSignature("instance");
-                    sign.option("saveImageFormat", "jpg")
-                    this.download = "Signature." + sign.model.saveImageFormat + "";
-                    var div = $("#apisignature");
-                    var canvas = div["children"]()[0];
-                    this.href = canvas.toDataURL("image/" + sign.model.saveImageFormat + "");
-                }
+                 var sig = $("#apisignature").ejSignature("instance");
+                 sig.save("MySignature");
             }
         });
 {% endhighlight %}
@@ -63,7 +48,7 @@ The following screenshot illustrates the Signature with saving (downloading) the
 
 ### Make signature as responsive
 
-When the signature component is resized or even the window is resized the strokes drawn in the signature will be disappeared. To make the strokes visible even after resizing the window, we must set the e-**isresponsive** property as true.
+When the signature component is resized or even the window is resized the strokes drawn in the signature will be disappeared. To make the strokes visible even after resizing the window, we must set the **e-isresponsive** property as true.
 
 The following code example is used to render the Signature component with responsive support.
 
