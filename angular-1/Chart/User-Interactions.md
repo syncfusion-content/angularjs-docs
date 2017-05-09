@@ -1221,3 +1221,66 @@ We can able to select the point/series programmatically on chart load, by settin
 {% endhighlight %}
 
 ![](User-Interactions_images/User-Interactions_img29.png)
+
+## Data Editing
+
+EjChart provides support to change the location of the rendered points. This can be done by dragging the point and dropping it on another location in chart. To enable the data editing, set the `enable` property to true in the `e-dragSettings` of the series.
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+    <head>
+        <title>Essential Studio for AngularJS: Chart</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="ChartCtrl">
+    <div id="container" ej-chart>
+    <e-series>
+    <e-series e-dragsettings-enable="true" >
+    </e-series>
+    </e-series>
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {
+                  });
+        </script>
+    </body>
+</html>
+
+{% endhighlight %}
+
+![](User-Interactions_images/User-Interactions_img31.png)
+
+[Click](http://ngjq.syncfusion.com/#/chart/dragdrop) here to view the data editing online demo sample.
+
+### Customize Dragging direction
+
+To drag the point along x and y axes, you can specify `e-dragsettings-type` as xy in dragSettings. And to drag along x axis alone, specify the type as x and to drag along y axis, specify type as y.
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+    <head>
+        <title>Essential Studio for AngularJS: Chart</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="ChartCtrl">
+    <div id="container" ej-chart>
+    <e-series>
+    <e-series e-dragsettings-type="y" >
+    </e-series>
+    </e-series>
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {
+                  });
+        </script>
+    </body>
+</html>
+
+{% endhighlight %}
+
+![](User-Interactions_images/User-Interactions_img32.png)
+
