@@ -2945,7 +2945,7 @@ Box and Whisker `e-showMedian` property is used to show the box and whisker aver
 
 {% endhighlight %}
 
-![](/js/Chart/Chart-Types_images/Chart-Types_img91.png)
+![](Chart-Types_images/Chart-Types_img91.png)
 
 ###  Customize the Outlier
 
@@ -2976,3 +2976,127 @@ Outlier symbol, width and height can be customized using outlierSettings through
 ![](Chart-Types_images/Chart-Types_img92.png)
 
 [Click](http://ngjq.syncfusion.com/#/chart/boxandwhisker) here to view the Box and Whisker Chart online demo sample.
+
+## Pie Of Pie Chart
+
+To render the pie of pie chart, set the series `e-type` as **pieofpie**. Pie of pie chart is used for displaying the data of a pie slice as another pie chart. The values in the second pie is displayed based on the **e-splitMode**  property.
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+    <head>
+        <title>Essential Studio for AngularJS: Chart</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="ChartCtrl">
+        <div id="container" ej-chart >
+        <e-series>
+        <e-series e-type="pieofpie" e-splitvalue="10" >
+        <e-points>
+        <e-points e-x="Saudi Arabia" e-y="58" e-text="58%"></e-points>
+         <e-points e-x="Persian Gulf" e-y="15" e-text="15%"></e-points>
+         <e-points e-x="Canada" e-y="13" e-text="13%"></e-points>
+         <e-points e-x="Venezula" e-y="8" e-text="8%"></e-points>
+         <e-points e-x="Mexico" e-y="3" e-text="3%"></e-points>
+         <e-points e-x="Russia" e-y="2" e-text="2%"></e-points>
+           <e-points e-x="Miscellaneous" e-y="1" e-text="1%"></e-points>
+        </e-points>
+        </e-series>
+        </e-series>
+        </div>
+        <script>
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                   });
+        </script>
+    </body>
+</html>
+
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img93.png)
+
+[Click](http://ngjq.syncfusion.com/#/chart/pieofpie) here to view the Pie Of Pie Chart online demo sample.
+
+### Split Mode and Split Value 
+
+The points to be displayed in the second pie is decided based on the `e-splitMode`property.**SplitMode** property takes the following values. 
+* Position – Have to split the data points based on its position
+* Value – Have to split the data points based on its Y value
+* Percentage – Have to split the points based on the percentage value
+* Indexes – The data points with the specified indexes are split separately 
+ By default, the splitMode is set to  **Value**. 
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+<head>
+    <title>Essential Studio for AngularJS: Chart</title>
+    <!--CSS and Script file References -->
+</head>
+<body ng-controller="ChartCtrl">
+    <div id="container" ej-chart>
+        <e-series e-splitmode="position" e-splitvalue="3">
+        </e-series>   
+         </div>
+   
+</body>
+</html>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img94.png)
+
+### Changing Pie Of Pie Size
+
+The size of the second Pie can be customized by using the `e-pieOfPieCoefficient` property. The default value of pieOfPieCoefficient is **0.6**.Its value ranges from 0 to 1.
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+<head>
+    <title>Essential Studio for AngularJS: Chart</title>
+    <!--CSS and Script file References -->
+</head>
+<body ng-controller="ChartCtrl">
+    <div id="container" ej-chart>
+        <e-series e-pieofpiecoefficient="1" >
+        </e-series>   
+         </div>
+   
+</body>
+</html>
+
+{% endhighlight %}
+
+The following screenshot represents the pie of pie series with pieOfPieCoefficient as 1
+
+![](Chart-Types_images/Chart-Types_img95.png)
+
+#### Customizing the Gap
+
+The distance between the two pies in the pie of pie chart can be controlled by using the `e-gapWidth` property. The default value is **50**.
+
+ {% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+<head>
+    <title>Essential Studio for AngularJS: Chart</title>
+    <!--CSS and Script file References -->
+</head>
+<body ng-controller="ChartCtrl">
+    <div id="container" ej-chart>
+        <e-series e-gapWidth="150" >
+        </e-series>   
+         </div>
+   
+</body>
+</html>
+
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img96.png)
+
+
