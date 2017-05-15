@@ -1170,6 +1170,38 @@ W> String value provided for `e-primaryxaxis-crossesAt` property is case-sensiti
 ![](Axis_images/axis_img56.png)
 
 
+#### Positioning the axis elements while crossing
+
+The `e-primaryxaxis-showNextToAxisLine`property is used for controlling the axis elements movement along with the axis line while axis crossing is performed. When the showNextToAxisLine is set as false only the axis line and the tick lines are placed at the crossing Value and the axis elements will be placed outside the chart area. The default value of `e-primaryxaxis-showNextToAxisLine` is **true**.  
+
+{% highlight html %}
+
+  <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+    <head>
+        <title>Essential Studio for AngularJS: Chart</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="ChartCtrl">
+        <div id="container" ej-chart  e-primaryxaxis-crossesAt="0" e-primaryxaxis-shownexttoaxisline="false">
+        </div>
+        <script>
+            angular.module('ChartApp', ['ejangular'])
+            .controller('ChartCtrl', function ($scope) {
+                   
+                });
+        </script>
+    </body>
+</html>
+
+
+{% endhighlight %}
+
+The axis is placed at the crossing value without the axis elements 
+
+![](Axis_images/axis_img67.png)
+
+
+
 ### Axis Visibility
 
 Axis visibility can be controlled by using the `e-primaryxaxis-visible` property of the axis. The default value of the `e-primaryxaxis-visible` property is **true**. 
