@@ -25,7 +25,7 @@ Please refer the following code examples.
         <div class="content-container-fluid listview-sample">
             <div class="row">
                 <div class="cols-sample-area">
-                    <div ej-listview id="anglistview" e-width="400" e-height="300" e-query="query" e-datasource="datalist" e-fieldsettings="settings" e-allowvirtualscrolling="true" e-virtualscrollingmode="continuous" >
+                    <div ej-listview id="anglistview" e-width="400" e-height="300" e-query="query" e-datasource="datalist" e-fieldsettings="settings" e-allowvirtualscrolling="true" e-virtualscrollingmode="continuous" e-itemrequestcount="8">
                       </div>
                    </div>
             </div>
