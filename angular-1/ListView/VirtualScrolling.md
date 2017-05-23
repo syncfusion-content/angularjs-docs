@@ -43,7 +43,7 @@ Please refer the following code examples.
         url: "http://js.syncfusion.com/ejservices/Wcf/Northwind.svc/"
         });              
        var query = ej.Query().from('Customers');
-        $scope.continuous = "continuous";
+        $scope.continuous = ej.VirtualScrollMode.Continuous;
         $scope.datalist = dataManger;
         $scope.query=query;
         $scope.settings = {
