@@ -1,0 +1,89 @@
+---
+title: SpellCheck - Customization
+description: SpellCheck Customization
+platform: Angular-1
+control: spellcheck
+documentation: ug
+keywords: customization, spellcheck customization, misspell word appearance, restrict suggestion count
+---
+# SpellCheck Customization
+
+The SpellCheck control provides option to customize the following scenarios.
+
+* Misspell Word Appearance
+* Restrict Suggestion Count
+    
+## Misspell Word Appearance
+
+The SpellCheck control provide the support (`misspellWordCss`) to display the error word in user defined style. By default, displays the error words with the red underline. 
+
+The following code example depicts the way to customize the error word highlight (displaying error word with red color font and lightblue background).
+
+{% highlight html %}
+
+<div ng-controller="spellcheckCtrl">
+    <div id="SpellCheck" contenteditable="true" ej-spellcheck e-dictionarysettings="dictionarySettings" e-misspellWordCss="highlight">
+        Facebook is a social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo, Andrew McCollum,Dustin and Chris Hughes. The fouders had initially limited the websites membrship to Harvard students, but later expanded it to collges in the Boston area, the Ivy League, and Stanford Univrsity. It graually added support for students at various other universities and later to high-school students.
+    </div>
+    <button id="CheckSpell" ej-button e-text="Spell Check" e-click="checkErrors"></button>
+</div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+syncApp.controller('spellcheckCtrl', function ($scope) {
+    $scope.dictionarySettings = {
+		dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
+        customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
+	};
+    $scope.checkErrors = function (e) {
+        var spellObj = $("#SpellCheck").data("ejSpellCheck");
+        spellObj.showInDialog();
+    }
+});
+
+{% endhighlight %}
+
+{% highlight css %}
+
+<style>
+        .highlight {
+            background-color: lightblue;
+            color: red;
+        }
+</style>
+
+{% endhighlight %}
+
+## Restrict Suggestion Count
+
+The SpellCheck control provides option (`maxSuggestionCount`) to restrict the the number of items to be displayed in the suggestion list.
+
+The following code example describes the way to control the suggestion count.
+
+{% highlight html %}
+
+<div ng-controller="spellcheckCtrl">
+    <div id="SpellCheck" contenteditable="true" ej-spellcheck e-dictionarysettings="dictionarySettings" e-maxSuggestionCount="3">
+        Facebook is a social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo, Andrew McCollum,Dustin and Chris Hughes. The fouders had initially limited the websites membrship to Harvard students, but later expanded it to collges in the Boston area, the Ivy League, and Stanford Univrsity. It graually added support for students at various other universities and later to high-school students.
+    </div>
+    <button id="CheckSpell" ej-button e-text="Spell Check" e-click="checkErrors"></button>
+</div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+syncApp.controller('spellcheckCtrl', function ($scope) {
+    $scope.dictionarySettings = {
+        dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
+        customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
+    }
+    $scope.checkErrors = function (e) {
+        var spellObj = $("#SpellCheck").data("ejSpellCheck");
+        spellObj.showInDialog();
+    }
+});
+
+{% endhighlight %}
