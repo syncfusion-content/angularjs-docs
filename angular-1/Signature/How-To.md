@@ -7,7 +7,7 @@ control: Signature
 documentation: ug
 ---
 
-##How To?
+## How To?
 
 ### Save signature image with user defined format
 
@@ -46,6 +46,36 @@ The following screenshot illustrates the Signature with saving (downloading) the
 
 ![https://help.syncfusion.com/js/signature/How_To_images/savesignatureimagewithuserdefinedformat_img1.png](How_To_images\savesignatureimagewithuserdefinedformat_img1.png)
 
+### To clear the Siganture
+
+To clear the signature, you can simply use the **clear()** method. This method will clear all the drawn strokes in the signature canvas and leaves it empty.
+
+{% highlight html %}
+
+    <div ng-controller="signatureCtrl">
+
+<div id="apisignature" ej-signature e-height="400px" e-isresponsive="true"></div>
+
+    </div>
+
+<input id="signclear" class="e-btn" type="button" value="Clear" ej-button e-width="50px" e-size="normal" e-showroundedcorner="true" e-click="onclear" />
+
+{% endhighlight %}
+
+Add the following script to clear the Signature.
+
+{% highlight js %}
+
+syncApp.controller('signatureCtrl', function ($scope) {
+            $scope.onclear = function (args) {
+                 var sig = $("#apisignature").ejSignature("instance");
+                 sig.clear();
+            }
+        });
+{% endhighlight %}
+
+
+
 ### Make signature as responsive
 
 When the signature component is resized or even the window is resized the strokes drawn in the signature will be disappeared. To make the strokes visible even after resizing the window, we must set the **e-isresponsive** property as true.
@@ -75,3 +105,21 @@ After giving the Responsiveness:
 
 
 
+### To check whether any input to the signature control since render
+
+We can detect whether not there has been any input to the signature control since render. To detect we can use the storeSnap public variable, which is an array that stores all the canvas inputs. At initial rendering this array is empty and we can use this variable to check for the drwan strokes.
+
+
+{% highlight js %}
+
+   <script type="text/javascript">
+      var sign = $("#signature").ejSignature("instance");
+
+            if (ej.isNullOrUndefined(sign.storeSnap)) {
+               
+                //Something
+
+            }
+    </script>   
+
+{% endhighlight %}
