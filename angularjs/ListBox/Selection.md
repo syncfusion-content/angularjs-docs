@@ -56,7 +56,7 @@ Please use the below code the bind the ListBox in two-way support.
 
 To enable the multiple selection by using “allowMultiSelection” property. You can select the multiple list items using <kbd>“Ctrl”</kbd> and <kbd>“Shift”</kbd> keys.
 
-{% seealso %} [Keyboard Interaction](http://help.syncfusion.com/angular-1/listbox/keyboard-interaction). {% endseealso %}
+{% seealso %} [Keyboard Interaction](http://help.syncfusion.com/angularjs/listbox/keyboard-interaction). {% endseealso %}
 
 {% highlight html %}
 

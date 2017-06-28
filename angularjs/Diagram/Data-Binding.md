@@ -96,7 +96,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 	
 {% endhighlight %}
 
-![](/angular-1/Diagram/Data-Binding_images/Data-Binding_img1.png)
+![](/angularjs/Diagram/Data-Binding_images/Data-Binding_img1.png)
 
 ## Remote Data
 
@@ -161,7 +161,7 @@ function nodeTemplate(diagram, node) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Data-Binding_images/Data-Binding_img2.png)
+![](/angularjs/Diagram/Data-Binding_images/Data-Binding_img2.png)
 
 ## HTML Table Data
 
@@ -288,7 +288,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Data-Binding_images/Data-Binding_img4.png)
+![](/angularjs/Diagram/Data-Binding_images/Data-Binding_img4.png)
 
 
 

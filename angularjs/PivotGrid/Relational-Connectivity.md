@@ -13,7 +13,7 @@ keywords: ejpivotgrid, pivotgrid, pivotgrid widget, js pivotgrid
 ## Binding PivotGrid to Collection
 This section demonstrates binding of a collection to the PivotGrid control as datasource. For more information on this datasource refer to the following links.
 
-When you are using WebAPI controller, refer to the “Datasource Initialization” section under the following [link](http://help.syncfusion.com/angular-1/pivotgrid/relational-getting-started#creating-a-simple-application-with-pivotgrid-and-relational-datasource-server-mode).
+When you are using WebAPI controller, refer to the “Datasource Initialization” section under the following [link](http://help.syncfusion.com/angularjs/pivotgrid/relational-getting-started#creating-a-simple-application-with-pivotgrid-and-relational-datasource-server-mode).
 
 If you are using WCF Service, refer the "Datasource Initialization" section below.
 
@@ -466,5 +466,5 @@ N> In this example, **“PivotGridDemo”** indicates the name and root namespac
 
 Now, PivotGrid will be rendered with Sales Amount over a set of products across different customer geographic locations.
 
-{% include image.html url="/angular-1/PivotGrid/OLAP-Connectivity_images/relaionalwebapi.png" %}
+{% include image.html url="/angularjs/PivotGrid/OLAP-Connectivity_images/relaionalwebapi.png" %}
 

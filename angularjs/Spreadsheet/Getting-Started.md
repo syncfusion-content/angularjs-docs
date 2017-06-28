@@ -23,7 +23,7 @@ The required angular script as `angular.min.js` and `ej.widget.angular.min.js` w
 * `angular.min.js` - [http://cdn.syncfusion.com/js/assets/external/angular.min.js](http://cdn.syncfusion.com/js/assets/external/angular.min.js)
 * `ej.widget.angular.min.js` - [http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js](http://cdn.syncfusion.com/14.3.0.49/js/common/ej.widget.angular.min.js)
 
-For other required internal dependencies refer the [`link`](http://help.syncfusion.com/angular-1/spreadsheet/dependencies "link")
+For other required internal dependencies refer the [`link`](http://help.syncfusion.com/angularjs/spreadsheet/dependencies "link")
 
 N> Spreadsheet uses one or more sub-controls, therefore refer the `ej.web.all.min.js` (which encapsulates all the `ej` controls and frameworks in a single file) in the application instead of referring all the above specified internal dependencies. 
 
@@ -119,7 +119,7 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
-N> For more details about `data binding` refer following [`link`](http://help.syncfusion.com/angular-1/spreadsheet/data-binding "link")
+N> For more details about `data binding` refer following [`link`](http://help.syncfusion.com/angularjs/spreadsheet/data-binding "link")
 
 ## Apply Conditional Formatting
 
@@ -146,7 +146,7 @@ To apply conditional formats for a range use [`setCFRule`](http://help.syncfusio
 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
-N> For more details about `Conditional Formatting` refer following [`link`](http://help.syncfusion.com/angular-1/spreadsheet/data-presentation#conditional-formatting "link")
+N> For more details about `Conditional Formatting` refer following [`link`](http://help.syncfusion.com/angularjs/spreadsheet/data-presentation#conditional-formatting "link")
 
 ## Export Spreadsheet as Excel File
 
@@ -169,5 +169,5 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
 
 Use shortcut `Ctrl + S` to save Spreadsheet as excel file.
 
-N> 1. For more details about `Export` refer following [`link`](http://help.syncfusion.com/angular-1/spreadsheet/open-and-save#save "link")
-N> 2. For more details about `Server Configuration` refer following [`link`](http://help.syncfusion.com/angular-1/spreadsheet/open-and-save#server-configuration "link")
+N> 1. For more details about `Export` refer following [`link`](http://help.syncfusion.com/angularjs/spreadsheet/open-and-save#save "link")
+N> 2. For more details about `Server Configuration` refer following [`link`](http://help.syncfusion.com/angularjs/spreadsheet/open-and-save#server-configuration "link")

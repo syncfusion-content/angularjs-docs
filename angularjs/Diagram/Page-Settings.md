@@ -12,7 +12,7 @@ documentation: ug
 
 Page settings enable to customize the appearance, width, and height of the Diagram page.
 
-![](/angular-1/Diagram/Page-Settings_images/Page-Settings_img1.png)
+![](/angularjs/Diagram/Page-Settings_images/Page-Settings_img1.png)
 
 ## Page size and appearance
 
@@ -23,9 +23,9 @@ To explore those properties, refer [Page Settings](/api/js/ejDiagram#members:pag
 
 You can also customize the appearance of off-page regions with the property `backgroundColor`.
 
-![](/angular-1/Diagram/Page-Settings_images/Page-Settings_img2.png)
+![](/angularjs/Diagram/Page-Settings_images/Page-Settings_img2.png)
 
-![](/angular-1/Diagram/Page-Settings_images/Page-Settings_img3.png)
+![](/angularjs/Diagram/Page-Settings_images/Page-Settings_img3.png)
 
 N> When the pageWidth and pageHeight are not specified, the rectangular region that completely fits all nodes and connectors are considered as page size.
 
@@ -83,7 +83,7 @@ The following code illustrates how to stretch and align the background image.
 
 When MultiplePage is enabled, size of the page dynamically increases or decreases in multiples of page width and height and completely fits diagram within the page boundaries. Page Breaks is used as a visual guide to see how pages are split into multiple pages.
 
-![](/angular-1/Diagram/Page-Settings_images/Page-Settings_img4.png)
+![](/angularjs/Diagram/Page-Settings_images/Page-Settings_img4.png)
 
 `multiplePage` and `showPageBreak` properties of page settings allow you to enable/disable multiple pages and page breaks respectively.
 The following code illustrates how to enable multiple page and page break lines.

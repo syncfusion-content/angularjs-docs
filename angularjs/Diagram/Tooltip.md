@@ -16,7 +16,7 @@ By default, Diagram displays a tooltip to provide the size, position, and angle 
 
 | Drag | Resize | Rotate |
 |---|---|---|
-| ![](/angular-1/Diagram/Tooltip_images/Tooltip_img1.png) | ![](/angular-1/Diagram/Tooltip_images/Tooltip_img2.png) | ![](/angular-1/Diagram/Tooltip_images/Tooltip_img3.png) |
+| ![](/angularjs/Diagram/Tooltip_images/Tooltip_img1.png) | ![](/angularjs/Diagram/Tooltip_images/Tooltip_img2.png) | ![](/angularjs/Diagram/Tooltip_images/Tooltip_img3.png) |
 
 ### Disable default tooltip
 
@@ -95,7 +95,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %} 
 
-![](/angular-1/Diagram/Tooltip_images/Tooltip_img4.png)
+![](/angularjs/Diagram/Tooltip_images/Tooltip_img4.png)
 
 ### Disable tooltip at runtime
 
@@ -191,7 +191,7 @@ var nodes = {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Tooltip_images/Tooltip_img5.png)
+![](/angularjs/Diagram/Tooltip_images/Tooltip_img5.png)
 
 ### Tooltip relative to mouse position
 
@@ -232,6 +232,6 @@ var nodes = {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Tooltip_images/Tooltip_img6.png)
+![](/angularjs/Diagram/Tooltip_images/Tooltip_img6.png)
 
 

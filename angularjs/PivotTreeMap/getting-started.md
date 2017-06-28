@@ -413,7 +413,7 @@ Now, PivotTreeMap is rendered with customer count over different customer geogra
 ![](Getting-Started_images/olapwebapi.png) 
 
 ### WCF
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotTreeMap. For more details on this topic, [click here](http://help.syncfusion.com/angular-1/pivottreemap/olap-connectivity#wcf).
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotTreeMap. For more details on this topic, [click here](http://help.syncfusion.com/angularjs/pivottreemap/olap-connectivity#wcf).
 
 
 

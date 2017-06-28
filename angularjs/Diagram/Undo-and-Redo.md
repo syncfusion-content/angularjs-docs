@@ -2,7 +2,7 @@
 layout: post
 title: Track the history of changes and revert/restore them when required
 description: How to revert/restore the changes?
-platform:  Angular-1
+platform: AngularJS
 control: Diagram
 documentation: ug
 ---

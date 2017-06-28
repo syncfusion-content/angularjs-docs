@@ -390,7 +390,7 @@ Now, PivotChart will be rendered with Customer Count over a period of fiscal yea
 ![](Olap-Getting-Started_images/ServerMode.png)
 
 ### WCF
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotChart. For more details on this topic, [click here](http://help.syncfusion.com/angular-1/pivotchart/olap-connectivity#wcf).
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotChart. For more details on this topic, [click here](http://help.syncfusion.com/angularjs/pivotchart/olap-connectivity#wcf).
 
 
 
