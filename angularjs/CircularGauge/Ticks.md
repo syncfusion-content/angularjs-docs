@@ -2,7 +2,7 @@
 layout: post
 title: Ticks
 description: ticks
-platform: Angualr 1.0
+platform: AngularJS
 control: Circular Gauge
 documentation: ug
 ---
