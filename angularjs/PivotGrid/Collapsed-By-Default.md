@@ -2,7 +2,7 @@
 layout: post
 title: Collapse by default
 description: Collapse by default
-platform: Angular-1
+platform: AngularJS
 control: PivotGrid
 documentation: ug
 keywords: ejpivotgrid, pivotgrid, pivotgrid widget, js pivotgrid 

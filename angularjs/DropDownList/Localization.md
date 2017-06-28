@@ -2,7 +2,7 @@
 layout: post
 title: Localization in DropDownList widget
 description: Localization in DropDownList widget
-platform: Angular-1
+platform: AngularJS
 control: DropDownList
 documentation: ug
 keywords: Localization, DropDownList, dropdown

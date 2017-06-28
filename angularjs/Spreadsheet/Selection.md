@@ -2,7 +2,7 @@
 layout: post
 title: Selection with Spreadsheet widget for Syncfusion Essential JS
 description: How to perform Selection and configure its properties like selection type, selection mode etc.
-platform: Angular-1
+platform: AngularJS
 control: Spreadsheet
 documentation: ug
 ---

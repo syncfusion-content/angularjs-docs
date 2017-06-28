@@ -2,7 +2,7 @@
 layout: post
 title: Title-Customization
 description: title customization
-platform: Angular-1
+platform: AngularJS
 control: TagCloud
 documentation: ug
 keywords: ejtagcloud, tagcloud, angularjs tagcloud

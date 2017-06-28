@@ -2,7 +2,7 @@
 layout: post
 title: Selection with Grid widget for Syncfusion Essential AngularJS
 description: How to enable selection and its functionalities
-platform: angular-1
+platform: AngularJS
 control: Grid
 documentation: ug
 --- 

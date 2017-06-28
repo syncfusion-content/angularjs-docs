@@ -3,7 +3,7 @@ layout: post
 title:  Responsive
 description: Responsive
 documentation: ug
-platform: Angular-1
+platform: AngularJS
 keywords: responsive,kanban responsive
 ---
 

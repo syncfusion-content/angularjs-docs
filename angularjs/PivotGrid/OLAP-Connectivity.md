@@ -2,7 +2,7 @@
 layout: post
 title: OLAP-Connection-Types
 description: OLAP Connection Types
-platform: Angular-1
+platform: AngularJS
 control: pivotgrid
 documentation: ug
 keywords: ejpivotgrid, pivotgrid, pivotgrid widget, js pivotgrid 

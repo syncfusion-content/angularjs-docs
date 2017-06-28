@@ -1,7 +1,7 @@
 ---
 title: Drag and Drop Support | FileExplorer | JavaScript | Syncfusion
 description: Drag and Drop option in FileExplorer
-platform: Angular-1
+platform: AngularJS
 control: FileExplorer
 documentation: UG
 keywords: Drag and drop option

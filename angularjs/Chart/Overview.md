@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Essential Javascript Chart
 description: What are the key features available in chart.                                                   
-platform: Angular-1
+platform: AngularJS
 control: Chart
 documentation: ug
 ---

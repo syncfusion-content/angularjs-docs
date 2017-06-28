@@ -2,7 +2,7 @@
 layout: post
 title: Formatting with Spreadsheet widget for Syncfusion Essential JS
 description: How to use different types of formatting in Spreadsheet and configure its properties.
-platform: Angular-1
+platform: AngularJS
 control: Spreadsheet
 documentation: UG
 ---

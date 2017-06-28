@@ -2,7 +2,7 @@
 layout: post
 title: User-Interactions
 description: user interactions
-platform: Angular-1
+platform: AngularJS
 control: pivotchart
 documentation: ug
 keywords: ejpivotchart, pivotchart, pivotchart widget, js pivotchart 

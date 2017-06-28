@@ -2,7 +2,7 @@
 layout: post
 title: Setting-Range
 description: setting range
-platform: Angular-1
+platform: AngularJS
 control: ProgressBar
 documentation: ug
 keywords: ejprogressbar, progressbar, angualarjs progressbar

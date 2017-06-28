@@ -2,7 +2,7 @@
 layout: post
 title:  Nested Splitter Support
 description: Nested Splitter Support
-platform: Angular-1
+platform: AngularJS
 control: Splitter
 documentation: ug
 ---

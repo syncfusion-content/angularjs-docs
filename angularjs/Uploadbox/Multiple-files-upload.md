@@ -2,7 +2,7 @@
 layout: post
 title: Multiple-files-upload
 description: multiple files upload
-platform: Angular-1
+platform: AngularJS
 control: Uploadbox
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Filtering with Grid widget for Syncfusion Essential AngularJS
 description: How to enable filtering and its functionalities
-platform: angular-1
+platform: AngularJS
 control: Grid
 documentation: ug
 --- 

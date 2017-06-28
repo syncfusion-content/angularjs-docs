@@ -2,7 +2,7 @@
 layout: post
 title: Label Format
 description: label format
-platform: Angular-1
+platform: AngularJS
 control: PivotGauge
 documentation: ug
 keywords: ejPivotGauge, PivotGauge, PivotGauge widget, js PivotGauge 

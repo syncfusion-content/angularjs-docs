@@ -2,7 +2,7 @@
 layout: post
 title: Group two or more relevant objects
 description: How to group two or more nodes and connectors?
-platform: Angular-1
+platform: AngularJS
 control: Diagram
 documentation: ug
 ---

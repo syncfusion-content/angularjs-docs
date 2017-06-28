@@ -2,7 +2,7 @@
 layout: post
 title: Getting started | ListView | JavaScript | Syncfusion
 description: Getting started with listview widget in angularjs
-platform: Angular-1
+platform: AngularJS
 control: ListView
 documentation: ug
 ---

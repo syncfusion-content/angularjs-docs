@@ -2,7 +2,7 @@
 layout: post
 title: Localization with RichTextEditor widget
 description: Initialize the RichTextEditor widget with specified Localization  
-platform: Angular-1
+platform: AngularJS
 control: RichTextEditor
 documentation: ug
 keywords: RichTextEditor, Localization

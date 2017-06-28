@@ -1,7 +1,7 @@
 ---
 title: Getting started with PDF viewer component	
 description: Rendering a basic PDF viewer with local data
-platform: Angular-1
+platform: AngularJS
 control: PDF viewer
 documentation: ug
 keywords: ejPdfViewer, PDF viewer, js pdfviewer 

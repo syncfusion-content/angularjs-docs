@@ -2,7 +2,7 @@
 layout: post
 title: Behavior-and-Settings
 description: behavior and settings
-platform: Angular-1
+platform: AngularJS
 control: WaitingPopup
 documentation: ug
 keywords: ejwaitingpopup, waitingpopup, angularjs waitingpopup 

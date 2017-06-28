@@ -2,7 +2,7 @@
 layout: post
 title: Sub-Gauges
 description: sub gauges
-platform: angular-1
+platform: AngularJS
 control: Circular Gauge
 documentation: ug
 ---

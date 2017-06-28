@@ -2,7 +2,7 @@
 layout: post
 title: Duration-units
 description: duration units
-platform: Angular-1
+platform: AngularJS
 control: Gantt
 documentation: ug
 ---

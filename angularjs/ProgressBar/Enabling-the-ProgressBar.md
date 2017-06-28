@@ -2,7 +2,7 @@
 layout: post
 title: Enabling-the-ProgressBar
 description: enabling the progressbar
-platform: Angular-1
+platform: AngularJS
 control: ProgressBar
 documentation: ug
 keywords: ejprogressbar, progressbar, angualarjs progressbar

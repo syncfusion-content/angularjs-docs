@@ -2,7 +2,7 @@
 layout: post
 title: template-support
 description: template-support
-platform: Angular-1
+platform: AngularJS
 control: Tile
 documentation: ug
 ---

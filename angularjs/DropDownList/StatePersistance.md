@@ -2,7 +2,7 @@
 layout: post
 title: State Persistance with DropDownList widget
 description: State Persistence support to DropDownList widget
-platform: Angular-1
+platform: AngularJS
 control: DropDownList
 documentation: ug
 keywords: Persistence, DropDownList, dropdown, State Persistence

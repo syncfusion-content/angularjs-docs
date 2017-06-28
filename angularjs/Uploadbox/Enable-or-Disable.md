@@ -2,7 +2,7 @@
 layout: post
 title: Enable-or-Disable-the-Uploadbox
 description: enable or disable the uploadbox 
-platform: Angular-1
+platform: AngularJS
 control: Uploadbox
 documentation: ug
 ---

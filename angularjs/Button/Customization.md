@@ -2,7 +2,7 @@
 layout: post
 title: Easy Customization
 description: Easy Customization 
-platform: Angular-1
+platform: AngularJS
 control: Button
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Footer in RichTextEditor widget
 description: Footer related changes in RichTextEditor widget
-platform: Angular-1
+platform: AngularJS
 control: RichTextEditor
 documentation: ug
 keywords: RichTextEditor, Footer, Clear Format, Re-sizer, HTML Tag info, Characters Count, Word Count

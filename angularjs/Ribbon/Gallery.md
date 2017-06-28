@@ -3,7 +3,7 @@ layout: post
 title: Gallery
 description: gallery
 documentation: ug
-platform: Angular-1
+platform: AngularJS
 keywords: gallery,ribbon gallery
 ---
 

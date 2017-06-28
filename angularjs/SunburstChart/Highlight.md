@@ -2,7 +2,7 @@
 layout: post
 title: Highlight
 description: What are the different modes of highlight present in the Sunburst Chart
-platform: Angular-1
+platform: AngularJS
 control: Sunburst Chart
 documentation: ug
 ---

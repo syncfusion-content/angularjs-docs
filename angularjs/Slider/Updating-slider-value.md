@@ -2,7 +2,7 @@
 layout: post
 title: Updating-slider-value
 description: updating slider value
-platform: angular-1
+platform: AngularJS
 control: Slider
 documentation: ug
 ---

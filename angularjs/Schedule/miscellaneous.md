@@ -1,7 +1,7 @@
 ---
 title: Show or Hide indicator, all day row, header, timescale
 description: Show or hide time indicator, all day row, header, timescale
-platform: Angular-1
+platform: AngularJS
 control: schedule
 documentation: ug
 keywords: time indicator, all day, header, timescale 

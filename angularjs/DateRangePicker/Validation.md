@@ -2,7 +2,7 @@
 layout: post
 title: Validation
 description: Validation
-platform: Angular-1
+platform: AngularJS
 control: DataRangePicker
 documentation: ug
 ---

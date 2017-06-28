@@ -2,7 +2,7 @@
 layout: post
 title: template
 description: template
-platform: angular-1
+platform: AngularJS
 control: rotator
 documentation: ug
 ---

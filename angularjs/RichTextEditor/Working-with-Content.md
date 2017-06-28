@@ -2,7 +2,7 @@
 layout: post
 title: Working with content related operation in RichTextEditor widget
 description: Working with Content related changes in RichTextEditor widget
-platform: Angular-1
+platform: AngularJS
 control: RichTextEditor
 documentation: ug
 keywords: RichTextEditor, IFrame Attributes, Editing and Formatting 

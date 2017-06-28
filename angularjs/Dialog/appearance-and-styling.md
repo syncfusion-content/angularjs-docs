@@ -2,7 +2,7 @@
 layout: post
 title: appearance-and-styling
 description: appearance and styling
-platform: angular-1
+platform: AngularJS
 control: Angular- Dialog
 documentation: ug
 ---

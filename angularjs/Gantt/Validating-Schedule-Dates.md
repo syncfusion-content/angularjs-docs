@@ -2,7 +2,7 @@
 layout: post
 title: Validating-Schedule-Dates
 description: validating schedule dates
-platform: Angular-1
+platform: AngularJS
 control: Gantt
 documentation: ug
 ---

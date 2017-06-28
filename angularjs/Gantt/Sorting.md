@@ -2,7 +2,7 @@
 layout: post
 title: Sorting
 description: sorting
-platform: Angular-1
+platform: AngularJS
 control: Gantt
 documentation: ug
 ---

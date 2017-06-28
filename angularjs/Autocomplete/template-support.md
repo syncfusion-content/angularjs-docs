@@ -2,7 +2,7 @@
 layout: post
 title: template-support
 description: template support
-platform: angular-1
+platform: AngularJS
 control: Autocomplete
 documentation: ug
 ---

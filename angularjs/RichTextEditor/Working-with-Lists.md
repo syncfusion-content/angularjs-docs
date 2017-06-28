@@ -2,7 +2,7 @@
 layout: post
 title: Working with Lists operation in RichTextEditor widget
 description: Working with Lists customization for RichTextEditor widget
-platform: Angular-1
+platform: AngularJS
 control: RichTextEditor
 documentation: ug
 keywords: RichTextEditor, Lists, Custom Lists

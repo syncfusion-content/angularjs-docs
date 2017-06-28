@@ -2,7 +2,7 @@
 layout: post
 title: Data Binding
 description: Data Binding 
-platform: Angular-1
+platform: AngularJS
 control: Button
 documentation: ug
 ---

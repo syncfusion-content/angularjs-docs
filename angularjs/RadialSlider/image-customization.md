@@ -2,7 +2,7 @@
 layout: post
 title: image customization
 description: image customization
-platform: Angular-1
+platform: AngularJS
 control: Radial Slider
 documentation: ug
 ---

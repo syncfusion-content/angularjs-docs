@@ -1,7 +1,7 @@
 ---
 title: Accessing shared folder | FileExplorer | Javascript | Syncfusion
 description: Accessing shared folder option in FileExplorer
-platform: Angular-1
+platform: AngularJS
 control: FileExplorer
 documentation: UG
 keywords: Accessing shared folder

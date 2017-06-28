@@ -2,7 +2,7 @@
 layout: post
 title: Define-value
 description: define value
-platform: Angular-1
+platform: AngularJS
 control: ProgressBar
 documentation: ug
 keywords: ejprogressbar, progressbar, angualarjs progressbar

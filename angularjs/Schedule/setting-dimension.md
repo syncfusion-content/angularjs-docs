@@ -1,7 +1,7 @@
 ---
 title: Setting dimension
 description: Setting dimension for Schedule control
-platform: Angular-1
+platform: AngularJS
 control: schedule
 documentation: ug
 keywords: dimension, cell dimension, cell width, cell height 

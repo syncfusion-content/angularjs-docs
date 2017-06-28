@@ -1,7 +1,7 @@
 ---
 title: Thumbnail Compression | FileExplorer | JavaScript | Syncfusion
 description: Thumbnail image size reduction option in FileExplorer
-platform: Angular-1
+platform: AngularJS
 control: FileExplorer
 documentation: UG
 keywords: Thumbnail compression, image compression, reduce image size

@@ -4,7 +4,7 @@ title: Service reference for ejSchedule widget
 description: Services referred for Essential JavaScript Scheduler control.
 control: schedule
 documentation: ug
-platform: Angular-1
+platform: AngularJS
 keywords: schedule services, schedule exporting services
 ---
 # Scheduler Services

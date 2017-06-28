@@ -1,7 +1,7 @@
 ---
 title: Getting Started with ReportViewer component
 description: getting started
-platform: Angular-1
+platform: AngularJS
 control: ReportViewer
 documentation: ug 
 keywords: ejReportViewer, ReportViewer, js ReportViewer 

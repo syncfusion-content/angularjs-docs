@@ -2,7 +2,7 @@
 layout: post
 title: Synchronous-Upload
 description: synchronous upload 
-platform: Angular-1
+platform: AngularJS
 control: Uploadbox
 documentation: ug
 ---

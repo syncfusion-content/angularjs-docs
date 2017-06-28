@@ -2,7 +2,7 @@
 layout: post
 title: Getting started with DropDownList widget for Syncfusion Essential JS
 description: To get start with DropDownList by adding references.
-platform: Angular-1
+platform: AngularJS
 control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, Populating data

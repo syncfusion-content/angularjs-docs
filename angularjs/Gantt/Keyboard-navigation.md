@@ -2,7 +2,7 @@
 layout: post
 title: Keyboard-navigation
 description: Keyboard-navigation
-platform: Angular-1
+platform: AngularJS
 control: Gantt
 documentation: ug
 ---

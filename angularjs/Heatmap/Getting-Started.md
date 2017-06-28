@@ -2,7 +2,7 @@
 layout: post
 title: Getting started with Syncfusion Essential HeatMap for Angular 1.0
 description: Getting started walk through to create your first Heat map.
-platform: Angular-1
+platform: AngularJS
 control: ejHeatMap
 documentation: ug
 ---

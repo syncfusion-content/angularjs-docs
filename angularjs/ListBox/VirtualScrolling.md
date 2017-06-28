@@ -2,7 +2,7 @@
 layout: post
 title: Virutual-Scrolling
 description: Virutual-Scrolling
-platform: Angular-1
+platform: AngularJS
 control: ListBox
 documentation: ug
 ---

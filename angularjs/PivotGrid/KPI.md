@@ -2,7 +2,7 @@
 layout: post
 title: Key-Performance-Indicator-KPI
 description: key performance indicator (KPI)
-platform: Angular-1
+platform: AngularJS
 control: pivotgrid
 documentation: ug
 keywords: ejpivotgrid, pivotgrid, pivotgrid widget, js pivotgrid 

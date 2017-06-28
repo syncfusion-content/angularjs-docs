@@ -2,7 +2,7 @@
 layout: post
 title: item-customization
 description: item customization
-platform: Angular-1
+platform: AngularJS
 control: Radial Menu
 documentation: ug
 ---

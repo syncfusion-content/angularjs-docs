@@ -2,7 +2,7 @@
 layout: post
 title: Selection
 description: Selection
-platform: Angular-1
+platform: AngularJS
 control: ListBox
 documentation: ug
 ---

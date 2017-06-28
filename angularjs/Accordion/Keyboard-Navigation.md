@@ -2,7 +2,7 @@
 layout: post
 title: Keyboard-Navigation
 description: keyboard navigation
-platform: Angular-1
+platform: AngularJS
 control: Accordion 
 documentation: ug
 keywords: ejaccordion, accordion, angularjs accordion

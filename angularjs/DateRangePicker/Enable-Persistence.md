@@ -2,7 +2,7 @@
 layout: post
 title: Enable Persistence 
 description: Enable Persistence
-platform: Angular-1
+platform: AngularJS
 control: DataRangePicker
 documentation: ug
 ---

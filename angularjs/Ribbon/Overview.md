@@ -3,7 +3,7 @@ layout: post
 title:  Ribbon - Overview
 description: Ribbon Introduction
 documentation: ug
-platform: Angular-1
+platform: AngularJS
 keywords: overview
 ---
 

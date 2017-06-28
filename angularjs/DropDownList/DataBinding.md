@@ -2,7 +2,7 @@
 layout: post
 title: Data binding in DropDownList widget
 description: Describes about the data binding in DropDownList widget 
-platform: Angular-1
+platform: AngularJS
 control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, data binding, REStFul Binding, WebAPI, Web Method, OData, OData4

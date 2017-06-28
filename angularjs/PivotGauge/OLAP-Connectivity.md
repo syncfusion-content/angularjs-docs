@@ -2,7 +2,7 @@
 layout: post
 title: OLAP-Connection-Types
 description: OLAP Connection Types
-platform: Angular-1
+platform: AngularJS
 control: PivotGauge
 documentation: ug
 keywords: ejPivotGauge, PivotGauge, PivotGauge widget, js PivotGauge 

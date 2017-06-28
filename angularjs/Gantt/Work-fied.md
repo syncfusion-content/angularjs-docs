@@ -2,7 +2,7 @@
 layout: post
 title: Work-field
 description: work field
-platform: Angular-1
+platform: AngularJS
 control: Gantt
 documentation: ug
 ---

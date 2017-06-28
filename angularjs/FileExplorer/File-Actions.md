@@ -2,7 +2,7 @@
 layout: post
 title: File Actions
 description: FileExplorer provides the support for file and folder related operations.
-platform: Angular-1
+platform: AngularJS
 control: FileExplorer
 documentation: ug
 ---

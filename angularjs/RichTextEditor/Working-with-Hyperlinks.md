@@ -2,7 +2,7 @@
 layout: post
 title: Working with hyperlink customization in RichTextEditor widget
 description: Working with Hyperlinks customization in RichTextEditor widget
-platform: Angular-1
+platform: AngularJS
 control: RichTextEditor
 documentation: ug
 keywords: RichTextEditor, Hyperlinks, Add/Edit a hyperlink

@@ -2,7 +2,7 @@
 layout: post
 title: Globalization Ribbon widget for Syncfusion Essential JS
 description: How to use globalization 
-platform: Angular-1
+platform: AngularJS
 control: Ribbon
 documentation: ug
 ---

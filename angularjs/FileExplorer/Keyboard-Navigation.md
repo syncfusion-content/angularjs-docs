@@ -2,7 +2,7 @@
 layout: post
 title: Keyboard Navigation
 description: Keyboard Navigation support
-platform: Angular-1
+platform: AngularJS
 control: File Explorer
 documentation: ug
 ---

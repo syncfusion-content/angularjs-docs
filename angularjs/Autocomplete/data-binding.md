@@ -2,7 +2,7 @@
 layout: post
 title: data-binding
 description: data binding
-platform: angular-1
+platform: AngularJS
 control: Autocomplete
 documentation: ug
 ---

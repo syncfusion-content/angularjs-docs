@@ -2,7 +2,7 @@
 layout: post
 title: Databinding
 description: databinding
-platform: Angular-1
+platform: AngularJS
 control: ListBox
 documentation: ug
 ---

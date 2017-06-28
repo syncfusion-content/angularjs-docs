@@ -2,7 +2,7 @@
 layout: post
 title: Center-Menu
 description: center menu
-platform: Angular-1
+platform: AngularJS
 control: Menu
 documentation: ug
 keywords: ejmenu, menu, angularjs menu

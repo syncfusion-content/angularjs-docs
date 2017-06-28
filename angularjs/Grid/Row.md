@@ -2,7 +2,7 @@
 layout: post
 title: Row with Grid widget for Syncfusion Essential AngularJS
 description: How to use and customize the grid row
-platform: angular-1
+platform: AngularJS
 control: Grid
 documentation: ug
 --- 

@@ -2,7 +2,7 @@
 layout: post
 title: Appearance-and-Styling
 description: appearance and styling
-platform: Angular-1
+platform: AngularJS
 control: Gantt
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Summary-Type
 description: summary type
-platform: Angular-1
+platform: AngularJS
 control: pivotgrid
 documentation: ug
 keywords: ejpivotgrid, pivotgrid, pivotgrid widget, js pivotgrid 

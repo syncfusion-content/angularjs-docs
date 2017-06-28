@@ -2,7 +2,7 @@
 layout: post
 title: rtl support
 description: rtl support
-platform: angular-1
+platform: AngularJS
 control: rotator
 documentation: ug
 ---

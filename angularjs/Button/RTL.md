@@ -2,7 +2,7 @@
 layout: post
 title: Enable RTL
 description: Enable RTL 
-platform: Angular-1
+platform: AngularJS
 control: Button
 documentation: ug
 ---

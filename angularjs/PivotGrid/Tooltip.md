@@ -2,7 +2,7 @@
 layout: post
 title: ToolTip
 description: ToolTip
-platform: Angular-1
+platform: AngularJS
 control: PivotGrid
 documentation: ug
 keywords: ejpivotgrid, pivotgrid, pivotgrid widget, js pivotgrid 

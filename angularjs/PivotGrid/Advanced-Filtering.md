@@ -2,7 +2,7 @@
 layout: post
 title: Advanced Filtering and Sorting
 description: advance filtering and sorting
-platform: Angular-1
+platform: AngularJS
 control: PivotGrid
 documentation: ug
 keywords: ejpivotgrid, pivotgrid, pivotgrid widget, js pivotgrid 

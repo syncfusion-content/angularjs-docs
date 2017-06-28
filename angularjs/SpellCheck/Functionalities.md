@@ -1,7 +1,7 @@
 ---
 title: SpellCheck - Functionalities
 description: SpellCheck Functionalities
-platform: Angular-1
+platform: AngularJS
 control: spellcheck
 documentation: ug
 keywords: spellcheck functionalities, check spelling, ignore words, change words, change, ignore, ignore settings,

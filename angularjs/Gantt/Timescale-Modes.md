@@ -2,7 +2,7 @@
 layout: post
 title: Timescale-Modes
 description: timescale modes
-platform: Angular-1
+platform: AngularJS
 control: Gantt
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Globalization-Support
 description: globalization support
-platform: Angular-1
+platform: AngularJS
 control: CurrencyTextBox  
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Header-Customization
 description: header customization
-platform: Angular-1
+platform: AngularJS
 control: Accordion 
 documentation: ug
 keywords: ejaccordion, accordion, angularjs accordion

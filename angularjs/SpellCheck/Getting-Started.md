@@ -1,7 +1,7 @@
 ---
 title: Getting started with SpellCheck component	
 description: Rendering a basic SpellCheck
-platform: Angular-1
+platform: AngularJS
 control: spellcheck
 documentation: ug
 keywords: ejSpellCheck, spellcheck, spellcheck widget, js spellcheck, getting started, initialization, service reference

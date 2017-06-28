@@ -2,7 +2,7 @@
 layout: post
 title: Allow Edit 
 description: Allow Edit
-platform: Angular-1
+platform: AngularJS
 control: DataRangePicker
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: accessibility
 description: accessibility
-platform: angular-1
+platform: AngularJS
 control: Autocomplete
 documentation: ug
 ---

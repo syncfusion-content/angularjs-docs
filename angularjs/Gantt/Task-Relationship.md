@@ -2,7 +2,7 @@
 layout: post
 title: Task-Relationship
 description: task relationship
-platform: Angular-1
+platform: AngularJS
 control: Gantt
 documentation: ug
 ---

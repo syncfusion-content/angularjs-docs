@@ -2,7 +2,7 @@
 layout: post
 title: Save and Load Report
 description: save and load report
-platform: Angular-1
+platform: AngularJS
 control: pivotclient
 documentation: ug
 keywords: ejpivotclient, pivotclient, pivotclient widget, js pivotclient 

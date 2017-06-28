@@ -2,7 +2,7 @@
 layout: post
 title: Behavior-Settings
 description: Behavior Settings 
-platform: Angular-1
+platform: AngularJS
 control: Scroller
 documentation: ug
 ---

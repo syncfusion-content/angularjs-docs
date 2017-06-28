@@ -2,7 +2,7 @@
 layout: post
 title: Template-Support
 description: template support
-platform: Angular-1
+platform: AngularJS
 control: Accordion 
 documentation: ug
 keywords: ejaccordion, accordion, angularjs accordion

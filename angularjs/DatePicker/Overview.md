@@ -2,7 +2,7 @@
 layout: post
 title: Overview
 description: DatePicker introduction with key features
-platform: Angular-1
+platform: AngularJS
 control: DatePicker
 documentation: ug
 ---

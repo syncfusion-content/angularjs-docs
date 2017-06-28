@@ -2,7 +2,7 @@
 layout: post
 title: Grouping
 description: Grouping
-platform: Angular-1
+platform: AngularJS
 control: ListBox
 documentation: ug
 ---

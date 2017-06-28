@@ -2,7 +2,7 @@
 layout: post
 title: File-Actions
 description: file actions
-platform: Angular-1
+platform: AngularJS
 control: Uploadbox
 documentation: ug
 ---

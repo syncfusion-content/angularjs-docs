@@ -2,7 +2,7 @@
 layout: post
 title: File-Size
 description: file size 
-platform: Angular-1
+platform: AngularJS
 control: Uploadbox
 documentation: ug
 ---

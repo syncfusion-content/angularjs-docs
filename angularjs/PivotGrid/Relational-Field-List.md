@@ -2,7 +2,7 @@
 layout: post
 title: Field-List
 description: field list
-platform: Angular-1
+platform: AngularJS
 control: pivotgrid
 documentation: ug
 keywords: ejpivotgrid, pivotgrid, pivotgrid widget, js pivotgrid 

@@ -2,7 +2,7 @@
 layout: post
 title: Rendering Mode in DropDownList widget
 description: Describes about rendering mode in DropDownList widget.
-platform: Angular-1
+platform: AngularJS
 control: DropDownList
 documentation: ug
 keywords: Rendering, DropDownList, dropdown, Rendering Mode

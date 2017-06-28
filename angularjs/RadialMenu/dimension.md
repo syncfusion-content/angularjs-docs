@@ -2,7 +2,7 @@
 layout: post
 title: Dimension
 description: Dimension
-platform: Angular-1
+platform: AngularJS
 control: Radial Menu
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Over View
 description: Over View
-platform: Angular-1
+platform: AngularJS
 control: DataRangePicker
 documentation: ug
 ---

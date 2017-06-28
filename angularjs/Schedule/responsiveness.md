@@ -1,7 +1,7 @@
 ---
 title: Schedule - Responsiveness
 description: Display Scheduler with responsiveness
-platform: Angular-1
+platform: AngularJS
 control: schedule
 documentation: ug
 keywords: responsive, responsiveness, auto size 

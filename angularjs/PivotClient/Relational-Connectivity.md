@@ -2,7 +2,7 @@
 layout: post
 title: Relational-Connection-Types
 description: Relational Connection Types
-platform: Angular-1
+platform: AngularJS
 control: pivotclient
 documentation: ug
 keywords: ejpivotclient, pivotclient, pivotclient widget, js pivotclient 

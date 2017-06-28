@@ -1,7 +1,7 @@
 ---
 title: State persistence
 description: Persisting Schedule Properties
-platform: Angular-1
+platform: AngularJS
 control: schedule
 documentation: ug
 keywords: persist, state persist, persistence, state persistence 

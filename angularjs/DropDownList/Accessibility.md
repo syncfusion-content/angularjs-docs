@@ -2,7 +2,7 @@
 layout: post
 title: Web Accessbility in DropDownList widget
 description: Web accessibliy support to DropDownList widget
-platform: Angular-1
+platform: AngularJS
 control: DropDownList
 documentation: ug
 keywords: Keyboard Navigation, DropDownList, Accessibility

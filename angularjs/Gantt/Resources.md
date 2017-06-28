@@ -2,7 +2,7 @@
 layout: post
 title: Resources
 description: resources
-platform: Angular-1
+platform: AngularJS
 control: Gantt
 documentation: ug
 ---

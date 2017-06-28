@@ -2,7 +2,7 @@
 layout: post
 title: Icons-and-navigation
 description: icons and navigation
-platform: Angular-1
+platform: AngularJS
 control: Menu
 documentation: ug
 keywords: ejmenu, menu, angularjs menu

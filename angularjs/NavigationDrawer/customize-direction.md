@@ -2,7 +2,7 @@
 layout: post
 title: customize-direction
 description: customize-direction
-platform: Angular-1
+platform: AngularJS
 control: Navigation Drawer
 documentation: ug
 ---

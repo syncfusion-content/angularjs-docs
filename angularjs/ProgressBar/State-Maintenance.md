@@ -2,7 +2,7 @@
 layout: post
 title: State-Maintenance
 description: state maintenance
-platform: Angular-1
+platform: AngularJS
 control: ProgressBar
 documentation: ug
 keywords: ejprogressbar, progressbar, angualarjs progressbar

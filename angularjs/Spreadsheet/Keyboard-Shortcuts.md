@@ -2,7 +2,7 @@
 layout: post
 title: Keyboard shortcuts support for Spreadsheet widget in Syncfusion Essential JS
 description: Keyboard shortcuts support for Spreadsheet widget
-platform: Angular-1
+platform: AngularJS
 control: Spreadsheet
 documentation: ug
 ---
