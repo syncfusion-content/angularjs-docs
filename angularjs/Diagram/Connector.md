@@ -11,7 +11,7 @@ documentation: ug
 
 Connectors are objects used to create link between two points, nodes or ports to represent the relationships between them.
 
-![](/angular-1/Diagram/Connector_images/Connector_img1.png)
+![](/angularjs/Diagram/Connector_images/Connector_img1.png)
 
 ## Create Connector
 
@@ -59,7 +59,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Connector_images/Connector_img2.png)
+![](/angularjs/Diagram/Connector_images/Connector_img2.png)
 
 ### Add connector at run time
 
@@ -85,24 +85,24 @@ diagram.add(connector);
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Connector_images/Connector_img3.png)
+![](/angularjs/Diagram/Connector_images/Connector_img3.png)
 
 ### Connectors from palette
 
 Connectors can be predefined and added to the symbol palette. You can drop those connectors into the Diagram, when required.
 
-For more information about adding connectors from symbol palette, refer to [Symbol Palette](/angular-1/Diagram/Symbol-Palette "Symbol Palette").
+For more information about adding connectors from symbol palette, refer to [Symbol Palette](/angularjs/Diagram/Symbol-Palette "Symbol Palette").
 
 ### Connectors through data source
 
 Connectors are automatically generated based on the relationships defined through the data source.
 The default properties for these connectors are fetched from default settings.
 
-For more information about data source, refer to [Data Binding](/angular-1/Diagram/Data-Binding "Data Binding").
+For more information about data source, refer to [Data Binding](/angularjs/Diagram/Data-Binding "Data Binding").
 
 ### Draw connectors
 
-Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using **DrawingTool**. For more information about drawing connectors, refer to [Draw Connectors](/angular-1/Diagram/Tools#drawing-tools:connectors "Draw Connectors").
+Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using **DrawingTool**. For more information about drawing connectors, refer to [Draw Connectors](/angularjs/Diagram/Tools#drawing-tools:connectors "Draw Connectors").
 
 ## Update Connector at runtime
 
@@ -192,7 +192,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Connector_images/Connector_img4.png)
+![](/angularjs/Diagram/Connector_images/Connector_img4.png)
 
 N> By default, connections are created at the intersecting point of segments and node bounds. The connection between any specific point of source and target nodes can be achieved with connection ports.
 
@@ -311,7 +311,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Connector_images/Connector_img5.png)
+![](/angularjs/Diagram/Connector_images/Connector_img5.png)
 
 ## Segments
 
@@ -349,7 +349,7 @@ connectors.push(connector);
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Connector_images/connector_img6.png)
+![](/angularjs/Diagram/Connector_images/connector_img6.png)
 
 The `point` property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
 
@@ -383,7 +383,7 @@ connectors.push(connector);
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Connector_images/Connector_img7.png)
+![](/angularjs/Diagram/Connector_images/Connector_img7.png)
 
 ### Orthogonal
 
@@ -415,7 +415,7 @@ connectors.push(connector);
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Connector_images/Connector_img8.png)
+![](/angularjs/Diagram/Connector_images/Connector_img8.png)
 
 The `length` and `direction` properties allow to define the flow and length of segment. The following code example illustrates how to create customized orthogonal segments.
 
@@ -446,15 +446,15 @@ connectors.push(connector);
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Connector_images/Connector_img9.png)
+![](/angularjs/Diagram/Connector_images/Connector_img9.png)
 
 #### Avoid overlapping
 
 Orthogonal segments are automatically re-routed, in order to avoid overlapping with the source and target nodes. The following images illustrate how orthogonal segments are re-routed.
 
-![](/angular-1/Diagram/Connector_images/Connector_img10.png)
+![](/angularjs/Diagram/Connector_images/Connector_img10.png)
 
-![](/angular-1/Diagram/Connector_images/Connector_img11.png)
+![](/angularjs/Diagram/Connector_images/Connector_img11.png)
 
 N> Overlapping with source and target nodes are only avoided. Other nodes are not considered as obstacles.
 
@@ -488,7 +488,7 @@ connectors.push(connector);
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Connector_images/Connector_img12.png)
+![](/angularjs/Diagram/Connector_images/Connector_img12.png)
 
 The `point1` and `point2` properties of bezier segment enable you to set the control points. The following code example illustrates how to configure the Bezier segments with control points.
 
@@ -526,7 +526,7 @@ connectors.push(connector);
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Connector_images/Connector_img13.png)
+![](/angularjs/Diagram/Connector_images/Connector_img13.png)
 
 
 The `vactor1` and `vector2` properties of bezier segment enable you to define the vectors. The following code illustrates how to configure a bezier curve with vectors.
@@ -564,7 +564,7 @@ connectors.push(connector);
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Connector_images/Connector_img14.png)
+![](/angularjs/Diagram/Connector_images/Connector_img14.png)
 
 ### Complex segments
 
@@ -603,7 +603,7 @@ connectors.push(connector);
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Connector_images/Connector_img15.png)
+![](/angularjs/Diagram/Connector_images/Connector_img15.png)
 
 ## Decorator
 
@@ -688,7 +688,7 @@ connectors.push(connector3);
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Connector_images/Connector_img16.png)
+![](/angularjs/Diagram/Connector_images/Connector_img16.png)
 
 ## Padding
 
@@ -734,7 +734,7 @@ var connectors = [{
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Connector_images/Connector_img17.png)
+![](/angularjs/Diagram/Connector_images/Connector_img17.png)
 
 The `connectorPadding` property of node defines the space to be left between the node bounds and its edges. The following code example illustrates how to leave the space between a node and its connections.
 
@@ -777,7 +777,7 @@ var connectors = [
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Connector_images/Connector_img18.png)
+![](/angularjs/Diagram/Connector_images/Connector_img18.png)
 
 The `connectorPadding` property of port defines the space between the ports and its in/out edges. The following code example illustrates how to leave the space between ports and its connections.
 
@@ -834,7 +834,7 @@ var connectors = [
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Connector_images/Connector_img19.png)
+![](/angularjs/Diagram/Connector_images/Connector_img19.png)
 
 ## Bridging
 
@@ -881,7 +881,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Connector_images/Connector_img20.png)
+![](/angularjs/Diagram/Connector_images/Connector_img20.png)
 
 The direction of the bridge can be customized with the property `bridgeDirection`. BridgeDirection defines the intersecting segment where the bridge has to be inserted. By default, the bridge direction points to the top.
 
@@ -904,7 +904,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Connector_images/Connector_img21.png)
+![](/angularjs/Diagram/Connector_images/Connector_img21.png)
 
 **Limitation**: Bezier segments do not support bridging.
 
@@ -951,7 +951,7 @@ var connectors = [
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Connector_images/Connector_img22.png)
+![](/angularjs/Diagram/Connector_images/Connector_img22.png)
 
 ## Appearance
 
@@ -1010,10 +1010,10 @@ var targetDecorator = {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Connector_images/Connector_img23.png)
+![](/angularjs/Diagram/Connector_images/Connector_img23.png)
 
 ## Interaction
-Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/angular-1/Diagram/Interaction#connection-editing "Connection Editing").
+Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/angularjs/Diagram/Interaction#connection-editing "Connection Editing").
 
 ## Constraints
-The `constraints` property of connector allows to enable/disable certain features of connectors. For more information about constraints, refer to [Connector Constraints](/angular-1/Diagram/Constraints#connectorconstraints "Connector Constraints").
+The `constraints` property of connector allows to enable/disable certain features of connectors. For more information about constraints, refer to [Connector Constraints](/angularjs/Diagram/Constraints#connectorconstraints "Connector Constraints").

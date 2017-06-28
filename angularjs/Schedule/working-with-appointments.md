@@ -29,7 +29,7 @@ N> An all-day row is normally visible on the Scheduler, as the `e-showalldayrow`
 
 ### Recurrence
 
-Represents an appointment that is created for a certain time interval that occurs repeatedly in a daily, weekly, monthly, yearly or every weekday basis at the same time interval based on the recurrence rule. The other available options and validations that can be performed on recurrence appointments can be referred from [here](/angular-1/schedule/working-with-appointments#recurrence-options).
+Represents an appointment that is created for a certain time interval that occurs repeatedly in a daily, weekly, monthly, yearly or every weekday basis at the same time interval based on the recurrence rule. The other available options and validations that can be performed on recurrence appointments can be referred from [here](/angularjs/schedule/working-with-appointments#recurrence-options).
 
 ## CRUD operation 
 
@@ -41,7 +41,7 @@ The appointments can be added/edited in the Scheduler using any one of the follo
 
 * Quick window
 * Default appointment window
-* [Context menu](/angular-1/schedule/context-menu)
+* [Context menu](/angularjs/schedule/context-menu)
 * Through programmatically
 
 #### Quick Window
@@ -143,10 +143,10 @@ The default appointment window is availed with options like
 
 The other additional options available are listed below for which the appropriate API’s are needed to be configured to display these options on the appointment window.
 
-* Location ([showLocationField](/angular-1/schedule/miscellaneous#showhide-location-field))
-* Priority ([prioritySettings](/angular-1/schedule/working-with-appointments#priority))
-* Categorize ([categorizeSettings](/angular-1/schedule/working-with-appointments#categorization))
-* [Resources](/angular-1/schedule/resources)    
+* Location ([showLocationField](/angularjs/schedule/miscellaneous#showhide-location-field))
+* Priority ([prioritySettings](/angularjs/schedule/working-with-appointments#priority))
+* Categorize ([categorizeSettings](/angularjs/schedule/working-with-appointments#categorization))
+* [Resources](/angularjs/schedule/resources)    
 
 The appointments can be created by double-clicking the Scheduler cells across the required time slots, which makes the Create Appointment window to pop-up. The start and end time fields will get automatically populated, according to the time-slot selection. Clicking on the done button in an appointment window will create the appointment for the selected time cells.
 
@@ -248,7 +248,7 @@ The appointments can be deleted in either of the following ways,
 * Selecting an appointment and pressing <kbd>Delete</kbd> key.
 * Through Programmatically.
 
-A pop-up with a confirmation message will get displayed before deleting an appointment, which can be either switched on/off using the API `e-showdeleteconfirmationdialog`. Also, the confirmation text in that pop-up can be customized as mentioned [here](/angular-1/schedule/globalization-and-localization#localization:localizing-specific-words).
+A pop-up with a confirmation message will get displayed before deleting an appointment, which can be either switched on/off using the API `e-showdeleteconfirmationdialog`. Also, the confirmation text in that pop-up can be customized as mentioned [here](/angularjs/schedule/globalization-and-localization#localization:localizing-specific-words).
 
 **For example**, to localize only the delete confirmation message in the delete window - 
 
@@ -292,7 +292,7 @@ A pop-up with a confirmation message will get displayed before deleting an appoi
 
 {% endhighlight %}
 
-N> All these CRUD operations on appointments (add/edit/delete) can also be done through the default [context menu](/angular-1/schedule/context-menu#default-menu-options) options **Add Appointment**, **Edit Appointment** and **Delete Appointment** which is available, when context menu settings is enabled within Scheduler.
+N> All these CRUD operations on appointments (add/edit/delete) can also be done through the default [context menu](/angularjs/schedule/context-menu#default-menu-options) options **Add Appointment**, **Edit Appointment** and **Delete Appointment** which is available, when context menu settings is enabled within Scheduler.
 
 #### Through Programmatically
 
@@ -970,7 +970,7 @@ The prioritySettings holds the below priority related properties such as,
 
 * `e-prioritysettings-enable` - It accepts true or false value, denoting whether to enable/disable the priority option. Its default value is **false**.
 * `e-prioritysettings-template` – Customize the priority icon/images using template options.
-* `e-prioritysettings-datasource` – binds the priority dataSource collection. This property should be assigned with the JSON data array collection or instance of [ej.DataManger](/angular-1/datamanager/overview). 
+* `e-prioritysettings-datasource` – binds the priority dataSource collection. This property should be assigned with the JSON data array collection or instance of [ej.DataManger](/angularjs/datamanager/overview). 
 
 We have below 4 default values for priority dataSource collection.
 
@@ -1135,11 +1135,11 @@ The appointments can be filtered or shortlisted based on the simple or complex c
 
 **field** - It is the field, with which the search operation takes place. It’s an optional argument.
 
-**operator** – It is generally used to specify the [filter](/angular-1/datamanager/filtering) type. 
+**operator** – It is generally used to specify the [filter](/angularjs/datamanager/filtering) type. 
 
 **value** – It is the filter keyword based on which the records are filtered.
 
-**predicate** – To add more than one conditional query, need to use `and`, `or` [predicates](/angular-1/datamanager/filtering#and-predicate).
+**predicate** – To add more than one conditional query, need to use `and`, `or` [predicates](/angularjs/datamanager/filtering#and-predicate).
 
 {% highlight html %}
 

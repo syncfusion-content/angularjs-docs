@@ -313,7 +313,7 @@ This View option lists out the appointments in a grid-like view for the next 7 d
 
 {% endhighlight %}
 
-N> In Agenda view, the templates can be applied for the date and time columns which can be referred [here](/angular-1/schedule/templates). Also, the template passed through the `e-appointmenttemplateid` will gets applied to the event column in Agenda view.
+N> In Agenda view, the templates can be applied for the date and time columns which can be referred [here](/angularjs/schedule/templates). Also, the template passed through the `e-appointmenttemplateid` will gets applied to the event column in Agenda view.
 
 ## Restriction on View Navigation
 

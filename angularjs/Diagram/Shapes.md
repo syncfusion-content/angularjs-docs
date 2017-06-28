@@ -58,7 +58,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img59.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img59.png)
 
 ## Image
 Diagram allows to add images as image nodes. For image nodes, the `type` should be set as "image". In addition, the `source` property of node enables you to set the image source. 
@@ -90,7 +90,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img60.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img60.png)
 
 N> Deploy your HTML file in the web Application and export the diagram (image node) or else the image node will not be exported in the chrome and Firefox due to security issues. Please refer to the link below.
 
@@ -140,10 +140,10 @@ The following tables illustrates all the possible scale options for the image no
 
 | Values| Image |
 |---|---|
-| None | ![](/angular-1/Diagram/Shapes_images/Shapes_img128.png) |
-| Meet | ![](/angular-1/Diagram/Shapes_images/Shapes_img129.png) |
-| Slice | ![](/angular-1/Diagram/Shapes_images/Shapes_img130.png) |
-| Stretch | ![](/angular-1/Diagram/Shapes_images/Shapes_img131.png) |
+| None | ![](/angularjs/Diagram/Shapes_images/Shapes_img128.png) |
+| Meet | ![](/angularjs/Diagram/Shapes_images/Shapes_img129.png) |
+| Slice | ![](/angularjs/Diagram/Shapes_images/Shapes_img130.png) |
+| Stretch | ![](/angularjs/Diagram/Shapes_images/Shapes_img131.png) |
 
 
 ## HTML
@@ -188,7 +188,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img61.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img61.png)
 
 N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is by design that while exporting, Diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML is not feasible. Hence, this limitation. 
 
@@ -234,7 +234,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img62.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img62.png)
 
 N> Like HTML node, Native node also cannot be exported to image format. Fill color of native node can be overridden by the inline style or fill of the SVG element specified in the template. 
 
@@ -298,10 +298,10 @@ The following tables illustrates all the possible scale options for the node
 
 | Values| Image |
 |---|---|
-| None | ![](/angular-1/Diagram/Shapes_images/Shapes_img124.png) |
-| Meet | ![](/angular-1/Diagram/Shapes_images/Shapes_img125.png) |
-| Slice | ![](/angular-1/Diagram/Shapes_images/Shapes_img126.png) |
-| Stretch | ![](/angular-1/Diagram/Shapes_images/Shapes_img127.png) |
+| None | ![](/angularjs/Diagram/Shapes_images/Shapes_img124.png) |
+| Meet | ![](/angularjs/Diagram/Shapes_images/Shapes_img125.png) |
+| Slice | ![](/angularjs/Diagram/Shapes_images/Shapes_img126.png) |
+| Stretch | ![](/angularjs/Diagram/Shapes_images/Shapes_img127.png) |
 
 ## Basic Shapes
 
@@ -337,7 +337,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img1.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img1.png)
 
 N> By default, the `type` property of node is set as "basic".
 
@@ -372,11 +372,11 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img58.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img58.png)
 
 The list of basic shapes are as follows.
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img2.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img2.png)
 
 ## Flow Shapes
 
@@ -406,10 +406,10 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img3.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img3.png)
 
 The list of flow shapes are as follows.
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img4.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img4.png)
 
 

@@ -62,6 +62,6 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Localization_images/Localization_img1.png)
+![](/angularjs/Diagram/Localization_images/Localization_img1.png)
 
 N> You have to define the textual descriptions of the context menu items for your custom cultures.

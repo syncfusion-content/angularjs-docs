@@ -25,7 +25,7 @@ function loadFromJSON() {
 {% endhighlight %}
 
 
-When you open an excel file, it needs to be read and converted to client side Spreadsheet model. The converted client side Spreadsheet model is sent as JSON which is used to render Spreadsheet. Similarly, when you save the Spreadsheet, the client Spreadsheet model is sent to the server as JSON for processing and saved. [`Server configuration`](https://help.syncfusion.com/angular-1/spreadsheet/open-and-save#server-configuration "Server configuration") is used for this process.
+When you open an excel file, it needs to be read and converted to client side Spreadsheet model. The converted client side Spreadsheet model is sent as JSON which is used to render Spreadsheet. Similarly, when you save the Spreadsheet, the client Spreadsheet model is sent to the server as JSON for processing and saved. [`Server configuration`](https://help.syncfusion.com/angularjs/spreadsheet/open-and-save#server-configuration "Server configuration") is used for this process.
 
 ## Open 
 

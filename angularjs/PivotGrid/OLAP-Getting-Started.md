@@ -541,7 +541,7 @@ Now, PivotGrid will be rendered with Internet Sales Amount over a period of fisc
 ![](Getting-Started_images/olapwebapi.png) 
 
 ### WCF
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotGrid. For more details on this topic, [click here](http://help.syncfusion.com/angular-1/pivotgrid/olap-connectivity#wcf).
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotGrid. For more details on this topic, [click here](http://help.syncfusion.com/angularjs/pivotgrid/olap-connectivity#wcf).
 
 
 

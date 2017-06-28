@@ -44,7 +44,7 @@ diagram.update({
 });
 {% endhighlight %}
 
-![](/angular-1/Diagram/Tools_images/Tools_img1.png)
+![](/angularjs/Diagram/Tools_images/Tools_img1.png)
 
 The following code example illustrates how to draw a path.
 
@@ -68,7 +68,7 @@ diagram.update({
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Tools_images/Tools_img3.png)
+![](/angularjs/Diagram/Tools_images/Tools_img3.png)
 
 ### Connectors
 
@@ -91,7 +91,7 @@ diagram.update({
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Tools_images/Tools_img2.png)
+![](/angularjs/Diagram/Tools_images/Tools_img2.png)
 
 ### Text 
 

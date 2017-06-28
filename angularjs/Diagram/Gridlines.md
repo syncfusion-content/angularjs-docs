@@ -37,9 +37,9 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Gridlines_images/Gridlines_img1.png)
+![](/angularjs/Diagram/Gridlines_images/Gridlines_img1.png)
 
-To show only horizontal/vertical gridlines or to hide gridlines, refer to [Constraints](/angular-1/Diagram/Constraints#snapconstraints "Constraints")
+To show only horizontal/vertical gridlines or to hide gridlines, refer to [Constraints](/angularjs/Diagram/Constraints#snapconstraints "Constraints")
 
 ## Appearance
 
@@ -77,7 +77,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Gridlines_images/Gridlines_img4.png)
+![](/angularjs/Diagram/Gridlines_images/Gridlines_img4.png)
 
 ### Line Intervals
 
@@ -108,7 +108,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Gridlines_images/Gridlines_img2.png)
+![](/angularjs/Diagram/Gridlines_images/Gridlines_img2.png)
 
 # Snapping
 
@@ -131,7 +131,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-To enable/disable snapping to horizontal/vertical lines, refer to [Constraints] (/angular-1/Diagram/Constraints#SnapConstraints "Constraints")
+To enable/disable snapping to horizontal/vertical lines, refer to [Constraints] (/angularjs/Diagram/Constraints#SnapConstraints "Constraints")
 
 ## Customization of Snap Intervals
 
@@ -190,4 +190,4 @@ The `enableSnapToObject` property allows you to enable/disable smart guides. The
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Gridlines_images/Gridlines_img4.png)
+![](/angularjs/Diagram/Gridlines_images/Gridlines_img4.png)

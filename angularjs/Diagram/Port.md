@@ -11,15 +11,15 @@ documentation: ug
 
 Essential Diagram for JS provides support to define custom ports for making connections.
 
-![](/angular-1/Diagram/Port_images/Port_img3.png)
+![](/angularjs/Diagram/Port_images/Port_img3.png)
 
 When a connector is connected between two nodes, its end points are automatically docked to node's nearest boundary as shown in the following image. 
 
-![](/angular-1/Diagram/Port_images/Port_img4.png)
+![](/angularjs/Diagram/Port_images/Port_img4.png)
 
 Ports act as the connection points of node and allows to create connections with only those specific points as shown in the following image.
 
-![](/angular-1/Diagram/Port_images/Port_img5.png)
+![](/angularjs/Diagram/Port_images/Port_img5.png)
 
 ## Create Port
 
@@ -109,7 +109,7 @@ diagram.addPorts("node", ports)
 
 {% endhighlight %}
 
-![]((/angular-1/Diagram/Port_images/Port_img1.png)
+![]((/angularjs/Diagram/Port_images/Port_img1.png)
 
 To explore the set of properties for defining a port, refer to [Port Properties](/api/js/ejDiagram#members:nodes-ports "Port Properties")
 
@@ -132,7 +132,7 @@ diagram.updatePort(selectedObject.name, selectedObject.ports[0], {
 ## Connect with ports
 
 Connector’s `sourcePort` and `targetPort` properties allow to create connections between some specific points of source/target nodes. 
-For more information about creating connections with port, refer to [Connections with ports](/angular-1/Diagram/Connector#connections-with-ports "Connections with ports")
+For more information about creating connections with port, refer to [Connections with ports](/angularjs/Diagram/Connector#connections-with-ports "Connections with ports")
 
 ## Appearance 
 
@@ -175,8 +175,8 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![]((/angular-1/Diagram/Port_images/Port_img2.png)
+![]((/angularjs/Diagram/Port_images/Port_img2.png)
 
 ## Constraints
 
-The `constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/angular-1/Diagram/Constraints#portconstraints)
+The `constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/angularjs/Diagram/Constraints#portconstraints)

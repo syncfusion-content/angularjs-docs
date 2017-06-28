@@ -15,7 +15,7 @@ The **Essential JavaScript TreeGrid** has been designed to represent and edit th
 
 This section explains how to create a TreeGrid widget in your application with hierarchical data source and enable sorting and editing. The following screenshot displays the output.
 
-![](/angular-1/TreeGrid/Getting-Started_images/Getting-Started_img1.png)
+![](/angularjs/TreeGrid/Getting-Started_images/Getting-Started_img1.png)
 
 1.Create an HTML file and add the following template to the HTML file.
 
@@ -77,7 +77,7 @@ This section explains how to create a TreeGrid widget in your application with h
 
 In the above code snippet, `ej-treegrid` denotes the control directive for the Syncfusion's TreeGrid angular widget and all its properties are prefixed with the letter `e-` (For example, e-datasource).
 
-![](/angular-1/TreeGrid/Getting-Started_images/Getting-Started_img2.png)
+![](/angularjs/TreeGrid/Getting-Started_images/Getting-Started_img2.png)
 
 TreeGrid with empty datasource 
 {:.caption}
@@ -195,7 +195,7 @@ TreeGrid with empty datasource
 
 TreeGrid widget is displayed as the output in the following screenshot.
 
-![](/angular-1/TreeGrid/Getting-Started_images/Getting-Started_img3.png)
+![](/angularjs/TreeGrid/Getting-Started_images/Getting-Started_img3.png)
 
 ## Enable Sorting
 
@@ -224,7 +224,7 @@ Enable the multicolumn sorting in TreeGrid by setting [`e-allowMultiSorting`](ht
 
 {% endhighlight %}
 
-![](/angular-1/TreeGrid/Getting-Started_images/Getting-Started_img4.png)
+![](/angularjs/TreeGrid/Getting-Started_images/Getting-Started_img4.png)
 
 ## Enable Editing
 
@@ -293,5 +293,5 @@ You can set the editor type for a particular column as follows.
 
 The output of the DateTimePicker editor in TreeGrid control is as follows.
 
-![](/angular-1/TreeGrid/Getting-Started_images/Getting-Started_img5.png)
+![](/angularjs/TreeGrid/Getting-Started_images/Getting-Started_img5.png)
 

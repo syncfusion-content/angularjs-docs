@@ -653,7 +653,7 @@ Now, PivotClient is rendered with PivotChart and PivotGrid with "Country" field 
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotClient. For more details on this topic, [click here](http://help.syncfusion.com/angular-1/pivotclient/relational-connectivity#wcf-1).
+This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotClient. For more details on this topic, [click here](http://help.syncfusion.com/angularjs/pivotclient/relational-connectivity#wcf-1).
   
 
 

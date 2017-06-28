@@ -80,7 +80,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Label_images/Label_img1.png)
+![](/angularjs/Diagram/Label_images/Label_img1.png)
 
 To explore more label properties, refer to [Label Properties](/api/js/ejdiagram#members:nodes-labels "Label Properties").
 
@@ -112,7 +112,7 @@ Labels can be added at runtime by using the client side method `addLabel`. The 
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Label_images/addlabelatruntime_img1.png)
+![](/angularjs/Diagram/Label_images/addlabelatruntime_img1.png)
 
 
 ## Update Label at runtime
@@ -143,7 +143,7 @@ The `offset` property of label is used to align the labels based on fractions. 0
 
 The following image shows the relationship between the label position (black colored circle) and offset (fraction values).
 
-![](/angular-1/Diagram/Label_images/Label_img2.png)
+![](/angularjs/Diagram/Label_images/Label_img2.png)
 
 ### Horizontal and vertical alignments
 
@@ -153,15 +153,15 @@ The following tables illustrates all the possible alignments visually with **off
 
 | Horizontal Alignment | Vertical Alignment | Output with Offset(0,0) |
 |---|---|---|
-| Left | Top | ![](/angular-1/Diagram/Label_images/Label_img3.png) |
-| Center | | ![](/angular-1/Diagram/Label_images/Label_img4.png) |
-| Right | | ![](/angular-1/Diagram/Label_images/Label_img5.png) |
-| Left | Center | ![](/angular-1/Diagram/Label_images/Label_img6.png) |
-| Center | | ![](/angular-1/Diagram/Label_images/Label_img7.png) |
-| Right | | ![](/angular-1/Diagram/Label_images/Label_img8.png) |
-| Left | Bottom | ![](/angular-1/Diagram/Label_images/Label_img9.png) |
-| Center | | ![](/angular-1/Diagram/Label_images/Label_img10.png) |
-| Right | | ![](/angular-1/Diagram/Label_images/Label_img11.png) |
+| Left | Top | ![](/angularjs/Diagram/Label_images/Label_img3.png) |
+| Center | | ![](/angularjs/Diagram/Label_images/Label_img4.png) |
+| Right | | ![](/angularjs/Diagram/Label_images/Label_img5.png) |
+| Left | Center | ![](/angularjs/Diagram/Label_images/Label_img6.png) |
+| Center | | ![](/angularjs/Diagram/Label_images/Label_img7.png) |
+| Right | | ![](/angularjs/Diagram/Label_images/Label_img8.png) |
+| Left | Bottom | ![](/angularjs/Diagram/Label_images/Label_img9.png) |
+| Center | | ![](/angularjs/Diagram/Label_images/Label_img10.png) |
+| Right | | ![](/angularjs/Diagram/Label_images/Label_img11.png) |
 
 The following codes illustrates how to align labels.
 
@@ -197,13 +197,13 @@ var nodes = [{
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Label_images/Label_img12.png)
+![](/angularjs/Diagram/Label_images/Label_img12.png)
 
 ### Label alignment with respect to Segments
 
  `segmentOffset` and `alignment` properties of label allows you to align the connector labels with respect to the segments. In the following image, the labels are placed exactly over the segments regardless of its rectangular bounds.
  
- ![](/angular-1/Diagram/Label_images/Label_img32.png)
+ ![](/angularjs/Diagram/Label_images/Label_img32.png)
  
  Following code example illustrates how to align connector labels.
  
@@ -294,7 +294,7 @@ var nodes = [{
 		
 {% endhighlight %}
 
-![](/angular-1/Diagram/Label_images/Label_img31.png)
+![](/angularjs/Diagram/Label_images/Label_img31.png)
 
 By default, connector labels will be aligned with respect to the segments. The `relativeMode` property of label allows you to disable this segment specific label alignment. Following code example illustrates how to disable the segment specific label alignment.
 
@@ -383,7 +383,7 @@ The following code example illustrates how to align a label based on its `offset
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Label_images/Label_img13.png)
+![](/angularjs/Diagram/Label_images/Label_img13.png)
 
 ### Text Alignment
 
@@ -412,14 +412,14 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Label_images/Label_img14.png)
+![](/angularjs/Diagram/Label_images/Label_img14.png)
 
 | TextAlign | Image |
 |---|---|
-| Left | ![](/angular-1/Diagram/Label_images/Label_img15.png) |
-| Right | ![](/angular-1/Diagram/Label_images/Label_img16.png) |
-| Center | ![](/angular-1/Diagram/Label_images/Label_img17.png) |
-| Justify | ![](/angular-1/Diagram/Label_images/Label_img18.png) |
+| Left | ![](/angularjs/Diagram/Label_images/Label_img15.png) |
+| Right | ![](/angularjs/Diagram/Label_images/Label_img16.png) |
+| Center | ![](/angularjs/Diagram/Label_images/Label_img17.png) |
+| Justify | ![](/angularjs/Diagram/Label_images/Label_img18.png) |
 
 ## Wrapping
 
@@ -448,13 +448,13 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Label_images/Label_img19.png)
+![](/angularjs/Diagram/Label_images/Label_img19.png)
 
 | Values | Description | Image |
 |---|---|---|
-| NoWrap | Text will not be wrapped | ![](/angular-1/Diagram/Label_images/Label_img20.png) |
-| Wrap | Text-wrapping occurs when the text overflows beyond the available node width. | ![](/angular-1/Diagram/Label_images/Label_img21.png) |
-| WrapWithOverflow (Default) | Text-wrapping occurs when the text overflows beyond the available node width. However, the text may overflow beyond the node width in the case of a very long word. | ![](/angular-1/Diagram/Label_images/Label_img22.png) |
+| NoWrap | Text will not be wrapped | ![](/angularjs/Diagram/Label_images/Label_img20.png) |
+| Wrap | Text-wrapping occurs when the text overflows beyond the available node width. | ![](/angularjs/Diagram/Label_images/Label_img21.png) |
+| WrapWithOverflow (Default) | Text-wrapping occurs when the text overflows beyond the available node width. However, the text may overflow beyond the node width in the case of a very long word. | ![](/angularjs/Diagram/Label_images/Label_img22.png) |
 
 ## Appearance
 
@@ -488,7 +488,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Label_images/Label_img23.png)
+![](/angularjs/Diagram/Label_images/Label_img23.png)
 
 The fill, border and opacity appearances of the text can also be customized with appearance specific properties of label.The following code illustrates how to customize background, opacity and border of a label.
 
@@ -519,7 +519,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Label_images/Label_img24.png)
+![](/angularjs/Diagram/Label_images/Label_img24.png)
 
 ## Drag
 
@@ -573,7 +573,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Label_images/Label_img25.png)
+![](/angularjs/Diagram/Label_images/Label_img25.png)
 
 ## Rotate
 
@@ -602,7 +602,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Label_images/Label_img26.png)
+![](/angularjs/Diagram/Label_images/Label_img26.png)
 
 N> There is no built-in support to rotate labels interactively.
 
@@ -629,7 +629,7 @@ diagram.updateLabel(node.name, node.labels[0], options);
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Label_images/Label_img27.png)
+![](/angularjs/Diagram/Label_images/Label_img27.png)
 
 ### Read Only labels
 
@@ -700,7 +700,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Label_images/Label_img28.png)
+![](/angularjs/Diagram/Label_images/Label_img28.png)
 
 ## Limitation
 
@@ -708,7 +708,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 | Expected behavior | Current behavior |
 |---|---|
-| ![](/angular-1/Diagram/Label_images/Label_img29.png) | ![](/angular-1/Diagram/Label_images/Label_img30.png) |
+| ![](/angularjs/Diagram/Label_images/Label_img29.png) | ![](/angularjs/Diagram/Label_images/Label_img30.png) |
 
 
 

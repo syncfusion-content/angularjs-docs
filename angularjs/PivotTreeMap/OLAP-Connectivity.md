@@ -289,5 +289,5 @@ N> In this example, “PivotTreeMapDemo” indicates the name and root namespace
 
 The above code will generate a simple PivotTreeMap showing Customer Count over different customer geographic locations across a period of fiscal years.
 
-{% include image.html url="/angular-1/PivotTreeMap/OLAP-Connectivity_images/olapwebapi.png" %}
+{% include image.html url="/angularjs/PivotTreeMap/OLAP-Connectivity_images/olapwebapi.png" %}
 
