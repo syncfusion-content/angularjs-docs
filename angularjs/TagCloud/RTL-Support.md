@@ -2,7 +2,7 @@
 layout: post
 title: RTL-Support
 description: rtl support
-platform: Angular-1
+platform: AngularJS
 control: TagCloud
 documentation: ug
 keywords: ejtagcloud, tagcloud, angularjs tagcloud

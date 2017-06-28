@@ -2,7 +2,7 @@
 layout: post
 title: 3D Chart types available in Essential Javascript Chart
 description: Learn about the different types of 3D charts supported by Syncfusion Essential html Chart and how to customize the 3D view.
-platform: Angular 1.0
+platform: AngularJS
 control: Chart
 documentation: ug
 ---

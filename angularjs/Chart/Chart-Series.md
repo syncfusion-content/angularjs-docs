@@ -2,7 +2,7 @@
 layout: post
 title: Multiple chart series
 description: Learn how to render different types of series in chart.
-platform: Angular 1.0
+platform: AngularJS
 control: Chart
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: RTL-support
 description: rtl support
-platform: angular-1
+platform: AngularJS
 control: Slider
 documentation: ug
 ---

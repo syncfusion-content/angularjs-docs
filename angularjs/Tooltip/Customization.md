@@ -2,7 +2,7 @@
 layout: post
 title: Customization
 description: customization
-platform: Angular-1
+platform: AngularJS
 control: Tooltip
 documentation: ug
 keywords : ejtooltip, tooltip, angularjs tooltip

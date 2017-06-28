@@ -1,7 +1,7 @@
 ---
 title: Working with appointments
 description: Working with Scheduler appointments and its related options like Recurrence.
-platform: Angular-1
+platform: AngularJS
 control: schedule
 documentation: ug
 keywords: appointments, recurrence, recurring appointment, resize, drag and drop, search, categorize, priority, occurrence, reminder, filter and CRUD 

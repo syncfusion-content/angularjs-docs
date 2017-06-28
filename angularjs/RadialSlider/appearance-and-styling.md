@@ -2,7 +2,7 @@
 layout: post
 title: appearance and styling
 description: appearance and styling
-platform: Angular-1
+platform: AngularJS
 control: Radial Slider
 documentation: ug
 ---

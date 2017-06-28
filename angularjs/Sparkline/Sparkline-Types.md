@@ -2,7 +2,7 @@
 layout: post
 title: Sparkline types
 description: What are the different types of Sparkline available in Essential html Chart.
-platform: Angular 1.0
+platform: AngularJS
 control: Sparkline
 documentation: ug
 ---

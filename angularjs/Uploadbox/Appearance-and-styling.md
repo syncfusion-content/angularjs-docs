@@ -2,7 +2,7 @@
 layout: post
 title: Appearance-and-styling
 description: appearance and styling 
-platform: Angular-1
+platform: AngularJS
 control: Uploadbox
 documentation: ug
 ---

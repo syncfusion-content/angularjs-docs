@@ -2,7 +2,7 @@
 layout: post
 title: Localization
 description: localization 
-platform: Angular-1
+platform: AngularJS
 control: PivotTreeMap
 documentation: ug
 keywords: ejpivottreemap, pivottreemap, pivottreemap widget, js pivottreemap 

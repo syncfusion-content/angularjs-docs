@@ -2,7 +2,7 @@
 layout: post
 title: Time-Options
 description: time options
-platform: Angular-1
+platform: AngularJS
 control: Gantt
 documentation: ug
 ---

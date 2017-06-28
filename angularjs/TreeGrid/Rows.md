@@ -2,7 +2,7 @@
 layout: post
 title: Rows
 description: rows
-platform: Angular-1
+platform: AngularJS
 control: TreeGrid
 documentation: ug
 ---

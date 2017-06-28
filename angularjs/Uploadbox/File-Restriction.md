@@ -2,7 +2,7 @@
 layout: post
 title: Restricting-uploading-files-based-on-its-extension
 description: restricting uploading files based on its extension
-platform: Angular-1
+platform: AngularJS
 control: Uploadbox
 documentation: ug
 ---

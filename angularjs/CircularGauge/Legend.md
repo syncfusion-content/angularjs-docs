@@ -2,7 +2,7 @@
 layout: post
 title: Legend
 description: legend for the ranges in circular gauge
-platform: Angular 1.0
+platform: AngularJS
 control: Circular Gauge
 documentation: ug
 ---

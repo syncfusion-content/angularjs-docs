@@ -2,7 +2,7 @@
 layout: post
 title: Visually represent the geometrical informations, process flow, or entities
 description: How to visually represent the geometrical information and process flows as nodes?
-platform: Angular-1
+platform: AngularJS
 control: Diagram
 documentation: ug
 ---

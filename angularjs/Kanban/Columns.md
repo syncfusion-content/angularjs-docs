@@ -3,7 +3,7 @@ layout: post
 title:  Columns
 description: Columns
 documentation: ug
-platform: Angular-1
+platform: AngularJS
 keywords: columns,kanban columns
 ---
 

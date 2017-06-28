@@ -2,7 +2,7 @@
 layout: post
 title: Data-Binding
 description: data binding
-platform: Angular-1
+platform: AngularJS
 control: TreeGrid
 documentation: ug
 ---

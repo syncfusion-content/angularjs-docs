@@ -2,7 +2,7 @@
 layout: post
 title: Keyboard-interaction
 description: Keyboard-interaction
-platform: Angular-1
+platform: AngularJS
 control: ListBox
 documentation: ug
 ---

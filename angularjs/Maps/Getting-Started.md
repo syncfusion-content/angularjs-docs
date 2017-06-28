@@ -1,7 +1,7 @@
 ---
 title: Getting-Started
 description: How to create a maps, add layers, enable tooltip, legend and other functionalities
-platform: Angular 1.0
+platform: AngularJS
 control: Maps
 documentation: ug
 keywords: ejmaps, maps, maps widget, js maps, angular maps, angularjs maps, angular 1.0 maps, angular 1 maps

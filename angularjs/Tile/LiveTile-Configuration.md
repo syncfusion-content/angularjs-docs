@@ -2,7 +2,7 @@
 layout: post
 title: LiveTile-Configuration
 description: livetile configuration
-platform: Angular-1
+platform: AngularJS
 control: Tile
 documentation: ug
 ---

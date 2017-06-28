@@ -1,7 +1,7 @@
 ---
 title: Keyboard support with shortcut keys
 description: Accessing Scheduler actions through Keyboard shortcuts 
-platform: Angular-1
+platform: AngularJS
 control: schedule
 documentation: ug
 keywords: keyboard, shortcuts 

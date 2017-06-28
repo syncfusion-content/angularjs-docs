@@ -4,7 +4,7 @@
 
  description: How to create a chart, add series, enable tooltip and other functionalities
 
- platform: Angular-1
+ platform: AngularJS
 
  control: chart
 

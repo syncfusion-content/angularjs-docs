@@ -2,7 +2,7 @@
 layout: post
 title: Overview
 description: overview
-platform: Angular 1.0
+platform: AngularJS
 control: Circular Gauge
 documentation: ug
 ---

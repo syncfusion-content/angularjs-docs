@@ -2,7 +2,7 @@
 layout: post
 title: Relational-Connection-Types
 description: Relational Connection Types
-platform: Angular-1
+platform: AngularJS
 control: PivotGauge
 documentation: ug
 keywords: ejPivotGauge, PivotGauge, PivotGauge widget, js PivotGauge 

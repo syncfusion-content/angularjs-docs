@@ -2,7 +2,7 @@
 layout: post
 title: Range-Types
 description: Range Types
-platform: Angular 1.0
+platform: AngularJS
 control: RangeNavigator
 documentation: ug
 ---

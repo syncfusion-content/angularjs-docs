@@ -2,7 +2,7 @@
 layout: post
 title: Segment-Settings
 description: segment settings
-platform: Angular 1.0
+platform: AngularJS
 control: Digital Gauge
 documentation: ug
 ---

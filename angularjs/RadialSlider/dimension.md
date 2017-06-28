@@ -2,7 +2,7 @@
 layout: post
 title: dimension
 description: dimension
-platform: Angular-1
+platform: AngularJS
 control: Radial Slider
 documentation: ug
 ---

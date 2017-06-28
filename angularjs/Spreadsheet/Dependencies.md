@@ -1,7 +1,7 @@
 ---
 title: Essential JavaScript Spreadsheet dependencies
 description: Listed Spreadsheet internal and external dependencies
-platform: Angular-1
+platform: AngularJS
 control: Spreadsheet
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Bullet-Graph-Caption
 description: bullet graph caption
-platform: angular 1.0
+platform: AngularJS
 control: BulletGraph	
 documentation: ug
 ---

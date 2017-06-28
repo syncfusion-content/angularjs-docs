@@ -2,7 +2,7 @@
 layout: post
 title: multiple-columns
 description: multiple columns
-platform: angular-1
+platform: AngularJS
 control: Autocomplete
 documentation: ug
 ---

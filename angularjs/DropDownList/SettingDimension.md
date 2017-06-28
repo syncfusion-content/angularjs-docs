@@ -2,7 +2,7 @@
 layout: post
 title: Demension in DropDownList widget
 description: Setting Dimensions to DropDownList widget
-platform: Angular-1
+platform: AngularJS
 control: DropDownList
 documentation: ug
 keywords: Auto Sizing, DropDownList, dropdown, popup size, 

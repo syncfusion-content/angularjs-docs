@@ -2,7 +2,7 @@
 layout: post
 title: XHTML Validation in RichTextEditor widget
 description: XHTML Validation to format the RichTextEditor widget's content
-platform: Angular-1
+platform: AngularJS
 control: RichTextEditor
 documentation: ug
 keywords: RichTextEditor, XHTML Validation

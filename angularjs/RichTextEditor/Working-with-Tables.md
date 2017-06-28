@@ -2,7 +2,7 @@
 layout: post
 title: Working with Tables opreation
 description: Working with Tables customization
-platform: Angular-1
+platform: AngularJS
 control: RichTextEditor
 documentation: ug
 keywords: RichTextEditor, Tables, Insert a Table, Delete a table

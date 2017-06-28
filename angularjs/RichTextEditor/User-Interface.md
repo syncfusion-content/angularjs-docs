@@ -2,7 +2,7 @@
 layout: post
 title: User Interface for the RichTextEditor widget
 description: User Interface for RichTextEditor widget (toolbar, content area, and footer)
-platform: Angular-1
+platform: AngularJS
 control: RichTextEditor
 documentation: ug
 keywords: RichTextEditor, Toolbar Configuration, Custom Tool, Tool items

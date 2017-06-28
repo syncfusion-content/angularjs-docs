@@ -2,7 +2,7 @@
 layout: post
 title: Columns with Grid widget for Syncfusion Essential AngularJS
 description: How to define the columns and its features
-platform: angular-1
+platform: AngularJS
 control: Grid
 documentation: ug
 --- 

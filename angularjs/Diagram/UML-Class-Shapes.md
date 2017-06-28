@@ -2,7 +2,7 @@
 layout: post
 title:  Visually represents a static view of an application
 description: How to visually represent the business logic as class diagram? 
-platform: Angular-1
+platform: AngularJS
 control: Diagram
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: User Interaction
 description: user interaction
-platform: Angular 1.0
+platform: AngularJS
 control: TreeMap
 documentation: ug
 ---

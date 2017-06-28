@@ -2,7 +2,7 @@
 layout: post
 title: Exporting-the-Digital-Gauge
 description: exporting the digital gauge
-platform: Angular 1.0
+platform: AngularJS
 control: Digital Gauge
 documentation: ug
 ---

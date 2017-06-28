@@ -2,7 +2,7 @@
 layout: post
 title: Sparkline size
 description: Learn how to set Sparkline size and make it responsive. 
-platform: Angular 1.0
+platform: AngularJS
 control: Sparkline
 documentation: ug
 ---

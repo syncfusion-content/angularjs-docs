@@ -2,7 +2,7 @@
 layout: post
 title: Customization
 description: customization
-platform: Angular 1.0
+platform: AngularJS
 control: Maps
 documentation: ug
 ---

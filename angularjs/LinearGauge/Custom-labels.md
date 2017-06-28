@@ -2,7 +2,7 @@
 layout: post
 title: Custom-labels
 description: custom labels
-platform: Angular 1.0 
+platform: AngularJS 
 control: Linear Gauge
 documentation: ug
 ---

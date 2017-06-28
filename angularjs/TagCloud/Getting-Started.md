@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started
 description: getting started
-platform: Angular-1
+platform: AngularJS
 control: TagCloud
 documentation: ug
 keywords: ejtagcloud, tagcloud, angularjs tagcloud

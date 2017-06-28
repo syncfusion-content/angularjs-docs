@@ -2,7 +2,7 @@
 layout: post
 title: action-buttons
 description: action buttons
-platform: angular-1
+platform: AngularJS
 control: Angular- Dialog
 documentation: ug
 ---

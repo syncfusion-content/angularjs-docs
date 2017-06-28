@@ -2,7 +2,7 @@
 layout: post
 title: CheckBox with DropDownList widget 
 description: Describes about Checkbox functionalities in DropDownList widget 
-platform: Angular-1
+platform: AngularJS
 control: DropDownList
 documentation: ug
 keywords: Checkbox, dropdown, Selection Modes, Visual Mode, Delimiter

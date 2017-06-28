@@ -2,7 +2,7 @@
 layout: post
 title: Chart types
 description: What are the different types of Charts available in Essential Javascript Chart.
-platform: Angular 1.0
+platform: AngularJS
 control: Chart
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Read the current scroll status and programmatically pan Diagrams
 description: How to read/modify the scroll status of the Diagram?
-platform: Angular-1
+platform: AngularJS
 control: Diagram
 documentation: ug
 ---

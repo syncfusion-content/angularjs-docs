@@ -1,7 +1,7 @@
 ---
 title: Schedule - Template
 description: Customize Scheduler with various available template options
-platform: Angular-1
+platform: AngularJS
 control: schedule
 documentation: ug
 keywords: appointment template, template, cell template, resource header 

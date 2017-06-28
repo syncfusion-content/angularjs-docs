@@ -2,7 +2,7 @@
 layout: post
 title: Image and File browser in RichTextEditor widget
 description: Configuring and working with Image and File browser in RichTextEditor  
-platform: Angular-1
+platform: AngularJS
 control: RichTextEditor
 documentation: ug
 keywords: RichTextEditor, File browser, Image, Image Browser

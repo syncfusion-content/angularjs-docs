@@ -2,7 +2,7 @@
 layout: post
 title: Empty Points 
 description: How to show or hide an empty point in Essential Javascript Chart.
-platform: Angular 1.0
+platform: AngularJS
 control: Chart
 documentation: ug
 ---

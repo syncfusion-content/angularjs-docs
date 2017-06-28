@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started for Essential JavaScript SunburstChart
 description: How to create a SunburstChart.
-platform: Angular-1
+platform: AngularJS
 control: SunburstChart
 documentation: ug
 ---

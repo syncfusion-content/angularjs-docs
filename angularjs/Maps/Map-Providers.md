@@ -2,7 +2,7 @@
 layout: post
 title: Map-Providers
 description: map providers
-platform: Angular 1.0
+platform: AngularJS
 control: Maps
 documentation: ug
 ---

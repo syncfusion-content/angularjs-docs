@@ -2,7 +2,7 @@
 layout: post
 title: DataSource Support
 description: datasource
-platform: Angular-1
+platform: AngularJS
 control: GroupButton
 documentation: ug
 ---

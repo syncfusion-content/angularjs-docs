@@ -2,7 +2,7 @@
 layout: post
 title: Ribbon-Dependencies
 description: ribbon dependencies
-platform: Angular-1
+platform: AngularJS
 control: Ribbon
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Context Menu in RichTextEditor widget
 description: Context Menu related changes in RichTextEditor widget
-platform: Angular-1
+platform: AngularJS
 control: RichTextEditor
 documentation: ug
 keywords: RichTextEditor, Context Menu, Adding Items, Removing Items

@@ -1,7 +1,7 @@
 ---
 title: Getting started with Kanban component	
 description: Rendering a basic Kanban with remote data
-platform: Angular-1
+platform: AngularJS
 control: Kanban
 documentation: ug
 keywords: ejkanban, kanban, kanban board, js kanban 

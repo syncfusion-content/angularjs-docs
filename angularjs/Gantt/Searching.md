@@ -2,7 +2,7 @@
 layout: post
 title: Searching
 description: searching
-platform: Angular-1
+platform: AngularJS
 control: Gantt
 documentation: ug
 ---

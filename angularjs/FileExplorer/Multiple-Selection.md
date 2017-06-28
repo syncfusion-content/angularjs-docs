@@ -2,7 +2,7 @@
 layout: post
 title: Multiple Selection
 description: FileExplorer allows the user to select multiple files
-platform: Angular-1
+platform: AngularJS
 control: File Explorer
 documentation: ug
 ---

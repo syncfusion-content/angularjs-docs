@@ -3,7 +3,7 @@ layout: post
 title: Web Accessibility
 description: Web Accessibility
 documentation: ug
-platform: angular-1
+platform: AngularJS
 keywords: web accessibility,kanban web accessibility
 ---
 

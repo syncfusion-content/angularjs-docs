@@ -2,7 +2,7 @@
 layout: post
 title:  Frozen Header
 description:  frozen header
-platform: Angular-1
+platform: AngularJS
 control: pivotgrid
 documentation: ug
 keywords: ejpivotgrid, pivotgrid, pivotgrid widget, js pivotgrid 

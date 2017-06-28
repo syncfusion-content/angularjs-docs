@@ -2,7 +2,7 @@
 layout: post
 title: Slider-Types
 description: slider types
-platform: angular-1
+platform: AngularJS
 control: Slider
 documentation: ug
 ---

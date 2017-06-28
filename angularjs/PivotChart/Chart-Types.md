@@ -2,7 +2,7 @@
 layout: post
 title: Chart-Types
 description: chart types
-platform: Angular-1
+platform: AngularJS
 control: pivotchart
 documentation: ug
 keywords: ejpivotchart, pivotchart, pivotchart widget, js pivotchart 

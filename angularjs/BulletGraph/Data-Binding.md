@@ -2,7 +2,7 @@
 layout: post
 title: Data-Binding
 description: data binding
-platform: Angular 1.0
+platform: AngularJS
 control: BulletGraph	
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Functionalities in the ListBox component
 description: Functionalities in the ListBox component
-platform: Angular-1
+platform: AngularJS
 control: ListBox
 documentation: ug
 ---

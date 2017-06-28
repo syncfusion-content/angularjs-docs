@@ -2,7 +2,7 @@
 layout: post
 title: Baseline
 description: baseline
-platform: Angular-1
+platform: AngularJS
 control: Gantt
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Customizing the appearance of Essential Javascript Chart
 description: Learn how to customize the appearance of Chart using palettes, themes, color, background and animation. 
-platform: Angular 1.0
+platform: AngularJS
 control: Chart
 documentation: ug
 ---

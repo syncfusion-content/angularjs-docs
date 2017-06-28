@@ -2,7 +2,7 @@
 layout: post
 title: Selection
 description: selection
-platform: Angular-1
+platform: AngularJS
 control: TreeGrid
 documentation: ug
 ---

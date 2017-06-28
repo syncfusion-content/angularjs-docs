@@ -2,7 +2,7 @@
 layout: post
 title: Template support with DropDownList widget
 description: Template Support with DropDownList widget
-platform: Angular-1
+platform: AngularJS
 control: DropDownList
 documentation: ug
 keywords: Template Support, DropDownList, dropdown, Header Template

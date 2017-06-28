@@ -3,7 +3,7 @@ layout: post
 title:  Swimlanes
 description: Swimlanes
 documentation: ug
-platform: Angular-1
+platform: AngularJS
 keywords: swimlanes,kanban swimlanes
 ---
 

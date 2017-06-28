@@ -2,7 +2,7 @@
 layout: post
 title: Clipboard with Spreadsheet widget for Syncfusion Essential JS
 description: How to use the Spreadsheet Clipboard
-platform: Angular-1
+platform: AngularJS
 control: Spreadsheet
 documentation: ug
 ---

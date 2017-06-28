@@ -2,7 +2,7 @@
 layout: post
 title: Responsive-Layout
 description: responsive layout
-platform: Angular-1
+platform: AngularJS
 control: pivotclient
 documentation: ug
 keywords: ejpivotclient, pivotclient, pivotclient widget, js pivotclient 

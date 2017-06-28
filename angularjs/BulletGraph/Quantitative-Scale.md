@@ -2,7 +2,7 @@
 layout: post
 title: Quantitative-Scale
 description: quantitative scale
-platform: Angular 1.0
+platform: AngularJS
 control: BulletGraph	
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Layers
 description: layers
-platform: Angular 1.0
+platform: AngularJS
 control: Maps
 documentation: ug
 ---

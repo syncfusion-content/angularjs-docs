@@ -2,7 +2,7 @@
 layout: post
 title: Functionalities in the DropDownList widget
 description: Functionalities in the DropDownList widget
-platform: Angular-1
+platform: AngularJS
 control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, Selection, Grouping, Sorting

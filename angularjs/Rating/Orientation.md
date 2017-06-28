@@ -2,7 +2,7 @@
 layout: post
 title: Orientation
 description: orientation
-platform: Angular-1
+platform: AngularJS
 control: Rating
 documentation: ug
 keywords: ejrating, rating, angularjs rating 

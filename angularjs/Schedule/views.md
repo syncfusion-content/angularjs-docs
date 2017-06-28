@@ -1,7 +1,7 @@
 ---
 title: Schedule - Views
 description: View options available in Scheduler
-platform: Angular-1
+platform: AngularJS
 control: schedule
 documentation: ug
 keywords: day, week, workweek, month, timeline, horizontal, custom  

@@ -2,7 +2,7 @@
 layout: post
 title: Rows
 description: Rows
-platform: Angular-1
+platform: AngularJS
 control: Gantt
 documentation: ug
 ---

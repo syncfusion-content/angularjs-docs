@@ -2,7 +2,7 @@
 layout: post
 title: Properties, options, methods and events of Essential JS ejBarcode widget
 documentation: How to use Properties, options, methods and events of Essential JS ejBarcode widget
-platform: angular-1-api
+platform: AngularJS-api
 metaname: 
 metacontent: 
 ---

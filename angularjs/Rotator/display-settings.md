@@ -2,7 +2,7 @@
 layout: post
 title: display settings
 description: display settings
-platform: angular-1
+platform: AngularJS
 control: rotator
 documentation: ug
 ---

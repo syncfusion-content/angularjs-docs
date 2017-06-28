@@ -2,7 +2,7 @@
 layout: post
 title: Keyboard Support for RichTextEditor widget
 description: Keyboard navigation Support for RichTextEditor widget
-platform: Angular-1
+platform: AngularJS
 control: RichTextEditor
 documentation: ug
 keywords: RichTextEditor, Keyboard Support

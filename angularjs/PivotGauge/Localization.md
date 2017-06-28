@@ -2,7 +2,7 @@
 layout: post
 title: Localization
 description: localization
-platform: Angular-1
+platform: AngularJS
 control: PivotGauge
 documentation: ug
 keywords: ejPivotGauge, PivotGauge, PivotGauge widget, js PivotGauge 

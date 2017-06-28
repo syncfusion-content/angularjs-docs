@@ -2,7 +2,7 @@
 layout: post
 title: Explore the features of the HeatMap control.
 description: Explore the features of the HeatMap control.
-platform: Angular-1
+platform: AngularJS
 control: HeatMap
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Stripline
 description: stripline
-platform: Angular-1
+platform: AngularJS
 control: Gantt
 documentation: ug
 ---

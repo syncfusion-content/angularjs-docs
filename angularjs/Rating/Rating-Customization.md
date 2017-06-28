@@ -2,7 +2,7 @@
 layout: post
 title: Rating-Customization
 description: rating customization
-platform: Angular-1
+platform: AngularJS
 control: Rating
 documentation: ug
 keywords: ejrating, rating, angularjs rating 

@@ -2,7 +2,7 @@
 layout: post
 title: Customization
 description: FileExplorer Customization.
-platform: Angular-1
+platform: AngularJS
 control: FileExplorer
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Customization
 description: Customization
-platform: Angular-1
+platform: AngularJS
 control: Gantt
 documentation: ug
 ---

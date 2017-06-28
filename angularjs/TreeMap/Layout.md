@@ -2,7 +2,7 @@
 layout: post
 title: Layout
 description: layout
-platform: Angular 1.0
+platform: AngularJS
 control: TreeMap
 documentation: ug
 ---

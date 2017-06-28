@@ -2,7 +2,7 @@
 layout: post
 title: Bullet-Graph-Dimensions
 description: bullet graph dimensions
-platform: Angular 1.0
+platform: AngularJS
 control: BulletGraph	
 documentation: ug
 ---

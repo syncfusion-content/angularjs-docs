@@ -2,7 +2,7 @@
 layout: post
 title: Working with content selection in RichTextEditor widget
 description: Working with content selection in RichTextEditor widget
-platform: Angular-1
+platform: AngularJS
 control: RichTextEditor
 documentation: ug
 keywords: RichTextEditor, Selection, Select a Range

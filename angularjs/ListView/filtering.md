@@ -2,7 +2,7 @@
 layout: post
 title: filtering
 description: filtering
-platform: Angular-1
+platform: AngularJS
 control: ListView
 documentation: ug
 ---

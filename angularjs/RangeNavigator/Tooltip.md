@@ -2,7 +2,7 @@
 layout: post
 title: Tooltip
 description: Tooltip
-platform: Angular 1.0
+platform: AngularJS
 control: RangeNavigator
 documentation: ug
 ---

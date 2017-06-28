@@ -2,7 +2,7 @@
 layout: post
 title: State-Persistence
 description: State Persistence
-platform: angular-1
+platform: AngularJS
 control: TreeView
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How To
 description: How To
-platform: Angular-1
+platform: AngularJS
 control: Signature
 documentation: ug
 ---

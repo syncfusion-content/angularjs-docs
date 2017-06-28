@@ -2,7 +2,7 @@
 layout: post
 title: Context Menu
 description: Context Menu support in FileExplorer.
-platform: Angular-1
+platform: AngularJS
 control: FileExplorer
 documentation: ug
 ---

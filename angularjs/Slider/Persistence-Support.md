@@ -2,7 +2,7 @@
 layout: post
 title: Persistence-Support
 description: persistence support
-platform: angular-1
+platform: AngularJS
 control: Slider
 documentation: ug
 ---

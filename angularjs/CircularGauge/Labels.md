@@ -2,7 +2,7 @@
 layout: post
 title: Labels
 description: labels
-platform: Angular 1.0
+platform: AngularJS
 control: Circular Gauge
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Enable/Disable the optional features
 description: How to enable/disable the optional features?
-platform: Angular-1
+platform: AngularJS
 control: Diagram
 documentation: ug
 ---

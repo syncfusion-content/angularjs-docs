@@ -2,7 +2,7 @@
 layout: post
 title: UserInteraction
 description: How to enable and cutomize the scrollbar, selection and highlighting in Essential Javascript RangeNavigator.
-platform: Angular 1.0
+platform: AngularJS
 control: RangeNavigator
 documentation: ug
 ---

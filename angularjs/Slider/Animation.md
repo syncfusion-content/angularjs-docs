@@ -2,7 +2,7 @@
 layout: post
 title: Animation
 description: animation
-platform: angular-1
+platform: AngularJS
 control: Slider
 documentation: ug
 ---

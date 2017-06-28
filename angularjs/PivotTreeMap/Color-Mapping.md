@@ -2,7 +2,7 @@
 layout: post
 title: Color-Mapping
 description: color mapping
-platform: Angular-1
+platform: AngularJS
 control: pivottreemap
 documentation: ug
 keywords: ejpivottreemap, pivottreemap, pivottreemap widget, js pivottreemap 

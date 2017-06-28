@@ -2,7 +2,7 @@
 layout: post
 title: Cascading
 description: Cascading
-platform: Angular-1
+platform: AngularJS
 control: ListBox
 documentation: ug
 ---

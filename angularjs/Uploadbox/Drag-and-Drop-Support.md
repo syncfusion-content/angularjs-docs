@@ -2,7 +2,7 @@
 layout: post
 title: Drag-and-Drop-Support
 description: drag and drop support
-platform: Angular-1
+platform: AngularJS
 control: Uploadbox
 documentation: ug
 ---

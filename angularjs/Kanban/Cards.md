@@ -3,7 +3,7 @@ layout: post
 title:  Cards
 description: Cards
 documentation: ug
-platform: Angular-1
+platform: AngularJS
 keywords: cards,kanban cards
 ---
 

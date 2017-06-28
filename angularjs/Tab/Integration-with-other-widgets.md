@@ -2,7 +2,7 @@
 layout: post
 title: Integration-with-other-widgets
 description: integration with other widgets
-platform: Angular-1
+platform: AngularJS
 control: Tab
 documentation: ug
 keywords: ejtab, tab, angularjs tab 

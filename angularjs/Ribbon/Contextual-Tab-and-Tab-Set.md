@@ -3,7 +3,7 @@ layout: post
 title:  Contextual-Tab-and-Tab-Set
 description: contextual tab and tab set
 documentation: ug
-platform: Angular-1
+platform: AngularJS
 keywords: contextual tab and tab set
 ---
 

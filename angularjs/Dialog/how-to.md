@@ -2,7 +2,7 @@
 layout: post
 title: how-to
 description: How to
-platform: angular-1
+platform: AngularJS
 control: Angular- Dialog
 documentation: ug
 ---

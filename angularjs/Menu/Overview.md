@@ -2,7 +2,7 @@
 layout: post
 title: Overview
 description: overview
-platform: Angular-1
+platform: AngularJS
 control: Menu
 documentation: ug
 keywords: Menu features, key features, Menu overview

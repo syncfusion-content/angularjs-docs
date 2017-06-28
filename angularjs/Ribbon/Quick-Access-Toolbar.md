@@ -3,7 +3,7 @@ layout: post
 title:  Quick Access Toolbar
 description: quick access toolbar
 documentation: ug
-platform: Angular-1
+platform: AngularJS
 keywords: quick access toolbar,ribbon quick access toolbar
 ---
 

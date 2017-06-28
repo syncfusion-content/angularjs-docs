@@ -2,7 +2,7 @@
 layout: post
 title: grouping
 description: grouping
-platform: angular-1
+platform: AngularJS
 control: Autocomplete
 documentation: ug
 ---

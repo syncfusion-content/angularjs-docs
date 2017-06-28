@@ -2,7 +2,7 @@
 layout: post
 title: Toolbar
 description: toolbar
-platform: Angular-1
+platform: AngularJS
 control: TreeGrid
 documentation: ug
 ---

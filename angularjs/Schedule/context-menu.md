@@ -1,7 +1,7 @@
 ---
 title: Schedule - Context Menu	
 description: Default and Custom context menu options for appointments and cells in Scheduler
-platform: Angular-1
+platform: AngularJS
 control: schedule
 documentation: ug
 keywords: context-menu

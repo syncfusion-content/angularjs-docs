@@ -2,7 +2,7 @@
 layout: post
 title: Critical-feature
 description: Critical-feature
-platform: Angular-1
+platform: AngularJS
 control: Gantt
 documentation: ug
 ---

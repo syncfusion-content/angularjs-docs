@@ -2,7 +2,7 @@
 layout: post
 title: behavior settings
 description: behavior settings
-platform: Angular-1
+platform: AngularJS
 control: Radial Slider
 documentation: ug
 ---

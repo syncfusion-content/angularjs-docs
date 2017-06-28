@@ -2,7 +2,7 @@
 layout: post
 title: Responsive-Layout
 description: responsive layout
-platform: Angular-1
+platform: AngularJS
 control: Toolbar
 documentation: ug
 keywords: ejtoolbar, toolbar, angularjs toolbar 

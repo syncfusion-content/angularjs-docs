@@ -2,7 +2,7 @@
 layout: post
 title: Populate Diagram from external data sources
 description: How to populate the Diagram from the local data, remote data, or html tables?
-platform: Angular-1
+platform: AngularJS
 control: Diagram
 documentation: ug
 ---

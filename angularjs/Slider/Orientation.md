@@ -2,7 +2,7 @@
 layout: post
 title: Orientation
 description: orientation
-platform: angular-1
+platform: AngularJS
 control: Slider
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Asynchronous-Upload
 description: asynchronous upload
-platform: Angular-1
+platform: AngularJS
 control: Uploadbox
 documentation: ug
 ---

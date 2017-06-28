@@ -2,7 +2,7 @@
 layout: post
 title: Maps | Angular 1.0 | Syncfusion
 description: Maps Overview
-platform: Angular 1.0
+platform: AngularJS
 control: Maps
 documentation: ug
 ---

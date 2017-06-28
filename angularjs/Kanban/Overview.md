@@ -1,7 +1,7 @@
 ---
 title: Kanban - Overview	
 description: Kanban Introduction
-platform: Angular-1
+platform: AngularJS
 control: Kanban
 documentation: ug
 keywords: ejkanban, overview, kanban board, js kanban 

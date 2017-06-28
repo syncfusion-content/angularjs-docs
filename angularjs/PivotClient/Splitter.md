@@ -2,7 +2,7 @@
 layout: post
 title: Splitter
 description: splitter
-platform: Angular-1
+platform: AngularJS
 control: PivotClient
 documentation: ug
 keywords: ejpivotclient, pivotclient, pivotclient widget, js pivotclient 

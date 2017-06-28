@@ -2,7 +2,7 @@
 layout: post
 title: Editing with Spreadsheet widget for Syncfusion Essential JS
 description: How to Edit the Spreadsheet 
-platform: Angular-1
+platform: AngularJS
 control: Spreadsheet
 documentation: ug
 ---

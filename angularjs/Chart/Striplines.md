@@ -2,7 +2,7 @@
 layout: post
 title: Chart Striplines
 description: Learn how to add horizontal or vertical lines in Chart.                                                  
-platform: Angular 1.0
+platform: AngularJS
 control: Chart
 documentation: ug
 ---

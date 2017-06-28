@@ -3,7 +3,7 @@ layout: post
 title:  Ribbon-Application-Tab
 description: application tab
 documentation: ug
-platform: Angular-1
+platform: AngularJS
 keywords: application tab,ribbon application tab
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: customize header
 description: customize header
-platform: Angular-1
+platform: AngularJS
 control: ListView
 documentation: ug
 ---

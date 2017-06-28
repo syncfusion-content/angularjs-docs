@@ -2,7 +2,7 @@
 layout: post
 title: Customization in DropDownList widget
 description: Customization in DropDownList widget 
-platform: Angular-1
+platform: AngularJS
 control: DropDownList
 documentation: ug
 keywords: Customization, DropDownList, dropdown, watermark text

@@ -2,7 +2,7 @@
 layout: post
 title: Behavior-Settings
 description: behavior settings
-platform: Angular-1
+platform: AngularJS
 control: CurrencyTextBox  
 documentation: ug
 ---

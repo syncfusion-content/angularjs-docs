@@ -2,7 +2,7 @@
 layout: post
 title: appearance-customization
 description: appearance-customization
-platform: Angular-1
+platform: AngularJS
 control: Tile
 documentation: ug
 ---

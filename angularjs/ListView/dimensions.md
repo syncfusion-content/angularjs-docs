@@ -2,7 +2,7 @@
 layout: post
 title: dimensions
 description: dimensions
-platform: Angular-1
+platform: AngularJS
 control: ListView
 documentation: ug
 ---

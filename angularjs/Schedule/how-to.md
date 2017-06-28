@@ -1,7 +1,7 @@
 ---
 title: How-to
 description: Custom Configuration with Schedule control
-platform: Angular-1
+platform: AngularJS
 control: schedule
 documentation: ug
 keywords: validation and customization of appointment window fields, Appointment filters 

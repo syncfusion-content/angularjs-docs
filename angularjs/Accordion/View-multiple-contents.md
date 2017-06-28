@@ -2,7 +2,7 @@
 layout: post
 title: View-multiple-contents
 description: view multiple contents
-platform: Angular-1
+platform: AngularJS
 control: Accordion 
 documentation: ug
 keywords: ejaccordion, accordion, angularjs accordion

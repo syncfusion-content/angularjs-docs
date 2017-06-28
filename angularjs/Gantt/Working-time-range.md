@@ -2,7 +2,7 @@
 layout: post
 title: Working-time-range
 description: working time range
-platform: Angular-1
+platform: AngularJS
 control: Gantt
 documentation: ug
 ---

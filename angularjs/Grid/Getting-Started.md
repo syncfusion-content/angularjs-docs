@@ -2,7 +2,7 @@
 layout: post
 title: Getting started with Grid widget for Syncfusion Essential AngularJS
 description: How to create the Grid, data bind, enable paging, grouping, filtering and add summaries
-platform: Angular-1
+platform: AngularJS
 control: Grid
 documentation: ug
 ---

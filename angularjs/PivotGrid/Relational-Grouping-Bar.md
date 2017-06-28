@@ -2,7 +2,7 @@
 layout: post
 title: Grouping-Bar
 description: grouping bar
-platform: Angular-1
+platform: AngularJS
 control: pivotgrid
 documentation: ug
 keywords: ejpivotgrid, pivotgrid, pivotgrid widget, js pivotgrid 

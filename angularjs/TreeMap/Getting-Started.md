@@ -1,7 +1,7 @@
 ---
 title: Getting-Started
 description: How to create a treemap, adding levels, rangecolor, enable tooltip and other functionalities
-platform: angular-1
+platform: AngularJS
 control: TreeMap
 documentation: ug
 keywords: ejtreemap, treemap, treemap widget, js treemap, angular treemap, angularjs treemap, angular 1.0 treemap, angular 1 treemap

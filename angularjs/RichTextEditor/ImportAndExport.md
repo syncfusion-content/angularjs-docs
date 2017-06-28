@@ -2,7 +2,7 @@
 layout: post
 title: Import and Export in RichTextEditor widget
 description: Import content from word document into the RichTextEditor and Export the RichTextEditor content into word or PDF document.
-platform: Angular-1
+platform: AngularJS
 control: RichTextEditor
 documentation: ug
 keywords: RichTextEditor, server side XHTML Validation, RTE import, RTE export, export to PDF, export to Word

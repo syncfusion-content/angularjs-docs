@@ -1,7 +1,7 @@
 ---
 title: Getting started with RecurrenceEditor component and basic render.	 	
 description: Rendering a basic Recurrence editor with properties and generate the recurrence rule for Recurrence editor.
-platform: Angular-1
+platform: AngularJS
 control: Recurrence Editor
 documentation: ug
 keywords: recurrence editor, recurrence widget, ejRecurrenceEditor, js recurrence editor

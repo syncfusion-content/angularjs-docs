@@ -2,7 +2,7 @@
 layout: post
 title: display angle support
 description: display angle support
-platform: Angular-1
+platform: AngularJS
 control: Radial Slider
 documentation: ug
 ---

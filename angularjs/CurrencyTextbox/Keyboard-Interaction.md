@@ -2,7 +2,7 @@
 layout: post
 title: Keyboard-Interaction
 description: keyboard interaction
-platform: Angular-1
+platform: AngularJS
 control: CurrencyTextBox  
 documentation: ug
 ---

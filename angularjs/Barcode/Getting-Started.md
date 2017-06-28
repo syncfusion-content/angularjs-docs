@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Syncfusion Essential JS Barcode widget
 description: How to create one dimensional, two dimensional barcode and customizing the appearance of it.
-platform: angular-1
+platform: AngularJS
 control: Barcode
 documentation: ug
 ---

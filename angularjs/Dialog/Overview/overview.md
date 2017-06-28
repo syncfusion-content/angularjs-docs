@@ -2,7 +2,7 @@
 layout: post
 title: overview
 description: overview
-platform: Angular-1
+platform: AngularJS
 control: Dialog
 documentation: ug
 ---

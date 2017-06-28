@@ -1,7 +1,7 @@
 ---
 title: Welcome to Syncfusion Essential AngularJS 1
 description: Overview of Syncfusion Essential AngularJS 1 
-platform: Angular-1
+platform: AngularJS
 control: Introduction
 documentation: ug
 --- 

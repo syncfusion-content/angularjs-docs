@@ -2,7 +2,7 @@
 layout: post
 title: Change-Splitter-position
 description: change splitter position
-platform: Angular-1
+platform: AngularJS
 control: Gantt
 documentation: ug
 ---

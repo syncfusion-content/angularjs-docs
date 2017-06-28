@@ -2,7 +2,7 @@
 layout: post
 title: Datalabel Customization
 description: Learn how to customize datalabels in Sunburst Chart.
-platform: Angular-1
+platform: AngularJS
 control: SunburstChart
 documentation: ug
 ---

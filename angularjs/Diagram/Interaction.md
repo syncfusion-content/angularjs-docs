@@ -2,7 +2,7 @@
 layout: post
 title: Interactively edit nodes and connectors during runtime
 description: How to select and edit nodes and connectors during runtime?
-platform: Angular-1
+platform: AngularJS
 control: Diagram
 documentation: ug
 ---

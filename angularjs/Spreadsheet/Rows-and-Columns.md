@@ -2,7 +2,7 @@
 layout: post
 title: Rows and Columns with Spreadsheet widget for Syncfusion Essential JS
 description: How to use and customize the Spreadsheet rows and columns
-platform: Angular-1
+platform: AngularJS
 control: Spreadsheet
 documentation: ug
 --- 

@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started | WaitingPopup | JavaScript | Syncfusion
 description: getting started
-platform: Angular-1
+platform: AngularJS
 control: WaitingPopup
 documentation: ug
 keywords: ejwaitingpopup, waitingpopup, angularjs waitingpopup 

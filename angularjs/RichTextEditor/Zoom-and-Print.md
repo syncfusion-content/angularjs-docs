@@ -2,7 +2,7 @@
 layout: post
 title: Zoom and Print support in RichTextEditor widget
 description: Zoom and Print support for RichTextEditor widget
-platform: Angular-1
+platform: AngularJS
 control: RichTextEditor
 documentation: ug
 keywords: RichTextEditor, Zoom, Print

@@ -2,7 +2,7 @@
 layout: post
 title: animation effect
 description: animation effect
-platform: Angular-1
+platform: AngularJS
 control: Radial Slider
 documentation: ug
 ---

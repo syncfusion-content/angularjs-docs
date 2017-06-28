@@ -2,7 +2,7 @@
 layout: post
 title: Frames
 description: frames
-platform: Angular 1.0
+platform: AngularJS
 control: Digital Gauge
 documentation: ug
 ---

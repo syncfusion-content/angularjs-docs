@@ -2,7 +2,7 @@
 layout: post
 title: Advanced Filtering and Sorting
 description: advanced filtering and sorting
-platform: Angular-1
+platform: AngularJS
 control: pivotclient
 documentation: ug
 keywords: ejpivotclient, pivotclient, pivotclient widget, js pivotclient 

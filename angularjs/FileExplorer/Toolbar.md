@@ -2,7 +2,7 @@
 layout: post
 title: Toolbar
 description: Toolbar support
-platform: Angular-1
+platform: AngularJS
 control: File Explorer
 documentation: ug
 ---

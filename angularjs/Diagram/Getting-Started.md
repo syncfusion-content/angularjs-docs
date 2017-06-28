@@ -2,7 +2,7 @@
 layout: post
 title: Getting started with Syncfusion Essential Diagram for Angular 1.0
 description: Getting started walk through to create your first Diagram and Organizational Chart Diagram.
-platform: Angular-1
+platform: AngularJS
 control: Diagram
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Relational-Connection-Types
 description: Relational Connection Types
-platform: Angular-1
+platform: AngularJS
 control: pivotgrid
 documentation: ug
 keywords: ejpivotgrid, pivotgrid, pivotgrid widget, js pivotgrid 

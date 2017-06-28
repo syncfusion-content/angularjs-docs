@@ -2,7 +2,7 @@
 layout: post
 title: Tooltip
 description: Tooltip
-platform: Angular-1
+platform: AngularJS
 control: Gantt
 documentation: Ug
 ---

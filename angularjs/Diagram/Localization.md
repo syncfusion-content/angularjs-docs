@@ -2,7 +2,7 @@
 layout: post
 title: Globalize and Localize the Diagram control
 description: How to globalize and localize the Diagram control?
-platform: Angular-1
+platform: AngularJS
 control: Diagram
 documentation: ug
 ---

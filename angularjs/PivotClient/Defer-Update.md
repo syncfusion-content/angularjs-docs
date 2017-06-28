@@ -2,7 +2,7 @@
 layout: post
 title: Defer-Update
 description: defer update
-platform: Angular-1
+platform: AngularJS
 control: pivotclient
 documentation: ug
 keywords: ejpivotclient, pivotclient, pivotclient widget, js pivotclient 

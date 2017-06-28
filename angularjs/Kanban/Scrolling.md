@@ -3,7 +3,7 @@ layout: post
 title:  Scrolling
 description: Scrolling
 documentation: ug
-platform: Angular-1
+platform: AngularJS
 keywords: scrolling,kanban scrolling
 ---
 

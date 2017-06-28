@@ -2,7 +2,7 @@
 layout: post
 title: Find and Replace in RichTextEditor widget 
 description: Find and Replace related changes in RichTextEditor widget
-platform: Angular-1
+platform: AngularJS
 control: RichTextEditor
 documentation: ug
 keywords: RichTextEditor, Find and Replace

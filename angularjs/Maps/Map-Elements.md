@@ -2,7 +2,7 @@
 layout: post
 title: Map-Elements
 description: map elements
-platform: Angular 1.0
+platform: AngularJS
 control: Maps
 documentation: ug
 ---

@@ -3,7 +3,7 @@ layout: post
 title: Service reference for ejGantt widget
 description: What are the exporting services used in Essential JavaScript Gantt.
 workbookation: api
-platform: Angular-1
+platform: AngularJS
 keywords: ejGantt, Services, Essential JS Gantt, Gantt, Excel Exporting Service, Gantt Exporting
 metaname: 
 metacontent:

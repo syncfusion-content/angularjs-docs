@@ -2,7 +2,7 @@
 layout: post
 title: Scroll-Support
 description: scroll support
-platform: Angular-1
+platform: AngularJS
 control: Tab
 documentation: ug
 keywords: ejtab, tab, angularjs tab 

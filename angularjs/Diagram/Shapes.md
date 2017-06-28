@@ -2,7 +2,7 @@
 layout: post
 title: Pick the type of node among the predefined nodes and shapes
 description: How to choose the type of the node with respect to the requirement? 
-platform: Angular-1
+platform: AngularJS
 control: Diagram
 documentation: ug
 ---

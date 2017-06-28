@@ -2,7 +2,7 @@
 layout: post
 title: Populate-Data
 description: populate data
-platform: Angular 1.0
+platform: AngularJS
 control: Maps
 documentation: ug
 ---

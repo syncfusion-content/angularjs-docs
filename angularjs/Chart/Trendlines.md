@@ -2,7 +2,7 @@
 layout: post
 title: Trendlines in Essential Javascript Chart
 description: What are the different types of trendlines available in chart.
-platform: Angular 1.0
+platform: AngularJS
 control: Chart
 documentation: ug
 ---

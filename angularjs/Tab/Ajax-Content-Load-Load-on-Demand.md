@@ -2,7 +2,7 @@
 layout: post
 title: Ajax-Content-Load-Load-on-Demand
 description: ajax content load (load on demand)
-platform: Angular-1
+platform: AngularJS
 control: Tab
 documentation: ug
 keywords: ejtab, tab, angularjs tab 

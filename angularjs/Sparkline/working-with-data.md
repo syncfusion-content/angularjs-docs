@@ -2,7 +2,7 @@
 layout: post
 title: Data binding
 description: Learn how to bind Sparkline with local data.
-platform: Angular 1.0
+platform: AngularJS
 control: Sparkline
 documentation: ug
 ---

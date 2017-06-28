@@ -2,7 +2,7 @@
 layout: post
 title: Overview
 description: overview 
-platform: angular-1
+platform: AngularJS
 control: TreeView
 documentation: ug
 ---

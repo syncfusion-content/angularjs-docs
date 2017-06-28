@@ -2,7 +2,7 @@
 layout: post
 title: TreeMapLevels
 description: treemaplevels
-platform: Angular 1.0
+platform: AngularJS
 control: TreeMap
 documentation: ug
 ---

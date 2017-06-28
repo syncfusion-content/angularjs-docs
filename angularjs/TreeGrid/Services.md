@@ -3,7 +3,7 @@ layout: post
 title: Service reference for ejTreeGrid widget
 description: What are the exporting services used in Essential JavaScript TreeGrid.
 documentation: api
-platform: Angular-1
+platform: AngularJS
 keywords: ejTreeGrid, Services, Essential JS TreeGrid, TreeGrid, Excel Exporting Service, TreeGrid Exporting
 metaname: 
 metacontent:

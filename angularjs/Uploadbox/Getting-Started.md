@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started
 description: getting started
-platform: Angular-1
+platform: AngularJS
 control: Uploadbox
 documentation: ug
 keywords : ejuploadbox, uploadbox, js uploadbox, uploadbox widget

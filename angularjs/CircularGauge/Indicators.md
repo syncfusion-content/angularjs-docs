@@ -2,7 +2,7 @@
 layout: post
 title: Indicators
 description: indicators
-platform: Angular 1.0
+platform: AngularJS
 control: Circular Gauge
 documentation: ug
 ---

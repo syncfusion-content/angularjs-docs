@@ -2,7 +2,7 @@
 layout: post
 title: Exporting options in Essential JavaScript Chart
 description: Learn how to export Chart as excel file or image.
-platform: Angular 1.0
+platform: AngularJS
 control: Chart
 documentation: ug
 ---

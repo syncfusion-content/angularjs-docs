@@ -2,7 +2,7 @@
 layout: post
 title: Task-scheduling-modes
 description: Task scheduling modes
-platform: Angular-1
+platform: AngularJS
 control: Gantt
 documentation: ug
 ---

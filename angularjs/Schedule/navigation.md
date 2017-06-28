@@ -1,7 +1,7 @@
 ---
 title: Date, Appointment, and View navigation
 description: Navigation between views, appointments, and date
-platform: Angular-1
+platform: AngularJS
 control: schedule
 documentation: ug
 keywords: view navigation, date navigation, appointment navigation 

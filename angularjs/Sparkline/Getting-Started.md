@@ -1,7 +1,7 @@
 ---
 title: Getting Started for Essential JavaScript Sparkline
 description: How to create a sparkline.
-platform: Angular 1.0
+platform: AngularJS
 control: Sparkline
 documentation: ug
 keywords: ejsparkline, sparkline, sparkline widget, js sparkline, angular sparkline, angularjs sparkline, angular 1.0 sparkline, angular 1 sparkline

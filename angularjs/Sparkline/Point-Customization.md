@@ -2,7 +2,7 @@
 layout: post
 title: Point Customization
 description: Learn how to customize points in Sparkline.
-platform: Angular 1.0
+platform: AngularJS
 control: Sparkline
 documentation: ug
 ---

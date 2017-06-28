@@ -1,7 +1,7 @@
 ---
 title: Data binding with Schedule	
 description: Binding local and remote data to Scheduler
-platform: Angular-1
+platform: AngularJS
 control: schedule
 documentation: ug
 keywords: data binding, local data, remote data 

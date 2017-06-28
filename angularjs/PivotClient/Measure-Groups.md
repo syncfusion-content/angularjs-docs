@@ -2,7 +2,7 @@
 layout: post
 title: Measure-Groups
 description: measure groups 
-platform: Angular-1
+platform: AngularJS
 control: pivotclient
 documentation: ug
 keywords: ejpivotclient, pivotclient, pivotclient widget, js pivotclient 

@@ -2,7 +2,7 @@
 layout: post
 title: Behavior Settings
 description: Customize the behavior of FileExplorer.
-platform: Angular-1
+platform: AngularJS
 control: FileExplorer
 documentation: ug
 ---

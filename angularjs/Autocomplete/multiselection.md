@@ -2,7 +2,7 @@
 layout: post
 title: multiselection
 description: multiselection
-platform: angular-1
+platform: AngularJS
 control: Autocomplete
 documentation: ug
 ---

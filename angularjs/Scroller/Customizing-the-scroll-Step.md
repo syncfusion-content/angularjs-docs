@@ -2,7 +2,7 @@
 layout: post
 title: Customizing-the-scroll-Step
 description: customizing the scroll step
-platform: Angular-1
+platform: AngularJS
 control: Scroller
 documentation: ug
 ---
