@@ -2,7 +2,7 @@
 layout: post
 title: Bar-Pointers
 description: bar pointers
-platform: Angular 1.0
+platform: AngularJS
 control: Linear Gauge
 documentation: ug
 ---

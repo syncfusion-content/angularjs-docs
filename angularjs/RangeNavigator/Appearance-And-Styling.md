@@ -2,7 +2,7 @@
 layout: post
 title: Appearance-And-Styling
 description: Appearance And Styling
-platform: Angular 1.0
+platform: AngularJS
 control: RangeNavigator
 documentation: ug
 ---

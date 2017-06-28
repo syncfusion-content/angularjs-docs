@@ -2,7 +2,7 @@
 layout: post
 title: Qualitative-Range
 description: qualitative range
-platform: Angular 1.0
+platform: AngularJS
 control: BulletGraph	
 documentation: ug
 ---

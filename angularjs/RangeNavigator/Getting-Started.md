@@ -1,7 +1,7 @@
 ---
 title: Getting-Started
 description: How to create a rangenavigator, add series, datasource, enable tooltip and other functionalities
-platform: Angular 1.0
+platform: AngularJS
 control: RangeNavigator
 documentation: ug
 keywords: ejrangenavigator, rangenavigator, rangenavigator widget, js rangenavigator, angular rangenavigator, angularjs rangenavigator, angular 1.0 rangenavigator, angular 1 rangenavigator

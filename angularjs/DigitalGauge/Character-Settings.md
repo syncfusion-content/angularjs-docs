@@ -2,7 +2,7 @@
 layout: post
 title: Character-Settings
 description: character settings
-platform: Angular 1.0
+platform: AngularJS
 control: Digital Gauge
 documentation: ug
 ---

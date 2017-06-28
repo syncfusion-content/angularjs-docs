@@ -2,7 +2,7 @@
 layout: post
 title: Ticks
 description: ticks
-platform: Angular 1.0
+platform: AngularJS
 control: Linear Gauge
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Interaction-and-Animation
 description: interaction and animation
-platform: Angular 1.0
+platform: AngularJS
 control: Circular Gauge
 documentation: ug
 ---

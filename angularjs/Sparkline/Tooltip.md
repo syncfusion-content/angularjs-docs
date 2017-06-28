@@ -2,7 +2,7 @@
 layout: post
 title: Tooltip
 description: Learn how to add Tooltip to Sparkline .
-platform: Angular 1.0
+platform: AngularJS
 control: Sparkline
 documentation: ug
 ---

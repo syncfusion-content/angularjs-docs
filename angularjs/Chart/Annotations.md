@@ -2,7 +2,7 @@
 layout: post
 title: Chart Annotations 
 description: How to add annotations in Essential html Chart and the different options available to customize its position. 
-platform: Angular 1.0
+platform: AngularJS
 control: Chart
 documentation: ug
 ---

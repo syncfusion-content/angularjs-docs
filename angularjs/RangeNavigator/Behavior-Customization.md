@@ -2,7 +2,7 @@
 layout: post
 title: Behavior-Customization
 description: Behavior Customization
-platform: Angular 1.0
+platform: AngularJS
 control: RangeNavigator
 documentation: ug
 ---

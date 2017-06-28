@@ -2,7 +2,7 @@
 layout: post
 title: DataBinding
 description: databinding
-platform: Angular 1.0
+platform: AngularJS
 control: TreeMap
 documentation: ug
 ---

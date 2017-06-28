@@ -2,7 +2,7 @@
 layout: post
 title: Chart legend
 description: How to cutomize the legend in Essential Javascript Chart.
-platform: Angular 1.0
+platform: AngularJS
 control: Chart
 documentation: ug
 ---

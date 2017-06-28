@@ -2,7 +2,7 @@
 layout: post
 title: Service reference for ejChart widget
 description: What is the service used for exporting ejChart
-platform: Angular 1.0
+platform: AngularJS
 keywords: ejChart, exporting service, services, Essential JavaScript Chart, Excel exporting, PDF exporting, Export to word, Export to SVG
 metaname:
 metacontent:

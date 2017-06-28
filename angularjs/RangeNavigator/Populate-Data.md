@@ -2,7 +2,7 @@
 layout: post
 title: Populate-Data
 description: Populate Data
-platform: Angular 1.0
+platform: AngularJS
 control: RangeNavigator
 documentation: ug
 ---

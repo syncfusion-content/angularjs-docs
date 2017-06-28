@@ -2,7 +2,7 @@
 layout: post
 title: Exporting
 description: exporting
-platform: Angular 1.0
+platform: AngularJS
 control: Linear Gauge
 documentation: ug
 ---

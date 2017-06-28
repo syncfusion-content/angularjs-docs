@@ -2,7 +2,7 @@
 layout: post
 title: Localization of Essential JavaScript Chart
 description: Learn how to localize chart based on a specific culture.
-platform: Angular 1.0
+platform: AngularJS
 control: Chart
 documentation: ug
 ---

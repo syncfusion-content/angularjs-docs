@@ -2,7 +2,7 @@
 layout: post
 title: TreeMap-Elements
 description: treemap elements
-platform: Angular 1.0
+platform: AngularJS
 control: TreeMap
 documentation: ug
 ---

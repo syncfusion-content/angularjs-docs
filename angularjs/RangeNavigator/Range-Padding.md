@@ -2,7 +2,7 @@
 layout: post
 title: Range-Padding
 description: Range Padding
-platform: Angular 1.0
+platform: AngularJS
 control: RangeNavigator
 documentation: ug
 ---

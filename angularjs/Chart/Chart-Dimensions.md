@@ -2,7 +2,7 @@
 layout: post
 title: Chart size
 description: Learn how to set Chart size and make it responsive. 
-platform: Angular 1.0
+platform: AngularJS
 control: Chart
 documentation: ug
 ---

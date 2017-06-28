@@ -2,7 +2,7 @@
 layout: post
 title: Chart Title
 description: How to customize the chart title.
-platform: Angular 1.0
+platform: AngularJS
 control: Chart
 documentation: ug
 ---

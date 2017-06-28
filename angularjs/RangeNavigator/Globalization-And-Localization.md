@@ -2,7 +2,7 @@
 layout: post
 title: Globalization-And-Localization
 description: Globalization And Localization
-platform: Angular 1.0
+platform: AngularJS
 control: RangeNavigator
 documentation: ug
 ---

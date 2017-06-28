@@ -2,7 +2,7 @@
 layout: post
 title: Chart Axis
 description: How to customize the grid lines, tick lines, labels and title of chart axis
-platform: Angular 1.0
+platform: AngularJS
 control: Chart
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Axis Customize
 description: Learn how to customize axis in Sparkline.
-platform: Angular 1.0
+platform: AngularJS
 control: Sparkline
 documentation: ug
 ---

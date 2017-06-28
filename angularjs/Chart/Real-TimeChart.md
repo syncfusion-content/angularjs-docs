@@ -2,7 +2,7 @@
 layout: post
 title: Using Essential JavaScript Chart in real-time scenario 
 description: Learn how to update the chart dynamically with real-time data. 
-platform: Angular 1.0
+platform: AngularJS
 control: Chart
 documentation: ug
 ---

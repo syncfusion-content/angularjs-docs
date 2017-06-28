@@ -2,7 +2,7 @@
 layout: post
 title: Markers and data labels in Essential Javascript Chart
 description: Learn how to add markers and data point labels to a Chart series.
-platform: Angular 1.0
+platform: AngularJS
 control: Chart
 documentation: ug
 ---

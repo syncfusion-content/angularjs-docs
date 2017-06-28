@@ -1,7 +1,7 @@
 ---
 title: Getting-Started
 description: how to create bulletgraph, add scales, ticks, measures, qualitativeranges
-platform: Angular 1.0
+platform: AngularJS
 control: Bullet Graph
 documentation: ug
 keywords: ejbulletgraph, bulletgraph, bulletgraph widget, js bulletgraph,angular bulletgraph,angularjs bulletgraph,angular 1.0 bulletgraph,angular 1 bulletgraph

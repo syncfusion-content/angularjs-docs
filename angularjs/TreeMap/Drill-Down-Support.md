@@ -2,7 +2,7 @@
 layout: post
 title: Drill-Down-Support
 description: drill down support
-platform: Angular 1.0
+platform: AngularJS
 control: TreeMap
 documentation: ug
 ---

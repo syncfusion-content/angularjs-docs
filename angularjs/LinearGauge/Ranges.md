@@ -2,7 +2,7 @@
 layout: post
 title: Ranges
 description: ranges 
-platform: Angular 1.0
+platform: AngularJS
 control: Linear Gauge
 documentation: ug
 ---

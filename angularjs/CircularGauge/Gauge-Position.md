@@ -2,7 +2,7 @@
 layout: post
 title: Gauge-Position
 description: gauge position
-platform: Angular 1.0
+platform: AngularJS
 control: Circular Gauge
 documentation: ug
 ---

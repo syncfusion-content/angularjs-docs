@@ -2,7 +2,7 @@
 layout: post
 title: Ranges-and-Frames
 description: ranges and frames
-platform: Angualr 1.0
+platform: AngularJS
 control: Circular Gauge
 documentation: ug
 ---

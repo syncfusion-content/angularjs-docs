@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Sparkline
 description: What are the key features available in sparkline.
-platform: Angualr 1.0
+platform: AngularJS
 control: Sparkline
 documentation: ug
 ---

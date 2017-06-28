@@ -2,7 +2,7 @@
 layout: post
 title: Interactions available in Essential Javascript Chart
 description: What are the interactions available in Chart like tooltip, crosshair, trackball, highlighting, zooming and panning, etc..,
-platform: Angular 1.0
+platform: AngularJS
 control: Chart
 documentation: ug
 ---

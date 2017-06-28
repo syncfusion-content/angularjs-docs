@@ -2,7 +2,7 @@
 layout: post
 title: Markers Customization
 description: Learn how to add markers to Sparkline.
-platform: Angular 1.0
+platform: AngularJS
 control: Sparkline
 documentation: ug
 ---
