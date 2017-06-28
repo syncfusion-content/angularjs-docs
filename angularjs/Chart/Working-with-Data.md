@@ -2,7 +2,7 @@
 layout: post
 title: Data binding
 description: Learn how to bind Chart with JSON data from a remote server or locally in client browser.
-platform: Angular- 1 
+platform: AngularJS 
 control: Chart
 documentation: ug
 ---
