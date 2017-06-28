@@ -2,7 +2,7 @@
 layout: post
 title: Accordion-Panel-enabler
 description: accordion panel enabler
-platform: Angular-1
+platform: AngularJS
 control: Accordion 
 documentation: ug
 keywords: ejaccordion, accordion, angularjs accordion
