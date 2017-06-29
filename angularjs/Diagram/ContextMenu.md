@@ -36,7 +36,7 @@ The following code illustrates how to enable the default context menu items.
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/ContextMenu_images/Contextmenu_img1.png)
+![](/angularjs/Diagram/ContextMenu_images/Contextmenu_img1.png)
 
 ## Customize Context Menu
 
@@ -104,7 +104,7 @@ The following code example illustrates how to customize the icon of context menu
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/ContextMenu_images/Contextmenu_img2.png)
+![](/angularjs/Diagram/ContextMenu_images/Contextmenu_img2.png)
 
 ## Context Menu Events
 

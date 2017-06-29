@@ -199,7 +199,7 @@ Now set the JSON data to the **"data"** property present inside the **"dataSourc
 
 The above code will generate a simple PivotGrid with "Country" field in Row, "Product" field in Column and "Amount" field in Value section. 
 
-{% include image.html url="/angular-1/PivotGrid/Getting-Started_images/purejs.png" %}
+{% include image.html url="/angularjs/PivotGrid/Getting-Started_images/purejs.png" %}
 
 ### Apply Sorting
 
@@ -230,7 +230,7 @@ You can sort a field either to ascending or descending order using the **"sortOr
 {% endhighlight %}
 
 
-{% include image.html url="/angular-1/PivotGrid/Getting-Started_images/purejssorting.png" %}
+{% include image.html url="/angularjs/PivotGrid/Getting-Started_images/purejssorting.png" %}
 
 
 ### Apply Filtering
@@ -280,7 +280,7 @@ Filtering option allows you to specify a set of values that either need to be di
 
 {% endhighlight %}
 
-{% include image.html url="/angular-1/PivotGrid/Getting-Started_images/purejsfiltering.png" %}
+{% include image.html url="/angularjs/PivotGrid/Getting-Started_images/purejsfiltering.png" %}
 
 ## Creating a simple application with PivotGrid and Relational datasource (Server Mode)
 
@@ -731,11 +731,11 @@ public class Global : System.Web.HttpApplication
 
 Now, PivotGrid is rendered with Sales Amount over a set of products across different customer geographic locations.
  
-{% include image.html url="/angular-1/PivotGrid/Getting-Started_images/relaionalwebapi.png" %}
+{% include image.html url="/angularjs/PivotGrid/Getting-Started_images/relaionalwebapi.png" %}
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotGrid. For more details on this topic, [click here](http://help.syncfusion.com/angular-1/pivotgrid/relational-connectivity#wcf-1).
+This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotGrid. For more details on this topic, [click here](http://help.syncfusion.com/angularjs/pivotgrid/relational-connectivity#wcf-1).
   
 
 

@@ -2,7 +2,7 @@
 layout: post
 title: Visually represents the internal business procedures and the communication among them
 description: How to graphically notate the internal business procedure? 
-platform:  Angular-1
+platform: AngularJS
 control: Diagram
 documentation: ug
 ---
@@ -47,7 +47,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img5.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img5.png)
 
 N> The default value for the property `shape` is "event".
 
@@ -55,13 +55,13 @@ The list of BPMN shapes are as follows.
 
 | Shape | Image |
 |---|---|
-| Event | ![](/angular-1/Diagram/Shapes_images/Shapes_img6.png) |
-| Gateway | ![](/angular-1/Diagram/Shapes_images/Shapes_img7.png) |
-| Task | ![](/angular-1/Diagram/Shapes_images/Shapes_img8.png) |
-| Message | ![](/angular-1/Diagram/Shapes_images/Shapes_img9.png) |
-| DataSource | ![](/angular-1/Diagram/Shapes_images/Shapes_img10.png) |
-| DataObject | ![](/angular-1/Diagram/Shapes_images/Shapes_img11.png) |
-| Group | ![](/angular-1/Diagram/Shapes_images/Shapes_img12.png) |
+| Event | ![](/angularjs/Diagram/Shapes_images/Shapes_img6.png) |
+| Gateway | ![](/angularjs/Diagram/Shapes_images/Shapes_img7.png) |
+| Task | ![](/angularjs/Diagram/Shapes_images/Shapes_img8.png) |
+| Message | ![](/angularjs/Diagram/Shapes_images/Shapes_img9.png) |
+| DataSource | ![](/angularjs/Diagram/Shapes_images/Shapes_img10.png) |
+| DataObject | ![](/angularjs/Diagram/Shapes_images/Shapes_img11.png) |
+| Group | ![](/angularjs/Diagram/Shapes_images/Shapes_img12.png) |
 
 The BPMN shapes and its types are explained as follows.
 
@@ -102,25 +102,25 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img13.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img13.png)
 
 Event triggers are notated as icons inside the circle and they represent the specific details of the process. The `triggers` property of node allows you to set the type of trigger and by default, it is set as "none". The following table illustrates the type of event triggers.
 
 | Triggers | Start | Non-Interrupting Start | Intermediate | Non-Interrupting Intermediate | Throwing Intermediate | End |
 | --- | --- | --- | --- | --- | --- | --- |
-| None | ![](/angular-1/Diagram/Shapes_images/Shapes_img63.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img64.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img65.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img66.png) |   | ![](/angular-1/Diagram/Shapes_images/Shapes_img67.png) |
-| Message | ![](/angular-1/Diagram/Shapes_images/Shapes_img68.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img69.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img70.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img71.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img72.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img73.png) |
-| Timer | ![](/angular-1/Diagram/Shapes_images/Shapes_img74.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img75.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img76.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img77.png) |   |   |
-| Conditional | ![](/angular-1/Diagram/Shapes_images/Shapes_img78.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img79.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img80.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img81.png) |   |   |
-| Link |   |   | ![](/angular-1/Diagram/Shapes_images/Shapes_img82.png) |   | ![](/angular-1/Diagram/Shapes_images/Shapes_img83.png) |   |
-| Signal | ![](/angular-1/Diagram/Shapes_images/Shapes_img84.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img85.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img86.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img87.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img88.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img89.png) |
-| Error | ![](/angular-1/Diagram/Shapes_images/Shapes_img90.png) |   | ![](/angular-1/Diagram/Shapes_images/Shapes_img91.png) |   |   | ![](/angular-1/Diagram/Shapes_images/Shapes_img92.png) |
-| Escalation | ![](/angular-1/Diagram/Shapes_images/Shapes_img93.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img94.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img95.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img96.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img97.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img98.png) |
-| Termination |   |   |   |   |   | ![](/angular-1/Diagram/Shapes_images/Shapes_img99.png) |
-| Compensation | ![](/angular-1/Diagram/Shapes_images/Shapes_img100.png) |   | ![](/angular-1/Diagram/Shapes_images/Shapes_img101.png) |   | ![](/angular-1/Diagram/Shapes_images/Shapes_img102.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img103.png) |
-| Cancel |   |   | ![](/angular-1/Diagram/Shapes_images/Shapes_img104.png) |   |   | ![](/angular-1/Diagram/Shapes_images/Shapes_img105.png) |
-| Multiple | ![](/angular-1/Diagram/Shapes_images/Shapes_img106.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img107.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img108.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img109.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img110.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img111.png) |
-| Parallel | ![](/angular-1/Diagram/Shapes_images/Shapes_img112.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img113.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img114.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img115.png) |   |   |
+| None | ![](/angularjs/Diagram/Shapes_images/Shapes_img63.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img64.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img65.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img66.png) |   | ![](/angularjs/Diagram/Shapes_images/Shapes_img67.png) |
+| Message | ![](/angularjs/Diagram/Shapes_images/Shapes_img68.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img69.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img70.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img71.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img72.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img73.png) |
+| Timer | ![](/angularjs/Diagram/Shapes_images/Shapes_img74.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img75.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img76.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img77.png) |   |   |
+| Conditional | ![](/angularjs/Diagram/Shapes_images/Shapes_img78.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img79.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img80.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img81.png) |   |   |
+| Link |   |   | ![](/angularjs/Diagram/Shapes_images/Shapes_img82.png) |   | ![](/angularjs/Diagram/Shapes_images/Shapes_img83.png) |   |
+| Signal | ![](/angularjs/Diagram/Shapes_images/Shapes_img84.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img85.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img86.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img87.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img88.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img89.png) |
+| Error | ![](/angularjs/Diagram/Shapes_images/Shapes_img90.png) |   | ![](/angularjs/Diagram/Shapes_images/Shapes_img91.png) |   |   | ![](/angularjs/Diagram/Shapes_images/Shapes_img92.png) |
+| Escalation | ![](/angularjs/Diagram/Shapes_images/Shapes_img93.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img94.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img95.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img96.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img97.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img98.png) |
+| Termination |   |   |   |   |   | ![](/angularjs/Diagram/Shapes_images/Shapes_img99.png) |
+| Compensation | ![](/angularjs/Diagram/Shapes_images/Shapes_img100.png) |   | ![](/angularjs/Diagram/Shapes_images/Shapes_img101.png) |   | ![](/angularjs/Diagram/Shapes_images/Shapes_img102.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img103.png) |
+| Cancel |   |   | ![](/angularjs/Diagram/Shapes_images/Shapes_img104.png) |   |   | ![](/angularjs/Diagram/Shapes_images/Shapes_img105.png) |
+| Multiple | ![](/angularjs/Diagram/Shapes_images/Shapes_img106.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img107.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img108.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img109.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img110.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img111.png) |
+| Parallel | ![](/angularjs/Diagram/Shapes_images/Shapes_img112.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img113.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img114.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img115.png) |   |   |
 
 ### Gateway
 
@@ -150,7 +150,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img25.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img25.png)
 
 N> By default, the `gateway` will be set as "none".
 
@@ -158,13 +158,13 @@ There are several types of gateways as tabulated
 
 | Gateways | Image |
 |---|---|
-| Exclusive | ![](/angular-1/Diagram/Shapes_images/Shapes_img26.png) |
-| Parallel | ![](/angular-1/Diagram/Shapes_images/Shapes_img27.png) |
-| Inclusive | ![](/angular-1/Diagram/Shapes_images/Shapes_img28.png) |
-| Complex | ![](/angular-1/Diagram/Shapes_images/Shapes_img29.png) |
-| EventBased | ![](/angular-1/Diagram/Shapes_images/Shapes_img30.png) |
-| ExclusiveEventBased | ![](/angular-1/Diagram/Shapes_images/Shapes_img31.png) |
-| ParallelEventBased | ![](/angular-1/Diagram/Shapes_images/Shapes_img32.png) |
+| Exclusive | ![](/angularjs/Diagram/Shapes_images/Shapes_img26.png) |
+| Parallel | ![](/angularjs/Diagram/Shapes_images/Shapes_img27.png) |
+| Inclusive | ![](/angularjs/Diagram/Shapes_images/Shapes_img28.png) |
+| Complex | ![](/angularjs/Diagram/Shapes_images/Shapes_img29.png) |
+| EventBased | ![](/angularjs/Diagram/Shapes_images/Shapes_img30.png) |
+| ExclusiveEventBased | ![](/angularjs/Diagram/Shapes_images/Shapes_img31.png) |
+| ParallelEventBased | ![](/angularjs/Diagram/Shapes_images/Shapes_img32.png) |
 
 ### Activity
 
@@ -200,7 +200,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img33.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img33.png)
 
 The different activities of BPMN process are listed as follows.
 
@@ -236,20 +236,20 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img34.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img34.png)
 
 The various types of BPMN tasks are tabulated as follows.
 
 | Task Type | Image |
 |---|---|
-| Service | ![](/angular-1/Diagram/Shapes_images/Shapes_img35.png) |
-| Send | ![](/angular-1/Diagram/Shapes_images/Shapes_img34.png) |
-| Receive | ![](/angular-1/Diagram/Shapes_images/Shapes_img37.png) |
-| Instantiating Receive | ![](/angular-1/Diagram/Shapes_images/Shapes_img38.png) |
-| Manual | ![](/angular-1/Diagram/Shapes_images/Shapes_img39.png) |
-| Business Rule | ![](/angular-1/Diagram/Shapes_images/Shapes_img40.png) |
-| User | ![](/angular-1/Diagram/Shapes_images/Shapes_img41.png) |
-| Script | ![](/angular-1/Diagram/Shapes_images/Shapes_img42.png) |
+| Service | ![](/angularjs/Diagram/Shapes_images/Shapes_img35.png) |
+| Send | ![](/angularjs/Diagram/Shapes_images/Shapes_img34.png) |
+| Receive | ![](/angularjs/Diagram/Shapes_images/Shapes_img37.png) |
+| Instantiating Receive | ![](/angularjs/Diagram/Shapes_images/Shapes_img38.png) |
+| Manual | ![](/angularjs/Diagram/Shapes_images/Shapes_img39.png) |
+| Business Rule | ![](/angularjs/Diagram/Shapes_images/Shapes_img40.png) |
+| User | ![](/angularjs/Diagram/Shapes_images/Shapes_img41.png) |
+| Script | ![](/angularjs/Diagram/Shapes_images/Shapes_img42.png) |
 
 #### Subprocess
 
@@ -283,7 +283,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img116.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img116.png)
 
 The different types of subprocess are as follows.
 
@@ -322,7 +322,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img117.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img117.png)
 
 ##### Transaction Subprocess
 
@@ -374,7 +374,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img118.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img118.png)
 
 #### Processes 
 
@@ -450,7 +450,7 @@ Processes is a array collection that defines the children values for BPMN subpro
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img151.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img151.png)
 
 #### Loop
 
@@ -501,15 +501,15 @@ diagram.add(node);
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img43.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img43.png)
 
 The following table contains various types of BPMN loops.
 
 | Loops | Task | SubProcess |
 |---|---|---|
-| Standard | ![](/angular-1/Diagram/Shapes_images/Shapes_img44.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img45.png) |
-| SequenceMultiInstance | ![](/angular-1/Diagram/Shapes_images/Shapes_img46.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img47.png) |
-| ParallelMultiInstance | ![](/angular-1/Diagram/Shapes_images/Shapes_img48.png) | ![](/angular-1/Diagram/Shapes_images/Shapes_img49.png) |
+| Standard | ![](/angularjs/Diagram/Shapes_images/Shapes_img44.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img45.png) |
+| SequenceMultiInstance | ![](/angularjs/Diagram/Shapes_images/Shapes_img46.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img47.png) |
+| ParallelMultiInstance | ![](/angularjs/Diagram/Shapes_images/Shapes_img48.png) | ![](/angularjs/Diagram/Shapes_images/Shapes_img49.png) |
 
 #### Compensation
 
@@ -562,7 +562,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img50.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img50.png)
 
 #### Call
 
@@ -595,7 +595,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img51.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img51.png)
 
 #### Ad-Hoc
 
@@ -627,7 +627,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img52.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img52.png)
 
 #### Boundary
 
@@ -663,9 +663,9 @@ The following table contains various types of BPMN boundaries.
 
 | Boundary | Image |
 |---|---|
-| Call | ![](/angular-1/Diagram/Shapes_images/Shapes_img53.png) |
-| Event | ![](/angular-1/Diagram/Shapes_images/Shapes_img54.png) |
-| Default | ![](/angular-1/Diagram/Shapes_images/Shapes_img55.png) |
+| Call | ![](/angularjs/Diagram/Shapes_images/Shapes_img53.png) |
+| Event | ![](/angularjs/Diagram/Shapes_images/Shapes_img54.png) |
+| Default | ![](/angularjs/Diagram/Shapes_images/Shapes_img55.png) |
 
 ### Data
 
@@ -699,15 +699,15 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img56.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img56.png)
 
 The following table contains various representation of BPMN Data Object.
 
 | Boundary | Image |
 |---|---|
-| Collection Data Object | ![](/angular-1/Diagram/Shapes_images/Shapes_img119.png) |
-| Data Input | ![](/angular-1/Diagram/Shapes_images/Shapes_img120.png) |
-| Data Ouptput | ![](/angular-1/Diagram/Shapes_images/Shapes_img121.png) |
+| Collection Data Object | ![](/angularjs/Diagram/Shapes_images/Shapes_img119.png) |
+| Data Input | ![](/angularjs/Diagram/Shapes_images/Shapes_img120.png) |
+| Data Ouptput | ![](/angularjs/Diagram/Shapes_images/Shapes_img121.png) |
 
 ### Datasource
 
@@ -736,7 +736,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img57.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img57.png)
 
 ### Artifact
 
@@ -787,7 +787,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img122.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img122.png)
 
 #### Group
 
@@ -816,7 +816,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img123.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img123.png)
 
 #### BPMN Flows
 
@@ -863,15 +863,15 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img134.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img134.png)
 
 The following table demonstrates the visual representation of assosiation flows.
 
 | Association | Image |
 |---|---|
-| Default | ![](/angular-1/Diagram/Shapes_images/Shapes_img133.png) |
-| Directional | ![](/angular-1/Diagram/Shapes_images/Shapes_img134.png) |
-| BiDirectional | ![](/angular-1/Diagram/Shapes_images/Shapes_img132.png) |
+| Default | ![](/angularjs/Diagram/Shapes_images/Shapes_img133.png) |
+| Directional | ![](/angularjs/Diagram/Shapes_images/Shapes_img134.png) |
+| BiDirectional | ![](/angularjs/Diagram/Shapes_images/Shapes_img132.png) |
 
 N> The default value for the property `association` is "default".
 
@@ -915,15 +915,15 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img135.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img135.png)
 
 The following table contains various representation of sequence flows.
 
 | Sequence | Image |
 |---|---|
-| Default | ![](/angular-1/Diagram/Shapes_images/Shapes_img136.png) |
-| Conditional | ![](/angular-1/Diagram/Shapes_images/Shapes_img135.png) |
-| Normal | ![](/angular-1/Diagram/Shapes_images/Shapes_img137.png) |
+| Default | ![](/angularjs/Diagram/Shapes_images/Shapes_img136.png) |
+| Conditional | ![](/angularjs/Diagram/Shapes_images/Shapes_img135.png) |
+| Normal | ![](/angularjs/Diagram/Shapes_images/Shapes_img137.png) |
 
 N> The default value for the property `sequence` is "normal".
 
@@ -966,14 +966,14 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img138.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img138.png)
 
 The following table contains various representation of message flows.
 
 | Message | Image |
 |---|---|
-| Default | ![](/angular-1/Diagram/Shapes_images/Shapes_img139.png) |
-| InitiatingMessage | ![](/angular-1/Diagram/Shapes_images/Shapes_img138.png) |
-| NonInitiatingMessage | ![](/angular-1/Diagram/Shapes_images/Shapes_img140.png) |
+| Default | ![](/angularjs/Diagram/Shapes_images/Shapes_img139.png) |
+| InitiatingMessage | ![](/angularjs/Diagram/Shapes_images/Shapes_img138.png) |
+| NonInitiatingMessage | ![](/angularjs/Diagram/Shapes_images/Shapes_img140.png) |
 
 N> The default value for the property `message` is "default".

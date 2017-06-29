@@ -79,7 +79,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}	
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img141.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img141.png)
 
 N> The default value for the property `classifier` is "class".
 
@@ -131,7 +131,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}	
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img142.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img142.png)
 
 ###  Enumeration
 
@@ -175,7 +175,7 @@ The following code example illustrates how to create an enumeration.
 
 {% endhighlight %}	
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img143.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img143.png)
 
 ### Relationships
 
@@ -185,11 +185,11 @@ The list of relationships are demonstrated as follows.
 
 | shape | Image |
 |---|---|
-| Association | ![](/angular-1/Diagram/Shapes_images/Shapes_img144.png) |
-| Aggregation | ![](/angular-1/Diagram/Shapes_images/Shapes_img145.png) |
-| Composition | ![](/angular-1/Diagram/Shapes_images/Shapes_img146.png) |
-| Inheritance | ![](/angular-1/Diagram/Shapes_images/Shapes_img147.png) |
-| Dependency  | ![](/angular-1/Diagram/Shapes_images/Shapes_img148.png) |
+| Association | ![](/angularjs/Diagram/Shapes_images/Shapes_img144.png) |
+| Aggregation | ![](/angularjs/Diagram/Shapes_images/Shapes_img145.png) |
+| Composition | ![](/angularjs/Diagram/Shapes_images/Shapes_img146.png) |
+| Inheritance | ![](/angularjs/Diagram/Shapes_images/Shapes_img147.png) |
+| Dependency  | ![](/angularjs/Diagram/Shapes_images/Shapes_img148.png) |
 
 ### Association
 
@@ -240,7 +240,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img144.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img144.png)
 
 N> The default value for the property `association` is "directional".
 
@@ -280,7 +280,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img145.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img145.png)
 
 ### Composition
 
@@ -318,7 +318,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img146.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img146.png)
 
 ### Dependency
 
@@ -356,7 +356,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img147.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img147.png)
 
 ### Inheritance
 
@@ -396,7 +396,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img148.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img148.png)
 
 ### Multiplicity
 
@@ -467,7 +467,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img149.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img149.png)
 
 ### Editing
 
@@ -476,5 +476,5 @@ The string "---" acts as a splitter between the three sections.
 
 The following image illustrates how the text editor will be.
 
-![](/angular-1/Diagram/Shapes_images/Shapes_img150.png)
+![](/angularjs/Diagram/Shapes_images/Shapes_img150.png)
   

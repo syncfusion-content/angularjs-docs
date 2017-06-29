@@ -475,7 +475,7 @@ Now, PivotGauge will be rendered with the provided data as shown below.
 ![](Olap-Getting-Started_images/ServerMode.png)
 
 ### WCF
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotGauge. For more details on this topic, [click here](http://help.syncfusion.com/angular-1/pivotgauge/olap-connectivity#wcf).
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotGauge. For more details on this topic, [click here](http://help.syncfusion.com/angularjs/pivotgauge/olap-connectivity#wcf).
 
 
 

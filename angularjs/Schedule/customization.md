@@ -12,12 +12,12 @@ The Scheduler can be customized in various aspects like -
 
 * Setting different Start/end hour limits
 * Highlighting the working hours 
-* Setting different [date format](/angular-1/schedule/globalization-and-localization#date-format)
+* Setting different [date format](/angularjs/schedule/globalization-and-localization#date-format)
 * Specifying minimum and maximum date ranges 
 * Customize the entire appointment window with the user required fields
 * Setting different time Slot duration
 * Complete Scheduler customization using queryCellInfo event
-* Setting different [first day of week](/angular-1/schedule/globalization-and-localization#first-day-of-week)
+* Setting different [first day of week](/angularjs/schedule/globalization-and-localization#first-day-of-week)
 
 ## Hour Customization
 
@@ -106,7 +106,7 @@ The `e-timescale` allows the user to set the required time slot duration for the
 * `enable` - It accepts true or false value, denoting whether to show or hide the time slots. Its default value is `true`.
 * `majorSlot` – Specifies the major time slot duration.
 * `minorSlotCount` – Specifies the value, based on which the minor time slots are divided into appropriate count.
-* [TimeScale templates](/angular-1/schedule/templates#timescale-templates) - 2 template options available for customizing timeScales namely `minorSlotTemplateId` and `majorSlotTemplateId`. 
+* [TimeScale templates](/angularjs/schedule/templates#timescale-templates) - 2 template options available for customizing timeScales namely `minorSlotTemplateId` and `majorSlotTemplateId`. 
 
 The majorSlot and minorSlot can be set on the Scheduler with the following code example.
 

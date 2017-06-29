@@ -15,7 +15,7 @@ This section explains briefly about how to create a Gantt chart in your applicat
 
 In this tutorial, you can learn how to create a simple Gantt chart, add tasks or subtasks, and set relationship between tasks during the design phase of a software project. The following screenshot displays the desired output after completing this tutorial,
 
-![](/angular-1/Gantt/Getting-Started_images/Getting-Started_img4.png)
+![](/angularjs/Gantt/Getting-Started_images/Getting-Started_img4.png)
 
 ## Adding script references
 Create an HTML file and add the following template to the HTML file.
@@ -130,7 +130,7 @@ In the above code snippet, `ej-gantt` denotes the control directive for the Sync
 
 A Gantt chart is created as shown in the following screen shot.
 
-![](/angular-1/Gantt/Getting-Started_images/Getting-Started_img5.png)
+![](/angularjs/Gantt/Getting-Started_images/Getting-Started_img5.png)
 
 ## Enable Toolbar
 
@@ -171,7 +171,7 @@ Gantt control contains toolbar options to edit, search, expand or collapse all r
 
 The following screen shot displays a Tool bar in Gantt chart control:
 
-![](/angular-1/Gantt/Getting-Started_images/Getting-Started_img6.png)
+![](/angularjs/Gantt/Getting-Started_images/Getting-Started_img6.png)
 
 N>  Add, edit, delete, Indent, Outent options are enabled when enabling the allowEditing, allowAdding, allowDelete, allowIndent and allowOutdent properties in the e-editSettings.
 
@@ -248,7 +248,7 @@ Modify the predecessor details of a task using mouse interactions by setting [`e
 
 The following screen shot displays a Gantt chart control with Enable Editing options.
 
-![](/angular-1/Gantt/Getting-Started_images/Getting-Started_img7.png)
+![](/angularjs/Gantt/Getting-Started_images/Getting-Started_img7.png)
 
 N>  Both cellEditing and  normal  editing operations are performed through double-click action.
 
@@ -275,7 +275,7 @@ You can enable the context menu in Gantt, by setting the [`enableContextMenu`](h
 
 The following screen shot displays Gantt chart in which Context menu option is enabled:
 
-![](/angular-1/Gantt/Getting-Started_images/Getting-Started_img8.png)
+![](/angularjs/Gantt/Getting-Started_images/Getting-Started_img8.png)
 
 ## Enable Column Menu
 
@@ -301,7 +301,7 @@ You can enable the column menu in Gantt, by setting the [`e-showColumnChooser`](
 
 The following screen shot displays Gantt chart in which column chooser option is enabled:
 
-![](/angular-1/Gantt/Getting-Started_images/Getting-Started_img11.png)
+![](/angularjs/Gantt/Getting-Started_images/Getting-Started_img11.png)
 
 ## Provide tasks relationship
 
@@ -335,7 +335,7 @@ You can show the relationship in tasks, by using the [`predecessorsMapping`](htt
 
 The following screenshot displays the relationship between tasks.
 
-![](/angular-1/Gantt/Getting-Started_images/Getting-Started_img9.png)
+![](/angularjs/Gantt/Getting-Started_images/Getting-Started_img9.png)
 
 ## Provide Resources
 
@@ -380,7 +380,7 @@ In Gantt control, you can display and assign the resource for each task. Create 
 
 The following screenshot displays resource allocation for tasks in Gantt chart.
 
-![](/angular-1/Gantt/Getting-Started_images/Getting-Started_img10.png)
+![](/angularjs/Gantt/Getting-Started_images/Getting-Started_img10.png)
 
 By following these steps, you have learned how to provide data source to Gantt chart, how to configure Gantt to set task relationships, assign resources for each task, and add toolbar with necessary buttons.
 
@@ -409,4 +409,4 @@ In Gantt, weekends can be highlighted by setting the [`e-highlightWeekEnds`](htt
 
 The following screen shot displays Gantt chart in which highlight weekends is disabled:
 
-![](/angular-1/Gantt/Getting-Started_images/Getting-Started_img12.png)
+![](/angularjs/Gantt/Getting-Started_images/Getting-Started_img12.png)

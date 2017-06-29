@@ -118,7 +118,7 @@ diagram.add(group);
 
 Group nodes can be predefined and added to symbol palette. You can drop those groups into Diagram, when required.
 
-To explore how to add groups from symbol palette, refer to [Symbol Palette](/angular-1/Diagram/Symbol-Palette "Symbol Palette")
+To explore how to add groups from symbol palette, refer to [Symbol Palette](/angularjs/Diagram/Symbol-Palette "Symbol Palette")
 
 ## Container
 
@@ -196,7 +196,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Group_images/Group_img9.png)
+![](/angularjs/Diagram/Group_images/Group_img9.png)
 
 ### Stack
 
@@ -254,7 +254,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Group_images/Group_img10.png)
+![](/angularjs/Diagram/Group_images/Group_img10.png)
 
 ## Difference between a basic group and containers
 
@@ -266,4 +266,4 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 ## Interaction
 
-You can edit the group and its children at runtime. For more information about how to interact with a group, refer to [Edit Groups](/angular-1/Diagram/Interaction#selection "Interaction").
+You can edit the group and its children at runtime. For more information about how to interact with a group, refer to [Edit Groups](/angularjs/Diagram/Interaction#selection "Interaction").

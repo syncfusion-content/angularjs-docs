@@ -36,4 +36,4 @@ The Diagram model represents the data to render the Diagram and to manipulate th
 
 {% endhighlight %}
 
-![](/angular-1/Diagram/Model_images/Model_img1.png)
+![](/angularjs/Diagram/Model_images/Model_img1.png)

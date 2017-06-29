@@ -50,7 +50,7 @@ The header for each group can be defined using the “li” element”.
 
 The ListBox items can be categorized by using a specific field. This is enabled by using groupBy field on data source binding. By default grouping is disabled in ListBox. The below given example explains the behavior of grouping with JSON array binding.
 
-{% seealso %} [Data Binding](http://help.syncfusion.com/angular-1/listbox/databinding). {% endseealso %}
+{% seealso %} [Data Binding](http://help.syncfusion.com/angularjs/listbox/databinding). {% endseealso %}
 
 The grouping will be defined based on the “groupBy” API in fields object.
 

@@ -109,7 +109,7 @@ The following events will trigger when editing and saving the cell.
 
 ## Data binding
 
-You can bind the data to Spreadsheet using data manager. You can refer [`Data Binding`](http://help.syncfusion.com/angular-1/spreadsheet/data-binding "Data Binding") to know more about this. You can use [`saveBatchChanges`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:savebatchchanges "saveBatchChanges") method to update the changes in server.  
+You can bind the data to Spreadsheet using data manager. You can refer [`Data Binding`](http://help.syncfusion.com/angularjs/spreadsheet/data-binding "Data Binding") to know more about this. You can use [`saveBatchChanges`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:savebatchchanges "saveBatchChanges") method to update the changes in server.  
 
 The following code example describes the above behavior.
 

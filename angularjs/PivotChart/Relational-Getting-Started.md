@@ -562,7 +562,7 @@ Now, PivotChart is rendered with sales amount details over a set of products acr
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotChart. For more details on this topic, [click here](http://help.syncfusion.com/angular-1/pivotchart/relational-connectivity#wcf-1).
+This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotChart. For more details on this topic, [click here](http://help.syncfusion.com/angularjs/pivotchart/relational-connectivity#wcf-1).
   
 
 

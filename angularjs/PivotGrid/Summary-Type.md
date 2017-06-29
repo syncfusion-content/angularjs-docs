@@ -49,6 +49,6 @@ Allow us to specify the required [`layout`](/api/js/ejpivotgrid#members:layout) 
 
 {% endhighlight %}
 
-{% include image.html url="/angular-1/PivotGrid/Getting-Started_images/purejssummarytype.png" %}
+{% include image.html url="/angularjs/PivotGrid/Getting-Started_images/purejssummarytype.png" %}
 
 

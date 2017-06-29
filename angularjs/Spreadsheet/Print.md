@@ -2,7 +2,7 @@
 layout: post
 title: Print with Spreadsheet widget for Syncfusion Essential JS
 description: How to use the Spreadsheet Print
-platform:  Angular-1
+platform: AngularJS
 control: Spreadsheet
 documentation: ug
 ---

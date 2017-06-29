@@ -601,7 +601,7 @@ Now, PivotGauge is rendered with sales amount as shown in below image.
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotGauge. For more details on this topic, [click here](http://help.syncfusion.com/angular-1/pivotgauge/relational-connectivity#wcf-1).
+This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotGauge. For more details on this topic, [click here](http://help.syncfusion.com/angularjs/pivotgauge/relational-connectivity#wcf-1).
   
 
 

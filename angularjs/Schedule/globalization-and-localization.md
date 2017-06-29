@@ -159,7 +159,7 @@ The following code example shows how to localize the Schedule control in **fr-FR
 
 N> Refer the **ej.culture.fr-FR.min.js** file in your HTML application and also define the **locale** property for the Schedule control with the appropriate **culture-code** [**fr-FR**].
 
-For further information on – how to refer the required culture scripts into your application, refer [here](/angular-1/localization).
+For further information on – how to refer the required culture scripts into your application, refer [here](/angularjs/localization).
 
 ### Localizing Specific Words
 

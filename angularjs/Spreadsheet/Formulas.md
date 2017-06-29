@@ -1,7 +1,7 @@
 ---
 title: Formula support with Spreadsheet widget for Syncfusion Essential JS
 description: How to use formulas in Spreadsheet with cell references, named ranges etc.
-platform:  Angular-1
+platform: AngularJS
 control: Spreadsheet
 documentation: Ug
 ---
