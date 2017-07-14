@@ -287,6 +287,12 @@ Also you can get all the expanded nodes index in tree by using [getExpandedNodes
 
 You can get the updated node values after manipulating or editing the node of TreeView to save at server end using [getTreeData](http://help.syncfusion.com/api/js/ejtreeview#methods:gettreedata) method. It returns the JSON data represented as in tree with modified structure.
 
+You can also get the updated data source for remote data binding after performing the operation like editing, selecting/unselecting, expanding/collapsing, checking/unchecking and removing node. You cannot get the updated data source when you perform operation like drag and drop, adding node for remote data binding.
+
+TreeView does not support the two-way binding for remote data binding.
+
+The updated data source also contains custom attributes if you return these from server.
+
 {% highlight js %}
 
         //create an instance from an existing TreeView.
