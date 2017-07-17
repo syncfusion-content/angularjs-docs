@@ -568,3 +568,80 @@ List of Column type and Filter operators
             </td>
         </tr>
     </table>
+
+## FilterBar Template
+
+Usually enabling `e-allowfiltering`, will create default textbox in Grid FilterBar. So, Using [`e-filterbartemplate`] property of `e-columns` we can render any other controls like AutoComplete, DropDownList etc in filterbar to filter the grid data for the particular column.  
+It has three functions. They are    
+
+1. `create` - It is used to create the control at time of initialize.
+2. `read`   - It is used to read the Filter value selected.
+3. `write`  - It is used to render the control and assign the value selected for filtering.
+
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+ <div ng-controller="FilterBarCtrl">
+        <div id="Grid" ej-grid e-datasource="data" e-allowfiltering="true" e-allowpaging="true">
+            <div e-toolbarsetting-showtoolbar=true></div>
+            <div e-columns>
+                <div e-column e-field="OrderID" e-headertext="Order ID" e-textalign="right" e-width="90"></div>
+                <div e-column e-field="CustomerID" e-headertext="CustomerID" e-textalign="left" e-width="90" e-filterbartemplate="filtercustomer"></div>
+                <div e-column e-field="EmployeeID" e-headertext="EmployeeID" e-textalign="left" e-width="90" e-filterbartemplate="filteremployee"></div>
+                <div e-column e-field="Freight" e-headertext="Freight" e-textalign="left" e-format="{0:C2}" e-width="90" e-filterbartemplate="filterFreight"></div>
+                <div e-column e-field="ShipCountry" e-headertext="Ship Country" e-textalign="left" e-width="90"></div>
+                <div e-column e-field="Verified" e-headertext="Verified" e-width="90">
+            </div>
+            </div>
+        </div>
+    </div>   
+{% endhighlight  %}
+{% highlight javascript %}
+   syncApp.controller('FilterbarCtrl', function ($scope,$rootScope) {
+            $scope.data = window.gridData; //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            $scope.filterFreight = {
+                write: function (args) {
+                    args.element.ejNumericTextbox({ width: "100%", decimalPlaces: 2, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });
+                },
+                read: function (args) {
+                    this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+                },
+            }
+            $scope.filtercustomer = {
+                create: function (args) {
+                    return "<input>"
+                },
+                write: function (args) {
+                    var data = ej.DataManager(window.gridData).executeLocal(new ej.Query().select("CustomerID"));
+                    args.element.ejAutocomplete({ width: "100%", dataSource: data, enableDistinct: true, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });
+                },
+                read: function (args) {
+                    this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+                },
+            }
+            $scope.filteremployee = {
+                write: function (args) {
+                    var data = [{ text: "clear", value: "clear" }, { text: "1", value: 1 }, { text: "2", value: 2 }, { text: "3", value: 3 }, { text: "4", value: 4 },
+                        { text: "5", value: 5 }, { text: "6", value: 6 }, { text: "7", value: 7 }, { text: "8", value: 8 }, { text: "9", value: 9 }
+                    ]
+                    args.element.ejDropDownList({ width: "100%", dataSource: data, change: ej.proxy(args.column.filterBarTemplate.read, this, args) })
+                },
+                read: function (args) {
+                    if (args.element.val() == "clear") {
+                        this.clearFiltering(args.column.field);
+                        args.element.val("")
+                    }
+                    this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+                },
+            }
+        });
+{% endhighlight %}
+
+
+The following output is displayed as a result of the above code example.
+
+![](filtering_images/filtering_img11.png)
+{:caption}
+After Filtering
+ 
