@@ -80,7 +80,7 @@ Add the following code example in the &lt;body&gt; tag in the HTML page. Set
 
 <script type="text/javascript">
     angular.module('syncApp', ['ejangular']).controller('GroupingAggregateCrtl', function ($scope, $interval) {
-        $scope.reportServiceUrl = 'http://js.syncfusion.com/ejservices/api/RDLReport';
+        $scope.reportServiceUrl = 'http://js.syncfusion.com/ejservices/api/ReportViewer';
         $scope.remoteMode = ej.ReportViewer.ProcessingMode.Remote;
         $scope.rdlReportPath = 'GroupingAgg.rdl';
     });
@@ -114,7 +114,7 @@ ReportViewer supports to load RDL/RDLC files from SSRS Server. The following ste
 <script type="text/javascript">
     angular.module('syncApp', ['ejangular']).controller('TerritorySalesCrtl', function ($scope, $interval) {
         $scope.ServerUrl = 'http://mvc.syncfusion.com/reportserver';
-        $scope.reportServiceUrl = 'http://js.syncfusion.com/ejservices/api/SSRSReport';
+        $scope.reportServiceUrl = 'http://js.syncfusion.com/ejservices/api/ReportViewer';
         $scope.remoteMode = ej.ReportViewer.ProcessingMode.Remote;
         $scope.ssrsReportPath = "/SSRSSamples2/Territory Sales new";
     });
@@ -144,7 +144,7 @@ The ReportViewer has data binding support to visualize the RDLC reports. The fol
 </div>
 <script type="text/javascript">
     angular.module('syncApp', ['ejangular']).controller('AreaChartCrtl', function ($scope, $interval) {
-        $scope.reportServiceUrl = 'http://js.syncfusion.com/ejservices/api/RDLCReport';
+        $scope.reportServiceUrl = 'http://js.syncfusion.com/ejservices/api/ReportViewer';
         $scope.localMode = ej.ReportViewer.ProcessingMode.Local;
         $scope.rdlcReportPath = 'AreaCharts.rdlc';
         $scope.dataSource = [{
