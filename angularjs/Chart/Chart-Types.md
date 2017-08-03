@@ -566,6 +566,68 @@ To render a 100% Stacked Area Chart, set the `e-type` as **"stackingArea100"** i
 
 ![](Chart-Types_images/Chart-Types_img16.png)
 
+## Stacked Spline Area Chart
+
+To render a Stacked Spline Area Chart, set the `e-type` as **"stackingsplinearea"** in the chart series.
+
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+    <head>
+        <title>Essential Studio for AngularJS: Chart</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="ChartCtrl">
+        <div id="container" ej-chart>
+        <e-series>
+        <e-series  e-type="stackingsplinearea"></e-series>
+        </e-series>
+        </div>
+        <script>
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+            
+                });
+        </script>
+    </body>
+</html>
+
+{% endhighlight %} 
+
+
+![](Chart-Types_images/Chart-Types_img97.png)
+
+
+## 100% Stacked Spline Area Chart  
+
+To render a 100% Stacked Spline Area Chart, set the `e-type` as **"stackingsplinearea100"** in the chart series. 
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+    <head>
+        <title>Essential Studio for AngularJS: Chart</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="ChartCtrl">
+        <div id="container" ej-chart>
+        <e-series>
+        <e-series  e-type="stackingsplinearea100"></e-series>
+        </e-series>
+        </div>
+        <script>
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+            
+                });
+        </script>
+    </body>
+</html>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img98.png)
 
 ## Column Chart
 
@@ -1330,6 +1392,66 @@ To render a Spline Chart, set the `e-type` as **"spline"** in the chart series. 
 {% endhighlight %}
 
 ![](Chart-Types_images/Chart-Types_img35.png)
+
+
+
+### Spline Types
+
+Spline series supports four types of curves, namely natural, monotonic, cardinal and clamped. To change the spline type, you can use the [`splineType`](../api/ejchart#members:series-splinetype) property in the series. 
+
+
+{% highlight html %}
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+    <head>
+        <title>Essential Studio for AngularJS: Chart</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="ChartCtrl">
+        <div id="container" ej-chart>
+        <e-series>
+        <e-series  e-type="spline" e-splinetype="Natural"></e-series>            
+        </e-series>
+        </div>
+        <script>
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
+             
+                });
+        </script>
+    </body>
+</html>
+        
+
+{% endhighlight %}
+
+
+### Change the cardinal spline tension
+
+To change cardinal spline tension, you can use the [`cardinalSplineTension`](../api/ejchart#members:series-cardinalsplinetension) property in the series.The default value of cardinalSplineTension is **0.5**.Its value ranges from 0 to 1.
+
+{% highlight html %}
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+    <head>
+        <title>Essential Studio for AngularJS: Chart</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="ChartCtrl">
+        <div id="container" ej-chart>
+        <e-series>
+        <e-series  e-type="spline" e-splinetype="Cardinal" e-cardinalsplinetension ="0.7"></e-series>            
+        </e-series>
+        </div>
+        <script>
+         angular.module('ChartApp', ['ejangular'])
+         .controller('ChartCtrl', function ($scope) {
+             
+                });
+        </script>
+    </body>
+</html>
+        
+
+{% endhighlight %}
 
 
 ### Change the spline width
