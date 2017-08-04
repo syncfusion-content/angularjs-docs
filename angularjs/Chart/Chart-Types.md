@@ -1397,7 +1397,8 @@ To render a Spline Chart, set the `e-type` as **"spline"** in the chart series. 
 
 ### Spline Types
 
-Spline series supports four types of curves, namely natural, monotonic, cardinal and clamped. To change the spline type, you can use the [`splineType`](../api/ejchart#members:series-splinetype) property in the series. 
+Spline series supports four types of curves, namely natural, monotonic, cardinal and clamped. To change the spline type, you can use the
+`e-splinetype`(../api/ejchart#members:series-splinetype) property in the series. 
 
 
 {% highlight html %}
@@ -1427,7 +1428,7 @@ Spline series supports four types of curves, namely natural, monotonic, cardinal
 
 ### Change the cardinal spline tension
 
-To change cardinal spline tension, you can use the [`cardinalSplineTension`](../api/ejchart#members:series-cardinalsplinetension) property in the series.The default value of cardinalSplineTension is **0.5**.Its value ranges from 0 to 1.
+To change cardinal spline tension, you can use the `e-cardinalsplinetension`(../api/ejchart#members:series-cardinalsplinetension) property in the series. The default value of cardinalSplineTension is **0.5**. Its value ranges from 0 to 1.
 
 {% highlight html %}
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
