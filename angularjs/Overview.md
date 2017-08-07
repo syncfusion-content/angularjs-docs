@@ -1,14 +1,14 @@
 ---
-title: Welcome to Syncfusion Essential AngularJS 1
-description: Overview of Syncfusion Essential AngularJS 1 
+title: Welcome to Syncfusion Essential AngularJS
+description: Overview of Syncfusion Essential AngularJS 
 platform: AngularJS
 control: Introduction
 documentation: ug
 --- 
 
-# AngularJS 1
+# AngularJS
 
-Essential JS includes AngularJS 1 directives for all controls in the `ej.widget.angular.min.js` script file. All the Essential JS directives have been encapsulated into a single module called `ejangular` so the first step would be to declare dependency for this module within your AngularJS 1 application.
+Essential JS includes AngularJS directives for all controls in the `ej.widget.angular.min.js` script file. All the Essential JS directives have been encapsulated into a single module called `ejangular` so the first step would be to declare dependency for this module within your AngularJS application.
 
 {% highlight javascript %}
 
@@ -19,14 +19,14 @@ angular.module('DateCtrl', ['ejangular'])
 
 {% endhighlight %}
 
-All the Syncfusion widget’s control directives are prefixed with `ej-` to avoid conflict with other library directives and its properties are defined using `e-` prefix followed by the property name. The code example for defining controls in AngularJS 1 is as follows,
+All the Syncfusion widget’s control directives are prefixed with `ej-` to avoid conflict with other library directives and its properties are defined using `e-` prefix followed by the property name. The code example for defining controls in AngularJS is as follows,
 
 {% highlight html %}
 
 
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="DateCtrl">
   <head>
-    <title>Essential Studio for JavaScript : DatePicker - AngularJS 1</title>
+    <title>Essential Studio for JavaScript : DatePicker - AngularJS</title>
   </head>
   <body ng-controller="DatePickerCtrl">
     <input id="datepick" ej-datepicker e-value="dateValue" e-enableStrictMode="true" />
@@ -289,7 +289,7 @@ Events can be bind to controls using the prefix `e-` and particular event name. 
 
 ## Getting Widget Reference in Controller
 
-In controller, you can get the reference to the `ej` widgets using the `ID` of particular widget in AngularJS 1 scope. Refer the following code example.
+In controller, you can get the reference to the `ej` widgets using the `ID` of particular widget in AngularJS scope. Refer the following code example.
  
 {% highlight html %}
   <body ng-controller="DatePickerCtrl">

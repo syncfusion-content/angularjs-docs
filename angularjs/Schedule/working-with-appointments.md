@@ -40,6 +40,7 @@ Appointments play a dynamic role within the Schedule control with which the user
 The appointments can be added/edited in the Scheduler using any one of the following ways,
 
 * Quick window
+* Inline creation/editing
 * Default appointment window
 * [Context menu](/angularjs/schedule/context-menu)
 * Through programmatically
@@ -122,6 +123,90 @@ Another way to disable the quick window option at dynamic time can be achieved t
         });
         function onCellClick(args) {
             args.cancel = true; // Prevents the display of quick window on clicking the cells.
+        }
+    </script>
+</body>
+</html>
+
+{% endhighlight %}
+
+
+#### Inline Appointment Creation/Editing
+
+Another easier way, for adding or editing the appointment’s subject alone can be achieved using inline Add/Edit support. It allows the user to add and edit the appointments inline.
+
+To get familiar with inline Add mode, single click on any of the Scheduler cells or press `enter` key on the selected cells. When the inline adding mode is ON, a text box will get created within the clicked Scheduler cells with a blinking cursor in it, requiring the user to enter the subject of an appointment. Once the subject is entered, the appointment will be saved on pressing the `enter` key. 
+
+To enable inline edit mode, single click on any of the existing appointment’s subject, so that the user can edit the subject of that appointment. The edited subject of that appointment is then updated on pressing the `enter` key.
+
+The inline option can be enabled/disabled on Scheduler by using the `e-allowinline` API, whereas its default value is set to **false**.
+
+{% highlight html %}
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="ScheduleApp">
+<head>
+    <!-- Dependency file references -->
+</head>
+<body>
+    <div ng-controller="ScheduleCtrl">
+        <ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-currentdate="setDate" e-appointmentsettings-datasource="appointments" e-allowinline="true">
+        </ej-schedule>
+    </div>
+    <script>
+        angular.module('ScheduleApp', ['ejangular']).controller('ScheduleCtrl', function ($scope) {
+            $scope.appointments = [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date(2017, 1, 7, 6, 0),
+                EndTime: new Date(2017, 1, 7, 7, 30)
+            }, {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date(2017, 1, 7, 9, 0),
+                EndTime: new Date(2017, 1, 7, 14, 30)
+            }];
+            $scope.setDate = new Date(2017, 1, 7);
+        });
+    </script>
+</body>
+</html>
+
+{% endhighlight %}
+
+##### Enabling Inline Edit alone
+
+It is possible to disable the inline appointment creation and enabling only the editing mode of inline by making use of the `e-cellclick` event. The below code example shows the way to disable the inline appointment creation while clicking on the cells, but appointments can be edited while clicking on it’s subject.
+
+{% highlight html %}
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="ScheduleApp">
+<head>
+    <!-- Dependency file references -->
+</head>
+<body>
+    <div ng-controller="ScheduleCtrl">
+        <ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-currentdate="setDate" e-appointmentsettings-datasource="appointments" e-showquickwindow="true" e-cellclick="onCellClick">
+        </ej-schedule>
+    </div>
+    <script>
+        angular.module('ScheduleApp', ['ejangular']).controller('ScheduleCtrl', function ($scope) {
+            $scope.appointments = [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date(2017, 1, 7, 6, 0),
+                EndTime: new Date(2017, 1, 7, 7, 30)
+            }, {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date(2017, 1, 7, 9, 0),
+                EndTime: new Date(2017, 1, 7, 14, 30)
+            }];
+            $scope.setDate = new Date(2017, 1, 7);
+        });
+        function onCellClick(args) {
+            args.cancel = true; // Prevents inline appointment creation on clicking the cells.
         }
     </script>
 </body>
