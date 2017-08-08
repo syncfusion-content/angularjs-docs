@@ -317,6 +317,40 @@ The label can be wrapped for pie, doughnut, funnel, and pyramid series by settin
 
 ![](Data-Markers_images/Data-Markers_img13.png)
 
+## Contrast Color for the data label
+
+ 
+To change the contrast color for the data label, you can set the `e-enableContrastColor` as **true** in the dataLabel property of the chart series.
+
+When we enable this property, the data label text will be rendered in contrast color based on the segment on which it is placed.
+If the data label is placed inside the data points segment, then that particular point's color is taken. Else the chart area or chart background color is considered for deriving the contrast color.
+
+{% highlight html %} 
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+    <head>
+        <title>Essential Studio for AngularJS: Chart</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="ChartCtrl">
+         <div id="container" ej-chart>
+         <e-series>
+         <e-series e-marker-datalabel-visible="true"
+         e-marker-datalabel-enablecontrastcolor="true">
+         </e-series>
+        </div>
+        <script>
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                                  
+                });
+        </script>
+    </body>
+</html>
+ 
+{% endhighlight %}
+
+
 
 ## Customize specific points
 

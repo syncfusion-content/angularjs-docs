@@ -360,3 +360,36 @@ However, you can force the chart to animate series by calling the animate method
 
 {% endhighlight %}
 
+
+### Control the Speed of animation
+
+To control the speed of animation, you can use the `e-animationDuration` property in the series. 
+
+
+
+{% highlight html %}
+
+ <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+    <head>
+        <title>Essential Studio for AngularJS: Chart</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="ChartCtrl">
+        <div id="container" ej-chart >
+        <e-series>
+        <e-series e-enableanimation="true" e-animationduration="2000"></e-series>
+        </e-series>
+        </div>
+        <script>
+        angular.module('ChartApp', ['ejangular'])
+        .controller('ChartCtrl', function ($scope) {
+                     });
+        </script>
+    </body>
+</html>
+
+
+
+{% endhighlight %}
+
+
