@@ -148,6 +148,45 @@ You can set headers for each level by setting the `e-showHeader` property of the
 
 ![](TreeMap-Elements_images/TreeMap-Elements_img2.png)
 
+
+## Customizing the header
+
+The text in the header can be customized by triggering the event `e-headerTemplateRendering` of the **TreeMap**. This event is triggered before rendering the header template. 
+{% highlight html %}
+
+   <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="TreemapApp">
+    <head>
+        <title>Essential Studio for AngularJS: TreeMap</title>
+        <!--CSS and Script file References -->
+    </head> 
+    <body ng-controller="TreemapCtrl">
+     <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
+     <ej-treemap >
+    //...
+     <e-levels>
+     <e-level e-grouppath="Continent" e-groupgap="2" e-headerheight="25" 
+     e-headertemplaterendering="loadTemplate"></e-level>
+     </e-levels>
+     </ej-treemap>
+     </div>        
+     <script>
+     angular.module('TreemapApp', ['ejangular'])
+     .controller('TreemapCtrl', function ($scope) {
+                        });
+    </script>
+    <script>
+        function loadTemplate(sender) {
+        //...                   
+        }
+    </script>   
+   </body>
+  </html>  
+
+{% endhighlight %}
+
+![](TreeMap-Elements_images/TreeMap-Elements_img4.png)
+
+
 ## Label
 
 You can also set labels for the leaf nodes by setting the `e-showLabels` property as true. Group path value is displayed as a label for leaf nodes. You can customize the default label appearance by setting the `e-labelTemplate` of the **TreeMap** levels.
@@ -190,4 +229,48 @@ You can also set labels for the leaf nodes by setting the `e-showLabels` propert
 
 
 ![](TreeMap-Elements_images/TreeMap-Elements_img3.png)
+
+## Customizing the Overflow labels
+
+You can handle the label overflow, by specifying any one of the following values to the property `e-leafItemSettings-textOverflow`as
+
+**None**       - By specifying textOverflow as “none”, it displays the default label text.
+**Hide**       - By specifying textOverflow as “hide”, You can hide the label, when it exceeds the header width.
+**Wrap**       - By specifying textOverflow as “wrap”, you can wrap the label text.
+**Wrapbyword** - By specifying textOverflow as “wrapbyword”, you can wrap the label text by word.
+
+
+{% highlight html %}
+
+    
+  <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="TreemapApp">
+    <head>
+        <title>Essential Studio for AngularJS: TreeMap</title>
+        <!--CSS and Script file References -->
+    </head> 
+    <body ng-controller="TreemapCtrl">
+     <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
+     <ej-treemap e-leafitemsettings-labelpath="Region" e-leafitemsettings-showlabels="true" e-leafitemsettings-textoverflow="Wrap">
+     //...
+     <e-levels>
+     <e-level e-grouppath="Continent" e-showlabels="true" e-groupgap="2" e-headerheight="20" 
+     e-headertemplate="headertemplate" e-labelposition="topleft" ></e-level>
+     </e-levels>
+     </ej-treemap>
+     </div>
+     <script  id="headertemplate" type="application/htmlrender">
+     <div style="background-color: white; margin:5px">
+     <label style="color:black;font-size:large;" >{{:header}}</label><br />            
+     </div>                        
+     </script>    
+     <script>
+     angular.module('TreemapApp', ['ejangular'])
+     .controller('TreemapCtrl', function ($scope) {
+                        });
+    </script>
+    </body>
+</html>    
+    
+
+{% endhighlight %}
 
