@@ -99,6 +99,40 @@ Working hours indicates the work hour limit within the Scheduler, which is highl
 
 N> By default, work hour **start** is set to **9** and **end** is set to **18**. Also, the Scheduler cells automatically scrolls up or down based on the starting work hour, to make the user to view that particular time initially.
 
+## Hide Weekend days
+
+The Scheduler can be customized to display only the working days, thus hiding the weekend days from it. The working days render based on the values given in the `e-workweek` property. The days that are not mentioned in the `e-workweek` collection is considered to be the weekend days and it can be hidden from the Scheduler by setting `false` to the `e-showweekend` property.
+
+The following code example renders the Scheduler by hiding the weekend days.
+
+{% highlight html %}
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="ScheduleApp">
+<head>
+    <!-- Dependency file references -->
+</head>
+<body>
+    <div ng-controller="ScheduleCtrl">
+        <ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-showweekend="false" e-currentdate="setDate" e-appointmentsettings-datasource="dataSource">
+        </ej-schedule>
+    </div>
+    <script type="text/javascript">
+        angular.module('ScheduleApp', ['ejangular']).controller('ScheduleCtrl', function ($scope) {
+            $scope.dataSource = [{
+                Id: 100,
+                Subject: "Wild Discovery",
+                StartTime: new Date(2017, 1, 7, 9, 00),
+                EndTime: new Date(2017, 1, 7, 10, 30)
+            }];
+            $scope.setDate = new Date(2017, 1, 7);
+        });
+    </script>
+</body>
+</html>
+
+{% endhighlight %}
+
 ## TimeScale
 
 The `e-timescale` allows the user to set the required time slot duration for the work cells that displays on the Scheduler. It provides option to customize both the major and minor slots using template option. It includes the below properties such as,
