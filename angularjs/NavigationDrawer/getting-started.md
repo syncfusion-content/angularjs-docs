@@ -143,9 +143,9 @@ You can set the images for list items of the Navigation Drawer by using the Imag
             e-type="overlay" e-direction="left" e-enablelistview=true e-listviewsettings-width="220" e-listviewsettings-height="100%"
             e-listviewsettings-selecteditemindex=0 e-position="normal">
         <ul>
-            <li data-ej-imageclass="icon-home" data-ej-text="Home"></li>
-            <li data-ej-imageclass="icon-photos" data-ej-text="Photos"></li>
-            <li data-ej-imageclass="icon-profile" data-ej-text="Profile"></li>
+            <li data-ej-imageclass="e-icon e-home" data-ej-text="Home"></li>
+            <li data-ej-imageclass="e-icon e-photo" data-ej-text="Photos"></li>
+            <li data-ej-imageclass="e-icon e-profile" data-ej-text="Profile"></li>
         </ul>
     </div>
     
@@ -157,23 +157,48 @@ You can set the images with the correct position by using the mentioned styles.
 
     <style>
     
-       #navpane [class*="icon-"] {
-           width: 40px;
-           height: 29px;
-           background-image: url("http://js.syncfusion.com/ug/web/content/drawer/sprite.png");
-       }
+    @font-face { 
+        font-family: 'ej-xlfont'; 
+        src: url('../../common-images/tools/icons.eot'); 
+        src: url('../../common-images/tools/icons.eot') format('embedded-opentype'), url('../../common-images/tools/icons.woff') format('woff'),url('../../common-images/tools/icons.woff') format('woff'), url('../../common-images/tools/icons.ttf') format('truetype'), url('../../common-images/tools/icons.svg') format('svg'); 
+        font-weight: normal; 
+        font-style: normal; 
+    } 
+ 
+    .e-home:before { 
+        font-family: "ej-xlfont"; 
+        content: "\e900"; 
+    } 
+ 
+    .e-profile:before { 
+        font-family: "ej-xlfont"; 
+        content: "\e901"; 
+    } 
+ 
+    .e-photo:before { 
+        font-family: "ej-xlfont"; 
+        content: "\e903"; 
+    } 
+ 
+    .e-location:before { 
+        font-family: "ej-xlfont"; 
+        content: "\e905"; 
+    } 
 
-       .icon-home {
-           background-position: 0 1px;
-       }
+    .e-people:before { 
+        font-family: "ej-xlfont"; 
+        content: "\e902"; 
+    } 
+ 
+    .e-communities:before { 
+        font-family: "ej-xlfont"; 
+        content: "\e904"; 
+    }
 
-       .icon-profile {
-           background-position: 0px -532px;
-       }
-
-       .icon-photos {
-           background-position: 0 -140px;
-       }
+    .e-home, .e-profile, .e-people, .e-photo, .e-communities, .e-location { 
+        font-size: 24px; 
+        color: black; 
+    } 
             
     </style>
 
@@ -219,9 +244,9 @@ You can load the appropriate content for the navigation by using the mouseUp eve
         e-type="overlay" e-direction="left" e-enablelistview=true e-listviewsettings-width="220" e-listviewsettings-height="100%"
         e-listviewsettings-selecteditemindex=0 e-listviewsettings-mouseup="headChange" e-position="normal">
         <ul>
-            <li data-ej-imageclass="icon-home" data-ej-text="Home"></li>
-            <li data-ej-imageclass="icon-photos" data-ej-text="Photos"></li>
-            <li data-ej-imageclass="icon-profile" data-ej-text="Profile"></li>
+            <li data-ej-imageclass="e-icon e-home" data-ej-text="Home"></li>
+            <li data-ej-imageclass="e-icon e-photo" data-ej-text="Photos"></li>
+            <li data-ej-imageclass="e-icon e-profile" data-ej-text="Profile"></li>
         </ul>
     </div>
 
@@ -254,9 +279,9 @@ By using this property, you can change the list view open direction. The possibl
         e-type="overlay" e-direction="right" e-enablelistview=true e-listviewsettings-width="220" e-listviewsettings-height="100%"
         e-listviewsettings-selecteditemindex=0 e-listviewsettings-mouseup="headChange" e-position="normal">
         <ul>
-            <li data-ej-imageclass="icon-home" data-ej-text="Home"></li>
-            <li data-ej-imageclass="icon-photos" data-ej-text="Photos"></li>
-            <li data-ej-imageclass="icon-profile" data-ej-text="Profile"></li>
+            <li data-ej-imageclass="e-icon e-home" data-ej-text="Home"></li>
+            <li data-ej-imageclass="e-icon e-photo" data-ej-text="Photos"></li>
+            <li data-ej-imageclass="e-icon e-profile" data-ej-text="Profile"></li>
         </ul>
     </div>
 
