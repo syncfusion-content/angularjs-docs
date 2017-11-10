@@ -169,7 +169,7 @@ You can select the cells programmatically using [selectCells](https://help.syncf
 {% highlight html %}
 <body>
 
-    <button id="selectcells">SelectCells</button> //…
+    <button id="select">SelectCells</button> //…
 <div id="GanttContainer" ej-gantt
       //...
      
@@ -180,7 +180,7 @@ You can select the cells programmatically using [selectCells](https://help.syncf
 
 {% highlight javascript %}
 
-$("#selectcells").click(function(args) {
+$("#select").click(function(args) {
 
     //create Gantt object
 
