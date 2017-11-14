@@ -26,17 +26,17 @@ The following code example explains how to define the `e-splitterposition` prope
 
 {% endhighlight %}
 
-![](/augular-1/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img2.png)
+![](Change-Splitter-position_images/Change-Splitter-position_img2.png)
 
 Gantt with 30 % splitter position
 {:.caption}
 
-![](/augular-1/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img3.png)
+![](Change-Splitter-position_images/Change-Splitter-position_img3.png)
 
 Gantt with 50% splitter position
 {:.caption}
 
-![](/augular-1/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img4.png)
+![](Change-Splitter-position_images/Change-Splitter-position_img4.png)
 
 Gantt with 600px splitter position
 {:.caption}
