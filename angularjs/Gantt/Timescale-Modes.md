@@ -198,7 +198,7 @@ The Hour Schedule Mode supports both the `minute` and `hour` duration units.
 
 ## Week start day customization
 
-In Gantt, we can customize week start day by using `weekStartDay` property.
+In Gantt, we can customize week start day by using `e-scheduleheadersettings.weekStartDay` property.
 By default the weekStartDay will be assigned with 0 which specifies the start day of the week.
 
 In week schedule mode, week starts with Sunday by default. But we can customize the week start day by using below code example
@@ -228,7 +228,7 @@ In week schedule mode, week starts with Sunday by default. But we can customize 
 
 ## Rounding off timescale (schedule) start date
 
-You can able to round off the schedule start date in a project by using the "e-timescalestartdatemode" property. It is possible to set the following values to the property,
+You can able to round off the schedule start date in a project by using the `e-scheduleheadersettings.timescaleStartDateMode` property. It is possible to set the following values to the property,
 
 * auto
 * month
