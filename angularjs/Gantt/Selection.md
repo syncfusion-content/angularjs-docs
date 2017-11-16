@@ -69,7 +69,7 @@ $("#selectRow").click(function(args) {
 
 ### Multiple row selection
 
-It is also possible to select multiple rows by setting `selectionType` as `multiple`. You can select more than one row by holding down `CTRL` key while selecting multiple rows.
+It is also possible to select multiple rows by setting [e-selectiontype](https://help.syncfusion.com/api/js/ejgantt#members:selectiontype) as `multiple`. You can select more than one row by holding down `CTRL` key while selecting multiple rows.
 The following code example explains how to enable multiple selection in Gantt.
 
 {% highlight javascript %}
@@ -88,7 +88,7 @@ The output of the Gantt with multiple row selection is as follows.
 
 ![](/js/Gantt/Selection_images/Selection_img5.png)
 
-To enable multiple selection, you can set `selectionType` property either as `multiple` or enumeration value `ej.Gantt.SelectionType.Multiple`.
+To enable multiple selection, you can set [e-selectiontype](https://help.syncfusion.com/api/js/ejgantt#members:selectiontype) property either as `multiple` or enumeration value `ej.Gantt.SelectionType.Multiple`.
 
 ### Selecting multiple rows programmatically 
 

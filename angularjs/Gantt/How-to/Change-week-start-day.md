@@ -11,7 +11,7 @@ documentation: ug
 
 ## Using start date mode as Month
 
-When setting the `timescaleStartDateMode` property as month, the project will start from the first date of the same month of the first task in a project. Using below code example we can change the week start day of the project start date in month timescale mode.
+When setting the `e-scheduleheadersettings.timescaleStartDateMode` property as month, the project will start from the first date of the same month of the first task in a project. Using below code example we can change the week start day of the project start date in month timescale mode.
 
 {% highlight javascript %}
 
@@ -44,11 +44,11 @@ When setting the `timescaleStartDateMode` property as month, the project will st
 
 {% endhighlight %}
 
-![](/js/Gantt/How-to/Change-Weekstart-Day-images/image-1.png)
+![](Change-Weekstart-Day-images/image-1.png)
 
 ## Using start date mode as Year
 
-When setting the `timescaleStartDateMode` property as Year, the project will start from the first date of the same year to which the first task in a project starts. Using below code example we can change the week start day of the project start date in year timescale mode.
+When setting the `e-scheduleheadersettings.timescaleStartDateMode` property as Year, the project will start from the first date of the same year to which the first task in a project starts. Using below code example we can change the week start day of the project start date in year timescale mode.
 
 {% highlight javascript %}
 
@@ -80,6 +80,6 @@ When setting the `timescaleStartDateMode` property as Year, the project will sta
 
 {% endhighlight %}
 
-![](/js/Gantt/How-to/Change-Weekstart-Day-images/image-2.png)
+![](Change-Weekstart-Day-images/image-2.png)
 
 By default _enableMonthStart property will be true. Week header in month schedule mode will be rendered with month/year start day. To customize the week start day in month mode we need to set _enableMonthStart as false.
