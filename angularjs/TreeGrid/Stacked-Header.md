@@ -53,7 +53,7 @@ we can customize the stacked header cells with more options as described below.
 
 ### CSS Class
 
-You can provide external CSS styles to the stacked header with the help of `cssClass` property in in `e-stackedheaderrows.stackedHeaderColumns`.
+You can provide external CSS styles to the stacked header with the help of `cssClass` property in `e-stackedheaderrows.stackedHeaderColumns`.
 
 {% highlight html %}
 <body ng-controller="TreeGridCtrl">   
@@ -133,7 +133,7 @@ There is an option to align the stacked header text inside the header cell using
 
 ### Tooltip
 
-We can have the customized tooltip for the stacked header text with the help of `tooltip` property in in `e-stackedheaderrows.stackedHeaderColumns`. JsRender template script id can be assigned to this property to get tooltip.
+We can have the customized tooltip for the stacked header text with the help of `tooltip` property in `e-stackedheaderrows.stackedHeaderColumns`. JsRender template script id can be assigned to this property to get tooltip.
 
 {% highlight html %}
 <body ng-controller="TreeGridCtrl">
