@@ -420,3 +420,131 @@ The following screenshot illustrates a map control displaying a Tooltip with tem
 
 ![](Customization_images/Customization_img7.png)
 
+### Customize map background
+
+The Map background can be customized by using the `background` property of the Map. 
+
+{% highlight html %}
+
+       
+ <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="MapsApp">
+    <head>
+        <title>Essential Studio for AngularJS: Maps</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="MapsCtrl">
+      <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>        
+      <e-layers>
+            <e-layer e-shapedata=usMap e-background="blue"></e-layer>
+        </e-layers>
+    </div>
+    <script>
+        angular.module('MapsApp', ['ejangular'])
+        .controller('MapsCtrl', function ($scope) {
+                 });
+    </script>
+    </body>
+</html>
+
+{% endhighlight %} 
+
+
+### Base Map Index 
+
+Specifies the index of the map to determine the shape layer to be displayed, you can use `basemapindex` property and the default value is 0.
+
+
+{% highlight html %}
+ 
+     
+ <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="MapsApp">
+    <head>
+        <title>Essential Studio for AngularJS: Maps</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="MapsCtrl">
+      <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
+      <e-layers>
+            <e-layer e-basemapindex=""></e-layer>
+        </e-layers>        
+    </div>
+    <script>
+        angular.module('MapsApp', ['ejangular'])
+        .controller('MapsCtrl', function ($scope) {
+                 });
+    </script>
+    </body>
+</html>
+
+{% endhighlight %}
+
+
+### Center Position 
+
+
+Specify the `e-centerposition` where map should be displayed
+
+
+{% highlight html %}
+  
+     
+ <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="MapsApp">
+    <head>
+        <title>Essential Studio for AngularJS: Maps</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="MapsCtrl">
+      <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>        
+      <e-layers>
+            <e-layer e-shapedata=usMap e-centerposition=""></e-layer>
+        </e-layers>
+    </div>
+    <script>
+        angular.module('MapsApp', ['ejangular'])
+        .controller('MapsCtrl', function ($scope) {
+                 });
+    </script>
+    </body>
+</html>
+
+{% endhighlight %}
+
+
+### Label Settings
+
+The `labelSettings` defines the basic customization settings of labels in the map. 
+
+The below properties are used for `labelSettings`
+
+* `enableSmartLabel` - enable or disable the enableSmartLabel property.
+* `labelLength` - set the labelLength property.
+* `labelPath` - set the labelPath property.
+* `showLabels`- The property specifies whether to show labels or not
+* `smartLabelSize` - set the smartLabelSize property.
+ 
+{% highlight javascript %}
+
+        
+ <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="MapsApp">
+    <head>
+        <title>Essential Studio for AngularJS: Maps</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="MapsCtrl">
+      <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>        
+      <e-layers>
+            <e-layer e-shapedata=usMap e-enablesmartlabel="true" e-labellength="" e-labelpath="" e-showlabels="true" e-smartlabelsize=""></e-layer>
+        </e-layers>
+    </div>
+    <script>
+        angular.module('MapsApp', ['ejangular'])
+        .controller('MapsCtrl', function ($scope) {
+                 });
+    </script>
+    </body>
+</html>
+
+
+{% endhighlight %}
+
+
