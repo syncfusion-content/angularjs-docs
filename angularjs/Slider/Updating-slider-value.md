@@ -96,3 +96,40 @@ In the above example, for **Default Slider** the slider value starts from “40�
 
 For **Range Slider**, the value starts from “10” (min value) and ends in “90” (max value). The range shadow occupies the entire **Slider**, since the range (values) is specified as “[10, 90]”.
 
+## Buttons
+
+**Slider** includes the button support for increment or decrement the values of the slider.
+
+### Enabling Buttons
+
+Use the **showButtons** property to enable the button support. By default this property is disabled. Data type of this property is “Boolean”.
+
+The following steps explains you on how to enable button support in **Slider**.
+
+In an **HTML** page, specify the **div** elements to render the **Range Slider.**
+
+
+
+{% highlight html %}
+
+   <div class="txt">Range Slider</div>
+   <div id="rangeSlider" ej-slider e-width="width" e-values="slidervalues" e-slidertype="range"  e-showbuttons="true"></div>
+                        
+
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    angular.module('sliderApp', ['ejangular'])
+    .controller('SliderCtrl', function ($scope) {
+    $scope.slidervalues = [30, 60];
+    $scope.width = "500";
+    });
+
+
+{% endhighlight %}
+
+Execute the above code example to render the following output.
+
+![](Button-Support_images/Button-Support_img1.png)
