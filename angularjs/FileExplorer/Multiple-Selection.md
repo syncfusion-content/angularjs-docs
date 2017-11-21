@@ -17,7 +17,7 @@ N>  For selecting files by mouse down and drag set `allowMultiSelection` propert
 
 {% highlight html %}
 
-<div id="fileExplorer" ej-fileexplorer e-path="path" e-ajaxaction="ajaxaction" e-isresponsive="true" e-allowmultiselection="false" ></div>
+<div id="fileExplorer" ej-fileexplorer e-path="path" e-ajaxaction="ajaxaction" e-isresponsive="true" e-allowmultiselection="true" ></div>
 <!--allowMultiSelection property is true by default-->
 
 {% endhighlight %}
