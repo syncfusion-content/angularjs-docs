@@ -167,3 +167,45 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 ![](Character-Settings_images/Character-Settings_img4.png)
 
+
+
+## Font Customization
+
+You can customize the **font** of the text as per your requirement. To customize the font, you have to set `e-enablecustomfont`. Following font customization options are available.
+
+**Font-family**- used to set the font-family of the text.
+
+**Font-style**- used to set the font-style of the text.
+
+**Font-size**- used to set the font-size of the text.
+
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="DigitalGaugeApp">
+    <head>
+        <title>Essential Studio for AngularJS: DigitalGauge</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="DigitalGaugeCtrl">
+        <div id="digitalframe">
+                 <ej-digitalgauge e-width="800" >
+                 <e-items>
+                 <e-item e-value="WELCOME" e-enablecustomfont="true" e-font-fontfamily="Arial" e-font-fontsize="18px"
+                 e-font-fontweight="normal" e-font-fontstyle="bold">
+                 </e-item>
+                 </e-items>
+                 </ej-digitalgauge>
+        </div>
+        <script>
+        angular.module('DigitalGaugeApp', ['ejangular'])
+        .controller('DigitalGaugeCtrl', function ($scope) {
+         });
+    </script>
+    </body>
+</html>
+
+
+{% endhighlight %}
+
+
