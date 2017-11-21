@@ -7,7 +7,7 @@ control: Sparkline
 documentation: ug
 ---
 
-##Sparkline Dimensions
+## Sparkline Dimensions
 
 You can set the size directly on the Sparkline or to the container of the sparkline. When you do not specify the size, it takes 30px as the height and 50px as its width, by default.
 
@@ -19,7 +19,7 @@ You can customize the Sparkline dimension by setting the width and height for th
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="SparklineApp">
     <head>
-        <title>Essential Studio for AngularJS: CircularGauge</title>
+        <title>Essential Studio for AngularJS: Sparkline</title>
         <!--CSS and Script file References -->
     </head>
   <body ng-controller="SparkCtrl">
@@ -40,13 +40,13 @@ You can customize the Sparkline dimension by setting the width and height for th
 
 ## Set size in pixels 
 
-You can also set the Sparkline dimension by using the `e-size` property of the Sparkline.
+You can also set the `e-width` and `e-height` of Sparkline by using the `e-size` property of the Sparkline.
 
 {% highlight html %}
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="SparklineApp">
     <head>
-        <title>Essential Studio for AngularJS: CircularGauge</title>
+        <title>Essential Studio for AngularJS: Sparkline</title>
         <!--CSS and Script file References -->
     </head>
   <body ng-controller="SparkCtrl">
@@ -71,7 +71,7 @@ To resize the Sparkline when the browser or the sparkline container is resized, 
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="SparklineApp">
     <head>
-        <title>Essential Studio for AngularJS: CircularGauge</title>
+        <title>Essential Studio for AngularJS: Sparkline</title>
         <!--CSS and Script file References -->
     </head>
   <body ng-controller="SparkCtrl">

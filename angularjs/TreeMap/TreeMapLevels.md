@@ -14,6 +14,32 @@ The levels of **TreeMap** can be categorized into two types as,
 * FlatLevel
 * Hierarchical Level
 
+Following customization options are available to customize the treemap level as per your requirements.
+
+* To specify the background color for the group, you can use `e-groupBackground` property.
+
+* To specify the border color for the group, you can use `e-groupBorderColor` property.
+
+* To maintain the border thickness for the group, you can use `e-groupBorderThickness` property.
+
+* You can specify the gaps between groups using `e-groupGap` property.
+
+* You can specify the padding using `e-groupPadding` property.
+
+* For specifying the header height, you can use `e-headerHeight` property.
+
+* You can customize the header template using `e-headerTemplate` property.
+
+* To specify the label position, you can use `e-labelPosition` property.
+
+* To specify the label template for treemap, you can use `e-labelTemplate` property.
+
+* You can specify the label visibility using `e-labelVisibilityMode` property.
+
+* You can control the label visibility using `e-showLabels` property.
+
+* For controlling text overflow, you can use `e-textOverflow` property.
+
 ## Flat Level
 
 ### GroupPath
@@ -32,7 +58,7 @@ You can use `e-groupGap` property to separate the items from every flat level a
         <!--CSS and Script file References -->
     </head> 
     <body ng-controller="TreemapCtrl">
-     <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
+     <div id="treemapContainer" style="align-content:center;width: 800px; height: 400px;">
      <ej-treemap e-datasource=populationdata e-colorValuePath="Growth" e-weightvaluepath="Population">
      <e-levels>
      <e-level e-grouppath="Continent" e-groupgap="5"></e-level>
@@ -67,7 +93,7 @@ You can use `e-groupGap` property to separate the items from every flat level a
         <!--CSS and Script file References -->
     </head> 
     <body ng-controller="TreemapCtrl">
-     <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
+     <div id="treemapContainer" style="align-content:center;width: 800px; height: 400px;">
      <ej-treemap e-datasource=populationdata  e-weightvaluepath="Population">
      </ej-treemap>
      </div>

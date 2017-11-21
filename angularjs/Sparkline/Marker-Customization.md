@@ -9,13 +9,13 @@ documentation: ug
 
 ## Marker Customization
 
-You can customize markers by initializing the `e-markerSettings` property. The customization options allow you to change the color,width,opacity and border  for marker. This customization only applicable for line, column and area type Sparkline.
+You can customize markers by initializing the `e-markerSettings` property. The customization options allow you to change the visibility, fill, width, opacity and border optionscolor, width, opacity for marker. This customization only applicable for line, column and area type Sparkline.
 
 {% highlight html %}
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="SparklineApp">
     <head>
-        <title>Essential Studio for AngularJS: CircularGauge</title>
+        <title>Essential Studio for AngularJS: Sparkline</title>
         <!--CSS and Script file References -->
     </head>
   <body ng-controller="SparkCtrl">
