@@ -27,7 +27,7 @@ documentation: ug
 
 {% highlight js %}
  
-var sun = $("#SunburstChart1").data("ejSunburstChart");
+var sun = $("#SunburstCtrl").data("ejSunburstChart");
 sun.redraw();
    
 {% endhighlight %}
@@ -48,7 +48,7 @@ sun.redraw();
 
 {% highlight js %}
  
-var sun = $("#SunburstChart1").data("ejSunburstChart");
+var sun = $("#SunburstCtrl").data("ejSunburstChart");
 sun.destroy();
    
 {% endhighlight %}
