@@ -65,6 +65,19 @@ You can change the size of the legend items by using the `e-legend-itemstyle-wid
 
 ![](Legend_images/Legend_img4.png)
 
+## Legend Alignment
+
+You can align the legend to the `center`, `far` or `near` based on its position by using the `e-legend-alignment` option.
+
+
+{% highlight HTML %}
+
+<div id="container" ej-sunburstchart e-legend-alignment="near" >
+					
+</div>
+
+{% endhighlight %}
+
 ## Legend Size
 
 By default, legend takes 20% of the height horizontally when it was placed on the top or bottom position and 20% of the width vertically while placing on the left or right position of the chart. You can change this default legend size by using the `e-legend-size` property of the legend.
@@ -94,6 +107,20 @@ You can arrange the legend items horizontally and vertically by using the `e-leg
 {% endhighlight %}
 
 ![](Legend_images/Legend_img6.png)
+
+
+## Legend Item Padding
+
+You can control the spacing between the legend items by using the `e-legend-itemPadding` option of the legend.
+
+ 
+{% highlight HTML %}
+
+<div id="container" ej-sunburstchart e-legend-visible="true" e-legend-itemPadding="10">					
+</div>
+
+{% endhighlight %}
+
  
 ## LegendInteractivity
 
@@ -131,4 +158,30 @@ Used to disable the specific category while clicking on legend item.
 
 ![](Legend_images/Legend_img8.png)
 
+## Legend title
 
+To add the title to the legend, you have to specify the e-legend-title-text option.
+
+
+{% highlight HTML %}
+
+<div id="container" ej-sunburstchart  e-legend-title="" >					
+
+</div>
+
+{% endhighlight %}
+
+## Customize the legend text
+
+To customize the legend item text and title you can use the `e-legend-title-font` and `e-legend-title` options. You can change the legend title alignment by using the `e-legend-title-textAlignment` option of the legend title.
+
+
+{% highlight HTML %}
+
+<div id="container" ej-sunburstchart  e-legend-title="" e-legend-title-font-fontfamily="Segoe UI"
+        e-legend-title-font-fontstyle="normal" e-legend-title-font-fontweight="bold" e-legend-font-size="15px" 
+        e-legend-title-textalignment="center">					
+
+</div>
+
+{% endhighlight %}
