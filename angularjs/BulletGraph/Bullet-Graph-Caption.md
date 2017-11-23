@@ -15,6 +15,15 @@ documentation: ug
 
 **Title** is set to **Bullet Graph** using **text** property in **captionSettings**. Caption settings also include properties like location, font, and textAngle for customizing the caption of **Bullet Graph**.
 
+### Location
+
+Using `location` option, you can set the `X` and `Y` position of caption text.
+
+### Font
+
+Using `font` property, you can customize `font color`, `font family`, `font style`, `font weight`, `opacity`, `size` options.
+
+
 {% highlight html %}
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="BulletGraphApp">
@@ -54,6 +63,15 @@ The following screenshot displays a **Bullet Graph** with customized caption usi
 ## Subtitle
 
 **Subtitle** is added to **Bullet Graph** using **text** property of **subtitle** in **captionSettings**. **Subtitle** also provides properties like location, textAngle and font to customize subtitle similar to caption.
+
+### Location
+
+Using `location` option, you can set the `X` and `Y` position of caption text.
+
+### Font
+
+Using `font` property, you can customize `font color`, `font family`, `font style`, `font weight`, `opacity`, `size` options.
+
 
 {% highlight html %}
 
