@@ -21,7 +21,7 @@ Using `location` option, you can set the `X` and `Y` position of caption text.
 
 ### Font
 
-Using `font` property, you can customize `font color`, `font family`, `font style`, `font weight`, `opacity`, `size` options.
+Using `font` property, you can customize font `color`, `fontfamily`, `fontstyle`, `fontweight`, `opacity`, `size` options.
 
 
 {% highlight html %}
@@ -36,7 +36,7 @@ Using `font` property, you can customize `font color`, `font family`, `font styl
                  <ej-bulletgraph e-quantitativescalesettings-location-x="100"
                  e-quantitativescalesettings-location-y="200" e-quantitativescalesettings-minimum="0" 
                  e-quantitativescalesettings-maximum="5" e-quantitativescalesettings-interval="0.5" 
-                 e-quantitativescalesettings-featuremeasures="featuremeasure"
+                 e-quantitativescalesettings-featuremeasures="featureMeasure"
                  e-height="700" e-width="600" e-captionsettings-text="Revenue YTD"
                  e-captionsettings-textangle="0" e-captionsettings-location-x="10"
                  e-captionsettings-location-y="220" e-captionsettings-font-fontfamily="segoe ui"
@@ -47,7 +47,7 @@ Using `font` property, you can customize `font color`, `font family`, `font styl
      <script type="text/javascript">
            angular.module('BulletGraphApp', ['ejangular'])
            .controller('BulletGraphCtrl', function ($scope) {
-                 $scope.featuremeasure=[{ value: 4, comparativeMeasureValue: 3.5, category: "" }];
+                 $scope.featureMeasure=[{ value: 4, comparativeMeasureValue: 3.5, category: "" }];
                  });
      </script>
      </body>
@@ -70,7 +70,7 @@ Using `location` option, you can set the `X` and `Y` position of caption text.
 
 ### Font
 
-Using `font` property, you can customize `font color`, `font family`, `font style`, `font weight`, `opacity`, `size` options.
+Using `font` property, you can customize font `color`, `fontfamily`, `fontstyle`, `fontweight`, `opacity`, `size` options.
 
 
 {% highlight html %}
