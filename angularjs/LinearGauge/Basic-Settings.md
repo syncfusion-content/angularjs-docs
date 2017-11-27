@@ -240,4 +240,63 @@ Execute the above code to render the following output.
 ![](Basic-Settings_images/Basic-Settings_img4.png)
 
 
+Responsiveness of the linear gauge is controlled by using `enableResize` property.
+
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="LinearGaugeApp">
+    <head>
+        <title>Essential Studio for AngularJS: LinearGauge</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="LinearGaugeCtrl">
+        <div id="linearframe">
+                 <ej-lineargauge  e-enableanimation="false" e-width="400" e-height="100" e-value="80" 
+                 e-isresponsive="true" e-enableresize="true">                 
+                 </ej-lineargauge>
+        </div>
+        <script>
+        angular.module('LinearGaugeApp', ['ejangular'])
+        .controller('LinearGaugeCtrl', function ($scope) {
+         });
+    </script>
+    </body>
+</html>
+
+{% endhighlight %}
+
+
+## Localization
+
+**LinearGauge** supports localization for its axis labels and tooltip. To render the gauge with specific culture you have to refer the corresponding globalize culture script and need to specify the culture name in `locale` property of gauge.
+
+**Enable Group Separator** is used to Convert the date object to string while using the locale settings, you can set `enableGroupSeparator` property as **true**.
+
+
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="LinearGaugeApp">
+    <head>
+        <title>Essential Studio for AngularJS: LinearGauge</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="LinearGaugeCtrl">
+        <div id="linearframe">
+                 <ej-lineargauge  e-enableanimation="false" e-locale="en-fr">                 
+                 </ej-lineargauge>
+        </div>
+        <script>
+        angular.module('LinearGaugeApp', ['ejangular'])
+        .controller('LinearGaugeCtrl', function ($scope) {
+         });
+    </script>
+    </body>
+</html>
+
+{% endhighlight %}
+
+
+
 
