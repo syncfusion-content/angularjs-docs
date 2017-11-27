@@ -21,7 +21,7 @@ Using `location` option, you can set the `X` and `Y` position of caption text.
 
 ### Font
 
-Using `font` property, you can customize font `color`, `fontfamily`, `fontstyle`, `fontweight`, `opacity`, `size` options.
+Using `font` property, you can customize font `color`, `fontFamily`, `fontStyle`, `fontWeight`, `opacity`, `size` options.
 
 
 {% highlight html %}
@@ -36,12 +36,12 @@ Using `font` property, you can customize font `color`, `fontfamily`, `fontstyle`
                  <ej-bulletgraph e-quantitativescalesettings-location-x="100"
                  e-quantitativescalesettings-location-y="200" e-quantitativescalesettings-minimum="0" 
                  e-quantitativescalesettings-maximum="5" e-quantitativescalesettings-interval="0.5" 
-                 e-quantitativescalesettings-featuremeasures="featureMeasure"
+                 e-quantitativescalesettings-featureMeasures="featureMeasure"
                  e-height="700" e-width="600" e-captionsettings-text="Revenue YTD"
                  e-captionsettings-textangle="0" e-captionsettings-location-x="10"
-                 e-captionsettings-location-y="220" e-captionsettings-font-fontfamily="segoe ui"
-                 e-captionsettings-font-color="gray" e-captionsettings-font-fontstyle="bold" 
-                 e-captionsettings-font-size="14px" e-captionsettings-font-fontweight="regular"
+                 e-captionsettings-location-y="220" e-captionsettings-font-fontFamily="segoe ui"
+                 e-captionsettings-font-color="gray" e-captionsettings-font-fontStyle="bold" 
+                 e-captionsettings-font-size="14px" e-captionsettings-font-fontWeight="regular"
                  e-captionsettings-font-opacity="1"></ej-bulletgraph>
         </div>
      <script type="text/javascript">
@@ -70,7 +70,7 @@ Using `location` option, you can set the `X` and `Y` position of caption text.
 
 ### Font
 
-Using `font` property, you can customize font `color`, `fontfamily`, `fontstyle`, `fontweight`, `opacity`, `size` options.
+Using `font` property, you can customize font `color`, `fontFamily`, `fontStyle`, `fontWeight`, `opacity`, `size` options.
 
 
 {% highlight html %}
@@ -86,10 +86,10 @@ Using `font` property, you can customize font `color`, `fontfamily`, `fontstyle`
                  <ej-bulletgraph   e-captionsettings-subtitle-text="Subtitle"
                 e-captionsettings-subtitle-location-x="20" e-captionsettings-subtitle-location-y="225"
                 e-captionsettings-subtitle-font-color="black"
-                e-captionsettings-subtitle-font-fontfamily="segoe ui" 
-                e-captionsettings-subtitle-font-fontstyle="italic"
+                e-captionsettings-subtitle-font-fontFamily="segoe ui" 
+                e-captionsettings-subtitle-font-fontStyle="italic"
                 e-captionsettings-subtitle-font-size="16px"
-                e-captionsettings-subtitle-font-fontweight="regular"
+                e-captionsettings-subtitle-font-fontWeight="regular"
                 e-captionsettings-subtitle-font-opacity="1"></ej-bulletgraph>
         </div>
      <script type="text/javascript">
@@ -137,10 +137,10 @@ Indicator displays a symbol along with text which is different from caption and 
                  e-captionsettings-symbol-size-height="10" 
                  e-captionsettings-symbol-border-width="1"
                  e-captionsettings-symbol-border-color="green" 
-                 e-captionsettings-indicator-font-fontfamily="segoe ui" 
-                 e-captionsettings-indicator-font-fontstyle="normal"
+                 e-captionsettings-indicator-font-fontFamily="segoe ui" 
+                 e-captionsettings-indicator-font-fontStyle="normal"
                  e-captionsettings-indicator-font-size="12px" 
-                 e-captionsettings-indicator-font-fontweight="regular"
+                 e-captionsettings-indicator-font-fontWeight="regular"
                  e-captionsettings-indicator-font-opacity="1"></ej-bulletgraph>
         </div>
      <script type="text/javascript">
@@ -214,7 +214,7 @@ The property, textPosition, is used to position the text at the top, bottom, lef
                  e-quantitativescalesettings-location-x="120" e-quantitativescalesettings-location-y="40"
                  e-height="150" e-width="650"   e-captionsettings-text="BulletGraph Title" 
                  e-captionsettings-textPosition="top" e-captionsettings-font-size="20px" 
-                 e-captionsettings-font-fontweight="bold"></ej-bulletgraph>
+                 e-captionsettings-font-fontWeight="bold"></ej-bulletgraph>
         </div>
      <script type="text/javascript">
            angular.module('BulletGraphApp', ['ejangular'])
@@ -247,10 +247,10 @@ Alignment of text at different positions with respect to scale can be customized
                  e-quantitativescalesettings-location-x="120" e-quantitativescalesettings-location-y="40"
                  e-height="150" e-width="650"   e-captionsettings-text="Revenue"
                  e-captionsettings-textPosition="left" e-captionsettings-textAnchor="middle"
-                 e-captionsettings-font-size="16px" e-captionsettings-font-fontweight="bold" 
+                 e-captionsettings-font-size="16px" e-captionsettings-font-fontWeight="bold" 
                  e-captionsettings-subtitle-text="$ in thousands" e-captionsettings-subtitle-textPosition="left" 
                  e-captionsettings-subtitle-textAlignment="center" e-captionsettings-subtitle-font-size="12px"
-                 e-captionsettings-subtitle-font-fontweight="bold"></ej-bulletgraph>
+                 e-captionsettings-subtitle-font-fontWeight="bold"></ej-bulletgraph>
         </div>
      <script type="text/javascript">
            angular.module('BulletGraphApp', ['ejangular'])
@@ -326,7 +326,7 @@ The space required between text and quantitative scale is customized by using th
                  e-height="150" e-width="650"   e-captionsettings-text="Profit in %" 
                  e-captionsettings-textPosition="left" e-captionsettings-textAlignment="center" 
                  e-captionsettings-padding="10" e-captionsettings-font-size="16px" 
-                 e-captionsettings-font-fontweight="bold"  ></ej-bulletgraph>
+                 e-captionsettings-font-fontWeight="bold"  ></ej-bulletgraph>
         </div>
      <script type="text/javascript">
            angular.module('BulletGraphApp', ['ejangular'])
