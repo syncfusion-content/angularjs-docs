@@ -85,3 +85,33 @@ e-datalabelsettings-font-fontweight="bold" e-datalabelsettings-font-size="15px">
 {% endhighlight %}
 
 ![](DataLabel_images/DataLabel_img6.png)
+
+## Sunburst Chart Title & Subtitle
+
+### Title & TextAlignment
+
+By using the title option, you can add the `e-title-text` as well as customize its `e-title-border`, `e-title-background` and `e-title-font`.
+
+You can change the title alignment to center, far and near by using the `e-title-textalignment` property of the Title.
+
+{% highlight js %}
+
+<div id="container" ej-sunburstchart e-title-visible="true" e-title-textalignment="near" e-title-text="" 
+e-title-border-color="blue" e-title-border-width="2" e-title-font-size="15px"
+e-title-font-fontfamily="Arial" e-title-font-fontstyle="bold" e-title-font-fontweight="normal">					
+</div>
+
+{% endhighlight %}
+
+### Sub Title & TextAlignment
+
+By using the subTitle option, you can add the `e-title-subTitle-text` as well as customize its `e-title-subTitle-border`, `e-title-subTitle-background` and `e-title-subTitle-font`.
+
+{% highlight js %}
+
+<div id="container" ej-sunburstchart e-title-subTitle-visible="true" e-title-subTitle-textalignment="near" e-title-subTitle-text="" 
+e-title-subTitle-border-color="blue" e-title-subTitle-border-width="2" e-title-subTitle-font-size="15px"
+e-title-subTitle-font-fontfamily="Arial" e-title-subTitle-font-fontstyle="bold" e-title-subTitle-font-fontweight="normal">					
+</div>
+
+{% endhighlight %}
