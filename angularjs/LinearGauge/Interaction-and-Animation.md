@@ -63,4 +63,32 @@ Execute the above code to render the following output.
 ![](Interaction-and-Animation_images/Interaction-and-Animation_img1.png)
 
 
+### Enable Marker Pointer Animation
+
+Specifies the animate state for marker pointer, you can set `enableMarkerPointer`property as **true**
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="LinearGaugeApp">
+    <head>
+        <title>Essential Studio for AngularJS: LinearGauge</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="LinearGaugeCtrl">
+        <div id="linearframe">
+                 <ej-lineargauge  e-enableanimation="false" e-enablemarkerpointer="true">                 
+                 </ej-lineargauge>
+        </div>
+        <script>
+        angular.module('LinearGaugeApp', ['ejangular'])
+        .controller('LinearGaugeCtrl', function ($scope) {
+         });
+    </script>
+    </body>
+</html>
+
+{% endhighlight %}
+
+
+
 

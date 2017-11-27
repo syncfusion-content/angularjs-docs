@@ -45,7 +45,8 @@ You can select the shape by tapping the shape. The Single selection is enabled b
 
 {% endhighlight %}
 
-{% include image.html url="User-Interaction_images/User-Interaction_img1.png"%}
+![](User-Interaction_images/User-Interaction_img1.png)
+
 
 ## MultiSelection
 
@@ -76,7 +77,7 @@ This feature enables you to select multiple Map shapes on mouse taps accompanied
 
 {% endhighlight %}
 
-{% include image.html url="User-Interaction_images/User-Interaction_img5.png"%}
+![](User-Interaction_images/User-Interaction_img5.png)
 
 
 ## Dragging On Selection
@@ -172,6 +173,37 @@ The `e-zoomsettings-maxvalue` property is used to set the maximum zoom level of 
 
 
 {% endhighlight %}
+
+### Factor
+
+Specifies the zoom factor for map zoom value, you can use `factor` property.
+
+{% highlight html %}
+
+ <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="MapsApp">
+    <head>
+        <title>Essential Studio for AngularJS: Maps</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="MapsCtrl">
+      <div id="mapContainer" style="width: 900px; height: 600px;" ej-map e-zoomsettings-enablezoom="true" 
+      e-zoomsettings-minvalue="1" e-zoomsettings-maxvalue="20" e-zoomsettings-factor="1">
+        <e-layers>
+            <e-layer e-shapedata=usMap ></e-layer>
+        </e-layers>
+    </div>
+    <script>
+        angular.module('MapsApp', ['ejangular'])
+        .controller('MapsCtrl', function ($scope) {
+                        });
+    </script>
+    </body>
+</html>   
+
+
+
+{% endhighlight %}
+
 
 ### Additional Options to Zoom the Map
 
@@ -384,6 +416,160 @@ You can set this option by using `e-navigationcontrol-dockposition`
 
 
 {% endhighlight %}
+
+#### Orientation
+
+Set the `orientation` value for navigation control.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name </th>			
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">horizontal</td>			
+			<td class="description">specifies the horizontal position</td>
+		</tr>
+		<tr>
+			<td class="name">vertical</td>			
+			<td class="description">specifies the vertical position</td>
+		</tr>
+	</tbody>
+</table>
+
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="MapsApp">
+    <head>
+        <title>Essential Studio for AngularJS: Maps</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="MapsCtrl">
+      <div id="mapContainer" style="width: 900px; height: 600px;" ej-map 
+      e-navigationcontrol-enablenavigation="true" e-navigationcontrol-orientation="vertical">      
+    </div>
+    <script>
+        angular.module('MapsApp', ['ejangular'])
+        .controller('MapsCtrl', function ($scope) {
+                        });
+    </script>
+    </body>
+</html>
+   	
+   
+{% endhighlight %}
+
+#### Content
+
+
+Specifies the navigation control template for map, you can use `content` property.
+
+
+{% highlight html %}
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="MapsApp">
+    <head>
+        <title>Essential Studio for AngularJS: Maps</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="MapsCtrl">
+      <div id="mapContainer" style="width: 900px; height: 600px;" ej-map 
+      e-navigationcontrol-enablenavigation="true" e-navigationcontrol-content="">      
+    </div>
+    <script>
+        angular.module('MapsApp', ['ejangular'])
+        .controller('MapsCtrl', function ($scope) {
+                        });
+    </script>
+    </body>
+</html>
+
+{% endhighlight %}
+
+
+
+### Animation
+
+ **Animation** is enabled or disabled using `enable animation`property. 
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="MapsApp">
+    <head>
+        <title>Essential Studio for AngularJS: Maps</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="MapsCtrl">
+      <div id="mapContainer" style="width: 900px; height: 600px;" ej-map 
+      e-enableanimation="true">      
+    </div>
+    <script>
+        angular.module('MapsApp', ['ejangular'])
+        .controller('MapsCtrl', function ($scope) {
+                        });
+    </script>
+    </body>
+</html>
+
+{% endhighlight %}
+
+
+#### Enable Layer Change Animation 
+
+Enables or Disables the animation for layer change in map, you can use `enablelayerchangeanimation` property and the default value is false.
+
+
+{% highlight html %}
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="MapsApp">
+    <head>
+        <title>Essential Studio for AngularJS: Maps</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="MapsCtrl">
+      <div id="mapContainer" style="width: 900px; height: 600px;" ej-map 
+      e-enablelayerchangeanimation="">      
+    </div>
+    <script>
+        angular.module('MapsApp', ['ejangular'])
+        .controller('MapsCtrl', function ($scope) {
+                        });
+    </script>
+    </body>
+</html>    
+
+{% endhighlight %}
+
+
+### Responsiveness during browser resize
+
+**Map** is made responsive when resizing the browser by using `isresponsive` property.
+
+{% highlight javascript %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="MapsApp">
+    <head>
+        <title>Essential Studio for AngularJS: Maps</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="MapsCtrl">
+      <div id="mapContainer" style="width: 900px; height: 600px;" ej-map 
+      e-isresponsive="true">      
+    </div>
+    <script>
+        angular.module('MapsApp', ['ejangular'])
+        .controller('MapsCtrl', function ($scope) {
+                        });
+    </script>
+    </body>
+</html>    
+
+{% endhighlight %}
+
 
 
 
