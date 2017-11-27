@@ -38,7 +38,7 @@ Using `font` property, you can customize font `color`, `fontFamily`, `fontStyle`
                  e-quantitativescalesettings-maximum="5" e-quantitativescalesettings-interval="0.5" 
                  e-quantitativescalesettings-featureMeasures="featureMeasure"
                  e-height="700" e-width="600" e-captionsettings-text="Revenue YTD"
-                 e-captionsettings-textangle="0" e-captionsettings-location-x="10"
+                 e-captionsettings-textAngle="0" e-captionsettings-location-x="10"
                  e-captionsettings-location-y="220" e-captionsettings-font-fontFamily="segoe ui"
                  e-captionsettings-font-color="gray" e-captionsettings-font-fontStyle="bold" 
                  e-captionsettings-font-size="14px" e-captionsettings-font-fontWeight="regular"
@@ -125,8 +125,8 @@ Indicator displays a symbol along with text which is different from caption and 
     <body ng-controller="BulletGraphCtrl">
         <div id="bulletframe">
                  <ej-bulletgraph   e-captionsettings-indicator-visible="true"
-                 e-captionsettings-indicator-textangle="0" e-indicator-text="+ $0.5 K"
-                 e-captionsettings-indicator-textspacing ="5"
+                 e-captionsettings-indicator-textAngle="0" e-indicator-text="+ $0.5 K"
+                 e-captionsettings-indicator-textSpacing ="5"
                  e-captionsettings-indicator-location-x="15" 
                  e-captionsettings-indicator-location-y="240"
                  e-captionsettings-indicator-font-color="green"
@@ -287,10 +287,10 @@ Text elements aligned at the same position are anchored by using the textAnchor 
                  e-quantitativescalesettings-location-x="120" e-quantitativescalesettings-location-y="40"
                  e-height="150" e-width="650"   e-captionsettings-text="Revenue" 
                  e-captionsettings-textPosition="left" e-captionsettings-textAnchor="middle" 
-                 e-captionsettings-font-size="16px" e-captionsettings-font-fontweight="bold"  
+                 e-captionsettings-font-size="16px" e-captionsettings-font-fontWeight="bold"  
                  e-captionsettings-subtitle-text="$ in thousands" e-captionsettings-subtitle-textPosition="left" 
                  e-captionsettings-subtitle-textAlignment="center" e-captionsettings-subtitle-font-size="12px" 
-                 e-captionsettings-subtitle-font-fontweight="bold"></ej-bulletgraph>
+                 e-captionsettings-subtitle-font-fontWeight="bold"></ej-bulletgraph>
         </div>
      <script type="text/javascript">
            angular.module('BulletGraphApp', ['ejangular'])
