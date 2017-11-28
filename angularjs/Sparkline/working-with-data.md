@@ -46,7 +46,7 @@ angular.module('syncApp',['ejangular'])
 {% endhighlight %}
 
 
-![](Working-with-Data_images/Working-with-Data_img1.png); 
+![](Working-with-Data_images/Working-with-Data_img1.png) 
 
 2.You can also bind an array of data to Sparkline by using `e-dataSource` property.
 
@@ -74,7 +74,7 @@ angular.module('syncApp',['ejangular'])
 {% endhighlight %}
 
 
-![](Working-with-Data_images/Working-with-Data_img2.png); 
+![](Working-with-Data_images/Working-with-Data_img2.png) 
 
 
 

@@ -21,7 +21,7 @@ The `e-dataSource` property accepts the collection values as input. For example,
         <!--CSS and Script file References -->
     </head> 
     <body ng-controller="TreemapCtrl">
-     <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
+     <div id="treemapContainer" style="align-content:center;width: 800px; height: 400px;">
      <ej-treemap e-datasource=populationdata e-colorValuePath="Growth" e-weightvaluepath="Population">
     </ej-treemap>
      </div>
