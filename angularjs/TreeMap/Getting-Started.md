@@ -67,7 +67,7 @@ Add a **&lt;script&gt;** tag anywhere in a web page and initialize **TreeMap** a
 
 {% highlight html %}
 
-    <div id="mapContainer" style="width: 800px; height: 400px;" ej-treemap e-datasource="populationdata" e-weightvaluepath="WValuePath">
+    <div id="treemapContainer" style="width: 800px; height: 400px;" ej-treemap e-datasource="populationdata" e-weightvaluepath="WValuePath">
 
     </div>
         <script>
@@ -160,7 +160,7 @@ The final **HTML** file is illustrated in the following code sample.
       </head>
     <body>
     	  
-      <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;" ej-treemap 
+      <div id="treemapContainer" style="align-content:center;width: 800px; height: 400px;" ej-treemap 
       e-datasource="populationdata" e-weightvaluepath="WValuePath">
 
     </div>
@@ -185,7 +185,7 @@ The following screenshot displays a TreeMap control that is rendered after execu
 
 ## Group with Levels
 
-You can group TreeMap items using the levels in it.
+You can group TreeMap items using the `levels` in it.
 
 ### Group Path
 
@@ -200,7 +200,7 @@ The following code sample explains how to group TreeMap Items using ‘Levels’
 {% highlight html %}
 
 <body ng-controller="TreemapCtrl">
-    <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;" ej-treemap>
+    <div id="treemapContainer" style="align-content:center;width: 800px; height: 400px;" ej-treemap>
         <div e-levels>
             <e-level e-grouppath="gname" e-groupgap="gap"></e-level>
         </div>
@@ -238,7 +238,7 @@ The following code sample explains how to customize TreeMap appearance using Ran
 
 {% highlight html %}
 
-<div id="mapContainer" style="align-content:center;width: 800px; height: 400px;" ej-treemap >
+<div id="treemapContainer" style="align-content:center;width: 800px; height: 400px;" ej-treemap >
        //...
         <div e-rangecolormapping>
             <e-rangecolor e-from="nfrom1" e-to="nto1" e-color="ncolor1">
@@ -290,7 +290,7 @@ You can customize the Leaf level TreeMap items using `leafItemSettings`. The Lab
 
 {% highlight html %}
 
-<div id="mapContainer" style="align-content:center;width: 800px; height: 400px;" ej-treemap 
+<div id="treemapContainer" style="align-content:center;width: 800px; height: 400px;" ej-treemap 
          e-showtooltip="true"
          e-leafitemsettings-labelpath="lpath">
     </div>
@@ -324,7 +324,7 @@ The following code sample illustrates how to add labels for legend in a TreeMap.
 
 {% highlight html %}
 
-<div id="mapContainer" style="align-content:center;width: 800px; height: 400px;" ej-treemap 
+<div id="treemapContainer" style="align-content:center;width: 800px; height: 400px;" ej-treemap 
          e-showlegend="true"
          e-legendsettings="legendSettings">
         <div e-rangecolormapping>

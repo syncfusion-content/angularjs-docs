@@ -13,7 +13,11 @@ documentation: ug
 
 ## Customize labels
 
-The labels are found along the range, displaying the value of the data it correspond, both on (higher level label) and below (lower level label) the **RangeNavigator**. **RangeNavigator** labels are further customized using "**font**" property in label Settings. 
+The labels are found along the range, displaying the value of the data it correspond, both on (higher level label) and below (lower level label) the **RangeNavigator**. **RangeNavigator** labels are further customized using higher level label **style** property of **font** and lower level label **style** property of **font** property in **labelSettings**.
+
+The higher level labels font **color**, **fontFamily**, **fontStyle**, **fontWeight**, **opacity** and **size** can be customized using **higherLevel** property.
+
+The lower level labels font **color**, **fontFamily**, **fontStyle**, **fontWeight**, **opacity** and **size** can be customized using **lowerLevel** property.
 
 {% highlight html %}
 
@@ -86,7 +90,13 @@ The following screenshot illustrates a **RangeNavigator** with labels inside the
 
 ## Customize RangeNavigator
 
-RangeNavigator is customized using **navigatorStyleSettings** properties. You can customize the selected and unselected region color using **selectedRegionColor**, **unselectedRegionColor** in **navigatorStyleSettings** and the thumb of the slider using **thumbColor, thumbRadius** and **thumbStroke** in **navigatorStyleSettings.  majorGridLineStyle** and **minorGridLineStyle**  are used to customize the grid line color and visibility.
+### Customize NavigatorStyleSettings
+
+RangeNavigator is customized using **navigatorStyleSettings** properties. You can customize the selected and unselected region color and opacity using **selectedRegionColor**, **unselectedRegionColor**, **selectedRegionOpacity**, **unselectedRegionOpacity** in **navigatorStyleSettings** and the thumb of the slider using **thumbColor, thumbRadius** and **thumbStroke** in **navigatorStyleSettings.  majorGridLineStyle** and **minorGridLineStyle**  are used to customize the grid line **color** and **visibility**. You can customize the **background**, **opacity** and **border color**, **dashArray** and **width** of navigatorStyleSettings.
+
+### Customize Labels
+
+The visibility of labels are enabled by setting **visible** in higher level and visible in lower level. The labels can be aligned by specifying **horizontalAlignment** of higher level style and horizontalAlignment of lower level style. You can customize the **border color** and **width**, fill, **gridLineStyle color**, **dashArray** and **width**, **position** property of higher level labels in labelSettings. You can also customize the border color and width, fill, gridLineStyle color, dashArray and width, position property for lower level labels of labelSettings.
 
 {% highlight html %}
 
@@ -137,7 +147,7 @@ RangeNavigator is customized using **navigatorStyleSettings** properties. You ca
 
 ## Themes
 
-**RangeNavigator** theme is a set of pre-defined options that are applied to the control before each **RangeNavigator** is instantiated. Following predefined themes are available in JavaScript **RangeNavigator**.
+**RangeNavigator** **theme** is a set of pre-defined options that are applied to the control before each **RangeNavigator** is instantiated. Following predefined themes are available in JavaScript **RangeNavigator**.
 
 1. flatlight
 2. flatdark

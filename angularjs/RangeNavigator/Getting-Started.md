@@ -131,7 +131,7 @@ The following screenshot displays a RangeNavigator with the default **"Line"** s
 
 ## Tooltip
 
-You can customize **Tooltip** for RangeNavigator using **tooltip** option. You can use **tooltipDisplayMode** option in **tooltip**,to display the tooltip "always" or "ondemand" (displays tooltip only while dragging the sliders). You can also specify label format for tooltip using **labelFormat**.
+You can customize **Tooltip** for RangeNavigator using **e-tooltipsettings** option. You can use **tooltipDisplayMode** option in **tooltip**,to display the tooltip "always" or "ondemand" (displays tooltip only while dragging the sliders). You can also specify label format for tooltip using **labelFormat**.
 
 The following code sample shows how to enable a Tooltip.
 
