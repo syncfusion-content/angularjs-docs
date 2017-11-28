@@ -54,7 +54,7 @@ By using the `position` property, you can position the legend at left, right, to
 ### Customization
 
 ## Legend Item Size and border
-You can change the size of the legend items by using the `e-legend-itemstyle-width` and `e-legend-itemstyle-height` propertys. To change the legend item border, use `e-legend-border`property of the legend .
+You can change the size of the legend items by using the `e-legend-itemstyle-width` and `e-legend-itemstyle-height` property. To change the legend item border, use `e-legend-border`property of the legend .
 
 {% highlight HTML %}
 <div id="container" ej-sunburstchart e-legend-visible="true" e-legend-position="top" e-legend-itemstyle-height="13"
@@ -64,6 +64,19 @@ You can change the size of the legend items by using the `e-legend-itemstyle-wid
 {% endhighlight %}
 
 ![](Legend_images/Legend_img4.png)
+
+## Legend Alignment
+
+You can align the legend to the `center`, `far` or `near` based on its position by using the `e-legend-alignment` option.
+
+
+{% highlight HTML %}
+
+<div id="container" ej-sunburstchart e-legend-alignment="near" >
+
+</div>
+
+{% endhighlight %}
 
 ## Legend Size
 
@@ -78,7 +91,7 @@ By default, legend takes 20% of the height horizontally when it was placed on th
 
  ![](Legend_images/Legend_img5.png)
 
-## Legend Row and Colums
+## Legend Row and Column
 
 You can arrange the legend items horizontally and vertically by using the `e-legend-rowCount` and `e-legend-columnCount` properties of the legend.
 •	When only the rowCount is specified, the legend items are arranged according to the rowCount and number of columns may vary based on the number of legend items.
@@ -94,6 +107,20 @@ You can arrange the legend items horizontally and vertically by using the `e-leg
 {% endhighlight %}
 
 ![](Legend_images/Legend_img6.png)
+
+
+## Legend Item Padding
+
+You can control the spacing between the legend items by using the `e-legend-itemPadding` option of the legend.
+
+ 
+{% highlight HTML %}
+
+<div id="container" ej-sunburstchart e-legend-visible="true" e-legend-itemPadding="10">					
+</div>
+
+{% endhighlight %}
+
  
 ## LegendInteractivity
 
@@ -101,7 +128,7 @@ You can select a specific category while clicking on corresponding legend item t
 
 It has three types of action
 *	ToggleSegmentSelection
-*	ToggleSegmentVisiblity
+*	ToggleSegmentVisibility
 *	None
 
 ## ToggleSegmentSelection
@@ -131,4 +158,30 @@ Used to disable the specific category while clicking on legend item.
 
 ![](Legend_images/Legend_img8.png)
 
+## Legend title
 
+To add the title to the legend, you have to specify the e-legend-title-text option.
+
+
+{% highlight HTML %}
+
+<div id="container" ej-sunburstchart  e-legend-title="" >					
+
+</div>
+
+{% endhighlight %}
+
+## Customize the legend text
+
+To customize the legend item text and title you can use the `e-legend-title-font` and `e-legend-title` options. You can change the legend title alignment by using the `e-legend-title-textAlignment` option of the legend title.
+
+
+{% highlight HTML %}
+
+<div id="container" ej-sunburstchart  e-legend-title="" e-legend-title-font-fontfamily="Segoe UI"
+        e-legend-title-font-fontstyle="normal" e-legend-title-font-fontweight="bold" e-legend-font-size="15px" 
+        e-legend-title-textalignment="center">					
+
+</div>
+
+{% endhighlight %}
