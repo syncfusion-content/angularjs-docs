@@ -42,8 +42,48 @@ If you set **enableDeferredUpdate**to true, the **rangeChanged** event gets fire
 
 ![](Behavior-Customization_images/Behavior-Customization_img1.png) 
 
+## Destroy Method 
+
+`_destroy`: function
+
+This method is used to destroy the **RangeNavigator** widget. 
+
+{% highlight html %}
+
+<div id="rangecontainer">
+    <ej-rangenavigator></ej-rangenavigator>
+</div>
+<script>
+    // Destroys range navigator
+     $("#rangecontainer").ejRangeNavigator("_destroy");
+</script>
+
+{% endhighlight %}
 
 ## Handle Events
+
+**load**: function
+
+This event is fired when **RangeNavigator** is loading. A parameter **sender** is passed to the handler. Using **sender.model**, you can access the RangeNavigator properties. 
+
+{% highlight html %}
+
+<body ng-controller="RangeCtrl">
+    <div id="rangecontainer">
+        <ej-rangenavigator e-load=loaded></ej-rangenavigator>
+    </div>
+    <script>
+        angular.module('RangeApp', ['ejangular'])
+        .controller('RangeCtrl', function ($scope) {
+                $scope.loaded="onLoad"
+        });
+        function onLoad(sender) {
+            // do something
+        }
+    </script>
+</body>
+
+{% endhighlight %}
 
 **loaded:** function
 
@@ -104,6 +144,121 @@ This event gets fired whenever the selected range changes in **RangeNavigator**.
    </body>
 </html>
 
+
+{% endhighlight %}
+
+**selectedRangeStart** : function
+
+This event is fired when starting to change the slider position in **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.selectedRangeSettings, you can access the start value of range for the selected region. 
+
+{% highlight html %}
+
+<body ng-controller="RangeCtrl">
+    <div id="rangecontainer">
+        <ej-rangenavigator e-selectedrangestart=rangestart></ej-rangenavigator>
+    </div>
+    <script>
+        angular.module('RangeApp', ['ejangular'])
+        .controller('RangeCtrl', function ($scope) {
+                $scope.rangestart="onSelectedRangeStart"
+        });
+        function onSelectedRangeStart(sender) {
+            // do something
+        }
+    </script>
+</body>
+
+{% endhighlight %}
+
+**selectedRangeEnd** : function
+
+This event is fired when selection ends in **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.selectedRangeSettings, you can access the end value of range for the selected region. 
+
+{% highlight html %}
+
+<body ng-controller="RangeCtrl">
+    <div id="rangecontainer">
+        <ej-rangenavigator e-selectedrangeend=rangeend></ej-rangenavigator>
+    </div>
+    <script>
+        angular.module('RangeApp', ['ejangular'])
+        .controller('RangeCtrl', function ($scope) {
+                $scope.rangeend="onSelectedRangeEnd"
+        });
+        function onSelectedRangeEnd(sender) {
+            // do something
+        }
+    </script>
+</body>
+
+{% endhighlight %}
+
+**scrollStart** : function
+
+This event is fired when starting to change the scrollbar position of **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.data startRange and sender.data endRange, you can access the scrollbar position starting and ending range value on changed scrollbar. 
+
+{% highlight html %}
+
+<body ng-controller="RangeCtrl">
+    <div id="rangecontainer">
+        <ej-rangenavigator e-scrollstart=scrollstart></ej-rangenavigator>
+    </div>
+    <script>
+        angular.module('RangeApp', ['ejangular'])
+        .controller('RangeCtrl', function ($scope) {
+                $scope.scrollstart="onScrollStart"
+        });
+        function onScrollStart(sender) {
+            // do something
+        }
+    </script>
+</body>
+
+{% endhighlight %}
+
+**scrollEnd** : function
+
+This event is fired while ending the change in scrollbar position of **RangeNavigator**. A parameter **sender** is passed to the handler. Using data oldRange and data newRange, you can access the scrollbar position old and new range values on changing scrollbar. 
+
+{% highlight html %}
+
+<body ng-controller="RangeCtrl">
+    <div id="rangecontainer">
+        <ej-rangenavigator e-scrollend=scrollend></ej-rangenavigator>
+    </div>
+    <script>
+        angular.module('RangeApp', ['ejangular'])
+        .controller('RangeCtrl', function ($scope) {
+                $scope.scrollend="onScrollEnd"
+        });
+        function onScrollEnd(sender) {
+            // do something
+        }
+    </script>
+</body>
+
+{% endhighlight %}
+
+**scrollChanged** : function
+
+This event is fired when changing the scrollbar position of **RangeNavigator**. A parameter **sender** is passed to the handler. Using data oldRange and data newRange, you can access the old and new range values of changed scrollbar position. 
+
+{% highlight html %}
+
+<body ng-controller="RangeCtrl">
+    <div id="rangecontainer">
+        <ej-rangenavigator e-scrollchanged=scrollchange></ej-rangenavigator>
+    </div>
+    <script>
+        angular.module('RangeApp', ['ejangular'])
+        .controller('RangeCtrl', function ($scope) {
+                $scope.scrollchange="onScrollChange"
+        });
+        function onScrollChange(sender) {
+            // do something
+        }
+    </script>
+</body>
 
 {% endhighlight %}
 
@@ -193,3 +348,57 @@ You can customize Thumb template by using **leftThumbTemplate** and **rightThumb
 The following screenshot displays the **RangeNavigator** using thumb template.
 
 ![](Behavior-Customization_images/Behavior-Customization_img3.png) 
+
+## Value Axis Settings
+
+You can customize the line, `font` `size`, gridline, tickline, range, `rangePadding` and visibility of **RangeNavigator** axis. To enable the visibility of axis line, you need to set `visible` property of `axisLine` in `valueAxisSettings`. You can customize the axis range by specifying `min`, `max` and `interval` for `range` property. The `majorGridLines` can be enabled by specifying `visible` property. The `size`, `width` and `visible` property of `majorTickLines` is used to customize the axis tick lines. The visibility of valueAxisSettings is enabled by setting `visible` property as true. 
+
+{% highlight html %}
+
+<body ng-controller="RangeCtrl">
+    <div id="rangecontainer">
+        <ej-rangenavigator  e-valueaxissettings="valueaxissetting">
+        </ej-rangenavigator>
+    </div>
+    <script>
+        angular.module('RangeApp', ['ejangular'])
+        .controller('RangeCtrl', function ($scope) {
+            $scope.valueaxissetting = {
+                axisLine: {visible: true},
+                font: {size: '12px'},
+                majorGridLines: {visible: true},
+                majorTickLines: {size: 3, visible:false, width:3},
+                range:{ min :0 , max :100, interval :10},
+                rangePadding: "normal",
+                visible: true
+            };
+        });
+    </script>
+</body>
+
+{% endhighlight %}
+
+## Selected Range Settings
+
+The start and end range values of selected range can be customized using `start` and `end` property of `selectedRangeSettings`.
+
+{% highlight html %}
+
+<body ng-controller="RangeCtrl">
+    <div id="rangecontainer">
+        <ej-rangenavigator  e-selectedrangesettings="selectedrange">
+        </ej-rangenavigator>
+    </div>
+    <script>
+        angular.module('RangeApp', ['ejangular'])
+        .controller('RangeCtrl', function ($scope) {
+            $scope.selectedrange = {
+                    start:"01/05/1992",
+                    end:"01/05/1993"
+            };
+        });
+    </script>
+</body>
+
+{% endhighlight %}
+

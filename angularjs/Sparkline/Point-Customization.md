@@ -14,7 +14,7 @@ You can customize points by initializing the point colors. The customization opt
 {% highlight html %}
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="SparklineApp">
     <head>
-        <title>Essential Studio for AngularJS: CircularGauge</title>
+        <title>Essential Studio for AngularJS: Sparkline</title>
         <!--CSS and Script file References -->
     </head>
   <body ng-controller="SparkCtrl">

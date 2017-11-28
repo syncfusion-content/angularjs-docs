@@ -1319,6 +1319,40 @@ The `font` property of the axis provides options to customize the `font-family`,
 
 ![](Axis_images/axis_img28.png)
 
+#### Axis Labels Line Break
+
+Axis Labels can be placed in multiple lines by specifying **<br>** for data points x value and in label format.
+
+For category value type, **<br>** can be specified in x value of data points.
+
+{% highlight html %}
+
+<div id="container" ej-chart >
+    <e-series >
+        <e-points>
+            <e-points e-x="India" e-y="61.3"></e-points>
+            <e-points e-x="United<br>States<br>of<br>America" e-y="31"></e-points>
+            <e-points e-x="South<br>Korea" e-y="39.4"></e-points>
+            <e-points e-x="United<br>Arab<br>Emirates" e-y="65.1"></e-points>
+            <e-points e-x="United<br>Kingdom" e-y="75.9"></e-points>
+        </e-points>
+    </e-series>
+</div>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img68.png)
+
+For numeric, datetime and datetimeCategory value type, **<br>** can be specified in labelFormat.
+
+{% highlight html %}
+
+<div id="container" ej-chart  e-primaryxaxis-labelFormat="MMM<br>dd<br>yyyy" e-primaryxaxis-valuetype="datetime">
+</div>  
+
+{% endhighlight %}
+
+![](Axis_images/axis_img69.png)
 
 ### Label and tick positioning
  

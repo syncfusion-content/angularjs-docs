@@ -118,6 +118,123 @@ The following screenshot illustrates a **RangeNavigator** with **rangePadding** 
 
 ![](Range-Padding_images/Range-Padding_img6.png) 
 
+## Padding
+
+The gap between the container and the **RangeNavigator** can be specified using **e-padding** property.
+
+{% highlight html %}
+
+<div id="rangecontainer">
+    <ej-rangenavigator  e-padding="15">
+    </ej-rangenavigator>
+</div>
+<script>
+    angular.module('RangeApp', ['ejangular'])
+    .controller('RangeCtrl', function ($scope) {
+    });
+</script>
+
+{% endhighlight %}
+
+## AllowSnapping
+
+An **e-allowsnapping** property toggles the placement of slider exactly on the place it left or on the nearest interval.
+
+{% highlight html %}
+
+<div id="rangecontainer">
+    <ej-rangenavigator  e-allowsnapping="false">
+    </ej-rangenavigator>
+</div>
+<script>
+    angular.module('RangeApp', ['ejangular'])
+    .controller('RangeCtrl', function ($scope) {
+    });
+</script>
+
+{% endhighlight %}
+
+## Responsive
+
+Set **e-isresponsive** value to make the **RangeNavigator** responsive on resize.
+
+{% highlight html %}
+
+<div id="rangecontainer">
+    <ej-rangenavigator  e-isresponsive="true">
+    </ej-rangenavigator>
+</div>
+<script>
+    angular.module('RangeApp', ['ejangular'])
+    .controller('RangeCtrl', function ($scope) {
+    });
+</script>
+   
+{% endhighlight %}
+
+## Auto Resizing
+
+Enable **e-enableautoresizing** option to resize the **RangeNavigator**.
+
+{% highlight html %}
+
+<div id="rangecontainer">
+    <ej-rangenavigator  e-enableautoresizing="true">
+    </ej-rangenavigator>
+</div>
+<script>
+    angular.module('RangeApp', ['ejangular'])
+    .controller('RangeCtrl', function ($scope) {
+    });
+</script>
+
+{% endhighlight %}
+
+## Customize range Navigator border
+
+**RangeNavigator** provides options to customize the `color`, `opacity` and `width` of range navigator `e-border`.
+
+{% highlight html %}
+
+<div id="rangecontainer">
+    <ej-rangenavigator  e-border="border">
+    </ej-rangenavigator>
+</div>
+<script>
+    angular.module('RangeApp', ['ejangular'])
+    .controller('RangeCtrl', function ($scope) {
+         $scope.border = {
+                    color: "green",
+                    opacity: 0.5,
+                    width: 2,
+                  };
+    });
+</script>
+
+{% endhighlight %}
+
+## Customize size of range navigator
+
+The `height` and `width` of **RangeNavigator** can be customized using `e-sizesettings` property.
+
+{% highlight html %}
+
+<div id="rangecontainer">
+    <ej-rangenavigator  e-sizesettings="size">
+    </ej-rangenavigator>
+</div>
+<script>
+    angular.module('RangeApp', ['ejangular'])
+    .controller('RangeCtrl', function ($scope) {
+         $scope.size = {
+                    height: "130",
+                    width: "900"
+                  };
+    });
+</script>
+
+{% endhighlight %}
+
 ## Customize axis range of navigator
 
 **RangeNavigator** calculates the range automatically based on the values of series data points. However you can explicitly specify the range using the **start**, **end** properties in **rangeSettings** that is not possible when data is provided.

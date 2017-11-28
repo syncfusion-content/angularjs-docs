@@ -17,7 +17,7 @@ To render a Line type Sparkline, set the `e-type` as **line**. To change the col
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="SparklineApp">
     <head>
-        <title>Essential Studio for AngularJS: CircularGauge</title>
+        <title>Essential Studio for AngularJS: Sparkline</title>
         <!--CSS and Script file References -->
     </head>
   <body ng-controller="SparkCtrl">
@@ -44,7 +44,7 @@ To render a Column Sparkline, set the type as **column** To change the color of 
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="SparklineApp">
     <head>
-        <title>Essential Studio for AngularJS: CircularGauge</title>
+        <title>Essential Studio for AngularJS: Sparkline</title>
         <!--CSS and Script file References -->
     </head>
   <body ng-controller="SparkCtrl">
@@ -71,7 +71,7 @@ To render an Area Sparkline, you can specify the type as **area**. To change the
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="SparklineApp">
     <head>
-        <title>Essential Studio for AngularJS: CircularGauge</title>
+        <title>Essential Studio for AngularJS: Sparkline</title>
         <!--CSS and Script file References -->
     </head>
   <body ng-controller="SparkCtrl">
@@ -98,7 +98,7 @@ WinLoss Sparkline render as a column segment and it show the positive, negative 
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="SparklineApp">
     <head>
-        <title>Essential Studio for AngularJS: CircularGauge</title>
+        <title>Essential Studio for AngularJS: Sparkline</title>
         <!--CSS and Script file References -->
     </head>
   <body ng-controller="SparkCtrl">
@@ -125,7 +125,7 @@ You can create a pie type sparkline by setting the type as **pie**. Colors for t
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="SparklineApp">
     <head>
-        <title>Essential Studio for AngularJS: CircularGauge</title>
+        <title>Essential Studio for AngularJS: Sparkline</title>
         <!--CSS and Script file References -->
     </head>
   <body ng-controller="SparkCtrl">

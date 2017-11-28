@@ -42,7 +42,7 @@ EjRangeNavigator provides highlighting supports to the intervals on mouse hover.
 
 ### Customize the highlight style
 
-To customize the highlighted intervals, use color, border and opacity options in the [`highlightSettings`](../api/ejrangenavigator#members:navigatorstylesettings-highlightsettings).
+To customize the highlighted intervals, use color, border and opacity options in the [`highlightSettings`](../api/ejrangenavigator#members:navigatorstylesettings-highlightsettings). To customize border of highlighted interval, use color and width options in border.
 
 {% highlight html %}
 
@@ -104,7 +104,7 @@ EjRangeNavigator provides selection supports to the intervals by, clicking and d
 
 ### Customize the selection style
 
-To customize the selected intervals, use color, border and opacity options in the selectionSettings.
+To customize the selected intervals, use color, border and opacity options in the selectionSettings. To customize border of selected interval, use color and width options in border.
 
 {% highlight html %}
 
