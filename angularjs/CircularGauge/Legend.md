@@ -124,6 +124,31 @@ You can align the legend to the *center*, *far* or *near* based on its position 
 
 ## Customization
 
+### Legend Fill and Opacity
+
+You can change the opacity and fill color of legend text using `Opacity` and `Fill` property of legend. 
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="CircularGaugeApp">
+    <head>
+        <title>Essential Studio for AngularJS: CircularGauge</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="CircularGaugeCtrl">
+        <div id="container" ej-circulargauge e-legend-fill="red" e-legend-opacity="0.5">
+        </div>
+        <script>
+        angular.module('CircularGaugeApp', ['ejangular'])
+        .controller('CircularGaugeCtrl', function ($scope) {
+                     });
+        </script>
+    </body>
+</html>
+
+{% endhighlight %}
+
+
 ### Legend shape
 
 To change the legend ite, shape, you have to specify the desired shape in the `e-legend-shape` property of the legend. By default the legend shape is **circle**.It also supports rectangle,diamond,triangle,slider,line,pentagon,trapezoid and wedge shapes.
