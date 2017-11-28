@@ -9,7 +9,7 @@ documentation: ug
 
 ## Marker Customization
 
-You can customize markers by initializing the `e-markerSettings` property. The customization option allow you to change the visibility, fill, width, opacity and border optionscolor, width, opacity for marker. This customization only applicable for line, column and area type Sparkline.
+You can customize markers by initializing the `e-markerSettings` property. The customization option allow you to change the visibility, fill, width, opacity and border option color, width, opacity for marker. This customization only applicable for line, column and area type Sparkline.
 
 {% highlight html %}
 

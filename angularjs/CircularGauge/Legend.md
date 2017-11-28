@@ -151,7 +151,7 @@ You can change the opacity and fill color of legend text using `Opacity` and `Fi
 
 ### Legend shape
 
-To change the legend ite, shape, you have to specify the desired shape in the `e-legend-shape` property of the legend. By default the legend shape is **circle**.It also supports rectangle,diamond,triangle,slider,line,pentagon,trapezoid and wedge shapes.
+To change the legend item, shape, you have to specify the desired shape in the `e-legend-shape` property of the legend. By default the legend shape is **circle**.It also supports rectangle,diamond,triangle,slider,line,pentagon,trapezoid and wedge shapes.
 
 {% highlight html %}
 
@@ -178,7 +178,7 @@ To change the legend ite, shape, you have to specify the desired shape in the `e
 
 ### Legend Item Size and Border
 
-You can change the size of the legend items by using the `width` and `height` properties in the `e-legend-itemstyle`. To change the legend item border, use `border` property of the legend itemStyle.
+You can change the size of the legend items by using the `width` and `height` properties in the `e-legend-itemStyle`. To change the legend item border, use `border` property of the legend itemStyle.
 
 {% highlight html %}
 
@@ -188,9 +188,9 @@ You can change the size of the legend items by using the `width` and `height` pr
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="CircularGaugeCtrl">
-        <div id="container" ej-circulargauge e-legend-itemstyle-width="13"
-        e-legend-itemstyle-height="13" e-legend-itemstyle-border-color="#FF0000"
-        e-legend-itemstyle-border-width="2">
+        <div id="container" ej-circulargauge e-legend-itemStyle-width="13"
+        e-legend-itemStyle-height="13" e-legend-itemStyle-border-color="#FF0000"
+        e-legend-itemStyle-border-width="2">
         </div>
         <script>
         angular.module('CircularGaugeApp', ['ejangular'])
@@ -298,8 +298,8 @@ The font of the legend item text can be customized by using the `e-legend-font` 
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="CircularGaugeCtrl">
-        <div id="container" ej-circulargauge e-legend-font-fontfamily="Segoe UI"
-        e-legend-font-fontstyle="normal" e-legend-font-fontweight="bold" e-legend-font-size="15px" >
+        <div id="container" ej-circulargauge e-legend-font-fontFamily="Segoe UI"
+        e-legend-font-fontStyle="normal" e-legend-font-fontWeight="bold" e-legend-font-size="15px" >
         </div>
         <script>
         angular.module('CircularGaugeApp', ['ejangular'])
@@ -347,7 +347,7 @@ The font of the legend item text can be customized by using the `e-legend-font` 
 
 ### Legend Item Click
 
-You can get the legend item details such as *Rangeindex*, *bounds*, *shape* and *series* by subscribing the `e-legendItemClick` event on the circular gauge. When the legend item is clicked, it triggers the event and returns the legend information. 
+You can get the legend item details such as *RangeIndex*, *bounds*, *shape* and *series* by subscribing the `e-legendItemClick` event on the circular gauge. When the legend item is clicked, it triggers the event and returns the legend information. 
 
 {% highlight html %}
 
@@ -357,14 +357,14 @@ You can get the legend item details such as *Rangeindex*, *bounds*, *shape* and 
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="CircularGaugeCtrl">
-        <div id="container" ej-circulargauge e-legenditemclick=onlegendclicked>
+        <div id="container" ej-circulargauge e-legendItemClick=onLegendClicked>
         </div>
         <script>
         angular.module('CircularGaugeApp', ['ejangular'])
         .controller('CircularGaugeCtrl', function ($scope) {
-                    $scope.onlegendclicked="onlegendclicked";
+                    $scope.onLegendClicked="onLegendClicked";
                     });
-        function onlegendclicked(sender) {
+        function onLegendClicked(sender) {
         //Get legend item details on legend item click.
         var legendItem = sender.data;
         }
