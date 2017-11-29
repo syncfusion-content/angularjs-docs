@@ -11,9 +11,12 @@ documentation: ug
 
 The Autocomplete allows list of data to be displayed in several columns and column collection can be defined and customized through the [e-multicolumnsettings ](http://help.syncfusion.com/api/js/ejautocomplete)property.
 
-In AutoComplete Multiple Column search is based on [e-stringformat ](http://help.syncfusion.com/api/js/ejautocomplete)property which specifies column indices.
+In AutoComplete Multiple Column search is based on [searchColumnIndices](https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-searchColumnIndices) property which allows user to search text for any number of fields in the suggestion list without modifying the selected text format.
 
-NOTE :NOTE:[e-stringFormat ](http://help.syncfusion.com/api/js/ejautocomplete)as “{0} ({1}) ({2})” means search based on 0, 1 and 2 columns data.
+In AutoComplete Multiple Column searched value is updated to autocomplete input box based on [stringFormat](https://help.syncfusion.com/api/js/ejautocomplete#members:multiColumnSettings-stringFormat) property which specifies column indices values to  updated.
+
+NOTE :NOTE: 1. [stringFormat ](http://help.syncfusion.com/api/js/ejautocomplete)as “{0} ({1})” means search based on 0, 1 and 2 columns data.
+            2. If [searchColumnIndices](https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-searchColumnIndices) given as [0,1,2], then the column search will done using 0,1,2 column data alone.
 
 <table>
 <tr>
@@ -114,7 +117,8 @@ Used to align or position all the values in a column</td></tr>
 $scope.multicolumnkey="EmployeeID";
 $scope.multicolumntext="City";
 $scope.multicolumncolset = {
-        stringFormat: "{0}  ({1}) ({2})",
+        stringFormat: "{0}  ({1})",
+        searchColumnIndices:[0,1,2],
 enable:true,
 showHeader: true,
 columns: [
