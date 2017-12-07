@@ -121,7 +121,7 @@ Another way to disable the quick window option at dynamic time can be achieved t
             }];
             $scope.setDate = new Date(2017, 1, 7);
         });
-        function onCellClick(args) {
+        $scope.onCellClick = function(args) {
             args.cancel = true; // Prevents the display of quick window on clicking the cells.
         }
     </script>
@@ -205,7 +205,7 @@ It is possible to disable the inline appointment creation and enabling only the 
             }];
             $scope.setDate = new Date(2017, 1, 7);
         });
-        function onCellClick(args) {
+        $scope.onCellClick = function(args) {
             args.cancel = true; // Prevents inline appointment creation on clicking the cells.
         }
     </script>
@@ -261,7 +261,7 @@ To prevent the display of default appointment window on double clicking the Sche
             }];
             $scope.setDate = new Date(2017, 1, 7);
         });
-        function onAppointmentWindowOpen(args) {
+        $scope.onAppointmentWindowOpen = function(args) {
             args.cancel = true; // prevents the display of default appointment window
         }
     </script>
@@ -314,7 +314,7 @@ You can add/edit the appointments dynamically through the public method `saveApp
             };
 
             //create the schedule object 
-            var schObj = $("#Schedule1").data("ejSchedule");
+            var schObj = angular.element("#Schedule1").data("ejSchedule");
             //pass the JSON object in the public method 
             schObj.saveAppointment(appointment);
         }
@@ -414,10 +414,10 @@ The below code example depicts the way to delete the appointments using GUID pro
             }];
             $scope.setDate = new Date(2017, 1, 7);
         });
-        function onAppointmentClick(args) {
-            var schObj = $("#Schedule1").data("ejSchedule");
+        $scope.onAppointmentClick = function(args) {
+            var schObj = angular.element("#Schedule1").data("ejSchedule");
             schObj.deleteAppointment(args.appointment.Guid);
-            // $($(".e-appointment")[0]).attr("guid") --> To get the guid attribute value of an element directly.
+            // angular.element(angular.element(".e-appointment")[0]).attr("data-guid") --> To get the guid attribute value of an element directly.
         }
     </script>
 </body>
@@ -456,8 +456,8 @@ The below code example depicts the way to delete the appointments using appointm
             }];
             $scope.setDate = new Date(2017, 1, 7);
         });
-        function onAppointmentClick(args) {
-            var schObj = $("#Schedule1").data("ejSchedule");
+        $scope.onAppointmentClick = function(args) {
+            var schObj = angular.element("#Schedule1").data("ejSchedule");
             schObj.deleteAppointment(args.appointment);
         }
     </script>
@@ -504,15 +504,15 @@ To stop the save, edit and delete actions on the Scheduler appointments, followi
             }];
             $scope.setDate = new Date(2017, 1, 7);
         });
-        function onAppointmentSave(args) {
+        $scope.onAppointmentSave = function(args) {
             args.cancel = true; // cancels the save action on appointments.
         }
 
-        function onAppointmentEdit(args) {
+        $scope.onAppointmentEdit = function(args) {
             args.cancel = true; // cancels the edit action on appointments.
         }
 
-        function onAppointmentDelete(args) {
+        $scope.onAppointmentDelete = function(args) {
             args.cancel = true; // cancels the delete action on appointments.
         }
     </script>
@@ -625,7 +625,7 @@ The following code example shows how to cancel the dragging functionality with t
             }];
             $scope.setDate = new Date(2017, 1, 7);
         });
-        function onDragStop(args) {
+        $scope.onDragStop = function(args) {
             args.cancel = true; // cancels the drag action on appointments.
         }
     </script>
@@ -892,7 +892,7 @@ The following code example shows how to cancel the resizing functionality with t
             }];
             $scope.setDate = new Date(2017, 1, 7);
         });
-        function onResizeStart(args) {
+        $scope.onResizeStart=function(args) {
             args.cancel = true; // Blocks the resize action on appointments.
         }
     </script>
@@ -1507,7 +1507,7 @@ Reminder option notifies all the appointments before some specific time. By defa
                 EndTime: new Date(new Date().setHours(new Date().getHours() + 4))
             }];
         });
-        function reminderCustom(args) {
+        $scope.reminderCustom=function(args) {
             alert("Reminder Appointment");
         }
     </script>
