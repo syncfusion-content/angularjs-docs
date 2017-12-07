@@ -230,7 +230,7 @@ Also, it is possible to predict the target on which the right click is made, eit
             $scope.setDate = new Date(2017, 1, 7);
             $scope.onBeforeMenuOpen = function (args) {
                 //args.events.target – target information to depict either cell/appointment
-                if ($(args.events.target).hasClass("e-workcells") || $(args.events.target).hasClass("e-monthcells"))
+                if (angular.element(args.events.target).hasClass("e-workcells") || angular.element(args.events.target).hasClass("e-monthcells"))
                     args.cancel = true;
             };
         });
