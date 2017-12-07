@@ -94,8 +94,8 @@ The following code example depicts the way to generate the recurrence rule.
     <script type="text/javascript">
         angular.module('RecurrenceeditorApp', ['ejangular']).controller('RecurrenceeditorCtrl', function ($scope) {
         });
-        function closerecurrence() {
-            var obj = $("#RecurrenceEditor").data("ejRecurrenceEditor")
+        $scope.closerecurrence = function() {
+            var obj = angular.element("#RecurrenceEditor").data("ejRecurrenceEditor")
             alert(obj.getRecurrenceRule());
         }
     </script>
