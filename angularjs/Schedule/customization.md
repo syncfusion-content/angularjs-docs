@@ -346,7 +346,7 @@ The following code example lets you create the custom appointment window (using 
                             </tr>
                             <tr id="edittr" style="display: none;">
                                 <td colspan="3">
-                                    <div><a id="recedit" ng-click="Recurrencerule()">Edit</a></div>
+                                    <div><a id="recedit" ng-click="recurrenceRule()">Edit</a></div>
                                 </td>
                             </tr>
                         </tbody>
@@ -550,7 +550,7 @@ The following code example lets you create the custom appointment window (using 
         });
 
         // This function executes when the Edit anchor tag in the edit appointment window is clicked.
-        function Recurrencerule() {
+        function recurrenceRule() {
             angular.element("#recWindow").css("display", "");
             angular.element("#appWindow").css("display", "none");
         }
@@ -569,7 +569,7 @@ The following code example lets you create the custom appointment window (using 
             angular.element("#StartTime,#EndTime").ejDateTimePicker({ enabled: true });
         }
 
-        // This function executes when the subject text field is currently being focussed
+        // This function executes when the subject text field is currently being focused
         function temp() {
             angular.element("#subject").removeClass("error");
         }
