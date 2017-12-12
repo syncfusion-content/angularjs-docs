@@ -653,18 +653,9 @@ The following code example lets you drag and drop the external items from the tr
         <!-- Treeview List -->
         <div class="col-md-2">
             <span class=""><b>Tutorials </b></span>
-            <ul id="treeViewDrag">
-                <li class="expanded" id="HTML">HTML
-            <ul>
-                <li>Introduction</li>
-                <li>Editors</li>
-                <li>Styles</li>
-                <li>Formatting</li>
-                <li>Tables</li>
-            </ul>
-                </li>
-            </ul>
+            <div id="treeView" ej-treeview e-nodedragstart="onDragStart" e-nodeDropped="onDropped" e-allowdraganddrop=true width="170px" allowdropchild=false allowdropsibiling=false allowdraganddropaccesscontrol=true e-fields-datasource="dataList" e-fields-id="id" e-fields-parentid="pid" e-fields-text="name" e-fields-haschild="hasChild" e-fields-expanded="expanded" />
         </div>
+        <div class="col-md-9" style="float: left">
         <ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-currentdate="setDate" e-cellwidth="40px" e-showcurrenttimeindicator="false" e-orientation="horizontal" e-views="scheduleViews" e-currentview="workweek" e-appointmentsettings-datasource="appointments"
             e-appointmentsettings-id="Id" e-appointmentsettings-subject="Subject" e-appointmentsettings-starttime="StartTime" e-appointmentsettings-endtime="EndTime" e-appointmentsettings-description="Description" e-appointmentsettings-allday="AllDay" e-appointmentsettings-recurrence="Recurrence" e-appointmentsettings-recurrencerule="RecurrenceRule" e-appointmentsettings-resourcefields="ownerId"
             e-group="group">
@@ -672,7 +663,7 @@ The following code example lets you drag and drop the external items from the tr
                         <e-resource e-allowmultiple="true" e-field="ownerId" e-title="Owner" e-name="Owners" e-resourcesettings="resourcedata"></e-resource>                        
                      </e-resources>
         </ej-schedule>
-
+        </div>
 <div id="customWindow" style="display: none">
             <form id="custom">
                 <table width="100%" cellpadding="5">
@@ -722,31 +713,43 @@ The following code example lets you drag and drop the external items from the tr
             </div>
         </div>
 </div>
-    <script type="text/javascript">
-        $(function () {
-            $("#treeViewDrag").ejTreeView(
-               {
-                   allowDragAndDrop: true,
-                   width: 170,
-                   allowDropChild: false,
-                   allowDropSibling: false,
-                   allowDragAndDropAcrossControl: true,
-                   nodeDragStart: "onDragStart",
-                   nodeDropped: "onDropped",
-               });
-            $("#customWindow").ejDialog({
+<script type="text/javascript">
+        angular.element(function () {
+            angular.element("#customWindow").ejDialog({
                 width: 600,
                 height: "auto",
-                position: { X: 200, Y: 100 },
                 showOnInit: false,
                 enableModal: true,
                 title: "Create Appointment",
                 enableResize: false,
                 allowKeyboardNavigation: false,
-                close: "clearFields"
+                close: "clearFields",
             });
+            angular.element("#StartTime,#EndTime").ejDateTimePicker({ width: "150px" });
         });
+        var TreeList = [
+               { id: 1, name: "HTML", hasChild: true, expanded: true },
+               { id: 2, pid: 1, name: "Introduction" },
+               { id: 3, pid: 1, name: "Styles" },
+               { id: 4, pid: 1, name: "Editors" },
+               { id: 5, pid: 1, name: "Formatting " },
+               { id: 6, name: "CSS", hasChild: true, expanded: true },
+               { id: 7, pid: 6, name: "Introduction" },
+               { id: 8, pid: 6, name: "Syntax" },
+               { id: 9, pid: 6, name: "Tables" },
+               { id: 10, pid: 6, name: "Box Model" },
+               { id: 11, name: "JavaScript", hasChild: true },
+               { id: 12, pid: 11, name: "Introduction" },
+               { id: 13, pid: 11, name: "Data Types" },
+               { id: 14, pid: 11, name: "Variables" },
+               { id: 15, name: "SQL", hasChild: true },
+               { id: 16, pid: 15, name: "Introduction" },
+               { id: 17, pid: 15, name: "Primary Key" },
+               { id: 18, pid: 15, name: "Distinct" },
+               { id: 19, pid: 15, name: "Ordered by" },
+               { id: 20, pid: 15, name: "Distinct" }];
         angular.module('ScheduleApp', ['ejangular']).controller('ScheduleCtrl', function ($scope) {
+            $scope.dataList = TreeList;
             $scope.appointments = [{
                 Id: 1,
                 Subject: "Talk with Nature",
@@ -769,51 +772,51 @@ The following code example lets you drag and drop the external items from the tr
                 ],
                 text: "text", id: "id", groupId: "groupId", color: "color"
             };
-        });
-        function onDragStart(e) {
-            if (e.targetElementData.parentId == "") return false;
-        }
-        function onDropped(e) {
-            if ($(e.target).parents(".e-schedule").length != 0) {
-                var scheduleObj = $("#Schedule1").data("ejSchedule");
-                var result = scheduleObj.getSlotByElement($(e.target));
-                // set value to custom appointmnt window fields
-                $("#subject").val(e.droppedElementData.text);
-                $("#customdescription").val(e.droppedElementData.text);
-                $("#StartTime").ejDateTimePicker({ value: new Date(result.startTime) });
-                $("#EndTime").ejDateTimePicker({ value: new Date(result.endTime) });
-                $("#resource").val(result.resources.text);
-                $("#ownerId").val(result.resources.id);
-                $("#customWindow").ejDialog("open");
-            }
-        }
-        function save() {
-            var obj = {};
-            var formelement = $("#customWindow").find("#custom").get(0);
-            for (var index = 0; index < formelement.length; index++) {
-                var columnName = formelement[index].name, $element = $(formelement[index]);
-                if (columnName != undefined) {
-                    if (columnName == "Subject")
-                        var value = formelement[index].value;
-                    if (columnName == "Desctiption")
-                        value = formelement[index].value;
-                    if ($element.hasClass("e-datetimepicker")) {
-                        columnName = $element.attr("id");
-                        value = new Date(formelement[index].value);
+            $scope.save = function () {
+                var obj = {};
+                var formelement = angular.element("#customWindow").find("#custom").get(0);
+                for (var index = 0; index < formelement.length; index++) {
+                    var columnName = formelement[index].name, $element = angular.element(formelement[index]);
+                    if (columnName != undefined) {
+                        if (columnName == "Subject")
+                            var value = formelement[index].value;
+                        if (columnName == "Desctiption")
+                            value = formelement[index].value;
+                        if ($element.hasClass("e-datetimepicker")) {
+                            columnName = $element.attr("id");
+                            value = new Date(formelement[index].value);
+                        }
+                        if (columnName == "ownerId")
+                            value = parseInt(formelement[index].value);
+                        if (columnName != "Resource")
+                            obj[columnName] = value;
                     }
-                    if (columnName == "ownerId")
-                        value = parseInt(formelement[index].value);
-                    if (columnName != "Resource")
-                        obj[columnName] = value;
+                }
+                angular.element("#customWindow").ejDialog("close");
+                var object = angular.element("#Schedule1").data("ejSchedule");
+                object.saveAppointment(obj);
+            }
+            $scope.cancel = function () {
+                angular.element("#customWindow").ejDialog("close");
+            }
+            $scope.onDragStart = function (e) {
+                if (e.targetElementData.parentId == "") return false;
+            }
+            $scope.onDropped = function (e) {
+                if (angular.element(e.target).parents(".e-schedule").length != 0) {
+                    var scheduleObj = angular.element("#Schedule1").data("ejSchedule");
+                    var result = scheduleObj.getSlotByElement($(e.target));
+                    // set value to custom appointmnt window fields
+                    angular.element("#subject").val(e.droppedElementData.text);
+                    angular.element("#customdescription").val(e.droppedElementData.text);
+                    angular.element("#StartTime").ejDateTimePicker({ value: new Date(result.startTime) });
+                    angular.element("#EndTime").ejDateTimePicker({ value: new Date(result.endTime) });
+                    angular.element("#resource").val(result.resources.text);
+                    angular.element("#ownerId").val(result.resources.id);
+                    angular.element("#customWindow").ejDialog("open");
                 }
             }
-            $("#customWindow").ejDialog("close");
-            var object = $("#Schedule1").data("ejSchedule");
-            object.saveAppointment(obj);
-        }
-        function cancel() {
-            $("#customWindow").ejDialog("close");
-        }
+        });
     </script>
 </body>
 </html>
@@ -892,7 +895,7 @@ The following code example shows how to cancel the resizing functionality with t
             }];
             $scope.setDate = new Date(2017, 1, 7);
         });
-        $scope.onResizeStart=function(args) {
+        $scope.onResizeStart = function(args) {
             args.cancel = true; // Blocks the resize action on appointments.
         }
     </script>
@@ -1166,7 +1169,7 @@ The public method `searchAppointments` is used to search the appointments in the
 <body>
     <div ng-controller="ScheduleCtrl">
         <input id="txtSearch" type="text" />
-        <input id="btnSearch" class="searchApp" type="button" value="Search" />
+        <input id="btnSearch" class="searchApp" ej-button e-click="searchAppointments" type="button" value="Search" />
         <div id="grid1"></div>
         <ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-currentdate="setDate" e-appointmentsettings-datasource="appointments">
         </ej-schedule>
@@ -1185,29 +1188,26 @@ The public method `searchAppointments` is used to search the appointments in the
                 EndTime: new Date(2017, 1, 7, 14, 30)
             }];
             $scope.setDate = new Date(2017, 1, 7);
-        });
-        $(function () {
-            // To bind the click event to the button
-            $('.searchApp').bind("click", function () {
-                var _searchString = $("#txtSearch").val();
-                var schObj = $("#Schedule1").data("ejSchedule");
+            $scope.searchAppointments = function () {
+                var _searchString = angular.element("#txtSearch").val();
+                var schObj = angular.element("#Schedule1").data("ejSchedule");
                 // method to retrieve the appointment based on search string
                 var result = schObj.searchAppointments(_searchString);
                 showResult(result, _searchString);
-            });
-        });
-        // method to show the result in a grid
-        function showResult(list, _searchString) {
-            if (!ej.isNullOrUndefined(list) && list.length != 0 && _searchString != "") {
-                $("#grid1").show();
-                $("#grid1").data("ejGrid") && $("#grid1").ejGrid("destroy");
-                $("#grid1").ejGrid({
-                    allowScrolling: true,
-                    dataSource: list,
-                    allowPaging: true
-                });
             }
-        }
+            // method to show the result in a grid
+            function showResult(list, _searchString) {
+                if (!ej.isNullOrUndefined(list) && list.length != 0 && _searchString != "") {
+                    angular.element("#grid1").show();
+                    angular.element("#grid1").data("ejGrid") && angular.element("#grid1").ejGrid("destroy");
+                    angular.element("#grid1").ejGrid({
+                        allowScrolling: true,
+                        dataSource: list,
+                        allowPaging: true
+                    });
+                }
+            }
+        });
     </script>
 </body>
 </html>
@@ -1235,7 +1235,7 @@ The appointments can be filtered or shortlisted based on the simple or complex c
 </head>
 <body>
     <div ng-controller="ScheduleCtrl">
-        <input id="btnSearch" class="searchApp" type="button" value="Filter" />
+        <input id="btnSearch" class="filterApp" ej-button e-click="filterAppointments" type="button" value="Filter" />
         <div id="grid1"></div>
         <ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-currentdate="setDate" e-appointmentsettings-datasource="appointments">
         </ej-schedule>
@@ -1254,10 +1254,7 @@ The appointments can be filtered or shortlisted based on the simple or complex c
                 EndTime: new Date(2017, 1, 7, 14, 30)
             }];
             $scope.setDate = new Date(2017, 1, 7);
-        });
-        $(function () {
-            // Method to bind the button click event
-            $('.searchApp').bind("click", function () {
+            $scope.filterAppointments = function () {
                 // Add the filter data as like in the below format
                 var filter = [{
                     field: "Subject", // field configure
@@ -1271,24 +1268,24 @@ The appointments can be filtered or shortlisted based on the simple or complex c
                     predicate: "or" // predicate
                 }];
 
-                var schObj = $("#Schedule1").data("ejSchedule");
+                var schObj = angular.element("#Schedule1").data("ejSchedule");
                 // Method to get the Filtered appointment
                 var result = schObj.filterAppointments(filter);
                 showResult(result);
-            });
-        });
-        // method to show the result in a grid
-        function showResult(list, _searchString) {
-            if (!ej.isNullOrUndefined(list) && list.length != 0 && _searchString != "") {
-                $("#grid1").show();
-                $("#grid1").data("ejGrid") && $("#grid1").ejGrid("destroy");
-                $("#grid1").ejGrid({
-                    allowScrolling: true,
-                    dataSource: list,
-                    allowPaging: true
-                });
             }
-        }
+            // method to show the result in a grid
+            function showResult(list) {
+                if (!ej.isNullOrUndefined(list) && list.length != 0) {
+                    angular.element("#grid1").show();
+                    angular.element("#grid1").data("ejGrid") && angular.element("#grid1").ejGrid("destroy");
+                    angular.element("#grid1").ejGrid({
+                        allowScrolling: true,
+                        dataSource: list,
+                        allowPaging: true
+                    });
+                }
+            }
+        });
     </script>
 </body>
 </html>
@@ -1507,7 +1504,7 @@ Reminder option notifies all the appointments before some specific time. By defa
                 EndTime: new Date(new Date().setHours(new Date().getHours() + 4))
             }];
         });
-        $scope.reminderCustom=function(args) {
+        $scope.reminderCustom = function(args) {
             alert("Reminder Appointment");
         }
     </script>
