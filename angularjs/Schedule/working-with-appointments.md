@@ -677,7 +677,7 @@ The following code example lets you drag and drop the external items from the tr
                         <tr>
                             <td>Description:</td>
                             <td colspan="2">
-                                <textarea id="customdescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
+                                <textarea id="customDescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
                             </td>
                         </tr>
                         <tr>
@@ -780,7 +780,7 @@ The following code example lets you drag and drop the external items from the tr
                     if (columnName != undefined) {
                         if (columnName == "Subject")
                             var value = formelement[index].value;
-                        if (columnName == "Desctiption")
+                        if (columnName == "Description")
                             value = formelement[index].value;
                         if ($element.hasClass("e-datetimepicker")) {
                             columnName = $element.attr("id");
@@ -806,9 +806,9 @@ The following code example lets you drag and drop the external items from the tr
                 if (angular.element(e.target).parents(".e-schedule").length != 0) {
                     var scheduleObj = angular.element("#Schedule1").data("ejSchedule");
                     var result = scheduleObj.getSlotByElement($(e.target));
-                    // set value to custom appointmnt window fields
+                    // set value to custom appointment window fields
                     angular.element("#subject").val(e.droppedElementData.text);
-                    angular.element("#customdescription").val(e.droppedElementData.text);
+                    angular.element("#customDescription").val(e.droppedElementData.text);
                     angular.element("#StartTime").ejDateTimePicker({ value: new Date(result.startTime) });
                     angular.element("#EndTime").ejDateTimePicker({ value: new Date(result.endTime) });
                     angular.element("#resource").val(result.resources.text);
@@ -1464,7 +1464,7 @@ When an option "Only this Appointment" is selected, a single occurrence of the r
 
 #### Following appointments
 
-When an option "Following Appointments" is selected, all the following events of the recurrence appointment from the current instance will be edited or deleted. The previous instances of the reccurrence appointment before this current instances will be retained as it is on the Scheduler.
+When an option "Following Appointments" is selected, all the following events of the recurrence appointment from the current instance will be edited or deleted. The previous instances of the recurrence appointment before this current instances will be retained as it is on the Scheduler.
 
 #### Entire series
 
