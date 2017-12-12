@@ -295,7 +295,7 @@ using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using Microsoft.Office.Interop.Outlook; // required Microsoft DLL 
+using Microsoft.Office.Interop.Outlook; // required Microsoft Assembly 
 using System.Web.Script.Serialization;
 using System.Web.UI;
 using System.Web.UI.WebControls;
