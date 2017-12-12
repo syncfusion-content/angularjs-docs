@@ -440,7 +440,7 @@ The following code example lets you create the custom appointment window (using 
             //this function executes when submit button of custom appointment window is clicked
             $scope.save = function () {
                 // checks if the subject value is not left blank before saving it.
-                if (angular.element.trim($("#subject").val()) == "") {
+                if (angular.element.trim(angular.element("#subject").val()) == "") {
                     angular.element("#subject").addClass("error");
                     return false;
                 }
@@ -558,7 +558,7 @@ The following code example lets you create the custom appointment window (using 
         // Clears all the field values of the custom window after saving appointments
         function clearFields() {
             angular.element("#customId").val("");
-            recObj = $("#recurrenceEditor").ejRecurrenceEditor('instance');
+            recObj = angular.element("#recurrenceEditor").ejRecurrenceEditor('instance');
             recObj.clearRecurrenceFields();
             angular.element("#subject").val("");
             angular.element("#customdescription").val("");
