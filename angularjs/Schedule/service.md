@@ -104,7 +104,7 @@ To export appointment data from Scheduler into an ICS file format.
 
 {% highlight js %}
  
-var obj = $("#Schedule1").data("ejSchedule"); // instance of Scheduler widget after initialization
+var obj = angular.element("#Schedule1").data("ejSchedule"); // instance of Scheduler widget after initialization
 obj.exportSchedule("http://js.syncfusion.com/demos/ejservices/api/JSScheduleExport/ICSExport", null, null); // client-side method to be made use in order to invoke the service action for exporting.
 
 {% endhighlight %}
@@ -149,7 +149,7 @@ To import appointment data generated from external calendar into Scheduler.
 
 {% highlight js %}
  
-    $("#UploadDefault").ejUploadbox({
+    angular.element("#UploadDefault").ejUploadbox({
             saveUrl: "http://js.syncfusion.com/demos/ejservices/api/JSScheduleExport/SaveDefault",
             extensionsAllow: ".ics",
             height: "31px", autoUpload: true,
@@ -253,7 +253,7 @@ To export the entire Scheduler content in a PDF file format.
 
 {% highlight js %}
  
-    var obj = $("#Schedule1").data("ejSchedule"); // instance of Scheduler widget after initialization
+    var obj = angular.element("#Schedule1").data("ejSchedule"); // instance of Scheduler widget after initialization
     obj.exportSchedule("http://js.syncfusion.com/demos/ejservices/api/JSScheduleExport/PDFExport", null, null); // client-side method to be made use in order to invoke the service action for exporting.
 
 {% endhighlight %}
