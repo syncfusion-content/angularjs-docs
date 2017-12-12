@@ -43,7 +43,7 @@ Usually, the `e-navigation` event gets triggered whenever the views/dates are be
             $scope.setDate = new Date(2017, 1, 7);
             $scope.onNavigation = function (args) {
                 //args.target.currentTarget – target element which is clicked.
-                var target = angular.elemnt(args.target.currentTarget);
+                var target = angular.element(args.target.currentTarget);
                 if (args.requestType == "viewNavigate" && (target.hasClass("e-headercells") || target.hasClass("e-monthheader") || target.hasClass("e-timecells")))
                     args.cancel = true;
             };
