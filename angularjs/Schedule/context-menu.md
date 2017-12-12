@@ -170,7 +170,7 @@ To define specific actions for a click made on the custom menu items, the client
 </head>
 <body>
     <div ng-controller="ScheduleCtrl">
-        <ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-currentdate="setDate" e-appointmentsettings-datasource="appointments" e-contextmenusettings-enable="true" e-menuitemclick="appmenuClick">
+        <ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-currentdate="setDate" e-appointmentsettings-datasource="appointments" e-contextmenusettings-enable="true" e-menuitemclick="appMenuClick">
         <e-contextmenusettings-menuitems-appointment>
            <e-contextmenusettings-menuitems-appointment e-id="open" e-text="Open Appointment"></e-contextmenusettings-menuitems-appointment>
            <e-contextmenusettings-menuitems-appointment e-id="delete" e-text="Delete Appointment"></e-contextmenusettings-menuitems-appointment>
@@ -187,7 +187,7 @@ To define specific actions for a click made on the custom menu items, the client
                 EndTime: new Date(2017, 1, 7, 7, 10, 30)
             }];
             $scope.setDate = new Date(2017, 1, 7);
-            $scope.appmenuClick = function (args) {
+            $scope.appMenuClick = function (args) {
                 //args.events contains information of the clicked menu item.
                 if (args.events.ID == "option1")
                     alert("Custom menu clicked");
