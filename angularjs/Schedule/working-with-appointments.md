@@ -653,7 +653,7 @@ The following code example lets you drag and drop the external items from the tr
         <!-- Treeview List -->
         <div class="col-md-2">
             <span class=""><b>Tutorials </b></span>
-            <div id="treeView" ej-treeview e-nodedragstart="onDragStart" e-nodeDropped="onDropped" e-allowdraganddrop=true width="170px" allowdropchild=false allowdropsibiling=false allowdraganddropaccesscontrol=true e-fields-datasource="dataList" e-fields-id="id" e-fields-parentid="pid" e-fields-text="name" e-fields-haschild="hasChild" e-fields-expanded="expanded" />
+            <div id="treeView" ej-treeview e-nodedragstart="onDragStart" e-nodeDropped="onDropped" e-allowdraganddrop=true width="170px" allowdropchild=false allowdropsibiling=false allowdraganddropaccesscontrol=true e-fields-datasource="dataList" e-fields-id="id" e-fields-parentid="parentId" e-fields-text="name" e-fields-haschild="hasChild" e-fields-expanded="expanded" />
         </div>
         <div class="col-md-9" style="float: left">
         <ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-currentdate="setDate" e-cellwidth="40px" e-showcurrenttimeindicator="false" e-orientation="horizontal" e-views="scheduleViews" e-currentview="workweek" e-appointmentsettings-datasource="appointments"
@@ -729,25 +729,25 @@ The following code example lets you drag and drop the external items from the tr
         });
         var TreeList = [
                { id: 1, name: "HTML", hasChild: true, expanded: true },
-               { id: 2, pid: 1, name: "Introduction" },
-               { id: 3, pid: 1, name: "Styles" },
-               { id: 4, pid: 1, name: "Editors" },
-               { id: 5, pid: 1, name: "Formatting " },
+               { id: 2, parentId: 1, name: "Introduction" },
+               { id: 3, parentId: 1, name: "Styles" },
+               { id: 4, parentId: 1, name: "Editors" },
+               { id: 5, parentId: 1, name: "Formatting " },
                { id: 6, name: "CSS", hasChild: true, expanded: true },
-               { id: 7, pid: 6, name: "Introduction" },
-               { id: 8, pid: 6, name: "Syntax" },
-               { id: 9, pid: 6, name: "Tables" },
-               { id: 10, pid: 6, name: "Box Model" },
+               { id: 7, parentId: 6, name: "Introduction" },
+               { id: 8, parentId: 6, name: "Syntax" },
+               { id: 9, parentId: 6, name: "Tables" },
+               { id: 10, parentId: 6, name: "Box Model" },
                { id: 11, name: "JavaScript", hasChild: true },
-               { id: 12, pid: 11, name: "Introduction" },
-               { id: 13, pid: 11, name: "Data Types" },
-               { id: 14, pid: 11, name: "Variables" },
+               { id: 12, parentId: 11, name: "Introduction" },
+               { id: 13, parentId: 11, name: "Data Types" },
+               { id: 14, parentId: 11, name: "Variables" },
                { id: 15, name: "SQL", hasChild: true },
-               { id: 16, pid: 15, name: "Introduction" },
-               { id: 17, pid: 15, name: "Primary Key" },
-               { id: 18, pid: 15, name: "Distinct" },
-               { id: 19, pid: 15, name: "Ordered by" },
-               { id: 20, pid: 15, name: "Distinct" }];
+               { id: 16, parentId: 15, name: "Introduction" },
+               { id: 17, parentId: 15, name: "Primary Key" },
+               { id: 18, parentId: 15, name: "Distinct" },
+               { id: 19, parentId: 15, name: "Ordered by" },
+               { id: 20, parentId: 15, name: "Distinct" }];
         angular.module('ScheduleApp', ['ejangular']).controller('ScheduleCtrl', function ($scope) {
             $scope.dataList = TreeList;
             $scope.appointments = [{
