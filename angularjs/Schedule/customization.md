@@ -547,13 +547,12 @@ The following code example lets you create the custom appointment window (using 
                 clearFields();
                 angular.element("#customWindow").ejDialog("close");
             }
+            // This function executes when the Edit anchor tag in the edit appointment window is clicked.
+            function recurrenceRule() {
+                angular.element("#recWindow").css("display", "");
+                angular.element("#appWindow").css("display", "none");
+            }
         });
-
-        // This function executes when the Edit anchor tag in the edit appointment window is clicked.
-        function recurrenceRule() {
-            angular.element("#recWindow").css("display", "");
-            angular.element("#appWindow").css("display", "none");
-        }
 
         // Clears all the field values of the custom window after saving appointments
         function clearFields() {
