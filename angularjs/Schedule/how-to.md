@@ -33,25 +33,25 @@ The sample contains the fields like Subject, Description, StartTime and EndTime 
 <script type="text/javascript">
 
 // To Validate the Subject field.
-$("#subject").focusout(function() {
-    if ($.trim($("#subject").val()) == "") {
-        $("#subject").addClass("validation");
+angular.element("#subject").focusout(function() {
+    if (angular.element.trim(angular.element("#subject").val()) == "") {
+        angular.element("#subject").addClass("validation");
         return false;
     }
 })
 
 // To Validate the Description field.
-$("#customdescription").focusout(function() {
-    if ($.trim($("#customdescription").val()) == "") {
-        $("#customdescription").addClass("validation");
+angular.element("#customdescription").focusout(function() {
+    if (angular.element.trim(angular.element("#customdescription").val()) == "") {
+        angular.element("#customdescription").addClass("validation");
         return false;
     }
 })
 
 // To Validate the Time duration of the appointments
-$("#EndTime").focusout(function() {
-    if (new Date($("#EndTime").val()).getDate() >= new Date($("#StartTime").val()).getDate()) {
-        if (new Date($("#StartTime").val()).getTime() >= new Date($("#EndTime").val()).getTime())
+angular.element("#EndTime").focusout(function() {
+    if (new Date(angular.element("#EndTime").val()).getDate() >= new Date(angular.element("#StartTime").val()).getDate()) {
+        if (new Date(angular.element("#StartTime").val()).getTime() >= new Date(angular.element("#EndTime").val()).getTime())
             alert("EndTime value is lesser than the StartTime value");
     }
 })
@@ -169,8 +169,8 @@ It is possible to display the Scheduler with appointments, which is filtered bas
         });
         // This function executes when a character is entered in the textbox
         function searchKeyUp() {
-            var searchString = $("#txtSearch").val();
-            var schObj = $("#Schedule1").data("ejSchedule");
+            var searchString = angular.element("#txtSearch").val();
+            var schObj = angular.element("#Schedule1").data("ejSchedule");
             var result = schObj.searchAppointments(searchString);
             schObj.option("appointmentSettings", { dataSource: [] });
             if (!ej.isNullOrUndefined(result) && result.length != 0 && searchString != "")
@@ -214,23 +214,23 @@ The following code example depicts the way to achieve the customization of defau
                 Status: "90%"
             }];
             $scope.setDate = new Date(2017, 1, 7);
+            // This function executes before the appointment window gets opened.
+            $scope.onAppointmentOpen = function(args) {
+                if (this._appointmentAddWindow.find(".customfields").length == 0) {
+                    var customDesign = "<tr class='customfields'><td class='e-textlabel'>Event Type</td><td><input class='apptype' style='width:140px;' type='text'/></td><td class='e-textlabel'>Event Status </td><td><input class='status' style='width:140px;' type='text'/></td></tr>";
+                    angular.element("." + this._id + "parrow").after(customDesign);
+                }
+                if (!ej.isNullOrUndefined(args.appointment)) {
+                    // if double clicked on the appointments, retrieve the custom field values from the appointment object and fills it in the appropriate fields.
+                    this._appointmentAddWindow.find(".apptype").val(args.appointment.AppointmentType);
+                    this._appointmentAddWindow.find(".status").val(args.appointment.Status);
+                } else {
+                    // if double clicked on the cells, clears the field values.               
+                    this._appointmentAddWindow.find(".apptype").val("");
+                    this._appointmentAddWindow.find(".status").val("");
+                }
+            }
         });
-        // This function executes before the appointment window gets opened.
-        function onAppointmentOpen(args) {
-            if (this._appointmentAddWindow.find(".customfields").length == 0) {
-                var customDesign = "<tr class='customfields'><td class='e-textlabel'>Event Type</td><td><input class='apptype' style='width:140px;' type='text'/></td><td class='e-textlabel'>Event Status </td><td><input class='status' style='width:140px;' type='text'/></td></tr>";
-                $("." + this._id + "parrow").after(customDesign);
-            }
-            if (!ej.isNullOrUndefined(args.appointment)) {
-                // if double clicked on the appointments, retrieve the custom field values from the appointment object and fills it in the appropriate fields.
-                this._appointmentAddWindow.find(".apptype").val(args.appointment.AppointmentType);
-                this._appointmentAddWindow.find(".status").val(args.appointment.Status);
-            } else {
-                // if double clicked on the cells, clears the field values.               
-                this._appointmentAddWindow.find(".apptype").val("");
-                this._appointmentAddWindow.find(".status").val("");
-            }
-        }
     </script>
 </body>
 </html>
@@ -295,7 +295,7 @@ using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using Microsoft.Office.Interop.Outlook; // required Microsoft DLL 
+using Microsoft.Office.Interop.Outlook; // required Microsoft Assembly 
 using System.Web.Script.Serialization;
 using System.Web.UI;
 using System.Web.UI.WebControls;
