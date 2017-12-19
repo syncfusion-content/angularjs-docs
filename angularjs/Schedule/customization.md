@@ -279,35 +279,40 @@ The following code example lets you create the custom appointment window (using 
                     <table width="100%" cellpadding="5">
                         <tbody>
                             <tr style="display: none">
-                                <td>Id:
+                                <td>
+                                    Id:
                                 </td>
                                 <td colspan="2">
                                     <input id="customId" type="text" name="Id" />
                                 </td>
                             </tr>
                             <tr>
-                                <td>Subject:
+                                <td>
+                                    Subject:
                                 </td>
                                 <td colspan="2">
-                                    <input id="subject" type="text" value="" name="Subject" onfocus="temp()" style="width: 100%" />
+                                    <input id="subject" type="text" value="" name="Subject" ng-focus="temp()" style="width: 100%" />
                                 </td>
                             </tr>
                             <tr>
-                                <td>Description:
+                                <td>
+                                    Description:
                                 </td>
                                 <td colspan="2">
                                     <textarea id="customdescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
                                 </td>
                             </tr>
                             <tr>
-                                <td>StartTime:
+                                <td>
+                                    StartTime:
                                 </td>
                                 <td>
                                     <input id="StartTime" type="text" value="" ej-datetimepicker e-width="150px" />
                                 </td>
                             </tr>
                             <tr>
-                                <td>EndTime:
+                                <td>
+                                    EndTime:
                                 </td>
                                 <td>
                                     <input id="EndTime" type="text" value="" ej-datetimepicker e-width="150px" />
@@ -316,13 +321,14 @@ The following code example lets you create the custom appointment window (using 
                             <tr>
                                 <td>Appointment Type:</td>
                                 <td>
-                                    <input type="text" id="AppointmentType" ej-dropdownlist e-datasource="appTypes" e-fields-text="text" e-fields-id="id" e-fields-value="text" /></td>
+                                    <input type="text" id="AppointmentType" ej-dropdownlist e-datasource="appTypes" e-fields-text="text" e-fields-id="id" e-fields-value="text" />
+                                </td>
                             </tr>
                             <tr>
                                 <td colspan="3">
                                     <div class="customcheck">AllDay:</div>
                                     <div class="customcheck">
-                                        <input id="allday" type="checkbox" name="AllDay" onchange="alldayCheck()" />
+                                        <input id="allday" type="checkbox" name="AllDay" ej-checkbox e-change="alldayCheck" />
                                     </div>
                                     <div class="customcheck">Recurrence:</div>
                                     <div>
@@ -340,19 +346,19 @@ The following code example lets you create the custom appointment window (using 
                             </tr>
                             <tr id="edittr" style="display: none;">
                                 <td colspan="3">
-                                    <div><a id="recedit" onclick="Recurrencerule()">Edit</a></div>
+                                    <div><a id="recedit" ng-click="recurrenceRule()">Edit</a></div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </form>
                 <div>
-                    <button type="submit" onclick="cancel()" id="btncancel" ej-button e-width="85px" style="float: right; margin-right: 20px; margin-bottom: 10px;">Cancel</button>
-                    <button type="submit" onclick="save()" id="btnsubmit" ej-button e-width="85px" style="float: right; margin-right: 20px; margin-bottom: 10px;">Submit</button>
+                    <button type="submit" id="btncancel" ej-button e-click="cancel" e-width="85px" style="float: right; margin-right: 20px; margin-bottom: 10px;">Cancel</button>
+                    <button type="submit" id="btnsubmit" ej-button e-click="save" e-width="85px" style="float: right; margin-right: 20px; margin-bottom: 10px;">Submit</button>
                 </div>
             </div>
             <div id="recWindow" style="display: none">
-                <ej-recurrenceeditor id="recurrenceEditor" e-selectedrecurrencetype="0" e-frequencies="recFrequencies"></ej-recurrenceeditor>
+                <div id="recurrenceEditor" ej-recurrenceeditor e-frequencies="recFrequencies" e-selectedrecurrencetype="0"></div>
                 <br />
                 <div>
                     <button type="submit" id="reccancel" ej-button e-click="onRecurrenceClick" style="float: right; margin-right: 20px; margin-bottom: 10px;">Cancel</button>
@@ -385,7 +391,188 @@ The following code example lets you create the custom appointment window (using 
                 EndTime: new Date(2017, 1, 7, 7, 30)
             }];
             $scope.setDate = new Date(2017, 1, 7);
+            //this function executes before the default appointment window is opened
+            $scope.onAppointmentWindowOpen = function (args) {
+                args.cancel = true; // prevents the display of default appointment window
+                var schObj = angular.element("#Schedule1").data("ejSchedule");
+                // When double clicked on the Scheduler cells, fills the StartTime and EndTime fields appropriately
+                angular.element("#StartTime").ejDateTimePicker({ value: args.startTime });
+                angular.element("#EndTime").ejDateTimePicker({ value: args.endTime });
+                angular.element("#AppointmentType").ejDropDownList("clearText");
+                angular.element("#recWindow").css("display", "none");
+                angular.element("#appWindow").css("display", "");
+                if (!ej.isNullOrUndefined(args.target)) {
+                    // When double clicked on the Scheduler cells, if the target is allday or month cells � only then enable check mark on the allday checkbox
+                    if ($(args.target.currentTarget).hasClass("e-alldaycells") || (args.startTime.getHours() == 0 && args.endTime.getHours() == 23))
+                        angular.element("#allday").prop("checked", true);
+                    else
+                        args.model.currentView == "month" ? angular.element("#allday").prop("checked", true) : angular.element("#allday").prop("checked", false);
+                        // If the target is allday or month cells � disable the StartTime and EndTime fields
+                        angular.element("#StartTime,#EndTime").ejDateTimePicker({
+                            enabled: ($(args.target.currentTarget).hasClass("e-alldaycells") || (args.startTime.getHours() == 0 && args.endTime.getHours() == 23) || $(args.target.currentTarget).hasClass("e-monthcells") || args.model.currentView == "month") ? false : true            });
+                }
+                // If double clicked on the appointments, fill the custom appointment window fields with appropriate values.
+                if (!ej.isNullOrUndefined(args.appointment)) {
+                    angular.element("#customId").val(args.appointment.Id);
+                    angular.element("#subject").val(args.appointment.Subject);
+                    angular.element("#customdescription").val(args.appointment.Description);
+                    angular.element("#StartTime").ejDateTimePicker({ value: new Date(args.appointment.StartTime) });
+                    angular.element("#EndTime").ejDateTimePicker({ value: new Date(args.appointment.EndTime) });
+                    // Fills the Appointment type dropdown with its value
+                    var value = args.appointment.AppointmentType;
+                    angular.element("#AppointmentType").ejDropDownList({
+                        text: value, value: value
+                    });
+                    angular.element("#allday").prop("checked", args.appointment.AllDay);
+                    angular.element("#recurrence").ejCheckBox({ checked: args.appointment.Recurrence });
+                    if (args.appointment.Recurrence) {
+                        angular.element("#edittr").css("display", "");
+                        angular.element("#recsummary").html(args.appointment.RecurrenceRule);
+                        angular.element("#summarytr").css("display", "");
+                        recObj = angular.element("#recurrenceEditor").ejRecurrenceEditor('instance');
+                        recObj._recRule = args.appointment.RecurrenceRule; // app recurrence rule is stored in Recurrence editor object
+                        recObj.recurrenceRuleSplit(args.appointment.RecurrenceRule, args.appointment.recurrenceExDate); //splitting the recurrence rule
+                        recObj.showRecurrenceSummary(args.appointment.Id); // updating the recurrence rule in Recurrence editor
+                    }
+                }
+                angular.element("#customWindow").ejDialog("open");
+            }
+            //this function executes when submit button of custom appointment window is clicked
+            $scope.save = function () {
+                // checks if the subject value is not left blank before saving it.
+                if (angular.element.trim(angular.element("#subject").val()) == "") {
+                    angular.element("#subject").addClass("error");
+                    return false;
+                }
+                var obj = {}, temp = {}, rType;
+                var formelement = angular.element("#customWindow").find("#custom").get(0);
+                // looping through the custom form elements to get each value and form a JSON object
+                for (var index = 0; index < formelement.length; index++) {
+                    var columnName = formelement[index].name, $element = angular.element(formelement[index]);
+                    if (columnName != undefined) {
+                        if (columnName == "")
+                            columnName = formelement[index].id.replace(this._id, "");
+                            if (columnName != "" && obj[columnName] == null) {
+                                var value = formelement[index].value;
+                            if (columnName == "Id" && value != "")
+                                value = parseInt(value);
+                            if ($element.hasClass("e-datetimepicker")) {
+                                columnName = $element.attr("id");
+                                value = new Date(value);
+                            }
+                            if (formelement[index].type == "checkbox")
+                                value = formelement[index].checked;
+                            obj[columnName] = value;
+                        }
+                    }
+                }
+                obj["RecurrenceRule"] = (obj.Recurrence) ? recurRule : null;
+                var appTypeObj = angular.element("#AppointmentType").data("ejDropDownList");
+                obj["AppointmentType"] = appTypeObj.getSelectedValue();
+                angular.element("#customWindow").ejDialog("close");
+                var object = angular.element("#Schedule1").data("ejSchedule");
+                object.saveAppointment(obj);
+                clearFields();
+            }
+            // This function executes when the submit/cancel button in the recurrence editor window is pressed.
+            $scope.onRecurrenceClick = function (args) {
+                if (angular.element(args.e.currentTarget).attr("id") == "recsubmit") {
+                    recObj = angular.element("#recurrenceEditor").ejRecurrenceEditor('instance');
+                    recObj.closeRecurPublic();
+                    recurRule = recObj._recRule;
+                    angular.element("#recsummary").html(recurRule);
+                }
+                else
+                    if ((angular.element(args.e.currentTarget).attr("id") == "reccancel")) {
+                        if (angular.element("#recsummary").html() == "") {
+                            angular.element("#edittr").css("display", "none");
+                            angular.element("#recurrence").ejCheckBox({ checked: false });
+                        }
+                    else
+                        angular.element("#recurrence").ejCheckBox({ checked: true });
+                }
+                angular.element("#recWindow").css("display", "none");
+                angular.element("#appWindow").css("display", "");
+                if (angular.element("#recsummary").html() != "")
+                    angular.element("#summarytr").css("display", "");
+            }
+
+            // This function executes when the recurrence checkbox is checked in the custom appointment window
+            $scope.recurCheck = function (args) {
+                if (args.isInteraction) {
+                    if (angular.element("#recurrence").get(0).checked == true) {  // Displays the recurrence field, when recurrence checkbox is checked.
+                        angular.element("#recWindow").css("display", "");
+                        angular.element("#appWindow").css("display", "none");
+                        angular.element("#edittr").css("display", "");
+                    }
+                    else {
+                        angular.element("#recWindow").css("display", "none");
+                        angular.element("#edittr").css("display", "none");
+                        angular.element("#recsummary").html("");
+                        angular.element("#summarytr").css("display", "none");
+                    }
+                }
+            }
+
+            // This function executes when the All-day checkbox is checked in the custom appointment window
+            $scope.alldayCheck = function () {
+                // Disables and sets the specific hours to the StartTime and EndTime fields, when the all-day checkbox is checked
+                if (angular.element("#allday").prop("checked")) {
+                    var a = angular.element("#StartTime").data("ejDateTimePicker").model.value;
+                    a.setHours(0, 0, 0);
+                    var b = angular.element("#EndTime").data("ejDateTimePicker").model.value;
+                    b.setHours(23, 59, 0);
+                    angular.element("#StartTime").ejDateTimePicker({
+                        value: new Date(a),
+                        enabled: false
+                    });
+                    angular.element("#EndTime").ejDateTimePicker({
+                        value: new Date(b),
+                        enabled: false
+                    });
+                }
+                else {  
+                    angular.element("#StartTime").ejDateTimePicker({
+                        enabled: true
+                    });
+                    angular.element("#EndTime").ejDateTimePicker({
+                        enabled: true
+                    });
+                }
+            }
+
+            // This function executes when the cancel button in the custom appointment window is pressed.
+            $scope.cancel = function () {
+                recObj = angular.element("#recurrenceEditor").ejRecurrenceEditor('instance');
+                clearFields();
+                angular.element("#customWindow").ejDialog("close");
+            }
+            // This function executes when the Edit anchor tag in the edit appointment window is clicked.
+            function recurrenceRule() {
+                angular.element("#recWindow").css("display", "");
+                angular.element("#appWindow").css("display", "none");
+            }
         });
+
+        // Clears all the field values of the custom window after saving appointments
+        function clearFields() {
+            angular.element("#customId").val("");
+            recObj = angular.element("#recurrenceEditor").ejRecurrenceEditor('instance');
+            recObj.clearRecurrenceFields();
+            angular.element("#subject").val("");
+            angular.element("#customdescription").val("");
+            angular.element("#recsummary").html("");
+            angular.element("#summarytr").css("display", "none");
+            angular.element("#recurrence").ejCheckBox({ checked: false });
+            angular.element("#edittr").css("display", "none");
+            angular.element("#StartTime,#EndTime").ejDateTimePicker({ enabled: true });
+        }
+
+        // This function executes when the subject text field is currently being focused
+        function temp() {
+            angular.element("#subject").removeClass("error");
+        }
+    });
     </script>
 </body>
 </html>
@@ -413,204 +600,6 @@ The styles to be applied for the controls within the custom appointment window a
 
 {% endhighlight %}
 
-The following function needs to be defined within script section, which gets called before the default appointment window opens.
-
-{% highlight js %}
-
-<script>
-        function onAppointmentWindowOpen(args) {
-            args.cancel = true; // prevents the display of default appointment window
-            var schObj = $("#Schedule1").data("ejSchedule");
-            // When double clicked on the Scheduler cells, fills the StartTime and EndTime fields appropriately
-            $("#StartTime").ejDateTimePicker({ value: args.startTime });
-            $("#EndTime").ejDateTimePicker({ value: args.endTime });
-            $("#recWindow").css("display", "none");
-            $("#appWindow").css("display", "");
-            if (!ej.isNullOrUndefined(args.target)) {
-                // When double clicked on the Scheduler cells, if the target is allday or month cells – only then enable check mark on the allday checkbox
-                if ($(args.target.currentTarget).hasClass("e-alldaycells") || (args.startTime.getHours() == 0 && args.endTime.getHours() == 23))
-                    $("#allday").prop("checked", true);
-                else
-                    args.model.currentView == "month" ? $("#allday").prop("checked", true) : $("#allday").prop("checked", false);
-                // If the target is allday or month cells – disable the StartTime and EndTime fields
-                $("#StartTime,#EndTime").ejDateTimePicker({
-                    enabled: ($(args.target.currentTarget).hasClass("e-alldaycells") || (args.startTime.getHours() == 0 && args.endTime.getHours() == 23) || $(args.target.currentTarget).hasClass("e-monthcells") || args.model.currentView == "month") ? false : true
-                });
-            }
-            // If double clicked on the appointments, fill the custom appointment window fields with appropriate values.
-            if (!ej.isNullOrUndefined(args.appointment)) {
-                $("#customId").val(args.appointment.Id);
-                $("#subject").val(args.appointment.Subject);
-                $("#StartTime").ejDateTimePicker({ value: new Date(args.appointment.StartTime) });
-                $("#EndTime").ejDateTimePicker({ value: new Date(args.appointment.EndTime) });
-                // Fills the Appointment type dropdown with its value
-                var value = args.appointment.AppointmentType;
-                $("#AppointmentType").ejDropDownList("clearText");
-                $("#AppointmentType").ejDropDownList({
-                    text: value, value: value
-                });
-                $("#allday").prop("checked", args.appointment.AllDay);
-                $("#recurrence").ejCheckBox({ checked: args.appointment.Recurrence });
-                if (args.appointment.Recurrence) {
-                    $("#edittr").css("display", "");
-                    $("#recsummary").html(args.appointment.RecurrenceRule);
-                    $("#summarytr").css("display", "");
-                    recObj = $("#recurrenceEditor").ejRecurrenceEditor('instance');
-                    recObj._recRule = args.appointment.RecurrenceRule; // app recurrence rule is stored in Recurrence editor object
-                    recObj.recurrenceRuleSplit(args.appointment.RecurrenceRule, args.appointment.recurrenceExDate); //splitting the recurrence rule
-                    recObj.showRecurrenceSummary(args.appointment.Id); // updating the recurrence rule in Recurrence editor
-                }
-            }
-            $("#customWindow").ejDialog("open");
-        }
-</script>
-
-{% endhighlight %}
-
-On clicking the **Submit** button within the Custom Appointment window, the following function gets executed – which will validate the appointment fields and then save it appropriately.
-
-{% highlight js %}
-
-<script>
-        function save() {
-            // checks if the subject value is not left blank before saving it.
-            if ($.trim($("#subject").val()) == "") {
-                $("#subject").addClass("error");
-                return false;
-            }
-            var obj = {}, temp = {}, rType;
-            var formelement = $("#customWindow").find("#custom").get(0);
-            // looping through the custom form elements to get each value and form a JSON object
-            for (var index = 0; index < formelement.length; index++) {
-                var columnName = formelement[index].name, $element = $(formelement[index]);
-                if (columnName != undefined) {
-                    if (columnName == "")
-                        columnName = formelement[index].id.replace(this._id, "");
-                    if (columnName != "" && obj[columnName] == null) {
-                        var value = formelement[index].value;
-                        if (columnName == "Id" && value != "")
-                            value = parseInt(value);
-                        if ($element.hasClass("e-datetimepicker")) {
-                            columnName = $element.attr("id");
-                            value = new Date(value);
-                        }
-                        if (formelement[index].type == "checkbox")
-                            value = formelement[index].checked;
-                        obj[columnName] = value;
-                    }
-                }
-            }
-            obj["RecurrenceRule"] = (obj.Recurrence) ? recurRule : null;
-            var appTypeObj = $("#AppointmentType").data("ejDropDownList");
-            obj["AppointmentType"] = appTypeObj.getSelectedValue();
-            $("#customWindow").ejDialog("close");
-            var object = $("#Schedule1").data("ejSchedule");
-            object.saveAppointment(obj);
-            clearFields();
-        }
-
-        // This function executes when the submit/cancel button in the recurrence editor window is pressed.
-        function onRecurrenceClick(args) {
-            if ($(args.e.currentTarget).attr("id") == "recsubmit") {
-                recObj = $("#recurrenceEditor").ejRecurrenceEditor('instance');
-                recObj.closeRecurPublic();
-                recurRule = recObj._recRule;
-                $("#recsummary").html(recurRule);
-            }
-            else
-                if (($(args.e.currentTarget).attr("id") == "reccancel")) {
-                    if ($("#recsummary").html() == "") {
-                        $("#edittr").css("display", "none");
-                        $("#recurrence").ejCheckBox({ checked: false });
-                    }
-                    else
-                        $("#recurrence").ejCheckBox({ checked: true });
-                }
-            $("#recWindow").css("display", "none");
-            $("#appWindow").css("display", "");
-            if ($("#recsummary").html() != "")
-                $("#summarytr").css("display", "");
-
-        }
-
-        // This function executes when the Edit anchor tag in the edit appointment window is clicked.
-        function Recurrencerule() {
-            $("#recWindow").css("display", "");
-            $("#appWindow").css("display", "none");
-        }
-
-        // Clears all the field values of the custom window after saving appointments
-        function clearFields() {
-            $("#customId").val("");
-            recObj = $("#recurrenceEditor").ejRecurrenceEditor('instance');
-            recObj.clearRecurrenceFields();
-            $("#subject").val("");
-            $("#AppointmentType").val("");
-            $("#recsummary").html("");
-            $("#summarytr").css("display", "none");
-            $("#recurrence").ejCheckBox({ checked: false });
-            $("#edittr").css("display", "none");
-            $("#StartTime,#EndTime").ejDateTimePicker({ enabled: true });
-        }
-
-        // This function executes when the recurrence checkbox is checked in the custom appointment window
-        function recurCheck(args) {
-            if (args.isInteraction) {
-                if ($("#recurrence").get(0).checked == true) {  // Displays the recurrence field, when recurrence checkbox is checked.
-                    $("#recWindow").css("display", "");
-                    $("#appWindow").css("display", "none");
-                    $("#edittr").css("display", "");
-
-                }
-                else {
-                    $("#recWindow").css("display", "none");
-                    $("#edittr").css("display", "none");
-                    $("#recsummary").html("");
-                    $("#summarytr").css("display", "none");
-                }
-            }
-        }
-
-        // This function executes when the All-day checkbox is checked in the custom appointment window
-        function alldayCheck() {
-            // Disables and sets the specific hours to the StartTime and EndTime fields, when the all-day checkbox is checked
-            if ($("#allday").prop("checked")) {
-                var a = $("#StartTime").data("ejDateTimePicker").model.value;
-                a.setHours(0, 0, 0);
-                var b = $("#EndTime").data("ejDateTimePicker").model.value;
-                b.setHours(23, 59, 0);
-                $("#StartTime").ejDateTimePicker({
-                    value: new Date(a),
-                    enabled: false
-                });
-                $("#EndTime").ejDateTimePicker({
-                    value: new Date(b),
-                    enabled: false
-                });
-            } else {
-                $("#StartTime").ejDateTimePicker({
-                    enabled: true
-                });
-                $("#EndTime").ejDateTimePicker({
-                    enabled: true
-                });
-            }
-        }
-
-        // This function executes when the subject text field is currently being focussed
-        function temp() {
-            $("#subject").removeClass("error");
-        }
-
-        // This function executes when the cancel button in the custom appointment window is pressed.
-        function cancel() {
-            recObj = $("#recurrenceEditor").ejRecurrenceEditor('instance');
-            clearFields();
-            $("#customWindow").ejDialog("close");
-        }
-</script>
-
-{% endhighlight %}
 
 ## Scheduler Customization using queryCellInfo
 
@@ -633,7 +622,7 @@ The following code snippet shows how to customize the appointment and work cells
     <script type="text/javascript">
         angular.module('ScheduleApp', ['ejangular']).controller('ScheduleCtrl', function ($scope) {
         });
-        function checkInfo(args) {
+        $scope.checkInfo = function (args) {
             switch (args.requestType) {
                 case "workcells":
                     args.element.css("background-color", "#ffe9cc");
