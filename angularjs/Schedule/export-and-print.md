@@ -50,9 +50,9 @@ The following code example shows the way to export single appointment from the S
         $scope.setDate = new Date(2017, 1, 7);
     });
     // This function executes, when any of the menu options are clicked in the context menu
-    function onMenuItemClick(args) {
+    $scope.onMenuItemClick = function(args) {
         if (args.events.ID == "export") {
-            var obj = $("#Schedule1").data("ejSchedule");
+            var obj = angular.element("#Schedule1").data("ejSchedule");
             // exportSchedule() method will send a post to the server-side to call a specified action.
             obj.exportSchedule("Home/ExportToICS", null, args.targetInfo.Id);
         }
@@ -95,8 +95,8 @@ The following code example depicts the way to export all the Scheduler appointme
         $scope.setDate = new Date(2017, 1, 7);
     });
     // Clicking on the export button will call this method
-    function onClick(args) {
-        var obj = $("#Schedule1").data("ejSchedule");
+    $scope.onClick = function(args) {
+        var obj = angular.element("#Schedule1").data("ejSchedule");
         // Calls the server-side action ExportToICS
         obj.exportSchedule("Home/ExportToICS", null, null);
     }
@@ -157,8 +157,8 @@ The following code example depicts the way to export the Scheduler with appointm
         $scope.setDate = new Date(2017, 1, 7);
     });
     // Clicking on the export button will call this method
-    function onExportClick(e) {
-        var obj = $("#Schedule1").data("ejSchedule");
+    $scope.onExportClick=function(e) {
+        var obj = angular.element("#Schedule1").data("ejSchedule");
         // Calls the server-side action PDFExport
         obj.exportSchedule("Home/PDFExport", null, null);
     }
@@ -362,8 +362,8 @@ The following code example shows the way to print the entire Scheduler, by keepi
         $scope.setDate = new Date(2017, 1, 7);
     });
     // Clicking on the print button will call this method
-    function onClick(args) {
-        var obj = $("#Schedule1").data("ejSchedule");
+    $scope.onClick = function(args) {
+        var obj = angular.element("#Schedule1").data("ejSchedule");
         obj.print();
     }
     </script>
@@ -445,8 +445,8 @@ For example, here the below code example depicts the way to print the particular
         }];
         $scope.setDate = new Date(2017, 1, 7);
     });
-    function onAppointmentClick(args) {
-        var schObj = $("#Schedule1").data("ejSchedule");
+    $scope.onAppointmentClick = function(args) {
+        var schObj = angular.element("#Schedule1").data("ejSchedule");
         schObj.print(args.appointment);
     }
     </script>
@@ -479,9 +479,10 @@ Refer the following code example to import the appointments into Scheduler.
     <script type="text/javascript">
     angular.module('ScheduleApp', ['ejangular']).controller('ScheduleCtrl', function ($scope) {       
     });
+    $scope.ScheduleImport = function() {
     function ScheduleImport() {
         var dataManger = ej.DataManager({ url: '@Url.Action("ScheduleImportData", "Home")', crossDomain: true });
-        $("#Schedule1").ejSchedule({
+        angular.element("#Schedule1").ejSchedule({
             appointmentSettings: {
                 dataSource: dataManger
             }
