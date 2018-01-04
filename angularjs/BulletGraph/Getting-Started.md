@@ -278,9 +278,9 @@ By default, the **BulletGraph** is rendered in the Horizontal orientation with i
                 e-quantitativescalelength="420" e-orientation="vertical" 
                 e-flowdirection="backward" e-quantitativescalesettings-interval="10"
                 e-quantitativescalesettings-minimum="70" e-quantitativescalesettings-maximum="130"
-                e-quantitativescalesettings-tickposition="near" e-labelsettings-position="above"
-                e-fields-datasource="data" e-fields-category="category" e-fields-featuremeasures="value"
-                e-fields-comparativemeasure="comparativeMeasureValue">
+                e-quantitativescalesettings-tickPosition="near" e-labelsettings-position="above"
+                e-fields-datasource="data" e-fields-category="category" e-fields-featureMeasures="value"
+                e-fields-comparativeMeasure="comparativeMeasureValue">
 </ej-bulletgraph>
 
 
@@ -319,14 +319,14 @@ You have to do the following code changes in the quantitative scale in order to 
 
 {% highlight javascript %}
 
- <ej-bulletgraph e-quantitativescalesettings-majorticksettings-width="1" 
-                 e-quantitativescalesettings-majorticksettings-size="13"
-                 e-quantitativescalesettings-majorticksettings-stroke="gray"
-                 e-quantitativescalesettings-minorticksettings-width="1" 
-                 e-quantitativescalesettings-minorticksettings-size="5"
-                 e-quantitativescalesettings-minorticksettings-stroke="gray"
-                 e-quantitativescalesettings-comparativemeasuresettings-stroke="#507786" 
-                 e-quantitativescalesettings-featuredmeasuresettings-stroke="#169DD8">
+ <ej-bulletgraph e-quantitativescalesettings-majorTickSettings-width="1" 
+                 e-quantitativescalesettings-majorTickSettings-size="13"
+                 e-quantitativescalesettings-majorTickSettings-stroke="gray"
+                 e-quantitativescalesettings-minorTickSettings-width="1" 
+                 e-quantitativescalesettings-minorTickSettings-size="5"
+                 e-quantitativescalesettings-minorTickSettings-stroke="gray"
+                 e-quantitativescalesettings-comparativeMeasureSettings-stroke="#507786" 
+                 e-quantitativescalesettings-featuredMeasureSettings-stroke="#169DD8">
 </ej-bulletgraph>
 
 {% endhighlight %}
@@ -344,16 +344,16 @@ You can display an appropriate Caption and Subtitle in the **BulletGraph** by ad
 {% highlight javascript %}
 
 <ej-bulletgraph e-captionsettings-textposition='Top' e-captionsettings-textalignment='Center' 
-                e-captionsettings-textanchor='middle' 
+                e-captionsettings-textAnchor='middle' 
                 e-captionsettings-text="Monsoon Rainfall - Actual vs Forecast" 
-                e-captionsettings-font-color="null" e-captionsettings-font-fontfamily="segoe ui"
-                e-captionsettings-font-fontstyle="normal" e-captionsettings-font-size="12px"
-                e-captionsettings-font-fontweight="regular" e-captionsettings-font-opacity="1" 
-                e-captionsettings-subtitle-textangle="-90" e-captionsettings-subtitle-text="Rainfall (mm)"
+                e-captionsettings-font-color="null" e-captionsettings-font-fontFamily="segoe ui"
+                e-captionsettings-font-fontStyle="normal" e-captionsettings-font-size="12px"
+                e-captionsettings-font-fontWeight="regular" e-captionsettings-font-opacity="1" 
+                e-captionsettings-subtitle-textAngle="-90" e-captionsettings-subtitle-text="Rainfall (mm)"
                 e-captionsettings-subtitle-location-x="15" e-captionsettings-subtitle-location-y="250" 
-                e-captionsettings-subtitle-font-color="null" e-captionsettings-subtitle-font-fontfamily="segoe ui"
-                e-captionsettings-subtitle-font-fontstyle="normal" e-captionsettings-subtitle-font-size="12px" 
-                e-captionsettings-subtitle-font-fontweight="regular" e-captionsettings-subtitle-font-opacity="1">
+                e-captionsettings-subtitle-font-color="null" e-captionsettings-subtitle-font-fontFamily="segoe ui"
+                e-captionsettings-subtitle-font-fontStyle="normal" e-captionsettings-subtitle-font-size="12px" 
+                e-captionsettings-subtitle-font-fontWeight="regular" e-captionsettings-subtitle-font-opacity="1">
 </ej-bulletgraph>
 
 {% endhighlight %}

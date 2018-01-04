@@ -9,11 +9,11 @@ keywords: ejcirculargauge, circulargauge, circulargauge widget, js circulargauge
 
 # Getting Started
 
-Before we start with the circulargauge, please refer [this page](http://help.syncfusion.com/js/angularjs) page for general information regarding integrating Syncfusion widget’s.
+Before we start with the circular gauge, please refer [this page](http://help.syncfusion.com/js/angularjs) page for general information regarding integrating Syncfusion widget’s.
 
 ## Adding JavaScript and CSS references
 
-To render the circulargauge control, the following list of external dependencies are needed, 
+To render the circular gauge control, the following list of external dependencies are needed, 
 
 * [jQuery](http://jquery.com) - 1.7.1 and later versions
 * [Angular](https://angularjs.org/) - angular latest versions
@@ -55,7 +55,7 @@ The other required internal dependencies are tabulated below,
         ej.circulargauge.min.js 
       </td>
       <td>
-         Circulargauge core script file which includes circulargauge related scripts files.
+         CircularGauge core script file which includes circular gauge related scripts files.
       </td>
    </tr>
     <tr>
@@ -70,7 +70,7 @@ The other required internal dependencies are tabulated below,
 
 N> Refer the `ej.web.all.min.js` (which encapsulates all the `ej` controls and frameworks in a single file) in the application instead of referring all the above specified internal dependencies. 
 
-To get the real appearance of the Circulargauge, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
+To get the real appearance of the CircularGauge, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
 
 So the complete boilerplate code is
 
@@ -79,7 +79,7 @@ So the complete boilerplate code is
     <!DOCTYPE html>
     <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="CircularGaugeApp">
     <head>
-    <title>Essential Studio for AngularJS: Circulargauge</title>
+    <title>Essential Studio for AngularJS: CircularGauge</title>
     <!-- Essential Studio for JavaScript  theme reference -->
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!-- Essential Studio for JavaScript  script references -->
@@ -98,7 +98,7 @@ So the complete boilerplate code is
 N> 1. In production, we highly recommend you to use our [`custom script generator`](http://help.syncfusion.com/js/custom-script-generator) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [`GZip compression`](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
 N> 2. For themes, you can use the `ej.web.all.min.css` CDN link from the code snippet given. To add the themes in your application, please refer to [`this link`](http://help.syncfusion.com/js/theming-in-essential-javascript-components).
 
-## Create a circulargauge
+## Create a circular gauge
 
 All the Essential JavaScript directives have been encapsulated into a single module called `ejangular` so the first step would be to declare dependency for this module within your AngularJS application.
 
@@ -174,8 +174,8 @@ The above code example renders a **Gauge** as shown in the following screen shot
  <ej-CircularGauge e-height="500" e-width="500" e-backgroundcolor="#3D3F3D" e-readonly="false">
      <e-scales>
           <e-scale e-showranges="true" e-showindicators="true" e-maximum="200" e-majorintervalvalue="20" e-minorintervalvalue="5"
-                   e-pointercap-radius="15" e-pointercap-borderwidth="0" e-pointercap-backgroundcolor="#797C79" 
-                   e-pointercap-bordercolor="#797C79">
+                   e-pointercap-radius="15" e-pointercap-borderWidth="0" e-pointercap-backgroundColor="#797C79" 
+                   e-pointercap-borderColor="#797C79">
           //Add the labels customization code here
           //Add the pointers customization code here
           //Add the ticks customization code here
@@ -203,8 +203,8 @@ To display the values in the **Gauge,** scale labels are used. You can customize
 <ej-CircularGauge e-height="500" e-width="500" e-backgroundcolor="#3D3F3D" e-readonly="false">
     <e-scales>
      <e-scale e-showranges="true" e-showindicators="true" e-maximum="200" e-majorintervalvalue="20" 
-     e-minorintervalvalue="5" e-pointercap-radius="15" e-pointercap-borderwidth="0" 
-     e-pointercap-backgroundcolor="#797C79" e-pointercap-bordercolor="#797C79">
+     e-minorintervalvalue="5" e-pointercap-radius="15" e-pointercap-borderWidth="0" 
+     e-pointercap-backgroundColor="#797C79" e-pointercap-borderColor="#797C79">
      <e-labels>
      <e-label e-color="#ffffff"></e-label>
      </e-labels>
@@ -235,8 +235,8 @@ You can use three pointers that denote kilometer value, rotation per minute valu
 <ej-CircularGauge e-height="500" e-width="500" e-backgroundcolor="#3D3F3D" e-readonly="false">
     <e-scales>
         <e-scale e-showranges="true" e-showindicators="true" e-maximum="200" e-majorintervalvalue="20"
-         e-minorintervalvalue="5" e-pointercap-radius="15" e-pointercap-borderwidth="0" 
-         e-pointercap-backgroundcolor="#797C79" e-pointercap-bordercolor="#797C79">
+         e-minorintervalvalue="5" e-pointercap-radius="15" e-pointercap-borderWidth="0" 
+         e-pointercap-backGroundColor="#797C79" e-pointercap-borderColor="#797C79">
          <e-labels>
                <e-label e-color="#ffffff"></e-label>
          </e-labels>
@@ -281,8 +281,8 @@ You can display the tick value with customization as given in the following code
 <ej-CircularGauge e-height="500" e-width="500" e-backgroundcolor="#3D3F3D" e-readonly="false">
     <e-scales>
         <e-scale e-showranges="true" e-showindicators="true" e-maximum="200" e-majorintervalvalue="20" 
-        e-minorintervalvalue="5" e-pointercap-radius="15" e-pointercap-borderwidth="0" 
-        e-pointercap-backgroundcolor="#797C79" e-pointercap-bordercolor="#797C79">
+        e-minorintervalvalue="5" e-pointercap-radius="15" e-pointercap-borderWidth="0" 
+        e-pointercap-backgroundColor="#797C79" e-pointercap-borderColor="#797C79">
         <e-labels>
                <e-label e-color="#ffffff"></e-label>
         </e-labels>
@@ -331,8 +331,8 @@ Ranges denote the property of scale value in the speedometer. The color values o
  <ej-CircularGauge e-height="500" e-width="500" e-backgroundcolor="#3D3F3D" e-readonly="false">
     <e-scales>
         <e-scale e-showranges="true" e-showindicators="true" e-maximum="200" e-majorintervalvalue="20"
-        e-minorintervalvalue="5" e-pointercap-radius="15" e-pointercap-borderwidth="0" 
-        e-pointercap-backgroundcolor="#797C79" e-pointercap-bordercolor="#797C79">
+        e-minorintervalvalue="5" e-pointercap-radius="15" e-pointercap-borderWidth="0" 
+        e-pointercap-backgroundColor="#797C79" e-pointercap-borderColor="#797C79">
         <e-labels>
                <e-label e-color="#ffffff"></e-label>
         </e-labels>
@@ -382,8 +382,8 @@ Indicators denote whether the pointer values are placed in their respective zone
 <ej-CircularGauge e-height="500" e-width="500" e-backgroundcolor="#3D3F3D" e-readonly="false">
     <e-scales>
         <e-scale e-showranges="true" e-showindicators="true" e-maximum="200" e-majorintervalvalue="20"
-        e-minorintervalvalue="5" e-pointercap-radius="15" e-pointercap-borderwidth="0" 
-        e-pointercap-backgroundcolor="#797C79" e-pointercap-bordercolor="#797C79">
+        e-minorintervalvalue="5" e-pointercap-radius="15" e-pointercap-borderWidth="0" 
+        e-pointercap-backgroundColor="#797C79" e-pointercap-borderColor="#797C79">
         <e-labels>
                <e-label e-color="#ffffff"></e-label>
         </e-labels>
@@ -482,8 +482,8 @@ You can specify the text in the **Gauge** using **Custom labels** and you can cu
 <ej-CircularGauge e-height="500" e-width="500" e-backgroundcolor="#3D3F3D" e-readonly="false">
     <e-scales>
         <e-scale e-showranges="true" e-showindicators="true" e-maximum="200" e-majorintervalvalue="20"
-         e-minorintervalvalue="5" e-pointercap-radius="15" e-pointercap-borderwidth="0" 
-         e-pointercap-backgroundcolor="#797C79" e-pointercap-bordercolor="#797C79">
+         e-minorintervalvalue="5" e-pointercap-radius="15" e-pointercap-borderWidth="0" 
+         e-pointercap-backgroundColor="#797C79" e-pointercap-borderColor="#797C79">
         <e-labels>
                <e-label e-color="#ffffff"></e-label>
         </e-labels>

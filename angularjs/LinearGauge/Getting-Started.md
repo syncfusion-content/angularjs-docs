@@ -9,14 +9,14 @@ keywords: ejlineargauge, lineargauge, lineargauge widget, js lineargauge,  angul
 
 # Getting Started
 
-Before we start with the lineargauge, please refer [this page](http://help.syncfusion.com/js/angularjs) page for general information regarding integrating Syncfusion widget’s.
+Before we start with the linear gauge, please refer [this page](http://help.syncfusion.com/js/angularjs) page for general information regarding integrating Syncfusion widget’s.
 
 ## Adding JavaScript and CSS references
 
-To render the lineargauge control, the following list of external dependencies are needed, 
+To render the linear gauge control, the following list of external dependencies are needed, 
 
 * [jQuery](http://jquery.com) - 1.7.1 and later versions
-* [Angular](https://angularjs.org/) - angular latest versions
+* [Angular](https://angularjs.org/) - Angular latest versions
 
 The required angular script as `angular.min.js` and `ej.widget.angular.min.js` which can be available in below [CDN](/js/cdn) links:
 
@@ -55,7 +55,7 @@ The other required internal dependencies are tabulated below,
         ej.lineargauge.min.js 
       </td>
       <td>
-         Lineargauge core script file which includes lineargauge related scripts files.
+         LinearGauge core script file which includes linear gauge related scripts files.
       </td>
    </tr>
     <tr>
@@ -70,7 +70,7 @@ The other required internal dependencies are tabulated below,
 
 N> Refer the `ej.web.all.min.js` (which encapsulates all the `ej` controls and frameworks in a single file) in the application instead of referring all the above specified internal dependencies. 
 
-To get the real appearance of the lineargauge, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
+To get the real appearance of the linear gauge, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
 
 So the complete boilerplate code is
 
@@ -98,11 +98,11 @@ So the complete boilerplate code is
 N> 1. In production, we highly recommend you to use our [`custom script generator`](http://help.syncfusion.com/js/custom-script-generator) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [`GZip compression`](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
 N> 2. For themes, you can use the `ej.web.all.min.css` CDN link from the code snippet given. To add the themes in your application, please refer to [`this link`](http://help.syncfusion.com/js/theming-in-essential-javascript-components).
 
-## Create a lineargauge
+## Create a linear gauge
 
 All the Essential JavaScript directives have been encapsulated into a single module called `ejangular` so the first step would be to declare dependency for this module within your AngularJS application.
 
-The lineargauge can be created using `ej-lineargauge` AngularJS directive and its properties can be defined using `e-` prefix followed by the property name.(For example, e-height)
+The linear gauge can be created using `ej-lineargauge` AngularJS directive and its properties can be defined using `e-` prefix followed by the property name.(For example, e-height)
 
 The code example for defining controls in AngularJS is as follows,
 
@@ -415,33 +415,33 @@ e-drawlabels="DrawLabel">
         function DrawCustomLabel(args) {
             if (args.customLabelIndex == 2) {
                 var temp = args.scaleElement.barPointers[0].value;
-                var fahValue = (temp * (9 / 5)) + 32;
+                var faValue = (temp * (9 / 5)) + 32;
                 if (temp == -10) {
-                    args.style.textValue = "Very Cold Weather" + "(" + fahValue.toFixed(1) + "° F)";
+                    args.style.textValue = "Very Cold Weather" + "(" + faValue.toFixed(1) + "° F)";
                 }
                 else if ((temp > -10 && temp < 0) || (temp > 0 && temp < 15)) {
-                    args.style.textValue = "Cool Weather" + " (" + fahValue.toFixed(1) + "° F)";
+                    args.style.textValue = "Cool Weather" + " (" + faValue.toFixed(1) + "° F)";
                 }
                 else if (temp == 0) {
-                    args.style.textValue ="Freezing point of Water" + "(" + fahValue.toFixed(1) + "° F)";
+                    args.style.textValue ="Freezing point of Water" + "(" + faValue.toFixed(1) + "° F)";
                 }
                 else if (temp >= 15 && temp < 30) {
-                    args.style.textValue = "Room Temperature" + " (" + fahValue.toFixed(1) + "° F)";
+                    args.style.textValue = "Room Temperature" + " (" + faValue.toFixed(1) + "° F)";
                 }
                 else if (temp == 30) {
-                    args.style.textValue = "Beach Weather" + " (" + fahValue.toFixed(1) + "° F)";
+                    args.style.textValue = "Beach Weather" + " (" + faValue.toFixed(1) + "° F)";
                 }
                 else if (temp == 37) {
-                    args.style.textValue = "Body Temperature" + " (" + fahValue.toFixed(1) + "° F)";
+                    args.style.textValue = "Body Temperature" + " (" + faValue.toFixed(1) + "° F)";
                 }
                 else if (temp == 40) {
-                    args.style.textValue = "Hot Bath Temperature" + " (" + fahValue.toFixed(1) + "° F)";
+                    args.style.textValue = "Hot Bath Temperature" + " (" + faValue.toFixed(1) + "° F)";
                 }
                 else if (temp > 40 && temp < 100) {
-                    args.style.textValue = "Very Hot Temperature" + " (" + fahValue.toFixed(1) + "° F)";
+                    args.style.textValue = "Very Hot Temperature" + " (" + faValue.toFixed(1) + "° F)";
                 }
                 else if (temp == 100) {
-                    args.style.textValue ="Boiling point of Water" + "(" + fahValue.toFixed(1) + "° F)";
+                    args.style.textValue ="Boiling point of Water" + "(" + faValue.toFixed(1) + "° F)";
                 }
             }
         }
