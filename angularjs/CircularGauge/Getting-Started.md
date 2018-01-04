@@ -146,7 +146,7 @@ The following screenshot displays a **Gauge** in which height and width are set.
 
 ## Set Background Color
 
-You can draw the speedometer with dark background and to vary the speed of the pointer, set the **readOnly** option as **False** for user interaction. 
+You can draw the speedometer with dark background and to vary the speed of the pointer, set the **readOnly** option as **false** for user interaction. 
 
 {% highlight javascript %}
 

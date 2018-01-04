@@ -149,9 +149,9 @@ On executing the above code sample renders a default **Linear Gauge** with heigh
 
 ## Set animate option and Label Color
 
-* You can draw the Thermometer with Label color and set animate property to _True_.  
+* You can draw the Thermometer with Label color and set animate property to _true_.  
 
-* Initially set the animate property to _False_ to avoid unwanted script loads.
+* Initially set the animate property to _false_ to avoid unwanted script loads.
 
 
 
@@ -329,7 +329,7 @@ On executing the above code sample renders a **Linear Gauge** with custom labels
 
 * You can specify the texts using **Custom labels** which displays in the gauge and customize them using various properties.
 
-* You can change the **showIndicators** property as **True** to show the custom labels.
+* You can change the **showIndicators** property as **true** to show the custom labels.
 
 
 
