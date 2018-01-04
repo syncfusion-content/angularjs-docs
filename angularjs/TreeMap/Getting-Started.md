@@ -292,7 +292,7 @@ You can customize the Leaf level TreeMap items using `leafItemSettings`. The Lab
 
 <div id="treemapContainer" style="align-content:center;width: 800px; height: 400px;" ej-treemap 
          e-showtooltip="true"
-         e-leafitemsettings-labelpath="path">
+         e-leafitemsettings-labelPath="path">
     </div>
         <script>
 

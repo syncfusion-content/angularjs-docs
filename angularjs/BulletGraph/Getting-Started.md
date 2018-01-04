@@ -257,8 +257,8 @@ Once the **dataSource** property is assigned with the required values, you can b
 
 
 <ej-bulletgraph e-fields-datasource="data"  e-fields-category="category"  
-                e-fields-featuremeasures="value" 
-                e-fields-comparativemeasure="comparativeMeasureValue">
+                e-fields-featureMeasures="value" 
+                e-fields-comparativeMeasure="comparativeMeasureValue">
 </ej-bulletgraph>
 
 {% endhighlight %}
