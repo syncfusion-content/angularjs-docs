@@ -67,14 +67,14 @@ Add a **&lt;script&gt;** tag anywhere in a web page and initialize **TreeMap** a
 
 {% highlight html %}
 
-    <div id="treemapContainer" style="width: 800px; height: 400px;" ej-treemap e-datasource="populationdata" e-weightvaluepath="WValuePath">
+    <div id="treemapContainer" style="width: 800px; height: 400px;" ej-treemap e-datasource="populationData" e-weightvaluepath="WValuePath">
 
     </div>
         <script>
             //..
             angular.module('TreemapApp', ['ejangular'])
             .controller('TreemapCtrl', function ($scope) {
-                    $scope.populationdata = population_data;
+                    $scope.populationData = population_data;
                     $scope.WValuePath = "Population";
                 });
         </script>
@@ -161,13 +161,13 @@ The final **HTML** file is illustrated in the following code sample.
     <body>
     	  
       <div id="treemapContainer" style="align-content:center;width: 800px; height: 400px;" ej-treemap 
-      e-datasource="populationdata" e-weightvaluepath="WValuePath">
+      e-datasource="populationData" e-weightvaluepath="WValuePath">
 
     </div>
         <script>
             angular.module('TreemapApp', ['ejangular'])
             .controller('TreemapCtrl', function ($scope) {
-                    $scope.populationdata = population_data;
+                    $scope.populationData = population_data;
                     $scope.WValuePath = "Population";
                 });
         </script>      
@@ -202,14 +202,14 @@ The following code sample explains how to group TreeMap Items using ‘Levels’
 <body ng-controller="TreemapCtrl">
     <div id="treemapContainer" style="align-content:center;width: 800px; height: 400px;" ej-treemap>
         <div e-levels>
-            <e-level e-grouppath="gname" e-groupgap="gap"></e-level>
+            <e-level e-grouppath="name" e-groupgap="gap"></e-level>
         </div>
     </div>
         <script>
             angular.module('TreemapApp', ['ejangular'])
            .controller('TreemapCtrl', function ($scope) {
                     //..
-                    $scope.gname = "Continent";
+                    $scope.name = "Continent";
                     $scope.gap = 5;
                 });
         </script>
@@ -292,14 +292,14 @@ You can customize the Leaf level TreeMap items using `leafItemSettings`. The Lab
 
 <div id="treemapContainer" style="align-content:center;width: 800px; height: 400px;" ej-treemap 
          e-showtooltip="true"
-         e-leafitemsettings-labelpath="lpath">
+         e-leafitemsettings-labelpath="path">
     </div>
         <script>
 
             angular.module('TreemapApp', ['ejangular'])
                 .controller('TreemapCtrl', function ($scope) {
                     //...
-                    $scope.lpath = "Region";
+                    $scope.path = "Region";
                 });
         </script>
 
