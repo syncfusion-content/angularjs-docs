@@ -9,11 +9,11 @@ keywords: ejbulletgraph, bulletgraph, bulletgraph widget, js bulletgraph,angular
 
 # Getting Started
 
-Before we start with the bulletgraph, please refer [this page](http://help.syncfusion.com/js/angularjs) page for general information regarding integrating Syncfusion widget’s.
+Before we start with the bullet graph, please refer [this page](http://help.syncfusion.com/js/angularjs) page for general information regarding integrating Syncfusion widget’s.
 
 ## Adding JavaScript and CSS references
 
-To render the bulletgraph control, the following list of external dependencies are needed, 
+To render the bullet graph control, the following list of external dependencies are needed, 
 
 * [jQuery](http://jquery.com) - 1.7.1 and later versions
 * [Angular](https://angularjs.org/) - angular latest versions
@@ -55,14 +55,14 @@ The other required internal dependencies are tabulated below,
         ej.bulletgraph.min.js 
       </td>
       <td>
-         Bulletgraph core script file which includes bulletgraph related scripts files.
+         Bullet graph core script file which includes bulletgraph related scripts files.
       </td>
    </tr>
 </table>
 
 N> Refer the `ej.web.all.min.js` (which encapsulates all the `ej` controls and frameworks in a single file) in the application instead of referring all the above specified internal dependencies. 
 
-To get the real appearance of the bulletgraph, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
+To get the real appearance of the bullet graph, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
 
 So the complete boilerplate code is
 
@@ -91,11 +91,11 @@ So the complete boilerplate code is
 N> 1. In production, we highly recommend you to use our [`custom script generator`](http://help.syncfusion.com/js/custom-script-generator) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [`GZip compression`](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
 N> 2. For themes, you can use the `ej.web.all.min.css` CDN link from the code snippet given. To add the themes in your application, please refer to [`this link`](http://help.syncfusion.com/js/theming-in-essential-javascript-components).
 
-## Create a bulletgraph
+## Create a bullet graph
 
 All the Essential JavaScript directives have been encapsulated into a single module called `ejangular` so the first step would be to declare dependency for this module within your AngularJS application.
 
-The lineargauge can be created using `ej-bulletgraph` AngularJS directive and its properties can be defined using `e-` prefix followed by the property name.(For example, e-height)
+The bullet graph can be created using `ej-bulletgraph` AngularJS directive and its properties can be defined using `e-` prefix followed by the property name.(For example, e-height)
 
 The code example for defining controls in AngularJS is as follows,
 

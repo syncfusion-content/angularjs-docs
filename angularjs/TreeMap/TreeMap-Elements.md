@@ -254,7 +254,7 @@ You can handle the label overflow, by specifying any one of the following values
      //...
      <e-levels>
      <e-level e-grouppath="Continent" e-showlabels="true" e-groupgap="2" e-headerheight="20" 
-     e-headertemplate="headertemplate" e-labelposition="topleft" ></e-level>
+     e-headertemplate="headertemplate" e-labelposition="topLeft" ></e-level>
      </e-levels>
      </ej-treemap>
      </div>
