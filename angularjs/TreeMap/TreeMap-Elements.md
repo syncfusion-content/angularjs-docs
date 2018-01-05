@@ -19,7 +19,7 @@ TreeMap contains various elements such as,
 
 You can set the color value of **leaf nodes** using `e-treeMapLegend`. This legend is appropriate only for the **TreeMap** whose leaf nodes are colored using `e-rangeColorMapping`.
 
-You can set `e-showLegend` property value to **“True”** to enable or disable legend visibility.
+You can set `e-showLegend` property value to **“true”** to enable or disable legend visibility.
 
 ### TreeMap Legend
 
@@ -91,7 +91,7 @@ You can provide the left and right labels to interactive legend by using `e-lege
      <div id="mapContainer" style="align-content:center;width: 800px; height: 400px;">
      <ej-treemap e-showlegend="true" e-legendsettings-height="15" e-legendsettings-width="150" 
      e-legendsettings-mode="interactive" e-legendsettings-title="population" 
-     e-legendsettings-leftLabel="0.5M" e-legendsettings-righlabel="40M" e-legendsettings-dockposition="top">
+     e-legendsettings-leftLabel="0.5M" e-legendsettings-rightLabel="40M" e-legendsettings-dockPosition="top">
      //...
      </ej-treemap>
      </div>
@@ -125,11 +125,11 @@ You can set headers for each level by setting the `e-showHeader` property of the
     //...
      <e-levels>
      <e-level e-grouppath="Continent" e-groupgap="2" e-headerheight="25" 
-     e-headertemplate="headertemplate"></e-level>
+     e-headertemplate="headerTemplate"></e-level>
      </e-levels>
      </ej-treemap>
      </div>
-     <script  id="headertemplate" type="application/htmlrender">
+     <script  id="headerTemplate" type="application/htmlrender">
      <div style="background-color: white; margin:5px">
      <label style="color:black;font-size:large;" >{{:header}}</label><br />            
      </div>                        
@@ -206,7 +206,7 @@ You can also set labels for the leaf nodes by setting the `e-showLabels` propert
      //...
      <e-levels>
      <e-level e-grouppath="Continent" e-showlabels="true" e-groupgap="2" e-headerheight="20" 
-     e-headertemplate="headertemplate" e-labelposition="topleft" ></e-level>
+     e-headertemplate="headerTemplate" e-labelposition="topLeft" ></e-level>
      </e-levels>
      </ej-treemap>
      </div>
@@ -237,7 +237,7 @@ You can handle the label overflow, by specifying any one of the following values
 **None**       - By specifying textOverflow as “none”, it displays the default label text.
 **Hide**       - By specifying textOverflow as “hide”, You can hide the label, when it exceeds the header width.
 **Wrap**       - By specifying textOverflow as “wrap”, you can wrap the label text.
-**Wrapbyword** - By specifying textOverflow as “wrapbyword”, you can wrap the label text by word.
+**WrapByWord** - By specifying textOverflow as “wrap by word”, you can wrap the label text by word.
 
 
 {% highlight html %}
@@ -254,7 +254,7 @@ You can handle the label overflow, by specifying any one of the following values
      //...
      <e-levels>
      <e-level e-grouppath="Continent" e-showlabels="true" e-groupgap="2" e-headerheight="20" 
-     e-headertemplate="headertemplate" e-labelposition="topleft" ></e-level>
+     e-headertemplate="headerTemplate" e-labelposition="topLeft" ></e-level>
      </e-levels>
      </ej-treemap>
      </div>
