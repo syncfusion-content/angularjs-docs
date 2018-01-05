@@ -16,9 +16,9 @@ Before we start with the circular gauge, please refer [this page](http://help.sy
 To render the circular gauge control, the following list of external dependencies are needed, 
 
 * [jQuery](http://jquery.com) - 1.7.1 and later versions
-* [Angular](https://angularjs.org/) - angular latest versions
+* [Angular](https://angularjs.org/) - Angular latest versions
 
-The required angular script as `angular.min.js` and `ej.widget.angular.min.js` which can be available in below [CDN](/js/cdn) links:
+The required Angular script as `angular.min.js` and `ej.widget.angular.min.js` which can be available in below [CDN](/js/cdn) links:
 
 * `angular.min.js` - [http://cdn.syncfusion.com/js/assets/external/angular.min.js](http://cdn.syncfusion.com/js/assets/external/angular.min.js)
 * `ej.widget.angular.min.js` - [http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js](http://cdn.syncfusion.com/14.3.0.49/js/common/ej.widget.angular.min.js)
