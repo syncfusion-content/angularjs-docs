@@ -49,4 +49,4 @@ angular.module('dropdownlistApp', ['ejangular'])
 
 {% endhighlight %}
 
-![](LoadOnDemand/loadondemand.png)
+![](LoadOnDemand_images/loadondemand.png)
