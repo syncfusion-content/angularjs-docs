@@ -9,16 +9,16 @@ keywords: ejbulletgraph, bulletgraph, bulletgraph widget, js bulletgraph,angular
 
 # Getting Started
 
-Before we start with the bulletgraph, please refer [this page](http://help.syncfusion.com/js/angularjs) page for general information regarding integrating Syncfusion widget’s.
+Before we start with the bullet graph, please refer [this page](http://help.syncfusion.com/js/angularjs) page for general information regarding integrating Syncfusion widget’s.
 
 ## Adding JavaScript and CSS references
 
-To render the bulletgraph control, the following list of external dependencies are needed, 
+To render the bullet graph control, the following list of external dependencies are needed, 
 
 * [jQuery](http://jquery.com) - 1.7.1 and later versions
-* [Angular](https://angularjs.org/) - angular latest versions
+* [Angular](https://angularjs.org/) - Angular latest versions
 
-The required angular script as `angular.min.js` and `ej.widget.angular.min.js` which can be available in below [CDN](/js/cdn) links:
+The required Angular script as `angular.min.js` and `ej.widget.angular.min.js` which can be available in below [CDN](/js/cdn) links:
 
 * `angular.min.js` - [http://cdn.syncfusion.com/js/assets/external/angular.min.js](http://cdn.syncfusion.com/js/assets/external/angular.min.js)
 * `ej.widget.angular.min.js` - [http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js](http://cdn.syncfusion.com/14.3.0.49/js/common/ej.widget.angular.min.js)
@@ -55,14 +55,14 @@ The other required internal dependencies are tabulated below,
         ej.bulletgraph.min.js 
       </td>
       <td>
-         Bulletgraph core script file which includes bulletgraph related scripts files.
+         Bullet graph core script file which includes bullet graph related scripts files.
       </td>
    </tr>
 </table>
 
 N> Refer the `ej.web.all.min.js` (which encapsulates all the `ej` controls and frameworks in a single file) in the application instead of referring all the above specified internal dependencies. 
 
-To get the real appearance of the bulletgraph, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
+To get the real appearance of the bullet graph, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
 
 So the complete boilerplate code is
 
@@ -91,11 +91,11 @@ So the complete boilerplate code is
 N> 1. In production, we highly recommend you to use our [`custom script generator`](http://help.syncfusion.com/js/custom-script-generator) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [`GZip compression`](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
 N> 2. For themes, you can use the `ej.web.all.min.css` CDN link from the code snippet given. To add the themes in your application, please refer to [`this link`](http://help.syncfusion.com/js/theming-in-essential-javascript-components).
 
-## Create a bulletgraph
+## Create a bullet graph
 
 All the Essential JavaScript directives have been encapsulated into a single module called `ejangular` so the first step would be to declare dependency for this module within your AngularJS application.
 
-The lineargauge can be created using `ej-bulletgraph` AngularJS directive and its properties can be defined using `e-` prefix followed by the property name.(For example, e-height)
+The bullet graph can be created using `ej-bulletgraph` AngularJS directive and its properties can be defined using `e-` prefix followed by the property name.(For example, e-height)
 
 The code example for defining controls in AngularJS is as follows,
 
@@ -257,8 +257,8 @@ Once the **dataSource** property is assigned with the required values, you can b
 
 
 <ej-bulletgraph e-fields-datasource="data"  e-fields-category="category"  
-                e-fields-featuremeasures="value" 
-                e-fields-comparativemeasure="comparativeMeasureValue">
+                e-fields-featureMeasures="value" 
+                e-fields-comparativeMeasure="comparativeMeasureValue">
 </ej-bulletgraph>
 
 {% endhighlight %}
@@ -278,9 +278,9 @@ By default, the **BulletGraph** is rendered in the Horizontal orientation with i
                 e-quantitativescalelength="420" e-orientation="vertical" 
                 e-flowdirection="backward" e-quantitativescalesettings-interval="10"
                 e-quantitativescalesettings-minimum="70" e-quantitativescalesettings-maximum="130"
-                e-quantitativescalesettings-tickposition="near" e-labelsettings-position="above"
-                e-fields-datasource="data" e-fields-category="category" e-fields-featuremeasures="value"
-                e-fields-comparativemeasure="comparativeMeasureValue">
+                e-quantitativescalesettings-tickPosition="near" e-labelsettings-position="above"
+                e-fields-datasource="data" e-fields-category="category" e-fields-featureMeasures="value"
+                e-fields-comparativeMeasure="comparativeMeasureValue">
 </ej-bulletgraph>
 
 
@@ -319,14 +319,14 @@ You have to do the following code changes in the quantitative scale in order to 
 
 {% highlight javascript %}
 
- <ej-bulletgraph e-quantitativescalesettings-majorticksettings-width="1" 
-                 e-quantitativescalesettings-majorticksettings-size="13"
-                 e-quantitativescalesettings-majorticksettings-stroke="gray"
-                 e-quantitativescalesettings-minorticksettings-width="1" 
-                 e-quantitativescalesettings-minorticksettings-size="5"
-                 e-quantitativescalesettings-minorticksettings-stroke="gray"
-                 e-quantitativescalesettings-comparativemeasuresettings-stroke="#507786" 
-                 e-quantitativescalesettings-featuredmeasuresettings-stroke="#169DD8">
+ <ej-bulletgraph e-quantitativescalesettings-majorTickSettings-width="1" 
+                 e-quantitativescalesettings-majorTickSettings-size="13"
+                 e-quantitativescalesettings-majorTickSettings-stroke="gray"
+                 e-quantitativescalesettings-minorTickSettings-width="1" 
+                 e-quantitativescalesettings-minorTickSettings-size="5"
+                 e-quantitativescalesettings-minorTickSettings-stroke="gray"
+                 e-quantitativescalesettings-comparativeMeasureSettings-stroke="#507786" 
+                 e-quantitativescalesettings-featuredMeasureSettings-stroke="#169DD8">
 </ej-bulletgraph>
 
 {% endhighlight %}
@@ -344,16 +344,16 @@ You can display an appropriate Caption and Subtitle in the **BulletGraph** by ad
 {% highlight javascript %}
 
 <ej-bulletgraph e-captionsettings-textposition='Top' e-captionsettings-textalignment='Center' 
-                e-captionsettings-textanchor='middle' 
+                e-captionsettings-textAnchor='middle' 
                 e-captionsettings-text="Monsoon Rainfall - Actual vs Forecast" 
-                e-captionsettings-font-color="null" e-captionsettings-font-fontfamily="segoe ui"
-                e-captionsettings-font-fontstyle="normal" e-captionsettings-font-size="12px"
-                e-captionsettings-font-fontweight="regular" e-captionsettings-font-opacity="1" 
-                e-captionsettings-subtitle-textangle="-90" e-captionsettings-subtitle-text="Rainfall (mm)"
+                e-captionsettings-font-color="null" e-captionsettings-font-fontFamily="segoe ui"
+                e-captionsettings-font-fontStyle="normal" e-captionsettings-font-size="12px"
+                e-captionsettings-font-fontWeight="regular" e-captionsettings-font-opacity="1" 
+                e-captionsettings-subtitle-textAngle="-90" e-captionsettings-subtitle-text="Rainfall (mm)"
                 e-captionsettings-subtitle-location-x="15" e-captionsettings-subtitle-location-y="250" 
-                e-captionsettings-subtitle-font-color="null" e-captionsettings-subtitle-font-fontfamily="segoe ui"
-                e-captionsettings-subtitle-font-fontstyle="normal" e-captionsettings-subtitle-font-size="12px" 
-                e-captionsettings-subtitle-font-fontweight="regular" e-captionsettings-subtitle-font-opacity="1">
+                e-captionsettings-subtitle-font-color="null" e-captionsettings-subtitle-font-fontFamily="segoe ui"
+                e-captionsettings-subtitle-font-fontStyle="normal" e-captionsettings-subtitle-font-size="12px" 
+                e-captionsettings-subtitle-font-fontWeight="regular" e-captionsettings-subtitle-font-opacity="1">
 </ej-bulletgraph>
 
 {% endhighlight %}
@@ -366,7 +366,7 @@ The following screenshot displays a **BulletGraph** in the caption and title in 
 
 **Show Tooltip**
 
-You can use a Tooltip in your application to display any information. The tooltip is enabled by setting the **visible** property in tooltip to **True.** 
+You can use a Tooltip in your application to display any information. The tooltip is enabled by setting the **visible** property in tooltip to **true.** 
 
 {% highlight html %}
 
