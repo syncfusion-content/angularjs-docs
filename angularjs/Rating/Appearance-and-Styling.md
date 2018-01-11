@@ -154,7 +154,7 @@ The following code example is used to render the **Rating** control with **custo
 
 <style type="text/css">
    .custom {
-       background-color: greenyellow;
+       background-color: pink;
    }
 </style>
 
