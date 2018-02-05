@@ -548,6 +548,35 @@ You can able to show the trackball tooltip in two modes, using trackballTooltipS
 ![](User-Interactions_images/User-Interactions_img30.png)
 
 
+#### Trackball tooltip template:
+Trackball tooltip template is used to display the tooltip in customized template format. You can define the desired template in css style. You can enable the **toolTipTemplate**  by using the following code snippet.
+
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+    <head>
+        <title>Essential Studio for AngularJS: Chart</title>
+        <!--CSS and Script file References -->
+    </head>
+    <body ng-controller="ChartCtrl">
+    <div id="container" ej-chart e-crosshair-visible="true" e-crosshair-type="trackball" 
+    e-crosshair-trackballtooltipsettings-mode="float"
+    e-crosshair-trackballtooltipsettings-toolTipTemplate="template">
+    </div>
+    <script>
+    angular.module('ChartApp', ['ejangular'])
+    .controller('ChartCtrl', function ($scope) {
+                        });
+        </script>
+    </body>
+</html>
+
+{% endhighlight %}
+
+![](User-Interactions_images/User-Interactions_img33.png)
+
+
 ## Highlight
 
 EjChart provides highlighting support for the series and data points on mouse hover. To enable the highlighting option, set the `enable` property to *true* in the `e-highlightsettings` of the series.
