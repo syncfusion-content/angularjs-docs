@@ -2511,7 +2511,7 @@ Polar chart is created by setting the series `e-type` as **polar** in the chart 
 
 ### DrawType
 
-Polar `e-drawType`property is used to change the series plotting type to *line*, *column* or *area*. The default value of `e-drawType` is **"line"**.  
+Polar **DrawType** property is used to change the series plotting type to *Line*, *scatter*, *rangeColumn*, *stackingArea*, *spline*, *Column* or *Area*. The default value of DrawType is **Line**.
 
 {% highlight html %}
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
@@ -2601,7 +2601,7 @@ To create a Radar chart, you can specify the series `e-type` as **"radar"** in t
 
 ### DrawType
 
-Radar `e-drawType` property is used to change the series plotting type to *line*, *column* or *area*. The default value of `e-drawType` is **"line"**.
+Radar **DrawType** property is used to change the series plotting type to *Line*, *scatter*, *rangeColumn*, *stackingArea*, *spline*, *Column* or *Area*. The default value of DrawType is **Line**.
 
 {% highlight html %}
 
