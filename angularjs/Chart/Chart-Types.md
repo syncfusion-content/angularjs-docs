@@ -2517,7 +2517,7 @@ Polar **DrawType** property is used to change the series plotting type to *Line*
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
     <head>
         <title>Essential Studio for AngularJS: Chart</title>
-        <!--CSS and Script file References -->
+        <!--CSS and Script files References -->
     </head>
     <body ng-controller="ChartCtrl">
         <div id="container" ej-chart>
