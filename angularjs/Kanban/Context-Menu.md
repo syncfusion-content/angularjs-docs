@@ -191,7 +191,7 @@ The following code example describes the above behavior.
     <title>Essential Studio for AngularJS: Kanban</title>
 </head>
 <body ng-controller="KanbanCtrl">
-    <div id="Kanban" ej-kanban e-datasource="data" e-keyfield="Status" e-fields-content="Summary" e-fields-primarykey="Id" e-fields-swimlanekey="Assignee" e-fields-tag="Tags" e-contextmenusettings-enable="true" e-contextmenusettings-menuitems=[] e-contextmenusettings-custommenuitems="custommenuitems">
+    <div id="Kanban" ej-kanban e-datasource="data" e-keyfield="Status" e-fields-content="Summary" e-fields-primarykey="Id" e-fields-swimlanekey="Assignee" e-fields-tag="Tags" e-contextmenusettings-enable="true" e-contextmenusettings-menuitems=[] e-contextmenusettings-custommenuitems="customMenuItems">
         <div e-columns>
             <div e-column e-headertext="Backlog" e-key="Open"></div>
             <div e-column e-headertext="In Progress" e-key="InProgress"></div>
@@ -201,7 +201,7 @@ The following code example describes the above behavior.
             angular.module('KanbanApp', ['ejangular'])
                 .controller('KanbanCtrl', function ($scope) {
                     $scope.data = new ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(30));
-                    $scope.custommenuitems = [{ text: "Clear Selection" }];
+                    $scope.customMenuItems = [{ text: "Clear Selection" }];
                 });
         </script>
 </body>
@@ -227,7 +227,7 @@ The following code example describes the above behavior.
     <title>Essential Studio for AngularJS: Kanban</title>
 </head>
 <body ng-controller="KanbanCtrl">
-    <div id="Kanban" ej-kanban e-datasource="data" e-keyfield="Status" e-fields-content="Summary" e-fields-primarykey="Id" e-fields-swimlanekey="Assignee" e-fields-tag="Tags" e-editsettings-allowediting="true" e-editsettings-allowadding="true" e-contextmenusettings-enable="true" e-contextmenusettings-menuitems=[] e-contextmenusettings-custommenuitems="custommenuitems" e-contextclick="contextclick">
+    <div id="Kanban" ej-kanban e-datasource="data" e-keyfield="Status" e-fields-content="Summary" e-fields-primarykey="Id" e-fields-swimlanekey="Assignee" e-fields-tag="Tags" e-editsettings-allowediting="true" e-editsettings-allowadding="true" e-contextmenusettings-enable="true" e-contextmenusettings-menuitems=[] e-contextmenusettings-custommenuitems="customMenuItems" e-contextclick="contextClick">
         <div e-columns>
             <div e-column e-headertext="Backlog" e-key="Open"></div>
             <div e-column e-headertext="In Progress" e-key="InProgress"></div>
@@ -245,8 +245,8 @@ The following code example describes the above behavior.
         angular.module('KanbanApp', ['ejangular'])
             .controller('KanbanCtrl', function ($scope) {
                 $scope.data = new ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(30));
-                $scope.custommenuitems = [{ text: "Clear Selection" }];
-                $scope.contextclick = function (args) {
+                $scope.customMenuItems = [{ text: "Clear Selection" }];
+                $scope.contextClick = function (args) {
                     if (args.text == "Clear Selection")
                         this.KanbanSelection.clear();
                 };
