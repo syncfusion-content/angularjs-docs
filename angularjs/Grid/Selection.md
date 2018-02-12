@@ -186,3 +186,37 @@ The following code example describes the above behavior.
       });
 {% endhighlight %}
 
+
+## Drag Selection
+
+The [Drag](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-enabletoggle "Drag") selection allows to perform selection of the particular row, cell or column by performing mouse dragging.  To enable drag selection, set [`allowDragSelection`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-enabletoggle "allowDragSelection") property of the [`selectionSettings`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") as `true` and set the [`selectionMode`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`selectionSettings`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") as `cell`. Now you can select the cells in the Grid by drgging the mouse. 
+
+N> The multi selection needs to be enabled, to select multiple cells in Grid by mouse dragging. 
+
+The following code example describes the above behavior. 
+
+{% highlight html %}
+<div ng-controller="toggleListCtrl">
+     <div id="Grid" ej-grid e-datasource="data" e-allowpaging="true" e-allowselection="true" e-selectionsettings="Settings" e-selectiontype="multiple">
+          <div e-columns>
+             <div e-column e-field="OrderID" ></div>
+             <div e-column e-field="EmployeeID"></div>
+             <div e-column e-field="ShipCity"></div>
+             <div e-column e-field="ShipCountry"></div>
+             <div e-column e-field="Freight"></div>
+          </div>
+     </div>
+ </div>
+{% endhighlight %}
+
+{% highlight javascript %}
+      syncApp.controller('toggleListCtrl', function ($scope,$rootScope) {
+       //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+        $scope.data = window.gridData;
+		$scope.Settings = {selectionMode: ["cell"], allowDragSelection: true };
+      });
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](selection_images/selection_img11.png)
