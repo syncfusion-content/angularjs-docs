@@ -158,7 +158,7 @@ The following output is displayed as a result of the above code example.
 
 ## Toggle Selection
 
-The Toggle selection allows to perform selection and unselection of the particular row, cell or column. To enable toggle selection, set [`enableToggle`](http://help.syncfusion.com/api/angular/ejgrid#members:selectionsettings-enabletoggle "enableToggle") property of [`e-selectionsettings`](http://help.syncfusion.com/api/angular/ejgrid#members:selectionsettings "selectionSettings") as `true`. If you click on the selected row, cell or column then it will be unselected and vice versa. 
+The Toggle selection allows to perform selection and unselection of the particular row, cell or column. To enable toggle selection, set `enableToggle` property of `e-selectionsettings` as `true`. If you click on the selected row, cell or column then it will be unselected and vice versa. 
 
 N> If multi selection is enabled, then in first click on any selected row (without pressing Ctrl key), it will clear multi selection and in second click on the same row, it will be unselected. 
 
@@ -189,9 +189,9 @@ The following code example describes the above behavior.
 
 ## Drag Selection
 
-The Drag selection allows to perform selection of the particular rows or cells by performing mouse dragging.  To enable drag selection, set [`allowDragSelection`](https://help.syncfusion.com/api/angular/ejgrid#members:selectionsettings-allowdragselection "allowDragSelection") property of the [`e-selectionsettings`](https://help.syncfusion.com/api/angular/ejgrid#members:selectionsettings "e-selectionsettings") as `true`. Now you can select the cells or rows in the Grid by dragging the mouse. 
+The Drag selection allows to perform selection of the particular rows or cells by performing mouse dragging.  To enable drag selection, set `allowDragSelection` property of the `e-selectionsettings` as `true`. Now you can select the cells or rows in the Grid by dragging the mouse. 
 
-N> The [`e-selectiontype`](https://help.syncfusion.com/api/angular/ejgrid#members:selectiontype "e-selectiontype") property should be set as `multiple`, to select multiple cells in Grid by mouse dragging. 
+N> The `e-selectiontype` property should be set as `multiple`, to select multiple cells in Grid by mouse dragging. 
 
 The following code example describes the above behavior. 
 
