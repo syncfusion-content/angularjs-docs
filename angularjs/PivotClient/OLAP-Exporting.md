@@ -142,7 +142,7 @@ For customizing name in WCF Service, below code snippet is used.
 
 ## Exporting Customization
 
-You can add title and description to the exporting document by using title and description property obtained in the "beforeExport" event.
+You can add title and description to the exporting document by using the title and description properties respectively obtained in the `beforeExport` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
 
 {% highlight javascript %}
 
@@ -157,8 +157,9 @@ You can add title and description to the exporting document by using title and d
 
             args.title = "PivotClient";
             args.description = "Visualizes both OLAP and Relational datasource in tabular and graphical formats";
+			args.exportWithStyle = true;   // by default it sets as true. It improves performance on exporting huge data when it sets as false.
     });
-</script>                                          
+</script>
 
 {% endhighlight %}
 
@@ -173,8 +174,8 @@ using Syncfusion.XlsIO;
 using Syncfusion.DocIO.Base;
 using Syncfusion.Pdf.Base;
 
- //Following service method needs to be added in WebAPI for JSON export.
- 
+//Following service method needs to be added in WebAPI for JSON export.
+
 [System.Web.Http.ActionName("Export")]
 [System.Web.Http.HttpPost]
 public void Export()
@@ -208,7 +209,7 @@ void pivotClient_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook workBook)
     //You can customize exporting document here.
 }
 
- //Following service method needs to be added in WCF/WebAPI for PivotEngine export.
+//Following service method needs to be added in WCF/WebAPI for PivotEngine export.
 [System.Web.Http.ActionName("ExportOlapClient")]
 [System.Web.Http.HttpPost]
 public void ExportOlapClient()
@@ -245,6 +246,27 @@ void olapClientHelper_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook work
 
 {% endhighlight %}
 
+### Exporting complete data on Paging
+
+When paging is enabled, you can export the complete data by enabling the `enableCompleteDataExport` property. It is supported in both types of JSON and PivotEngine export and it is applicable for all kinds of exporting formats available in PivotClient.
+
+{% highlight html %}
+
+<div ng-controller="PivotClientCtrl">
+    <div id="PivotClient" ej-pivotclient e-enablecompletedataexport="enableCompleteDataExport" />
+    //...
+</div>
+<script>
+    //...
+    angular.module("PivotClientApp",["ejangular"]).controller('PivotClientCtrl', function ($scope) 
+    {
+        $scope.enableCompleteDataExport = true;
+		//...
+    });
+</script>
+
+{% endhighlight %}
+
 The below screenshot shows the PivotGrid and PivotChart controls exported to Excel document.
 
 ![](Export_images/excel-export.png)
@@ -256,7 +278,3 @@ The below screenshot shows the PivotGrid and PivotChart controls exported to Wor
 The below screenshot shows the PivotGrid and PivotChart controls exported to PDF document.
 
 ![](Export_images/Pdf-Export.png)
-
-
-
-
