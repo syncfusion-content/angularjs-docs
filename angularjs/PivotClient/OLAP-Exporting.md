@@ -248,7 +248,7 @@ void olapClientHelper_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook work
 
 ### Exporting complete data on Paging
 
-If paging is enabled, you can export the complete data by enabling the `enableCompleteDataExport` property. It is supported in both types of JSON and PivotEngine export and it is applicable for all kinds of exporting formats available in PivotClient.
+When paging is enabled, you can export the complete data by enabling the `enableCompleteDataExport` property. It is supported in both types of JSON and PivotEngine export and it is applicable for all kinds of exporting formats available in PivotClient.
 
 {% highlight html %}
 

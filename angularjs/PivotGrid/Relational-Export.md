@@ -464,7 +464,7 @@ void htmlHelper_CSVExport(object sender, string csvString)
 
 ### Exporting complete data on Paging
 
-If paging is enabled, you can export the complete data by enabling the `enableCompleteDataExport` property. It is supported in both types of JSON and PivotEngine export and it is applicable for all kinds of exporting formats available in PivotGrid.
+When paging is enabled, you can export the complete data by enabling the `enableCompleteDataExport` property. It is supported in both types of JSON and PivotEngine export and it is applicable for all kinds of exporting formats available in PivotGrid.
 
 {% highlight html %}
 
