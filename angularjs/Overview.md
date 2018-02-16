@@ -112,7 +112,7 @@ selectedItem</td></tr>
 <tr>
 <td>
 ejGrid</td><td>
-dataSource<br/>selectedRow<br/>pageSettings.currentPage</td></tr>
+dataSource<br/>selectedRow<br/>pageSettings.currentPage<br/>selectedRowIndices</td></tr>
 <tr>
 <td>
 ejLinearGauge</td><td>
