@@ -142,7 +142,7 @@ For customizing name in WCF Service, below code snippet is used.
 
 ## Exporting Customization
 
-You can add title, description and enable/disable styling to the exporting document by using title, description and exportWithStyle properties respectively obtained in the `beforeExport` event.
+You can add title, description to the exporting document by using title, description properties respectively obtained in the `beforeExport` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
 
 {% highlight javascript %}
 
@@ -248,7 +248,7 @@ void olapClientHelper_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook work
 
 ### Exporting complete data on Paging
 
-You can export the complete data when Paging option is enabled by setting the `enableCompleteDataExport` property as true. It supports in both JSON and PivotEngine export for all kind of available exporting formats in PivotClient.
+If paging is enabled, you can export the complete data by enabling the `enableCompleteDataExport` property. It is supported in both types of JSON and PivotEngine export and it is applicable for all kinds of exporting formats available in PivotClient.
 
 {% highlight html %}
 
@@ -263,7 +263,7 @@ You can export the complete data when Paging option is enabled by setting the `e
         $scope.enableCompleteDataExport = true;
 		//...
     });
-</script>                                          
+</script>
 
 {% endhighlight %}
 
@@ -278,7 +278,3 @@ The below screenshot shows the PivotGrid and PivotChart controls exported to Wor
 The below screenshot shows the PivotGrid and PivotChart controls exported to PDF document.
 
 ![](Export_images/Pdf-Export.png)
-
-
-
-

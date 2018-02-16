@@ -323,7 +323,7 @@ public void Export(System.IO.Stream stream)
 
 ## Exporting Customization
 
-You can add title, description and enable/disable styling to the exporting document by using title, description and exportWithStyle properties respectively obtained in the `beforeExport` event.
+You can add title, description to the exporting document by using title, description properties respectively obtained in the `beforeExport` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
 
 {% highlight javascript %}
 
@@ -421,7 +421,6 @@ void pGrid_CSVExport(object sender, string csvString)
     //You can customize exporting document here.
 }
 
-
  //Following service method needs to be added in WCF/WebAPI for PivotEngine export.
 
 [System.Web.Http.ActionName("Export")]
@@ -465,7 +464,7 @@ void htmlHelper_CSVExport(object sender, string csvString)
 
 ### Exporting complete data on Paging
 
-You can export the complete data when Paging option is enabled by setting the `enableCompleteDataExport` property as true. It supports in both JSON and PivotEngine export for all kind of available exporting formats in PivotGrid.
+If paging is enabled, you can export the complete data by enabling the `enableCompleteDataExport` property. It is supported in both types of JSON and PivotEngine export and it is applicable for all kinds of exporting formats available in PivotGrid.
 
 {% highlight html %}
 
@@ -480,7 +479,7 @@ You can export the complete data when Paging option is enabled by setting the `e
         $scope.enableCompleteDataExport = true;
 		//...
     });
-</script>                                          
+</script>
 
 {% endhighlight %}
 

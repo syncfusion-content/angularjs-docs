@@ -144,12 +144,12 @@ For customizing name in WCF Service, below code snippet is used.
             string fileName = " File name is customized here ";
             pivotClient.ExportPivotClient(ProductSales.GetSalesData(), args, fileName, System.Web.HttpContext.Current.Response);
        }
-       
+
 {% endhighlight %}
 
 ## Exporting Customization
 
-You can add title, description and enable/disable styling to the exporting document by using title, description and exportWithStyle properties respectively obtained in the `beforeExport` event.
+You can add title, description to the exporting document by using title, description properties respectively obtained in the `beforeExport` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
 
 {% highlight javascript %}
 
@@ -166,7 +166,7 @@ You can add title, description and enable/disable styling to the exporting docum
             args.description = "Visualizes both OLAP and Relational datasource in tabular and graphical formats";
 			args.exportWithStyle = true;   // by default it sets as true. It improves performance on exporting huge data when it sets as false.
     });
-</script>                                          
+</script>
 
 {% endhighlight %}
 
@@ -266,6 +266,3 @@ The below screenshot shows the PivotGrid and PivotChart controls exported to Wor
 The below screenshot shows the PivotGrid and PivotChart controls exported to PDF document.
 
 ![](Export_images/relational-Pdf-Export.png)
-
-
-
