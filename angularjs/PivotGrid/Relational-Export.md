@@ -323,7 +323,7 @@ public void Export(System.IO.Stream stream)
 
 ## Exporting Customization
 
-You can add title and description to the exporting document by using title and description property obtained in the "beforeExport" event.
+You can add title, description and enable/disable styling to the exporting document by using title, description and exportWithStyle properties respectively obtained in the `beforeExport` event.
 
 {% highlight javascript %}
 
@@ -338,6 +338,7 @@ $scope.exportBtnClick = function (args) {
 $scope.export = function (args) {
     args.title = "PivotGrid";
     args.description = "Displays both OLAP and Relational datasource in tabular format";
+	args.exportWithStyle = true;   // by default it sets as true. It improves performance on exporting huge data when it sets as false.
 };                                       
 
 {% endhighlight %}
@@ -459,6 +460,27 @@ void htmlHelper_CSVExport(object sender, string csvString)
 {
     //You can customize exporting document here.
 }
+
+{% endhighlight %}
+
+### Exporting complete data on Paging
+
+You can export the complete data when Paging option is enabled by setting the `enableCompleteDataExport` property as true. It supports in both JSON and PivotEngine export for all kind of available exporting formats in PivotGrid.
+
+{% highlight html %}
+
+<div ng-controller="PivotGridCtrl">
+    <div id="PivotGrid1" ej-pivotgrid e-enablecompletedataexport="enableCompleteDataExport" />
+    //...
+</div>
+<script>
+    //...
+    angular.module("PivotGridApp",["ejangular"]).controller('PivotGridCtrl', function ($scope) 
+    {
+        $scope.enableCompleteDataExport = true;
+		//...
+    });
+</script>                                          
 
 {% endhighlight %}
 

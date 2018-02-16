@@ -1,4 +1,4 @@
----
+	---
 layout: post
 title: Export
 description: export
@@ -142,7 +142,7 @@ For customizing name in WCF Service, below code snippet is used.
 
 ## Exporting Customization
 
-You can add title and description to the exporting document by using title and description property obtained in the "beforeExport" event.
+You can add title, description and enable/disable styling to the exporting document by using title, description and exportWithStyle properties respectively obtained in the `beforeExport` event.
 
 {% highlight javascript %}
 
@@ -157,6 +157,7 @@ You can add title and description to the exporting document by using title and d
 
             args.title = "PivotClient";
             args.description = "Visualizes both OLAP and Relational datasource in tabular and graphical formats";
+			args.exportWithStyle = true;   // by default it sets as true. It improves performance on exporting huge data when it sets as false.
     });
 </script>                                          
 
@@ -242,6 +243,27 @@ void olapClientHelper_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook work
 {
     //You can customize exporting document here.
 }
+
+{% endhighlight %}
+
+### Exporting complete data on Paging
+
+You can export the complete data when Paging option is enabled by setting the `enableCompleteDataExport` property as true. It supports in both JSON and PivotEngine export for all kind of available exporting formats in PivotClient.
+
+{% highlight html %}
+
+<div ng-controller="PivotClientCtrl">
+    <div id="PivotClient" ej-pivotclient e-enablecompletedataexport="enableCompleteDataExport" />
+    //...
+</div>
+<script>
+    //...
+    angular.module("PivotClientApp",["ejangular"]).controller('PivotClientCtrl', function ($scope) 
+    {
+        $scope.enableCompleteDataExport = true;
+		//...
+    });
+</script>                                          
 
 {% endhighlight %}
 
