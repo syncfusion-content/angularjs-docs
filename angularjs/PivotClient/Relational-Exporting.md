@@ -149,7 +149,7 @@ For customizing name in WCF Service, below code snippet is used.
 
 ## Exporting Customization
 
-You can add title, description to the exporting document by using title, description properties respectively obtained in the `beforeExport` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
+You can add title and description to the exporting document by using the title and description properties respectively obtained in the `beforeExport` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
 
 {% highlight javascript %}
 

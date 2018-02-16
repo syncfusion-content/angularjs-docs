@@ -316,7 +316,7 @@ public void Export(System.IO.Stream stream) {
 
 ## Exporting Customization
 
-You can add title, description to the exporting document by using title, description properties respectively obtained in the `beforeExport` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
+You can add title and description to the exporting document by using the title and description properties respectively obtained in the `beforeExport` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
 
 {% highlight javascript %}
 
@@ -347,8 +347,7 @@ using Syncfusion.XlsIO;
 using Syncfusion.DocIO.Base;
 using Syncfusion.Pdf.Base;
 
-
- //Following service method needs to be added in WebAPI for JSON export.
+//Following service method needs to be added in WebAPI for JSON export.
 [System.Web.Http.ActionName("ExcelExport")]
 [System.Web.Http.HttpPost]
 public void ExcelExport()
@@ -363,6 +362,7 @@ void pGrid_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook workBook)
 {
     //You can customize exporting document here.
 }
+
 [System.Web.Http.ActionName("PdfExport")]
 [System.Web.Http.HttpPost]
 public void PdfExport()
@@ -414,8 +414,7 @@ void pGrid_CSVExport(object sender, string csvString)
     //You can customize exporting document here.
 }
 
-
- //Following service method needs to be added in WCF/WebAPI for PivotEngine export.
+//Following service method needs to be added in WCF/WebAPI for PivotEngine export.
 
 [System.Web.Http.ActionName("Export")]
 [System.Web.Http.HttpPost]

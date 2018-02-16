@@ -142,7 +142,7 @@ For customizing name in WCF Service, below code snippet is used.
 
 ## Exporting Customization
 
-You can add title, description to the exporting document by using title, description properties respectively obtained in the `beforeExport` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
+You can add title and description to the exporting document by using the title and description properties respectively obtained in the `beforeExport` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
 
 {% highlight javascript %}
 
@@ -159,7 +159,7 @@ You can add title, description to the exporting document by using title, descrip
             args.description = "Visualizes both OLAP and Relational datasource in tabular and graphical formats";
 			args.exportWithStyle = true;   // by default it sets as true. It improves performance on exporting huge data when it sets as false.
     });
-</script>                                          
+</script>
 
 {% endhighlight %}
 
@@ -174,8 +174,8 @@ using Syncfusion.XlsIO;
 using Syncfusion.DocIO.Base;
 using Syncfusion.Pdf.Base;
 
- //Following service method needs to be added in WebAPI for JSON export.
- 
+//Following service method needs to be added in WebAPI for JSON export.
+
 [System.Web.Http.ActionName("Export")]
 [System.Web.Http.HttpPost]
 public void Export()
@@ -209,7 +209,7 @@ void pivotClient_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook workBook)
     //You can customize exporting document here.
 }
 
- //Following service method needs to be added in WCF/WebAPI for PivotEngine export.
+//Following service method needs to be added in WCF/WebAPI for PivotEngine export.
 [System.Web.Http.ActionName("ExportOlapClient")]
 [System.Web.Http.HttpPost]
 public void ExportOlapClient()
