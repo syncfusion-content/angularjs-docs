@@ -316,7 +316,7 @@ public void Export(System.IO.Stream stream) {
 
 ## Exporting Customization
 
-You can add title and description to the exporting document by using title and description property obtained in the "beforeExport" event.
+You can add title and description to the exporting document by using the title and description properties respectively obtained in the `beforeExport` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
 
 {% highlight javascript %}
 
@@ -331,6 +331,7 @@ $scope.exportBtnClick = function (args) {
 $scope.export = function (args) {
     args.title = "PivotGrid";
     args.description = "Displays both OLAP and Relational datasource in tabular format";
+	args.exportWithStyle = true;   // by default it sets as true. It improves performance on exporting huge data when it sets as false.
 };
 
 {% endhighlight %}
@@ -346,8 +347,7 @@ using Syncfusion.XlsIO;
 using Syncfusion.DocIO.Base;
 using Syncfusion.Pdf.Base;
 
-
- //Following service method needs to be added in WebAPI for JSON export.
+//Following service method needs to be added in WebAPI for JSON export.
 [System.Web.Http.ActionName("ExcelExport")]
 [System.Web.Http.HttpPost]
 public void ExcelExport()
@@ -362,6 +362,7 @@ void pGrid_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook workBook)
 {
     //You can customize exporting document here.
 }
+
 [System.Web.Http.ActionName("PdfExport")]
 [System.Web.Http.HttpPost]
 public void PdfExport()
@@ -413,8 +414,7 @@ void pGrid_CSVExport(object sender, string csvString)
     //You can customize exporting document here.
 }
 
-
- //Following service method needs to be added in WCF/WebAPI for PivotEngine export.
+//Following service method needs to be added in WCF/WebAPI for PivotEngine export.
 
 [System.Web.Http.ActionName("Export")]
 [System.Web.Http.HttpPost]
@@ -454,6 +454,27 @@ void htmlHelper_CSVExport(object sender, string csvString)
 
 {% endhighlight %}
 
+### Exporting complete data on Paging
+
+When paging is enabled, you can export the complete data by enabling the `enableCompleteDataExport` property. It is supported in both types of JSON and PivotEngine export and it is applicable for all kinds of exporting formats available in PivotGrid.
+
+{% highlight html %}
+
+<div ng-controller="PivotGridCtrl">
+    <div id="PivotGrid1" ej-pivotgrid e-enablecompletedataexport="enableCompleteDataExport" />
+    //...
+</div>
+<script>
+    //...
+    angular.module("PivotGridApp",["ejangular"]).controller('PivotGridCtrl', function ($scope) 
+    {
+        $scope.enableCompleteDataExport = true;
+		//...
+    });
+</script>                                          
+
+{% endhighlight %}
+
 The below screenshot shows the PivotGrid control exported to Excel document.
 
 ![](Export_images/ExportOLAPExcel.png)
@@ -469,6 +490,3 @@ The below screenshot shows the PivotGrid control exported to PDF document.
 The below screenshot shows the PivotGrid control exported to CSV document.
 
 ![](Export_images/ExportOLAPCSV.png)
-
-
-
