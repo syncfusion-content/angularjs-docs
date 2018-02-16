@@ -149,7 +149,7 @@ For customizing name in WCF Service, below code snippet is used.
 
 ## Exporting Customization
 
-You can add title and description to the exporting document by using title and description property obtained in the "beforeExport" event.
+You can add title and description to the exporting document by using the title and description properties respectively obtained in the `beforeExport` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
 
 {% highlight javascript %}
 
@@ -164,6 +164,7 @@ You can add title and description to the exporting document by using title and d
 
             args.title = "PivotClient";
             args.description = "Visualizes both OLAP and Relational datasource in tabular and graphical formats";
+			args.exportWithStyle = true;   // by default it sets as true. It improves performance on exporting huge data when it sets as false.
     });
 </script>                                          
 
