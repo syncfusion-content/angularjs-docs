@@ -354,7 +354,7 @@ using Syncfusion.XlsIO;
 using Syncfusion.DocIO.Base;
 using Syncfusion.Pdf.Base;
 
- //Following service method needs to be added in WebAPI for JSON export.
+//Following service method needs to be added in WebAPI for JSON export.
  
 [System.Web.Http.ActionName("ExcelExport")]
 [System.Web.Http.HttpPost]
@@ -421,8 +421,7 @@ void pGrid_CSVExport(object sender, string csvString)
     //You can customize exporting document here.
 }
 
-
- //Following service method needs to be added in WCF/WebAPI for PivotEngine export.
+//Following service method needs to be added in WCF/WebAPI for PivotEngine export.
 
 [System.Web.Http.ActionName("Export")]
 [System.Web.Http.HttpPost]

@@ -347,8 +347,7 @@ using Syncfusion.XlsIO;
 using Syncfusion.DocIO.Base;
 using Syncfusion.Pdf.Base;
 
-
- //Following service method needs to be added in WebAPI for JSON export.
+//Following service method needs to be added in WebAPI for JSON export.
 [System.Web.Http.ActionName("ExcelExport")]
 [System.Web.Http.HttpPost]
 public void ExcelExport()
@@ -363,6 +362,7 @@ void pGrid_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook workBook)
 {
     //You can customize exporting document here.
 }
+
 [System.Web.Http.ActionName("PdfExport")]
 [System.Web.Http.HttpPost]
 public void PdfExport()
@@ -414,8 +414,7 @@ void pGrid_CSVExport(object sender, string csvString)
     //You can customize exporting document here.
 }
 
-
- //Following service method needs to be added in WCF/WebAPI for PivotEngine export.
+//Following service method needs to be added in WCF/WebAPI for PivotEngine export.
 
 [System.Web.Http.ActionName("Export")]
 [System.Web.Http.HttpPost]
@@ -491,6 +490,3 @@ The below screenshot shows the PivotGrid control exported to PDF document.
 The below screenshot shows the PivotGrid control exported to CSV document.
 
 ![](Export_images/ExportOLAPCSV.png)
-
-
-

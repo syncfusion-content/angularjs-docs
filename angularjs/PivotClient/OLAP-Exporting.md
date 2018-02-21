@@ -159,7 +159,7 @@ You can add title and description to the exporting document by using the title a
             args.description = "Visualizes both OLAP and Relational datasource in tabular and graphical formats";
 			args.exportWithStyle = true;   // by default it sets as true. It improves performance on exporting huge data when it sets as false.
     });
-</script>                                          
+</script>
 
 {% endhighlight %}
 
@@ -174,8 +174,8 @@ using Syncfusion.XlsIO;
 using Syncfusion.DocIO.Base;
 using Syncfusion.Pdf.Base;
 
- //Following service method needs to be added in WebAPI for JSON export.
- 
+//Following service method needs to be added in WebAPI for JSON export.
+
 [System.Web.Http.ActionName("Export")]
 [System.Web.Http.HttpPost]
 public void Export()
@@ -209,7 +209,7 @@ void pivotClient_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook workBook)
     //You can customize exporting document here.
 }
 
- //Following service method needs to be added in WCF/WebAPI for PivotEngine export.
+//Following service method needs to be added in WCF/WebAPI for PivotEngine export.
 [System.Web.Http.ActionName("ExportOlapClient")]
 [System.Web.Http.HttpPost]
 public void ExportOlapClient()
@@ -278,7 +278,3 @@ The below screenshot shows the PivotGrid and PivotChart controls exported to Wor
 The below screenshot shows the PivotGrid and PivotChart controls exported to PDF document.
 
 ![](Export_images/Pdf-Export.png)
-
-
-
-
