@@ -45,8 +45,8 @@ The possible enum values for the gaugePosition are as follows:
     <body ng-controller="CircularGaugeCtrl">
         <div id="circularframe"> 
         <ej-circulargauge e-backgroundcolor="transparent" e-width="800" e-height="500" e-radius="120" e-value="60"
-        e-gaugePosition="center" e-distanceFromCorner="30" e-frame-frametype="halfcircle" 
-        e-frame-halfcircleframestartangle="270" e-frame-halfcircleframeendangle="90">
+        e-gaugePosition="center" e-distanceFromCorner="30" e-frame-frameType="halfcircle" 
+        e-frame-halfCircleFrameStartAngle="270" e-frame-halfCircleFrameEndAngle="90">
         <e-scales>
            <e-scale e-startangle="270" e-sweepangle="180" e-radius="160" e-showscalebar="true" e-size="1"
            e-maximum="120" e-majorIntervalValue="20" e-minorintervalvalue="10" e-border-width="0.5">

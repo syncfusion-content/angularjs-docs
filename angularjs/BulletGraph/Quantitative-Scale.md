@@ -27,7 +27,7 @@ The **Quantitative Scale** appearance is customized using **quantitativeScaleSet
                  <ej-bulletgraph e-quantitativescalesettings-minimum="0" 
                  e-quantitativescalesettings-maximum="100" 
                  e-quantitativescalesettings-interval="10" 
-                 e-quantitativescalesettings-minorticksperinterval="4">
+                 e-quantitativescalesettings-minorTicksPerInterval="4">
                  </ej-bulletgraph>
         </div>
         <script type="text/javascript">
@@ -96,9 +96,9 @@ Color, size and width of **Major tick** lines are customized using **majorTickSe
     </head>
     <body ng-controller="BulletGraphCtrl">
         <div id="bulletframe">
-                 <ej-bulletgraph e-quantitativescalesettings-majorticksettings-size="15"
-                 e-quantitativescalesettings-majorticksettings-width="3" 
-                 e-quantitativescalesettings-majorticksettings-stroke="gray">
+                 <ej-bulletgraph e-quantitativescalesettings-majorTickSettings-size="15"
+                 e-quantitativescalesettings-majorTickSettings-width="3" 
+                 e-quantitativescalesettings-majorTickSettings-stroke="gray">
                  </ej-bulletgraph>
         </div>
         <script type="text/javascript">
@@ -208,11 +208,11 @@ The following screenshot displays **Bullet Graph** with ticks positioned above q
                  <ej-bulletgraph e-value="8" e-comparitiveMeasureValue="5" e-qualitativerangesize="50" 
                  e-quantitativescalesettings-location-x = "108" 
                  e-quantitativescalesettings-location-y="10" 
-                 e-quantitativescalesettings-tickplacement="inside"
-                 e-quantitativescalesettings-labelsettings-offset="5" 
-                 e-quantitativescalesettings-labelsettings-size="10" 
-                 e-quantitativescalesettings-labelsettings-labelPrefix="$" 
-                 e-quantitativescalesettings-labelsettings-labelSuffix="K" e-captionSettings-textAngle="0"
+                 e-quantitativescalesettings-tickPlacement="inside"
+                 e-quantitativescalesettings-labelSettings-offset="5" 
+                 e-quantitativescalesettings-labelSettings-size="10" 
+                 e-quantitativescalesettings-labelSettings-labelPrefix="$" 
+                 e-quantitativescalesettings-labelSettings-labelSuffix="K" e-captionSettings-textAngle="0"
                  e-captionSettings-location-x="17" e-captionSettings-location-y="28" 
                  e-captionSettings-text="Revenue YTD" e-captionSettings-subTitle-textAngle="0" 
                  e-captionSettings-subTitle-text="$ in Thousands" e-captionSettings-subTitle-location-x="10"
@@ -253,12 +253,12 @@ The following screenshot displays **Bullet Graph** ticks inside **Quantitative S
     <body ng-controller="BulletGraphCtrl">
         <div id="bulletframe">
                  <ej-bulletgraph e-quantitativescalesettings-labelsettings-stroke="blue" 
-                 e-quantitativescalesettings-labelsettings-labelPrefix="$" 
-                 e-quantitativescalesettings-labelsettings-labelSuffix="K"
-                 e-quantitativescalesettings-labelsettings-font-fontfamily="segoe ui" 
-                 e-quantitativescalesettings-labelsettings-font-fontstyle="bold"   
-                 e-quantitativescalesettings-labelsettings-font-fontweight="regular" 
-                 e-quantitativescalesettings-labelsettings-font-opacity="0.8" 
+                 e-quantitativescalesettings-labelSettings-labelPrefix="$" 
+                 e-quantitativescalesettings-labelSettings-labelSuffix="K"
+                 e-quantitativescalesettings-labelSettings-font-fontFamily="segoe ui" 
+                 e-quantitativescalesettings-labelSettings-font-fontStyle="bold"   
+                 e-quantitativescalesettings-labelSettings-font-fontWeight="regular" 
+                 e-quantitativescalesettings-labelSettings-font-opacity="0.8" 
                  e-quantitativescalesettings-size="12" e-quantitativescalesettings-offset="15">              
                  </ej-bulletgraph>
         </div>
@@ -298,11 +298,11 @@ The following screenshot displays **Bullet Graph** labels in blue color
                  <ej-bulletgraph e-value="8" e-comparitiveMeasureValue="5" e-qualitativerangesize="50" 
                  e-quantitativescalesettings-location-x = "108" 
                  e-quantitativescalesettings-location-y="10" 
-                 e-quantitativescalesettings-labelsettings-offset="5" 
-                 e-quantitativescalesettings-labelsettings-size="10" 
-                 e-quantitativescalesettings-labelsettings-labelPrefix="$" 
-                 e-quantitativescalesettings-labelsettings-labelSuffix="K"
-                 e-quantitativescalesettings-font-fontweight="bold" 
+                 e-quantitativescalesettings-labelSettings-offset="5" 
+                 e-quantitativescalesettings-labelSettings-size="10" 
+                 e-quantitativescalesettings-labelSettings-labelPrefix="$" 
+                 e-quantitativescalesettings-labelSettings-labelSuffix="K"
+                 e-quantitativescalesettings-font-fontWeight="bold" 
                  e-quantitativescalesettings-labelPlacement="inside" e-captionSettings-textAngle="0" 
                  e-captionSettings-location-x="17" e-captionSettings-location-y="28" 
                  e-captionSettings-text="Revenue YTD" e-captionSettings-subTitle-textAngle="0"

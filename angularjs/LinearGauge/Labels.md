@@ -30,7 +30,7 @@ Labels are units that are used to display the values in the scales. You can cust
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
                  <ej-lineargauge   e-enableanimation="false" e-value="40" e-frame-innerwidth="8" 
-                 e-frame-outerwidth="10" 
+                 e-frame-outerWidth="10" 
                  e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
                  <e-scales>
                  <e-scale   e-backgroundcolor="transparent" e-border-color="transparent" 

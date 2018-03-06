@@ -26,7 +26,7 @@ Custom labels collection can be directly added to the scale object. Refer the fo
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
                  <ej-lineargauge   e-enableanimation="false" e-height="500" e-width="200" 
-                 e-labelcolor="grey" e-frame-innerwidth="8" e-frame-outerwidth="10"
+                 e-labelcolor="Grey" e-frame-innerWidth="8" e-frame-outerWidth="10"
                  e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
                  <e-scales>
                  <e-scale   e-backgroundcolor="transparent" e-border-color="transparent"
@@ -87,7 +87,7 @@ Execute the above code to render the following output.
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
                  <ej-lineargauge   e-enableanimation="false" e-height="500" e-width="200" 
-                 e-labelcolor="grey" e-frame-innerwidth="8" e-frame-outerwidth="10"
+                 e-labelcolor="Grey" e-frame-innerWidth="8" e-frame-outerWidth="10"
                  e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
                  <e-scales>
                  <e-scale  e-backgroundcolor="transparent" e-border-color="transparent" 
@@ -143,7 +143,7 @@ To set the location of the custom label in **Linear Gauge**, **position** proper
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
                  <ej-lineargauge   e-enableanimation="false" e-height="500" e-width="200" 
-                 e-labelcolor="grey" e-frame-innerwidth="8" e-frame-outerwidth="10"
+                 e-labelcolor="Grey" e-frame-innerWidth="8" e-frame-outerWidth="10"
                  e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
                  <e-scales>
                  <e-scale   e-backgroundcolor="transparent" e-border-color="transparent" 
@@ -198,7 +198,7 @@ You can set multiple custom labels in a single **Linear Gauge** by adding an arr
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
                  <ej-lineargauge   e-enableanimation="false" e-height="500" e-width="200" 
-                 e-labelcolor="grey" e-frame-innerwidth="8" e-frame-outerwidth="10"
+                 e-labelcolor="Grey" e-frame-innerWidth="8" e-frame-outerWidth="10"
                  e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
                  <e-scales>
                  <e-scale   e-backgroundcolor="transparent" e-border-color="transparent" 

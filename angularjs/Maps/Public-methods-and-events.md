@@ -164,15 +164,15 @@ function MarkerSelected(){
 {% endhighlight %}
 
 
-### Mouseleave
+### MouseLeave
 
-Triggers while leaving the hovered map shape, you can use `Mouseleave` event.
+Triggers while leaving the hovered map shape, you can use `MouseLeave` event.
 
 
 {% highlight html %}
 
 <div ng-controller="Map">
-    <div id="container" style="width: 100%" e-mouseleave="onMouseleave"></div>
+    <div id="container" style="width: 100%" e-mouseleave="onMouseLeave"></div>
 </div>
 
 {% endhighlight %}
@@ -180,10 +180,10 @@ Triggers while leaving the hovered map shape, you can use `Mouseleave` event.
 {% highlight js %}
 
 angular.controller('Map', function ($scope) {    
-    $scope.onMouseleave = "Mouseleave";    
+    $scope.onMouseLeave = "MouseLeave";    
 });
  
-function Mouseleave(){
+function MouseLeave(){
     // Do Something
 }
 

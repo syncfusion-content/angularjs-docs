@@ -54,7 +54,7 @@ By using the `position` property, you can position the legend at left, right, to
 ### Customization
 
 ## Legend Item Size and border
-You can change the size of the legend items by using the `e-legend-itemstyle-width` and `e-legend-itemstyle-height` property. To change the legend item border, use `e-legend-border`property of the legend .
+You can change the size of the legend items by using the `e-legend-itemStyle-width` and `e-legend-itemStyle-height` property. To change the legend item border, use `e-legend-border`property of the legend .
 
 {% highlight HTML %}
 <div id="container" ej-sunburstchart e-legend-visible="true" e-legend-position="top" e-legend-itemstyle-height="13"
@@ -178,9 +178,9 @@ To customize the legend item text and title you can use the `e-legend-title-font
 
 {% highlight HTML %}
 
-<div id="container" ej-sunburstchart  e-legend-title="" e-legend-title-font-fontfamily="Segoe UI"
-        e-legend-title-font-fontstyle="normal" e-legend-title-font-fontweight="bold" e-legend-font-size="15px" 
-        e-legend-title-textalignment="center">					
+<div id="container" ej-sunburstchart  e-legend-title="" e-legend-title-font-fontFamily="Segoe UI"
+        e-legend-title-font-fontStyle="normal" e-legend-title-font-fontWeight="bold" e-legend-font-size="15px" 
+        e-legend-title-textAlignment="center">					
 
 </div>
 

@@ -117,8 +117,8 @@ State ranges are used to specify the indicator behavior in the certain region. *
                  <e-stateranges>
                  <e-staterange e-startValue="0" e-endValue="200" e-backgroundColor="#02A258" 
                  e-borderColor="#02A258"></e-staterange>
-                 <e-staterange e-startValue="200" e-endValue="300" e-backgroundColor="grey" 
-                 e-borderColor="grey"></e-staterange>
+                 <e-staterange e-startValue="200" e-endValue="300" e-backgroundColor="Grey" 
+                 e-borderColor="Grey"></e-staterange>
                  </e-stateranges>
                  </e-indicator>
                  </e-indicators>
@@ -326,15 +326,15 @@ You can set multiple indicators in a single **Linear Gauge** by adding an array 
                  e-position-y="100"><e-stateranges>
                  <e-staterange e-startValue="0" e-endValue="200" e-backgroundcolor="#02A258" 
                  e-bordercolor="#02A258"></e-staterange>
-                 <e-staterange e-startValue="200" e-endValue="300" e-backgroundcolor="grey" 
-                 e-bordercolor="grey"></e-staterange>
+                 <e-staterange e-startValue="200" e-endValue="300" e-backgroundcolor="Grey" 
+                 e-bordercolor="Grey"></e-staterange>
                  </e-stateranges>
                  </e-indicator>
                  //Adding second indicator
                   <e-indicator e-type="circle" e-height="10"  e-width="10" e-position-x="70"
                    e-position-y="100"><e-stateranges>
-                 <e-staterange e-startValue="0" e-endValue="200" e-backgroundcolor="grey" 
-                 e-bordercolor="grey"></e-staterange>
+                 <e-staterange e-startValue="0" e-endValue="200" e-backgroundcolor="Grey" 
+                 e-bordercolor="Grey"></e-staterange>
                  <e-staterange e-startValue="200" e-endValue="300" e-backgroundcolor="red" 
                  e-bordercolor="red"></e-staterange>
                  </e-stateranges>

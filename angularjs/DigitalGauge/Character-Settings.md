@@ -192,7 +192,7 @@ You can customize the **font** of the text as per your requirement. To customize
                  <ej-digitalgauge e-width="800" >
                  <e-items>
                  <e-item e-value="WELCOME" e-enablecustomfont="true" e-font-fontfamily="Arial" e-font-fontsize="18px"
-                 e-font-fontweight="normal" e-font-fontstyle="bold">
+                 e-font-fontWeight="normal" e-font-fontStyle="bold">
                  </e-item>
                  </e-items>
                  </ej-digitalgauge>

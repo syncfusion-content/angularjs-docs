@@ -30,9 +30,9 @@ You can select the shape by tapping the shape. The Single selection is enabled b
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
             <e-layer e-shapedata=usMap e-enableselection="true" e-shapesettings-fill="#9CBF4E" 
-            e-shapesettings-strokethickness="0.5" e-shapesettings-stroke="white"
-            e-shapesettings-selectionstrokewidth="2" e-shapesettings-selectionstroke="white"
-            e-shapesettings-selectioncolor="#BC5353"></e-layer>
+            e-shapesettings-strokeThickness="0.5" e-shapesettings-stroke="white"
+            e-shapesettings-selectionStrokeWidth="2" e-shapesettings-selectionStroke="white"
+            e-shapesettings-selectionColor="#BC5353"></e-layer>
         </e-layers>
     </div>
     <script>
@@ -132,21 +132,21 @@ The following properties are related to the zooming feature of the **Maps** cont
 
 ### Level
 
-The `e-zoomsettings-level` property determines the Map’s scale size when zooming. The default value of `level` is 1. 
+The `e-zoomSettings-level` property determines the Map’s scale size when zooming. The default value of `level` is 1. 
 
 N> level cannot be less than 1
 
 ### EnableZoom
 
-The `e-zoomsettings-enablezoom` property enables or disables the zooming feature. 
+The `e-zoomSettings-enableZoom` property enables or disables the zooming feature. 
 
 ### MinValue
 
-The `e-zoomsettings-minvalue` property is used to set the minimum zoom level of the Map. 
+The `e-zoomSettings-minValue` property is used to set the minimum zoom level of the Map. 
 
 ### MaxValue
 
-The `e-zoomsettings-maxvalue` property is used to set the maximum zoom level of the Map.
+The `e-zoomSettings-maxValue` property is used to set the maximum zoom level of the Map.
 
 {% highlight html %}
 
@@ -157,7 +157,7 @@ The `e-zoomsettings-maxvalue` property is used to set the maximum zoom level of 
     </head>
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map e-zoomsettings-enablezoom="true" 
-      e-zoomsettings-minvalue="1" e-zoomsettings-maxvalue="20" e-zoomsettings-level="1">
+      e-zoomsettings-minValue="1" e-zoomsettings-maxValue="20" e-zoomsettings-level="1">
         <e-layers>
             <e-layer e-shapedata=usMap ></e-layer>
         </e-layers>
@@ -240,9 +240,9 @@ When the Map is double-tapped by using mouse, the zoom in operation is performed
 
 Map shape is zoomed to the whole Map area on the shape selected. Animation can be applied for that zooming by using the `e-enableAnimation` property as true. 
 
-You can enable this feature by setting `e-zoomsettings-enablezoomonselection` property value as ‘_True_’. 
+You can enable this feature by setting `e-zoomSettings-enableZoomOnSelection` property value as ‘_True_’. 
 
-When `e-zoomsettings-enablezoomonselection` property is set to true, then zooming by double click is muted.
+When `e-zoomSettings-enableZoomOnSelection` property is set to true, then zooming by double click is muted.
 
 {% highlight html %}
 
@@ -253,7 +253,7 @@ When `e-zoomsettings-enablezoomonselection` property is set to true, then zoomin
     </head>
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map 
-      e-zoomsettings-enablezoomonselection="true">
+      e-zoomsettings-enableZoomOnSelection="true">
         <e-layers>
             <e-layer e-shapedata=usMap ></e-layer>
         </e-layers>
@@ -351,7 +351,7 @@ The panning feature enables the Map navigation. The `e-enablepan` property is us
     </head>
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map 
-      e-navigationcontrol-enablenavigation="true">      
+      e-navigationcontrol-enableNavigation="true">      
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
@@ -372,7 +372,7 @@ The Navigation control can be positioned in two ways.
 
 #### Absolute Position
 
-Based on the margin values of X and Y-axes, the navigation control can be positioned with the help of the **x** and **y** properties available in `e-navigationcontrol-absoluteposition`. For positioning the navigation control based on margins corresponding to a Map, `e-navigationcontrol-dockposition` value is set as ‘_none_’.
+Based on the margin values of X and Y-axes, the navigation control can be positioned with the help of the **x** and **y** properties available in `e-navigationControl-absolutePosition`. For positioning the navigation control based on margins corresponding to a Map, `e-navigationControl-dockPosition` value is set as ‘_none_’.
 
 #### Dock Position
 
@@ -390,7 +390,7 @@ The navigation control can be positioned in the following locations within the c
 * bottomRight
 * none
 
-You can set this option by using `e-navigationcontrol-dockposition` 
+You can set this option by using `e-navigationControl-dockPosition` 
 
 {% highlight html %}
 
@@ -401,9 +401,9 @@ You can set this option by using `e-navigationcontrol-dockposition`
     </head>
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map 
-      e-navigationcontrol-enablenavigation="true" e-navigationcontrol-orientation="vertical" 
-      e-navigationcontrol-dockposition="none" e-navigationcontrol-absoluteposition-x="5"
-      e-navigationcontrol-absoluteposition-y="16">      
+      e-navigationcontrol-enableNavigation="true" e-navigationcontrol-orientation="vertical" 
+      e-navigationcontrol-dockPosition="none" e-navigationcontrol-absolutePosition-x="5"
+      e-navigationcontrol-absolutePosition-y="16">      
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
@@ -450,7 +450,7 @@ Set the `orientation` value for navigation control.
     </head>
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map 
-      e-navigationcontrol-enablenavigation="true" e-navigationcontrol-orientation="vertical">      
+      e-navigationcontrol-enableNavigation="true" e-navigationcontrol-orientation="vertical">      
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
@@ -478,7 +478,7 @@ Specifies the navigation control template for map, you can use `content` propert
     </head>
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map 
-      e-navigationcontrol-enablenavigation="true" e-navigationcontrol-content="">      
+      e-navigationcontrol-enableNavigation="true" e-navigationcontrol-content="">      
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
@@ -520,7 +520,7 @@ Specifies the navigation control template for map, you can use `content` propert
 
 #### Enable Layer Change Animation 
 
-Enables or Disables the animation for layer change in map, you can use `enablelayerchangeanimation` property and the default value is false.
+Enables or Disables the animation for layer change in map, you can use `enableLayerChangeAnimation` property and the default value is false.
 
 
 {% highlight html %}
@@ -547,7 +547,7 @@ Enables or Disables the animation for layer change in map, you can use `enablela
 
 ### Responsiveness during browser resize
 
-**Map** is made responsive when resizing the browser by using `isresponsive` property.
+**Map** is made responsive when resizing the browser by using `isResponsive` property.
 
 {% highlight javascript %}
 
@@ -558,7 +558,7 @@ Enables or Disables the animation for layer change in map, you can use `enablela
     </head>
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map 
-      e-isresponsive="true">      
+      e-isResponsive="true">      
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])

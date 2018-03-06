@@ -41,7 +41,7 @@ documentation: ug
                  </ej-lineargauge>
 
 </div>
-<button id="btnSubmit">Export</button>
+<button id="buttonSubmit">Export</button>
 <div id=" fileName ">FileName </div>
 <input type="text" id="fileName">
 <div id=" fileFormat ">FileFormat </div>
@@ -54,10 +54,10 @@ documentation: ug
 
 $(function () {
         // declaration
-        $("#btnSubmit").ejButton({ width: "50px", click: "buttonclickevent", });
+        $("#buttonSubmit").ejButton({ width: "50px", click: "buttonClickEvent", });
         $("#fileFormat").ejDropDownList({ selectedItemIndex: 0, width: "115" });
        });
-    function buttonclickevent() {
+    function buttonClickEvent() {
         var FileName = $("#fileName").val();
         var FileFormat = $("#fileFormat").ejDropDownList("option", "value");
         $("#LinearGauge1").ejLinearGauge("exportImage", FileName, FileFormat);

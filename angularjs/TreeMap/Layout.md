@@ -66,7 +66,7 @@ There are four different **TreeMap** layouts such as
     <body ng-controller="TreemapCtrl">
      <div id="treemapContainer" style="align-content:center;width: 800px; height: 400px;">
      <ej-treemap e-datasource=populationdata e-colorValuePath="Growth" e-weightvaluepath="Population"
-     e-itemslayoutmode="sliceanddiceauto">
+     e-itemslayoutmode="SliceAndDiceAuto">
      <e-levels>
      <e-level e-grouppath="Continent" e-groupgap="5"></e-level>
      </e-levels>
@@ -101,7 +101,7 @@ There are four different **TreeMap** layouts such as
     <body ng-controller="TreemapCtrl">
      <div id="treemapContainer" style="align-content:center;width: 800px; height: 400px;">
      <ej-treemap e-datasource=populationdata e-colorValuePath="Growth" e-weightvaluepath="Population"
-     e-itemslayoutmode="sliceanddicehorizontal">
+     e-itemslayoutmode="SliceAndDiceHorizontal">
      <e-levels>
      <e-level e-grouppath="Continent" e-groupgap="5"></e-level>
      </e-levels>
@@ -137,7 +137,7 @@ There are four different **TreeMap** layouts such as
     <body ng-controller="TreemapCtrl">
      <div id="treemapContainer" style="align-content:center;width: 800px; height: 400px;">
      <ej-treemap e-datasource=populationdata e-colorValuePath="Growth" e-weightvaluepath="Population"
-     e-itemslayoutmode="sliceanddicevertical">
+     e-itemslayoutmode="SliceAndDiceVertical">
      <e-levels>
      <e-level e-grouppath="Continent" e-groupgap="5"></e-level>
      </e-levels>

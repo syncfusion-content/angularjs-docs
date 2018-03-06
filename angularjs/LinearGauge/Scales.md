@@ -377,7 +377,7 @@ You can set multiple scales for a single **Linear Gauge** control by using an ar
                  e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
                  <e-scales>
                  <e-scale  e-width="8" e-position-x="15" e-position-y="50"
-                 e-backgroundColor="grey" e-border-color="grey" e-border-width="1" 
+                 e-backgroundColor="Grey" e-border-color="Grey" e-border-width="1" 
                  e-showmarkerpointers="true" e-showBarPointers="false">
                  <e-labels>
                  <e-label e-distancefromscale-x="50" e-distancefromscale-y="0"></e-label>

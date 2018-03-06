@@ -50,7 +50,7 @@ The following code shows how to set Hide and Trim mode.
 ![](DataLabel_images/DataLabel_img3.png)
 
 ## Label Rotation Mode
-You can rotate the data label by using `e-datalabelsettings-labelrotationmode` property. By default, the labelRotationMode is set as **angle**. 
+You can rotate the data label by using `e-datalabelsettings-labelRotationMode` property. By default, the labelRotationMode is set as **angle**. 
 
 The following code shows how to set labelRotationMode as normal and angle.
 
@@ -79,7 +79,7 @@ You can customize the appearance of the data point using the `font` property.
 {% highlight js %}
 
 <div id="container" ej-sunburstchart e-datalabelsettings-font-color="black" 
-e-datalabelsettings-font-fontweight="bold" e-datalabelsettings-font-size="15px">					
+e-datalabelsettings-font-fontWeight="bold" e-datalabelsettings-font-size="15px">					
 </div>
 
 {% endhighlight %}
@@ -92,13 +92,13 @@ e-datalabelsettings-font-fontweight="bold" e-datalabelsettings-font-size="15px">
 
 By using the title option, you can add the `e-title-text` as well as customize its `e-title-border`, `e-title-background` and `e-title-font`.
 
-You can change the title alignment to center, far and near by using the `e-title-textalignment` property of the Title.
+You can change the title alignment to center, far and near by using the `e-title-textAlignment` property of the Title.
 
 {% highlight js %}
 
 <div id="container" ej-sunburstchart e-title-visible="true" e-title-textalignment="near" e-title-text="" 
 e-title-border-color="blue" e-title-border-width="2" e-title-font-size="15px"
-e-title-font-fontfamily="Arial" e-title-font-fontstyle="bold" e-title-font-fontweight="normal">					
+e-title-font-fontFamily="Arial" e-title-font-fontStyle="bold" e-title-font-fontWeight="normal">					
 </div>
 
 {% endhighlight %}
@@ -111,7 +111,7 @@ By using the subTitle option, you can add the `e-title-subTitle-text` as well as
 
 <div id="container" ej-sunburstchart e-title-subTitle-visible="true" e-title-subTitle-textalignment="near" e-title-subTitle-text="" 
 e-title-subTitle-border-color="blue" e-title-subTitle-border-width="2" e-title-subTitle-font-size="15px"
-e-title-subTitle-font-fontfamily="Arial" e-title-subTitle-font-fontstyle="bold" e-title-subTitle-font-fontweight="normal">					
+e-title-subTitle-font-fontFamily="Arial" e-title-subTitle-font-fontStyle="bold" e-title-subTitle-font-fontWeight="normal">					
 </div>
 
 {% endhighlight %}
