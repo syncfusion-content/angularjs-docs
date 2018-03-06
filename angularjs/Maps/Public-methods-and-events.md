@@ -216,15 +216,15 @@ function MouseOver(){
 {% endhighlight %}
 
 
-### OnRenderComplete
+### RenderComplete
 
-Triggers once map render completed, you can use `OnRenderComplete` event.
+Triggers once map render completed, you can use `RenderComplete` event.
 
 
 {% highlight html %}
 
 <div ng-controller="Map">
-    <div id="container" style="width: 100%" e-mouseleave="onMouseleave"></div>
+    <div id="container" style="width: 100%" e-rendercomplete="OnRenderComplete"></div>
 </div>
 
 {% endhighlight %}
@@ -232,10 +232,10 @@ Triggers once map render completed, you can use `OnRenderComplete` event.
 {% highlight js %}
 
 angular.controller('Map', function ($scope) {    
-    $scope.onMouseleave = "Mouseleave";    
+    $scope.OnRenderComplete = "RenderComplete";    
 });
  
-function Mouseleave(){
+function RenderComplete(){
     // Do Something
 }
 
