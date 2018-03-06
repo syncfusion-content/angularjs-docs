@@ -187,7 +187,7 @@ Specifies the zoom factor for map zoom value, you can use `factor` property.
     </head>
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map e-zoomsettings-enablezoom="true" 
-      e-zoomsettings-minvalue="1" e-zoomsettings-maxvalue="20" e-zoomsettings-factor="1">
+      e-zoomsettings-minValue="1" e-zoomsettings-maxValue="20" e-zoomsettings-factor="1">
         <e-layers>
             <e-layer e-shapedata=usMap ></e-layer>
         </e-layers>

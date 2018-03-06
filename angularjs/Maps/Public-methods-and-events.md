@@ -190,15 +190,15 @@ function MouseLeave(){
 {% endhighlight %}
 
 
-### Mouseover
+### MouseOver
 
-Triggers while hovering the map shape, you can use `mouseover` event.
+Triggers while hovering the map shape, you can use `MouseOver` event.
 
 
 {% highlight html %}
 
 <div ng-controller="Map">
-    <div id="container" style="width: 100%" e-mouseleave="onMouseleave"></div>
+    <div id="container" style="width: 100%" e-mouseover="onMouseOver"></div>
 </div>
 
 {% endhighlight %}
@@ -206,10 +206,10 @@ Triggers while hovering the map shape, you can use `mouseover` event.
 {% highlight js %}
 
 angular.controller('Map', function ($scope) {    
-    $scope.onMouseleave = "Mouseleave";    
+    $scope.onMouseOver = "MouseOver";    
 });
  
-function Mouseleave(){
+function MouseOver(){
     // Do Something
 }
 

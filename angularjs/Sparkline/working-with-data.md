@@ -60,12 +60,12 @@ angular.module('syncApp',['ejangular'])
          <script src="https://cdn.syncfusion.com/14.2.0.26/js/common/ej.widget.angular.min.js"></script>
      </head>
 <body ng-controller="sparkline">
-<div id="column" ej-sparkline e-datasource="sparklinedata"></div>
+<div id="column" ej-sparkline e-datasource="sparkData"></div>
 <script>
     var data = [2, 6, -1, 1, 12, 5, -2, 7, -3, 5, 8, 10, ];	 
     angular.module('syncApp',['ejangular'])
     .controller("sparkline",function($scope){    
-        $scope.sparklinedata = data;
+        $scope.sparkData = data;
             });
 </script>
 </body>

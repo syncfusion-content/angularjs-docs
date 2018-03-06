@@ -255,7 +255,7 @@ You can customize the shape’s color by using `fill`, `stroke` and `strokeThick
             e-enablemousehover="enableMouseHover" 
             e-shapesettings-strokeThickness="strokeThickness" e-shapesettings-fill="Fill" 
             e-shapesettings-stroke="Stroke" e-shapesettings-highlightStroke="highlightStroke" 
-            e-shapesettings-highlightcolor="highlightColor" 
+            e-shapesettings-highlightColor="highlightColor" 
             e-shapesettings-highlightBorderWidth="highlightBorderWidth"></div>
         </div>
     </div>
@@ -380,8 +380,8 @@ You can use `leftLabel` and `rightLabel` property to provide left and right labe
                  e-legendsettings-height="height" e-legendsettings-width="width"
                  e-legendsettings-mode="mode"
                  e-legendsettings-title="title"
-                 e-legendsettings-leftLabel=leftlabel
-                 e-legendsettings-rightLabel=rightlabel>
+                 e-legendsettings-leftLabel=leftLabel
+                 e-legendsettings-rightLabel=rightLabel>
             </div>
         </div>
 </div>

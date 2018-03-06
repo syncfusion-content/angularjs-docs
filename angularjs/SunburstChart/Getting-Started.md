@@ -241,14 +241,14 @@ Now, bind the default_Datasource to `datasource` property of the Sunburst Chart.
       </head>
     <body>
     	  
-      <div id="container" ej-sunburstchart e-datasource="ndatasource"   
+      <div id="container" ej-sunburstchart e-datasource="dataSource"   
      e-valuememberpath="Population" e-levels= "levels">
 
     </div>
         <script>
             angular.module('SunburstChartApp', ['ejangular'])
             .controller('SunburstChartCtrl', function ($scope) {
-            $scope.ndatasource = default_data;
+            $scope.dataSource = default_data;
             $scope.levels = [
 						{ groupMemberPath:"Country"},
 						{groupMemberPath:"JobDescription"},

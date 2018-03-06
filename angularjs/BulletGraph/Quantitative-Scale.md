@@ -134,9 +134,9 @@ Minor ticks can also be customized similar to major ticks. The properties stroke
     </head>
     <body ng-controller="BulletGraphCtrl">
         <div id="bulletframe">
-                 <ej-bulletgraph e-quantitativescalesettings-minorticksettings-size="7" 
-                 e-quantitativescalesettings-minorticksettings-width="3" 
-                 e-quantitativescalesettings-minorticksettings-stroke="gray">
+                 <ej-bulletgraph e-quantitativescalesettings-minorTickSettings-size="7" 
+                 e-quantitativescalesettings-minorTickSettings-width="3" 
+                 e-quantitativescalesettings-minorTickSettings-stroke="gray">
                  </ej-bulletgraph>
         </div>
         <script type="text/javascript">

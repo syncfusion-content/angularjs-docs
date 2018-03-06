@@ -68,8 +68,8 @@ The following screen shot illustrates both the lower and higher level labels tha
     </head>
     <body ng-controller="RangeCtrl">
        <div id="rangecontainer">
-       <ej-rangenavigator  e-labelsettings-higherlevel-labelplacement="inside"
-       e-labelsettings-lowerlevel-labelPlacement="inside"></ej-rangenavigator>
+       <ej-rangenavigator  e-labelsettings-higherLevel-labelplacement="inside"
+       e-labelsettings-lowerLevel-labelPlacement="inside"></ej-rangenavigator>
        </div>
     <script>
         angular.module('RangeApp', ['ejangular'])

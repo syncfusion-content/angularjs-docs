@@ -243,7 +243,7 @@ Here USA election data is considered as input datasource and stored in “electi
             <e-layer e-shapedata=usMap  e-shapedatapath="State" e-shapepropertypath="name" 
             e-datasource=electionData e-shapesettings-autofill="false"  
             e-shapesettings-strokeThickness="0.5" e-shapesettings-stroke="white" 
-            e-shapesettings-valuePath="Electors" e-shapesettings-coloraluePath="Candidate">
+            e-shapesettings-valuePath="Electors" e-shapesettings-colorValuePath="Candidate">
               <div e-shapesettings-colormappings-equalcolormapping>
                     <e-shapeequalcolormap e-value="Romney" e-color="#D84444">
                     </e-shapeequalcolormap>
