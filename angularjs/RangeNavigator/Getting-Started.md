@@ -14,7 +14,7 @@ This section explains briefly about how to create a **RangeNavigator** in your a
 
 ## Create your first RangeNavigator in AngularJS
 
-This section encompasses on how to configure the **ej-rangenavigator** and update the **chart** control for **RangeNavigator’s** selected range. It also helps you to learn how to pass the required data to **RangeNavigator** and customize the scale and selected range for your requirements. In this example, you will look at the steps to configure a RangeNavigator to analyze sales of a product for a particular quarter in a year.
+This section encompasses on how to configure the **ej-rangeNavigator** and update the **chart** control for **RangeNavigator’s** selected range. It also helps you to learn how to pass the required data to **RangeNavigator** and customize the scale and selected range for your requirements. In this example, you will look at the steps to configure a RangeNavigator to analyze sales of a product for a particular quarter in a year.
 
 
 
@@ -172,7 +172,7 @@ You can create a chart with line series using the following code sample.
 {% highlight html %}
 
 <body>
-<div id="container" ej-chart e-title-text=titletext>
+<div id="container" ej-chart e-title-text=titleText>
         <e-series>
             <e-series e-name="Sales" e-type="line" e-tooltip="tooltipoptions" e-datasource=dataSource e-xname="xDate" e-yname="yValue">
             </e-series>
@@ -190,7 +190,7 @@ You can create a chart with line series using the following code sample.
         angular.module('RangeApp', ['ejangular'])
             .controller('RangeCtrl', function ($scope) {
                 $scope.dataSource = chartData;
-                $scope.titletext = "Sales Analysis";
+                $scope.titleText = "Sales Analysis";
             });
     </script>
 </body>
@@ -205,7 +205,7 @@ You can update the chart with the selected data using the **e-rangechanged** eve
 {% highlight javascript %}
 
 <div id="rangecontainer" ej-rangenavigator e-datasource="dataSource" e-xname="xDate" e-yname="yValue"
-         e-rangechanged="onrangechanged"
+         e-rangechanged="onRangeChanged"
          e-tooltipsettings="tooltip"></div>
 
 <script>
@@ -220,10 +220,10 @@ You can update the chart with the selected data using the **e-rangechanged** eve
                   };
             });
 
-        function onrangechanged(sender) {
-            var chartobj = $("#container").data("ejChart");
-            if (chartobj != null) {
-                chartobj.model.series[0].dataSource = sender.selectedData;
+        function onRangeChanged(sender) {
+            var chartObj = $("#container").data("ejChart");
+            if (chartObj != null) {
+                chartObj.model.series[0].dataSource = sender.selectedData;
                 $("#container").ejChart("redraw");
             }
         }

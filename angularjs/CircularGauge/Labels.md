@@ -174,9 +174,9 @@ You can achieve multiple labels such as minor and major in a **Gauge** sample sc
                 <e-scale e-showRanges="true" e-minorIntervalValue="5" e-backgroundColor="yellow"
                 e-border-width="2" e-border-color="red" e-showScaleBar="true" e-radius="150" 
                 e-size="5" e-pointerCap-borderWidth="1.5" e-pointerCap-borderColor="red" 
-                e-pointerCap-backgroundcolor="yellow" >
+                e-pointerCap-backgroundColor="yellow" >
                 <e-pointers>
-                <e-pointer e-backgroundcolor="yellow" e-length="110" e-border-color="red"
+                <e-pointer e-backgroundColor="yellow" e-length="110" e-border-color="red"
                 e-border-width="1.5"></e-pointer>
                 </e-pointers>
                 <e-labels>

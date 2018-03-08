@@ -53,8 +53,8 @@ To customize the highlighted intervals, use color, border and opacity options in
     </head>
     <body ng-controller="RangeCtrl">
        <div id="rangecontainer">
-       <ej-rangenavigator e-navigatorstylesettings-highlightsettings-enable="true" e-navigatorstylesettings-highlightsettings-color="#006fa0" 
-       e-navigatorstylesettings-highlightsettings-border-color="red" e-navigatorstylesettings-highlightsettings-border-width="2"></ej-rangenavigator>
+       <ej-rangenavigator e-navigatorstylesettings-highlightSettings-enable="true" e-navigatorstylesettings-highlightSettings-color="#006fa0" 
+       e-navigatorstylesettings-highlightSettings-border-color="red" e-navigatorstylesettings-highlightSettings-border-width="2"></ej-rangenavigator>
          </div>
     <script>
         angular.module('RangeApp', ['ejangular'])
@@ -83,7 +83,7 @@ EjRangeNavigator provides selection supports to the intervals by, clicking and d
     </head>
     <body ng-controller="RangeCtrl">
        <div id="rangecontainer">
-       <ej-rangenavigator e-navigatorstylesettings-selectionsettings-enable="true" ></ej-rangenavigator>
+       <ej-rangenavigator e-navigatorstylesettings-selectionSettings-enable="true" ></ej-rangenavigator>
          </div>
     <script>
         angular.module('RangeApp', ['ejangular'])
@@ -115,8 +115,8 @@ To customize the selected intervals, use color, border and opacity options in th
     </head>
     <body ng-controller="RangeCtrl">
        <div id="rangecontainer">
-       <ej-rangenavigator e-navigatorstylesettings-selectionsettings-enable="true" e-navigatorstylesettings-selectionsettings-color="#27e8e5" 
-       e-navigatorstylesettings-selectionsettings-border-color="red" e-navigatorstylesettings-selectionsettings-border-width="2"></ej-rangenavigator>
+       <ej-rangenavigator e-navigatorstylesettings-selectionSettings-enable="true" e-navigatorstylesettings-selectionSettings-color="#27e8e5" 
+       e-navigatorstylesettings-selectionSettings-border-color="red" e-navigatorstylesettings-selectionSettings-border-width="2"></ej-rangenavigator>
          </div>
     <script>
         angular.module('RangeApp', ['ejangular'])
@@ -136,7 +136,7 @@ To customize the selected intervals, use color, border and opacity options in th
 
 * To render the Scrollbar in RangeNavigator, you need to enable [`enableScrollbar`](../api/ejrangenavigator#members:enablescrollbar) option.
  
-* [`scrollRangeSettings`](../api/ejrangenavigator#members:scrollrangesettings) of  rangenavigator [`start`](../api/ejrangenavigator#members:scrollrangesettings-start) and [`end`](../api/ejrangenavigator#members:scrollrangesettings-end) value is used to set the minimum and maximum datasource value to be added in the rangenavigator.
+* [`scrollRangeSettings`](../api/ejrangenavigator#members:scrollrangesettings) of  range navigator [`start`](../api/ejrangenavigator#members:scrollrangesettings-start) and [`end`](../api/ejrangenavigator#members:scrollrangesettings-end) value is used to set the minimum and maximum datasource value to be added in the range navigator.
  
 * Based on the scrollRangeSettings *start, end* value and dataSource *start, end* value scrollbar will be adjust.
 

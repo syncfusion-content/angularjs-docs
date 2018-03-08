@@ -195,10 +195,10 @@ N> Tooltip and Color Mappings for bubble is to be set as similar to the tooltip 
         <e-layers>
             <e-layer  e-shapedata=usMap e-shapedatapath="name" e-shapepropertypath="name" 
             e-datasource=datasource e-enablemousehover="true" e-shapesettings-fill="#9CBF4E" 
-            e-shapesettings-strokethickness="0.5" e-shapesettings-stroke="white" 
-            e-bubblesettings-showbubble="true" e-bubblesettings-minvalue="20" 
-            e-bubblesettings-maxvalue="40" e-bubblesettings-color="#C99639" 
-            e-bubblesettings-valuepath="population">
+            e-shapesettings-strokeThickness="0.5" e-shapesettings-stroke="white" 
+            e-bubblesettings-showBubble="true" e-bubblesettings-minValue="20" 
+            e-bubblesettings-maxValue="40" e-bubblesettings-color="#C99639" 
+            e-bubblesettings-valuePath="population">
             </e-layer>
         </e-layers>
     </div>
@@ -238,7 +238,7 @@ The legend can be positioned in two ways.
 
 #### Absolute Position
 
-Based on the margin values of X and Y-axes, the Map legends can be positioned with the support of `e-legendsettings-positionx` and `e-legendsettings-positiony` properties available in `e-legendsettings`. For positioning the legend based on margins corresponding to a map, `e-legendsettings-position` value is set as ‘_none_’.
+Based on the margin values of X and Y-axes, the Map legends can be positioned with the support of `e-legendSettings-positionX` and `e-legendSettings-positionY` properties available in `e-legendSettings`. For positioning the legend based on margins corresponding to a map, `e-legendSettings-position` value is set as ‘_none_’.
 
 #### Dock Position
 
@@ -319,7 +319,7 @@ You can provide the title for interactive legend by using `e-legendsettings-titl
 
 #### Label for Interactive Legend
 
-You can provide the left and right labels to interactive legend by using `e-legendsettings-leftlabel` and `e-legendsettings-rightlabel` properties. 
+You can provide the left and right labels to interactive legend by using `e-legendSettings-leftLabel` and `e-legendSettings-rightLabel` properties. 
 
 N> Here, Range Color Mapping code snippet for shapeSettings with color mappings is referred.
 
@@ -336,10 +336,10 @@ N> Here, Range Color Mapping code snippet for shapeSettings with color mappings 
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
             <e-layer e-legendsettings-showlegend="true" e-legendsettings-position="topLeft" 
-            e-legendsettings-dockonmap="true" e-legendsettings-height="15" 
+            e-legendsettings-dockOnMap="true" e-legendsettings-height="15" 
             e-legendsettings-width="150" e-legendsettings-mode="interactive" 
-            e-legendsettings-title="population" e-legendsettings-leftlabel="0.5M" 
-            e-legendsettings-rightlabel="40M">
+            e-legendsettings-title="population" e-legendsettings-leftLabel="0.5M" 
+            e-legendsettings-rightLabel="40M">
             </e-layer>
         </e-layers>
     </div>
@@ -373,8 +373,8 @@ A bubble legend feature is used to provide the key (legend) for another map elem
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
             <e-layer e-shapedata=usMap e-legendsettings-showlegend="true" e-legendsettings-type="bubble" 
-            e-bubblesettings-showbubble="true" e-bubblesettings-valuepath="population" 
-            e-bubblesettings-minvalue="20" e-bubblesettings-maxvalue="40">
+            e-bubblesettings-showBubble="true" e-bubblesettings-valuePath="population" 
+            e-bubblesettings-minValue="20" e-bubblesettings-maxValue="40">
             <div e-bubblesettings-colormappings-rangecolormapping>
             <e-bubblerangecolormap e-from="500000" e-to="1000000" e-color="#9CBF4E" e-range="10688">
             </e-bubblerangecolormap>

@@ -9,11 +9,11 @@ keywords: ejdigitalgauge, digitalgauge, digitalgauge widget, js digitalgauge, an
 
 # Getting Started
 
-Before we start with the digitalgauge, please refer [this page](http://help.syncfusion.com/js/angularjs) page for general information regarding integrating Syncfusion widget’s.
+Before we start with the digital gauge, please refer [this page](http://help.syncfusion.com/js/angularjs) page for general information regarding integrating Syncfusion widget’s.
 
 ## Adding JavaScript and CSS references
 
-To render the digitalgauge control, the following list of external dependencies are needed, 
+To render the digital gauge control, the following list of external dependencies are needed, 
 
 * [jQuery](http://jquery.com) - 1.7.1 and later versions
 * [Angular](https://angularjs.org/) - angular latest versions
@@ -55,7 +55,7 @@ The other required internal dependencies are tabulated below,
         ej.digitalgauge.min.js 
       </td>
       <td>
-         Digitalgauge core script file which includes digitalgauge related scripts files.
+         DigitalGauge core script file which includes digital gauge related scripts files.
       </td>
    </tr>
     <tr>
@@ -70,7 +70,7 @@ The other required internal dependencies are tabulated below,
 
 N> Refer the `ej.web.all.min.js` (which encapsulates all the `ej` controls and frameworks in a single file) in the application instead of referring all the above specified internal dependencies. 
 
-To get the real appearance of the digitalgauge, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
+To get the real appearance of the digital gauge, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
 
 So the complete boilerplate code is
 
@@ -98,11 +98,11 @@ So the complete boilerplate code is
 N> 1. In production, we highly recommend you to use our [`custom script generator`](http://help.syncfusion.com/js/custom-script-generator) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [`GZip compression`](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
 N> 2. For themes, you can use the `ej.web.all.min.css` CDN link from the code snippet given. To add the themes in your application, please refer to [`this link`](http://help.syncfusion.com/js/theming-in-essential-javascript-components).
 
-## Create a digitalgauge
+## Create a DigitalGauge
 
 All the Essential JavaScript directives have been encapsulated into a single module called `ejangular` so the first step would be to declare dependency for this module within your AngularJS application.
 
-The digitalgauge can be created using `ej-digitalgauge` AngularJS directive and its properties can be defined using `e-` prefix followed by the property name.(For example, e-height)
+The digitalGauge can be created using `ej-digitalgauge` AngularJS directive and its properties can be defined using `e-` prefix followed by the property name.(For example, e-height)
 
 The code example for defining controls in AngularJS is as follows,
 
@@ -173,7 +173,7 @@ You can customize the **Digital Gauge** using different properties.
         <ej-digitalgauge>
             <e-items>
                 <e-item e-value='"102"' e-segmentSettings-width="2" e-segmentSettings-length="20"
-                 e-characterSettings-type="sevensegment" e-characterSettings-spacing="12"></e-item>
+                 e-characterSettings-type="SevenSegment" e-characterSettings-spacing="12"></e-item>
             </e-items>
         </ej-digitalgauge>
     </div>
@@ -237,7 +237,7 @@ You can position the digital letters inside the canvas element using **location*
 <ej-digitalgauge>
     <e-items>
        <e-item e-value='"102"' e-segmentSettings-width="2" e-segmentSettings-length="20" 
-       e-characterSettings-type="sevensegment" e-characterSettings-spacing="12" 
+       e-characterSettings-type="SevenSegment" e-characterSettings-spacing="12" 
        e-position-x="15" e-position-y="12"></e-item>
        </e-items>
 </ej-digitalgauge>
@@ -257,36 +257,36 @@ You can add **Items collection** to display the temperature value as used in the
 
 <ej-digitalgauge>
     <e-items>
-        //For Diplaying fahrenheit value
+        //For Displaying Fahrenheit value
         <e-item e-value='"102"' e-segmentSettings-width="2" e-segmentSettings-length="20" 
-        e-characterSettings-type="sevensegment" e-characterSettings-spacing="12" 
+        e-characterSettings-type="SevenSegment" e-characterSettings-spacing="12" 
         e-position-x="15" e-position-y="12"></e-item>
          //For displaying degree symbol
          <e-item e-value='"0"' e-segmentSettings-width="2" e-segmentSettings-length="5" 
-         e-segmentSettings-spacing="0" e-characterSettings-type="sevensegment" 
+         e-segmentSettings-spacing="0" e-characterSettings-type="SevenSegment" 
          e-characterSettings-spacing="5" e-position-x="47" e-position-y="7">
          </e-item>
-         //For displaying fahrenheit symbol
+         //For displaying Fahrenheit symbol
          <e-item e-value="F" e-segmentSettings-width="2" e-segmentSettings-length="20" 
-         e-segmentSettings-spacing="0" e-characterSettings-type="sevensegment" 
+         e-segmentSettings-spacing="0" e-characterSettings-type="SevenSegment" 
          e-characterSettings-spacing="12" e-position-x="76" e-position-y="12">
          </e-item>
          //For displaying Celcius value
          <e-item e-value='"38"' e-segmentSettings-width="1" e-segmentSettings-length="5" 
          e-segmentSettings-spacing="0" e-segmentSettings-color="#F5b43f" 
-         e-characterSettings-type="sevensegment" e-characterSettings-spacing="12" 
+         e-characterSettings-type="SevenSegment" e-characterSettings-spacing="12" 
          e-position-x="40" e-position-y="58">
          </e-item>
          //For displaying degree symbol
          <e-item e-value='"0"' e-segmentSettings-width="2" e-segmentSettings-length="2" 
          e-segmentSettings-spacing="0" e-segmentSettings-color="#F5b43f"
-         e-characterSettings-type="sevensegment" e-characterSettings-spacing="12" 
+         e-characterSettings-type="SevenSegment" e-characterSettings-spacing="12" 
          e-position-x="52" e-position-y="55">
          </e-item>
-         //For displaying celcius symbol
+         //For displaying Celcius symbol
          <e-item e-value="c" e-segmentSettings-width="2" e-segmentSettings-length="4" 
          e-segmentSettings-spacing="0" e-segmentSettings-color="#F5b43f"
-         e-characterSettings-type="sevensegment" e-characterSettings-spacing="12" 
+         e-characterSettings-type="SevenSegment" e-characterSettings-spacing="12" 
          e-position-x="60" e-position-y="58">
          </e-item>
      </e-items>

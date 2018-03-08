@@ -24,8 +24,8 @@ Tick collection can be directly added to the scale object. Refer the following c
     </head>
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
-                 <ej-lineargauge   e-enableanimation="false" e-value="78" e-frame-innerwidth="8" 
-                 e-frame-outerwidth="10"
+                 <ej-lineargauge   e-enableanimation="false" e-value="78" e-frame-innerWidth="8" 
+                 e-frame-outerWidth="10"
                  e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
                  <e-scales>
                  <e-scale  e-width="5" e-backgroundcolor="transparent" e-type="roundedrectangle"
@@ -91,8 +91,8 @@ Execute the above code to render the following output.
     </head>
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
-                 <ej-lineargauge   e-enableanimation="false" e-value="78" e-frame-innerwidth="8" 
-                 e-frame-outerwidth="10" 
+                 <ej-lineargauge   e-enableanimation="false" e-value="78" e-frame-innerWidth="8" 
+                 e-frame-outerWidth="10" 
                  e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
                  <e-scales>
                  <e-scale  e-width="5" e-backgroundcolor="transparent" e-type="roundedrectangle"
@@ -149,8 +149,8 @@ Ticks are two types such as **majorInterval** and **minorInterval**. Major type 
     </head>
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
-                 <ej-lineargauge   e-enableanimation="false" e-value="78" e-frame-innerwidth="8" 
-                 e-frame-outerwidth="10"
+                 <ej-lineargauge   e-enableanimation="false" e-value="78" e-frame-innerWidth="8" 
+                 e-frame-outerWidth="10"
                  e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
                  <e-scales>
                  <e-scale  e-width="5" e-backgroundcolor="transparent" e-type="roundedrectangle"
@@ -210,8 +210,8 @@ Execute the above code to render the following output.
     </head>
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
-                 <ej-lineargauge   e-enableanimation="false" e-value="78" e-frame-innerwidth="8" 
-                 e-frame-outerwidth="10"
+                 <ej-lineargauge   e-enableanimation="false" e-value="78" e-frame-innerWidth="8" 
+                 e-frame-outerWidth="10"
                  e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
                  <e-scales>
                  <e-scale  e-width="5" e-backgroundcolor="transparent" e-type="roundedrectangle"
