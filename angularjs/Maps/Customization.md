@@ -304,11 +304,11 @@ When `e-shapesettings-autoFill` property is set to true, shapes are filled with 
 
 The `e-shapesettings-colorPalette` property determines whether the auto fill colors are fetched from built-in color palettes or custom palette.
 
-The `e-shapesettings-colorPalette` property can be set with palette1, palette2, palette3 and custompalette values where palette1, palette2 and palette3 are built-in color palettes and default value for this property is “palette1”.
+The `e-shapesettings-colorPalette` property can be set with palette1, palette2, palette3 and CustomPalette values where palette1, palette2 and palette3 are built-in color palettes and default value for this property is “palette1”.
 
 The `e-shapesettings-customPalette` property is used to set an array of colors to be auto filled in shapes.
 
-This property is enabled only when `e-shapesettings-colorPalette` property value is set to “custompalette”.
+This property is enabled only when `e-shapesettings-colorPalette` property value is set to “CustomPalette”.
 
 {% highlight html %}
 
@@ -320,14 +320,14 @@ This property is enabled only when `e-shapesettings-colorPalette` property value
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
-            <e-layer e-shapesettings-autofill="true" e-shapesettings-colorpalette="custompalette"  
-            e-shapesettings-custompalette=custompalette></e-layer>
+            <e-layer e-shapesettings-autofill="true" e-shapesettings-colorpalette="CustomPalette"  
+            e-shapesettings-custompalette=CustomPalette></e-layer>
         </e-layers>
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
         .controller('MapsCtrl', function ($scope) {
-                    $scope.custompalette=["#E51400", "#A4C400", "#730202","#008B00", "#EF6535",
+                    $scope.CustomPalette=["#E51400", "#A4C400", "#730202","#008B00", "#EF6535",
                                          "#1BA0E2", "#C63477", "#0050EF", "#BF004D", "#AA00FF"];
                  });
     </script>

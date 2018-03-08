@@ -17,23 +17,23 @@ Semi-circular Gauge can be positioned with the help of the attribute called gaug
 
 The possible enum values for the gaugePosition are as follows:
 
-* Topleft
+* TopLeft
 
-* Topcenter
+* TopCenter
 
-* Topright
+* TopRight
 
-* Middleleft
+* MiddleLeft
 
 * Center
 
-* Middleright
+* MiddleRight
 
-* Bottomleft
+* BottomLeft
 
-* Bottomcenter
+* BottomCenter
 
-* Bottomright
+* BottomRight
 
 {% highlight html %}
 
@@ -45,7 +45,7 @@ The possible enum values for the gaugePosition are as follows:
     <body ng-controller="CircularGaugeCtrl">
         <div id="circularframe"> 
         <ej-circulargauge e-backgroundcolor="transparent" e-width="800" e-height="500" e-radius="120" e-value="60"
-        e-gaugePosition="center" e-distanceFromCorner="30" e-frame-frameType="halfcircle" 
+        e-gaugePosition="center" e-distanceFromCorner="30" e-frame-frameType="HalfCircle" 
         e-frame-halfCircleFrameStartAngle="270" e-frame-halfCircleFrameEndAngle="90">
         <e-scales>
            <e-scale e-startangle="270" e-sweepangle="180" e-radius="160" e-showscalebar="true" e-size="1"

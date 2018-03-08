@@ -72,7 +72,7 @@ The number of text to be displayed can be limited by the attribute called **coun
                  <e-items>
                  <e-item e-value="1234567890" e-segmentsettings-length="8" e-segmentsettings-width="1" 
                  e-charactersettings-count="10" e-charactersettings-spacing="10" 
-                 e-charactersettings-type="sevensegment">
+                 e-charactersettings-type="SevenSegment">
                  </e-item>
                  </e-items>
                  </ej-digitalgauge>

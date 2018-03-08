@@ -88,11 +88,11 @@ Execute the above code to render the following output.
     <body ng-controller="LinearGaugeCtrl">
         <div id="linearframe">
                  <ej-lineargauge   e-enableanimation="false" e-value="31" e-width="600" e-height="250" 
-                 e-theme="flatlight" e-orientation="horizontal" e-labelcolor="black" e-enableresize="true" 
+                 e-theme="FlatLight" e-orientation="horizontal" e-labelcolor="black" e-enableresize="true" 
                  e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
                  <e-scales>
                  <e-scale   e-backgroundcolor="White" e-width="5" e-majorintervalvalue="25" 
-                 e-minorintervalvalue="5" e-type="roundedrectangle" e-border-color="#AEC75F" 
+                 e-minorintervalvalue="5" e-type="RoundedRectangle" e-border-color="#AEC75F" 
                  e-border-width="2" e-showBarPointers="true" e-showMarkerPointers="false" 
                  e-showCustomLabels="true" >
                  <e-barpointers>

@@ -106,7 +106,7 @@ Execute the above code to render the following output.
                  e-frame-backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
                  <e-scales>
                  <e-scale  e-width="8" e-position-x="20" e-position-y="50" e-backgroundColor="#FE8282" 
-                 e-opacity="0.5" e-shadowoffset="10" e-type="roundedrectangle" e-border-color="red" 
+                 e-opacity="0.5" e-shadowoffset="10" e-type="RoundedRectangle" e-border-color="red" 
                  e-border-width="1" e-showBarPointers="false" e-showmarkerpointers="true" >
                  <e-labels>
                  <e-label  e-distancefromscale-x="50" e-distancefromscale-y="0"></e-label>

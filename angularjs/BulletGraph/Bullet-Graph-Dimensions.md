@@ -104,7 +104,7 @@ The following screenshot displays **Bullet Graph** with comparative measure valu
 
 ## Theme
 
-**Bullet Graph Theme** is customized using **theme** property. Default value is **flat light. Bullet Graph** supports **flat light** and **flatdark** themes. **Flatdark** theme improves **Bullet Graph** appearance when background of **Bullet Graph** container uses dark color like black.
+**Bullet Graph Theme** is customized using **theme** property. Default value is **FlatLight. Bullet Graph** supports **FlatLight** and **FlatDark** themes. **FlatDark** theme improves **Bullet Graph** appearance when background of **Bullet Graph** container uses dark color like black.
 
 {% highlight html %}
 
@@ -115,7 +115,7 @@ The following screenshot displays **Bullet Graph** with comparative measure valu
     </head>
     <body ng-controller="BulletGraphCtrl">
         <div id="bulletframe">
-                 <ej-bulletgraph e-theme="flatdark"></ej-bulletgraph>
+                 <ej-bulletgraph e-theme="FlatDark"></ej-bulletgraph>
         </div>
      <script type="text/javascript">
            angular.module('BulletGraphApp', ['ejangular'])
