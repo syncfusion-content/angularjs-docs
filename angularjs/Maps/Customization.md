@@ -321,7 +321,7 @@ This property is enabled only when `e-shapesettings-colorPalette` property value
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
             <e-layer e-shapesettings-autofill="true" e-shapesettings-colorpalette="CustomPalette"  
-            e-shapesettings-custompalette=CustomPalette></e-layer>
+            e-shapesettings-CustomPalette=CustomPalette></e-layer>
         </e-layers>
     </div>
     <script>

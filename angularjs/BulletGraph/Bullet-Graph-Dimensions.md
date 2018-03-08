@@ -128,7 +128,7 @@ The following screenshot displays **Bullet Graph** with comparative measure valu
 
 
 
-The following screenshot displays **Bullet Graph** with **flatdark** theme
+The following screenshot displays **Bullet Graph** with **FlatDark** theme
 
 ![](Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img4.png)
 

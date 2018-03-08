@@ -280,7 +280,7 @@ You can add **Items collection** to display the temperature value as used in the
          //For displaying degree symbol
          <e-item e-value='"0"' e-segmentSettings-width="2" e-segmentSettings-length="2" 
          e-segmentSettings-spacing="0" e-segmentSettings-color="#F5b43f"
-         e-characterSettings-type="sevensegment" e-characterSettings-spacing="12" 
+         e-characterSettings-type="SevenSegment" e-characterSettings-spacing="12" 
          e-position-x="52" e-position-y="55">
          </e-item>
          //For displaying Celcius symbol
