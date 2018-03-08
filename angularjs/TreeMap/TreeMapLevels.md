@@ -114,7 +114,7 @@ You can use `e-groupGap` property to separate the items from every flat level a
             {Region: "Southern Africa", Growth: 0.91, Population: 60425000 }];
         angular.module('TreemapApp', ['ejangular'])
         .controller('TreemapCtrl', function ($scope) {
-            $scope.populationdata=population_data;
+            $scope.populationData=population_data;
                 });
     </script>
     </body>

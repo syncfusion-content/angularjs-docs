@@ -72,7 +72,7 @@ The number of text to be displayed can be limited by the attribute called **coun
                  <e-items>
                  <e-item e-value="1234567890" e-segmentsettings-length="8" e-segmentsettings-width="1" 
                  e-charactersettings-count="10" e-charactersettings-spacing="10" 
-                 e-charactersettings-type="sevensegment">
+                 e-charactersettings-type="SevenSegment">
                  </e-item>
                  </e-items>
                  </ej-digitalgauge>
@@ -192,7 +192,7 @@ You can customize the **font** of the text as per your requirement. To customize
                  <ej-digitalgauge e-width="800" >
                  <e-items>
                  <e-item e-value="WELCOME" e-enablecustomfont="true" e-font-fontfamily="Arial" e-font-fontsize="18px"
-                 e-font-fontweight="normal" e-font-fontstyle="bold">
+                 e-font-fontWeight="normal" e-font-fontStyle="bold">
                  </e-item>
                  </e-items>
                  </ej-digitalgauge>

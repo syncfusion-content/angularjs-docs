@@ -122,7 +122,7 @@ Tooltip get displayed only when we move the slider.</td></tr>
     <body ng-controller="RangeCtrl">
        <div id="rangecontainer">
        <ej-rangenavigator e-tooltipsettings-visible="true" 
-       e-tooltipsettings-tooltipdisplaymode="onDemand"></ej-rangenavigator>
+       e-tooltipsettings-tooltipDisplayMode="onDemand"></ej-rangenavigator>
        </div>
     <script>
         angular.module('RangeApp', ['ejangular'])

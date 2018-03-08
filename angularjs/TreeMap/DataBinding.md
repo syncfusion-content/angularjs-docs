@@ -22,7 +22,7 @@ The `e-dataSource` property accepts the collection values as input. For example,
     </head> 
     <body ng-controller="TreemapCtrl">
      <div id="treemapContainer" style="align-content:center;width: 800px; height: 400px;">
-     <ej-treemap e-datasource=populationdata e-colorValuePath="Growth" e-weightvaluepath="Population">
+     <ej-treemap e-datasource=populationData e-colorValuePath="Growth" e-weightvaluepath="Population">
     </ej-treemap>
      </div>
       <script>
@@ -44,7 +44,7 @@ The `e-dataSource` property accepts the collection values as input. For example,
         ];
            angular.module('TreemapApp', ['ejangular'])
            .controller('TreemapCtrl', function ($scope) {
-                    $scope.populationdata=population_data;
+                    $scope.populationData=population_data;
                         });
     </script>
     </body>

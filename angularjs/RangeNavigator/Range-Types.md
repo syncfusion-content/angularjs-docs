@@ -103,7 +103,7 @@ By default **intervalType** for higher level labels are **years** and for lower 
     <body ng-controller="RangeCtrl">
        <div id="rangecontainer">
        <ej-rangenavigator  e-valuetype="datetime" e-labelsettings-higherlevel-intervaltype="years" 
-       e-labelsettings-lowerlevel-intervaltype="quarters"></ej-rangenavigator>
+       e-labelsettings-lowerLevel-intervalType="quarters"></ej-rangenavigator>
        </div>
     <script>
         angular.module('RangeApp', ['ejangular'])

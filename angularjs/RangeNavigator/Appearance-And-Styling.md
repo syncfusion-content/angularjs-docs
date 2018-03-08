@@ -29,15 +29,15 @@ The lower level labels font **color**, **fontFamily**, **fontStyle**, **fontWeig
     <body ng-controller="RangeCtrl">
        <div id="rangecontainer">
        <ej-rangenavigator  e-labelsettings-higherlevel-style-font-color="#ff0000"
-       e-labelsettings-higherlevel-style-font-style="normal" 
-       e-labelsettings-higherlevel-style-font-weight="regular" 
-       e-labelsettings-higherlevel-style-font-size="12px" 
-       e-labelsettings-higherlevel-style-font-opacity="1" 
-       e-labelsettings-lowerlevel-style-font-color="#ff0000" 
-       e-labelsettings-lowerlevel-style-font-size="12px"  
-       e-labelsettings-lowerlevel-style-font-opacity="1" 
-       e-labelsettings-lowerlevel-style-font-style="normal" 
-       e-labelsettings-lowerlevel-style-font-weight="normal">
+       e-labelsettings-higherLevel-style-font-style="normal" 
+       e-labelsettings-higherLevel-style-font-weight="regular" 
+       e-labelsettings-higherLevel-style-font-size="12px" 
+       e-labelsettings-higherLevel-style-font-opacity="1" 
+       e-labelsettings-lowerLevel-style-font-color="#ff0000" 
+       e-labelsettings-lowerLevel-style-font-size="12px"  
+       e-labelsettings-lowerLevel-style-font-opacity="1" 
+       e-labelsettings-lowerLevel-style-font-style="normal" 
+       e-labelsettings-lowerLevel-style-font-weight="normal">
        </ej-rangenavigator>
        </div>
     <script>
@@ -68,8 +68,8 @@ The following screen shot illustrates both the lower and higher level labels tha
     </head>
     <body ng-controller="RangeCtrl">
        <div id="rangecontainer">
-       <ej-rangenavigator  e-labelsettings-higherlevel-labelplacement="inside"
-       e-labelsettings-lowerlevel-labelplacement="inside"></ej-rangenavigator>
+       <ej-rangenavigator  e-labelsettings-higherLevel-labelplacement="inside"
+       e-labelsettings-lowerLevel-labelPlacement="inside"></ej-rangenavigator>
        </div>
     <script>
         angular.module('RangeApp', ['ejangular'])
@@ -108,27 +108,27 @@ The visibility of labels are enabled by setting **visible** in higher level and 
     <body ng-controller="RangeCtrl">
        <div id="rangecontainer">
        <ej-rangenavigator e-navigatorstylesettings-unselectedregioncolor="white" 
-       e-navigatorstylesettings-selectedregioncolor="#5EABDE" 
-       e-navigatorstylesettings-thumbcolor="white"
-       e-navigatorstylesettings-thumbradius="10" 
-       e-navigatorstylesettings-thumbstroke="#303030" 
+       e-navigatorstylesettings-selectedRegionColor="#5EABDE" 
+       e-navigatorstylesettings-thumbColor="white"
+       e-navigatorstylesettings-thumbRadius="10" 
+       e-navigatorstylesettings-thumbStroke="#303030" 
        e-navigatorstylesettings-background="transparent" 
        e-navigatorstylesettings-border-color="black" 
        e-navigatorstylesettings-border-width="3" 
-       e-navigatorstylesettings-majorgridlinestyle-color="transparent"
-       e-navigatorstylesettings-minorgridlinestyle-color="transparent"
-       e-labelsettings-higherlevel-style-font-color="black" 
-       e-labelsettings-higherlevel-style-font-size="13px" 
-       e-labelsettings-higherlevel-style-font-opacity="1"
-       e-labelsettings-higherlevel-style-horizontalalignment="left" 
-       e-labelsettings-higherlevel-intervaltype="years" 
-       e-labelsettings-higherlevel-labelplacement="inside"
-       e-labelsettings-lowerlevel-style-font-color="black" 
-       e-labelsettings-lowerlevel-style-font-size="12px" 
-       e-labelsettings-lowerlevel-style-font-opacity="1" 
-       e-labelsettings-lowerlevel-style-horizontalalignment="center" 
-       e-labelsettings-lowerlevel-intervaltype="quarters" 
-       e-labelsettings-lowerlevel-labelplacement="inside">
+       e-navigatorstylesettings-majorGridLineStyle-color="transparent"
+       e-navigatorstylesettings-minorGridLineStyle-color="transparent"
+       e-labelsettings-higherLevel-style-font-color="black" 
+       e-labelsettings-higherLevel-style-font-size="13px" 
+       e-labelsettings-higherLevel-style-font-opacity="1"
+       e-labelsettings-higherLevel-style-horizontalAlignment="left" 
+       e-labelsettings-higherLevel-intervalType="years" 
+       e-labelsettings-higherLevel-labelPlacement="inside"
+       e-labelsettings-lowerLevel-style-font-color="black" 
+       e-labelsettings-lowerLevel-style-font-size="12px" 
+       e-labelsettings-lowerLevel-style-font-opacity="1" 
+       e-labelsettings-lowerLevel-style-horizontalAlignment="center" 
+       e-labelsettings-lowerLevel-intervalType="quarters" 
+       e-labelsettings-lowerLevel-labelPlacement="inside">
        </ej-rangenavigator>
        </div>
     <script>
@@ -149,22 +149,22 @@ The visibility of labels are enabled by setting **visible** in higher level and 
 
 **RangeNavigator** **theme** is a set of pre-defined options that are applied to the control before each **RangeNavigator** is instantiated. Following predefined themes are available in JavaScript **RangeNavigator**.
 
-1. flatlight
-2. flatdark
-3. gradientlight 
-4. gradientdark 
+1. flat-light
+2. flat-dark
+3. gradient-light 
+4. gradient-dark 
 5. azure                      
-6. azuredark               
+6. azure-dark               
 7. lime 
-8. limedark
+8. lime-dark
 9. saffron
-10. saffrondark
-11. gradientazure
-12. gradientazuredark
-13. gradientlime
-14. gradientlimedark
-15. gradientsaffron
-16. gradientsaffrondark
+10. saffron-dark
+11. gradient-azure
+12. gradient-azure-dark
+13. gradient-lime
+14. gradient-lime-dark
+15. gradient-saffron
+16. gradient-saffron-dark
 
 {% highlight html %}
 

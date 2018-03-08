@@ -106,12 +106,12 @@ Fires before rendering a series. The `seriesRendering` event is fired for each s
 
 <body ng-controller="SparkCtrl">
     <div id="container" >
-        <ej-sparkline e-seriesrendering="seriesrendering"></ej-sparkline>
+        <ej-sparkline e-seriesrendering="seriesRendering"></ej-sparkline>
     </div>
     <script>
       angular.module('SparkApp', ['ejangular'])
         .controller('SparkCtrl', function ($scope) {
-                $scope.seriesrendering="onSeriesRender"
+                $scope.seriesRendering="onSeriesRender"
         });
         function onSeriesRender(sender) {
             // do something
@@ -129,12 +129,12 @@ The `pointRegionMouseMove` event is fired when mouse is moved over a point.
 
 <body ng-controller="SparkCtrl">
     <div id="container" >
-        <ej-sparkline e-pointregionmousemove="regionmousemove"></ej-sparkline>
+        <ej-sparkline e-pointregionmousemove="regionMouseMove"></ej-sparkline>
     </div>
     <script>
       angular.module('SparkApp', ['ejangular'])
         .controller('SparkCtrl', function ($scope) {
-                $scope.regionmousemove="onRegionMouseMove"
+                $scope.regionMouseMove="onRegionMouseMove"
         });
         function onRegionMouseMove(sender) {
             // do something
@@ -152,12 +152,12 @@ The `pointRegionMouseClick` event is fired on clicking a point in sparkline. You
 
 <body ng-controller="SparkCtrl">
     <div id="container" >
-        <ej-sparkline e-pointregionmouseclick="regionmouseclick"></ej-sparkline>
+        <ej-sparkline e-pointregionmouseclick="regionMouseClick"></ej-sparkline>
     </div>
     <script>
       angular.module('SparkApp', ['ejangular'])
         .controller('SparkCtrl', function ($scope) {
-                $scope.regionmouseclick="onRegionMouseClick"
+                $scope.regionMouseClick="onRegionMouseClick"
         });
         function onRegionMouseClick(sender) {
             // do something
@@ -175,12 +175,12 @@ The `sparklineMouseMove` is fired on moving mouse over the sparkline.
 
 <body ng-controller="SparkCtrl">
     <div id="container" >
-        <ej-sparkline e-sparklinemousemove="sparklinemousemove"></ej-sparkline>
+        <ej-sparkline e-sparklinemousemove="sparklineMouseMove"></ej-sparkline>
     </div>
     <script>
       angular.module('SparkApp', ['ejangular'])
         .controller('SparkCtrl', function ($scope) {
-                $scope.sparklinemousemove="onSparklineMouseMove"
+                $scope.sparklineMouseMove="onSparklineMouseMove"
         });
         function onSparklineMouseMove(sender) {
             // do something
@@ -198,12 +198,12 @@ The `sparklineMouseLeave` event is fired on moving mouse outside the sparkline.
 
 <body ng-controller="SparkCtrl">
     <div id="container" >
-        <ej-sparkline e-sparklinemouseleave="sparklinemouseleave"></ej-sparkline>
+        <ej-sparkline e-sparklinemouseleave="sparklineMouseLeave"></ej-sparkline>
     </div>
     <script>
       angular.module('SparkApp', ['ejangular'])
         .controller('SparkCtrl', function ($scope) {
-                $scope.sparklinemouseleave="onSparklineMouseLeave"
+                $scope.sparklineMouseLeave="onSparklineMouseLeave"
         });
         function onSparklineMouseLeave(sender) {
             // do something
