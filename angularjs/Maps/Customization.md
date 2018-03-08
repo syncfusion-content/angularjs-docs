@@ -37,9 +37,9 @@ The above properties of `e-shapeSettings` are applied only when the `e-shapesett
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
             <e-layer e-shapedata=usMap  e-enablemousehover="true" e-shapesettings-fill="#9CBF4E" 
-            e-shapesettings-strokethickness="0.5" e-shapesettings-stroke="white" 
-            e-shapesettings-highlightstroke="white" e-shapesettings-highlightcolor="#BC5353" 
-            e-shapesettings-highlightborderwidth="1"></e-layer>
+            e-shapesettings-strokeThickness="0.5" e-shapesettings-stroke="white" 
+            e-shapesettings-highlightStroke="white" e-shapesettings-highlightColor="#BC5353" 
+            e-shapesettings-highlightBorderWidth="1"></e-layer>
         </e-layers>
     </div>
     <script>
@@ -67,7 +67,7 @@ The **Color Mapping** support enables the customization of shape colors based on
 
 * `e-shapesettings-colorValuePath` - It renders the field value that is to be fetched from data for each shape used for determining the shape color.
 * `e-shapesettings-valuePath` - It renders the field value that is to be fetched from data for each shape. This support also provides a tree map-like impact on the map UI. The various types of Color Mapping supported in maps are listed as follows.
-* `e-shapesettings-colormappings-rangeColorMapping` - It is used to differentiate the shape’s fill based on its underlying value and color ranges. The properties of rangeColorMapping are listed in the following table.
+* `e-shapesettings-colorMappings-rangeColorMapping` - It is used to differentiate the shape’s fill based on its underlying value and color ranges. The properties of rangeColorMapping are listed in the following table.
 
 <table>
 <tr>
@@ -115,8 +115,8 @@ Gets or sets the start point and end point gradient colors to be applied for spe
         <e-layers>
             <e-layer e-shapedata=usMap  e-shapedatapath="name" e-shapepropertypath="name" 
             e-datasource=populationData e-shapesettings-fill="#9CBF4E" 
-            e-shapesettings-strokethickness="0.5" e-shapesettings-stroke="white" 
-            e-shapesettings-valuepath="population" e-shapesettings-enablegradient="true">
+            e-shapesettings-strokeThickness="0.5" e-shapesettings-stroke="white" 
+            e-shapesettings-valuePath="population" e-shapesettings-enableGradient="true">
               <div e-shapesettings-colormappings-rangecolormapping>
                     <e-shaperangecolormap e-from="500000" e-to="1000000" e-gradientcolors="ncolor1">
                     </e-shaperangecolormap>
@@ -150,7 +150,7 @@ When the underlying value is below any of the given sorted range or above the so
 
 ![](Customization_images/Customization_img2.png)
 
-* `e-shapesettings-colormappings-equalColorMapping` - The equalColorMapping is used to differentiate the shape’s fill based on its underlying value and color. The properties of equalColorMapping is listed in the following table.
+* `e-shapesettings-colorMappings-equalColorMapping` - The equalColorMapping is used to differentiate the shape’s fill based on its underlying value and color. The properties of equalColorMapping is listed in the following table.
 
 <table>
 <tr>
@@ -242,8 +242,8 @@ Here USA election data is considered as input datasource and stored in “electi
         <e-layers>
             <e-layer e-shapedata=usMap  e-shapedatapath="State" e-shapepropertypath="name" 
             e-datasource=electionData e-shapesettings-autofill="false"  
-            e-shapesettings-strokethickness="0.5" e-shapesettings-stroke="white" 
-            e-shapesettings-valuepath="Electors" e-shapesettings-colorvaluepath="Candidate">
+            e-shapesettings-strokeThickness="0.5" e-shapesettings-stroke="white" 
+            e-shapesettings-valuePath="Electors" e-shapesettings-colorValuePath="Candidate">
               <div e-shapesettings-colormappings-equalcolormapping>
                     <e-shapeequalcolormap e-value="Romney" e-color="#D84444">
                     </e-shapeequalcolormap>
@@ -284,7 +284,7 @@ When `e-shapesettings-autoFill` property is set to true, shapes are filled with 
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
             <e-layer e-shapedata=usMap e-shapesettings-autofill="true" 
-            e-shapesettings-strokethickness="0.5"  e-shapesettings-stroke="white"></e-layer>
+            e-shapesettings-strokeThickness="0.5"  e-shapesettings-stroke="white"></e-layer>
         </e-layers>
     </div>
     <script>
@@ -304,11 +304,11 @@ When `e-shapesettings-autoFill` property is set to true, shapes are filled with 
 
 The `e-shapesettings-colorPalette` property determines whether the auto fill colors are fetched from built-in color palettes or custom palette.
 
-The `e-shapesettings-colorPalette` property can be set with palette1, palette2, palette3 and custompalette values where palette1, palette2 and palette3 are built-in color palettes and default value for this property is “palette1”.
+The `e-shapesettings-colorPalette` property can be set with palette1, palette2, palette3 and CustomPalette values where palette1, palette2 and palette3 are built-in color palettes and default value for this property is “palette1”.
 
 The `e-shapesettings-customPalette` property is used to set an array of colors to be auto filled in shapes.
 
-This property is enabled only when `e-shapesettings-colorPalette` property value is set to “custompalette”.
+This property is enabled only when `e-shapesettings-colorPalette` property value is set to “CustomPalette”.
 
 {% highlight html %}
 
@@ -320,14 +320,14 @@ This property is enabled only when `e-shapesettings-colorPalette` property value
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
-            <e-layer e-shapesettings-autofill="true" e-shapesettings-colorpalette="custompalette"  
-            e-shapesettings-custompalette=custompalette></e-layer>
+            <e-layer e-shapesettings-autofill="true" e-shapesettings-colorpalette="CustomPalette"  
+            e-shapesettings-CustomPalette=CustomPalette></e-layer>
         </e-layers>
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
         .controller('MapsCtrl', function ($scope) {
-                    $scope.custompalette=["#E51400", "#A4C400", "#730202","#008B00", "#EF6535",
+                    $scope.CustomPalette=["#E51400", "#A4C400", "#730202","#008B00", "#EF6535",
                                          "#1BA0E2", "#C63477", "#0050EF", "#BF004D", "#AA00FF"];
                  });
     </script>
@@ -388,7 +388,7 @@ The `e-tooltipTemplate` property is used for customizing the template for toolti
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
             <e-layer e-showtooltip="true" e-tooltiptemplate="myTooltip" 
-            e-shapesettings-valuepath="name" ></e-layer>
+            e-shapesettings-valuePath="name" ></e-layer>
         </e-layers>
     </div>
      <div  id="myTooltip" style="display: none;">
@@ -451,7 +451,7 @@ The Map background can be customized by using the `background` property of the M
 
 ### Base Map Index 
 
-Specifies the index of the map to determine the shape layer to be displayed, you can use `basemapindex` property and the default value is 0.
+Specifies the index of the map to determine the shape layer to be displayed, you can use `baseMapIndex` property and the default value is 0.
 
 
 {% highlight html %}
@@ -465,7 +465,7 @@ Specifies the index of the map to determine the shape layer to be displayed, you
     <body ng-controller="MapsCtrl">
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
       <e-layers>
-            <e-layer e-basemapindex=""></e-layer>
+            <e-layer e-baseMapIndex=""></e-layer>
         </e-layers>        
     </div>
     <script>

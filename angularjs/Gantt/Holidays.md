@@ -9,7 +9,7 @@ documentation: ug
 
 # Holidays
 
-Holidays in Gantt control is used to highlight the non-working days in Gantt control and it can be initialized with Gantt control by using the following code example.
+Holidays in the Gantt control is used to highlight the non-working days, and it can be initialized with the Gantt control by using the following code example:
 
 {% highlight javascript %}
 
@@ -36,7 +36,7 @@ Holidays in Gantt control is used to highlight the non-working days in Gantt con
    
 {% endhighlight %}
 
-The following screenshot shows the output of Holidays in Gantt control.
+The following screenshot shows the output of holidays in the Gantt control:
 
 ![](Holidays_images/Holidays_img1.png)
 

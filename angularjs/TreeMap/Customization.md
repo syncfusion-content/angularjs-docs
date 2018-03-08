@@ -105,8 +105,8 @@ You can differentiate all the leaf nodes using the `e-desaturationColorMapping` 
     <body ng-controller="TreemapCtrl">
      <div id="treemapContainer" style="align-content:center;width: 800px; height: 400px;">
      <ej-treemap e-desaturationcolormapping-color="DeepSkyBlue" e-desaturationcolormapping-from="1"
-     e-desaturationcolormapping-to="0.2" e-desaturationcolormapping-rangeminimum="0" 
-     e-desaturationcolormapping-rangemaximum="4">
+     e-desaturationcolormapping-to="0.2" e-desaturationcolormapping-rangeMinimum="0" 
+     e-desaturationcolormapping-rangeMaximum="4">
      </ej-treemap>
      </div>
      <script>
@@ -133,23 +133,23 @@ You can enable the tooltip support for the TreeMap by setting the `e-showTooltip
 
 You can customize the **Leaf level TreeMap items** using `e-leafItemSettings`. In leafItemSettings following customization options are available.
 
-* You can specify the border color using `e-leafitemsettings-borderbrush` property.
+* You can specify the border color using `e-leafitemsettings-borderBrush` property.
 
-* For customizing border thickness, you can use `e-leafitemsettings-borderthickness` property.
+* For customizing border thickness, you can use `e-leafitemsettings-borderThickness` property.
 
 * To customize the gap between the leaf items, you can use `e-leafitemsettings-gap` property.
 
-* You can specify the label template for the leaf item using `e-leafitemsettings-itemtemplate` property.
+* You can specify the label template for the leaf item using `e-leafitemsettings-itemTemplate` property.
 
-* The Label and tooltip values take the property of bound object that is referred in the `e-leafitemsettings-labelpath` when defined.
+* The Label and tooltip values take the property of bound object that is referred in the `e-leafitemsettings-labelPath` when defined.
 
-* You can specify the position of the leaf labels using `e-leafitemsettings-labelposition` property.
+* You can specify the position of the leaf labels using `e-leafitemsettings-labelPosition` property.
 
-* You can control the mode of label visibility of the labels using `e-leafitemsettings-labelvisibilitymode` property.
+* You can control the mode of label visibility of the labels using `e-leafitemsettings-labelVisibilityMode` property.
 
-* To show or hide the visibility of the leaf item labels you can use `e-leafitemsettings-showlabels` property.
+* To show or hide the visibility of the leaf item labels you can use `e-leafitemsettings-showLabels` property.
 
-* For specifying over flow action of left item labels you can use `e-leafitemsettings-textoverflow` property.
+* For specifying over flow action of left item labels you can use `e-leafitemsettings-textOverFlow` property.
 
 {% highlight html %}
 
@@ -161,7 +161,7 @@ You can customize the **Leaf level TreeMap items** using `e-leafItemSettings`. I
     <body ng-controller="TreemapCtrl">
      <div id="treemapContainer" style="align-content:center;width: 800px; height: 400px;">
      <ej-treemap e-datasource=populationdata e-colorValuePath="Growth" e-weightvaluepath="Population"
-     e-leafitemsettings-labelpath="Region" e-showtooltip="true" e-tooltiptemplate="template">
+     e-leafitemsettings-labelPath="Region" e-showtooltip="true" e-tooltiptemplate="template">
      <e-rangecolormapping>
      <e-rangecolor e-color="#77D8D8" e-from="0" e-to="1"></e-rangecolor>
      <e-rangecolor e-color="#AED960" e-from="0" e-to="2"></e-rangecolor>
@@ -426,13 +426,13 @@ You can customize the color of the each group using `e-groupColorMapping` proper
     </head> 
     <body ng-controller="TreemapCtrl">
      <div id="treemapContainer" style="align-content:center;width: 800px; height: 400px;">
-     <ej-treemap e-groupcolormapping=groupcolormapping>    
+     <ej-treemap e-groupcolormapping=groupColorMapping>    
      </ej-treemap>
      </div>
      <script>
      angular.module('TreemapApp', ['ejangular'])
      .controller('TreemapCtrl', function ($scope) {
-          $scope.groupcolormapping=[{
+          $scope.groupColorMapping=[{
               groupID: "Asia", 
               rangeColorMapping:[{ 
                   color: "#77D8D8", 
@@ -564,13 +564,13 @@ You can specify the treemap items which you want to display in the treemap using
     </head> 
     <body ng-controller="TreemapCtrl">
      <div id="treemapContainer" style="align-content:center;width: 800px; height: 400px;">
-     <ej-treemap e-treemapitems=treemapitem>    
+     <ej-treemap e-treemapitems=treeMapItem>    
      </ej-treemap>
      </div>
      <script>
      angular.module('TreemapApp', ['ejangular'])
      .controller('TreemapCtrl', function ($scope) {
-          $scope.treemapitem=[{
+          $scope.treeMapItem=[{
             // ..             
           }];
         });

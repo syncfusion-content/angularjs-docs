@@ -50,12 +50,12 @@ This method is used to destroy the **RangeNavigator** widget.
 
 {% highlight html %}
 
-<div id="rangecontainer">
+<div id="rangeContainer">
     <ej-rangenavigator></ej-rangenavigator>
 </div>
 <script>
     // Destroys range navigator
-     $("#rangecontainer").ejRangeNavigator("_destroy");
+     $("#rangeContainer").ejRangeNavigator("_destroy");
 </script>
 
 {% endhighlight %}
@@ -130,12 +130,12 @@ This event gets fired whenever the selected range changes in **RangeNavigator**.
     </head>
     <body ng-controller="RangeCtrl">
        <div id="rangecontainer">
-       <ej-rangenavigator e-rangechanged=rangechanged></ej-rangenavigator>
+       <ej-rangenavigator e-rangechanged=rangeChanged></ej-rangenavigator>
        </div>
     <script>
         angular.module('RangeApp', ['ejangular'])
         .controller('RangeCtrl', function ($scope) {
-                $scope.rangechanged="range"
+                $scope.rangeChanged="range"
                 });
         function range(sender) {
                console.log(sender.selectedRangeSettings.start);
@@ -155,12 +155,12 @@ This event is fired when starting to change the slider position in **RangeNaviga
 
 <body ng-controller="RangeCtrl">
     <div id="rangecontainer">
-        <ej-rangenavigator e-selectedrangestart=rangestart></ej-rangenavigator>
+        <ej-rangenavigator e-selectedrangestart=rangeStart></ej-rangenavigator>
     </div>
     <script>
         angular.module('RangeApp', ['ejangular'])
         .controller('RangeCtrl', function ($scope) {
-                $scope.rangestart="onSelectedRangeStart"
+                $scope.rangeStart="onSelectedRangeStart"
         });
         function onSelectedRangeStart(sender) {
             // do something
@@ -178,12 +178,12 @@ This event is fired when selection ends in **RangeNavigator**. A parameter **sen
 
 <body ng-controller="RangeCtrl">
     <div id="rangecontainer">
-        <ej-rangenavigator e-selectedrangeend=rangeend></ej-rangenavigator>
+        <ej-rangenavigator e-selectedrangeend=rangeEnd></ej-rangenavigator>
     </div>
     <script>
         angular.module('RangeApp', ['ejangular'])
         .controller('RangeCtrl', function ($scope) {
-                $scope.rangeend="onSelectedRangeEnd"
+                $scope.rangeEnd="onSelectedRangeEnd"
         });
         function onSelectedRangeEnd(sender) {
             // do something
@@ -201,12 +201,12 @@ This event is fired when starting to change the scrollbar position of **RangeNav
 
 <body ng-controller="RangeCtrl">
     <div id="rangecontainer">
-        <ej-rangenavigator e-scrollstart=scrollstart></ej-rangenavigator>
+        <ej-rangenavigator e-scrollstart=scrollStart></ej-rangenavigator>
     </div>
     <script>
         angular.module('RangeApp', ['ejangular'])
         .controller('RangeCtrl', function ($scope) {
-                $scope.scrollstart="onScrollStart"
+                $scope.scrollStart="onScrollStart"
         });
         function onScrollStart(sender) {
             // do something
@@ -224,12 +224,12 @@ This event is fired while ending the change in scrollbar position of **RangeNavi
 
 <body ng-controller="RangeCtrl">
     <div id="rangecontainer">
-        <ej-rangenavigator e-scrollend=scrollend></ej-rangenavigator>
+        <ej-rangenavigator e-scrollend=scrollEnd></ej-rangenavigator>
     </div>
     <script>
         angular.module('RangeApp', ['ejangular'])
         .controller('RangeCtrl', function ($scope) {
-                $scope.scrollend="onScrollEnd"
+                $scope.scrollEnd="onScrollEnd"
         });
         function onScrollEnd(sender) {
             // do something
@@ -247,12 +247,12 @@ This event is fired when changing the scrollbar position of **RangeNavigator**. 
 
 <body ng-controller="RangeCtrl">
     <div id="rangecontainer">
-        <ej-rangenavigator e-scrollchanged=scrollchange></ej-rangenavigator>
+        <ej-rangenavigator e-scrollchanged=scrollChange></ej-rangenavigator>
     </div>
     <script>
         angular.module('RangeApp', ['ejangular'])
         .controller('RangeCtrl', function ($scope) {
-                $scope.scrollchange="onScrollChange"
+                $scope.scrollChange="onScrollChange"
         });
         function onScrollChange(sender) {
             // do something
@@ -277,18 +277,18 @@ You can easily update the data for chart by assigning the **zoomFactor** and **z
     </head>
     <body ng-controller="RangeCtrl">
        <div id="rangecontainer">
-       <ej-rangenavigator e-rangechanged="onchartloaded"></ej-rangenavigator>
+       <ej-rangenavigator e-rangechanged="onChartLoaded"></ej-rangenavigator>
          </div>
     <script>
         angular.module('RangeApp', ['ejangular'])
         .controller('RangeCtrl', function ($scope) {
                      });
           // setting zoom factor and position for chart axis in rangeChanged event.             
-        function onchartloaded(sender) {
-        var chartobj = $("#container").data("ejChart");
-        if (chartobj != null) {
-            chartobj.model.axes[0].zoomPosition = sender.zoomPosition;
-            chartobj.model.axes[0].zoomFactor = sender.zoomFactor;
+        function onChartLoaded(sender) {
+        var chartObj = $("#container").data("ejChart");
+        if (chartObj != null) {
+            chartObj.model.axes[0].zoomPosition = sender.zoomPosition;
+            chartObj.model.axes[0].zoomFactor = sender.zoomFactor;
         }
         $("#container").ejChart("redraw");
     }
@@ -319,7 +319,7 @@ You can customize Thumb template by using **leftThumbTemplate** and **rightThumb
     <body ng-controller="RangeCtrl">
      <div id="rangecontainer">
        <ej-rangenavigator e-navigatorstylesettings-leftthumbtemplate="left" 
-       e-navigatorstylesettings-rightthumbtemplate="right"></ej-rangenavigator>
+       e-navigatorstylesettings-rightThumbTemplate="right"></ej-rangenavigator>
        </div>
        <script type="text/x-jsrender" id="left" >
        <svg height="24" width="32" style="fill:#DD4A4A;stroke:black;">
@@ -357,13 +357,13 @@ You can customize the line, `font` `size`, gridline, tickline, range, `rangePadd
 
 <body ng-controller="RangeCtrl">
     <div id="rangecontainer">
-        <ej-rangenavigator  e-valueaxissettings="valueaxissetting">
+        <ej-rangenavigator  e-valueaxissettings="valueAxisSetting">
         </ej-rangenavigator>
     </div>
     <script>
         angular.module('RangeApp', ['ejangular'])
         .controller('RangeCtrl', function ($scope) {
-            $scope.valueaxissetting = {
+            $scope.valueAxisSetting = {
                 axisLine: {visible: true},
                 font: {size: '12px'},
                 majorGridLines: {visible: true},
@@ -386,13 +386,13 @@ The start and end range values of selected range can be customized using `start`
 
 <body ng-controller="RangeCtrl">
     <div id="rangecontainer">
-        <ej-rangenavigator  e-selectedrangesettings="selectedrange">
+        <ej-rangenavigator  e-selectedrangesettings="selectedRange">
         </ej-rangenavigator>
     </div>
     <script>
         angular.module('RangeApp', ['ejangular'])
         .controller('RangeCtrl', function ($scope) {
-            $scope.selectedrange = {
+            $scope.selectedRange = {
                     start:"01/05/1992",
                     end:"01/05/1993"
             };

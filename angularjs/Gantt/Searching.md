@@ -10,11 +10,11 @@ documentation: ug
 
 The Gantt control for JavaScript has built-in support for searching any content in Gantt.
 
-### Searching for Content Columns
+### Searching for content columns
 
-In Gantt we can search the content using the JavaScript method searchItem with search key as parameter. Also, we can integrate the search text box in Gantt toolbar, by adding search toolbar item in toolbarSetting.toolbarItems property.
+In Gantt, you can search the content using the JavaScript method searchItem with search key as parameter. Also, you can integrate the search text box in Gantt toolbar by adding the search toolbar item in the toolbarSetting.toolbarItems property.
 
-The following code example shows you how to add search option in Gantt toolbar.
+The following code example shows how to add the search option in the Gantt toolbar:
 
 {% highlight javascript %}
 
@@ -42,7 +42,7 @@ The following code example shows you how to add search option in Gantt toolbar.
 
 {% endhighlight %}
 
-The following screenshot shows the output of searching for string in Gantt control.
+The following screenshot shows the output of searching for string in the Gantt control:
 
 ![](Searching_images/Searching_img1.png)
 

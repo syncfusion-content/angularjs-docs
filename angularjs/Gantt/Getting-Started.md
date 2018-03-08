@@ -7,13 +7,13 @@ control: Gantt
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
 This section explains briefly about how to create a Gantt chart in your application with AngularJS.
 
 ## Create your first Gantt in AngularJS
 
-In this tutorial, you can learn how to create a simple Gantt chart, add tasks or subtasks, and set relationship between tasks during the design phase of a software project. The following screenshot displays the desired output after completing this tutorial,
+In this tutorial, you can learn how to create a simple Gantt chart. Add tasks or subtasks, and set relationship between tasks during the design phase of a software project. The following screenshot displays the desired output after completing this tutorial:
 
 ![](/angularjs/Gantt/Getting-Started_images/Getting-Started_img4.png)
 
@@ -45,7 +45,7 @@ Create an HTML file and add the following template to the HTML file.
 {% endhighlight %}
 
 ## Binding Gantt with data
-Create data source for ejGantt.
+Create a data source for the ejGantt.
 
 {% highlight javascript %}
 
@@ -93,7 +93,7 @@ Create data source for ejGantt.
 {% endhighlight %}
 
 ## Initialize Gantt
-Add a **&lt;div&gt;** element with in the &lt;Body&gt; tag.
+Add a **&lt;div&gt;** element to the &lt;Body&gt; tag.
 
 {% highlight html %}
 
@@ -126,15 +126,15 @@ Add a **&lt;div&gt;** element with in the &lt;Body&gt; tag.
 
 {% endhighlight %}
 
-In the above code snippet, `ej-gantt` denotes the control directive for the Syncfusion's Gantt angular widget and all its properties are prefixed with the letter `e-` (For example, e-datasource).
+In the above code snippet, the `ej-gantt` denotes the control directive for the Syncfusion's Gantt angular widget and all its properties are prefixed with the letter `e-` (For example, e-datasource).
 
-A Gantt chart is created as shown in the following screen shot.
+A Gantt chart is created as shown in the following screenshot:
 
 ![](/angularjs/Gantt/Getting-Started_images/Getting-Started_img5.png)
 
-## Enable Toolbar
+## Enable toolbar
 
-Gantt control contains toolbar options to edit, search, expand or collapse all records, indent, outdent, delete, and add a task. You can enable toolbar using the [`e-toolbarSettings`](http://help.syncfusion.com/js/api/ejgantt#members:toolbarsettings "toolbarSettings") property.
+The Gantt control contains toolbar options to edit, search, expand, or collapse all records, indent, outdent, delete, and add a task. You can enable the toolbar by using the [`e-toolbarSettings`](http://help.syncfusion.com/js/api/ejgantt#members:toolbarsettings "toolbarSettings") property.
 
 {% highlight javascript %}
 
@@ -169,19 +169,19 @@ Gantt control contains toolbar options to edit, search, expand or collapse all r
 
 {% endhighlight %}
 
-The following screen shot displays a Tool bar in Gantt chart control:
+The following screenshot displays the toolbar in Gantt chart control:
 
 ![](/angularjs/Gantt/Getting-Started_images/Getting-Started_img6.png)
 
-N>  Add, edit, delete, Indent, Outent options are enabled when enabling the allowEditing, allowAdding, allowDelete, allowIndent and allowOutdent properties in the e-editSettings.
+N>  Add, edit, delete, indent, and outent options are enabled when enabling the allowEditing, allowAdding, allowDelete, allowIndent and allowOutdent properties in the e-editSettings.
 
-## Enable Sorting
+## Enable sorting
 
 The Gantt control has sorting functionality to arrange the tasks in ascending or descending order based on a particular column.
 
-### Multicolumn Sorting
+### Multicolumn sorting
 
-Enable the multicolumn sorting in Gantt by setting [`e-allowMultiSorting`](http://help.syncfusion.com/js/api/ejgantt#members:allowmultisorting "allowMultiSorting") as `true`. You can sort multiple columns in Gantt, by selecting the desired column header while holding the `CTRL` key.
+Enable the multicolumn sorting in Gantt by setting the [`e-allowMultiSorting`](http://help.syncfusion.com/js/api/ejgantt#members:allowmultisorting "allowMultiSorting") to `true`. You can sort multiple columns in the Gantt by selecting the desired column header while holding the `CTRL` key.
 
 {% highlight javascript %}
 
@@ -201,25 +201,25 @@ Enable the multicolumn sorting in Gantt by setting [`e-allowMultiSorting`](http:
    
 {% endhighlight %}
 
-## Enable Editing
+## Enable editing
 
-You can enable editing using [`e-editSettings`](http://help.syncfusion.com/js/api/ejgantt#members:editsettings "editSettings") and [`e-allowGanttChartEditing`](http://help.syncfusion.com/js/api/ejgantt#members:allowganttchartediting "allowGanttChartEditing") options.
+You can enable editing by using [`e-editSettings`](http://help.syncfusion.com/js/api/ejgantt#members:editsettings "editSettings") and [`e-allowGanttChartEditing`](http://help.syncfusion.com/js/api/ejgantt#members:allowganttchartediting "allowGanttChartEditing") options.
 
-### Cell Editing
+### Cell editing
 
 Modify the task details through the grid cell editing by setting the [`editMode`](http://help.syncfusion.com/js/api/ejgantt#members:editsettings-editmode "editSettings.editMode") as [`cellEditing`](http://help.syncfusion.com/js/api/ejgantt#members:editsettings-editmode "cellEditing").
 
-### Normal Editing
+### Normal editing
 
 Modify the task details through the edit dialog by setting the [`editMode`](http://help.syncfusion.com/js/api/ejgantt#members:editsettings-editmode "editSettings.editMode") as [`normal`](http://help.syncfusion.com/js/api/ejgantt#members:editsettings-editmode "normal").
 
-### Taskbar Editing
+### Taskbar editing
 
 Modify the task details through user interaction such as resizing and dragging the taskbar.
 
-### Predecessor Editing
+### Predecessor editing
 
-Modify the predecessor details of a task using mouse interactions by setting [`e-allowGanttChartEditing`](http://help.syncfusion.com/js/api/ejgantt#members:allowganttchartediting "allowGanttChartEditing") as `true` and setting the value for `e-predecessorMapping` property.
+Modify the predecessor details of a task using mouse interactions by setting the [`e-allowGanttChartEditing`](http://help.syncfusion.com/js/api/ejgantt#members:allowganttchartediting "allowGanttChartEditing") to `true` and setting the value for `e-predecessorMapping` property.
 
 {% highlight javascript %}
 
@@ -246,15 +246,15 @@ Modify the predecessor details of a task using mouse interactions by setting [`e
 
 {% endhighlight %}
 
-The following screen shot displays a Gantt chart control with Enable Editing options.
+The following screenshot displays the Gantt chart control with enable editing options:
 
 ![](/angularjs/Gantt/Getting-Started_images/Getting-Started_img7.png)
 
-N>  Both cellEditing and  normal  editing operations are performed through double-click action.
+N>  Both cellEditing and normal editing operations are performed by double-click action.
 
-## Enable Context Menu
+## Enable context menu
 
-You can enable the context menu in Gantt, by setting the [`enableContextMenu`](http://help.syncfusion.com/js/api/ejgantt#members:enablecontextmenu "enableContextMenu") as `true`.
+You can enable the context menu in Gantt by setting the [`enableContextMenu`](http://help.syncfusion.com/js/api/ejgantt#members:enablecontextmenu "enableContextMenu") to `true`.
 
 {% highlight javascript %}
 
@@ -273,13 +273,13 @@ You can enable the context menu in Gantt, by setting the [`enableContextMenu`](h
    
 {% endhighlight %}
 
-The following screen shot displays Gantt chart in which Context menu option is enabled:
+The following screenshot displays the Gantt chart in which the context menu option is enabled:
 
 ![](/angularjs/Gantt/Getting-Started_images/Getting-Started_img8.png)
 
-## Enable Column Menu
+## Enable column menu
 
-You can enable the column menu in Gantt, by setting the [`e-showColumnChooser`](http://help.syncfusion.com/js/api/ejgantt#members:showcolumnchooser "showColumnChooser") as `true`.
+You can enable the column menu in Gantt by setting the [`e-showColumnChooser`](http://help.syncfusion.com/js/api/ejgantt#members:showcolumnchooser "showColumnChooser") to `true`.
 
 {% highlight javascript %}
 
@@ -299,7 +299,7 @@ You can enable the column menu in Gantt, by setting the [`e-showColumnChooser`](
 
 {% endhighlight %}
 
-The following screen shot displays Gantt chart in which column chooser option is enabled:
+The following screenshot displays Gantt chart in which column chooser option is enabled:
 
 ![](/angularjs/Gantt/Getting-Started_images/Getting-Started_img11.png)
 
@@ -307,14 +307,12 @@ The following screen shot displays Gantt chart in which column chooser option is
 
 In Gantt, you have the predecessor support to show the relationship between two different tasks.
 
-* **Start to Start (SS)** - You cannot start a task until the other task also starts.
-* **Start to Finish (SF)** - You cannot finish a task until the other task finishes.
-* **Finish to Start (FS)** - You cannot start a task until the other task completes.
-* **Finish to Finish (FF)** - You cannot finish a task until the other task completes.
+* **Start to Start (SS)**: You cannot start a task until the other task also starts.
+* **Start to Finish (SF)**: You cannot finish a task until the other task finishes.
+* **Finish to Start (FS)**: You cannot start a task until the other task completes.
+* **Finish to Finish (FF)**: You cannot finish a task until the other task completes.
 
-You can show the relationship in tasks, by using the [`predecessorsMapping`](http://help.syncfusion.com/js/api/ejgantt#members:predecessormapping "predecessorsMapping")
-
-, as shown in the following code example.
+You can show the relationship in tasks by using the [`predecessorsMapping`](http://help.syncfusion.com/js/api/ejgantt#members:predecessormapping "predecessorsMapping") as shown in the following code example:
 
 {% highlight javascript %}
 
@@ -333,15 +331,15 @@ You can show the relationship in tasks, by using the [`predecessorsMapping`](htt
     
 {% endhighlight %}
 
-The following screenshot displays the relationship between tasks.
+The following screenshot displays the relationship between tasks:
 
 ![](/angularjs/Gantt/Getting-Started_images/Getting-Started_img9.png)
 
-## Provide Resources
+## Provide resources
 
-In Gantt control, you can display and assign the resource for each task. Create a collection of `JSON` object, which contains id and name of the resource and assign it to [`e-resources`](http://help.syncfusion.com/js/api/ejgantt#members:resources "resources") property. Then, specify the field name for id and name of the resource in the resource collection to [`e-resourceIdMapping`](http://help.syncfusion.com/js/api/ejgantt#members:resourceidmapping "resourceIdMapping") and [`e-resourceNameMapping`](http://help.syncfusion.com/js/api/ejgantt#members:resourcenamemapping "resourceNameMapping") options. The name of the field, which contains the actual resources assigned for a particular task in the `e-dataSource` is specified using [`e-resourceInfoMapping`](http://help.syncfusion.com/js/api/ejgantt#members:resourceinfomapping "resourceInfoMapping").
+In Gantt control, you can display and assign the resource for each task. Create a collection of `JSON` object that contains id and name of the resource, and assign it to the [`e-resources`](http://help.syncfusion.com/js/api/ejgantt#members:resources "resources") property. Then, specify the field name for id and name of the resource in the resource collection to [`e-resourceIdMapping`](http://help.syncfusion.com/js/api/ejgantt#members:resourceidmapping "resourceIdMapping") and [`e-resourceNameMapping`](http://help.syncfusion.com/js/api/ejgantt#members:resourcenamemapping "resourceNameMapping") options. The name of the field that contains the actual resources assigned for a particular task in the `e-dataSource` is specified using the [`e-resourceInfoMapping`](http://help.syncfusion.com/js/api/ejgantt#members:resourceinfomapping "resourceInfoMapping").
 
-1.Create the resource collection to be displayed in ejGantt
+1.Create the resource collection to be displayed in the ejGantt.
 
 {% highlight javascript %}
 
@@ -378,17 +376,15 @@ In Gantt control, you can display and assign the resource for each task. Create 
 
 {% endhighlight %}
 
-The following screenshot displays resource allocation for tasks in Gantt chart.
+The following screenshot displays the resource allocation for tasks in the Gantt chart:
 
 ![](/angularjs/Gantt/Getting-Started_images/Getting-Started_img10.png)
 
-By following these steps, you have learned how to provide data source to Gantt chart, how to configure Gantt to set task relationships, assign resources for each task, and add toolbar with necessary buttons.
+By following these steps, you have learned how to provide data source to the Gantt chart, how to configure the Gantt to set task relationships, assign resources for each task, and add toolbar with necessary buttons.
 
-## Highlight Weekend
+## Highlight weekend
 
-In Gantt, weekends can be highlighted by setting the [`e-highlightWeekEnds`](http://help.syncfusion.com/js/api/ejgantt#members:highlightweekends "highlightWeekEnds")
-
- as `true` or `false`.
+In Gantt, weekends can be highlighted by setting the [`e-highlightWeekEnds`](http://help.syncfusion.com/js/api/ejgantt#members:highlightweekends "highlightWeekEnds") to `true` or `false`.
 
 {% highlight javascript %}
 
@@ -407,6 +403,6 @@ In Gantt, weekends can be highlighted by setting the [`e-highlightWeekEnds`](htt
 
 {% endhighlight %}
 
-The following screen shot displays Gantt chart in which highlight weekends is disabled:
+The following screenshot displays the Gantt chart in which highlighted weekends are disabled:
 
 ![](/angularjs/Gantt/Getting-Started_images/Getting-Started_img12.png)

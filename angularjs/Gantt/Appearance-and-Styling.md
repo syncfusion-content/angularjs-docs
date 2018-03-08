@@ -7,13 +7,13 @@ control: Gantt
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and styling
 
 You can customize the look and feel of the Gantt control by applying themes and formatting the schedule header.
 
-## Schedule Header Customization
+## Schedule header customization
 
-You can customize the week header format and day header format in the Schedule part of the Gantt control by using the following code example.
+You can customize the week header format and day header format in the schedule part of the Gantt control by using the following code example:
 
 {% highlight javascript %}
 
@@ -46,13 +46,13 @@ You can customize the week header format and day header format in the Schedule p
 
 {% endhighlight %}
 
-The following screenshot shows the customized format schedule header in Gantt control.
+The following screenshot shows the customized format schedule header in the Gantt control:
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
-## Taskbar Customization
+## Taskbar customization
 
-You can customize the Taskbar based on the task information in Gantt control to highlight the task. The following code example shows how to customize the Taskbar in Gantt control.
+You can customize the taskbar based on the task information in the Gantt control to highlight the task. The following code example shows how to customize the taskbar in the Gantt control:
 
 {% highlight javascript %}
 
@@ -90,29 +90,29 @@ You can customize the Taskbar based on the task information in Gantt control to 
 
 {% endhighlight %}
 
-The following screenshot shows the customized taskbar in Gantt control.
+The following screenshot shows the customized taskbar in the Gantt control:
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 ## Themes
 
- The following are the types of themes available in Gantt control.
+ The following are the types of themes available in the Gantt control:
 
-1.Flat Azure                           
-2.Flat Azure Dark                  
-3.Flat Lime                             
-4.Flat Lime Dark                   
-5.Flat Saffron                        
-6.Flat Saffron Dark
+1.Flat Azure                  
+2.Flat Azure dark
+3.Flat lime                    
+4.Flat lime dark
+5.Flat saffron
+6.Flat saffron dark
 7.Gradient Azure
-8.Gradient Azure Dark
-9.Gradient Lime
-10.Gradient Lime Dark
-11.Gradient Saffron
-12.Gradient Saffron Dark
+8.Gradient Azure dark
+9.Gradient lime
+10.Gradient lime dark
+11.Gradient saffron
+12.Gradient saffron dark
 13.Bootstrap
 
-You can apply the theme (Gradient lime) to the Gantt control by using the style sheet from the online link as follows.
+You can apply the theme (gradient lime) to the Gantt control by using the style sheet from the online link as follows:
 
 {% highlight html %}
 
@@ -128,7 +128,7 @@ You can apply the theme (Gradient lime) to the Gantt control by using the style 
 
 {% endhighlight %}
 
-The following screenshot shows the Gantt control with `Gradient-lime` theme.
+The following screenshot shows the Gantt control with `Gradient-lime` theme:
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 

@@ -48,10 +48,10 @@ You can assign the complete contents in “**WorldMap.json**” file to new JSON
       <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
             <e-layer e-shapedata=world_map  e-shapesettings-fill="#9CBF4E"  
-            e-shapesettings-strokethickness="0.5" e-shapesettings-stroke="white">
+            e-shapesettings-strokeThickness="0.5" e-shapesettings-stroke="white">
               <e-sublayers>
               <e-sublayer e-shapedata=usMap  e-shapesettings-fill="orange"  
-              e-shapesettings-strokethickness="0.5" e-shapesettings-stroke="white">
+              e-shapesettings-strokeThickness="0.5" e-shapesettings-stroke="white">
               </e-sublayers>
                </e-layer>
         </e-layers>

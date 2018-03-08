@@ -14,7 +14,7 @@ documentation: ug
 {% highlight html %}
 
 <div id="DigitalGauge1" ej-digitalgauge e-value="SYNCFUSION"></div>
-<button id="btnSubmit">Export</button>
+<button id="buttonSubmit">Export</button>
 <div id=" fileName ">FileName </div>
 <input type="text" id="fileName"/>
 <div id=" fileFormat ">FileFormat </div>
@@ -28,12 +28,12 @@ documentation: ug
 {% highlight javascript %}
 
      $(function () {
-        $("#btnSubmit").ejButton({ width: "50px", text: "Export", click: "buttonclickevent", });
+        $("#buttonSubmit").ejButton({ width: "50px", text: "Export", click: "buttonClickEvent", });
         $("#fileFormat").ejDropDownList({ selectedItemIndex: 0, width: "115px" });
         
     });
     $("# DigitalGauge1").ejDigitalGauge("exportImage", "Digital", "JPEG");
-    function buttonclickevent() {
+    function buttonClickEvent() {
         var FileName = $("#fileName").val();
         var FileFormat = $("#fileFormat").ejDropDownList("option", "value");
         var flag = $("#DigitalGauge1").ejDigitalGauge("exportImage", FileName, FileFormat);

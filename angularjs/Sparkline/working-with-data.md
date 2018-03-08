@@ -22,9 +22,9 @@ You can bind data to the sparkline in two ways
          <script src="https://cdn.syncfusion.com/14.2.0.26/js/common/ej.widget.angular.min.js"></script>
      </head>
 <body ng-controller="sparkline">
-<div id="column" ej-sparkline e-datasource="sparklinedata" e-xname="employeeId" e-yname="sales"></div>
+<div id="column" ej-sparkline e-datasource="sparkData" e-xname="employeeId" e-yname="sales"></div>
 <script>
-    var var sparklinedata = [
+    var var sparkData = [
 { employeeId: 1, sales: 25 },
 { employeeId: 2, sales: 28 },
 { employeeId: 3, sales: 34 },
@@ -37,7 +37,7 @@ You can bind data to the sparkline in two ways
 { employeeId: 10, sales: 30 }]; 
 angular.module('syncApp',['ejangular'])
 .controller("sparkline",function($scope){    
-    $scope.sparklinedata = sparklinedata;
+    $scope.sparkData = sparkData;
       });
 </script>
 </body>
@@ -60,12 +60,12 @@ angular.module('syncApp',['ejangular'])
          <script src="https://cdn.syncfusion.com/14.2.0.26/js/common/ej.widget.angular.min.js"></script>
      </head>
 <body ng-controller="sparkline">
-<div id="column" ej-sparkline e-datasource="sparklinedata"></div>
+<div id="column" ej-sparkline e-datasource="sparkData"></div>
 <script>
     var data = [2, 6, -1, 1, 12, 5, -2, 7, -3, 5, 8, 10, ];	 
     angular.module('syncApp',['ejangular'])
     .controller("sparkline",function($scope){    
-        $scope.sparklinedata = data;
+        $scope.sparkData = data;
             });
 </script>
 </body>

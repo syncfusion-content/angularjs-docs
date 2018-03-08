@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Localization
 
-Localization is the process of customizing the User Interface (UI) based on a culture, specific to a particular country or region, in order to display regional data. The culture is represented by a unique string like `en``-``US` for US English and `fr``-``FR` for French.
+Localization is the process of customizing the User Interface (UI) based on a culture of a particular country or region to display the regional data. The culture is represented by a unique string like `en``-``US` for US English and `fr``-``FR` for French.
 
-Localization is the key feature that provides solutions to global customers with the help of localized control. 
+Localization is the key feature that provides solutions to global customers with the help of localized control.
 
-The following UIs are provided to localize based on culture. The default English Localization UIs are listed as follows:
+The following UIs are provided to localize based on culture. The default English localization UIs are listed as follows:
 
 <table>
 <tr>
@@ -260,9 +260,9 @@ predecessorEditingTexts: {
 {% endhighlight %}
 </td></tr>
 </table>
-To localize the Column Header Texts based on French culture, refer to the following code example.
+To localize the column header texts based on French culture, refer to the following code example:
 
-Refer the external dependency to support localization
+Refer to the external dependency to support localization.
 
 {% highlight html %}
 <!--Need to add for localize the date Time object based on the culture settings-->
@@ -309,7 +309,7 @@ ej.Gantt.Locale["fr-FR"] = {
 
 {% endhighlight %}
 
-The following screenshot shows Gantt with French culture.
+The following screenshot shows the Gantt with French culture:
 
 ![](Localization_images/Localization_img1.png)
 

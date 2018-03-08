@@ -6,23 +6,23 @@ platform: AngularJS
 control: Gantt
 documentation: ug
 ---
-# Data Binding
+# Data binding
 
-Data binding is the process that establishes a connection between the application and different kinds of data sources such as business objects. And it is possible to bind local data and remote data in Gantt.
+The data binding is the process that establishes a connection between the application and different kinds of data sources such as business objects. You can bind the local data and remote data in the Gantt.
 
-## Local Data Binding
+## Local data binding
 
-In Local Data Binding, datasource for rendering the Gantt control is retrieved from the same application locally.
+In local data binding, the data source for rendering the Gantt control is retrieved from the same application locally.
 
-Two types of Data Binding are possible with Gantt control, 
+Two types of data binding are possible with the Gantt control:
 
-* Hierarchical datasource binding
-* Self-referential data binding (Flat data)
+* Hierarchical data source binding
+* Self-referential data binding (flat data)
 
-### Hierarchical data-source binding
+### Hierarchical data source binding
 
 
-The following code example explains how to bind the hierarchical data in Gantt.
+The following code example explains how to bind the hierarchical data in Gantt:
 
 {% highlight javascript %}
 <script>
@@ -86,11 +86,11 @@ var  taskDetails = [{
 
 {% endhighlight %}
 
-The output of the above steps is as follows.
+The output of the above steps is as follows:
 
 ![](Data-Binding_images/Data-Binding_img1.png)
 
-It is also possible to set the datasource to Gantt using ejDataManager. The following code example explains how to assign the ejDataManager instance to Gantt.
+You can set the data source to Gantt by using the ejDataManager. The following code example explains how to assign the ejDataManager instance to the Gantt:
 
 {% highlight javascript %}
 
@@ -111,12 +111,12 @@ It is also possible to set the datasource to Gantt using ejDataManager. The foll
 
 {% endhighlight %}
 
-### Self-referential data binding (Flat data)
+### Self-referential data binding (flat data)
 
-Gantt can be rendered from self-referential data structures, by mapping the task ID and parent task ID fields.
+The Gantt can be rendered from self-referential data structures by mapping the task ID and parent task ID fields.
 
-* Task ID field- This field must contain unique values to identify the nodes. It should be mapped to the `e-taskidmapping` property.
-* Parent task ID field- This field must contain values to identify the parent nodes. It should be mapped to the `e-parenttaskidmapping` property.
+* Task ID field: This field must contain unique values to identify the nodes. It should be mapped to the `e-taskidmapping` property.
+* Parent task ID field: This field must contain values to identify the parent nodes. It should be mapped to the `e-parenttaskidmapping` property.
 
 {% highlight javascript %}
 
@@ -168,13 +168,13 @@ var projectData = [
 
 {% endhighlight %}
 
-The following screenshot shows the output of the above steps.
+The following screenshot shows the output of the previous steps:
 
 ![](Data-Binding_images/Data-Binding_img2.png)
 
 ## Remote data
 
-It is possible to load remote data in Gantt by using ej.DataManager. You can assign the web service data as an ej.DataManager instance to the datasource property. The following example explains how to load the remote data in Gantt.
+You can load remote data in the Gantt by using the ej.DataManager. You can assign the web service data as an ej.DataManager instance to the data source property. The following example explains how to load the remote data in the Gantt:
 
 {% highlight javascript %}
 
