@@ -102,7 +102,7 @@ N> 2. For themes, you can use the `ej.web.all.min.css` CDN link from the code sn
 
 All the Essential JavaScript directives have been encapsulated into a single module called `ejangular` so the first step would be to declare dependency for this module within your AngularJS application.
 
-The digitalGauge can be created using `ej-digitalGauge` AngularJS directive and its properties can be defined using `e-` prefix followed by the property name.(For example, e-height)
+The digitalGauge can be created using `ej-digitalgauge` AngularJS directive and its properties can be defined using `e-` prefix followed by the property name.(For example, e-height)
 
 The code example for defining controls in AngularJS is as follows,
 
