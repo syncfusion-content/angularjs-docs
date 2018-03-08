@@ -9,7 +9,7 @@ documentation: ug
 
 ## Axis Customize 
 
-The Sparkline axis can be collapsed using visible property in `e-axislinesettings` and this not applicable for win-loss. You can customize `e-axislinesettings-color`, `e-axislinesettings-width` and `e-axislinesettings-dasharray` of axis line.
+The Sparkline axis can be collapsed using visible property in `e-axislinesettings` and this not applicable for win-loss. You can customize `e-axislinesettings-color`, `e-axislinesettings-width` and `e-axislinesettings-dashArray` of axis line.
 
  {% highlight html %}
  

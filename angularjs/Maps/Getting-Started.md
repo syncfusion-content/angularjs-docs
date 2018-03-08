@@ -133,13 +133,13 @@ Refer to both shape data and datasource as illustrated in the following code exa
 
 1\. Create a **&lt;div&gt;** tag with a specific id and set the height and width to determine the rendering map’s size with `ej-map` attribute.
 2\. Create a `e-layers` with parent of `e-layers` inside the mapContainer div.
-3\. Set the shapeData attribute value as usMap which containes the USA shape data details. 
+3\. Set the shapeData attribute value as usMap which contains the USA shape data details. 
 
 {% highlight javascript %}
    <body>
         <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
-            <e-layer e-shapedata=usmap></e-layer>
+            <e-layer e-shapedata=USMap></e-layer>
         </e-layers>        
         </div>
     </body>
@@ -153,7 +153,7 @@ Refer to both shape data and datasource as illustrated in the following code exa
    <script>
    angular.module('MapsApp', ['ejangular'])
    .controller('MapsCtrl', function ($scope) {
-               $scope.usmap = usMap;
+               $scope.USMap = usMap;
             });
     </script>
 
@@ -184,13 +184,13 @@ Refer to both shape data and datasource as illustrated in the following code exa
 <body ng-controller="MapsCtrl">
     <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
-            <e-layer e-shapedata=usmap></e-layer>
+            <e-layer e-shapedata=USMap></e-layer>
         </e-layers>
     </div>
         <script>
             angular.module('MapsApp', ['ejangular'])
             .controller('MapsCtrl', function ($scope) {
-                    $scope.usmap = usMap;
+                    $scope.USMap = usMap;
                 });
         </script>
     </body>
@@ -228,14 +228,14 @@ The **JSON** object “populationData” is used as dataSource in the following 
 
    <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <e-layers>
-            <e-layer e-shapedata=usmap e-datasource=datasource e-shapedatapath="name" 
+            <e-layer e-shapedata=USMap e-datasource=datasource e-shapedatapath="name" 
             e-shapepropertypath="name"></e-layer>
         </e-layers>
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
         .controller('MapsCtrl', function ($scope) {
-                $scope.usmap = usMap;
+                $scope.USMap = usMap;
                 $scope.datasource = populationData;
             });
     </script>
@@ -250,28 +250,28 @@ You can customize the shape’s color by using `fill`, `stroke` and `strokeThick
 {% highlight html %}
     <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <div e-layers>
-            <div e-layer e-shapedata=usmap e-datasource=datasource e-shapedatapath='name' 
-            e-shapepropertypath='name' e-enableselection="nenableselection" 
-            e-enablemousehover="nenablemousehover" 
-            e-shapesettings-strokethickness="nstrokethickness" e-shapesettings-fill="shfill" 
-            e-shapesettings-stroke="shstroke" e-shapesettings-highlightstroke="shhighlightStroke" 
-            e-shapesettings-highlightcolor="shhighlightColor" 
-            e-shapesettings-highlightborderwidth="shhighlightBorderWidth"></div>
+            <div e-layer e-shapedata=USMap e-datasource=datasource e-shapedatapath='name' 
+            e-shapepropertypath='name' e-enableselection="enableSelection" 
+            e-enablemousehover="enableMouseHover" 
+            e-shapesettings-strokeThickness="strokeThickness" e-shapesettings-fill="Fill" 
+            e-shapesettings-stroke="Stroke" e-shapesettings-highlightStroke="highlightStroke" 
+            e-shapesettings-highlightColor="highlightColor" 
+            e-shapesettings-highlightBorderWidth="highlightBorderWidth"></div>
         </div>
     </div>
     <script>
         angular.module('MapsApp', ['ejangular'])
         .controller('MapsCtrl', function ($scope) {
-                $scope.usmap = usMap;
+                $scope.USMap = usMap;
                 $scope.datasource = populationData;
-                $scope.nenableselection = false;
-                $scope.nenablemousehover = true;
-                $scope.nstrokethickness = "0.5";
-                $scope.shfill = "#9CBF4E";
-                $scope.shstroke = "White";
-                $scope.shhighlightStroke= "White";
-                $scope.shhighlightColor= "#BC5353";
-                $scope.shhighlightBorderWidth= "1";
+                $scope.enableSelection = false;
+                $scope.enableMouseHover = true;
+                $scope.strokeThickness = "0.5";
+                $scope.Fill = "#9CBF4E";
+                $scope.Stroke = "White";
+                $scope.highlightStroke= "White";
+                $scope.highlightColor= "#BC5353";
+                $scope.highlightBorderWidth= "1";
                 
             });
     </script>
@@ -295,8 +295,8 @@ N> The `enableGradient` property value is set to true to apply gradient colors f
 <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <div e-layers>
             <div e-layer
-                 e-shapesettings-valuepath="name" e-shapesettings-enablegradient="shenableGradient" 
-                 e-shapesettings-colorvaluepath="population">
+                 e-shapesettings-valuePath="name" e-shapesettings-enableGradient="enableGradient" 
+                 e-shapesettings-colorValuePath="population">
                 <div e-shapesettings-colormappings-rangecolormapping>
                     <e-shaperangecolormap e-from="nfrom1" e-to="nto1" e-gradientcolors="ncolor1">
                     </e-shaperangecolormap>
@@ -314,7 +314,7 @@ N> The `enableGradient` property value is set to true to apply gradient colors f
         angular.module('MapsApp', ['ejangular'])
         .controller('MapsCtrl', function ($scope) {
                 //...
-                $scope.shenableGradient = true;
+                $scope.enableGradient = true;
                 $scope.nfrom1 = "500000";
                 $scope.nto1 = "1000000";
                 $scope.ncolor1 =["#9CBF4E", "#B8CE7B"];
@@ -376,12 +376,12 @@ You can use `leftLabel` and `rightLabel` property to provide left and right labe
 <div id="mapContainer" style="width: 900px; height: 600px;" ej-map>
         <div e-layers>
             <div e-layer 
-                 e-legendsettings-showlegend="lshowlegend" e-legendsettings-dockonmap="ldockonmap" 
-                 e-legendsettings-height="lheight" e-legendsettings-width="lwidth"
-                 e-legendsettings-mode="lmode"
-                 e-legendsettings-title="ltitle"
-                 e-legendsettings-leftlabel=lleftlabel
-                 e-legendsettings-rightlabel=lrightlabel>
+                 e-legendsettings-showLegend="showLegend" e-legendsettings-dockOnMap="dockOnMap" 
+                 e-legendsettings-height="height" e-legendsettings-width="width"
+                 e-legendsettings-mode="mode"
+                 e-legendsettings-title="title"
+                 e-legendsettings-leftLabel=leftLabel
+                 e-legendsettings-rightLabel=rightLabel>
             </div>
         </div>
 </div>
@@ -389,14 +389,14 @@ You can use `leftLabel` and `rightLabel` property to provide left and right labe
         angular.module('MapsApp', ['ejangular'])
         .controller('MapsCtrl', function ($scope) {
                 //..
-                $scope.lshowLegend=true;
-                $scope.ldockOnMap=true;
-                $scope.lheight=18;
-                $scope.lwidth=190;
-                $scope.lmode="interactive";
-                $scope.ltitle= "Population";
-                $scope.lleftLabel= "0.5M";
-                $scope.lrightLabel= "40M";
+                $scope.showLegend=true;
+                $scope.dockOnMap=true;
+                $scope.height=18;
+                $scope.width=190;
+                $scope.mode="interactive";
+                $scope.title= "Population";
+                $scope.leftLabel= "0.5M";
+                $scope.rightLabel= "40M";
 
                
             });
