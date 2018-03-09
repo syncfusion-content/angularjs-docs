@@ -407,14 +407,14 @@ You can get the legend item details such as *index*, *bounds*, *shape* and *seri
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart e-legenditemclick=onlegendclicked>
+        <div id="container" ej-chart e-legenditemclick=onLegendClicked>
         </div>
         <script>
         angular.module('ChartApp', ['ejangular'])
         .controller('ChartCtrl', function ($scope) {
-                    $scope.onlegendclicked="onlegendclicked";
+                    $scope.onLegendClicked="onLegendClicked";
                     });
-        function onlegendclicked(sender) {
+        function onLegendClicked(sender) {
         //Get legend item details on legend item click.
         var legendItem = sender.data;
         }
