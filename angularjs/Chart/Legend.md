@@ -296,7 +296,7 @@ You can customize the legend border by using the `e-legend-border` option in the
 
 ### Scrollbar for legend
 
-You can enable or disable the legend scrollbar by using the `e-legend-enableScrollbar` option of the legend. When you disable the scrollbar option, the legend does not consider the `e-legend-default size` and chart draws in the reaming space. The default value of `e-legend-enableScrollbar` option is **true**.  
+You can enable or disable the legend scrollbar by using the `e-legend-enableScrollbar` option of the legend. When you disable the scrollbar option, the legend does not consider the `default size` and chart draws in the remaining space. If you have specified the `size` to the legend with the scrollbar disabled, then the legends beyond this limit will get clipped. The default value of `e-legend-enableScrollbar` option is **true**.  
 
 {% highlight html %}
 
