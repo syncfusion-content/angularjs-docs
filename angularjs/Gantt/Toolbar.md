@@ -42,7 +42,7 @@ Using Gantt default toolbar items, you can perform the following operations:
 		   
 * **ExcelExport**: Exports Gantt to an Excel format.
 
-* **PdfExport**: Exports Gantt to a Pdf format.
+* **PdfExport**: Exports Gantt to a PDF format.
 
 You can enable the Gantt toolbar by using the following code example:
 {% highlight js %}

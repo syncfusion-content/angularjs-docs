@@ -173,7 +173,7 @@ The following screenshot displays the toolbar in Gantt chart control:
 
 ![](/angularjs/Gantt/Getting-Started_images/Getting-Started_img6.png)
 
-N>  Add, edit, delete, indent, and outent options are enabled when enabling the allowEditing, allowAdding, allowDelete, allowIndent and allowOutdent properties in the e-editSettings.
+N>  Add, edit, delete, indent, and outdent options are enabled when enabling the allowEditing, allowAdding, allowDelete, allowIndent and allowOutdent properties in the e-editSettings.
 
 ## Enable sorting
 

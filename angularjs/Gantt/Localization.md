@@ -86,7 +86,7 @@ dateValidationAlert</td><td>
 {% highlight javascript %}
 alertTexts: {   indentAlert: "There is no gantt record is selected to perform the Indent",
       outdentAlert: "There is no gantt record is selected to perform the Outdent",
-      predecessorEditingValidationAlert: "Cyclic Dependency Occured, Please Check The Predecessor",
+      predecessorEditingValidationAlert: "Cyclic Dependency Occurred, Please Check The Predecessor",
       predecessorAddingValidationAlert: "Fill all the columns in predecessor table",
       idValidationAlert: "Duplicate ID",
       dateValidationAlert: "Invalid End date"  
