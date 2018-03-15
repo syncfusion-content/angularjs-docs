@@ -18,7 +18,7 @@ The Gantt supports the following types of column editors:
   * Date
   * Datetime
   * Numeric
-  * Maskedit
+  * Mask
   * Currency
   * Dropdown
   
@@ -229,15 +229,15 @@ These fields can be customized by the [e-columndialogfields](https://help.syncfu
       //...
         e-showcolumnchooser= true
         e-showcolumnoptions= true
-         e-columndialogfields= "columndialogfields"
+         e-columndialogfields= "columnDialogFields"
          >
       </div>
        <script>
-        var columndialogfields = ["field", "headerText", "editType","width"];
+        var columnDialogFields = ["field", "headerText", "editType","width"];
          angular.module('listCtrl', ['ejangular'])
           .controller('GanttCtrl', function ($scope) {
               //...
-              $scope.columndialogfields = columndialogfields;
+              $scope.columnDialogFields = columnDialogFields;
          });
     </script>
    </body>
