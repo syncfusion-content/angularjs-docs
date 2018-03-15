@@ -474,9 +474,9 @@ GanttProperties gridProperty = ConvertGridObject(gridModel);
 
 ExcelExport exp = new ExcelExport();
 
-TaskDetailsCollection tc = new TaskDetailsCollection();
+TaskDetailsCollection taskCollection = new TaskDetailsCollection();
 
-IEnumerable<TaskDetails> result = tc.GetDataSource();
+IEnumerable<TaskDetails> result = taskCollection.GetDataSource();
 
 exp.Export(gridProperty, result, "ExcelExport.xlsx", ExcelVersion.Excel2010, new GanttExportSettings() { Theme = ExportTheme.FlatAzure });
 
