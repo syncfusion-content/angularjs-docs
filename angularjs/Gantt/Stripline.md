@@ -25,7 +25,7 @@ The stripline in the Gantt control is used to highlight the important event in G
             day: "01/02/2014",
             label: "Project Release",
             lineStyle: "dotted",
-            lineColor: "Darkblue",
+            lineColor: "Dark blue",
             lineWidth: 2
         }]
     angular.module('listCtrl', ['ejangular'])
