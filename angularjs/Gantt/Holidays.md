@@ -24,7 +24,7 @@ Holidays in the Gantt control is used to highlight the non-working days, and it 
    var holidays= [{
             day: "2/11/2014",
             label: " Public holiday",
-            background: "yellowgreen "
+            background: "yellow green "
         }]
     angular.module('listCtrl', ['ejangular'])
            .controller('GanttCtrl', function ($scope) {
