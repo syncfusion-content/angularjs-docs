@@ -7,35 +7,35 @@ control: Gantt
 documentation: ug
 ---
 
-# Task Relationship
+# Task relationship
 
-You can show the relationship between two tasks in Gantt control. These relationships are categorized into four types based on the start and finish date of the task.
+You can show the relationship between two tasks in the Gantt control. These relationships are categorized into four types based on the start and finish date of the task.
 
-## Start to Start(SS)
+## Start to start(SS)
 
 You cannot start a task until the other task also starts.
 
 ![](Task-Relationship_images/Task-Relationship_img1.png)
 
-## Start to Finish(SF)
+## Start to finish(SF)
 
 You cannot finish a task until the other task is started.
 
 ![](Task-Relationship_images/Task-Relationship_img2.png)
 
-## Finish to Start(FS)
+## Finish to start(FS)
 
 You cannot start a task until the other task is completed.
 
 ![](Task-Relationship_images/Task-Relationship_img3.png)
 
-## Finish to Finish(FF)
+## Finish to finish(FF)
 
 You cannot finish a task until the other task is completed.
 
 ![](Task-Relationship_images/Task-Relationship_img4.png)
 
-The following code example shows you how to show the predecessor in the Gantt control.
+The following code example shows how to show the predecessor in the Gantt control:
 
 {% highlight javascript %}
 
@@ -50,7 +50,7 @@ The following code example shows you how to show the predecessor in the Gantt co
     
 {% endhighlight %}
 
-The following screenshot displays the output of the above code. 
+The following screenshot displays the output of the above code:
 
 ![](Task-Relationship_images/Task-Relationship_img5.png)
 

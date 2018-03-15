@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Customizations 
 
-Gantt provides support for the following UI customizations,
+The Gantt provides support for the following UI customizations:
 
 * Taskbar template
 * Task label template
@@ -16,9 +16,9 @@ Gantt provides support for the following UI customizations,
 
 ## Taskbar template
 
-You can design your own taskbars to view the tasks in Gantt by using [e-taskbartemplate](https://help.syncfusion.com/api/js/ejgantt#members:taskbartemplate "taskbarTemplate") property. And it is possible to map the JsRender script or script element’s ID to this property. It is also possible to customize the parent taskbars and milestones with custom templates by using [e-parenttaskbartemplate](https://help.syncfusion.com/api/js/ejgantt#members:parenttaskbartemplate "parentTaskbarTemplate") and [e-milestonetemplate](https://help.syncfusion.com/api/js/ejgantt#members:milestonetemplate "milestoneTemplate") properties. 
+You can design your own taskbars to view the tasks in Gantt by using the [e-taskbartemplate](https://help.syncfusion.com/api/js/ejgantt#members:taskbartemplate "taskbarTemplate") property. You can map the JsRender script or script element’s ID to this property, and you can also customize the parent taskbars and milestones with custom templates by using the [e-parenttaskbartemplate](https://help.syncfusion.com/api/js/ejgantt#members:parenttaskbartemplate "parentTaskbarTemplate") and [e-milestonetemplate](https://help.syncfusion.com/api/js/ejgantt#members:milestonetemplate "milestoneTemplate") properties.
 
-The following code example shows how to define template for taskbars in Gantt. 
+The following code example shows how to define template for taskbars in the Gantt:
 
 
 {% highlight javascript %}
@@ -90,19 +90,19 @@ The following code example shows how to define template for taskbars in Gantt.
 
 The DOM structure and class names mentioned in the above code snippet is mandatory for providing the editing support in custom templates.
 
-The following screenshot shows the template for taskbars in Gantt.
+The following screenshot shows the template for taskbars in the Gantt:
 
 ![](Customization_images/Customization_img1.png)
 
 ## Task label template
 
-By default, task name will be displayed to the left and resource names will be displayed to the right of the taskbars as task labels. But these task labels are customizable.
+By default, the task name will be displayed to the left and resource names will be displayed to the right of the taskbars as task labels. But these task labels are customizable.
 
-### Mapping datasource fields as task labels
+### Mapping data source fields as task labels
 
-It is also possible to set any datasource fields as task labels using [e-righttasklabelmapping](https://help.syncfusion.com/api/js/ejgantt#members:righttasklabelmapping "rightTaskLabelMapping") and [e-lefttasklabelmapping](https://help.syncfusion.com/api/js/ejgantt#members:lefttasklabelmapping "leftTaskLabelMapping") properties.
+You can set any data source fields as task labels by using [e-righttasklabelmapping](https://help.syncfusion.com/api/js/ejgantt#members:righttasklabelmapping "rightTaskLabelMapping") and [e-lefttasklabelmapping](https://help.syncfusion.com/api/js/ejgantt#members:lefttasklabelmapping "leftTaskLabelMapping") properties.
 
-The following code example explains how to set task name field as right label and task ID field as left label,
+The following code example explains how to set task name field as right label and task ID field as left label:
 
 {% highlight javascript %}
 
@@ -118,15 +118,15 @@ The following code example explains how to set task name field as right label an
 
 {% endhighlight %}
 
-The following screenshot shows Gantt with task labels mapped with different datasource fields
+The following screenshot shows Gantt with task labels mapped with different data source fields:
 
 ![](Customization_images/Customization_img4.png)
 
 ### Task label templates
 
-It is possible to customize the task labels with templates, by using [e-righttasklabeltemplate](https://help.syncfusion.com/api/js/ejgantt#members:righttasklabeltemplate "rightTaskLabelTemplate") and [e-lefttasklabeltemplate](https://help.syncfusion.com/api/js/ejgantt#members:lefttasklabeltemplate "leftTaskLabelTemplate") properties.
+You can customize the task labels with templates by using [e-righttasklabeltemplate](https://help.syncfusion.com/api/js/ejgantt#members:righttasklabeltemplate "rightTaskLabelTemplate") and [e-lefttasklabeltemplate](https://help.syncfusion.com/api/js/ejgantt#members:lefttasklabeltemplate "leftTaskLabelTemplate") properties.
 
-The following code example explains how to map custom templates to task labels.
+The following code example explains how to map custom templates to task labels:
 
 
 {% highlight javascript %}
@@ -162,8 +162,8 @@ The following code example explains how to map custom templates to task labels.
    <!--Add  Gantt control here-->    
    <div id="GanttContainer" ej-gantt
       //...
-       e-righttasklabeltemplate= "rightlabelTemplate"
-       e-lefttasklabeltemplate= "leftlabelTemplate"
+       e-righttasklabeltemplate= "rightTaskLabelTemplate"
+       e-lefttasklabeltemplate= "leftTaskLabelTemplate"
       >
    </div>
 
@@ -178,15 +178,15 @@ The following code example explains how to map custom templates to task labels.
 
 {% endhighlight %}
 
-The following screenshot shows Gantt with task label templates.
+The following screenshot shows Gantt with task label templates:
 
 ![](Customization_images/Customization_img2.png)
 
 ## Tooltip template
 
-The default tooltip in Gantt can be customized by using the [e-taskbartooltiptemplateid](https://help.syncfusion.com/api/js/ejgantt#members:taskbartooltiptemplate "taskbarTooltipTemplateId") property. We need to map the JsRender script element’s ID value to this property.
+The default tooltip in the Gantt can be customized by using the [e-taskbartooltiptemplateid](https://help.syncfusion.com/api/js/ejgantt#members:taskbartooltiptemplate "taskbarTooltipTemplateId") property. You should map the JsRender script element’s ID value to this property.
 
-The following code example shows how to customize the tooltip.
+The following code example shows how to customize the tooltip:
 
 
 {% highlight javascript %}
@@ -239,20 +239,20 @@ The following code example shows how to customize the tooltip.
      angular.module('listCtrl', ['ejangular'])
            .controller('GanttCtrl', function ($scope) {
                //...
-               $scope.taskbartooltiptemplateid="#tooltipTemplate";
+               $scope.taskbarTooltipTemplateId="#tooltipTemplate";
           });    
 </script>
 </body>
 
 {% endhighlight %}
 
-The following screenshot shows Gantt with task tooltip customization.
+The following screenshot shows the Gantt with task tooltip customization:
 
 ![](Customization_images/Customization_img3.png)
 
 ### Cell tooltip 
 
-TreeGrid part tooltip can also be customized using [e-celltooltiptemplate](https://help.syncfusion.com/api/js/ejgantt#members:celltooltiptemplate) property. We need to map the script element or element id to this property. The following code explains how to customize the cell tooltip in Gantt.
+The tooltip of the tree grid part can also be customized by using the[e-celltooltiptemplate](https://help.syncfusion.com/api/js/ejgantt#members:celltooltiptemplate) property. You should map the script element or element id to this property. The following code explains how to customize the cell tooltip in Gantt:
 
 {% highlight javascript %}
 
@@ -273,12 +273,12 @@ TreeGrid part tooltip can also be customized using [e-celltooltiptemplate](https
         });
     $.views.helpers({
         _TaskID: getTaskID,
-        _TaskName: getTaskname
+        _TaskName: getTaskName
     });
     function getTaskID() {
         return this.data.record["taskId"];
     }
-    function getTaskname() {
+    function getTaskName() {
         return this.data.record["taskName"];
     }
 </script>

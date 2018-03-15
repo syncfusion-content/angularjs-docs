@@ -9,11 +9,11 @@ documentation: ug
 
 # Timescale customization
 
-Gantt contains built-in support to switch over various schedule modes. You can achieve this by defining a schedule header type for the Gantt.
+The Gantt contains built-in support to switch over various schedule modes. You can achieve this by defining a schedule header type for the Gantt.
 
-## Schedule Header Types
+## Schedule header types
 
-Gantt contains the following built-in schedule header types
+The Gantt contains the following built-in schedule header types:
 
 * Hour – Minute
 * Day – Hour
@@ -21,11 +21,11 @@ Gantt contains the following built-in schedule header types
 * Month – Week
 * Year – Month
 
-The following code example illustrates you on how to change the schedule mode.
+The following code example illustrates how to change the schedule mode:
 
 ### Week schedule mode
 
-In the Week schedule mode, the upper part of the schedule header displays the weeks, whereas the bottom half of the header displays the days. Refer the following code example.
+In the week schedule mode, the upper part of the schedule header displays the weeks, whereas the bottom half of the header displays the days. Refer to the following code example:
 
 {% highlight javascript %}
 
@@ -52,13 +52,13 @@ In the Week schedule mode, the upper part of the schedule header displays the we
 
 {% endhighlight %}
 
-The following screenshot illustrates the Week Schedule in Gantt control.
+The following screenshot illustrates week schedule in the Gantt control:
 
 ![](Timescale-Modes_images/Timescale-Modes_img1.png)
 
 ### Month schedule mode
 
-In the Week schedule mode, the upper part of the schedule header displays the Months whereas the bottom header of the schedule displays its corresponding Weeks. Refer the following code example.
+In the week schedule mode, the upper part of the schedule header displays the months, whereas the bottom header of the schedule displays its corresponding weeks. Refer to the following code example:
 
 {% highlight javascript %}
 
@@ -85,13 +85,13 @@ In the Week schedule mode, the upper part of the schedule header displays the Mo
 
 {% endhighlight %}
 
-The following screenshot illustrates the Month Schedule in Gantt control.
+The following screenshot illustrates month schedule in the Gantt control:
 
 ![](Timescale-Modes_images/Timescale-Modes_img2.png)
 
 ### Year schedule mode
 
-In the Week schedule mode, the upper schedule header displays the Years, whereas the bottom header displays its corresponding Months. Refer the following code example.
+In the week schedule mode, the upper schedule header displays the years, whereas the bottom header displays its corresponding months. Refer to the following code example:
 
 {% highlight javascript %}
 
@@ -117,13 +117,13 @@ In the Week schedule mode, the upper schedule header displays the Years, whereas
 </body>
 {% endhighlight %}
 
-The following screen shot shows the Year Schedule in Gantt control.
+The following screenshot shows year schedule in the Gantt control:
 
 ![](Timescale-Modes_images/Timescale-Modes_img3.png)
 
 ### Day schedule mode
 
-In the Week schedule mode, the upper part of the header displays the Days, whereas the bottom schedule header displays its corresponding Hours. Refer the following code example.
+In the week schedule mode, the upper part of the header displays the days, whereas the bottom schedule header displays its corresponding hours. Refer to the following code example:
 
 {% highlight javascript %}
 
@@ -150,13 +150,13 @@ In the Week schedule mode, the upper part of the header displays the Days, where
 
 {% endhighlight %}
 
-The following screenshot illustrates the Day Schedule in Gantt control.
+The following screenshot illustrates day schedule in the Gantt control:
 
 ![](Timescale-Modes_images/Timescale-Modes_img4.png)
 
 ### Hour schedule mode
 
-An Hour-Minute Schedule Mode tracks the tasks in minutes scale. In this mode, upper schedule header displays hour scale and the lower schedule header displays its corresponding Minutes. The minute split-up in the lower schedule header can be defined by using the [minutesPerInterval](/api/js/ejgantt#members:scheduleheadersettings-minutesperinterval) enumeration property. The enumeration values of the [minutesPerInterval](/api/js/ejgantt#members:scheduleheadersettings-minutesperinterval) are,
+An hour-minute schedule mode tracks the tasks in minutes scale. In this mode, the upper schedule header displays hour scale and the lower schedule header displays its corresponding minutes. The minute split-up in the lower schedule header can be defined by using the [minutesPerInterval](/api/js/ejgantt#members:scheduleheadersettings-minutesperinterval) enumeration property. The enumeration values of the [minutesPerInterval](/api/js/ejgantt#members:scheduleheadersettings-minutesperinterval) are:
 
 * Auto 
 * oneMinute
@@ -166,7 +166,7 @@ An Hour-Minute Schedule Mode tracks the tasks in minutes scale. In this mode, up
 
 The value `auto`, automatically calculates the interval depending upon the `e-schedulestartdate` and `e-scheduleenddate`, whereas the other enumeration values splits up accordingly.
 
-The Hour Schedule Mode supports both the `minute` and `hour` duration units.
+The hour schedule mode supports both the `minute` and `hour` duration units.
 
 {% highlight javascript %}
 
@@ -198,10 +198,10 @@ The Hour Schedule Mode supports both the `minute` and `hour` duration units.
 
 ## Week start day customization
 
-In Gantt, we can customize week start day by using `e-scheduleheadersettings.weekStartDay` property.
-By default the weekStartDay will be assigned with 0 which specifies the start day of the week.
+In Gantt, you can customize week start day by using the `e-scheduleheadersettings.weekStartDay` property.
+By default, the weekStartDay will be assigned with 0 which specifies the start day of the week.
 
-In week schedule mode, week starts with Sunday by default. But we can customize the week start day by using below code example
+In week schedule mode, week starts with Sunday by default. But, you can customize the week start day by using the following code example:
 
 {% highlight javascript %}
 
@@ -228,14 +228,14 @@ In week schedule mode, week starts with Sunday by default. But we can customize 
 
 ## Rounding off timescale (schedule) start date
 
-You can able to round off the schedule start date in a project by using the `e-scheduleheadersettings.timescaleStartDateMode` property. It is possible to set the following values to the property,
+You can round off the schedule start date in the project by using the `e-scheduleheadersettings.timescaleStartDateMode` property. You can set the following values to the property:
 
 * auto
 * month
 * week
 * year
 
-The value `auto`, automatically calculates the schedule header depending on the datasource values, whereas the other enumeration values rounds off the schedule header accordingly. For Instance, in year schedule if you set "e-timescalestartdatemode" as `month` then the schedule header will start from the immediate month of the schedule instead of starting from beginning of the year.
+The value `auto`, automatically calculates the schedule header depending on the data source values, whereas the other enumeration values rounds off the schedule header accordingly. For instance, in year schedule, if you set "e-timescalestartdatemode" as `month` then the schedule header will start from the immediate month of the schedule instead of starting from beginning of the year.
 
 {% highlight javascript %}
 

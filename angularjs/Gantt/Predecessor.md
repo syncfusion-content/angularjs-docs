@@ -11,13 +11,13 @@ documentation: ug
 
 ## Predecessor offset with duration units
 
-In Gantt, predecessor offset can be defined with the following duration units, 
+In Gantt, the predecessor offset can be defined with the following duration units: 
 
 * Day
 * Hour
 * Minute
 
-We can define offset with various offset duration units for predecessors by using below code example
+You can define the offset with various offset duration units for predecessors by using the following code example:
 
 {% highlight javascript %}
 
@@ -55,7 +55,7 @@ We can define offset with various offset duration units for predecessors by usin
 
 {% endhighlight %}
 
-The following screen shot depicts the duration unit support in the predecessor offset.
+The following screenshot depicts the duration unit support in the predecessor offset:
 
 ![](Predecessor_images/Predecessor_img1.png)
 

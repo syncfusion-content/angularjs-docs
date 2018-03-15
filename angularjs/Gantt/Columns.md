@@ -8,23 +8,23 @@ documentation: ug
 ---
 # Columns
 
-The column displays the information from a bounded data source and it will be editable to update the task details through TreeGrid.
+The column displays the information from a bounded data source and it will be editable to update the task details through the tree grid.
 
 ## Column edit types
 
-Gantt supports the following types of column editors,
+The Gantt supports the following types of column editors:
 
-  * String 
+  * String
   * Date
   * Datetime
   * Numeric
-  * Maskedit
+  * Mask
   * Currency
   * Dropdown
   
 ## Format column
 
-It is possible to format a column using ‘load’ event. The following code examples show how to format the ‘progress’ column with percentage value.
+You can format a column using the ‘load’ event. The following code examples show how to format the ‘progress’ column with percentage value.
 
 {% highlight javascript %}
 
@@ -50,13 +50,13 @@ It is possible to format a column using ‘load’ event. The following code exa
    
 {% endhighlight %}
 
-Note: For more numeric format strings, please refer this [link](https://msdn.microsoft.com/library/dwhawy9k(v=vs.100).aspx).
+Note: For more numeric format strings, refer to this [link](https://msdn.microsoft.com/library/dwhawy9k(v=vs.100).aspx).
 
-For more date format strings, please refer this [link](https://msdn.microsoft.com/library/az4se3k1(v=vs.100).aspx).
+For more date format strings, refer to this [link](https://msdn.microsoft.com/library/az4se3k1(v=vs.100).aspx).
 
-## Column Resizing
+## Column resizing
 
-You can change the width of the column to show the entire text of the column by resizing the column. The following code example shows you how to enable the Column Resize feature at **Gantt** initialize.
+You can change the width of the column to show the entire text of the column by resizing the column. The following code example shows how to enable the column resize feature when initializing the **Gantt**:
 
 {% highlight javascript %}
 
@@ -71,11 +71,11 @@ You can change the width of the column to show the entire text of the column by 
 
 {% endhighlight %}
 
-## Column Template
+## Column template
 
-Column template is used to customize the column’s look and feel, based on requirement. 
+The column template is used to customize the column’s look and feel based on the requirement.
 
-The following code example shows you how to display a column with resource images.
+The following code example shows how to display a column with resource images:
 
 {% highlight javascript %}
 
@@ -148,7 +148,7 @@ The following code example shows you how to display a column with resource image
 
 {% endhighlight %}
 
-The following screenshot displays the customized column in Gantt control.
+The following screenshot displays the customized column in the Gantt control:
 
 ![](Columns_images/Columns_img7.png)
 
@@ -156,19 +156,19 @@ The following screenshot displays the customized column in Gantt control.
 
 ### Show column chooser
 
-Gantt supports enabling and disabling the visibility of the columns dynamically with the [e-showcolumnchooser](https://help.syncfusion.com/api/js/ejgantt#members:showcolumnchooser "showColumnChooser") property. The visibility of the custom columns can also be toggled with this property. Column chooser option is rendered as a sub menu item within the column menu in the Gantt columns. 
+The Gantt supports enabling and disabling the visibility of columns dynamically by using the [e-showcolumnchooser](https://help.syncfusion.com/api/js/ejgantt#members:showcolumnchooser "showColumnChooser") property. The visibility of custom columns can also be toggled with this property. The column chooser option is rendered as a sub menu item within the column menu in Gantt columns.
 
 ![](Columns_images/Columns_img2.png)
 
-The column menu is enabled with the [e-showcolumnchooser](https://help.syncfusion.com/api/js/ejgantt#members:showcolumnchooser "showColumnChooser") property, where the default value for this property is `false`.
+The column menu is enabled with the [e-showcolumnchooser](https://help.syncfusion.com/api/js/ejgantt#members:showcolumnchooser "showColumnChooser") property and the default value of this property is `false`.
 
 The column menu provides the following options:
 
-* Sort Ascending
-* Sort Descending
+* Sort ascending
+* Sort descending
 * Columns 
 
-Sort Ascending and Sort Descending options can be enabled or disabled with the [e-allowsorting](https://help.syncfusion.com/api/js/ejgantt#members:allowsorting "allowSorting") property. Single level sorting can be performed with these options. To perform multilevel sorting, [e-allowmultisorting](https://help.syncfusion.com/api/js/ejgantt#members:allowmultisorting "allowmultisorting") property should be enabled. You can also disable the visibility of a particular column in the column collection manually by setting the `visible` property to `false`.
+Sort ascending and sort descending options can be enabled or disabled by using the [e-allowsorting](https://help.syncfusion.com/api/js/ejgantt#members:allowsorting "allowSorting") property. The single level sorting can be performed with these options. To perform multilevel sorting, the [e-allowmultisorting](https://help.syncfusion.com/api/js/ejgantt#members:allowmultisorting "allowmultisorting") property should be enabled. You can also disable the visibility of a particular column in the column collection manually by setting the `visible` property to `false`.
 
 {% highlight javascript %}
 
@@ -191,30 +191,30 @@ Sort Ascending and Sort Descending options can be enabled or disabled with the [
 
 {% endhighlight %}
 
-The following screenshot displays the column chooser in the Gantt control.
+The following screenshot displays the column chooser in the Gantt control:
 
 ![](Columns_images/Columns_img3.png)
 
 ### Show column options
 
-You can customize the column with some more options with the [e-showcolumnoptions](https://help.syncfusion.com/api/js/ejgantt#members:showcolumnoptions "showColumnOptions") property. Insert new column, delete column and update the header text of the column can be done with this property.
+You can customize the column with some more options by using the [e-showcolumnoptions](https://help.syncfusion.com/api/js/ejgantt#members:showcolumnoptions "showColumnOptions") property. Insert new column, delete column, and update the header text of the column can be done by using this property.
 
 ![](Columns_images/Columns_img4.png)
 
-The column options can be enable or disabled with e-showcolumnoptions property, where the default value for this property is false.
+The column options can be enabled or disabled by using the e-showcolumnoptions property in which the default value for this property is false.
 
-The column options provide the following options:
+The column provides the following options:
 
 * Insert column left
 * Insert column right
 * Delete column
 * Rename column
 
-Inserting column provides the dialog to enter the details for the column
+When you insert a column the following dialog will open, in which you can enter the details for the column.
 
 ![](Columns_images/Columns_img5.png)
 
-These fields can be customized with [e-columndialogfields](https://help.syncfusion.com/api/js/ejgantt#members:columndialogfields "columnDialogFields") this property. The following shows you how to customize these fields.
+These fields can be customized by the [e-columndialogfields](https://help.syncfusion.com/api/js/ejgantt#members:columndialogfields "columnDialogFields") property. The following code shows how to customize these fields:
 
 {% highlight javascript %}
 
@@ -229,15 +229,15 @@ These fields can be customized with [e-columndialogfields](https://help.syncfusi
       //...
         e-showcolumnchooser= true
         e-showcolumnoptions= true
-         e-columndialogfields= "columndialogfields"
+         e-columndialogfields= "columnDialogFields"
          >
       </div>
        <script>
-        var columndialogfields = ["field", "headerText", "editType","width"];
+        var columnDialogFields = ["field", "headerText", "editType","width"];
          angular.module('listCtrl', ['ejangular'])
           .controller('GanttCtrl', function ($scope) {
               //...
-              $scope.columndialogfields = columndialogfields;
+              $scope.columnDialogFields = columnDialogFields;
          });
     </script>
    </body>

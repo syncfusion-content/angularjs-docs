@@ -9,18 +9,18 @@ documentation: ug
 
 # Editing
 
-The Gantt control provides built-in support to add, insert and update the tasks. The following are the types of editing available in Gantt,
+The Gantt control provides built-in support to add, insert, and update the tasks. The following are the types of editing available in the Gantt:
 
-* Cell Editing
-* Normal Editing
-* Taskbar Editing
-* Predecessor Editing
+* Cell editing
+* Normal editing
+* Taskbar editing
+* Predecessor editing
 
-## Cell Editing
+## Cell editing
 
-Update the task details through grid cell editing by setting editMode as `cellEditing`.
+Update the task details through the grid cell editing by setting the editMode to `cellEditing`.
 
-The following code example shows you how to enable `cellEditing` in Gantt control.
+The following code example shows how to enable the `cellEditing` in the Gantt control:
 
 {% highlight javascript %}
 
@@ -46,15 +46,15 @@ The following code example shows you how to enable `cellEditing` in Gantt contro
 
 {% endhighlight %}
 
-The output of Gantt with cellEditing is as follows.
+The output of the Gantt with cellEditing is as follows:
 
 ![](Editing_images/Editing_img1.png)
 
-## Normal Editing
+## Normal editing
 
-Update the task details through edit dialog by setting `editMode` as `normal`.
+Update the task details through the edit dialog by setting the `editMode` to `normal`.
 
-The following code example shows you how to enable normal editing in Gantt control.
+The following code example shows how to enable normal editing in the Gantt control:
 
 {% highlight javascript %}
 
@@ -81,13 +81,13 @@ The following code example shows you how to enable normal editing in Gantt contr
 
 {% endhighlight %}
 
-The following screenshot shows the output of `normal` editing.
+The following screenshot shows the output of `normal` editing:
 
 ![](Editing_images/Editing_img2.png)
 
-## Taskbar Editing
+## Taskbar editing
 
-Update the task details by interactions such as resizing and dragging the taskbar. The following code example shows you how to enable taskbar resizing in Gantt control.
+Update the task details by interactions such as resizing and dragging the taskbar. The following code example shows how to enable taskbar resizing in the Gantt control:
 
 {% highlight javascript %}
 
@@ -102,7 +102,7 @@ Update the task details by interactions such as resizing and dragging the taskba
 
 {% endhighlight %}
 
-You can also enable or disable the progressbar resizing by setting 'e-enableprogressbarresizing'. The following code example shows you to disable this property.
+You can also enable or disable the progressbar resizing by setting 'e-enableprogressbarresizing'. Refer to the following code example, to disable this property:
 
 {% highlight javascript %}
 
@@ -117,9 +117,9 @@ You can also enable or disable the progressbar resizing by setting 'e-enableprog
 
 {% endhighlight %}
 
-## Predecessor Editing
+## Predecessor editing
 
-Update the predecessor details of a task using mouse interactions. The following code example shows how to enable predecessor editing.
+Update the predecessor details of the task using mouse interactions. The following code example shows how to enable predecessor editing:
 
 {% highlight javascript %}
 
@@ -134,7 +134,7 @@ Update the predecessor details of a task using mouse interactions. The following
 </body>
 {% endhighlight %}
 
-The following screen shot shows the predecessor editing in Gantt control.
+The following screenshot shows the predecessor editing in the Gantt control:
 
 ![](Editing_images/Editing_img3.png)
 
