@@ -108,7 +108,7 @@ The following code example explains how to add the sub context menu for custom m
         });
         args.contextMenuItems.push({
             headerText: "ExpandAll",
-            menuId: "expandall",
+            menuId: "expandAll",
             parentMenuId: "expand",
             iconPath: "url(Expand-02-WF.png)",
             eventHandler: function() {
@@ -117,7 +117,7 @@ The following code example explains how to add the sub context menu for custom m
         });
         args.contextMenuItems.push({
             headerText: "CollapseAll",
-            menuId: "collapseall",
+            menuId: "collapseAll",
             parentMenuId: "expand",
             iconPath: "url(shrink2.png)",
             eventHandler: function() {
