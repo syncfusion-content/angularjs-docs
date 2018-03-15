@@ -15,7 +15,7 @@ The dimension of the FileExplorer can be customized through [height](http://help
 
 {% highlight html %}
 
-<div id="fileExplorer" ej-fileexplorer e-path="path" e-ajaxaction="ajaxaction" e-isresponsive="true" e-width="300px" e-height="900px" ></div>
+<div id="fileExplorer" ej-fileexplorer e-path="path" e-ajaxaction="action" e-isresponsive="true" e-width="300px" e-height="900px" ></div>
 
 {% endhighlight %}
 
@@ -23,7 +23,7 @@ The dimension of the FileExplorer can be customized through [height](http://help
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
         $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
-        $scope.ajaxaction = http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations
+        $scope.action = http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations
     });
 
 {% endhighlight %}
@@ -37,7 +37,7 @@ The visibility of the navigation pane can be controlled by the [showNavigationPa
 
 {% highlight html %}
 
-<div id="fileExplorer" ej-fileexplorer e-path="path" e-ajaxaction="ajaxaction" e-isresponsive="true" e-shownavigationpane="false" ></div>
+<div id="fileExplorer" ej-fileexplorer e-path="path" e-ajaxaction="action" e-isresponsive="true" e-shownavigationpane="false" ></div>
 
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ The visibility of the navigation pane can be controlled by the [showNavigationPa
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
         $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
-        $scope.ajaxaction = http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations
+        $scope.action = http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations
     });
 
 {% endhighlight %}
@@ -73,7 +73,7 @@ Also the layout views can be changed through the [layout](http://help.syncfusion
 
 {% highlight html %}
 
-<div id="fileExplorer" ej-fileexplorer e-path="path" e-ajaxaction="ajaxaction" e-isresponsive="true" e-layout="tile" ></div>
+<div id="fileExplorer" ej-fileexplorer e-path="path" e-ajaxaction="action" e-isresponsive="true" e-layout="tile" ></div>
 
 {% endhighlight %}
 
@@ -81,7 +81,7 @@ Also the layout views can be changed through the [layout](http://help.syncfusion
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
         $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
-        $scope.ajaxaction = http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations
+        $scope.action = http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations
     });
 
 {% endhighlight %}
@@ -95,7 +95,7 @@ The behavior of the columns can be customized through the [columns](http://help.
 
 {% highlight html %}
 
-<div id="fileExplorer" ej-fileexplorer e-path="path" e-ajaxaction="ajaxaction" e-isresponsive="true" e-gridsettings="gridSettings" ></div>
+<div id="fileExplorer" ej-fileexplorer e-path="path" e-ajaxaction="action" e-isresponsive="true" e-gridsettings="gridSettings" ></div>
 
 {% endhighlight %}
 
@@ -103,7 +103,7 @@ The behavior of the columns can be customized through the [columns](http://help.
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
         $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
-        $scope.ajaxaction = http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations,
+        $scope.action = http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations,
         $scope.gridSettings={
 
                     // disables the sorting functionality in grid view
@@ -133,7 +133,7 @@ The footer displays the details of the current selected files and folders, and t
 
 {% highlight html %}
 
-<div id="fileExplorer" ej-fileexplorer e-path="path" e-ajaxaction="ajaxaction" e-isresponsive="true" e-showfooter="false" ></div>
+<div id="fileExplorer" ej-fileexplorer e-path="path" e-ajaxaction="action" e-isresponsive="true" e-showfooter="false" ></div>
 
 {% endhighlight %}
 
@@ -141,7 +141,27 @@ The footer displays the details of the current selected files and folders, and t
 
     angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
         $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
-        $scope.ajaxaction = http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations
+        $scope.action = http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations
+    });
+
+{% endhighlight %}
+
+## Customize the Root Folder name in FileExplorer
+
+You can set the alias name for root folder name in FileExplorer by using rootFolderName API. It is used to replace the actual root folder name in the FileExplorer UI. Refer to the below code block for set the alias name for root folder name in FileExplorer.  
+
+{% highlight html %}
+
+<div id="root" ej-fileexplorer e-path="path" e-ajaxaction="action" e-isresponsive="true" e-rootfoldername="rootFolderName" ></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
+        $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+        $scope.action = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations",
+        $scope.rootFolderName = "This PC"
     });
 
 {% endhighlight %}
