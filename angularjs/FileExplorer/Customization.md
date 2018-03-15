@@ -145,3 +145,23 @@ The footer displays the details of the current selected files and folders, and t
     });
 
 {% endhighlight %}
+
+## Customize the Root Folder name in FileExplorer
+
+You can set the alias name for root folder name in FileExplorer by using rootFolderName API. It is used to replace the actual root folder name in the FileExplorer UI. Refer to the below code block for set the alias name for root folder name in FileExplorer.  
+
+{% highlight html %}
+
+<div id="root" ej-fileexplorer e-path="path" e-ajaxaction="ajaxaction" e-isresponsive="true" e-rootfoldername="rootFolderName" ></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    angular.module('FileCtrl', ['ejangular']).controller('FileCtrl', function ($scope) {
+        $scope.path = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+        $scope.ajaxaction = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations",
+        $scope.rootFolderName = "This PC"
+    });
+
+{% endhighlight %}
