@@ -61,11 +61,11 @@ You can enable the critical path by using the **showCriticalPath****()** method 
 {% highlight html %}
  
 <script>                   
-$("#buttonon").click(function(args) {
+$("#buttonOn").click(function(args) {
     ganttObj = $("#GanttContainer").data("ejGantt");
     ganttObj.showCriticalPath(true);
 })
-$("#buttonoff").click(function(args) {
+$("#buttonOff").click(function(args) {
     ganttObj = $("#GanttContainer").data("ejGantt");
     ganttObj.showCriticalPath(false);
 })             
