@@ -30,7 +30,7 @@ Using Gantt default toolbar items, you can perform the following operations:
 
 * **Indent**: Indents the selected task in the Gantt.
 		   
-* **Outdent**: Outdents the selected task in the Gantt.
+* **Outdent**: Outdent the selected task in the Gantt.
 		   
 * **CriticalPath**: Supports critical path in the Gantt.
 
