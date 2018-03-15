@@ -162,8 +162,8 @@ The following code example explains how to map custom templates to task labels:
    <!--Add  Gantt control here-->    
    <div id="GanttContainer" ej-gantt
       //...
-       e-righttasklabeltemplate= "rightlabelTemplate"
-       e-lefttasklabeltemplate= "leftlabelTemplate"
+       e-righttasklabeltemplate= "rightTaskLabelTemplate"
+       e-lefttasklabeltemplate= "leftTaskLabelTemplate"
       >
    </div>
 
@@ -239,7 +239,7 @@ The following code example shows how to customize the tooltip:
      angular.module('listCtrl', ['ejangular'])
            .controller('GanttCtrl', function ($scope) {
                //...
-               $scope.taskbartooltiptemplateid="#tooltipTemplate";
+               $scope.taskbarTooltipTemplateId="#tooltipTemplate";
           });    
 </script>
 </body>
@@ -273,12 +273,12 @@ The tooltip of the tree grid part can also be customized by using the[e-celltool
         });
     $.views.helpers({
         _TaskID: getTaskID,
-        _TaskName: getTaskname
+        _TaskName: getTaskName
     });
     function getTaskID() {
         return this.data.record["taskId"];
     }
-    function getTaskname() {
+    function getTaskName() {
         return this.data.record["taskName"];
     }
 </script>
