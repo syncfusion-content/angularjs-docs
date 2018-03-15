@@ -8,11 +8,11 @@ documentation: Ug
 ---
 # Tooltip
 
-Gantt has support to display tooltip for both taskbars and for column cells.
+The Gantt control has support to display the tooltip for both taskbars and for column cells.
 
-## Taskbar Tooltip
+## Taskbar tooltip
 
-In Gantt, you can enable or disable taskbar mouse hover tooltip by using the [e-enabletaskbartooltip](https://help.syncfusion.com/api/js/ejgantt#members:enabletaskbartooltip) property. By default, this property is set to true. The following code example shows, how to enable the taskbar tooltip in Gantt.
+In Gantt, you can enable or disable the taskbar mouse hover tooltip by using the [e-enabletaskbartooltip](https://help.syncfusion.com/api/js/ejgantt#members:enabletaskbartooltip) property. By default, this property is set to true. The following code example shows how to enable the taskbar tooltip in Gantt:
 
 {% highlight javascript %}
 
@@ -27,11 +27,11 @@ In Gantt, you can enable or disable taskbar mouse hover tooltip by using the [e-
 
 {% endhighlight %}
 
-This tooltip can be customized further by using [e-taskbartooltiptemplate](https://help.syncfusion.com/api/js/ejgantt#members:taskbartooltiptemplate) this property, which is described briefly in the [customization](https://help.syncfusion.com/js/gantt/customizations) section.
+This tooltip can be customized further by using the [e-taskbartooltiptemplate](https://help.syncfusion.com/api/js/ejgantt#members:taskbartooltiptemplate) property, which is described briefly in the [customization](https://help.syncfusion.com/js/gantt/customizations) section.
 
 ## Taskbar drag tooltip
 
-It is possible to enable or disable the tooltip while performing editing actions on taskbar (left resizing, right resizing, dragging and progress resizing) by using the [e-enabletaskbardragtooltip](https://help.syncfusion.com/api/js/ejgantt#members:enabletaskbardragtooltip)  this property. By default, this property is set to true. The following code example explains this behavior.
+You can enable or disable the tooltip while performing editing actions on the taskbar (left resizing, right resizing, dragging, and progress resizing) by using the [e-enabletaskbardragtooltip](https://help.syncfusion.com/api/js/ejgantt#members:enabletaskbardragtooltip)  property. By default, this property is set to true. The following code example explains this behavior:
 
 {% highlight javascript %}
 
@@ -48,7 +48,7 @@ It is possible to enable or disable the tooltip while performing editing actions
 
 ## Cell tooltip
 
-It is possible to enable or disable the TreeGrid cell tooltip in mouse hover by using [e-showgridcelltooltip](https://help.syncfusion.com/api/js/ejgantt#members:showgridcelltooltip) property. By default, this property is set to true. The following code example explains, how to enable disable this property,
+You can enable or disable the tree grid cell tooltip in mouse hover by using the [e-showgridcelltooltip](https://help.syncfusion.com/api/js/ejgantt#members:showgridcelltooltip) property. By default, this property is set to true. The following code example explains how to enable and disable this property:
 
 {% highlight javascript %}
 
@@ -62,13 +62,13 @@ It is possible to enable or disable the TreeGrid cell tooltip in mouse hover by 
 </body>
 {% endhighlight %}
 
-This tooltip can be customizable using the [e-celltooltiptemplate](https://help.syncfusion.com/api/js/ejgantt#members:celltooltiptemplate) property, which is described briefly in the [customization](https://help.syncfusion.com/js/gantt/customizations) section.
+The tooltip can be customized by using the [e-celltooltiptemplate](https://help.syncfusion.com/api/js/ejgantt#members:celltooltiptemplate) property, which is described briefly in the [customization](https://help.syncfusion.com/js/gantt/customizations) section.
 
 ![](Tooltip_images/Tooltip_img1.png)
 
-## Tree column (Expander column) tooltip 
+## Tree column (expander column) tooltip 
 
-It is also possible to display tooltip only for expander column by setting [e-showexpandgridcelltooltip](https://help.syncfusion.com/api/js/ejgantt#members:showgridexpandcelltooltip) property. The following code example shows you to enable expander column tooltip in Gantt.
+You can display the tooltip only for expander column by setting the [e-showexpandgridcelltooltip](https://help.syncfusion.com/api/js/ejgantt#members:showgridexpandcelltooltip) property. The following code example shows you to enable expander column tooltip in the Gantt:
 
 {% highlight javascript %}
 

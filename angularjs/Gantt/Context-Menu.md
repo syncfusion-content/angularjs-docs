@@ -6,19 +6,19 @@ platform: AngularJS
 control: Gantt
 documentation: ug
 ---
-# Context Menu
+# Context menu
 
-## Default Menu Items
+## Default menu items
 
-Context menu in Gantt has the following default menu items,
+The context menu in the Gantt has the following default menu items:
 
-* Task Details
-* Add New Task
+* Task details
+* Add new task
 * Indent
 * Outdent
 * Delete
 
-The following code example explains how to enable the context menu in Gantt control.
+The following code example explains how to enable the context menu in the Gantt control:
 
 {% highlight javascript %}
 
@@ -39,13 +39,13 @@ The following code example explains how to enable the context menu in Gantt cont
 
 {% endhighlight %}
 
-The following screenshot shows the default context menu in Gantt control.
+The following screenshot shows the default context menu in the Gantt control:
 
 ![](Context-Menu_images/Context-Menu_img1.png)
 
-## Custom Menu Item
+## Custom menu item
 
-It is possible to add a custom context menu item in Gantt control. The following code example explains on how to add the custom context menu item
+You can add a custom context menu item in the Gantt control. The following code example explains how to add the custom context menu item:
 
 {% highlight javascript %}
 
@@ -77,15 +77,15 @@ It is possible to add a custom context menu item in Gantt control. The following
 
 {% endhighlight %}
 
-The screenshot of the custom context menu items in Gantt control is as follows.
+The following screenshot shows the custom context menu items in the Gantt control:
 
 ![](Context-Menu_images/Context-Menu_img2.png)
 
 ### Custom menu item with sub menu item
 
-It is possible to create a custom menu item with a sub menu by mapping the parentMenuId property from the contextMenuItems argument in the contextMenuOpen event.
+You can create a custom menu item with a sub menu by mapping the parentMenuId property from the contextMenuItems argument in the contextMenuOpen event.
 
-The following code example explains on how to add sub context menu for custom menu items.
+The following code example explains how to add the sub context menu for custom menu items:
 
 {% highlight javascript %}
 
@@ -108,7 +108,7 @@ The following code example explains on how to add sub context menu for custom me
         });
         args.contextMenuItems.push({
             headerText: "ExpandAll",
-            menuId: "expandall",
+            menuId: "expandAll",
             parentMenuId: "expand",
             iconPath: "url(Expand-02-WF.png)",
             eventHandler: function() {
@@ -117,7 +117,7 @@ The following code example explains on how to add sub context menu for custom me
         });
         args.contextMenuItems.push({
             headerText: "CollapseAll",
-            menuId: "collapseall",
+            menuId: "collapseAll",
             parentMenuId: "expand",
             iconPath: "url(shrink2.png)",
             eventHandler: function() {
@@ -135,7 +135,7 @@ The following code example explains on how to add sub context menu for custom me
 
 {% endhighlight %}
 
-The screenshot of the custom context menu items in Gantt control is as follows.
+The following screenshot shows the custom context menu items in the Gantt control:
 
 ![](Context-Menu_images/Context-Menu_img3.png)
 

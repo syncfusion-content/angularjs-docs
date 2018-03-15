@@ -6,22 +6,21 @@ platform: AngularJS
 control: Gantt
 documentation: ug
 ---
-# Rows 
+# Rows
 
-Row represents a task information from the datasource, and it is possible to perform the following actions in Gantt rows
+The row represents a task information from the data source. You can perform the following actions in Gantt rows.
 
 ## Adding a row
 
-A row can be added in the following ways in Gantt,
+A row can be added to the Gantt in the following ways:
 
-* Toolbar 
+* Toolbar
 * Context menu 
 * Adding a row programmatically 
 
-### Toolbar Adding
+### Adding toolbar
 
-
-Row can be added in Gantt from toolbar while [e-editsettings.allowAdding](https://help.syncfusion.com/api/js/ejgantt#members:editsettings-allowadding) property is set to true. On clicking the toolbar add icon, you need to provide the task information in the add dialog. If a row is previously selected, then the new row will be added below and in the same hierarchical level as that of the selected row. If there are no rows selected in Gantt, by default the new row will be added as the top most row in Gantt.
+The row can be added in the Gantt from toolbar when the [e-editsettings.allowAdding](https://help.syncfusion.com/api/js/ejgantt#members:editsettings-allowadding) property is set to true. When clicking the toolbar add icon, you should provide the task information in the add dialog. If a row is previously selected, then the new row will be added below and in the same hierarchical level as that of the selected row. If there are no rows selected in the Gantt, by default the new row will be added as the top most row in Gantt.
 
 {% highlight javascript %}
 
@@ -51,7 +50,7 @@ Row can be added in Gantt from toolbar while [e-editsettings.allowAdding](https:
 
 ### Context menu adding
 
-You can able to add new rows either above or below the selected rows by using the default context menu, while [e-enablecontextmenu](https://help.syncfusion.com/api/js/ejgantt#members:enablecontextmenu) is set to true. The new row added will have the same task information similar to the selected row.
+You can add new rows either above or below the selected rows by using the default context menu, when the [e-enablecontextmenu](https://help.syncfusion.com/api/js/ejgantt#members:enablecontextmenu) is set to true. The new row added will have the same task information similar to the selected row.
 
 {% highlight javascript %}
 
@@ -82,15 +81,15 @@ You can able to add new rows either above or below the selected rows by using th
 
 ### Adding a row programmatically
 
-You can add rows in the below positions dynamically using [addRecord](https://help.syncfusion.com/api/js/ejgantt#methods:addrecord) public method,
+You can add rows in the below positions dynamically by using the [addRecord](https://help.syncfusion.com/api/js/ejgantt#methods:addrecord) public method.
 
-* Top of all the rows
-* Bottom to all the existing rows
-* Above the selected row
-* Below the selected row
-* As child to the selected row
+* Top of all the rows.
+* Bottom to all the existing rows.
+* Above the selected row.
+* Below the selected row.
+* As child to the selected row.
 
-The below code example explains on adding a row using a custom button.
+The following code example explains adding a row using the custom button:
 
 {% highlight html %}
 <button id="addRow" style="top:27px;left:50px;position:absolute">AddRow</button>
@@ -130,17 +129,17 @@ $("#addRow").click(function(args) {
 })
 {% endhighlight %}
 
-The following screen shot shows to add new row as child.
+The following screenshot shows adding a new row as child:
 
 ![](Rows_images/Rows_img3.png)
 
-## Row drag and drop
+## Drag and drop of row
 
-It is possible to dynamically re-arrange the rows in the Gantt control by using the [e-allowdraganddrop](https://help.syncfusion.com/api/js/ejgantt#members:allowdraganddrop "allowDragAndDrop") property. With this property, row drag and drop can be enabled or disabled. Rows can be inserted above, below as a sibling or as a child to the existing row with the help of this feature. A default tooltip is rendered while dragging the Gantt row and this tooltip can be customized by the [e-dragtooltip](https://help.syncfusion.com/api/js/ejgantt#members:dragtooltip "dragTooltip") property. This property has inner properties such as [showTooltip](https://help.syncfusion.com/api/js/ejgantt#members:dragtooltip-showtooltip "e-dragtooltip.showTooltip"), [tooltipItems](https://help.syncfusion.com/api/js/ejgantt#members:dragtooltip-tooltipitems "e-dragtooltip.tooltipItems") and [tooltipTemplate](https://help.syncfusion.com/api/js/ejgantt#members:dragtooltip-tooltiptemplate "dragTooltip.tooltipTemplate").
+You can dynamically re-arrange the rows in the Gantt control by using the [e-allowdraganddrop](https://help.syncfusion.com/api/js/ejgantt#members:allowdraganddrop "allowDragAndDrop") property. With this property, the drag and drop of the row can be enabled or disabled. Rows can be inserted above or below as a sibling or as a child to the existing row with the help of this feature. A default tooltip is rendered while dragging the Gantt row and this tooltip can be customized by the [e-dragtooltip](https://help.syncfusion.com/api/js/ejgantt#members:dragtooltip "dragTooltip") property. This property has inner properties such as [showTooltip](https://help.syncfusion.com/api/js/ejgantt#members:dragtooltip-showtooltip "e-dragtooltip.showTooltip"), [tooltipItems](https://help.syncfusion.com/api/js/ejgantt#members:dragtooltip-tooltipitems "e-dragtooltip.tooltipItems"), and [tooltipTemplate](https://help.syncfusion.com/api/js/ejgantt#members:dragtooltip-tooltiptemplate "dragTooltip.tooltipTemplate").
 
 The `showTooltip` property is used to enable or disable the tooltip. By default, this property value is `false`.
 
-The following code explains about enabling the row drag and drop with the default tooltip in the Gantt.
+The following code explains about enabling the drag and drop of row with default tooltip in the Gantt:
 
 {% highlight javascript %}
 
@@ -166,15 +165,15 @@ The following code explains about enabling the row drag and drop with the defaul
 
 {% endhighlight %}
 
-The following screenshot depicts a row drag and drop in the Gantt widget.
+The following screenshot depicts the drag and drop of row in the Gantt widget:
 
 ![](Rows_images/Rows_img4.png)
 
-### Customizing Drag tooltip
+### Customizing drag tooltip
 
 The [tooltipItems](https://help.syncfusion.com/api/js/ejgantt#members:dragtooltip-tooltipitems) property is used to customize the tooltip items. By using this property, specific fields can be rendered in the tooltip. By default this property value is `null`, and all the defined field items are rendered in the tooltip.
 
-The following code shows how to render row drag tooltip with the desired field items.
+The following code shows how to render the row drag tooltip with the desired field items:
 
 {% highlight javascript %}
 
@@ -206,9 +205,9 @@ The following code shows how to render row drag tooltip with the desired field i
 
 {% endhighlight %}
 
-The [tooltipTemplate](https://help.syncfusion.com/api/js/ejgantt#members:dragtooltip-tooltiptemplate) property renders the template tooltip for row drag and drop in the Gantt control by using the JsRender template. You can provide either the id value of the script element or the script element to the property.
+The [tooltipTemplate](https://help.syncfusion.com/api/js/ejgantt#members:dragtooltip-tooltiptemplate) property renders the template tooltip for dragging and dropping of row in the Gantt control by using the JsRender template. You can provide either the id value of the script element or the script element to the property.
 
-The following code shows how to render row drag tooltip with tooltip template.
+The following code shows how to render the row drag tooltip with tooltip template:
 
 {% highlight javascript %}
 
@@ -224,7 +223,7 @@ The following code shows how to render row drag tooltip with tooltip template.
   <script>
     dragTooltip: {
         showTooltip: true,
-        tooltipTemplate: "#customtooltip"
+        tooltipTemplate: "#customTooltip"
     },
     angular.module('listCtrl', ['ejangular'])
         .controller('GanttCtrl', function($scope) {
@@ -260,7 +259,7 @@ The following code shows how to render row drag tooltip with tooltip template.
 
 ## Alternate row background
 
-In Gantt, it is possible to enable or disable the alternate row background using the [e-enablealtrow](https://help.syncfusion.com/api/js/ejgantt#members:enablealtrow) property. The following code example shows you to disable the alternate row color in Gantt.
+In Gantt, you can enable or disable the alternate row background by using the [e-enablealtrow](https://help.syncfusion.com/api/js/ejgantt#members:enablealtrow) property. The following code example shows you to disable the alternate row color in the Gantt:
 
 {% highlight javascript %}
 <body ng-controller="GanttCtrl">
@@ -277,7 +276,7 @@ In Gantt, it is possible to enable or disable the alternate row background using
 
 ### Change altRow background
 
-The altRow background can be changed by setting the background color for the altRow using CSS. The following code example shows you how to change the altRow color.
+The altRow background can be changed by setting the background color for the altRow using CSS. The following code example shows how to change the altRow color:
 
 {% highlight html %}
 <head>
@@ -308,7 +307,7 @@ The altRow background can be changed by setting the background color for the alt
 
 # Row height
 
-It is possible to change the height of the row in Gantt by setting row height in pixels to [e-rowheight](https://help.syncfusion.com/api/js/ejgantt#members:rowheight) property. The following code example explains how to change the row height in Gantt at load time.
+You can change the height of row in Gantt by setting the row height in pixels to the [e-rowheight](https://help.syncfusion.com/api/js/ejgantt#members:rowheight) property. The following code example explains how to change the row height in Gantt at load time.
 
 {% highlight javascript %}
 

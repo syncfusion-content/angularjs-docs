@@ -7,19 +7,19 @@ control: Gantt
 documentation: ug
 ---
 
-# Time Options
+# Time options
 
-Start date and End date in the datasource defines the starting point and ending point of a task in the project. It can be of two data types,
+Start date and end date in the data source defines the starting point and ending point of a task in the project. The two data types are:
 
-* Date 
+* Date
 * Datetime
 
-The datetime data type for start date and end date defines the exact starting point and ending point of a task along with time details of a day. There are two types of time scales available based on working hours,
+The datetime data type for start date and end date defines the exact starting point and ending point of a task along with time details of a day. There are two types of time scales available based on working hours:
 
 * `TimeScale8Hours`  for 8 hour working scale
 * `TimeScale24Hours` for 24 hour working scale
 
-Use the following code example for setting different time scales of working hours.
+Use the following code example for setting different time scales of working hours:
 
 {% highlight javascript %}
 
@@ -34,7 +34,7 @@ Use the following code example for setting different time scales of working hour
 
 {% endhighlight %}
 
-Use the following code example for including time options in start date and end date of a task.
+Use the following code example to include time options in start date and end date of a task:
 
 {% highlight javascript %}
 
@@ -106,7 +106,7 @@ Use the following code example for including time options in start date and end 
 
 {% endhighlight %}
 
-Execute the above code to render the following output.
+Execute the above code to render the following output:
 
 ![](Time-Options_images/Time-Options_img1.png)
 

@@ -6,15 +6,15 @@ platform: AngularJS
 control: Gantt
 documentation: ug
 ---
-# Critical Path
+# Critical path
 
-The critical path in a project is indicated by a single task or a series of tasks in a project, critical path describes the calculated start date or end date of a project. If a task in a critical path is delayed, then the entire project will be delayed.
+The critical path in a project is indicated by a single task or a series of tasks in the project. It describes the calculated start date or end date of the project. If a task in a critical path is delayed, then the entire project will be delayed.
 
-The critical path can be enabled in Gantt by using built-in toolbar button or **showCriticalPath** method.
+The critical path can be enabled in the Gantt by using the built-in toolbar button or **showCriticalPath** method.
 
-## Using Toolbar Icon
+## Using toolbar icon
 
-You can enable/disable the critical path in Gantt by using toolbar button, and this button can be enabled in the Gantt toolbar by using the following code example.
+You can enable or disable the critical path in the Gantt by using the toolbar button which is enabled in the Gantt toolbar by using the following code example:
 
 {% highlight html %}
  
@@ -54,18 +54,18 @@ You can enable/disable the critical path in Gantt by using toolbar button, and t
 ![](criticalfeature_images/criticalfeature_img1.jpeg)
 
 
-## Using Method
+## Using method
 
-You can enable the critical path by using **showCriticalPath****()** method with parameter as **true**. And critical path can be disabled using the same method with parameter as **false**.
+You can enable the critical path by using the **showCriticalPath****()** method with parameter as **true**. The critical path can be disabled by using the same method with parameter as **false**.
 
 {% highlight html %}
  
 <script>                   
-$("#buttonon").click(function(args) {
+$("#buttonOn").click(function(args) {
     ganttObj = $("#GanttContainer").data("ejGantt");
     ganttObj.showCriticalPath(true);
 })
-$("#buttonoff").click(function(args) {
+$("#buttonOff").click(function(args) {
     ganttObj = $("#GanttContainer").data("ejGantt");
     ganttObj.showCriticalPath(false);
 })             
@@ -78,7 +78,7 @@ $("#buttonoff").click(function(args) {
 
 ## Customizing critical path background
 
-You can customize the critical task background by setting custom color codes to the critical task elements’ class names,
+You can customize the critical task background by setting custom color codes to the critical task elements’ class names as follows:
 
 Taskbar–.e-ganttchart .e-criticaltaskbar 
 
