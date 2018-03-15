@@ -26,11 +26,11 @@ You can customize the week header format and day header format in the schedule p
       <!--Add  Gantt control here-->    
       <div id="GanttContainer" ej-gantt
       //...
-         e-scheduleheadersettings="scheduleheadersettings"
+         e-scheduleheadersettings="scheduleHeaderSettings"
          >
       </div>
       <script>
-        var scheduleheadersettings = {            
+        var scheduleHeaderSettings = {            
             weekHeaderFormat: "MMM yyyy",
             dayHeaderFormat: "d",
             weekendBackground: '#F2F2F2'
@@ -38,7 +38,7 @@ You can customize the week header format and day header format in the schedule p
         angular.module('listCtrl', ['ejangular'])
           .controller('GanttCtrl', function ($scope) {
               //...
-              $scope.scheduleheadersettings = scheduleheadersettings;
+              $scope.scheduleHeaderSettings = scheduleHeaderSettings;
           });
     </script> 
    </body>
