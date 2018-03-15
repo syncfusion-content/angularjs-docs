@@ -141,10 +141,10 @@ The Gantt control contains toolbar options to edit, search, expand, or collapse 
 <body ng-controller="GanttCtrl">
    <!--Add  Gantt control here-->    
    <div id="GanttContainer" ej-gantt
-      e-toolbarsettings="toolbarsettings">
+      e-toolbarsettings="toolbarSettings">
    </div>
    <script>
-      var toolbarsettings={
+      var toolbarSettings={
       showToolbar: true,
       toolbarItems: [
        ej.Gantt.ToolbarItems.Add,
@@ -162,7 +162,7 @@ The Gantt control contains toolbar options to edit, search, expand, or collapse 
       angular.module('listCtrl', ['ejangular'])
       .controller('GanttCtrl', function ($scope) {
        //Initialize gantt datasource created in the last step
-       $scope.toolbarsettings = toolbarsettings;
+       $scope.toolbarSettings = toolbarSettings;
       });
    </script>   
 </body>
@@ -227,11 +227,11 @@ Modify the predecessor details of a task using mouse interactions by setting the
    <!--Add  Gantt control here-->    
    <div id="GanttContainer" ej-gantt
       e-allowGanttChartEditing="true"
-      e-editSettings="editsettings"
+      e-editSettings="editSettings"
       e-predecessorMapping="predecessor">             
    </div>
    <script>
-      var editsettings={
+      var editSettings={
           allowEditing: true,
           allowAdding: true,
           allowDeleting: true,
@@ -239,7 +239,7 @@ Modify the predecessor details of a task using mouse interactions by setting the
       };
       angular.module('listCtrl', ['ejangular'])
       .controller('GanttCtrl', function ($scope) {
-         $scope.editsettings=editsettings;
+         $scope.editSettings=editSettings;
       });
    </script>
 </body>  
