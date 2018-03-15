@@ -223,7 +223,7 @@ The following code shows how to render the row drag tooltip with tooltip templat
   <script>
     dragTooltip: {
         showTooltip: true,
-        tooltipTemplate: "#customtooltip"
+        tooltipTemplate: "#customTooltip"
     },
     angular.module('listCtrl', ['ejangular'])
         .controller('GanttCtrl', function($scope) {
