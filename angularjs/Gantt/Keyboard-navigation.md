@@ -8,25 +8,25 @@ documentation: ug
 ---
 # Keyboard navigation
 
-Gantt control supports the following keyboard shortcuts for performing various actions
+The Gantt control supports the following keyboard shortcuts to perform various actions.
 
-**Alt** **+** **j****:** To focus the Gantt control
+**Alt** **+** **j****:** Focuses the Gantt control.
 
-**Home****:** To select the first row
+**Home****:** Selects the first row.
 
-**End****:** To select the last row
+**End****:** Selects the last row.
 
-**F2****:** For editing the focused cell of the selected row
+**F2****:** Edits the focused cell of the selected row.
 
-**Enter****:** To save the edited cell
+**Enter****:** Saves the edited cell.
 
-**Delete****:** To delete the selected row
+**Delete****:** Deletes the selected row.
 
-**Ctrl** **+** **Down** **Arrow****:** To expand all the parent tasks.
+**Ctrl** **+** **Down** **Arrow****:** Expands all the parent tasks.
 
-**Ctrl** **+** **Up** **Arrow****:** To collapse all the parent tasks.
+**Ctrl** **+** **Up** **Arrow****:** Collapses all the parent tasks.
 
-**Left** **Arrow****:** To collapse the selected parent task.
+**Left** **Arrow****:** Collapses the selected parent task.
 
-**Right** **Arrow****:** To expand the selected parent task.
+**Right** **Arrow****:** Expands the selected parent task.
 

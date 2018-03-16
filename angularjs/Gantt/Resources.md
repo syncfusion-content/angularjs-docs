@@ -9,13 +9,13 @@ documentation: ug
 
 # Resources
 
-Resources are represented by staff, equipment and materials etc. In Gantt control you can show /allocate the resources (human resources) for each task. The following steps explain how to configure Gantt with Resources
+Resources are represented by staff, equipment, and materials etc. In Gantt control, you can show/allocate the resources (human resources) for each task. The following steps explain how to configure the Gantt with resources:
 
-**Step 1**: Create a collection of `JSON` object, that contains id and name of the resource and assign it to `e-resources` property.
+**Step 1**: Create a collection of `JSON` object that contains id and name of the resource, and assign it to the `e-resources` property.
 
-**Step 2**:  Then, specify the field name for id and name of the resource in the resource collection to `e-resourceidmapping` and `e-resourcenamemapping` properties. 
+**Step 2**: Specify the field name for id and name of the resource in the resource collection to `e-resourceidmapping` and `e-resourcenamemapping` properties. 
 
-**Step 3**: The name of the field, which contains the actual resources assigned for a particular task in the dataSource is specified using `e-resourceinfomapping`.
+**Step 3**: The name of the field that contains the actual resources assigned for a particular task in the data source is specified using the `e-resourceinfomapping` property.
 
 {% highlight javascript %}
 
@@ -53,7 +53,7 @@ Resources are represented by staff, equipment and materials etc. In Gantt contro
 
 {% endhighlight %}
 
-The following screenshot shows Gantt control with Resources.
+The following screenshot shows the Gantt control with resources:
 
 ![](Resources_images/Resources_img1.png)
 
