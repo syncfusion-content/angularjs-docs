@@ -19,7 +19,7 @@ HTML templates can be specified in the [`e-template`](http://help.syncfusion.com
 
 You can use the "ng-template" to define template column and declare image template with the Angular directive "ng-src".
 
-N> If [`e-field`](http://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") is not specified, you will be unable to edit, group, filter, sort, search, and summary functionalities in a particualr column.
+N> If [`e-field`](http://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") is not specified, you will be unable to edit, group, filter, sort, search, and summary functionalities in a particualar column.
 
 The following code example describes the previous behavior.
 
