@@ -12,13 +12,13 @@ It represents the record details that are fetched from the datasource.
 
 ## Details Template
 
-It provides a detailed view /additional information about each row of the grid. You can render any type of JsRender template and assign the script template id in the [`e-detailstemplate`](http://help.syncfusion.com/api/js/ejgrid#members:detailstemplate "detailsTemplate") property. And also you can change HTML elements in detail template row into JavaScript controls using [`e-detailsdatabound`](http://help.syncfusion.com/api/js/ejgrid#events:detailsdatabound "detailsDataBound") event.
+It provides a detailed view or additional information about each row of the grid. You can render any type of JsRender template and assign the script template ID in the [`e-detailstemplate`](http://help.syncfusion.com/api/js/ejgrid#members:detailstemplate "detailsTemplate") property. And also you can change HTML elements in detail template row into JavaScript controls using the [`e-detailsdatabound`](http://help.syncfusion.com/api/js/ejgrid#events:detailsdatabound "detailsDataBound") event.
 
-On enabling details template, new column will be added in grid with an expander button in it and that can be expanded or collapsed to show or hide the underlying details row respectively.
+By enabling details template, new column will be added in grid with an expander button in it and that can be expanded or collapsed to show or hide the underlying details row respectively.
 
 N> It's a standard way to enclose the template within the `script` tag with `type` as "text/x-jsrender".
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% highlight html %}
   <body ng-controller="detailTemplateCtrl">
@@ -62,16 +62,16 @@ The following code example describes the above behavior.
 
 {% endhighlight %}
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of previous code example:
 
 ![](Row_images/Row_img1.png)
 
 
 ## Row Template
 
-Row template enables you to set the customized look and behavior to grid all rows. [`e-rowtemplate`](http://help.syncfusion.com/api/js/ejgrid#members:rowtemplate "rowTemplate") property can be used bind the `id` of HTML template.
+Row template allows you to set the customized look and behavior to grid all rows. The [`e-rowtemplate`](http://help.syncfusion.com/api/js/ejgrid#members:rowtemplate "rowTemplate") property can be used to bind the `ID` of HTML template.              
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% highlight html %}
   <div ng-controller="rowTemplateCtrl">
@@ -173,6 +173,6 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
    
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of previous code example:                                                                                                  
 
 ![](Row_images/Row_img2.png)
