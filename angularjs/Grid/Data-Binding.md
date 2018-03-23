@@ -1,14 +1,14 @@
 ---
-layout: post
-title: DataBinding with Grid widget for Syncfusion Essential AngularJS
-description: How to bind in-memory JSON and remote web services in Grid
-platform: AngularJS
-control: Grid
-documentation: ug
+Layout: Post
+Title: DataBinding with Grid widget for the Syncfusion Essential AngularJS
+Description: How to bind in-memory JSON and remote web services in Grid
+Platform: AngularJS
+Control: Grid
+Documentation: UG
 --- 
 # Data binding
 
-The Grid control uses [`ej.DataManager`](http://helpjs.syncfusion.com/js/datamanager/overview# "ej.DataManager") which supports both RESTful JSON data services binding and local JSON array binding.  The [`e-datasource`](http://help.syncfusion.com/api/js/ejgrid#members:datasource "dataSource") property can be assigned either with the instance of [`ej.DataManger`](http://help.syncfusion.com/api/js/ejdatamanager# "ej.DataManager") or JSON data array collection. It supports different kinds of data binding methods such as
+The Grid control uses [`ej.DataManager`](http://helpjs.syncfusion.com/js/datamanager/overview# "ej.DataManager"), which supports both RESTful JSON data service binding and local JSON array binding.  The [`e-datasource`](http://help.syncfusion.com/api/js/ejgrid#members:datasource "dataSource") property can be assigned either with the instance of the [`ej.DataManger`](http://help.syncfusion.com/api/js/ejdatamanager# "ej.DataManager") or JSON data array collection. It supports different kinds of data binding methods such as:
 
 1. Local data
 2. Remote data
@@ -17,7 +17,7 @@ The Grid control uses [`ej.DataManager`](http://helpjs.syncfusion.com/js/dataman
 
 To bind local data to the Grid, you can assign a JSON array to the [`e-datasource`](http://help.syncfusion.com/api/js/ejgrid#members:datasource "dataSource") property.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% highlight html %}
 <div ng-controller="dataBindCtrl">
@@ -43,23 +43,23 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as the result of previous code example:
 
 ![](dataBinding_images/dataBinding_img1.png)
 
 
-N> 1. There is no in-built support to bind the XML data to the grid. But you can achieve this requirement with the help of [custom adaptor] concept. 
-N> 2. Refer this [Knowledge Base link](http://www.syncfusion.com/kb/3377/how-to-process-xml-data-from-server-using-datamanager-and-bound-to-grid#) for bounding XML data to grid using custom adaptor. 
+N> 1. There is no in-built support to bind XML data to the grid. But you can achieve this requirement with the help of [custom adaptor] concept. 
+N> 2. Refer to this [Knowledge Base link](http://www.syncfusion.com/kb/3377/how-to-process-xml-data-from-server-using-datamanager-and-bound-to-grid#) for bounding XML data to grid using custom adaptor. 
 
 ## Remote Data
 
-To bind remote data to Grid Control, you can assign a service data as an instance of [`ej.DataManager`](http://help.syncfusion.com/api/js/ejdatamanager# "DataManager") to the [`e-datasource`](http://help.syncfusion.com/api/js/ejgrid#members:datasource "dataSource") property.
+To bind remote data to Grid Control, you can assign a service data as an instance of the [`ej.DataManager`](http://help.syncfusion.com/api/js/ejdatamanager# "DataManager") to the [`e-datasource`](http://help.syncfusion.com/api/js/ejgrid#members:datasource "dataSource") property.
 
 ### OData
 
-OData is a standardized protocol for creating and consuming data. You can provide the [OData service](http://www.odata.org/#) URL directly to the [`ej.DataManager`](http://help.syncfusion.com/api/js/ejdatamanager# "DataManager") class and then you can assign it to Grid [`e-datasource`](http://help.syncfusion.com/api/js/ejgrid#members:datasource "datasource").
+OData is a standardized protocol to create and consume data. You can provide the the [OData service](http://www.odata.org/#) URL directly to the [`ej.DataManager`](http://help.syncfusion.com/api/js/ejdatamanager# "DataManager") class and then you can assign it to Grid [`e-datasource`](http://help.syncfusion.com/api/js/ejgrid#members:datasource "datasource").
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% highlight html %}
 <div ng-controller="dataBindCtrl">
@@ -88,8 +88,8 @@ The following code example describes the above behavior.
 
 {% endhighlight %}
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as the result of previous code example.
 
 ![](dataBinding_images/dataBinding_img2.png)
 
-N> By default , if no adaptor is specified for ej.DataMananger and only the url link is mentioned it will consider as ODataService.
+N> By default , if no adaptor is specified for the ej.DataMananger and only the URL link is mentioned, it will be considered as ODataService.
