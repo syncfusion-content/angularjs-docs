@@ -160,7 +160,8 @@ The following output is displayed as a result of the previous code example:
 
 The Toggle selection allows you to perform selection and unselection of the particular row, cell or column. To enable toggle selection, set the [`enableToggle`](http://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-enabletoggle "enableToggle") property of the [`e-selectionsettings`](http://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") to `true`. If you click the selected row, cell, or column then it will be unselected and vice versa. 
 
-N> To clear the multi selection after it has been enabled, click the any selected row (without pressing Ctrl key); it will clear the multi selection. To deselect the row, click the same row after the multi selection has been cleared.               
+N> If multi selection is enabled, then clickind any selected row (without pressing Ctrl key) for the first time will clear multi selection and in second click on the same row, it will be unselected. 
+
 The following code example describes the previous behavior.    
 
 {% highlight html %}
