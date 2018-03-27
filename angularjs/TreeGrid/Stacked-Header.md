@@ -9,11 +9,11 @@ documentation: ug
 ---
 # Stacked Headers
 
-The stacked headers helps you to group the logical columns in TreeGrid. It can be shown by setting `e-showstackedheader` as `true` and by defining `e-stackedheaderrows`.
+The stacked headers helps you to group the logical columns in tree grid. It can be shown by setting `e-showstackedheader` to `true` and by defining `e-stackedheaderrows`.
 
 ## Adding Stacked header columns
 
-To stack columns in stacked header, you need to define `column` property in `e-stackedheaderrows.stackedHeaderColumns` with field names of visible columns.
+To stack columns in stacked header, define the `column` property in `e-stackedheaderrows.stackedHeaderColumns` with field names of visible columns.     
 
 {% highlight html %}
 <body ng-controller="TreeGridCtrl">
@@ -49,7 +49,7 @@ To stack columns in stacked header, you need to define `column` property in `e-s
 
 ## Stacked header column customization
 
-we can customize the stacked header cells with more options as described below.
+You can customize the stacked header cells with more options as follows.
 
 ### CSS Class
 
@@ -95,7 +95,7 @@ You can provide external CSS styles to the stacked header with the help of `cssC
 
 ### Text Align
 
-There is an option to align the stacked header text inside the header cell using `textAlign` property in `e-stackedheaderrows.stackedHeaderColumns` as follows.
+There is an option to align the stacked header text inside the header cell using the `textAlign` property in `e-stackedheaderrows.stackedHeaderColumns` as follows.
 
 {% highlight html %}
 <body ng-controller="TreeGridCtrl">                  
@@ -133,7 +133,7 @@ There is an option to align the stacked header text inside the header cell using
 
 ### Tooltip
 
-We can have the customized tooltip for the stacked header text with the help of `tooltip` property in `e-stackedheaderrows.stackedHeaderColumns`. JsRender template script id can be assigned to this property to get tooltip.
+You can have the customized tooltip for the stacked header text with the help of `tooltip` property in `e-stackedheaderrows.stackedHeaderColumns`. JsRender template script ID can be assigned to this property to get tooltip.                   
 
 {% highlight html %}
 <body ng-controller="TreeGridCtrl">
@@ -174,5 +174,5 @@ We can have the customized tooltip for the stacked header text with the help of 
 ![](Stacked-header_images/Stacked-Header-img3.png)
 
 N>
-To enable stacked header tooltip we need to set `e-showgridcelltooltip` as `true`.
+To enable stacked header tooltip, set the `e-showgridcelltooltip` property to `true`.      
 

@@ -9,19 +9,20 @@ documentation: ug
 
 # Overview
 
-**The Essential AngularJS TreeGrid** is an efficient control designed for representing the hierarchical data in a tabular format, combining the visual representation of Grid and TreeView controls; it represents the data from datasource such as array of JSON objects, ej.DataManager or self-referential datasource.
+**The Essential AngularJS TreeGrid** is an efficient control designed for representing the hierarchical data in tabular format. Combining the visual representation of Grid and tree view control represents the data from datasource such as array of JSON objects, ej.DataManager or self-referential datasource.
 
 **Key Features**
 
-* **Editing** - Offers cell editing Mode for editing the item along each column
+* **Editing**: Offers cell editing mode to edit the item along with each column.   
 
-* **Sorting** - Supports _n_ levels of sorting.
+* **Sorting**: Supports _n_ levels of sorting.    
 
-* **Column Template** - Offers to render the customized column for an item also with customized expand-collapse icon.
+* **Column Template**: Offers to render the customized column for an item also with customized expand-collapse icon.       
 
-* **Virtualization -** Supports rendering huge amount of hierarchical data at once. 
+* **Virtualization**: Supports rendering huge amount of hierarchical data at once.                       
 
-* **User Interaction -** Supports tooltip for each cell or even only for expander cell in the grid, expand collapse at ease, single and multiple row selection, columns resizing.
+* **User Interaction**: Supports tooltip for each cell or only for expander cell in the grid, expand and collapse at ease, single and multiple row selection, columns resizing.                                        
+
 
 
 

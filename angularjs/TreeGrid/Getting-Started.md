@@ -9,15 +9,15 @@ documentation: ug
 
 # Getting Started
 
-## Create your first TreeGrid in AngularJS
+## Create your first tree grid in AngularJS
 
-The **Essential JavaScript TreeGrid** has been designed to represent and edit the hierarchical data. 
+The **Essential JavaScript tree grid** has been designed to represent and edit the hierarchical data. 
 
-This section explains how to create a TreeGrid widget in your application with hierarchical data source and enable sorting and editing. The following screenshot displays the output.
+This section explains how to create the tree grid widget in your application with hierarchical data source and enable sorting and editing. The following screenshot displays the output: 
 
-![](/angularjs/TreeGrid/Getting-Started_images/Getting-Started_img1.png)
+![](/angularjs/TreeGrid/Getting-Started_images/Getting-Started_img1.png)                                                     
 
-1.Create an HTML file and add the following template to the HTML file.
+1.Create a HTML file and add the following template.     
 
 {% highlight html %}
 
@@ -42,7 +42,7 @@ This section explains how to create a TreeGrid widget in your application with h
 
 {% endhighlight %}
 
-2.Add **&lt;div&gt;** element with in the **&lt;Body&gt;** tag.
+2.Add the **&lt;div&gt;** element within the **&lt;Body&gt;** tag.
 
 {% highlight html %}
 
@@ -75,14 +75,14 @@ This section explains how to create a TreeGrid widget in your application with h
 
 {% endhighlight %}
 
-In the above code snippet, `ej-treegrid` denotes the control directive for the Syncfusion's TreeGrid angular widget and all its properties are prefixed with the letter `e-` (For example, e-datasource).
+In the previous code sample, the `ej-treegrid` denotes the control directive for the Syncfusion's tree grid angular widget and all its properties are prefixed with the letter `e-` (For example, e-datasource.)
 
-![](/angularjs/TreeGrid/Getting-Started_images/Getting-Started_img2.png)
+![](/angularjs/TreeGrid/Getting-Started_images/Getting-Started_img2.png)            
 
 TreeGrid with empty datasource 
 {:.caption}
 
-3.Create data source for TreeGrid.
+3.Create data source for tree grid.
 
 {% highlight js %}
 
@@ -163,7 +163,7 @@ TreeGrid with empty datasource
 
 {% endhighlight %}
 
-4.Initialize the TreeGrid with data source created in last step.
+4.Initialize the tree grid with data source created in the previous step.                     
 
 {% highlight js %}
 
@@ -193,19 +193,19 @@ TreeGrid with empty datasource
     
 {% endhighlight %}
 
-TreeGrid widget is displayed as the output in the following screenshot.
+The tree grid widget is displayed as the output in the following screenshot:         
 
-![](/angularjs/TreeGrid/Getting-Started_images/Getting-Started_img3.png)
+![](/angularjs/TreeGrid/Getting-Started_images/Getting-Started_img3.png) 
 
 ## Enable Sorting
 
-The TreeGrid control has sorting functionality, to arrange the data in ascending or descending order based on a particular column.
+The tree grid control has sorting functionality to arrange the data in ascending or descending order based on a particular column.
 
 ### Multicolumn Sorting
 
-Enable the multicolumn sorting in TreeGrid by setting [`e-allowMultiSorting`](http://help.syncfusion.com/js/api/ejtreegrid#allowmultisorting "allowMultiSorting") as `true`. You can sort multiple columns in TreeGrid, by selecting the desired column header while holding the `Ctrl` key.
+Enable the multicolumn sorting in tree grid by setting the [`e-allowMultiSorting`](http://help.syncfusion.com/js/api/ejtreegrid#allowmultisorting "allowMultiSorting") to `true`. You can sort multiple columns in the tree grid by selecting the desired column header while holding the `Ctrl` key.           
 
-{% highlight js %}
+{% highlight js %}                 
 
 <body ng-controller="TreeGridCtrl">
    <!--Add  TreeGrid control here-->    
@@ -228,7 +228,7 @@ Enable the multicolumn sorting in TreeGrid by setting [`e-allowMultiSorting`](ht
 
 ## Enable Editing
 
-You can enable Editing in TreeGrid by using the [`e-editSettings`](http://help.syncfusion.com/js/api/ejtreegrid#editsettings "editSettings") property as follows.
+You can enable Editing in tree grid by using the [`e-editSettings`](http://help.syncfusion.com/js/api/ejtreegrid#editsettings "editSettings") property. The following code sample demonstrates this.
 
 {% highlight js %}
  <body ng-controller="TreeGridCtrl">
@@ -250,14 +250,14 @@ You can enable Editing in TreeGrid by using the [`e-editSettings`](http://help.s
     
 {% endhighlight %}
 
-And also, the following editors are provided for support in TreeGrid control.
+The following editors are provided for support in the tree grid control.            
 
-* string
-* boolean
-* numeric
-* dropdown
-* datepicker
-* datetimepicker
+* String
+* Boolean
+* Numeric
+* Dropdown
+* Datepicker
+* Datetimepicker                
 
 You can set the editor type for a particular column as follows.
 
@@ -290,8 +290,8 @@ You can set the editor type for a particular column as follows.
 </body>
    
 {% endhighlight %}
+                                     
+The output of the DateTimePicker editor in the tree grid control is as follows:
 
-The output of the DateTimePicker editor in TreeGrid control is as follows.
-
-![](/angularjs/TreeGrid/Getting-Started_images/Getting-Started_img5.png)
+![](/angularjs/TreeGrid/Getting-Started_images/Getting-Started_img5.png)                                                              
 
