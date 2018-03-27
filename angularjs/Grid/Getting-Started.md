@@ -8,17 +8,17 @@ documentation: ug
 ---
 # Getting started
 
-Before we start with the Grid, please refer [this page] (http://help.syncfusion.com/js/angularjs) for general information regarding integrating Syncfusion widget's.
+Before getting started with the Grid, please refer to [this page] (http://help.syncfusion.com/js/angularjs) for general information regarding the integrating Syncfusion widget's.
 
 ## Preparing HTML document
 
-The Grid control has the following list of external JavaScript dependencies.
+The Grid control has the following list of external JavaScript dependencies:
 
 * [jQuery](http://jquery.com/) 1.7.1 and later versions
 
 * [jsRender](https://github.com/borismoore/jsrender) - to render the templates
 
-To get started, you can use the `ej.web.all.min.js` file that encapsulates all the `ej` controls and frameworks in one single file. Also use the `ej.widget.angular.min.js` script file that encapsulates the angular directives for our controls. So the complete boilerplate code is
+To get started, you can use the `ej.web.all.min.js` file that encapsulates all the `ej` controls and frameworks in single file. Also use the `ej.widget.angular.min.js` script file that encapsulates the angular directives for the controls. So the complete boilerplate code is:     
 
 {% highlight html %}
 
@@ -44,17 +44,17 @@ To get started, you can use the `ej.web.all.min.js` file that encapsulates all t
 
 {% endhighlight %}
 
-N> In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets)  to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
+N> In production, using the [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets) is highly recommended to create custom script file with the required controls and its dependencies only. Also to reduce the file size further, please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
 
-For themes, you can use the `ej.web.all.min.css` CDN link from the code example given. To add the themes in your application, please refer to [this link](http://help.syncfusion.com/js/theming-in-essential-javascript-components).
+For themes, you can use the `ej.web.all.min.css` CDN link from the given code example. To add the themes in your application, please refer to [this link](http://help.syncfusion.com/js/theming-in-essential-javascript-components).
 
 ## Create a Grid
 
-All the Essential JavaScript directives have been encapsulated into a single module called `ejangular` so the first step would be to declare dependency for this module within your AngularJS application. 
+All the Essential JavaScript directives have been encapsulated into a single module called `ejangular`, so the first step will declare dependency for this module within your AngularJS application. 
 
-The grid can be created using `ej-grid` angular directive and its properties can be defined using `e-` prefix followed by the property name. 
+The grid can be created using `ej-grid` angular directive and its properties can be defined using the `e-` prefix followed by the property name. 
 
-The code example for defining controls in AngularJS is as follows,
+The code example for defining controls in AngularJS is as follows.
 
 {% highlight html %}
 
@@ -83,11 +83,11 @@ The code example for defining controls in AngularJS is as follows,
 ![](Getting-started_images/Getting-started_img1.png)
 {:.image }
 
-In the above code snippet, `ej-grid` denotes the control directive for the Syncfusion's Grid angular widget and all its properties are prefixed with the letter `e-` (For example, e-datasource).
+In previous code sample, `ej-grid` denotes the control directive for the Syncfusion's Grid angular widget and all its properties are prefixed with the letter `e-` (For example, e-datasource).
 
 ## Data Binding
 
-[`Data binding`](http://helpjs.syncfusion.com/js/grid/data-binding) in the grid is achieved by assigning an array of JavaScript objects to the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:columns-datasource) property. Refer to the following code example.
+The [`Data binding`](http://helpjs.syncfusion.com/js/grid/data-binding) in the grid is achieved by assigning an array of JavaScript objects to the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:columns-datasource) property. Refer to the following code example.
 
 {% highlight html %}
 
@@ -143,9 +143,9 @@ In the above code snippet, `ej-grid` denotes the control directive for the Syncf
 
 {% endhighlight %}
 
-N> _1.Pager settings can be customized by using the `e-pagesettings-pagesize` property. When it is not given the default values for `pageSize` and `pageCount` are 12 and 8 respectively.
+N> _1.Pager settings can be customized by using the `e-pagesettings-pagesize` property. When it is not given the default values of `pageSize` and `pageCount` are 12 and 8 respectively.
 
-2. The array properties of Syncfusion widget's in angularjs has to be defined by using the scope variable.
+2. The array properties of the Syncfusion widget's in angularjs has to be defined by using the scope variable.
 
 ![](Getting-started_images/Getting-started_img3.png)
 {:.image }
@@ -240,7 +240,7 @@ Refer to the following code example for initial grouping.
 
 ## Add Summaries
 
-`Summaries` can be added by setting the `e-showsummary` to true and adding required summary rows and columns in the `e-summaryrows` property. We can set value for `e-summaryrows` and that value can be accessed through $scope variable. For demonstration, Stock column's sum value is displayed as summary.
+`Summaries` can be added by setting the `e-showsummary` to true and adding required summary rows and columns in the `e-summaryrows` property. You can set value for the `e-summaryrows` and that value can be accessed through $scope variable. For demonstration, stock column's sum value is displayed as summary.
 
 {% highlight html %}
 
