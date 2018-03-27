@@ -1164,7 +1164,7 @@ Please refer to the following image to know about the action parameter:
 ![](Editing_images/Editing_img24.png)
 
 
-N> If you specify `insertUrl` along with `CrudUrl` then, `insertUrl` only called.
+N>  If you specify `insertUrl` along with `CrudUrl`, the `insertUrl` will alone be called when record add action is performed in the grid.
 
 ### Batch URL:
 
