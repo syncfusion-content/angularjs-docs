@@ -189,7 +189,7 @@ You can select the cells programmatically using the `selectCells` public method.
 
 {% highlight js %}  
 
-     $("#selectcells").click(function (args) {
+     $("#selectCells").click(function (args) {
             //create TreeGrid object
             var TreeGridObj = $("#TreeGridContainer").data("ejTreeGrid");
             cellIndex = [{ rowIndex: 2, cellIndex: 1 }, {rowIndex:3,cellIndex:1}];
