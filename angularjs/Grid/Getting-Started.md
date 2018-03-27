@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting started
 
-Before getting started with the Grid, Please refer to [this page] (http://help.syncfusion.com/js/angularjs) for general information regarding the integrating Syncfusion widget's.
+Before getting started with the Grid, please refer to [this page] (http://help.syncfusion.com/js/angularjs) for general information regarding the integrating Syncfusion widget's.
 
 ## Preparing HTML document
 
