@@ -9,20 +9,20 @@ documentation: ug
 
 # Data Binding
 
-Data Binding is the process that establishes a connection between the application and different kinds of data sources such as business objects.
+Data Binding is the process that establishes a connection between the application and different kinds of data source such as business objects.
 
 ## Local Data Binding
 
-In Local Data Binding, datasource for rendering the TreeGrid control is retrieved from the same application locally.
+In Local Data Binding, datasource for rendering the tree grid control is retrieved from the same application locally.
 
-Two types of Data Binding are possible with TreeGrid control, 
+Two types of Data Binding are possible with tree grid control:     
 
-* Hierarchical Datasource Binding
+* Hierarchical Datasource Binding                                                             
 * Self-Referential Data Binding (Flat Data)
 
 ### Hierarchy Datasource Binding
 
-The following code example shows you how to bind the hierarchical local data into the TreeGrid control.
+The following code example shows how to bind the hierarchical local data into the tree grid control.
 
 {% highlight js %}
 
@@ -78,18 +78,18 @@ The following code example shows you how to bind the hierarchical local data int
     </script>
 </body>
 
-{% endhighlight %}
+{% endhighlight %}                       
 
-The output of the above steps is as follows:
+The output of previous steps is as follows:                                                                                                                        
 
 ![](Data-Binding_images/Data-Binding_img1.png)
 
 ###Self-Referential Data Binding (Flat Data)
 
-TreeGrid is rendered from Self-Referential data structures by providing two fields: **ID** field and **parent ID** field.
+Tree grid is rendered from Self-Referential data structures by providing two fields:
 
-* **ID Field** - This field contains unique values used to identify nodes. Its name is assigned to the [`e-idmapping`](/api/js/ejtreegrid#idmappingspan-classtype-signature-type-stringstringspan "idMapping") property.
-* **Parent ID Field** - This field contains values that indicate parent nodes. Its name is assigned to the [`e-parentidmapping`](/api/js/ejtreegrid#parentidmappingspan-classtype-signature-type-stringstringspan "parentIdMapping") property.
+* **ID Field**: Contains unique values used to identify the nodes. Its name is assigned to the [`e-idmapping`](/api/js/ejtreegrid#idmappingspan-classtype-signature-type-stringstringspan "idMapping") property.
+* **Parent ID Field**: Contains values that indicate parent nodes. Its name is assigned to the [`e-parentidmapping`](/api/js/ejtreegrid#parentidmappingspan-classtype-signature-type-stringstringspan "parentIdMapping") property.
 
 {% highlight js %}
 
@@ -166,7 +166,7 @@ TreeGrid is rendered from Self-Referential data structures by providing two fiel
 
 {% endhighlight %}
 
-The following screenshot shows the output of the above steps,
+The following screenshot shows the output of previous steps:
 
 ![](Data-Binding_images/Data-Binding_img2.png)
 

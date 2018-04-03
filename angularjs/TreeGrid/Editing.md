@@ -9,13 +9,13 @@ documentation: ug
 
 # Editing
 
-The TreeGrid control provides built-in support for editing cell items. 
+The tree grid control provides built-in support for editing cell items.    
 
 ## Cell Editing
 
-Update the task details through cell editing by setting [`editMode`](/api/js/ejtreegrid#editsettingseditmodespan-classtype-signature-type-stringstringspan "editSettings.editMode") as `cellEditing`.
-
-The following code example shows you how to enable `cellEditing` in TreeGrid control.
+Update the task details through cell editing by setting [`editMode`](/api/js/ejtreegrid#editsettingseditmodespan-classtype-signature-type-stringstringspan "editSettings.editMode") to `cellEditing`.
+             
+The following code example shows how to enable `cellEditing` in the tree grid control.                               
 
 {% highlight js %}
 
@@ -36,7 +36,7 @@ The following code example shows you how to enable `cellEditing` in TreeGrid�
 </body>
 {% endhighlight %}
 
-The output of the TreeGrid with `cellEditing` is as follows.
+The output of the tree grid with `cellEditing` is as follows:                                                                  
 
 ![](Editing_images/Editing_img1.png)
 

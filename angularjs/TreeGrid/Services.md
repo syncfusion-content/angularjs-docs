@@ -1,639 +1,310 @@
 ---
 layout: post
-title: Service reference for ejTreeGrid widget
-description: What are the exporting services used in Essential JavaScript TreeGrid.
-documentation: api
+title: Selection
+description: selection
 platform: AngularJS
-keywords: ejTreeGrid, Services, Essential JS TreeGrid, TreeGrid, Excel Exporting Service, TreeGrid Exporting
-metaname: 
-metacontent:
-control: ejTreeGrid
+control: TreeGrid
+documentation: ug
 ---
-# TreeGrid Exporting services
 
-## Description
+# Selection
 
-The following are the types of exporting is available in TreeGrid.
+The tree grid control provides support for row and cell selections.                  
 
-* PDF Export.
-* Excel Export.
+## Row selection
 
-## PDF Export
+You can enable or disable the row selection in tree grid using the `e-allowselection` property. By default, row selection is enabled in tree grid.
+The following code example shows how to disable the row selection in tree grid.                                        
 
-### URL
 
-[http://js.syncfusion.com/demos/ejServices/api/JSTreeGridExport/PdfExport](http://js.syncfusion.com/demos/ejServices/api/JSTreeGridExport/PdfExport)
+{% highlight js %}
 
-### Parameter
-
-Type1:
-
-<table>
-<tr>
-<td>
-Name</td><td>
-Type</td><td>
-Description</td></tr>
-<tr>
-<td>
-TreeGridProperties</td><td>
-Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
-<tr>
-<td>
-datasource</td><td>
-object</td><td>
-It holds the data to be exported in PDF</td></tr>
-<tr>
-<td>
-TreeGridExportSettings</td><td>
-object</td><td>
-Returns the exporting settings like Unicode support, columns fit to width, hidden column, template, etc..</td></tr>
-</table>
-
-Type2:
-
-<table>
-<tr>
-<td>
-Name</td><td>
-Type</td><td>
-Description</td></tr>
-<tr>
-<td>
-TreeGridProperties</td><td>
-Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
-<tr>
-<td>
-datasource</td><td>
-object</td><td>
-It holds the data to be exported in PDF</td></tr>
-<tr>
-<td>
-TreeGridExportSettings</td><td>
-object</td><td>
-Returns the exporting settings like Unicode support, columns fit to width, hidden column, template, etc..</td></tr>
-<tr>
-<td>
-fileName</td><td>
-String</td><td>
-With this parameter you can set the downloaded file name. By default it is set to “Export”</td></tr>
-</table>
-
-Type3:
-
-<table>
-<tr>
-<td>
-Name</td><td>
-Type</td><td>
-Description</td></tr>
-<tr>
-<td>
-TreeGridProperties</td><td>
-Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
-<tr>
-<td>
-datasource</td><td>
-object</td><td>
-It holds the data to be exported in PDF</td></tr>
-<tr>
-<td>
-TreeGridExportSettings</td><td>
-object</td><td>
-Returns the exporting settings like Unicode support, columns fit to width, hidden column, template, etc..</td></tr>
-<tr>
-<td>
-fileName</td><td>
-String</td><td>
-With this parameter you can set the downloaded file name. By default it is set to “Export”</td></tr>
-<tr>
-<td>
-filePath</td><td>
-String</td><td>
-With this parameter you can set the location where the exporting file should downloaded. It can be local or server machine file path.</td></tr>
-</table>
-
-Type4:
-
-<table>
-<tr>
-<td>
-Name</td><td>
-Type</td><td>
-Description</td></tr>
-<tr>
-<td>
-TreeGridProperties</td><td>
-Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
-<tr>
-<td>
-datasource</td><td>
-object</td><td>
-It holds the data to be exported in PDF</td></tr>
-<tr>
-<td>
-TreeGridExportSettings</td><td>
-object</td><td>
-Returns the exporting settings like Unicode support, columns fit to width, hidden column, template, etc..</td></tr>
-<tr>
-<td>
-exportToFile </td><td>
-Boolean</td><td>
-Is a Boolean argument, and value ‘true’ specifies the exporting is completed and download it, value ‘false’ specifies the export TreeGrid internally and append something else to it before download starts.</td></tr>
-<tr>
-<td>
-headerText</td><td>
-String</td><td>
-HeaderText Is to specify the title for export document.</td></tr>
-</table>
-<table>
-<tr>
-<td>
-Name</td><td>
-Type</td><td>
-Description</td></tr>
-<tr>
-<td>
-TreeGridProperties</td><td>
-Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
-<tr>
-<td>
-datasource</td><td>
-object</td><td>
-It holds the data to be exported in PDF</td></tr>
-<tr>
-<td>
-TreeGridExportSettings</td><td>
-object</td><td>
-Returns the exporting settings like Unicode support, columns fit to width, hidden column, template, etc..</td></tr>
-<tr>
-<td>
-fileName</td><td>
-String</td><td>
-With this parameter you can set the downloaded file name. By default it is set to “Export”</td></tr>
-<tr>
-<td>
-exportToFile </td><td>
-Boolean</td><td>
-Is a Boolean argument, and value ‘true’ specifies the exporting is completed and download it, value ‘false’ specifies the export TreeGrid internally and append something else to it before download starts.</td></tr>
-<tr>
-<td>
-headerText</td><td>
-String</td><td>
-HeaderText Is to specify the title for export document.</td></tr>
-</table>
-
-Type5:
-
-<table>
-<tr>
-<td>
-Name</td><td>
-Type</td><td>
-Description</td></tr>
-<tr>
-<td>
-TreeGridProperties</td><td>
-Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
-<tr>
-<td>
-datasource</td><td>
-object</td><td>
-It holds the data to be exported in PDF</td></tr>
-<tr>
-<td>
-TreeGridExportSettings</td><td>
-object</td><td>
-Returns the exporting settings like Unicode support, columns fit to width, hidden column, template, etc..</td></tr>
-<tr>
-<td>
-fileName</td><td>
-String</td><td>
-With this parameter you can set the downloaded file name. By default it is set to “Export”</td></tr>
-<tr>
-<td>
-exportToFile </td><td>
-Boolean</td><td>
-Is a Boolean argument, and value ‘true’ specifies the exporting is completed and download it, value ‘false’ specifies the export TreeGrid internally and append something else to it before download starts.</td></tr>
-<tr>
-<td>
-headerText</td><td>
-String</td><td>
-HeaderText Is to specify the title for export document.</td></tr>
-</table>
-
-Type6:
-
-<table>
-<tr>
-<td>
-Name</td><td>
-Type</td><td>
-Description</td></tr>
-<tr>
-<td>
-TreeGridProperties</td><td>
-Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
-<tr>
-<td>
-datasource</td><td>
-object</td><td>
-It holds the data to be exported in PDF</td></tr>
-<tr>
-<td>
-TreeGridExportSettings</td><td>
-object</td><td>
-Returns the exporting settings like Unicode support, columns fit to width, hidden column, template, etc..</td></tr>
-<tr>
-<td>
-fileName</td><td>
-String</td><td>
-With this parameter you can set the downloaded file name. By default it is set to “Export”</td></tr>
-<tr>
-<td>
-filePath</td><td>
-String</td><td>
-With this parameter you can set the location where the exporting file should downloaded. It can be local or server machine file path.</td></tr>
-<tr>
-<td>
-exportToFile </td><td>
-Boolean</td><td>
-Is a Boolean argument, and value ‘true’ specifies the exporting is completed and download it, value ‘false’ specifies the export TreeGrid internally and append something else to it before download starts.</td></tr>
-<tr>
-<td>
-headerText</td><td>
-String</td><td>
-HeaderText Is to specify the title for export document.</td></tr>
-</table>
-
-Type7:
-
-<table>
-<tr>
-<td>
-Name</td><td>
-Type</td><td>
-Description</td></tr>
-<tr>
-<td>
-TreeGridProperties</td><td>
-Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
-<tr>
-<td>
-datasource</td><td>
-object</td><td>
-It holds the data to be exported in PDF</td></tr>
-<tr>
-<td>
-TreeGridExportSettings</td><td>
-object</td><td>
-Returns the exporting settings like Unicode support, columns fit to width, hidden column, template, etc..</td></tr>
-<tr>
-<td>
-Document</td><td>
-Object</td><td>
-It specifies in case of multiple exporting, in which document the file export should append, it holds the internally stored PDF files which is exported previously.</td></tr>
-<tr>
-<td>
-exportToFile </td><td>
-Boolean</td><td>
-Is a Boolean argument, and value ‘true’ specifies the exporting is completed and download it, value ‘false’ specifies the export TreeGrid internally and append something else to it before download starts.</td></tr>
-<tr>
-<td>
-headerText</td><td>
-String</td><td>
-HeaderText Is to specify the title for export document.</td></tr>
-</table>
-
-Type8:
-
-<table>
-<tr>
-<td>
-Name</td><td>
-Type</td><td>
-Description</td></tr>
-<tr>
-<td>
-TreeGridProperties</td><td>
-Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
-<tr>
-<td>
-datasource</td><td>
-object</td><td>
-It holds the data to be exported in PDF</td></tr>
-<tr>
-<td>
-TreeGridExportSettings</td><td>
-object</td><td>
-Returns the exporting settings like Unicode support, columns fit to width, hidden column, template, etc..</td></tr>
-<tr>
-<td>
-Filename</td><td>
-string</td><td>
-With this parameter you can set the downloaded file name. By default it is set to “Export”.</td></tr>
-<tr>
-<td>
-Document</td><td>
-Object</td><td>
-It specifies in case of multiple exporting, in which document the file export should append, it holds the internally stored PDF files which is exported previously.</td></tr>
-<tr>
-<td>
-exportToFile </td><td>
-Boolean</td><td>
-Is a Boolean argument, and value ‘true’ specifies the exporting is completed and download it, value ‘false’ specifies the export TreeGrid internally and append something else to it before download starts.</td></tr>
-<tr>
-<td>
-headerText</td><td>
-String</td><td>
-HeaderText Is to specify the title for export document.</td></tr>
-</table>
-
-Type9:
-
-<table>
-<tr>
-<td>
-Name</td><td>
-Type</td><td>
-Description</td></tr>
-<tr>
-<td>
-TreeGridProperties</td><td>
-Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
-<tr>
-<td>
-datasource</td><td>
-object</td><td>
-It holds the data to be exported in PDF</td></tr>
-<tr>
-<td>
-TreeGridExportSettings</td><td>
-object</td><td>
-Returns the exporting settings like Unicode support, columns fit to width, hidden column, template, etc..</td></tr>
-<tr>
-<td>
-Filename</td><td>
-string</td><td>
-With this parameter you can set the downloaded file name. By default it is set to “Export”.</td></tr>
-<tr>
-<td>
-filePath</td><td>
-String</td><td>
-With this parameter you can set the location where the exporting file should downloaded. It can be local or server machine file path.</td></tr>
-<tr>
-<td>
-Document</td><td>
-Object</td><td>
-It specifies in case of multiple exporting, in which document the file export should append, it holds the internally stored PDF files which is exported previously.</td></tr>
-<tr>
-<td>
-exportToFile </td><td>
-Boolean</td><td>
-Is a Boolean argument, and value ‘true’ specifies the exporting is completed and download it, value ‘false’ specifies the export TreeGrid internally and append something else to it before download starts.</td></tr>
-<tr>
-<td>
-headerText</td><td>
-String</td><td>
-HeaderText Is to specify the title for export document.</td></tr>
-</table>
-
-### Request
-
-{% highlight javascript %}
-
-<div id="TreeGridContainer" ej-treegrid //...
-e-toolbarclick="toolbarClick">
-</div>
-
-<script>
-    function toolbarClick(args) {
-        this.exportGrid = this["export"];
-        if (args.itemName == "PDF Export") {
-            this.exportGrid('http://js.syncfusion.com/ejServices/api/JSTreeGridExport/PdfExport/api/JSTreeGridExport/PdfExport', "", false);
-            args.cancel = true;
-        }
-    }
-    angular.module('listCtrl', ['ejangular'])
-        .controller('TreeGridCtrl', function($scope) {
-            //...
-            $scope.toolbarClick = "toolbarClick";
-        });
-</script>
+<body ng-controller="TreeGridCtrl">
+    <!--Add  treegrid control here-->
+    <div id="TreeGridContainer" ej-treegrid //... e-allowselection="false">
+    </div>
+</body>
 
 {% endhighlight %}
 
-Following example will take part in the project service
+The output of the tree grid with row selection is as follows:
 
-~~~csharp
+![](Selection_images/Selection_img1.png)
 
-public void PdfExport()
+### Selecting a row at initial load
 
-{
+You can select a row at initial load by setting the index of row to the `e-selectedrowindex` property. This is demonstrated as follows.
+                     
 
-string gridModel = HttpContext.Current.Request.Params["TreeGridModel"];
 
-TreeGridProperties gridProperty = ConvertGridObject(gridModel);
+{% highlight js %}
 
-PdfExport exp = new PdfExport();
-
-TaskDetailsCollection tc = new TaskDetailsCollection();
-
-IEnumerable<TaskDetails> result = tc.GetDataSource(); // datasource to be exported
-
-TreeGridExportSettings settings = new TreeGridExportSettings();
-
-settings.Theme = ExportTheme.FlatAzure;
-
-exp.Export(gridProperty, result, settings, "Export");
-
-}
-
-~~~
-
-## Excel export
-
-### URL
-
-[http://js.syncfusion.com/ejServices/api/JSTreeGridExport/ExcelExport](http://js.syncfusion.com/ejServices/api/JSTreeGridExport/ExcelExport)
-
-### Parameter
-
-Type1:
-
-<table>
-<tr>
-<td>
-Name</td><td>
-Type</td><td>
-Description</td></tr>
-<tr>
-<td>
-TreeGridProperties</td><td>
-Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
-<tr>
-<td>
-datasource</td><td>
-object</td><td>
-It holds the data to be exported in PDF</td></tr>
-<tr>
-<td>
-excelName</td><td>
-String</td><td>
-It specifies the file extension to be downloaded</td></tr>
-<tr>
-<td>
-excelVersion</td><td>
-String</td><td>
-Excel version in which document should download</td></tr>
-<tr>
-<td>
-TreeGridExportSettings</td><td>
-object</td><td>
-Returns the exporting settings like Unicode support, columns fit to width, hidden column, template, etc..</td></tr>
-</table>
-
-Type2:
-
-<table>
-<tr>
-<td>
-Name</td><td>
-Type</td><td>
-Description</td></tr>
-<tr>
-<td>
-TreeGridProperties</td><td>
-Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
-<tr>
-<td>
-datasource</td><td>
-object</td><td>
-It holds the data to be exported in PDF</td></tr>
-<tr>
-<td>
-excelName</td><td>
-String</td><td>
-It specifies the file extension to be downloaded</td></tr>
-<tr>
-<td>
-excelVersion</td><td>
-String</td><td>
-Excel version in which document should download</td></tr>
-<tr>
-<td>
-TreeGridExportSettings</td><td>
-object</td><td>
-Returns the exporting settings like Unicode support, columns fit to width, hidden column, template, etc..</td></tr>
-<tr>
-<td>
-fileName</td><td>
-String</td><td>
-With this parameter you can set the downloaded file name. By default it is set to “ExcelExport”</td></tr>
-</table>
-
-Type3:
-
-<table>
-<tr>
-<td>
-Name</td><td>
-Type</td><td>
-Description</td></tr>
-<tr>
-<td>
-TreeGridProperties</td><td>
-Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
-<tr>
-<td>
-datasource</td><td>
-object</td><td>
-It holds the data to be exported in PDF</td></tr>
-<tr>
-<td>
-excelName</td><td>
-String</td><td>
-It specifies the file extension to be downloaded</td></tr>
-<tr>
-<td>
-excelVersion</td><td>
-String</td><td>
-Excel version in which document should download</td></tr>
-<tr>
-<td>
-TreeGridExportSettings</td><td>
-object</td><td>
-Returns the exporting settings like Unicode support, columns fit to width, hidden column, template, etc..</td></tr>
-<tr>
-<td>
-isLocalSave</td><td>
-Boolean</td><td>
-It specifies the file have to save locally or can export directly in case of multiple export.</td></tr>
-<tr>
-<td>
-filePath</td><td>
-String</td><td>
-With this parameter you can set the location where the exporting file should downloaded. It can be local or server machine file path.</td></tr>
-</table>
-
-### Request 
-
-{% highlight javascript %}
-<div id="TreeGridContainer" ej-treegrid //...
-e-toolbarclick="toolbarClick">
-</div>
-
-<script>
-    function toolbarClick(args) {
-        this.exportGrid = this["export"];
-        if (args.itemName == "Excel Export") {
-            this.exportGrid('http://js.syncfusion.com/ejServices/api/JSTreeGridExport/ExcelExport', "", false);
-            args.cancel = true;
-        }
-    }
-    angular.module('listCtrl', ['ejangular'])
-        .controller('TreeGridCtrl', function($scope) {
-            //...
-            $scope.toolbarClick = "toolbarClick";
-        });
-</script>
+<body ng-controller="TreeGridCtrl">
+    <!--Add  treegrid control here-->
+    <div id="TreeGridContainer" ej-treegrid //... e-selectedrowindex="3">
+    </div>
+</body>
 
 {% endhighlight %}
 
-Following example will take part in the project service
+### Multiple row selection
 
-~~~csharp
+You can also select multiple rows by setting the `e-selectionsettings.selectionType` to `multiple`. More than one row can be selected by holding down `CTRL` key and clicking the rows.
+The following code example explains how to enable multiple selection in tree grid.               
 
-public void ExcelExport()
+{% highlight js %}
 
-{
+<body ng-controller="TreeGridCtrl">
+    <!--Add  treegrid control here-->
+    <div id="TreeGridContainer" ej-treegrid //... 
+    e-selectionsettings= "selectionSettings"
+    >
+    </div>
+    <script>
+         var selectionSettings= {
+                     selectionType: "ej.TreeGrid.SelectionType.Multiple"                                 
+               }
+    angular.module('listCtrl', ['ejangular'])
+        .controller('TreeGridCtrl', function($scope) {
+            //...
+            $scope.selectionSettings = "selectionSettings";
+        });
+</script>
+</body>
 
-string gridModel = HttpContext.Current.Request.Params["TreeGridModel"];
+{% endhighlight %}
 
-TreeGridProperties gridProperty = ConvertGridObject(gridModel);
+The output of the tree grid with multiple row selection is as follows:
 
-ExcelExport exp = new ExcelExport();
+![](Selection_images/Selection_img2.png)
 
-TaskDetailsCollection tc = new TaskDetailsCollection();
+To enable multiple selection, set the `e-selectionsettings.selectionType` property to `multiple` or enumeration value `ej.TreeGrid.SelectionType.Multiple`.      
 
-IEnumerable<TaskDetails> result = tc.GetDataSource();
+### Selecting a row programmatically 
 
-exp.Export(gridProperty, result, "ExcelExport.xlsx", ExcelVersion.Excel2010, new TreeGridExportSettings() { Theme = ExportTheme.FlatAzure });
+You can select a row programmatically by setting the row index value to the `e-selectedrowindex` property.                             
+The following code shows how to select a row programmatically with button click action.       
 
-}
+{% highlight html %}
 
-~~~
+    <html>
+        <body>
+        <button id="selectRow">SelectRow</button>
+        //...
+         <div id="TreeGridContainer" ej-treegrid //...
+    >
+    </div>
+        </body>
+    </html>
 
+{% endhighlight %}
+
+{% highlight js %}
+    
+     $("#selectRow").click(function (args) {
+         $("#TreeGridContainer ").ejTreeGrid("option", "selectedRowIndex", 4);           
+     })
+
+{% endhighlight %}
+
+## Cell selection
+
+You can select cells in tree grid by setting the `e-selectionsettings.selectionMode` property to `cell`.
+The following code sample helps you to enable the cell selection in tree grid.                                                    
+
+{% highlight html %}
+
+<body ng-controller="TreeGridCtrl">
+    <!--Add  treegrid control here-->
+    <div id="TreeGridContainer" ej-treegrid //... 
+    e-selectionsettings= "selectionSettings"
+    >
+    </div>
+    <script>
+         var selectionSettings=  {
+           selectionMode: "ej.TreeGrid.SelectionType.Cell",                                 
+         }
+    angular.module('listCtrl', ['ejangular'])
+        .controller('TreeGridCtrl', function($scope) {
+            //...
+            $scope.selectionSettings = "selectionSettings";
+        });
+</script>
+</body>
+
+{% endhighlight %}
+
+The output of the tree grid with cell selection is as follows:
+
+![](Selection_images/Selection_img3.png)
+
+### Multiple cell selection
+
+You can also select multiple cells by setting the `e-selectionsettings.selectionType` property to `multiple`. 
+Multiple selection can be done by holding the `CTRL` key and clicking required cells. 
+The following code example shows you to select multiple cells.                            
+
+{% highlight js %}
+
+<body ng-controller="TreeGridCtrl">
+    <!--Add  treegrid control here-->
+    <div id="TreeGridContainer" ej-treegrid //... 
+    e-selectionsettings= "selectionSettings"
+    >
+    </div>
+    <script>
+         var selectionSettings=  {
+            selectionType: "ej.TreeGrid.SelectionType.Multiple",
+            selectionMode: "ej.TreeGrid.SelectionType.Cell",
+        }
+    angular.module('listCtrl', ['ejangular'])
+        .controller('TreeGridCtrl', function($scope) {
+            //...
+            $scope.selectionSettings = "selectionSettings";
+        });
+</script>
+</body>
+
+{% endhighlight %}
+
+The output of the tree grid with multiple cell selection is as follows:
+
+![](Selection_images/Selection_img4.png)
+
+### Selecting cells programmatically 
+
+You can select the cells programmatically using the `selectCells` public method. This is demonstrated as follows.
+
+
+{% highlight html %}
+    <html>
+        <body>
+         <button id="selectcells">SelectCells</button>
+         //...
+         <div id="TreeGridContainer" ej-treegrid //... >
+         </div>
+        </body> 
+    </html>
+{% endhighlight %}
+
+{% highlight js %}  
+
+     $("#selectCells").click(function (args) {
+            //create TreeGrid object
+            var TreeGridObj = $("#TreeGridContainer").data("ejTreeGrid");
+            cellIndex = [{ rowIndex: 2, cellIndex: 1 }, {rowIndex:3,cellIndex:1}];
+            TreeGridObj.selectCells(cellIndex);
+     })
+{% endhighlight %}
+
+## Checkbox selection
+
+Tree grid supports checkbox selection. To enable the checkbox selection, set the `e-selectionsettings.selectionType` property to `checkbox` and the `e-selectionsettings.selectionMode` property to `row`. When checkbox selection is enabled, the checkbox column will be displayed as the left most column by default.
+### Column header checkbox
+
+You can select or unselect all the tree grid rows using column header checkbox. To enable this, set the `e-selectionsettings.enableSelectAll` property to `true`. The following code sample explains how to enable the column header checkbox.
+
+{% highlight js %}
+
+<body ng-controller="TreeGridCtrl">
+    <!--Add  treegrid control here-->
+    <div id="TreeGridContainer" ej-treegrid //... 
+    e-selectionsettings= "selectionSettings"
+    >
+    </div>
+    <script>
+         var selectionSettings=  {
+                     selectionType: "ej.TreeGrid.SelectionType.Checkbox",
+                     selectionMode: "ej.TreeGrid.SelectionType.Row",
+                     enableSelectAll: true,                        
+                 },
+    angular.module('listCtrl', ['ejangular'])
+        .controller('TreeGridCtrl', function($scope) {
+            //...
+            $scope.selectionSettings = "selectionSettings";
+        });
+</script>
+</body>
+{% endhighlight %}
+
+The output of the tree grid with checkbox enabled in column header is as follows:
+
+![](Selection_images/Selection_img5.png)
+
+### Hierarchy selection
+You can select the rows hierarchically using checkboxes in tree grid by enabling the `e-selectionsettings.enableHierarchySelection` property.
+In this selection the hierarchy between the records will be retained, where the child records are selected by selecting its parent record’s checkbox and parent record checkbox is selected by checking all of its child items.                                           
+
+The following code sample explains enabling hierarchy selection in tree grid.             
+
+{% highlight js %}
+
+<body ng-controller="TreeGridCtrl">
+    <!--Add  treegrid control here-->
+    <div id="TreeGridContainer" ej-treegrid //... 
+    e-selectionsettings= "selectionSettings"
+    >
+    </div>
+    <script>
+    var selectionSettings = {
+            selectionType: "ej.TreeGrid.SelectionType.Checkbox",
+            selectionMode: " ej.TreeGrid.SelectionType.Row",
+            enableHierarchySelection: true,
+        },
+        angular.module('listCtrl', ['ejangular'])
+        .controller('TreeGridCtrl', function($scope) {
+            //...
+            $scope.selectionSettings = "selectionSettings";
+        });
+</script>
+</body>
+
+{% endhighlight %}
+
+The output of the tree grid with hierarchy selection enabled is as follows:
+
+![](Selection_images/Selection_img6.png)
+
+### Checkbox column
+
+You can change the default index of the checkbox column and display the checkboxes in any of the existing column. To enable the checkbox in any of the column, set the  `showCheckbox` property to true in the column object.
+
+{% highlight js %}
+
+<body ng-controller="TreeGridCtrl">
+    <!--Add  treegrid control here-->
+    <div id="TreeGridContainer" ej-treegrid //... 
+    e-selectionsettings= "selectionSettings"
+    e-columns= "columns"
+    >
+    </div>
+    <script>
+    var selectionSettings = {
+            selectionType: "ej.TreeGrid.SelectionType.Checkbox",
+            selectionMode: " ej.TreeGrid.SelectionType.Row",
+        },
+        var columns = [{
+                field: "taskID",
+                headerText: "Task Id",
+                editType: "numericedit"
+            },
+            {
+                field: "taskName",
+                headerText: "Task Name",
+                editType: "stringedit",
+                showCheckbox: true
+            },
+        ]
+    angular.module('listCtrl', ['ejangular'])
+        .controller('TreeGridCtrl', function($scope) {
+            //...
+            $scope.selectionSettings = "selectionSettings";
+            $scope.columns = "columns";
+        });
+</script>
+</body>
+{% endhighlight %}
+
+The output of the tree grid with checkbox enabled in task name column is as follows:
+
+![](Selection_images/Selection_img7.png)
