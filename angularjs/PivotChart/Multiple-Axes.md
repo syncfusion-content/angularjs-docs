@@ -38,7 +38,9 @@ You can customize the axes in the primary pivot chart itself. To achieve this, y
 
 {% highlight html %}
 
+   <div ng-controller="PivotChartCtrl">
    <div id="PivotChart1" ej-pivotchart e-datasource="dataSource" e-axes="axes" e-size="size" e-primaryyaxis="primaryYAxis" style="height: 500px; width: 800px;" e-beforeseriesrender="onBeforeRender" />
+   </div>
 
  {% endhighlight %}
 
