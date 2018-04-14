@@ -229,7 +229,7 @@ name:'x:0'
 
 }]
 });
-
+{% endhighlight %}
 
 ![](Multiple_Axes_images/seriesindex_one.png)
 
