@@ -9,16 +9,16 @@ documentation: ug
 
 # Columns
 
-Column definitions, specified in the **e-columns** option, define how the data in the **e-datasource** have to be displayed, formatted and edited in TreeGrid. The values in the **e-datasource** can be mapped to the appropriate column using the **‘field’** property of the corresponding column object.
+Column definitions that is specified in the **e-columns** option, defines how to display, format, and edit data in the **e-datasource** in tree grid control. The values in the **e-datasource** can be mapped to the appropriate column using the **‘field’** property of the corresponding column object.                 
 
 ## Formatting
 
-The values in each column can be formatted using the **‘format’** property of the column object.
+The values in each column can be formatted using the **‘format’** property of column object.                               
 
-The following example shows how to specify the numeric format string to display currency, percentage symbols and date values in a column,
+The following example shows how to specify the numeric format string to display currency, percentage symbols, and date values in a column.          
 
-{% highlight js %}
-
+{% highlight js %}                    
+                                                           
 <!doctype html>
 <body ng-controller="TreeGridCtrl">
     <!--Add  treegrid control here-->
@@ -56,15 +56,15 @@ The following example shows how to specify the numeric format string to display 
 
 {% endhighlight %}
 
-Note: For more numeric format strings, please refer this [link](https://msdn.microsoft.com/library/dwhawy9k(v=vs.100).aspx).
+Note: For more numeric format strings, refer to this [link](https://msdn.microsoft.com/library/dwhawy9k(v=vs.100).aspx).
 
-For more date format strings, please refer this [link](https://msdn.microsoft.com/library/az4se3k1(v=vs.100).aspx).
-
+For more date format strings, refer to this [link](https://msdn.microsoft.com/library/az4se3k1(v=vs.100).aspx).                         
+               
 ## Headers
 
 ### Header text
 
-Using **e-columns.headerText** property, you can provide the title for a specific column. The below code snippet is shows how to set header text for the columns,
+Using the **e-columns.headerText** property, you can provide title for a specific column. The following code sample shows how to set header text for the columns.
 
 {% highlight js %}
 
@@ -103,14 +103,14 @@ Using **e-columns.headerText** property, you can provide the title for a specifi
 
 ### Text wrapping
 
-It is possible to wrap the header text or the title for the column, when the content exceeds the column width using the **e-headertextoverflow** property. By default this property is set to **none**. To enable wrapping of header text, you have to set **e-headertextoverflow** property to **‘wrap’**. The below code snippet demonstrates this,
+When the content exceeds the column width, you can wrap the header text or title of the column using the **e-headertextoverflow** property. By default this property is set to **none**. To enable header text wrapping , set the **e-headertextoverflow** property to **‘wrap’**. The following code sample demonstrates this.
 
 {% highlight js %}
 
 <!doctype html>
 <body ng-controller="TreeGridCtrl">
     <!--Add  treegrid control here-->
-    <div id="TreeGridContainer" ej-treegrid //... e-headertextoverflow="wrap">
+    <div id="TreeGridContainer" ej-treegrid //... e-headertextoverflow="wrap">        
     </div>
 </body>
 
@@ -118,9 +118,9 @@ It is possible to wrap the header text or the title for the column, when the con
 
 ### Header Template
 
-Using **e-columns.headerTemplateID** property, you can specify the Id of the script element, which contains the JsRender template, to the specific column.
+Using the **e-columns.headerTemplateID** property, you can specify the script element ID, which contains the JsRender template to the specific column.
 
-Following code snippet shows how to set the header template,
+The following code sample shows how to set the header template.                 
 
 {% highlight html %}
 
@@ -176,15 +176,15 @@ Following code snippet shows how to set the header template,
 
 {% endhighlight %}
 
-The below screenshot depicts column headers with custom templates,
+The following screenshot depicts column headers with custom templates.
 
 ![](Columns_images/Columns_img1.png)
 
 ## Frozen Columns
 
-Specific columns can be frozen by enabling **e-columns.isFrozen** property of the respective column object. The columns which are frozen remain static while scrolling the content horizontally. You can also freeze or unfreeze a column during runtime, by selecting Freeze or Unfreeze menu item in the column menu. These set of menu options will be displayed in all the columns when **e-columns.isFrozen** property is enabled in any of the columns. However you can control the visibility of these menu options in a particular column by enabling/disabling the **e-columns.allowFreezing** property of that specific column.
+Specific columns can be frozen by enabling the **e-columns.isFrozen** property of the respective column object. The columns that are frozen remains static while scrolling the content horizontally. You can also freeze or unfreeze a column during runtime by selecting Freeze or Unfreeze menu item in the column menu. These set of menu options will be displayed in all the columns when the **e-columns.isFrozen** property is enabled in any of the columns. However, you can control the visibility of these menu options in a particular column by enabling or disabling the **e-columns.allowFreezing** property of that specific column.    
 
-{% highlight js %}
+{% highlight js %} 
 
 <body ng-controller="TreeGridCtrl">
     <!--Add  treegrid control here-->
@@ -227,17 +227,17 @@ Specific columns can be frozen by enabling **e-columns.isFrozen** property of th
 
 {% endhighlight %}
 
-The below screenshot depicts TreeGrid with frozen columns,
+The following screenshot depicts tree grid with frozen columns.
 
 ![](Columns_images/Columns_img2.png)
 
-It is also possible to freeze all the preceding columns by choosing *Freeze Preceding Columns* option in the column menu.
+You can also freeze all the preceding columns by choosing *Freeze Preceding Columns* option in the column menu.               
 
 ![](Columns_images/Columns_img3.png)
 
 ## Resizing
 
-You can resize the column width to view the hidden text of the cell. This feature can be enabled by setting **allowColumnResize** property to true.
+You can resize the column width to view the hidden text of the cell. This feature can be enabled by setting the **allowColumnResize** property to true.
 
 {% highlight js %}
 
@@ -251,11 +251,11 @@ You can resize the column width to view the hidden text of the cell. This featur
 
 ## Column Template
 
-Columns can be customized either by using JsRender templates or by AngularJS templates,
+Columns can be customized either by using JsRender templates or by AngularJS templates.
 
-Using **e-columns.templateID** property, you can specify the Id of the script element, which contains the template for the column. However, you need to enable **e-columns.isTemplateColumn** property for the specific column to display the custom template instead of default template.
+Using the **e-columns.templateID** property, you can specify the script element ID, which contains the template for the column. However, enable the **e-columns.isTemplateColumn** property for the specific column to display the custom template instead of default template.
 
-Following code example show how to define template for the column,
+The following code example shows how to define template for the column.
 
 {% highlight html %}
 
@@ -298,17 +298,17 @@ Following code example show how to define template for the column,
 
 ## Column Menu
 
-Column menu can be displayed in column header by enabling **‘e-showcolumnchooser’**.
+Column menu can be displayed in column header by enabling the **‘e-showcolumnchooser’**.
 
-Following are the items displayed in the column menu,
+The following are the items displayed in the column menu:
 
-* **Column Chooser** – Display all the column names; you can enable or disable a column by select or deselect the respective column name in the column chooser menu.
-* **Sort Ascending & Sort Descending** – Used to sort the items in the column. These menu options will be displayed only when you enable **e-allowsorting** property to true. To perform multilevel sorting, the **‘e-allowmultisorting’** property should be enabled.
-* **Freeze, Unfreeze & Freeze Preceding Columns** – Used to freeze or unfreeze the columns. These set of menu options will be displayed in all the columns when **e-columns.isFrozen** property is enabled in any of the columns. However you can control the visibility of these menu options in a particular column by enabling/disabling the **e-columns.allowFreezing** property of that specific column.
+* **Column Chooser**: Displays all the column names. You can enable or disable a column by selecting or deselecting the respective column name in the column chooser menu.
+* **Sort Ascending & Sort Descending**: Sorts the items in the column. These menu options will be displayed only when you set the **e-allowsorting** property to true. To perform multilevel sorting, the **‘e-allowmultisorting’** property should be enabled.               
+* **Freeze, Unfreeze & Freeze Preceding Columns**: Freezes or unfreezes the columns. These set of menu options will be displayed in all columns when the **e-columns.isFrozen** property is enabled. However, you can control the visibility of these menu options in a particular column by enabling or disabling the **e-columns.allowFreezing** property of that specific column.                         
 
 {% highlight js %}
 
-<body ng-controller="TreeGridCtrl">
+<body ng-controller="TreeGridCtrl">                  
     <!--Add  TreeGrid control here-->
     <div id="TreeGridContainer" ej-treegrid 
     //... 
@@ -341,9 +341,9 @@ Following are the items displayed in the column menu,
 
 ## Changing position of expander column
 
-The position of the expander column, which acts as tree column, can be changed using the **‘e-treecolumnindex’** property,
+The position of the expander column, which acts as tree column can be changed using the **‘e-treecolumnindex’** property.
 
-Following code example shows how to change the position of the expander column,
+The following code example shows how to change the position of the expander column.
 
 {% highlight js %}
 
@@ -357,9 +357,9 @@ Following code example shows how to change the position of the expander column,
 
 ## Visibility
 
-Columns can be hidden on loading by setting the **‘e-columns.visible’** property as false,
+Columns can be hidden on loading by setting the **‘e-columns.visible’** property to false.
 
-Following code example explains how to hide the fourth column,
+The following code example explains how to hide the fourth column.
 
 {% highlight js %}
 
@@ -405,11 +405,11 @@ Following code example explains how to hide the fourth column,
 
 ## Read-only
 
-A column can be made read-only by setting the **e-columns.allowEditing** property as false,
+A column can be made read-only by setting the **e-columns.allowEditing** property to false.      
 
-Note: By setting columns.allowEditing as false, that specific column alone is made as read only, and by setting editSettings.allowEditing as false, the entire TreeGrid is made read only.
+Note: By setting columns.allowEditing to false, that specific column alone is made as read-only, and by setting editSettings.allowEditing to false, the entire tree grid is made as read-only.
 
-The below code snippet demonstrates this,
+The following code sample demonstrates this.        
 
 {% highlight js %}
 
