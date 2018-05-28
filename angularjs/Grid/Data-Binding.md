@@ -313,7 +313,7 @@ The following output is displayed as a result of the above code example.
 
 #### Adding request parameters
 
-You can use the `addParams` method of `ej.Query` class, to add custom parameter to the data request. The Grid has [`query`](https://help.syncfusion.com/api/angular/ejgrid#members:query "query") property, which accepts instance of `ej.Query`.
+You can use the `addParams` method of `ej.Query` class, to add custom parameter to the data request. The Grid has [`query`](https://help.syncfusion.com/api/js/ejgrid#members:query "query") property, which accepts instance of `ej.Query`.
 
 The following code example describes the above behavior.
 
@@ -361,7 +361,7 @@ The custom parameter will be passed along with the data request of the grid as f
 
 During server interaction from the Grid, there may occur some server-side exceptions and you can acquire those error messages or exception details in client-side using the [`actionFailure`](https://help.syncfusion.com/api/angular/ejgrid#events:actionfailure "actionFailure") event of Grid Control.
 
-The argument passed to the [`actionFailure`](https://help.syncfusion.com/api/angular/ejgrid#events:actionfailure "actionFailure") Grid event contains the Error details returned from server. Please refer to the following table for some error details that would be acquired in client-side event arguments.
+The argument passed to the [`actionFailure`](https://help.syncfusion.com/api/js/ejgrid#events:actionfailure "actionFailure") Grid event contains the Error details returned from server. Please refer to the following table for some error details that would be acquired in client-side event arguments.
 
  <table>
         <tr>
