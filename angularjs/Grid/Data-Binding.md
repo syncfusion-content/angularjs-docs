@@ -321,7 +321,7 @@ The following code example describes the above behavior.
 
 <div ng-app="employeeView">
     <div ng-controller="GridCtrl">
-        <div ej-grid id="Grid" e-datasource="data" e-allowpaging="true" e-query="queryorder">
+        <div ej-grid id="Grid" e-datasource="data" e-allowpaging="true" e-query="query">
             <div e-columns>
                 <div e-column e-field="OrderID" e-headertext="Order ID" e-isprimarykey="true" e-textalign="left" e-width="90"></div>
                 <div e-column e-field="EmployeeID" e-headertext="Employee ID" e-textalign="right" e-width="90"></div>
@@ -346,7 +346,7 @@ The following code example describes the above behavior.
               cachingPageSize: 10,
               timeTillExpiration: 120000
           });
-          $scope.queryorder = new ej.Query().addParams("Syncfusion", true)
+          $scope.query = new ej.Query().addParams("Syncfusion", true)
       });
 </script>
 	
@@ -397,7 +397,7 @@ The following code example describes the above behavior.
 
 <div ng-app="employeeView">
     <div ng-controller="GridCtrl">
-        <div ej-grid id="Grid" e-datasource="data" e-allowpaging="true">
+        <div ej-grid id="Grid" e-datasource="data" e-allowpaging="true" e-actionfailure="failure">
             <div e-columns>
                 <div e-column e-field="OrderID" e-headertext="Order ID" e-isprimarykey="true" e-textalign="left" e-width="90"></div>
                 <div e-column e-field="EmployeeID" e-headertext="Employee ID" e-textalign="right" e-width="90"></div>
@@ -421,7 +421,7 @@ The following code example describes the above behavior.
               url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",
              adaptor: "ODataAdaptor"
           });
-          $scope.actionfailure = function (e) {
+          $scope.failure = function (e) {
               alert(e.error.status + " : " + e.error.statusText);
           }
       });
