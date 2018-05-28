@@ -94,6 +94,7 @@ The following output is displayed as the result of previous code example.
 
 N> By default , if no adaptor is specified for the ej.DataMananger and only the URL link is mentioned, it will be considered as ODataService.
 
+
 #### OData Version 4
 
 For OData Version 4 support, ej.ODataV4Adaptor should be used. By using `url` property of `ej.DataManager` you can bind OData Version 4 Service link and specify  `adaptor` as `ej.ODataV4Adaptor`.
