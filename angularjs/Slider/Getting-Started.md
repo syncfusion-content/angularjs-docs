@@ -21,7 +21,7 @@ Create a new HTML file and include the below code:
 <!doctype html>
 <html lang="en" ng-app="SliderCtrl">
 <head>
-    <title>Essential Studio for JavaScript : Angular JS Support for Slider </title>
+    <title>Essential Studio for JavaScript : AngularJS Support for Slider </title>
     <!-- Style sheet for default theme (flat azure) -->
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--Scripts-->
