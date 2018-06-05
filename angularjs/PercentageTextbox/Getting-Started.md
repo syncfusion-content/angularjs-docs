@@ -24,7 +24,7 @@ Create an **HTML** file and add the following template to the HTML file for Te
 <!doctype html>
 <html lang="en" ng-app="EditCtrl">
 <head>
-    <title>Essential Studio for JavaScript : Angular JS Support for Percentage Textbox </title>
+    <title>Essential Studio for JavaScript : AngularJS Support for Percentage Textbox </title>
     <!-- Style sheet for default theme (flat azure) -->
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--Scripts-->
@@ -58,7 +58,7 @@ Add the input elements
 </tr>
 <tr>
     <td>
-        <input id="percent" type="text" ej-percentagetextbox e-value="pvalue" />
+        <input id="percent" type="text" ej-percentagetextbox e-value="percentageValue" />
     </td>
 </tr>
 </tbody>
@@ -70,7 +70,7 @@ Set the value in the controller
 {% highlight html %}
 angular.module('EditCtrl', ['ejangular'])
            .controller('EditorsCtrl', function ($scope) {
-               $scope.pvalue = 400;
+               $scope.percentageValue = 400;
            });
 {% endhighlight %}
 
@@ -168,12 +168,12 @@ Please use the below code to bind the Textbox in two-way support.
 </tr>
 <tr>
     <td>
-        <input id="percent" type="text" ej-percentagetextbox e-value="pvalue" />
+        <input id="percent" type="text" ej-percentagetextbox e-value="percentageValue" />
     </td>
 </tr>
 <tr>
     <td>
-        <input type="text" class="input ejinputtext" ng-model="pvalue" /><br />
+        <input type="text" class="input ejinputtext" ng-model="percentageValue" /><br />
     </td>
 </tr>
 
@@ -184,7 +184,7 @@ Please use the below code to bind the Textbox in two-way support.
 {% highlight html %}
 angular.module('EditCtrl', ['ejangular'])
            .controller('EditorsCtrl', function ($scope) {
-               $scope.pvalue = 400;
+               $scope.percentageValue = 400;
            });
 {% endhighlight %}
 

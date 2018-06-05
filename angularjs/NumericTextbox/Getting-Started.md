@@ -24,7 +24,7 @@ Create an **HTML** file and add the following template to the HTML file for Te
 <!doctype html>
 <html lang="en" ng-app="EditCtrl">
 <head>
-    <title>Essential Studio for JavaScript : Angular JS Support for Numeric Textbox </title>
+    <title>Essential Studio for JavaScript : AngularJS Support for Numeric Textbox </title>
     <!-- Style sheet for default theme (flat azure) -->
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--Scripts-->
@@ -60,7 +60,7 @@ Add the input elements
 </tr>
 <tr>
     <td>
-        <input id="numeric" type="text" ej-numerictextbox e-value="nvalue" />
+        <input id="numeric" type="text" ej-numerictextbox e-value="numericValue" />
     </td>
 </tr>
 </tbody>
@@ -73,7 +73,7 @@ Set the value in the controller
 {% highlight html %}
 angular.module('EditCtrl', ['ejangular'])
            .controller('EditorsCtrl', function ($scope) {
-               $scope.nvalue = 600;
+               $scope.numericValue = 600;
            });
 {% endhighlight %}
 
@@ -162,12 +162,12 @@ Please use the below code to bind the Textbox in two-way support.
 </tr>
 <tr>
     <td>
-        <input id="numeric" type="text" ej-numerictextbox e-value="nvalue" />
+        <input id="numeric" type="text" ej-numerictextbox e-value="numericValue" />
     </td>
 </tr>
 <tr> 
     <td>
-        <input type="text" class="input ejinputtext" ng-model="nvalue" /><br />
+        <input type="text" class="input ejinputtext" ng-model="numericValue" /><br />
     </td>
 									
 </tr>
@@ -179,7 +179,7 @@ Please use the below code to bind the Textbox in two-way support.
 
 angular.module('EditCtrl', ['ejangular'])
 .controller('EditorsCtrl', function ($scope) {
-$scope.nvalue = 600;
+$scope.numericValue = 600;
 });
 
 {% endhighlight %}

@@ -24,7 +24,7 @@ Create an **HTML** file and add the following template to the HTML file for Te
 <!doctype html>
 <html lang="en" ng-app="EditCtrl">
 <head>
-    <title>Essential Studio for JavaScript : Angular JS Support for Currency Textbox </title>
+    <title>Essential Studio for JavaScript : AngularJS Support for Currency Textbox </title>
     <!-- Style sheet for default theme (flat azure) -->
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--Scripts-->
@@ -58,7 +58,7 @@ Add the input elements
 </tr>
 <tr>
     <td>
-        <input id="currency" type="text" ej-currencytextbox e-value="cvalue" />
+        <input id="currency" type="text" ej-currencytextbox e-value="currencyValue" />
     </td>
 </tr>
 </tbody>
@@ -70,7 +70,7 @@ Set the value in the controller
 {% highlight html %}
     angular.module('EditCtrl', ['ejangular'])
            .controller('EditorsCtrl', function ($scope) {
-               $scope.cvalue = 400;
+               $scope.currencyValue = 400;
            });
 {% endhighlight %}
 
@@ -152,12 +152,12 @@ We have listed the properties of **Textbox** widget that supports two way bindin
 </tr>
 <tr>
     <td>
-        <input id="currency" type="text" ej-currencytextbox e-value="cvalue" />
+        <input id="currency" type="text" ej-currencytextbox e-value="currencyValue" />
     </td>
 </tr>
 <tr>
 	<td>
-		<input type="text" class="input ejinputtext" ng-model="cvalue" /><br />
+		<input type="text" class="input ejinputtext" ng-model="currencyValue" /><br />
 	</td>	
 </tr> 
 </tbody>
