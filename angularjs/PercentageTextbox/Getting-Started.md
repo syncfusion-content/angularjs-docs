@@ -79,7 +79,7 @@ Execute the above code to render the following output
 ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
-## Set the MinValue, MaxValue and Value in Textoxes
+## Set the MinValue, MaxValue and Value in Textboxes
 
 You can set the **“****minValue****”,** **“****maxValue****”** and **“****value****”** in Numeric, Percentage and Currency text boxes for maintaining the range in Textboxes widgets. In this scenario, you have to enter the values between the given ranges. The following code example illustrates how to achieve this.
 

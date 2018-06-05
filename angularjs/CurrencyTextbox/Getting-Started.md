@@ -44,7 +44,7 @@ Create an **HTML** file and add the following template to the HTML file for Te
 
 The ng-app directive explains the root element (<html> or <body> tags) of the application. You will assign a name to the ng-app directive, then you must create a module with that name. In this module, you will have to define your directives, services, filters and configurations.
 
-Properties can be bind to ejCurrecny control using the prefix e- and particular property name as shown as below
+Properties can be bind to ejCurrency control using the prefix e- and particular property name as shown as below
 
 Add the input elements
 
@@ -79,7 +79,7 @@ Execute the above code to render the following output
 ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
-## Set the MinValue, MaxValue and Value in Textoxes
+## Set the MinValue, MaxValue and Value in Textboxes
 
 You can set the **“****minValue****”,** **“****maxValue****”** and **“****value****”** in Numeric, Percentage and Currency text boxes for maintaining the range in Textboxes widgets. In this scenario, you have to enter the values between the given ranges. The following code example illustrates how to achieve this.
 
