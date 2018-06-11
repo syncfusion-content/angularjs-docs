@@ -24,7 +24,7 @@ Create an **HTML** file and add the following template to the HTML file for Te
 <!doctype html>
 <html lang="en" ng-app="EditCtrl">
 <head>
-    <title>Essential Studio for JavaScript : Angular JS Support for Currency Textbox </title>
+    <title>Essential Studio for JavaScript : AngularJS Support for Currency Textbox </title>
     <!-- Style sheet for default theme (flat azure) -->
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--Scripts-->
@@ -44,7 +44,7 @@ Create an **HTML** file and add the following template to the HTML file for Te
 
 The ng-app directive explains the root element (<html> or <body> tags) of the application. You will assign a name to the ng-app directive, then you must create a module with that name. In this module, you will have to define your directives, services, filters and configurations.
 
-Properties can be bind to ejCurrecny control using the prefix e- and particular property name as shown as below
+Properties can be bind to ejCurrency control using the prefix e- and particular property name as shown as below
 
 Add the input elements
 
@@ -58,7 +58,7 @@ Add the input elements
 </tr>
 <tr>
     <td>
-        <input id="currency" type="text" ej-currencytextbox e-value="cvalue" />
+        <input id="currency" type="text" ej-currencytextbox e-value="currencyValue" />
     </td>
 </tr>
 </tbody>
@@ -70,7 +70,7 @@ Set the value in the controller
 {% highlight html %}
     angular.module('EditCtrl', ['ejangular'])
            .controller('EditorsCtrl', function ($scope) {
-               $scope.cvalue = 400;
+               $scope.currencyValue = 400;
            });
 {% endhighlight %}
 
@@ -79,7 +79,7 @@ Execute the above code to render the following output
 ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
-## Set the MinValue, MaxValue and Value in Textoxes
+## Set the MinValue, MaxValue and Value in Textboxes
 
 You can set the **“****minValue****”,** **“****maxValue****”** and **“****value****”** in Numeric, Percentage and Currency text boxes for maintaining the range in Textboxes widgets. In this scenario, you have to enter the values between the given ranges. The following code example illustrates how to achieve this.
 
@@ -152,12 +152,12 @@ We have listed the properties of **Textbox** widget that supports two way bindin
 </tr>
 <tr>
     <td>
-        <input id="currency" type="text" ej-currencytextbox e-value="cvalue" />
+        <input id="currency" type="text" ej-currencytextbox e-value="currencyValue" />
     </td>
 </tr>
 <tr>
 	<td>
-		<input type="text" class="input ejinputtext" ng-model="cvalue" /><br />
+		<input type="text" class="input ejinputtext" ng-model="currencyValue" /><br />
 	</td>	
 </tr> 
 </tbody>

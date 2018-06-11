@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains briefly about how to create a Slider in your application with **AngularJS**. The following examples shows how to use slider control.
 
-## Create the Slider Widget in angularJS
+## Create the Slider Widget in AngularJS
 
 Essential JavaScript includes angular directives for all controls with the ej.widget.angular.min.js script file. All the Essential JS directives have been encapsulated into a single module called **ejangular**. To render our ej controls in angular, you need to refer the “angular.min.js” and “ej.widget.angular.min.js” in your application.
 
@@ -21,7 +21,7 @@ Create a new HTML file and include the below code:
 <!doctype html>
 <html lang="en" ng-app="SliderCtrl">
 <head>
-    <title>Essential Studio for JavaScript : Angular JS Support for Slider </title>
+    <title>Essential Studio for JavaScript : AngularJS Support for Slider </title>
     <!-- Style sheet for default theme (flat azure) -->
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--Scripts-->
@@ -57,7 +57,7 @@ To render the ejSlider using angular directive, we need to inject the **ejangula
  </script>
 {% endhighlight %}
 
-The following screenshot displays a default slider using angularJS
+The following screenshot displays a default slider using AngularJS
 
 ![](Getting-Started_images/GettingStarted_img1.jpeg)
 
