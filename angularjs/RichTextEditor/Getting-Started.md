@@ -25,7 +25,7 @@ Create an **HTML** file and add the following template in the HTML file for crea
 <!doctype html>
 <html lang="en" ng-app="rteApp">
 <head>
-    <title>Essential Studio for JavaScript : Angular JS Support for RTE </title>
+    <title>Essential Studio for JavaScript : AngularJS Support for RTE </title>
     <!-- Style sheet for default theme (flat azure) -->
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--Scripts-->
@@ -80,7 +80,7 @@ You can configure a toolbar with the tools as your application requires.
 
 {% highlight html %}
 
- <textarea id ="texteditor" ej-rte e-toolslist="toolslist" e-tools="tools"></textarea>
+ <textarea id ="texteditor" ej-rte e-toolslist="list" e-tools="tools"></textarea>
 
 {% endhighlight %}
 
@@ -89,7 +89,7 @@ You can configure a toolbar with the tools as your application requires.
     <script>
         angular.module('rteApp', ['ejangular'])
          .controller('RTECtrl', function ($scope) {
-            $scope.toolslist = ["style", "lists", "doAction", "links", "images"];
+            $scope.list = ["style", "lists", "doAction", "links", "images"];
             $scope.tools= {style: ["bold", "italic"], lists: ["unorderedList", "orderedList"],doAction: ["undo", "redo"],links: ["createLink"],images: ["image"] }  
          });
     </script>

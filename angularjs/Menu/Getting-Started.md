@@ -137,7 +137,7 @@ The following code example describes how to initialize first level sub menu item
 			{ id: 22, parentId: 4, text: "Latest Version" },
 			{ id: 23, parentId: 5, text: "Technology Resource Portal " },
 			{ id: 24, parentId: 5, text: "Case Studies" },
-			{ id: 25, parentId: 5, text: "Bouchers & Datasheets" },
+			{ id: 25, parentId: 5, text: "Boucher & Data sheets" },
 			{ id: 26, parentId: 5, text: "FAQ" }                   
         ];
         angular.module('MenuApp', ['ejangular']).controller('MenuCtrl', function ($scope) {

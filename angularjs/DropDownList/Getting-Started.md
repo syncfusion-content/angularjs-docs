@@ -101,11 +101,11 @@ The DropDownList can be created from a HTML ‘select’ element with the HTML '
 {% highlight javascript %}	
 	
 		var list = [
-                    { empid: "cr1", text: "ListItem 1", value: "ListItem 1" },
-                    { empid: "cr2", text: "ListItem 2", value: "ListItem 2" },
-                    { empid: "cr3", text: "ListItem 3", value: "ListItem 3" },
-                    { empid: "cr4", text: "ListItem 4", value: "ListItem 4" },
-                    { empid: "cr5", text: "ListItem 5", value: "ListItem 5" },
+                    { id: "cr1", text: "ListItem 1", value: "ListItem 1" },
+                    { id: "cr2", text: "ListItem 2", value: "ListItem 2" },
+                    { id: "cr3", text: "ListItem 3", value: "ListItem 3" },
+                    { id: "cr4", text: "ListItem 4", value: "ListItem 4" },
+                    { id: "cr5", text: "ListItem 5", value: "ListItem 5" },
                     
                     
               ];
@@ -165,11 +165,11 @@ DropDownList dimensions can be set using width and height API.
 	    <script>
 	
 	     var list = [
-                    { empid: "cr1", text: "ListItem 1", value: "ListItem 1" },
-                    { empid: "cr2", text: "ListItem 2", value: "ListItem 2" },
-                    { empid: "cr3", text: "ListItem 3", value: "ListItem 3" },
-                    { empid: "cr4", text: "ListItem 4", value: "ListItem 4" },
-                    { empid: "cr5", text: "ListItem 5", value: "ListItem 5" },
+                    { id: "cr1", text: "ListItem 1", value: "ListItem 1" },
+                    { id: "cr2", text: "ListItem 2", value: "ListItem 2" },
+                    { id: "cr3", text: "ListItem 3", value: "ListItem 3" },
+                    { id: "cr4", text: "ListItem 4", value: "ListItem 4" },
+                    { id: "cr5", text: "ListItem 5", value: "ListItem 5" },
                     
                     
               ];
@@ -189,7 +189,7 @@ PopupWidth and popupHeight can be used to create a fixed size popup list.
 
 {% highlight html %}
 
-	<select id="dropdown1" ej-dropdownlist e-datasource="dataList" e-value="value" e-popupHeight="popupheight" e-popupWidth="popupwidth"/>
+	<select id="dropdown1" ej-dropdownlist e-datasource="dataList" e-value="value" e-popupHeight="height" e-popupWidth="width"/>
 
 {% endhighlight %}
 	
@@ -198,18 +198,18 @@ PopupWidth and popupHeight can be used to create a fixed size popup list.
 	    <script>
 
 		var list = [
-                    { empid: "cr1", text: "ListItem 1", value: "ListItem 1" },
-                    { empid: "cr2", text: "ListItem 2", value: "ListItem 2" },
-                    { empid: "cr3", text: "ListItem 3", value: "ListItem 3" },
-                    { empid: "cr4", text: "ListItem 4", value: "ListItem 4" },
-                    { empid: "cr5", text: "ListItem 5", value: "ListItem 5" },
+                    { id: "cr1", text: "ListItem 1", value: "ListItem 1" },
+                    { id: "cr2", text: "ListItem 2", value: "ListItem 2" },
+                    { id: "cr3", text: "ListItem 3", value: "ListItem 3" },
+                    { id: "cr4", text: "ListItem 4", value: "ListItem 4" },
+                    { id: "cr5", text: "ListItem 5", value: "ListItem 5" },
                     
                     
               ];
           angular.module('dropdownlistApp', ['ejangular']).controller('dropdownlistCtrl', function ($scope) {
 	             $scope.dataList = list;
-				 $scope.popupwidth="200px";
-				 $scope.popupheight="100px"
+				 $scope.width="200px";
+				 $scope.height="100px"
                  });
         </script>
 	
@@ -232,11 +232,11 @@ N> To select multiple items based on index, refer [here](functionalities#selecti
 	<script>
 
 		var list = [
-                    { empid: "cr1", text: "ListItem 1", value: "ListItem 1" },
-                    { empid: "cr2", text: "ListItem 2", value: "ListItem 2" },
-                    { empid: "cr3", text: "ListItem 3", value: "ListItem 3" },
-                    { empid: "cr4", text: "ListItem 4", value: "ListItem 4" },
-                    { empid: "cr5", text: "ListItem 5", value: "ListItem 5" },
+                    { id: "cr1", text: "ListItem 1", value: "ListItem 1" },
+                    { id: "cr2", text: "ListItem 2", value: "ListItem 2" },
+                    { id: "cr3", text: "ListItem 3", value: "ListItem 3" },
+                    { id: "cr4", text: "ListItem 4", value: "ListItem 4" },
+                    { id: "cr5", text: "ListItem 5", value: "ListItem 5" },
                     
                     
               ];

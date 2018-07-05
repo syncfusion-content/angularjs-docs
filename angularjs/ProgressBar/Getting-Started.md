@@ -157,7 +157,7 @@ Add the following code example inside the **&lt;script&gt;** tag of your **HTML*
                 else if (i == 5 || i < 7)
                     Strong();
                 else if (i ==7 ||i>7) {
-                    var pwd = $("#password").val();
+                    var password = $("#password").val();
                     very_strong();
                 }
             });
