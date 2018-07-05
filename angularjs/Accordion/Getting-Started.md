@@ -167,7 +167,7 @@ You can also open all the panels during initialization using the **selectedItems
 
 {% highlight html %}
 
-    <div id="accordion" style="width: 500px" ej-accordion e-enableMultipleOpen="true" e-selectedItems="selecteditems">
+    <div id="accordion" style="width: 500px" ej-accordion e-enableMultipleOpen="true" e-selectedItems="items">
 
 {% endhighlight %}
 
@@ -177,7 +177,7 @@ You can also open all the panels during initialization using the **selectedItems
 
 		angular.module('AccordionApp', ['ejangular']).controller('AccordionCtrl', function ($scope) {
 		
-		             $scope.selecteditems=[0,1];
+		             $scope.items=[0,1];
 				  });
  
     </script>
