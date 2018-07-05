@@ -32,7 +32,7 @@ You can create the **ProgressBar** widget by using a simple input **&lt;div&gt;*
 <!doctype html>
 <html lang="en" ng-app="progressbarApp">
 <head>
-    <title>Essential Studio for JavaScript : Angular JS Support for ProgressBar </title>
+    <title>Essential Studio for JavaScript : AngularJS Support for ProgressBar </title>
     <!-- Style sheet for default theme (flat azure) -->
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--Scripts-->

@@ -179,7 +179,7 @@ To initialize multiple levels sub menu items, use the following code example.
 			{ id: 22, parentId: 4, text: "Latest Version" },
 			{ id: 23, parentId: 5, text: "Technology Resource Portal " },
 			{ id: 24, parentId: 5, text: "Case Studies" },
-			{ id: 25, parentId: 5, text: "Bouchers & Datasheets" },
+			{ id: 25, parentId: 5, text: "Boucher & Data sheets" },
 			{ id: 26, parentId: 5, text: "FAQ" },
             //second level child
             {id: 111, parentId: 18, text: "Consulting" },
