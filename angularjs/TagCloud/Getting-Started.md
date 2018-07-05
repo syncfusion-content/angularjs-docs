@@ -14,7 +14,7 @@ This section explains briefly about how to create a **TagCloud** in your applica
 
 ![](Getting-Started_images/Getting-Started1.jpg)
 
-## Create TagCloud widget in Angular JS
+## Create TagCloud widget in AngularJS
 
  Create an **HTML** file and add the following template to the **HTML** file.
 

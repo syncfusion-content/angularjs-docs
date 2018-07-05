@@ -88,9 +88,9 @@ Properties can be bind to ejDropDownList control using the prefix e- and particu
 
  N>  In production, we highly recommend you to use our [custom script generator](http://help.syncfusion.com/js/include-only-the-needed-widgets#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server. 
 
-## Creating DropDownList in Angular JS
+## Creating DropDownList in AngularJS
 
-The DropDownList can be created from a HTML ‘select’ element with the HTML 'id' attribute and pre-defined options set to it. Use the below given code to create a DropDownList in Angular JS.
+The DropDownList can be created from a HTML ‘select’ element with the HTML 'id' attribute and pre-defined options set to it. Use the below given code to create a DropDownList in AngularJS.
 
 {% highlight html %}
 	

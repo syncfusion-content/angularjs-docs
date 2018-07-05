@@ -10,7 +10,7 @@ keywords: ejaccordion, accordion, angularjs accordion
 
 # Getting Started
 
-This section explains briefly about how to create an **Accordion** in your application with **Angular JS**.
+This section explains briefly about how to create an **Accordion** in your application with **AngularJS**.
 
 ## Configure Accordion
 
@@ -22,7 +22,7 @@ The following screenshot illustrates you the usage of **Accordion** control in l
 
 The usage of **Accordion** control is described in the following sections.
 
-## Create a Simple Accordion in Angular JS
+## Create a Simple Accordion in AngularJS
 
 Create an HTML file and add the following references to the required libraries.
 

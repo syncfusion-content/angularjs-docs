@@ -28,7 +28,7 @@ In an HTML page, define a div element that is a container for Accordion widg
     </h3>
     <div>
         <!-- add accordion contents here to load contents under this header -->
-        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame.
     </div>
     <h3>
         <a href="#">WinRTXAML</a>
@@ -70,7 +70,7 @@ Add the below code in order to set the mouseout event for accordion which will b
     </h3>
     <div>
         <!-- add accordion contents here to load contents under this header -->
-        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame.
     </div>
     <h3>
         <a href="#">WinRTXAML</a>
@@ -104,7 +104,7 @@ Using [selectedItemIndex](https://help.syncfusion.com/api/js/ejaccordion#members
 
 ### Specify the selected item in Accordion panel
 
-The following steps will explains the configurating selected item for **Accordion**.
+The following steps will explains the configuring selected item for **Accordion**.
 
 In an HTML page, define a div element that is a container for Accordion widget and set the selectedItemIndex property as like the below code.
 
@@ -116,7 +116,7 @@ In an HTML page, define a div element that is a container for Accordion widg
     </h3>
     <div>
         <!-- add accordion contents here to load contents under this header -->
-        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame.
     </div>
     <h3>
         <a href="#">WinRTXAML</a>
@@ -159,7 +159,7 @@ In an HTML page, define a &lt;div&gt; element that is a container for  Accor
     </h3>
     <div>
         <!-- add accordion contents here to load contents under this header -->
-        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame.
     </div>
     <h3>
         <a href="#">WinRTXAML</a>

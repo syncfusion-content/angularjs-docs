@@ -14,7 +14,7 @@ This section explains briefly about how to create a **Menu** control in your app
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
 
-## Create a Menu in Angular JS
+## Create a Menu in AngularJS
 
 **Essential JavaScript** **Menu** widgets are basically provided with built-in features like keyboard navigation, show and hide **Menu** items with animations, and flexible API's. From the following guidelines, you can learn how to render **Menu** control with Remote data source value.
 

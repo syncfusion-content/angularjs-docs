@@ -53,7 +53,7 @@ The ng-app directive explains the root element (<html> or <body> tags) of the ap
 
 A controller is defined using ng-controller directive. Each controller accepts an object $scope which we pass as a parameter.  This object is used to bind the controller with view.   
 
-Properties can be bind to ejProgrssBar control using the prefix e- and particular property name.
+Properties can be bind to ejProgressBar control using the prefix e- and particular property name.
 
  Add **&lt;input&gt;** element inside the **&lt;body&gt;** tag of your file to create a **ProgressBar.**
 
@@ -76,7 +76,7 @@ Properties can be bind to ejProgrssBar control using the prefix e- and particula
 {% endhighlight %}
 
 
-To render the ejProgrssBar using angular directive, we need to inject the ej angular directive with modules.
+To render the ejProgressBar using angular directive, we need to inject the ej angular directive with modules.
 
 It also includes a Password field and through that the progress of the **ProgressBar** can be controlled
 
@@ -88,8 +88,8 @@ Initialize **ProgressBar** in script.
          .controller('ProgressBarCtrl', function ($scope) {
          });
         $(function () {
-            progresObj = $("#progressBar").data("ejProgressBar");
-            progresObj.option("text", "weak");
+            progress = $("#progressBar").data("ejProgressBar");
+            progress.option("text", "weak");
             $(".e-progress").css({ "background-color": "#DE0909", "border-radius": "10px" });
             $(".e-progressbar").css({ "border-radius": "10px", "border": "1px solid black" });
         });
@@ -148,9 +148,9 @@ Add the following code example inside the **&lt;script&gt;** tag of your **HTML*
             $(".e-progress").css({ "background-color": "#DE0909", "border-radius": "10px" });
             $(".e-progressbar").css({ "border-radius": "10px", "border": "1px solid black" });
         });
-        var progresObj, buttonObj, k = 10, timer = window.clearInterval(timer), i = 0, obj;
+        var progress, buttonObj, k = 10, timer = window.clearInterval(timer), i = 0, obj;
             $(document).keypress(function () {    //To capture the keypress inside the document           
-                progresObj = $("#progressBar").data("ejProgressBar");
+                progress = $("#progressBar").data("ejProgressBar");
                 i = $("#password").val().length;
                 if (i < 5)
                     weak();
@@ -162,18 +162,18 @@ Add the following code example inside the **&lt;script&gt;** tag of your **HTML*
                 }
             });
             function Strong() {     //Change the width and text of the progress ... called when the length is greater than 5
-                progresObj.option("text", "strong");
-                progresObj.option("percentage", k + 50);
+                progress.option("text", "strong");
+                progress.option("percentage", k + 50);
                 $(".e-progress").css("background-color", "#0055FF");
             }
             function very_strong() {     //Change the width and text of the progress ... called when the length is greater than 7
-                progresObj.option("text", "Very strong");
-                progresObj.option("percentage", k + 90);
+                progress.option("text", "Very strong");
+                progress.option("percentage", k + 90);
                 $(".e-progress").css("background-color", "Green");
             }
             function weak() {     //Change the width and text of the progress... called when the length is less than 5
-                progresObj.option("text", "Weak");
-                progresObj.option("percentage", k + 20);
+                progress.option("text", "Weak");
+                progress.option("percentage", k + 20);
                 $(".e-progress").css("background-color", "#DE0909");
             }
     </script>
