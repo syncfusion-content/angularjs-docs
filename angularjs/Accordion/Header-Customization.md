@@ -153,7 +153,7 @@ In an HTML page, define a &lt;div&gt; element that is a container for  Accor
 {% highlight html %}
 
   
-<div id="accordion" style="width: 500px" ej-accordion e-enablemultipleopen="true" e-selecteditems="selecteditems">
+<div id="accordion" style="width: 500px" ej-accordion e-enablemultipleopen="true" e-selecteditems="items">
     <h3>
         <a href="#">Orubase</a>
     </h3>
@@ -184,7 +184,7 @@ In an HTML page, define a &lt;div&gt; element that is a container for  Accor
 
    angular.module('AccordionApp', ['ejangular'])
     .controller('AccordionCtrl', function ($scope) {
-        $scope.selecteditems = [0, 2];
+        $scope.items = [0, 2];
    });
 
 {% endhighlight %}
