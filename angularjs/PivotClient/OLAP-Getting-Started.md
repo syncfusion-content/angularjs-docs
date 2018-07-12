@@ -577,16 +577,6 @@ namespace PivotClientDemo
                         DataManager.SetCurrentReport(DataManager.Reports[0]);
                         return pivotClientHelper.GetJsonData("toolbarOperation", DataManager, "Load Report", jsonResult["reportName"].ToString());
                     }
-                    else
-                    {
-                        byte[] reportString = new byte[2 * 1024];
-                        reportString = (row.ItemArray[1] as byte[]);
-                        if (analysisMode.ToLower() == "pivot" && operationalMode.ToLower() == "servermode")
-                            dictionary = pivotClientHelper.GetJsonData("LoadReport", ProductSales.GetSalesData(), Encoding.UTF8.GetString(reportString));
-                        else
-                            dictionary.Add("report", Encoding.UTF8.GetString(reportString));
-                        break;
-                    }
                 }
             }
             return dictionary;
