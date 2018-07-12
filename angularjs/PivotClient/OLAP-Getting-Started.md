@@ -68,7 +68,7 @@ NuGet Package: [Click here](http://helpjs.syncfusion.com/js/installation-and-dep
 
 <head>
     <meta charset="utf-8" />
-    <title>Getting Started - PivotClientt</title>
+    <title>Getting Started - PivotClient</title>
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
@@ -417,7 +417,7 @@ namespace PivotClientDemo
             {
                 DataManager.CurrentReport.EnablePaging = true;
                 DataManager.CurrentReport.PagerOptions.SeriesPageSize = 5;
-                DataManager.CurrentReport.PagerOptions.CategorialPageSize = 3;
+                DataManager.CurrentReport.PagerOptions.CategoricalPageSize = 3;
             }
             return pivotClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["cubeName"].ToString(), jsonResult["clientParams"].ToString());
         }
@@ -448,7 +448,7 @@ namespace PivotClientDemo
             {
                 DataManager.CurrentReport.EnablePaging = true;
                 DataManager.CurrentReport.PagerOptions.SeriesPageSize = 5;
-                DataManager.CurrentReport.PagerOptions.CategorialPageSize = 3;
+                DataManager.CurrentReport.PagerOptions.CategoricalPageSize = 3;
             }
             return pivotClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, toolbarOperation, jsonResult["clientInfo"].ToString());
         }
@@ -576,16 +576,6 @@ namespace PivotClientDemo
                         DataManager.Reports = pivotClientHelper.DeserializedReports(reportString);
                         DataManager.SetCurrentReport(DataManager.Reports[0]);
                         return pivotClientHelper.GetJsonData("toolbarOperation", DataManager, "Load Report", jsonResult["reportName"].ToString());
-                    }
-                    else
-                    {
-                        byte[] reportString = new byte[2 * 1024];
-                        reportString = (row.ItemArray[1] as byte[]);
-                        if (analysisMode.ToLower() == "pivot" && operationalMode.ToLower() == "servermode")
-                            dictionary = pivotClientHelper.GetJsonData("LoadReport", ProductSales.GetSalesData(), Encoding.UTF8.GetString(reportString));
-                        else
-                            dictionary.Add("report", Encoding.UTF8.GetString(reportString));
-                        break;
                     }
                 }
             }
