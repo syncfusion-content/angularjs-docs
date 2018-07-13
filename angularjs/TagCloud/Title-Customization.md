@@ -81,7 +81,7 @@ var list = [
 { text: "Google", url: "http://www.google.co.in", frequency: 12 },
     { text: "a2zwebhelp", url: "http://www.a2zwebhelp.com", frequency: 3 },
     { text: "Arts Technica", url: "http://arstechnica.com/", frequency: 8 },
-    { text: "Bxslider", url: "http://bxslider.com/examples", frequency: 2 },
+    { text: "slider", url: "http://bxslider.com/examples", frequency: 2 },
     { text: "Yahoo", url: "http://in.yahoo.com/", frequency: 12 },
     { text: "W3schools", url: "http://www.w3schools.com/", frequency: 2 }
 ];
