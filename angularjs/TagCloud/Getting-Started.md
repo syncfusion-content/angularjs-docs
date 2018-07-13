@@ -14,7 +14,7 @@ This section explains briefly about how to create a **TagCloud** in your applica
 
 ![](Getting-Started_images/Getting-Started1.jpg)
 
-## Create TagCloud widget in Angular JS
+## Create TagCloud widget in AngularJS
 
  Create an **HTML** file and add the following template to the **HTML** file.
 
@@ -67,10 +67,10 @@ Add the following code example before **&lt;/body&gt;** tag to add list of items
               { text: "Google", url: "http://www.google.co.in", frequency: 20 },
               { text: "a2zwebhelp", url: "http://www.a2zwebhelp.com", frequency: 3 },
               { text: "Arts Technica", url: "http://arstechnica.com/", frequency: 8 },
-              { text: "Bxslider", url: "http://bxslider.com/examples", frequency: 2 },
+              { text: "slider", url: "http://bxslider.com/examples", frequency: 2 },
               { text: "Yahoo", url: "http://in.yahoo.com/", frequency: 12 },
               { text: "Facebook", url: "https://www.facebook.com/", frequency: 5 },
-              { text: "Blogspot", url: "http://www.blogspot.com/", frequency: 8 },
+              { text: "Blogs", url: "http://www.blogspot.com/", frequency: 8 },
               { text: "Microsoft", url: "http://www.microsoft.com/", frequency: 20 },
               { text: "Amazon.com", url: "http://www.amazon.com/", frequency: 1 },
               { text: "MSN", url: "http://www.msn.com/", frequency: 3 },
@@ -79,7 +79,7 @@ Add the following code example before **&lt;/body&gt;** tag to add list of items
               { text: "Twitter", url: "http://www.Twitter.com/", frequency: 0 },
               { text: "Menucool", url: "http://www.menucool.com", frequency: 3 },
               { text: "BBC", url: "http://www.bbc.co.uk/", frequency: 11 },
-              { text: "Valleywag", url: "http://valleywag.gawker.com/", frequency: 6 },
+              { text: "Valley", url: "http://valleywag.gawker.com/", frequency: 6 },
               { text: "WOWslider", url: "http://wowslider.com", frequency: 9 },
               { text: "W3schools", url: "http://www.w3schools.com/", frequency: 2 }
 
@@ -109,10 +109,10 @@ In the above code example, the **frequency** properties are used to set the min 
               { text: "Google", url: "http://www.google.co.in", frequency: 20 },
               { text: "a2zwebhelp", url: "http://www.a2zwebhelp.com", frequency: 3 },
               { text: "Arts Technica", url: "http://arstechnica.com/", frequency: 8 },
-              { text: "Bxslider", url: "http://bxslider.com/examples", frequency: 2 },
+              { text: "slider", url: "http://bxslider.com/examples", frequency: 2 },
               { text: "Yahoo", url: "http://in.yahoo.com/", frequency: 12 },
               { text: "Facebook", url: "https://www.facebook.com/", frequency: 5 },
-              { text: "Blogspot", url: "http://www.blogspot.com/", frequency: 8 },
+              { text: "Blogs", url: "http://www.blogspot.com/", frequency: 8 },
               { text: "Microsoft", url: "http://www.microsoft.com/", frequency: 20 },
               { text: "Amazon.com", url: "http://www.amazon.com/", frequency: 1 },
               { text: "MSN", url: "http://www.msn.com/", frequency: 3 },
@@ -121,7 +121,7 @@ In the above code example, the **frequency** properties are used to set the min 
               { text: "Twitter", url: "http://www.Twitter.com/", frequency: 0 },
               { text: "Menucool", url: "http://www.menucool.com", frequency: 3 },
               { text: "BBC", url: "http://www.bbc.co.uk/", frequency: 11 },
-              { text: "Valleywag", url: "http://valleywag.gawker.com/", frequency: 6 },
+              { text: "Valley", url: "http://valleywag.gawker.com/", frequency: 6 },
               { text: "WOWslider", url: "http://wowslider.com", frequency: 9 },
               { text: "W3schools", url: "http://www.w3schools.com/", frequency: 2 }
 
@@ -144,7 +144,7 @@ Here, you can set the **TagCloud** events such as create, mouseover, mouseout, c
 
 {% highlight html %}
 
-    <div id="tag" ej-tagcloud e-datasource="dataList" e-titletext="Popular Sites" e-create="oncreate" e-mouseover="onmouseover" e-mouseout="onmouseout" e-click="onclick"></div>
+    <div id="tag" ej-tagcloud e-datasource="dataList" e-titletext="Popular Sites" e-create="create" e-mouseover="mouseover" e-mouseout="mouseout" e-click="click"></div>
 
 {% endhighlight %}
 
@@ -156,10 +156,10 @@ Here, you can set the **TagCloud** events such as create, mouseover, mouseout, c
               { text: "Google", url: "http://www.google.co.in", frequency: 12 },
               { text: "a2zwebhelp", url: "http://www.a2zwebhelp.com", frequency: 3 },
               { text: "Arts Technica", url: "http://arstechnica.com/", frequency: 8 },
-              { text: "Bxslider", url: "http://bxslider.com/examples", frequency: 2 },
+              { text: "slider", url: "http://bxslider.com/examples", frequency: 2 },
               { text: "Yahoo", url: "http://in.yahoo.com/", frequency: 12 },
               { text: "Facebook", url: "https://www.facebook.com/", frequency: 5 },
-              { text: "Blogspot", url: "http://www.blogspot.com/", frequency: 8 },
+              { text: "Blogs", url: "http://www.blogspot.com/", frequency: 8 },
               { text: "Microsoft", url: "http://www.microsoft.com/", frequency: 20 },
               { text: "Amazon.com", url: "http://www.amazon.com/", frequency: 1 },
               { text: "MSN", url: "http://www.msn.com/", frequency: 3 },
@@ -168,7 +168,7 @@ Here, you can set the **TagCloud** events such as create, mouseover, mouseout, c
               { text: "Twitter", url: "http://www.Twitter.com/", frequency: 0 },
               { text: "Menucool", url: "http://www.menucool.com", frequency: 3 },
               { text: "BBC", url: "http://www.bbc.co.uk/", frequency: 11 },
-              { text: "Valleywag", url: "http://valleywag.gawker.com/", frequency: 6 },
+              { text: "Valley", url: "http://valleywag.gawker.com/", frequency: 6 },
               { text: "WOWslider", url: "http://wowslider.com", frequency: 9 },
               { text: "W3schools", url: "http://www.w3schools.com/", frequency: 2 }
 
@@ -177,19 +177,19 @@ Here, you can set the **TagCloud** events such as create, mouseover, mouseout, c
       	angular.module('TagApp', ['ejangular']).controller('TagCtrl', function ($scope) {
 	
 	      $scope.dataList=list;
-	      $scope.oncreate=function()
+	      $scope.create=function()
 	        {
 	          alert();
 	        }
-	     $scope.onmouseover=function()
+	     $scope.mouseover=function()
 	         {
 	          alert();
 	        }
-     	 $scope.onmouseout=function()
+     	 $scope.mouseout=function()
           {
 	          alert();
 	        }
-    	$scope.onclick=function()
+    	$scope.click=function()
           {
 	          alert();
 	        }
