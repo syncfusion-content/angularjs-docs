@@ -14,7 +14,7 @@ This section explains briefly about how to create a **Menu** control in your app
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
 
-## Create a Menu in Angular JS
+## Create a Menu in AngularJS
 
 **Essential JavaScript** **Menu** widgets are basically provided with built-in features like keyboard navigation, show and hide **Menu** items with animations, and flexible API's. From the following guidelines, you can learn how to render **Menu** control with Remote data source value.
 
@@ -137,7 +137,7 @@ The following code example describes how to initialize first level sub menu item
 			{ id: 22, parentId: 4, text: "Latest Version" },
 			{ id: 23, parentId: 5, text: "Technology Resource Portal " },
 			{ id: 24, parentId: 5, text: "Case Studies" },
-			{ id: 25, parentId: 5, text: "Bouchers & Datasheets" },
+			{ id: 25, parentId: 5, text: "Boucher & Data sheets" },
 			{ id: 26, parentId: 5, text: "FAQ" }                   
         ];
         angular.module('MenuApp', ['ejangular']).controller('MenuCtrl', function ($scope) {
@@ -179,7 +179,7 @@ To initialize multiple levels sub menu items, use the following code example.
 			{ id: 22, parentId: 4, text: "Latest Version" },
 			{ id: 23, parentId: 5, text: "Technology Resource Portal " },
 			{ id: 24, parentId: 5, text: "Case Studies" },
-			{ id: 25, parentId: 5, text: "Bouchers & Datasheets" },
+			{ id: 25, parentId: 5, text: "Boucher & Data sheets" },
 			{ id: 26, parentId: 5, text: "FAQ" },
             //second level child
             {id: 111, parentId: 18, text: "Consulting" },
