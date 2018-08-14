@@ -94,6 +94,8 @@ A simple HTML file with required CSS and script reference added to create TreeVi
 
 You can bind local data source to create a TreeView as shown below code example.
 
+The [beforeLoad](https://help.syncfusion.com/api/js/ejtreeview#events:beforeload) event will be triggered before loading nodes into TreeView.
+
 {% highlight html %}
 <div id="treeView" e-showCheckbox="true" ej-treeview e-fields-datasource="dataList" e-fields-id="id" e-fields-parentid="pid" e-fields-text="name" e-fields-haschild="hasChild" e-fields-expanded="expanded" />
 {% endhighlight %}
