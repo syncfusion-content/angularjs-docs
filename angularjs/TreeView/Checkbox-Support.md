@@ -37,7 +37,7 @@ TreeView supports tristate checkboxes in addition with standard two state checkb
         { id: 11, name: "Horror Novels", hasChild: true },
         { id: 12, pid: 11, name: "The Shining (The Shining, #1) " },
         { id: 13, pid: 11, name: "The Haunting of Hill House " },
-        { id: 14, pid: 11, name: "The Silence of the Lambs (Hannibal Lecter, #2) " },
+        { id: 14, pid: 11, name: "The Silence of the Lambs " },
         { id: 15, name: "Novel Lists", hasChild: true },
         { id: 16, pid: 15, name: "Shadow Hills (Shadow Hills, #1) " },
         { id: 17, pid: 15, name: "After Forever Ends " },
