@@ -12,7 +12,7 @@ keywords: ejpivotgrid, pivotgrid, pivotgrid widget, js pivotgrid
 
 Drill-through retrieves the raw items that are used to create a specific cell. To enable drill-through support, set `e-enableDrillThrough` property to true. Raw items are obtained through the `e-drillThrough` event, using which user can bind them to an external widget for precise view. 
 
-## Olap
+## OLAP
 
 N> Drill-through is supported in PivotGrid only when we configure and enable drill-through action at the Cube. 
 
