@@ -115,7 +115,7 @@ In an **HTML** page, specify the **div** elements to render the **Range Slider.*
 {% highlight html %}
 
    <div class="txt">Range Slider</div>
-   <div id="rangeSlider" ej-slider e-width="width" e-values="slidervalues" e-slidertype="range"  e-showbuttons="true"></div>
+   <div id="rangeSlider" ej-slider e-width="width" e-values="values" e-slidertype="range"  e-showbuttons="true"></div>
                         
 
 
@@ -125,7 +125,7 @@ In an **HTML** page, specify the **div** elements to render the **Range Slider.*
 
     angular.module('sliderApp', ['ejangular'])
     .controller('SliderCtrl', function ($scope) {
-    $scope.slidervalues = [30, 60];
+    $scope.values = [30, 60];
     $scope.width = "500";
     });
 
