@@ -37,7 +37,7 @@ TreeView supports tristate checkboxes in addition with standard two state checkb
         { id: 11, name: "Horror Novels", hasChild: true },
         { id: 12, pid: 11, name: "The Shining (The Shining, #1) " },
         { id: 13, pid: 11, name: "The Haunting of Hill House " },
-        { id: 14, pid: 11, name: "The Silence of the Lambs (Hannibal Lecter, #2) " },
+        { id: 14, pid: 11, name: "The Silence of the Lambs " },
         { id: 15, name: "Novel Lists", hasChild: true },
         { id: 16, pid: 15, name: "Shadow Hills (Shadow Hills, #1) " },
         { id: 17, pid: 15, name: "After Forever Ends " },
@@ -64,7 +64,8 @@ By default checkbox state of child nodes depends up on parent node checkbox stat
 
 ## Check or Uncheck Node
 
-Tree node can be checked or unchecked using [checkNode](http://help.syncfusion.com/api/js/ejtreeview#methods:checknode) and [uncheckNode](http://help.syncfusion.com/api/js/ejtreeview#methods:unchecknode) methods while [showCheckbox](http://help.syncfusion.com/api/js/ejtreeview#members:showcheckbox) property is enabled in TreeView. [nodeCheck](http://help.syncfusion.com/api/js/ejtreeview#events:nodecheck) and [nodeUncheck](http://help.syncfusion.com/api/js/ejtreeview#events:nodeuncheck) event occurs based on checkbox state.
+Tree node can be checked or unchecked using [checkNode](https://help.syncfusion.com/api/js/ejtreeview#methods:checknode) and [uncheckNode](https://help.syncfusion.com/api/js/ejtreeview#methods:unchecknode) methods while [showCheckbox](https://help.syncfusion.com/api/js/ejtreeview#members:showcheckbox) property is enabled in TreeView. Also you can get or set the checked nodes of TreeView using [checkedNodes](https://help.syncfusion.com/api/js/ejtreeview#members:checkednodes) property, which indicates the checked nodes index collection as array. The [nodeCheck](https://help.syncfusion.com/api/js/ejtreeview#events:nodecheck) and [nodeUncheck](https://help.syncfusion.com/api/js/ejtreeview#events:nodeuncheck) event occurs based on checkbox state.
+You can use [isNodeChecked](https://help.syncfusion.com/api/js/ejtreeview#methods:isnodechecked) method to check the particular TreeView node is checked or unchecked. Also you can use [checkAll](https://help.syncfusion.com/api/js/ejtreeview#methods:checkall) method to check all the nodes in TreeView.
 
 {% highlight js %}
 
@@ -88,6 +89,7 @@ Tree node can be checked or unchecked using [checkNode](http://help.syncfusion.c
 ## Get Checked Nodes
 
 To get checked nodes of TreeView, you can use [getCheckedNodes](http://help.syncfusion.com/api/js/ejtreeview#methods:getcheckednodes) method. It returns the collection of tree node.
+Also you can get currently checked nodes indexes in TreeView by using [getCheckedNodesIndex](https://help.syncfusion.com/api/js/ejtreeview#methods:getcheckednodesindex) method.
 
 {% highlight js %}
 
