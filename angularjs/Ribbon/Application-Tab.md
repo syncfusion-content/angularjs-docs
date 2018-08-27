@@ -147,14 +147,10 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
         }
     </style>
     <script>
-        var fontfamily = ["Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica"],
-          fontsize = ["1pt", "2pt", "3pt", "4pt", "5pt"],
           action1 = ["New", "Clear"],
           action2 = ["Bold", "Italic", "Underline", "strikethrough", "superscript", "subscript", "JustifyLeft", "JustifyCenter", "JustifyRight", "JustifyFull", "Undo", "Redo"];
         angular.module('RibbonApp', ['ejangular'])
             .controller('RibbonCtrl', function ($scope) {
-                $scope.fontlist = fontfamily;
-                $scope.fontsize = fontsize;
                 $scope.action1 = action1;
                 $scope.action2 = action2;
                 $scope.backstage = {
