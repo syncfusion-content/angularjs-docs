@@ -71,7 +71,7 @@ A simple HTML file with required CSS and script reference added to create TreeVi
 <!doctype html>
 <html lang="en" ng-app="TreeCtrl">
 <head>
-    <title>Essential Studio for JavaScript : Angular JS Support for TreeView </title>
+    <title>Essential Studio for JavaScript : AngularJS Support for TreeView </title>
     <!-- Style sheet for default theme (flat azure) -->
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--Scripts-->
@@ -94,6 +94,8 @@ A simple HTML file with required CSS and script reference added to create TreeVi
 
 You can bind local data source to create a TreeView as shown below code example.
 
+The [beforeLoad](https://help.syncfusion.com/api/js/ejtreeview#events:beforeload) event will be triggered before loading nodes into TreeView.
+
 {% highlight html %}
 <div id="treeView" e-showCheckbox="true" ej-treeview e-fields-datasource="dataList" e-fields-id="id" e-fields-parentid="pid" e-fields-text="name" e-fields-haschild="hasChild" e-fields-expanded="expanded" />
 {% endhighlight %}
@@ -113,7 +115,7 @@ var  phones = [
                     { id: 11, name: "Horror Novels", hasChild: true },
                     { id: 12, pid: 11, name: "The Shining (The Shining, #1) " },
                     { id: 13, pid: 11, name: "The Haunting of Hill House " },
-                    { id: 14, pid: 11, name: "The Silence of the Lambs (Hannibal Lecter, #2) " },
+                    { id: 14, pid: 11, name: "The Silence of the Lambs " },
                     { id: 15, name: "Novel Lists", hasChild: true },
                     { id: 16, pid: 15, name: "Shadow Hills (Shadow Hills, #1) " },
                     { id: 17, pid: 15, name: "After Forever Ends " },
@@ -138,7 +140,7 @@ When enable **e-deepwatch** support, if do any interaction (like drag and drop, 
 
 <body ng-app="TreeCtrl" ng-controller="TreeViewCtrl">
     <!--create the TreeView wrapper-->
-    <div id="twoway" e-deepwatch="true" ej-treeview e-fields="fields" e-fields-datasource="data" e-allowediting="true" e-allowmultiselection="true" e-allowdraganddrop="true" e-showcheckbox="true"></div>
+    <div id="twoWay" e-deepwatch="true" ej-treeview e-fields="fields" e-fields-datasource="data" e-allowediting="true" e-allowmultiselection="true" e-allowdraganddrop="true" e-showcheckbox="true"></div>
     {{data}}
     <br />
     <button type="button" id="btn1" ng-click="addNode()">Add node via scope</button>
@@ -170,8 +172,8 @@ angular.module('TreeCtrl', ['ejangular']).controller('TreeViewCtrl', function ($
     };
     var i = 4;
     $scope.addScope = function () {
-        var treeobj = $("#twoway").data("ejTreeView");
-        treeobj.addNode({ id: i, name: "New Item " + i });
+        var treeObj = $("#twoWay").data("ejTreeView");
+        treeObj.addNode({ id: i, name: "New Item " + i });
         i++;
     };
     $scope.addNode = function () {
@@ -179,8 +181,8 @@ angular.module('TreeCtrl', ['ejangular']).controller('TreeViewCtrl', function ($
         i++;
     };
     $scope.removeScope = function () {
-        var treeobj = $("#twoway").data("ejTreeView");
-        treeobj.removeNode(); //removed the selected node in TreeView
+        var treeObj = $("#twoWay").data("ejTreeView");
+        treeObj.removeNode(); //removed the selected node in TreeView
     };
     $scope.removeNode = function () {
         $scope.data.pop(); // removed last item in data source

@@ -93,7 +93,7 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
                     <div class="e-accuser e-newpageicon"></div>
                     <div class="e-userCon">
                         <div>user</div>
-                        <div>xyz@syncfusion.com</div>
+                        <div>xy@syncfusion.com</div>
                     </div>
                 </div>
             </div>
@@ -147,14 +147,10 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
         }
     </style>
     <script>
-        var fontfamily = ["Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica"],
-          fontsize = ["1pt", "2pt", "3pt", "4pt", "5pt"],
           action1 = ["New", "Clear"],
           action2 = ["Bold", "Italic", "Underline", "strikethrough", "superscript", "subscript", "JustifyLeft", "JustifyCenter", "JustifyRight", "JustifyFull", "Undo", "Redo"];
         angular.module('RibbonApp', ['ejangular'])
             .controller('RibbonCtrl', function ($scope) {
-                $scope.fontlist = fontfamily;
-                $scope.fontsize = fontsize;
                 $scope.action1 = action1;
                 $scope.action2 = action2;
                 $scope.backstage = {
@@ -185,3 +181,5 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
 ![](Application-Tab_images/Application-Tab_img2.png)
 
 N> Height & width of backstage can be set using `height` and `width`, if these are not set, Ribbon’s height & width will be considered.
+
+You can add/remove/update backStage item to the ribbon control by using [`addBackStageItem`](https://help.syncfusion.com/api/js/ejribbon#methods:addbackstageitem), [`removeBackStageItem`](https://help.syncfusion.com/api/js/ejribbon#methods:removebackstageitem) and [`updateBackStageItem`](https://help.syncfusion.com/api/js/ejribbon#methods:updatebackstageitem) methods. Also you can show/hide the backstage page in ribbon control by using [`showBackstage`](https://help.syncfusion.com/api/js/ejribbon#methods:showbackstage) and [`hideBackstage`](https://help.syncfusion.com/api/js/ejribbon#methods:hidebackstage methods.
