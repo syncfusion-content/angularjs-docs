@@ -84,12 +84,12 @@ Add the following code example in the &lt;body&gt; tag in the HTML page. Set
 
 {% highlight html %}
 
-<div ng-controller="ReportDesignerCrtl">
+<div ng-controller="ReportDesignerController">
     <div id="container" ej-reportdesigner e-serviceurl="serviceurl" style="width:100%;height:680px;"> </div>
 </div>
 
 <script type="text/javascript">
-    angular.module('syncApp', ['ejangular']).controller('ReportDesignerCrtl', function ($scope, $interval) {
+    angular.module('syncApp', ['ejangular']).controller('ReportDesignerController', function ($scope, $interval) {
         $scope.serviceurl = "http://js.syncfusion.com/ejservices/api/ReportDesigner"
     });
 </script>
