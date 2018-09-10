@@ -99,7 +99,7 @@ Add the following code example in the &lt;body&gt; tag in the HTML page. Set
 
 <script type="text/javascript">
     angular.module('syncApp', ['ejangular']).controller('ReportDesignerController', function ($scope, $interval) {
-        $scope.serviceurl = "http://js.syncfusion.com/ejservices/api/ReportDesigner"
+        $scope.serviceurl = "http://js.syncfusion.com/demos/ejservices/api/ReportDesigner"
     });
 </script>
 
