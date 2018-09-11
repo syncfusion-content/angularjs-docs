@@ -28,7 +28,7 @@ Using tree grid default toolbar items, you can perform the following operations:
 		   
 * **CollapseAll**: Collapses all the tree grid rows.
 		   
-* **PdfExport**: Exports tree grid in Pdf format.
+* **PdfExport**: Exports tree grid in PDF format.
 		   
 * **ExcelExport**: Exports tree grid in Excel format.
 
