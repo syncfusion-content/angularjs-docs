@@ -83,7 +83,7 @@ Refer the [CDN](https://help.syncfusion.com/js/cdn) script files with other requ
 
 {% endhighlight %}
 
-In the above code, `ej.web.all.min.js`script reference has been added for demonstration purpose. It is not recommended to use this for deployment purpose, as its file size is larger since it contains all the widgets. Instead, you can use [CSG](http://csg.syncfusion.com/#) utility to generate a custom script file with the required widgets for deployment purpose.
+In the above code, `ej.web.all.min.js` script reference has been added for demonstration purpose. It is not recommended to use this for deployment purpose, as its file size is larger since it contains all the widgets. Instead, you can use [CSG](http://csg.syncfusion.com/#) utility to generate a custom script file with the required widgets for deployment purpose.
 
 ## Initialize and configure the control
 
