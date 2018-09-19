@@ -46,7 +46,7 @@ The batch editing support in the tree grid is used to save all added, edited, an
 
 {% highlight html %}
 
-<div ej-treegrid id="treegrid e-editsettings="editSettings">
+<div ej-treegrid id="treegrid" e-editsettings="editSettings">
 </div>
 
 {% endhighlight %}
