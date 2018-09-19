@@ -9,7 +9,7 @@ documentation: ug
 
 ## Searching
 
-The TreeGrid control has an option to search its content using toolbar search box. The toolbar search box can be enabled by using the `toolbarItems` in [`e-toolbarsettings`](/api/angular/ejtreegrid#members:toolbarsettings) property. The following code example explains how to integrate search textbox in toolbar.
+The TreeGrid control has an option to search its content using toolbar search box. The toolbar search box can be enabled by using the `toolbarItems` in [`e-toolbarsettings`](/api/js/ejtreegrid#members:toolbarsettings) property. The following code example explains how to integrate search textbox in toolbar.
 
 {% highlight html %}  
            <div id="angulartreegrid" ej-treegrid e-toolbarsettings="toolbarSettings"></div>            
@@ -34,7 +34,7 @@ The below screenshot shows TreeGrid search with `plan` key word.
 
 ## Search Hierarchy Modes
 
-The tree grid supports different types of search mode through the `searchHierarchyMode`of [`e-searchsettings`](/api/angular/ejtreegrid#members:searchsettings-searchhierarchymode) property.
+The tree grid supports different types of search mode through the `searchHierarchyMode`of [`e-searchsettings`](/api/js/ejtreegrid#members:searchsettings-searchhierarchymode) property.
 
 The following are the types of search mode available in the tree grid.
 
