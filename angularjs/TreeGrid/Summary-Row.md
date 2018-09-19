@@ -19,11 +19,11 @@ Summary rows in TreeGrid is used to summarize every hierarchy with the set of pr
 
 ## Defining summary columns
 
-* [`summaryType`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-summarytype "summaryRows.summaryColumn.summaryType") - Using this property, user can define the type of summary to be displayed in a column. 
-* [`dataMember`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-datamember "summaryRows.summaryColumns.dataMember") - This property is used to map the field values which is used for summary calculations.
-* [`displayColumn`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-displaycolumn "summaryRows.summaryColumns.displayColumn") - This property is used to specify the column in which the summary to be displayed.
-* [`prefix`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-prefix "summaryRows.summaryColumns.prefix") and [`suffix`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-suffix "summaryRows.summaryColumns.suffix") properties are used to define the text should be displayed along with the summary column value.
-* [`format`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-format "summaryRows.summaryColumns.format") property is used for formatting the summary column value.
+* [`summaryType`](https://help.syncfusion.com/api/angular/ejtreegrid#members:summaryrows-summarycolumns-summarytype "summaryRows.summaryColumn.summaryType") - Using this property, user can define the type of summary to be displayed in a column. 
+* [`dataMember`](https://help.syncfusion.com/api/angular/ejtreegrid#members:summaryrows-summarycolumns-datamember "summaryRows.summaryColumns.dataMember") - This property is used to map the field values which is used for summary calculations.
+* [`displayColumn`](https://help.syncfusion.com/api/angular/ejtreegrid#members:summaryrows-summarycolumns-displaycolumn "summaryRows.summaryColumns.displayColumn") - This property is used to specify the column in which the summary to be displayed.
+* [`prefix`](https://help.syncfusion.com/api/angular/ejtreegrid#members:summaryrows-summarycolumns-prefix "summaryRows.summaryColumns.prefix") and [`suffix`](https://help.syncfusion.com/api/angular/ejtreegrid#members:summaryrows-summarycolumns-suffix "summaryRows.summaryColumns.suffix") properties are used to define the text should be displayed along with the summary column value.
+* [`format`](https://help.syncfusion.com/api/angular/ejtreegrid#members:summaryrows-summarycolumns-format "summaryRows.summaryColumns.format") property is used for formatting the summary column value.
 
 The below code snippet explains defining a summary row in TreeGrid,
 {% highlight js %}
@@ -129,7 +129,7 @@ N> We can also customize the expander icon column in total summary row by using 
 
 ### Using Method
 
-Total summary rows in TreeGrid can be expanded/collapsed by using [`expandCollapseTotalSummary`](https://help.syncfusion.com/api/js/ejgantt#methods:expandCollapseTotalSummary "expandCollapseTotalSummary") method.
+Total summary rows in TreeGrid can be expanded/collapsed by using [`expandCollapseTotalSummary`](https://help.syncfusion.com/api/angular/ejgantt#methods:expandCollapseTotalSummary "expandCollapseTotalSummary") method.
 Please find the code example to collapse the total summary rows below.
 {% highlight html %}
 <body ng-controller="TreeGridCtrl"> 
@@ -148,3 +148,38 @@ Please find the code example to collapse the total summary rows below.
             treeObj.expandCollapseTotalSummary(false);
         }    
 {% endhighlight %}
+
+## Custom Summary
+
+Custom summary can be used to create summary values based on your required custom logic and calculations. To enable the custom summary, the [summaryType](https://help.syncfusion.com/api/angular/ejtreegrid#members:summaryrows-summarycolumns-summarytype "summaryType") should be set to 'custom' and the [customSummaryValue](https://help.syncfusion.com/api/angular/ejtreegrid#members:summaryrows-summarycolumns-customsummaryvalue "customSummaryValue") property should be defined as function. After the custom calculation, the returned value will be displayed in the corresponding summary cell.
+
+{% highlight html %}
+
+<div ej-treegrid id="TreeGrid" e-summaryrows="summaryRows" e-showsummaryrow=true>
+</div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+    var summaryRows = [{
+        title: "Custom Summary",
+        summaryColumns: [{
+            summaryType: ej.TreeGrid.SummaryType.Custom,
+            customSummaryValue: currency,
+            displayColumn: "TotalCosts"
+        }]
+    }];
+    angular.module('listCtrl', ['ejangular'])
+        .controller('TreeGridCtrl', function($scope) {
+            //…
+            $scope.summaryRows = summaryRows;
+        });
+
+
+{% endhighlight %}
+
+The output of the tree grid with custom summary value is obtained as follows.
+
+![](SummaryRows_images/CustomSummary_img1.png)
+
