@@ -56,7 +56,6 @@ The batch editing support in the tree grid is used to save all added, edited, an
 angular.module('listCtrl', ['ejangular'])
        .controller('TreeGridCtrl', function ($scope) {
            $scope.editSettings = { allowEditing: true, editMode: "batchEditing"};
-           $scope.rowHeight = 83;
        });
 
 {% endhighlight %}
@@ -81,7 +80,6 @@ In batch editing, the edit mode can be changed to **cell** or **row** or **dialo
 angular.module('listCtrl', ['ejangular'])
        .controller('TreeGridCtrl', function ($scope) {
            $scope.editSettings = {batchEditSettings:{editMode : ej.TreeGrid.BatchEditMode.Row};
-           $scope.rowHeight = 83;
        });
 
 {% endhighlight %}
