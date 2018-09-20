@@ -117,7 +117,7 @@ Create the Schedule control using `ej-schedule` directive and define all its oth
 
 <body>
 	<div ng-controller="ScheduleCtrl">
-		<ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-currentview="currentview" e-currentdate="setDate">
+		<ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-currentview="currentView" e-currentdate="setDate">
 	    </ej-schedule>
 	</div>
 </body>
@@ -126,7 +126,7 @@ Create the Schedule control using `ej-schedule` directive and define all its oth
 
 {% endhighlight %}
 
-In the above code example, `currentview` and `setDate` are the scope variables defined, in order to enable the two-way binding. Therefore, refer the below code example to know how to enable the model binding.
+In the above code example, `currentView` and `setDate` are the scope variables defined, in order to enable the two-way binding. Therefore, refer the below code example to know how to enable the model binding.
 
 {% highlight html %}
 
@@ -134,13 +134,13 @@ In the above code example, `currentview` and `setDate` are the scope variables d
 <head> <!-- Dependency file references --> </head>
 <body>
 	<div ng-controller="ScheduleCtrl">
-		<ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-currentview="currentview" e-currentdate="setDate">
+		<ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-currentview="currentView" e-currentdate="setDate">
 	    </ej-schedule>
 	</div>
     <script>
 	angular.module('ScheduleApp', ['ejangular']).controller('ScheduleCtrl', function ($scope) {
 		$scope.setDate = new Date(2016, 4, 5);
-		$scope.currentview = "week";
+		$scope.currentView = "week";
 	});
 </script>
 </body>
@@ -180,7 +180,7 @@ Set the Scheduler `dataSource` with a set of local JSON data by passing it throu
 <head> <!-- Dependency file references --> </head>
 <body>
 	<div ng-controller="ScheduleCtrl">
-		<ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-currentview="currentview" e-currentdate="setDate"
+		<ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-currentview="currentView" e-currentdate="setDate"
             e-appointmentsettings-datasource="appointments" 
 			e-appointmentsettings-id="Id" 
 			e-appointmentsettings-subject="Subject" 
@@ -205,7 +205,7 @@ Set the Scheduler `dataSource` with a set of local JSON data by passing it throu
 	angular.module('ScheduleApp', ['ejangular']).controller('ScheduleCtrl', function ($scope) {
         $scope.appointments = dManager;
 		$scope.setDate = new Date(2016, 4, 5);
-		$scope.currentview = "week";
+		$scope.currentView = "week";
 	});
 </script>
 </body>
@@ -245,7 +245,7 @@ Those above specified field names of appointment data must be mapped accurately 
 {% highlight html %}
 
 	<div ng-controller="ScheduleCtrl">
-		<ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-currentview="currentview" e-currentdate="setDate"
+		<ej-schedule id="Schedule1" e-width="100%" e-height="525px" e-currentview="currentView" e-currentdate="setDate"
             e-appointmentsettings-datasource="appointments" 
 			e-appointmentsettings-id="AppId" 
 			e-appointmentsettings-subject="AppSubject" 
