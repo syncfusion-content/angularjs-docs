@@ -9,7 +9,7 @@ keywords: ejReportDesigner, ReportDesigner, js ReportDesigner
 
 # Getting Started
 
-The AngularJS directives are usually included within the `ej.widget.angular.min.js` file and all these directives are usually packed together in a common module known as `ejangular`. For basic details on how to configure Syncfusion widgets in AngularJS framework, refer [here](https://help.syncfusion.com/js/angularjs).
+This section explains briefly about how to create a ReportDesigner in your web application with AngularJS.
 
 ## Script/CSS Reference
 
@@ -26,6 +26,22 @@ The external AngularJS script file `angular.min.js` can also be accessed from th
 An another mandatory script is `ej.widget.angular.min.js`, which can be accessed from the below specified location.
 
 * **(installed location)**\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\common
+
+**External Dependency - Code Mirror**
+
+In report designer to edit the SQL queries with syntax highlighter need to refer the below code mirror scripts and themes.
+
+{% highlight html %}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/show-hint.min.css" rel="stylesheet" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/show-hint.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/sql-hint.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/mode/sql/sql.min.js" type="text/javascript"></script>
+
+{% endhighlight %} 
 
 Create a new HTML file and include the below initial code.
 
@@ -72,7 +88,7 @@ Refer the CSS file from the specific theme folder to your HTML file within the h
 
 {% endhighlight %}
 
-In the above code, `ej.web.all.min.js` script reference has been added for demonstration purpose. It is not recommended to use this for deployment purpose, as its file size is larger since it contains all the widgets. Instead, you can use [CSG](http://csg.syncfusion.com/#) utility to generate a custom script file with the required widgets for deployment purpose.
+N> In the above code, `ej.web.all.min.js` script reference has been added for demonstration purpose. It is not recommended to use this for deployment purpose, as its file size is larger since it contains all the widgets. Instead, you can use [CSG](http://csg.syncfusion.com/#) utility to generate a custom script file with the required widgets for deployment purpose.
 
 ## Initialize and configure the control
 
@@ -93,6 +109,8 @@ Add the following code example in the &lt;body&gt; tag in the HTML page. Set
 </script>
 
 {% endhighlight %}
+
+To create your own reporting service for report designer follow the steps explained in the following link [Reporting Service ](https://help.syncfusion.com/js/reportdesigner/getting-started#add-webapi-controller-for-report-designer).
 
 ### Run the Application
 
