@@ -140,7 +140,7 @@ In the above code example, `currentView` and `setDate` are the scope variables d
     <script>
 	angular.module('ScheduleApp', ['ejangular']).controller('ScheduleCtrl', function ($scope) {
 		$scope.setDate = new Date(2016, 4, 5);
-		$scope.currentview = "week";
+		$scope.currentView = "week";
 	});
 </script>
 </body>
