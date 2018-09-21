@@ -59,7 +59,7 @@ Create a new HTML file and include the below initial code.
 
 {% endhighlight %}
 
-Refer the CSS file from the specific theme folder to your HTML file within the head section as shown below. Please refer to our built-in theme [here](https://help.syncfusion.com/js/theming-in-essential-javascript-components).
+Add the scripts and CSS references to your HTML file within the head section as shown in the following code example.
 
 {% highlight html %}
 
