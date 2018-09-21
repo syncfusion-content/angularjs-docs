@@ -9,7 +9,9 @@ keywords: ejReportDesigner, ReportDesigner, js ReportDesigner
 
 # Getting Started
 
-The AngularJS directives are usually included within the `ej.widget.angular.min.js` file and all these directives are usually packed together in a common module known as `ejangular`. For basic details on how to configure Syncfusion widgets in AngularJS framework, refer [here](https://help.syncfusion.com/js/angularjs).
+This section explains briefly about how to create a ReportDesigner in your web application with AngularJS.
+
+## Script/CSS Reference
 
 To get start with the report designer control in AngularJS framework, the following list of external dependencies are mandatory which are available in the following link, 
 
@@ -25,7 +27,21 @@ An another mandatory script is `ej.widget.angular.min.js`, which can be accessed
 
 * **(installed location)**\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\common
 
-## Script/CSS Reference
+**External Dependency - Code Mirror**
+
+In report designer to edit the SQL queries with syntax highlighter need to refer the below code mirror scripts and themes.
+
+{% highlight html %}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/show-hint.min.css" rel="stylesheet" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/show-hint.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/sql-hint.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/mode/sql/sql.min.js" type="text/javascript"></script>
+
+{% endhighlight %} 
 
 Create a new HTML file and include the below initial code.
 
@@ -43,7 +59,7 @@ Create a new HTML file and include the below initial code.
 
 {% endhighlight %}
 
-Refer the CSS file from the specific theme folder to your HTML file within the head section as shown below. Please refer to our built-in theme [here](https://help.syncfusion.com/js/theming-in-essential-javascript-components).
+Add the scripts and CSS references to your HTML file within the head section as shown in the following code example.
 
 {% highlight html %}
 
@@ -52,29 +68,18 @@ Refer the CSS file from the specific theme folder to your HTML file within the h
     <title>Getting Started - Report Designer</title>
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.reportdesigner.min.css" rel="stylesheet" />
+    <!--  code miror theme  -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/show-hint.min.css" rel="stylesheet" />
-</head>
-
-{% endhighlight %}
-
-Refer the [CDN](https://help.syncfusion.com/js/cdn) script files with other required external dependencies.
-
-{% highlight html %}
-
-<head>
-    <meta charset="utf-8" />
-    <title>Getting Started - Report Designer</title>
-    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.reportdesigner.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/show-hint.min.css" rel="stylesheet" />
+    <!--  jquery script  -->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
+    <!--  code miror script  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/show-hint.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/sql-hint.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/mode/sql/sql.min.js" type="text/javascript"></script>
+    <!-- Essential JS UI widget -->  
     <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.reportdesigner.min.js"></script>
@@ -83,7 +88,7 @@ Refer the [CDN](https://help.syncfusion.com/js/cdn) script files with other requ
 
 {% endhighlight %}
 
-In the above code, `ej.web.all.min.js`script reference has been added for demonstration purpose. It is not recommended to use this for deployment purpose, as its file size is larger since it contains all the widgets. Instead, you can use [CSG](http://csg.syncfusion.com/#) utility to generate a custom script file with the required widgets for deployment purpose.
+N> In the above code, `ej.web.all.min.js` script reference has been added for demonstration purpose. It is not recommended to use this for deployment purpose, as its file size is larger since it contains all the widgets. Instead, you can use [CSG](http://csg.syncfusion.com/#) utility to generate a custom script file with the required widgets for deployment purpose.
 
 ## Initialize and configure the control
 
@@ -104,6 +109,8 @@ Add the following code example in the &lt;body&gt; tag in the HTML page. Set
 </script>
 
 {% endhighlight %}
+
+N> In the report designer service url, need to mention the controller name of the reporting service. To create reporting service for report designer follow the steps explained in the following link [Reporting Service ](https://help.syncfusion.com/js/reportdesigner/getting-started#add-webapi-controller-for-report-designer).
 
 ### Run the Application
 

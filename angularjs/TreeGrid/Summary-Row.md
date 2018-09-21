@@ -148,3 +148,38 @@ Please find the code example to collapse the total summary rows below.
             treeObj.expandCollapseTotalSummary(false);
         }    
 {% endhighlight %}
+
+## Custom Summary
+
+Custom summary can be used to create summary values based on your required custom logic and calculations. To enable the custom summary, the [summaryType](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-summarytype "summaryType") should be set to 'custom' and the [customSummaryValue](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-customsummaryvalue "customSummaryValue") property should be defined as function. After the custom calculation, the returned value will be displayed in the corresponding summary cell.
+
+{% highlight html %}
+
+<div ej-treegrid id="TreeGrid" e-summaryrows="summaryRows" e-showsummaryrow=true>
+</div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+    var summaryRows = [{
+        title: "Custom Summary",
+        summaryColumns: [{
+            summaryType: ej.TreeGrid.SummaryType.Custom,
+            customSummaryValue: currency,
+            displayColumn: "TotalCosts"
+        }]
+    }];
+    angular.module('listCtrl', ['ejangular'])
+        .controller('TreeGridCtrl', function($scope) {
+            //…
+            $scope.summaryRows = summaryRows;
+        });
+
+
+{% endhighlight %}
+
+The output of the tree grid with custom summary value is obtained as follows.
+
+![](SummaryRows_images/CustomSummary_img1.png)
+
