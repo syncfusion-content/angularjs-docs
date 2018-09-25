@@ -53,7 +53,7 @@ The following screenshot shows working time range in the Gantt control:
 
 ## Highlight working time range
 
-Highlight the working time range with background color by using the `e-dayworkingtime.background` property. You can highlight the non-working time ranges in a day. To do this, set the `e-highlightnonworkingtime` property to `true`. To customize the non-working time background, use the `e-nonworkingbackground` property.
+Highlight the working time range with a background color by using the `e-dayworkingtime.background` property. You can highlight the non-working time ranges in a day. To do this, set the `e-highlightnonworkingtime` property to `true`. To customize the non-working time background, use the `e-nonworkingbackground` property.
 
 The following code snippet explains how to define the working time range with background in Gantt.
 
