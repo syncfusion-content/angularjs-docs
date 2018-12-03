@@ -117,7 +117,7 @@ The DropDownList can be created from a HTML ‘select’ element with the HTML '
 	
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![dropdownlist](Getting-Started_images/Getting-Started_img1.jpeg)
 
 ## Populating data
 
@@ -148,7 +148,7 @@ N> ODataAdaptor is the default adaptor for DataManager. On binding to other web 
 			
 {% endhighlight %}
 	
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+![Databinding](Getting-Started_images/Getting-Started_img2.jpeg)
 
 ## Setting Dimensions
 
