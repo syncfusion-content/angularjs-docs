@@ -130,7 +130,7 @@ Add the following styles to show the Button control in the center of a webpage.
 
 ## Create Office Ribbon Control
 
-In a real-time scenario, MS Office Bold and Italic options work as **Toggle Button** and Underline option works as a **Split Button**. Here, you can learn how to use **Button** control feature using Office Ribbon options.
+In a real-time scenario, Microsoft Office Bold and Italic options work as **Toggle Button** and Underline option works as a **Split Button**. Here, you can learn how to use **Button** control feature using Office Ribbon options.
 
 Add **&lt;Button&gt;** element using the following code example.
 

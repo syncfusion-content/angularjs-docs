@@ -7,7 +7,7 @@ control: DataRangePicker
 documentation: ug
 ---
 # Introduction
-**DateRangePicker** is integrated in Angular JS using Syncfusion widgets , which allows to use **daterangepicker** features such as One-way binding , Two-way binding , Form validation. Please refer the getting started page for general information regarding integrating Syncfusion widget’s.
+**DateRangePicker** is integrated in AngularJS using Syncfusion widgets , which allows to use **daterangepicker** features such as One-way binding , Two-way binding , Form validation. Please refer the getting started page for general information regarding integrating Syncfusion widget’s.
 
 # Behavior Settings
 

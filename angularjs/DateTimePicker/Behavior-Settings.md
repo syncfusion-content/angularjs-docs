@@ -7,7 +7,7 @@ control: DateTimePicker
 documentation: ug
 ---
 
-# Behaviour Settings
+# Behavior Settings
 
 In AngularJS, **DateTimePicker** Component has some default settings which helps you to perform more operation by built-in.
 

@@ -50,7 +50,7 @@ Just adding the **e-value** bounded component inside the ng-form, will work suit
 
 {% endhighlight %}
 
-Refer the below code for  uses the CSS to display validition of each form control.
+Refer the below code for  uses the CSS to display validation of each form control.
 
 {% highlight css %}
 

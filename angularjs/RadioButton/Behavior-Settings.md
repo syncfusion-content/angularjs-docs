@@ -7,7 +7,7 @@ control: RadioButton
 documentation: ug
 ---
 
-# Behaviour Settings
+# Behavior Settings
 
 In AngularJS, **ej-radioButton** control allows you to check an option to perform an action. This control allows you to select true or false or an intermediate option. These **ej-radioButton** control are supported with themes.
 This section helps us to render the **ej-radioButton** component in AngularJS platform.

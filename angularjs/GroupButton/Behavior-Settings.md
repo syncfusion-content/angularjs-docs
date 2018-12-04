@@ -13,7 +13,7 @@ EJ AngularJS GroupButton has some default behavior settings which helps you to c
 
 ## Different modes of button
 
-EJ AngularJS GroupButton provides the two different types of modes called check box mode, radio button mode. We can achive this using this **e-groupButtonMode** API which can be set through scope varibale. Setting a checkbox mode, we can perform the multiple actions in a single group. In this case, you can toggle the all the buttons state and perform the actions, since it all will behave as individual button in a group of button. 
+EJ AngularJS GroupButton provides the two different types of modes called check box mode, radio button mode. We can achieve this using this **e-groupButtonMode** API which can be set through scope variable. Setting a checkbox mode, we can perform the multiple actions in a single group. In this case, you can toggle the all the buttons state and perform the actions, since it all will behave as individual button in a group of button. 
 
 **Radio Button Mode** - we can perform the only single action with all related actions in a group of button.
 

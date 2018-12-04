@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Validation
 
-Angular JS form validation allows to monitor the state of the html element and add functionalities depending upon the states of the html element. It also allows us to define different classes for different states of the element, here we discuss about adding different classes and functionalities depending upon the states of the DateRangePicker element.
+AngularJS form validation allows to monitor the state of the html element and add functionalities depending upon the states of the html element. It also allows us to define different classes for different states of the element, here we discuss about adding different classes and functionalities depending upon the states of the DateRangePicker element.
 
 The states of the element may be pristine, touched, Untouched, dirty etc., which defines the actual states of the element.
  
@@ -37,7 +37,7 @@ as mentioned below.
 
 {% endhighlight %}
 
-In the above CSS classes, the normal input elements have been initialized using the input keyword but the datarangepicker component, CSS classes are initialized by using “.e-daterangewidget.e-input”. 
+In the above CSS classes, the normal input elements have been initialized using the input keyword but the DataRangePicker component, CSS classes are initialized by using “.e-daterangewidget.e-input”. 
 
 AngularJS provides classes and properties on the form and its inputs so that you can style each state accordingly.
 
@@ -122,7 +122,7 @@ Run the above code with mentioned CSS files to get the below mentioned outputs.
 
 **Untouched and dirty**
 
-This class is applied when the daterangepicker value has been changed using the calendar icon without touching the input element of the datarangrpicker.
+This class is applied when the DataRangePicker value has been changed using the calendar icon without touching the input element of the datarangrpicker.
 
 ![](validation_images/untouched-dirty.png)
 

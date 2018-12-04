@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started
 
-This section explains breifly about how to create a DateRangePicker in your application with JavaScript.
+This section explains briefly about how to create a DateRangePicker in your application with JavaScript.
 
 Essential JavaScript DateRangePicker provides support to display two calendars within a webpage and allows you to pick a date and even time from the calendar. In this example, you learn how to customize DateRangePicker in real-time application.
 
@@ -43,7 +43,7 @@ The DateRangePicker widget has built-in features such as keyboard navigation, ot
 
 The ng-app directive explains the root element (<html> or <body> tags) of the application. You will assign a name to the ng-app directive, then you must create a module with that name. In this module, you will have to define your directives, services, filters and configurations.
 
-Properties can be bind to ejDateRangeicker control using the prefix e- and particular property name as shown as below.
+Properties can be bind to ejDateRangePicker control using the prefix e- and particular property name as shown as below.
 
 {% highlight html %}
 

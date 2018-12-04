@@ -7,7 +7,7 @@ control: CheckBox
 documentation: ug
 ---
 
-# Behaviour Settings
+# Behavior Settings
 
 In AngularJS, **CheckBox** control allows you to check an option to perform an action. This control allows you to select true or false or an intermediate option. These **ej-checkBox** are supported with themes.
 

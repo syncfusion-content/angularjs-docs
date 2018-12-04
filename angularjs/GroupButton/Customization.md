@@ -83,7 +83,7 @@ By default GroupButton has standard height and width. You can change this height
 
 ## ContentType
 
-EJ Angular JS GroupButton's  **Button** items content can have a text and images. GroupButton provides the some predefined contentType options to easily customize the appearance of each button associated with GroupButton component without any complex CSS tricks. **GroupButton** items supports the following content types.
+EJ AngularJS GroupButton's  **Button** items content can have a text and images. GroupButton provides the some predefined contentType options to easily customize the appearance of each button associated with GroupButton component without any complex CSS tricks. **GroupButton** items supports the following content types.
 
 List of content types for button
 

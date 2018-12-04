@@ -40,7 +40,7 @@ Run the above code to get the below output.
 
 ## Event Binding
 
-The event binding allows you to add an event handler for a specified event so that your the function will be invoked when that event is triggered. In angular JS, we can bind functions to events of a button. Please refer the code sample below.
+The event binding allows you to add an event handler for a specified event so that your the function will be invoked when that event is triggered. In AngularJS, we can bind functions to events of a button. Please refer the code sample below.
 
 {% highlight html %}
 

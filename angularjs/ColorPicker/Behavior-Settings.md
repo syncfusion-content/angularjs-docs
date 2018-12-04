@@ -7,7 +7,7 @@ control: ColorPicker
 documentation: ug
 ---
 
-# Behaviour Settings
+# Behavior Settings
 
 ## Set value
 

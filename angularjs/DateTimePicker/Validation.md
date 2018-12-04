@@ -12,7 +12,7 @@ documentation: ug
 
 The states of the element may be pristine, touched, Untouched, dirty etc., which defines the actual states of the element.
 
-The validation of the **DateTimePicker** in a form is explained below with Bio Data. Here, different *ng-classes* have been used to determine the different sate of the input element of the **DateTimePicker**, also *ng-required* has been used to set the input field of **DateTimePicker** in the form as required.
+The validation of the **DateTimePicker** in a form is explained below with Bio-Data. Here, different *ng-classes* have been used to determine the different sate of the input element of the **DateTimePicker**, also *ng-required* has been used to set the input field of **DateTimePicker** in the form as required.
 
 **HTML View Section**
 

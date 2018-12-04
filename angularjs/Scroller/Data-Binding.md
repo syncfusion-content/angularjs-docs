@@ -86,7 +86,7 @@ Configuring Styles.
 
 ## Two-Way Binding
 
-Two-way binding in scroller in Angular JS is achieved by using (ng-model) attribute. Here, the scroll top and scroll left properties are bounded with the scroller. In the below sample, the value of the scroll left and scroll top properties are varied will reflect in textbox below and vice versa.
+Two-way binding in scroller in AngularJS is achieved by using (ng-model) attribute. Here, the scroll top and scroll left properties are bounded with the scroller. In the below sample, the value of the scroll left and scroll top properties are varied will reflect in textbox below and vice versa.
 
 {% highlight html %}
 
