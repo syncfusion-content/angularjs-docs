@@ -19,19 +19,19 @@ as mentioned below.
 
 <style>   
      .e-daterangewidget.e-input.ng-touched.ng-pristine, input.ng-touched.ng-pristine {
-            background-color: lightgray;
+            background-color: #d3d3d3;
         }
 
         .e-daterangewidget.e-input.ng-touched.ng-dirty, input.ng-touched.ng-dirty {
-            background-color: lightsteelblue;
+            background-color: #b0c4de;
         }
 
         .e-daterangewidget.e-input.ng-untouched, input.ng-untouched  {
-            background-color: lightyellow;
+            background-color:  #ffffe0;
         }
 
         .e-daterangewidget.e-input.ng-untouched.ng-dirty {
-                background-color: lightcyan;
+                background-color: #e0ffff;
             }
 </style>
 

@@ -56,19 +56,19 @@ Refer the below code for  uses the CSS to display validation of each form contro
 
    <style>   
      .e-datewidget.e-input.ng-touched.ng-pristine, input.ng-touched.ng-pristine {
-            background-color: lightgray;
+            background-color: #d3d3d3;
         }
 
         .e-datewidget.e-input.ng-touched.ng-dirty, input.ng-touched.ng-dirty {
-            background-color: lightsteelblue;
+            background-color: #b0c4de;
         }
 
         .e-datewidget.e-input.ng-untouched, input.ng-untouched  {
-            background-color: lightyellow;
+            background-color: #ffffe0;
         }
 
         .e-datewidget.e-input.ng-untouched.ng-dirty {
-                background-color: lightcyan;
+                background-color: #e0ffff;
         }
    </style>
 
