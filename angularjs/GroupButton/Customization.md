@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization
+title: Customization | GroupButton | AngularJS | Syncfusion
 description: customization
 platform: AngularJS
 control: GroupButton
@@ -78,7 +78,7 @@ By default GroupButton has standard height and width. You can change this height
 
 {% endhighlight %}
 
-![](Customization_images/Customization_img1.jpeg)
+![Set Dimension](Customization_images/Customization_img1.jpeg)
 
 
 ## ContentType
@@ -145,7 +145,7 @@ Simply you can use these Built-in icons by mentioning the icon class name as val
 
 {% endhighlight %}
 
-![](Customization_images/Customization_img2.jpeg)
+![Icons](Customization_images/Customization_img2.jpeg)
 
 
 ## Orientation
@@ -186,6 +186,6 @@ EJ AngularJS GroupButton has two Built-in orientation support called vertical an
 
 {% endhighlight %}
 
-![](Customization_images/Customization_img3.jpeg)
+![Orientation](Customization_images/Customization_img3.jpeg)
 
 

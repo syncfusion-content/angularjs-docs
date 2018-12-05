@@ -49,7 +49,7 @@ This section helps us to render the **ej-checkBox** component in AngularJS platf
                     </td>
                     <td class="chkrad">
                         <input type="checkbox" ej-checkbox id="Checkbox6" e-value="WatchingTV" e-size="medium" />
-                        <label for="Checkbox6">Watching Tv</label>
+                        <label for="Checkbox6">Watching TV</label>
                     </td>
                 </tr>
             </table><br /><br />
@@ -82,7 +82,7 @@ This section helps us to render the **ej-checkBox** component in AngularJS platf
 
     <script>
             angular.module('CheckboxCtrl', ['ejangular'])
-            .controller('CheckboxCtrller',function ($scope) {
+            .controller('CheckboxController',function ($scope) {
             
             $scope.PlayingGames="false";
             
@@ -126,7 +126,7 @@ This **checked** API of the checkbox specifies whether **ej-checkBox** has to be
 
     <script>
             angular.module('CheckboxCtrl', ['ejangular'])
-            .controller('CheckboxCtrller',function ($scope) {
+            .controller('CheckboxController',function ($scope) {
         
             });     
             
@@ -136,7 +136,7 @@ This **checked** API of the checkbox specifies whether **ej-checkBox** has to be
 
 The code will render the following output.
 
-![](Behaviour_settings_images/img1.png) 
+![Checked](Behaviour_settings_images/img1.png) 
 
 ## enabled
 
@@ -171,7 +171,7 @@ The code will render the following output.
 
     <script>
         angular.module('CheckboxCtrl', ['ejangular'])
-           .controller('CheckboxCtrller',function ($scope) {
+           .controller('CheckboxController',function ($scope) {
          
            });     
     </script>
@@ -181,7 +181,7 @@ The code will render the following output.
 
 The above code will render the following output.
 
-![](Behaviour_settings_images/img2.png) 
+![Enabled](Behaviour_settings_images/img2.png) 
 
 ## enableTristate
 
@@ -217,7 +217,7 @@ In AngularJS, enableTriState API of **ej-checkbox** control defines the enable o
 
     <script>
             angular.module('CheckboxCtrl', ['ejangular'])
-            .controller('CheckboxCtrller',function ($scope) {
+            .controller('CheckboxController',function ($scope) {
             
             });     
     </script>
@@ -226,7 +226,7 @@ In AngularJS, enableTriState API of **ej-checkbox** control defines the enable o
 
 The above code will render the following output.
 
-![](Behaviour_settings_images/img2.png) 
+![Enable Tri State](Behaviour_settings_images/img2.png) 
 
 ## enablePersistence
 
@@ -261,7 +261,7 @@ In AngularJS, **e-enablePersistence** API specifies the persistent property for 
 
     <script>
             angular.module('CheckboxCtrl', ['ejangular'])
-            .controller('CheckboxCtrller',function ($scope) {
+            .controller('CheckboxController',function ($scope) {
             
             });     
     </script>
@@ -269,4 +269,4 @@ In AngularJS, **e-enablePersistence** API specifies the persistent property for 
 
 {% endhighlight %}
 
-![](Behaviour_settings_images/img3.png) 
+![Enable Persistence](Behaviour_settings_images/img3.png) 

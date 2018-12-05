@@ -1,6 +1,6 @@
 ---
-layout: post
-title: Over View
+layout: post 
+title: Over View | DataRangePicker | AngularJS | Syncfusion
 description: Over View
 platform: AngularJS
 control: DataRangePicker

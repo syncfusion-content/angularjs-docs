@@ -36,7 +36,7 @@ You can use **e-value** property to set default color for the **ColorPicker**. *
 
 Run the above code to render the following output.
 
-![](Behavior-Settings_images/Behavior-Settings_images1.png)
+![Set value](Behavior-Settings_images/Behavior-Settings_images1.png)
 
 ## showPreview
 
@@ -64,9 +64,9 @@ The **ColorPicker** control provides live preview support for current cursor sel
 
 Run the above code to render the following output.
 
-![](Behavior-Settings_images/Behavior-Settings_images2.png)
+![Show Preview](Behavior-Settings_images/Behavior-Settings_images2.png)
 
-# showRecentColors
+## showRecentColors
 
 The **ColorPicker** control allows you to store the color values in custom list by using **e-showRecentColors** property. The **ColorPicker** keeps up to 11 colors in a custom list. By clicking the add button, the selected color from picker or palette gets added in the recent color list.
 
@@ -92,7 +92,7 @@ The **ColorPicker** control allows you to store the color values in custom list 
 
 Run the above code to render the following output.
 
-![](Behavior-Settings_images/Behavior-Settings_images3.png)
+![Show Recent Colors](Behavior-Settings_images/Behavior-Settings_images3.png)
 
 ## enableOpacity
 
@@ -120,7 +120,7 @@ The **ColorPicker** control allows you to enable or disable the opacity slider. 
 
 Run the above code to render the following output.
 
-![](Behavior-Settings_images/Behavior-Settings_images4.png)
+![Enable Opacity](Behavior-Settings_images/Behavior-Settings_images4.png)
 
 ## columns
 
@@ -149,4 +149,4 @@ The palette model consists of color values in the rows and columns order. Palett
 
 Run the above code to render the following output.
 
-![](Behavior-Settings_images/Behavior-Settings_images5.png)
+![Columns](Behavior-Settings_images/Behavior-Settings_images5.png)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding
+title: Data-Binding | Scroller | AngularJS | Syncfusion
 description: Data Binding 
 platform: AngularJS
 control: Scroller
@@ -50,7 +50,7 @@ In Scroller, the one way binding of a property is achieved by using "e-" prefixe
 {% highlight javascript %}
 
 <script>
-    angular.module('scrollerrApp', ['ejangular'])
+    angular.module('scrollerApp', ['ejangular'])
      .controller('ScrollerCtrl', function ($scope) {
          $scope.height = "300px";
          $scope.width = "600px";
@@ -82,7 +82,7 @@ Configuring Styles.
 
 {% endhighlight %}
 
-![](data-binding_images/one-way-binding.png)
+![One-Way Binding](data-binding_images/one-way-binding.png)
 
 ## Two-Way Binding
 
@@ -130,7 +130,7 @@ Two-way binding in scroller in AngularJS is achieved by using (ng-model) attribu
 {% highlight javascript %}
 
 <script>
-    angular.module('scrollerrApp', ['ejangular'])
+    angular.module('scrollerApp', ['ejangular'])
      .controller('ScrollerCtrl', function ($scope) {
          $scope.height = "300px";
          $scope.width = "600px";
@@ -163,4 +163,4 @@ Configuring Styles.
 
 Run the above code to get the below output.
 
-![](data-binding_images/two-way-binding.png)
+![Two-Way Binding](data-binding_images/two-way-binding.png)

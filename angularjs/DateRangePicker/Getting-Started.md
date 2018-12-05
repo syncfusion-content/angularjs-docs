@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started 
+title: Getting Started | DataRangePicker | AngularJS | Syncfusion
 description: Getting Started
 platform: AngularJS
 control: DataRangePicker
@@ -12,7 +12,7 @@ This section explains briefly about how to create a DateRangePicker in your appl
 
 Essential JavaScript DateRangePicker provides support to display two calendars within a webpage and allows you to pick a date and even time from the calendar. In this example, you learn how to customize DateRangePicker in real-time application.
 
-# Creating a DateRangePicker
+## Creating a DateRangePicker
 
 The DateRangePicker widget has built-in features such as keyboard navigation, other navigation with animations and flexible APIs. You can easily create the DateRangePicker widget by using simple input <textbox> element as follows.
 
@@ -66,4 +66,4 @@ Properties can be bind to ejDateRangePicker control using the prefix e- and part
 
 Run the above code to get the below output.
 
-![](getting-started_images/value.png)
+![Creating a DateRangePicker](getting-started_images/value.png)

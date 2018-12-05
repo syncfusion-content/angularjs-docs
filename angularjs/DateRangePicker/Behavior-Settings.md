@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Behavior Settings 
+title: Behavior Settings | DataRangePicker | AngularJS | Syncfusion
 description: Behavior Settings
 platform: AngularJS
 control: DataRangePicker
 documentation: ug
 ---
+
 # Introduction
+
 **DateRangePicker** is integrated in AngularJS using Syncfusion widgets , which allows to use **daterangepicker** features such as One-way binding , Two-way binding , Form validation. Please refer the getting started page for general information regarding integrating Syncfusion widget’s.
 
-# Behavior Settings
+## Behavior Settings
 
 Behavior Settings in **DateRangePicker** refers to the default behavior of the **daterangepicker** component. It help us to perform more built in operations of the **daterangepicker** component like selecting range value of the **daterangepicker**, presetting the ranges as required, enabling timepicker along with date range picker 
 
@@ -44,7 +46,7 @@ The value property can be bound to the **DateRangePicker** as used in the snippe
 
 Run the above code to get the below output.
 
-![](behavior-settings_images/value.png)
+![Select Date Range](behavior-settings_images/value.png)
 
 ### StartDate and EndDate
 
@@ -74,7 +76,7 @@ Start Date and End Date of range, can be bound by using e-startdate and e-enddat
 
 Run the above code to get the below output.
 
-![](behavior-settings_images/start_and_end_date.png) 
+![StartDate and EndDate](behavior-settings_images/start_and_end_date.png) 
 
 ### Preset Ranges
 
@@ -106,9 +108,9 @@ We can make use of preset range for easy selection of a date range in the popup 
 
 Run the above code to get the below output.
 
-![](behavior-settings_images/ranges.png) 
+![Preset Ranges](behavior-settings_images/ranges.png) 
 
-### Enable TimePicker 
+### Enable TimePicker
 
 DateRangePicker comes inbuilt with Timepicker control that lets you select the time range along with date range. Both start date and end date, have separate Time Pickers. Enabling the time picker can be bounded with the enableTimePicker property as shown in the below snippet.
 
@@ -133,4 +135,4 @@ DateRangePicker comes inbuilt with Timepicker control that lets you select the t
  
 Run the above code to get the below output.
 
-![](behavior-settings_images/enable_time.png) 
+![Enable TimePicker](behavior-settings_images/enable_time.png) 

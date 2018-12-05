@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behavior-Settings
+title: Behavior-Settings | GroupButton | AngularJS | Syncfusion
 description: behavior settings
 platform: js
 control: GroupButton
@@ -49,7 +49,7 @@ EJ AngularJS GroupButton provides the two different types of modes called check 
 
 {% endhighlight %}
 
-![](Behavior-Settings_images/Behavior-Settings_img1.jpeg)
+![Checkbox Mode](Behavior-Settings_images/Behavior-Settings_img1.jpeg)
 
 
 ** Radio Button Mode:** Here, single button only can be selected, Please check with the below code example 
@@ -87,7 +87,7 @@ EJ AngularJS GroupButton provides the two different types of modes called check 
 
 {% endhighlight %}
 
-![](Behavior-Settings_images/Behavior-Settings_img2.jpeg)
+![Radio Button Mode](Behavior-Settings_images/Behavior-Settings_img2.jpeg)
 
 ## SelectedItemIndex
 
@@ -131,4 +131,4 @@ This property will accept the array values and its value will be differ based on
 
 {% endhighlight %}
 
-![](Behavior-Settings_images/Behavior-Settings_img3.jpeg)
+![Selected Item Index](Behavior-Settings_images/Behavior-Settings_img3.jpeg)

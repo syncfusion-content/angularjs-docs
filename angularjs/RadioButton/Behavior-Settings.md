@@ -48,7 +48,7 @@ This section helps us to render the **ej-radioButton** component in AngularJS pl
 
     <script>
         angular.module('radiobuttonCtrl', ['ejangular'])
-           .controller('radiobuttonCtrller',function ($scope) {
+           .controller('radiobuttonController',function ($scope) {
          
           $scope.PlayingGames="false";
           
@@ -95,7 +95,7 @@ This checked API of the **RadioButton** specifies whether **ej-radioButton** mus
 
     <script>
            angular.module('radiobuttonCtrl', ['ejangular'])
-           .controller('radiobuttonCtrller',function ($scope) {
+           .controller('radiobuttonController',function ($scope) {
       
            });     
     
@@ -106,7 +106,7 @@ This checked API of the **RadioButton** specifies whether **ej-radioButton** mus
 
 The code will render the following output.
 
-![](Behaviour_settings_images/radio1.png) 
+![Checked](Behaviour_settings_images/radio1.png) 
 
 ## enabled
 
@@ -144,7 +144,7 @@ The code will render the following output.
 
    <script>
                angular.module('radiobuttonCtrl', ['ejangular'])
-           .controller('radiobuttonCtrller',function ($scope) {
+           .controller('radiobuttonController',function ($scope) {
          
            });     
   
@@ -155,7 +155,7 @@ The code will render the following output.
 
 The above code will render the following output.
 
-![](Behaviour_settings_images/radio1.png) 
+![Enabled](Behaviour_settings_images/radio1.png) 
 
 ## enableRTL
 
@@ -194,7 +194,7 @@ In AngularJS, enableRTL API of the **ej-radioButton** control is used to specify
 
     <script>
            angular.module('radiobuttonCtrl', ['ejangular'])
-           .controller('radiobuttonCtrller',function ($scope) {
+           .controller('radiobuttonController',function ($scope) {
           
            });     
 
@@ -204,7 +204,7 @@ In AngularJS, enableRTL API of the **ej-radioButton** control is used to specify
 
 The above code will render the following output.
 
-![](Behaviour_settings_images/radio1.png) 
+![Enable RTL](Behaviour_settings_images/radio1.png) 
 
 ## enablePersistence
 
@@ -240,7 +240,7 @@ In AngularJS, **e-enablePersistence** API specifies the persist property for **e
 
     <script>
            angular.module('radiobuttonCtrl', ['ejangular'])
-           .controller('radiobuttonCtrller', function ($scope) {
+           .controller('radiobuttonController', function ($scope) {
            });
  
     </script>
@@ -248,4 +248,4 @@ In AngularJS, **e-enablePersistence** API specifies the persist property for **e
 
 {% endhighlight %}
 
-![](Behaviour_settings_images/radio3.png) 
+![Enable Persistence](Behaviour_settings_images/radio3.png) 

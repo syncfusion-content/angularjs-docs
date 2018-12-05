@@ -95,10 +95,10 @@ Refer the below code for  uses the CSS to display validation of each form contro
              }
         $scope.submitForm = function () {
             debugger;
-            if ($scope.myForm.$pristine) alert("Enter all required feilds");
+            if ($scope.myForm.$pristine) alert("Enter all required fields");
             else if ($scope.myForm.$valid) {
-                alert('Form Sumbitted');
-                $scope.myform.$setSubmitted();
+                alert('Form Submitted');
+                $scope.myForm.$setSubmitted();
             }
            else alert('Invalid Data provided');
 
@@ -113,9 +113,9 @@ Before updating the value to view, the state will be ng-pristine state, once vie
 
 Please refer the below screenshot to know the validation with DatePicker
 
-![](Validation_images/Validation_images1.png)
+![Validation](Validation_images/Validation_images1.png)
 
 
-![](Validation_images/Validation_images2.png)
+![Validation](Validation_images/Validation_images2.png)
 
 

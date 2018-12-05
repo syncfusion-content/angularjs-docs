@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Validation
+title: Validation | DataRangePicker | AngularJS | Syncfusion
 description: Validation
 platform: AngularJS
 control: DataRangePicker
@@ -103,7 +103,7 @@ AngularJS provides classes and properties on the form and its inputs so that you
                 $scope.val = "Name";
                 $scope.submitForm = function () {
                     if ($scope.myForm.$valid) {
-                        alert('Form Sumbitted');
+                        alert('Form Submitted');
                     }
                     else alert('Something Wrong with form');
                 };
@@ -118,31 +118,31 @@ Run the above code with mentioned CSS files to get the below mentioned outputs.
 
 **Untouched**
 
-![](validation_images/untouched.png)
+![Validation with Untouched](validation_images/untouched.png)
 
 **Untouched and dirty**
 
-This class is applied when the DataRangePicker value has been changed using the calendar icon without touching the input element of the datarangrpicker.
+This class is applied when the DataRangePicker value has been changed using the calendar icon without touching the input element of the datarangepicker.
 
-![](validation_images/untouched-dirty.png)
+![Validation without Touch and Dirty](validation_images/untouched-dirty.png)
 
 **Touched and pristine**
 
-![](validation_images/touched-pristine.png)
+![Validation with Touch and Pristine](validation_images/touched-pristine.png)
 
 **Touched and Dirty**
 
-![](validation_images/touched-dirty.png)
+![Validation with Touch and Dirty](validation_images/touched-dirty.png)
 
 **Valid**
 
 Here valid and invalid properties are used based on the form validation by using ng-required attribute to the daterangepicker component.
 
-![](validation_images/valid.png)
+![Validation with Valid Values](validation_images/valid.png)
 
 **Invalid**
 
 Here the value of the daterangepicker is not hence invalid message is shown.
 
-![](validation_images/invalid.png)
+![Validation with Invalid Values](validation_images/invalid.png)
 

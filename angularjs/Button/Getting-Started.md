@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting-Started | Button | AngularJS | Syncfusion
 description: getting started
 platform: AngularJS
 control: Button
@@ -13,7 +13,7 @@ This section explains you briefly on how to create a **Button** in your applicat
 
 The following screenshot illustrates the functionality of a Button control in Media Player and Office Ribbon Application.
 
-![](/js/Button/Getting-Started_images/Getting-Started_img1.png)
+![Getting Started](Getting-Started_images/Getting-Started_img1.png)
 
 ## Create Button Widget
 
@@ -35,7 +35,7 @@ Essential JavaScript Button control has different functionalities such as displa
       <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
       <!--Add custom scripts here -->
    </head>
-   <body ng-controller="BtnCtrller">
+   <body ng-controller="BtnController">
       <!-- Add button element Here -->
       <button id="button1" ej-button e-showroundedcorner="true" e-size="medium" e-text="login"></button>      
    </body>
@@ -87,7 +87,7 @@ Add the following in the script section.
 {% highlight javascript %}
 
         angular.module('BtnCtrl', ['ejangular'])
-           .controller('BtnCtrller', function ($scope) {
+           .controller('BtnController', function ($scope) {
               
            });
 
@@ -140,13 +140,13 @@ Add **&lt;Button&gt;** element using the following code example.
         <table>
             <tr>
                 <td>
-                    <input type="checkbox" id="bold" ej-togglebutton e-showroundedcorner="true" e-size="large"e-defaulttext="Bold" e-activetext="bold" e-click="boldsetunset" />
+                    <input type="checkbox" id="bold" ej-togglebutton e-showroundedcorner="true" e-size="large"e-defaulttext="Bold" e-activetext="bold" e-click="boldClick" />
                 </td>
                 <td>
-                    <button id="italic" ej-button e-showroundedcorner="true" e-size="small" e-text="italic" e-click="italicsetunset"></button>
+                    <button id="italic" ej-button e-showroundedcorner="true" e-size="small" e-text="italic" e-click="italicClick"></button>
                 </td>
                 <td>
-                    <button id="Underline" ej-splitbutton e-size="small" e-showroundedcorner="true" e-text="Underline" e-targetid="menu11" e-click="underlinesetunset" e-create="spltbtnLoad"></button>                        
+                    <button id="Underline" ej-splitbutton e-size="small" e-showroundedcorner="true" e-text="Underline" e-targetid="menu11" e-click="underlineClick" e-create="spltbtnLoad"></button>                        
                     <ul id="menu11">
                         <li><span>Dotted Line</span></li>
                         <li><span>solid</span></li>
@@ -168,8 +168,8 @@ Add the following function definition for Button in the script section.
 {% highlight javascript %}
 
         angular.module('BtnCtrl', ['ejangular'])
-           .controller('BtnCtrller', function ($scope) {
-              $scope.boldsetunset = function(e) {
+           .controller('BtnController', function ($scope) {
+              $scope.boldClick = function(e) {
                     if (e.isChecked) {
                         $(".sample span").wrap("<b></b>");// add the bold tag to span
                     }
@@ -177,7 +177,7 @@ Add the following function definition for Button in the script section.
                         $(".sample span").unwrap("<b></b>");// remove the bold tag to span
                     }                  
               }
-              $scope.italicsetunset = function(e) {                  
+              $scope.italicClick = function(e) {                  
                     if ($(".sample span").parents().is("i")) {
                         $(".sample span").unwrap("<i></i>");// remove the italic tag to span
                     }
@@ -185,7 +185,7 @@ Add the following function definition for Button in the script section.
                         $(".sample span").wrap("<i></i>");// remove the italic tag to span
                     }
               }
-              $scope.underlinesetunset = function(e) {
+              $scope.underlineClick = function(e) {
                     if ($(".sample span").parents().is("u")) {
                         $(".sample span").unwrap("<u></u>");// remove the italic tag to span
                     } else {
@@ -200,9 +200,9 @@ Add the following function definition for Button in the script section.
 
 The following screenshot displays Office Ribbon Application.
 
-![](/js/Button/Getting-Started_images/Getting-Started_img3.png) 
+![Create Office Ribbon Control](Getting-Started_images/Getting-Started_img3.png) 
 
 The following screenshot displays **Office Ribbon** **Bold** Option.	
 
-![](/js/Button/Getting-Started_images/Getting-Started_img4.png)
+![Create Office Ribbon Control](Getting-Started_images/Getting-Started_img4.png)
 
