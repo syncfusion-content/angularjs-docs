@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Behaviour settings
+title: Behaviour settings | DateTimePicker | AngularJS | Syncfusion
 description: Behaviour settings for DateTimePicker
 platform: AngularJS
 control: DateTimePicker
 documentation: ug
 ---
 
-# Behaviour Settings
+# Behavior Settings
 
 In AngularJS, **DateTimePicker** Component has some default settings which helps you to perform more operation by built-in.
 
@@ -27,7 +27,7 @@ In AngularJS, **DateTimePicker** Component has some default settings which helps
 
     <script>
     angular.module('DateTimeCtrl', ['ejangular'])
-            .controller('DateTimeCtrller', function ($scope) {
+            .controller('DateTimeController', function ($scope) {
                 $scope.value =new Date();
                 });
     </script>
@@ -54,7 +54,7 @@ In a real-time appointment scenario, the appointment is open only for a limited 
 
         <script>
         angular.module('DateTimeCtrl', ['ejangular'])
-                .controller('DateTimeCtrller', function ($scope) {
+                .controller('DateTimeController', function ($scope) {
                     $scope.dateFormat = "yyyy/MM/dd";
                     $scope.value =new Date();
                     $scope.minDateTime = "1/8/2017 12:00 AM";
@@ -65,7 +65,7 @@ In a real-time appointment scenario, the appointment is open only for a limited 
 
 {% endhighlight %}
 
-![](Behaviour_settings_images/datetime1.png)
+![MinDateTime and MaxDateTime](Behaviour_settings_images/datetime1.png)
 
 
 ## ShowOtherMonths
@@ -86,7 +86,7 @@ In **DateTimePicker** Component, **e-showOtherMonths** API allow showing days in
 
         <script>
         angular.module('DateTimeCtrl', ['ejangular'])
-                .controller('DateTimeCtrller', function ($scope) {
+                .controller('DateTimeController', function ($scope) {
                     $scope.value =new Date();
                     
                     
@@ -96,7 +96,7 @@ In **DateTimePicker** Component, **e-showOtherMonths** API allow showing days in
 
 {% endhighlight %}
 
-![](Behaviour_settings_images/datetime2.png)
+![Show Other Months](Behaviour_settings_images/datetime2.png)
 
 ## DateTimeFormat
 
@@ -118,7 +118,7 @@ In AngularJS, **DateTimePicker** Component allows you to define the text represe
 
     <script>
     angular.module('DateTimeCtrl', ['ejangular'])
-            .controller('DateTimeCtrller', function ($scope) {
+            .controller('DateTimeController', function ($scope) {
                 $scope.dateTimeFormat = "d/M/yyyy tt h:mm";
                 $scope.value =new Date();
         
@@ -128,7 +128,7 @@ In AngularJS, **DateTimePicker** Component allows you to define the text represe
 
 {% endhighlight %}
 
-![](Behaviour_settings_images/datetime3.png)
+![Date Time Format](Behaviour_settings_images/datetime3.png)
 
 ## Enable Persistence
 
@@ -144,7 +144,7 @@ In AngularJS, **e-enablePersistence** property is used to maintain the state of 
 
     <script>
     angular.module('DateTimeCtrl', ['ejangular'])
-            .controller('DateTimeCtrller', function ($scope) {
+            .controller('DateTimeController', function ($scope) {
                 $scope.value =new Date();
                 $scope.width="180px";
                 
@@ -154,4 +154,4 @@ In AngularJS, **e-enablePersistence** property is used to maintain the state of 
 
 {% endhighlight %}
 
-![](Behaviour_settings_images/datetime4.png)
+![Enable Persistence](Behaviour_settings_images/datetime4.png)

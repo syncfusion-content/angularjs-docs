@@ -50,25 +50,25 @@ Just adding the **e-value** bounded component inside the ng-form, will work suit
 
 {% endhighlight %}
 
-Refer the below code for  uses the CSS to display validition of each form control.
+Refer the below code for  uses the CSS to display validation of each form control.
 
 {% highlight css %}
 
    <style>   
      .e-datewidget.e-input.ng-touched.ng-pristine, input.ng-touched.ng-pristine {
-            background-color: lightgray;
+            background-color: #d3d3d3;
         }
 
         .e-datewidget.e-input.ng-touched.ng-dirty, input.ng-touched.ng-dirty {
-            background-color: lightsteelblue;
+            background-color: #b0c4de;
         }
 
         .e-datewidget.e-input.ng-untouched, input.ng-untouched  {
-            background-color: lightyellow;
+            background-color: #ffffe0;
         }
 
         .e-datewidget.e-input.ng-untouched.ng-dirty {
-                background-color: lightcyan;
+                background-color: #e0ffff;
         }
    </style>
 
@@ -95,10 +95,10 @@ Refer the below code for  uses the CSS to display validition of each form contro
              }
         $scope.submitForm = function () {
             debugger;
-            if ($scope.myForm.$pristine) alert("Enter all required feilds");
+            if ($scope.myForm.$pristine) alert("Enter all required fields");
             else if ($scope.myForm.$valid) {
-                alert('Form Sumbitted');
-                $scope.myform.$setSubmitted();
+                alert('Form Submitted');
+                $scope.myForm.$setSubmitted();
             }
            else alert('Invalid Data provided');
 
@@ -113,9 +113,9 @@ Before updating the value to view, the state will be ng-pristine state, once vie
 
 Please refer the below screenshot to know the validation with DatePicker
 
-![](Validation_images/Validation_images1.png)
+![Validation](Validation_images/Validation_images1.png)
 
 
-![](Validation_images/Validation_images2.png)
+![Validation](Validation_images/Validation_images2.png)
 
 
