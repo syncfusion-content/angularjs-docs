@@ -1,6 +1,6 @@
 ---
-layout: post
-title: Over View
+layout: post 
+title: Over View | DataRangePicker | AngularJS | Syncfusion
 description: Over View
 platform: AngularJS
 control: DataRangePicker
@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Overview
 
-The DateRangePicker control displaying two calendars in a web page and allow to pick the two date to form the ranges. Also its calendar consist of flexible option to navigate back and forth from month and years and pick the start and end date in any month. Flexible options of this DateRangePicker provides the easiest way to get the datails within the daterange in application.
+The DateRangePicker control displaying two calendars in a web page and allow to pick the two date to form the ranges. Also its calendar consist of flexible option to navigate back and forth from month and years and pick the start and end date in any month. Flexible options of this DateRangePicker provides the easiest way to get the details within the daterange in application.
 
 ## Key Features
 1.Formatting the date value and the time value.
