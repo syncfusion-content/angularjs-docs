@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Properties, options, methods and events of Essential JS ejBarcode widget
-documentation: How to use Properties, options, methods and events of Essential JS ejBarcode widget
+title: Properties, options, methods and events of Syncfusion ejBarcode widget
+description: How to use Properties, options, methods and events of Essential JS ejBarcode widget
+documentation: UG
 platform: AngularJS
 metaname: 
 metacontent: 
@@ -797,7 +798,7 @@ Specifies the type of the Barcode. See <a href="global.html#SymbologyType">Symbo
             <td class="description">Represents the Code 128 C barcode</td>
         </tr>
         <tr>
-            <td class="name">UpcBarcode</td>
+            <td class="name">UPCBarcode</td>
             <td class="description">Represents the UPC barcode</td>
         </tr>
     </tbody>
