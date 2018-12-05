@@ -12,7 +12,7 @@ documentation: ug
 
 The states of the element may be pristine, touched, Untouched, dirty etc., which defines the actual states of the element.
 
-The validation of the **DateTimePicker** in a form is explained below with BioData. Here, different *ng-classes* have been used to determine the different sate of the input element of the **DateTimePicker**, also *ng-required* has been used to set the input field of **DateTimePicker** in the form as required.
+The validation of the **DateTimePicker** in a form is explained below. Here, different *ng-classes* have been used to determine the different sate of the input element of the **DateTimePicker**, also *ng-required* has been used to set the input field of **DateTimePicker** in the form as required.
 
 **HTML View Section**
 
@@ -80,10 +80,10 @@ The validation of the **DateTimePicker** in a form is explained below with BioDa
 
         <script>
                 var list = [
-                            { employeeid: "cr1", text: "Debit Card", value: "Debit Card" },
-                            { employeeid: "cr2", text: "Credit Card", value: "Credit Card" },
-                            { employeeid: "cr3", text: "PayPal", value: "PayPal" },
-                            { employeeid: "cr4", text: "Cash", value: "Cash" },
+                            { id: "cr1", text: "Debit Card", value: "Debit Card" },
+                            { id: "cr2", text: "Credit Card", value: "Credit Card" },
+                            { id: "cr3", text: "PayPal", value: "PayPal" },
+                            { id: "cr4", text: "Cash", value: "Cash" },
                             
                             
                             

@@ -122,7 +122,7 @@ Run the above code with mentioned CSS files to get the below mentioned outputs.
 
 **Untouched and dirty**
 
-This class is applied when the DataRangePicker value has been changed using the calendar icon without touching the input element of the datarangepicker.
+This class is applied when the DateRangePicker value has been changed using the calendar icon without touching the input element of the DateRangePicker.
 
 ![Validation without Touch and Dirty](validation_images/untouched-dirty.png)
 

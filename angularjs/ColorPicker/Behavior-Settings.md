@@ -27,7 +27,7 @@ You can use **e-value** property to set default color for the **ColorPicker**. *
 {% highlight javascript %}
 
         <script>
-            angular.module("ColorPickCtrl", ['ejangular']).controller("ColorPickCtrller", function ($scope) {
+            angular.module("ColorPickCtrl", ['ejangular']).controller("ColorPickController", function ($scope) {
                 $scope.value = "#278787";
                         });
         </script>
@@ -55,7 +55,7 @@ The **ColorPicker** control provides live preview support for current cursor sel
 {% highlight javascript %}
 
         <script>
-            angular.module("ColorPickCtrl", ['ejangular']).controller("ColorPickCtrller", function ($scope) {
+            angular.module("ColorPickCtrl", ['ejangular']).controller("ColorPickController", function ($scope) {
                 $scope.value = "#278787";
                   });
         </script>
@@ -83,7 +83,7 @@ The **ColorPicker** control allows you to store the color values in custom list 
 {% highlight javascript %}
 
         <script>
-            angular.module("ColorPickCtrl", ['ejangular']).controller("ColorPickCtrller", function ($scope) {
+            angular.module("ColorPickCtrl", ['ejangular']).controller("ColorPickController", function ($scope) {
                $scope.value = "#278787";
                  });
         </script>
@@ -111,7 +111,7 @@ The **ColorPicker** control allows you to enable or disable the opacity slider. 
 {% highlight javascript %}
 
         <script>
-            angular.module("ColorPickCtrl", ['ejangular']).controller("ColorPickCtrller", function ($scope) {
+            angular.module("ColorPickCtrl", ['ejangular']).controller("ColorPickController", function ($scope) {
                 $scope.value = "#278787";
                     });
         </script>
@@ -139,7 +139,7 @@ The palette model consists of color values in the rows and columns order. Palett
 {% highlight javascript %}
 
         <script>
-          angular.module("ColorPickCtrl", ['ejangular']).controller("ColorPickCtrller", function ($scope) {
+          angular.module("ColorPickCtrl", ['ejangular']).controller("ColorPickController", function ($scope) {
             $scope.value = "#278787";
             $scope.columns = 8;
                  });
