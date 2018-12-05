@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance-and-Styling | Syncfusion
 description: appearance and styling
 platform: AngularJS
 control: Tab
@@ -65,7 +65,7 @@ Add following **CSS** for header image customization.
 
 The following screenshot illustrates the **Tab** with the customized header image. 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![tab header](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 Header Image Customization
 {:.caption}
@@ -100,7 +100,7 @@ Add the following **HTML** to render **Tab** with rounder corner.
 
 The following screenshot illustrates the **Tab** with Rounded corner.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
+![rounded corner](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
 
 
 ## Enable/Disable
@@ -132,7 +132,7 @@ Add the following **HTML** to render **Tab** with enable/disable.
 
 The following screenshot illustrates the **Tab** with disabled format.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
+![disabled](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
 
 
 ## Enabling Reload Icon
@@ -165,12 +165,12 @@ Add the following **HTML** to render **Tab** with **Reload** icon.
 
 The following screenshot illustrates the **Tab** with **Reload** icon.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) 
+![reload](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) 
 
 
 ## Collapsible Tabs
 
-You can collapse the **Tab** content by enabling the [collapsible](https://help.syncfusion.com/api/js/ejtab#members:collapsible) property to ‘**true**’. When the property is set to ‘**true**’ then click the active **Tab** header, the **Tab** contents are hided. By default, the property value is set to ‘**false**’.
+You can collapse the **Tab** content by enabling the [collapsible](https://help.syncfusion.com/api/js/ejtab#members:collapsible) property to ‘**true**’. When the property is set to ‘**true**’ then click the active **Tab** header, the **Tab** contents are hidden. By default, the property value is set to ‘**false**’.
 
 The following code example is used to render the **Tab** widget with customized collapsible mode.
 
@@ -197,7 +197,7 @@ Add the following **HTML** to render **Tab** with customized collapsible mode.
 
 The following screenshot illustrates the **Tab** with customized collapsible mode.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png) 
+![tab collapsible](Appearance-and-Styling_images/Appearance-and-Styling_img5.png) 
 
 
 ## Adjusting Tab Size
@@ -232,7 +232,7 @@ Add the following **HTML** to render **Tab** with customized height and height a
 
 The following screenshot illustrates the **Tab** with customized height and height adjust mode.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png) 
+![tab height](Appearance-and-Styling_images/Appearance-and-Styling_img6.png) 
 
 
 ### Width
@@ -264,7 +264,7 @@ Add the following **HTML** to render **Tab** with customized width.
 
 The following screenshot illustrates the **Tab** with customized width.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png) 
+![tab width](Appearance-and-Styling_images/Appearance-and-Styling_img7.png) 
 
 
 ## Theme
@@ -330,4 +330,4 @@ Add the following styles
 
 The following screenshot illustrates the **Tab** with customized style.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png) 
+![css](Appearance-and-Styling_images/Appearance-and-Styling_img8.png) 
