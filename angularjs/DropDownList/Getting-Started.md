@@ -94,7 +94,7 @@ The DropDownList can be created from a HTML ‘select’ element with the HTML '
 
 {% highlight html %}
 	
-	 <select id="dropdown1" ej-dropdownlist e-datasource="dataList" e-value="value" />
+	 <select id="dropdown1" ej-dropdownlist e-datasource="dataList" e-value="value"></select>
 			
 {% endhighlight %}
 	
@@ -117,7 +117,7 @@ The DropDownList can be created from a HTML ‘select’ element with the HTML '
 	
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![dropdownlist](Getting-Started_images/Getting-Started_img1.jpeg)
 
 ## Populating data
 
@@ -127,7 +127,7 @@ N> ODataAdaptor is the default adaptor for DataManager. On binding to other web 
 	
 {% highlight html %}
 
-	<select id="dropdown1" ej-dropdownlist e-datasource="dataList"  e-fields-text="text"/>
+	<select id="dropdown1" ej-dropdownlist e-datasource="dataList"  e-fields-text="text"></select>
 	
 {% endhighlight %}
 	
@@ -148,7 +148,7 @@ N> ODataAdaptor is the default adaptor for DataManager. On binding to other web 
 			
 {% endhighlight %}
 	
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+![Databinding](Getting-Started_images/Getting-Started_img2.jpeg)
 
 ## Setting Dimensions
 
@@ -156,7 +156,7 @@ DropDownList dimensions can be set using width and height API.
 	
 {% highlight html %}
 	
-	<select id="dropdown1" ej-dropdownlist e-datasource="dataList" e-value="value" e-width="width" e-height="height"  />
+	<select id="dropdown1" ej-dropdownlist e-datasource="dataList" e-value="value" e-width="width" e-height="height"></select>
 	
 {% endhighlight %}
 	
@@ -189,7 +189,7 @@ PopupWidth and popupHeight can be used to create a fixed size popup list.
 
 {% highlight html %}
 
-	<select id="dropdown1" ej-dropdownlist e-datasource="dataList" e-value="value" e-popupHeight="height" e-popupWidth="width"/>
+	<select id="dropdown1" ej-dropdownlist e-datasource="dataList" e-value="value" e-popupHeight="height" e-popupWidth="width"></select>
 
 {% endhighlight %}
 	
@@ -223,7 +223,7 @@ N> To select multiple items based on index, refer [here](functionalities#selecti
 
 {% highlight html %}
 
-	<select id="dropdown1" ej-dropdownlist e-datasource="dataList" e-value="value" e-change="change"/>
+	<select id="dropdown1" ej-dropdownlist e-datasource="dataList" e-value="value" e-change="change"></select>
 
 {% endhighlight %}
 	
