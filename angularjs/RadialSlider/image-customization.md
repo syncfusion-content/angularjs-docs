@@ -46,7 +46,7 @@ The following screenshot illustrates the output of above code.
 
 ### Using image URL
 
-The **RadialSlider** property **e-innercircleimageurl** allow to set URL image to the inner circle of the **RadialSlider**. By default, the **Radial Slider** innercircleimageurl is set as “null”. Refer to the following code example.
+The **RadialSlider** property [`e-innercircleimageurl`] allow to set URL image to the inner circle of the **RadialSlider**. By default, the **Radial Slider** innercircleimageurl is set as “null”. Refer to the following code example.
 
 {% highlight html %}
 

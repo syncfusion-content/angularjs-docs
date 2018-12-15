@@ -59,11 +59,11 @@ We can load the content through AJAX by setting the **e-contenttype** property a
 
 
 {% highlight html %}
- <div id="dialog" ej-dialog e-title="Dialog" e-contenturl="dialogcontent.html" e-contenttype="ajax"/>;
+ <div id="dialog" ej-dialog e-title="Dialog" e-contenturl="dialogContent.html" e-contenttype="ajax"/>;
 {% endhighlight %}
 
 
-The content of that dialogcontent.html file is below:
+The content of that dialogContent.html file is below:
 
 **&lt;div id="content"&gt;** This content is loaded via AJAX request. **&lt;/div&gt;**
 
@@ -74,7 +74,7 @@ We can handle the AJAX request’s success and failures through the events “e-
 The previous example is modified as below to handle the success and failure events.
 
 {% highlight html %}
- <div id="dialog" ej-dialog e-title="Dialog" e-contenturl="dialogcontent.html" e-contenttype="ajax" e-ajaxsuccess="onSuccess" e-ajaxerror="onError"/>;
+ <div id="dialog" ej-dialog e-title="Dialog" e-contenturl="dialogContent.html" e-contenttype="ajax" e-ajaxsuccess="onSuccess" e-ajaxerror="onError"/>;
 {% endhighlight %}
 
 

@@ -26,7 +26,7 @@ In order to display any title for our dialog, we can use the **e-showheader** pr
 
 ### Display dialog on initialization
 
-Using **e-showoninit** property to true or false, we can either display our dialog on the page load or on any actions. By default, showoninit property is true in Dialog.
+Using [`e-showoninit`] property to true or false, we can either display our dialog on the page load or on any actions. By default, showoninit property is true in Dialog.
 
 {% highlight html %}
 

@@ -76,7 +76,7 @@ Note: All the Syncfusion widget’s properties are defined using e- prefix follo
 
 
 
-You can set the images for each item by giving the image URL with the **data-ej-imageurl** attribute in the inner list element and text with **data-ej-text** attribute. Refer to the following code example. 
+You can set the images for each item by giving the image URL with the [`data-ej-imageurl`] attribute in the inner list element and text with **data-ej-text** attribute. Refer to the following code example. 
 
 
 

@@ -51,7 +51,7 @@ In the HTML page set the corresponding **&lt;div&gt;** elements for outer and in
 
 {% endhighlight %}
 
-Define properties of outersplitter and innersplitter in angular module in script.
+Define properties of outerSplitter and innerSplitter in angular module in script.
 
 {% highlight javascript %}
 

@@ -15,7 +15,7 @@ This section explains briefly about how to create a web ListBox in your applicat
 
 ![](Getting_Started_images\Getting-Started_img1.png)
 
-## Create a ListBox widget in AnularJS
+## Create a ListBox widget in AngularJS
 
 Essential JavaScript includes angular directives for all controls with the ej.widget.angular.min.js script file. All the Essential JS directives have been encapsulated into a single module called **ejangular**. To render our ej controls in angular, you need to refer the “angular.min.js” and “ej.widget.angular.min.js” in your application.
 

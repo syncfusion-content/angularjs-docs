@@ -13,7 +13,7 @@ Live Tiles are used to display the current or up to date information like scores
 
 There are three types of Tile animation supported: Flip, Slide and Carousel.
 
-The livetile-imageurl property sets background image for Live Tile. This property accepts array values so you can specify the image url's for all the Tile components that are used in single Live Tile. 
+The [`livetile-imageurl`] property sets background image for Live Tile. This property accepts array values so you can specify the image url's for all the Tile components that are used in single Live Tile. 
 
 You can specify time interval for each Tile ej-livetile property. Time interval is given in milliseconds. The default value is 2000.
 

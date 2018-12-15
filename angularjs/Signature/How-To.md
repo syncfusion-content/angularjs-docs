@@ -11,7 +11,7 @@ documentation: ug
 
 ### Save signature image with user defined format
 
-By default, the downloaded image from the signature canvas will be in **png** format. We can define our own format to download the image with e-**saveimageformat** property. And we can also save the image along with the background by using the **e-savewithbackground** property.
+By default, the downloaded image from the signature canvas will be in **png** format. We can define our own format to download the image with [`e-saveimageformat`] property. And we can also save the image along with the background by using the **e-savewithbackground** property.
 
 The following code example is used to download drawn image on the Signature control.
 
@@ -46,7 +46,7 @@ The following screenshot illustrates the Signature with saving (downloading) the
 
 ![https://help.syncfusion.com/js/signature/How_To_images/savesignatureimagewithuserdefinedformat_img1.png](How_To_images\savesignatureimagewithuserdefinedformat_img1.png)
 
-### To clear the Siganture
+### To clear the Signature
 
 To clear the signature, you can simply use the **clear()** method. This method will clear all the drawn strokes in the signature canvas and leaves it empty.
 
@@ -107,7 +107,7 @@ After giving the Responsiveness:
 
 ### To check whether any input to the signature control since render
 
-We can detect whether not there has been any input to the signature control since render. To detect we can use the storeSnap public variable, which is an array that stores all the canvas inputs. At initial rendering this array is empty and we can use this variable to check for the drwan strokes.
+We can detect whether not there has been any input to the signature control since render. To detect we can use the storeSnap public variable, which is an array that stores all the canvas inputs. At initial rendering this array is empty and we can use this variable to check for the drawn strokes.
 
 
 {% highlight js %}

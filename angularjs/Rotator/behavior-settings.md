@@ -32,7 +32,7 @@ The e-isresponsive property resizes the Rotator when the browser window is resiz
 
 ### Auto Play option
 
-By using the e- enableautoplay, we can able to play the rotator slides automatically without our interference when it is set as true. The default value is ‘false’. The value set to this property is Boolean.
+By using the [`e-enableautoplay`], we can able to play the rotator slides automatically without our interference when it is set as true. The default value is ‘false’. The value set to this property is Boolean.
 
 {% highlight html %}
 

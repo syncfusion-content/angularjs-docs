@@ -67,7 +67,7 @@ The output for **Splitter** after customizing the CSS class.
 
 In General, any components within the splitter is not responsive while you have set responsive property of that component. But You can make splitter with inner components Responsive by using “e-resize” event of Splitter. For example, if you have Splitter inside the Splitter, innerSplitter is not responsive. If you resize the outerSplitter, innerSplitter is not responsive when you have set “e-isResponsive” is true. Because isResponsive will word whenever the window resize event occurs. On resizing the splitter will not trigger any event related to window resizing and so you need to manually resize the elements inside the splitter.
 
-To achieve responsiveness of innersplitter, you have set **“e-resize”** event for outerSplitter. While resizing the outerSplitter, the resize event is triggered. You can call **“windowResized”** method to make responsiveness of innerSplitter within the resize event. 
+To achieve responsiveness of innerSplitter, you have set **“e-resize”** event for outerSplitter. While resizing the outerSplitter, the resize event is triggered. You can call **“windowResized”** method to make responsiveness of innerSplitter within the resize event. 
 
 In the HTML page set the corresponding **&lt;div&gt;** element for rendering Splitter component.
 

@@ -94,6 +94,6 @@ Declare the rotator properties with prefix “e- “, refer the following code,
 
 
 
-N> All the Syncfusion component’s properties for Angularis defined using e- prefix followed by the property name.You can find the complete API list from the [API reference](https://help.syncfusion.com/js/api/ejrotator)
+N> All the Syncfusion component’s properties for Angular is defined using [`e-prefix`] followed by the property name. You can find the complete API list from the [API reference](https://help.syncfusion.com/js/api/ejrotator)
 
 

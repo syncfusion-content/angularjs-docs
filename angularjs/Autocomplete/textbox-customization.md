@@ -34,7 +34,7 @@ We can automatically fill the Autocomplete text box by the **e-enableautofill** 
 
 ### Enabling reset option
 
-We can easily reset the typed or selected value in the Autocomplete textbox using the **e-showreseticon** property. Using this propertyproperty, we can reset or clear the text value in the textbox instead of backspace or delete key to clear the textbox value.
+We can easily reset the typed or selected value in the Autocomplete textbox using the **e-showreseticon** property. Using this property, we can reset or clear the text value in the textbox instead of backspace or delete key to clear the textbox value.
 
 
 
@@ -73,7 +73,7 @@ It provides the short description of the expected value in Autocomplete and will
 
 ### Applying Rounded Corner
 
-You can use **e-****showroundedcorner**property to add rounded borders to the input and popup elements. By default, rounded corner property is disabled in Autocomplete.
+You can use [`e-showroundedcorner`] property to add rounded borders to the input and popup elements. By default, rounded corner property is disabled in Autocomplete.
 
 {% highlight html %}
 

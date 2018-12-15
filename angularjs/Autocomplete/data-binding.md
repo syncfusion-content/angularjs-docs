@@ -152,7 +152,7 @@ In the above data manager configuration, “crossDomain” must be set to true t
 
 #### Handling errors
 
-In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle this errorsusing the “[e-actionFailure](http://help.syncfusion.com/api/js/ejautocomplete)” event.
+In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle this errors using the “[e-actionFailure](http://help.syncfusion.com/api/js/ejautocomplete)” event.
 
 
 #### See Also
