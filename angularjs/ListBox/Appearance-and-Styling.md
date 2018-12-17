@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Syncfusion ListBox Appearance-and-Styling
 description: appearance and styling
 platform: AngularJS
 control: ListBox
@@ -58,18 +58,17 @@ Add the following code in your **HTML** page.
          angular.module('listboxApp', ['ejangular'])
          .controller('ListboxCtrl', function ($scope, $document) {
              $scope.dataList = [
-                          { empid: "cr1", text: "Dodge Avenger" },
-                          { empid: "cr2", text: "Chrysler 200" },
-                          { empid: "cr3", text: "Ford Focus" },
-                          { empid: "cr4", text: "Ford Taurus", },
-                          { empid: "cr5", text: "Dazzler", },
-                          { empid: "cr6", text: "Chevy Spark", },
-                          { empid: "cr7", text: "Chevy Volt", },
-                          { empid: "cr8", text: "Honda Fit", },
-                          { empid: "cr9", text: "Honda Crosstour", },
-                          { empid: "cr10", text: "Acura RL", },
-                          { empid: "cr11", text: "Hyundai Elantra", },
-                          { empid: "cr12", text: "Mazda3", }
+                          { employeeId: "cr1", text: "Dodge Avenger" },
+                          { employeeId: "cr2", text: "Chrysler 200" },
+                          { employeeId: "cr3", text: "Ford Focus" },
+                          { employeeId: "cr4", text: "Ford Taurus", },
+                          { employeeId: "cr5", text: "Dazzler", },
+                          { employeeId: "cr6", text: "Chevy Spark", },
+                          { employeeId: "cr7", text: "Chevy Volt", },
+                          { employeeId: "cr8", text: "Honda Fit", },
+                          { employeeId: "cr9", text: "Honda Cross tour", },
+                          { employeeId: "cr10", text: "Hyundai Elantra", },
+                          { employeeId: "cr11", text: "Mazda3", }
              ];
            
          });
@@ -79,7 +78,7 @@ Add the following code in your **HTML** page.
 
 {% endhighlight %}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![Appearance and Styling](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 
 ## Css Class
@@ -87,7 +86,7 @@ Add the following code in your **HTML** page.
 
 **ListBox** control also allows you to customize its appearance using user-defined CSS and custom skin options such as colors and backgrounds. To apply custom themes you have a property called **cssClass**. **cssClass** property sets the root class for **ListBox** theme.
 
-Using this **cssClass** you can override the existing styles under the theme style sheet. The theme style sheet applies theme-specific styles like colors and backgrounds. In the following example, the value of **cssClass** property is set as “**customclass**”. **customclass** is added as root class to **ListBox** control at the runtime. From this root class you can customize the **ListBox** control theme.
+Using this **cssClass** you can override the existing styles under the theme style sheet. The theme style sheet applies theme-specific styles like colors and backgrounds. In the following example, the value of **cssClass** property is set as **customClass**. **customClass** is added as root class to **ListBox** control at the runtime. From this root class you can customize the **ListBox** control theme.
 
 Add the following code in your **HTML** page to render the ListBox.
 
@@ -104,24 +103,23 @@ Add the following code in your **HTML** page to render the ListBox.
    </head>
  <body ng-controller="ListboxCtrl">
       <div id="control">
-        <ul id="selectcustomer" ej-listbox e-datasource="dataList" e-fields-text="text" e-cssclass="customclass"></ul>
+        <ul id="selectcustomer" ej-listbox e-datasource="dataList" e-fields-text="text" e-cssclass="customClass"></ul>
     </div>
       <script>
          angular.module('listboxApp', ['ejangular'])
          .controller('ListboxCtrl', function ($scope, $document) {
              $scope.dataList = [
-                          { empid: "cr1", text: "Dodge Avenger" },
-                          { empid: "cr2", text: "Chrysler 200" },
-                          { empid: "cr3", text: "Ford Focus" },
-                          { empid: "cr4", text: "Ford Taurus", },
-                          { empid: "cr5", text: "Dazzler", },
-                          { empid: "cr6", text: "Chevy Spark", },
-                          { empid: "cr7", text: "Chevy Volt", },
-                          { empid: "cr8", text: "Honda Fit", },
-                          { empid: "cr9", text: "Honda Crosstour", },
-                          { empid: "cr10", text: "Acura RL", },
-                          { empid: "cr11", text: "Hyundai Elantra", },
-                          { empid: "cr12", text: "Mazda3", }
+                          { employeeId: "cr1", text: "Dodge Avenger" },
+                          { employeeId: "cr2", text: "Chrysler 200" },
+                          { employeeId: "cr3", text: "Ford Focus" },
+                          { employeeId: "cr4", text: "Ford Taurus", },
+                          { employeeId: "cr5", text: "Dazzler", },
+                          { employeeId: "cr6", text: "Chevy Spark", },
+                          { employeeId: "cr7", text: "Chevy Volt", },
+                          { employeeId: "cr8", text: "Honda Fit", },
+                          { employeeId: "cr9", text: "Honda Cross tour", },
+                          { employeeId: "cr10", text: "Hyundai Elantra", },
+                          { employeeId: "cr11", text: "Mazda3", }
              ];         
          });
       </script>
@@ -130,14 +128,14 @@ Add the following code in your **HTML** page to render the ListBox.
 
 {% endhighlight %}
 
-In the following style sheet the existing theme style sheet file has been over-ridden using root class “**customclass**”. 
+In the following style sheet the existing theme style sheet file has been over-ridden using root class **customClass**. 
 
 Add the following code in your style section.
 
 {% highlight css %}
 
 <style>
-    .customclass .e-listbox .e-select {
+    .customClass .e-listbox .e-select {
         background: #FF1975;
     }
 </style>
@@ -145,5 +143,5 @@ Add the following code in your style section.
 {% endhighlight %}
 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![Css Class](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 

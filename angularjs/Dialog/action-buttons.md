@@ -1,6 +1,6 @@
 ---
 layout: post
-title: action-buttons
+title: Syncfusion Dialog action-buttons
 description: action buttons
 platform: AngularJS
 control: Angular- Dialog
@@ -75,7 +75,7 @@ You can add new action button in the dialog component by configuring the **e-ac
 
 ### Giving Modal dialog
 
-The Dialog component’s [modal dialog](https://en.wikipedia.org/wiki/Modal_window)acts like a child window that is displayed on top of the main window/screen and disables the main window interaction until it is closed. We can enable or disablethis modal dialog in our dialog component by using the property **e-****enablemodal********.**You can refer the following code example to set this property.
+The Dialog component’s [modal dialog](https://en.wikipedia.org/wiki/Modal_window) acts like a child window that is displayed on top of the main window/screen and disables the main window interaction until it is closed. We can enable or disable this modal dialog in our dialog component by using the property [`e-enablemodal`]. You can refer the following code example to set this property.
 
 
 
@@ -86,7 +86,7 @@ The Dialog component’s [modal dialog](https://en.wikipedia.org/wiki/Modal_wind
 {% endhighlight %}
 
 
-![](action-buttons_images\giving-modael-dialog_img1.png)
+![Action Buttons Images](action-buttons_images\giving-modael-dialog_img1.png)
 
 
 ### Containment
@@ -108,7 +108,7 @@ If the property **e- containment** is set, then dialog will append to the select
 
 In the above code we have restricted to move the dialog component with the given containment (i.e.) with the cols-sample-area 
 
-![](action-buttons_images\containment_img1.png)
+![Containment](action-buttons_images\containment_img1.png)
 
-Note: This **e-****containtment******property is mostly used forthe Modal dialog to restrict to specific container. And this property is similar to the “[e-target](https://help.syncfusion.com/api/js/ejdialog)” property but this additionally sets the drag area for dialog. Also this property overrides target property if both are set.
+Note: This [`e-containtment`] property is mostly used for the Modal dialog to restrict to specific container. And this property is similar to the “[e-target](https://help.syncfusion.com/api/js/ejdialog)” property but this additionally sets the drag area for dialog. Also this property overrides target property if both are set.
 

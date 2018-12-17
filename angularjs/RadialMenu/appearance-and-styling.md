@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance and Styling 
+title: Syncfusion Radial Menu Appearance and Styling 
 description: appearance and styling
 platform: AngularJS
 control: RadialMenu
@@ -29,8 +29,8 @@ By default, there are 13the following themes support available for **RadialMenu*
 * gradient-lime-dark
 * gradient-saffron
 * gradient-saffron-dark
-* bootstarp-theme
-* office 365
+* bootstrap-theme
+* office-365
 * material theme
 * high contrast 01
 * high contrast 02
@@ -80,6 +80,6 @@ Add the following styles in your code.
 
 Output of RadialMenu configured based on CSS class is as follow,
 
-![](apperance-and-styling-images\appearance-and-styling_img1.png)
+![Appearance and Styling](apperance-and-styling-images\appearance-and-styling_img1.png)
 
 

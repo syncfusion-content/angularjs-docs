@@ -13,9 +13,9 @@ The ListBox widget that contains a list of selectable items. It performs excepti
 This section explains briefly about how to create a web ListBox in your application with Angular JavaScript by step-by-step instructions. The following screenshot illustrates the functionality of a ListBox widget.
 
 
-![](Getting_Started_images\Getting-Started_img1.png)
+![Getting Started](Getting_Started_images\Getting-Started_img1.png)
 
-## Create a ListBox widget in AnularJS
+## Create a ListBox widget in AngularJS
 
 Essential JavaScript includes angular directives for all controls with the ej.widget.angular.min.js script file. All the Essential JS directives have been encapsulated into a single module called **ejangular**. To render our ej controls in angular, you need to refer the “angular.min.js” and “ej.widget.angular.min.js” in your application.
 
@@ -26,7 +26,7 @@ Create a new HTML file and include the below code:
 <!DOCTYPE html>
 <html lang="en" ng-app="listboxApp">
 <head>
-    <title>Essential Studio for JavaScript : Angular JS Support for Listbox </title>
+    <title>Essential Studio for JavaScript : AngularJS Support for Listbox </title>
     <!-- Style sheet for default theme (flat azure) -->
     <link href="http://cdn.syncfusion.com/ {{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--Scripts-->
@@ -175,7 +175,7 @@ Here the ngModel directive binds an input, select, textarea (or custom form 
 
 Run the above code to render the following output. 
 
-![](Getting_Started_images\databinding_img1.png)
+![Data binding](Getting_Started_images\databinding_img1.png)
 
 
 
@@ -197,7 +197,7 @@ The ListBox widget also supports the item selection.
 
 Run the above code to render the following output. 
 
-![](Getting_Started_images\selection_img1.png)
+![Selection](Getting_Started_images\selection_img1.png)
 
 
 

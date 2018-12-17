@@ -12,9 +12,9 @@ The ListView control allows you to select an item from a list-like interface and
 This section explains briefly about how to create a web ListView widget in your application with Angular JavaScript by step-by-step instructions. The following screenshot illustrates the output of a ListView widget.
 
 
-![](Getting_Started_images\Getting-Started_img1.png)
+![Getting Started](Getting_Started_images\Getting-Started_img1.png)
 
-## Create a ListView widget in AnularJS
+## Create a ListView widget in AngularJS
 
 Essential JS includes angular directives for all controls with the ej.widget.angular.min.js script file. All the Essential JS directives have been encapsulated into a single module called **ejangular**. To render our ej controls in angular, you need to refer the “angular.min.js” and “ej.widget.angular.min.js” in your application.
 
@@ -26,7 +26,7 @@ Create a new HTML file and include the below code:
 <!DOCTYPE html>
 <html lang="en" ng-app="listviewApp">
 <head>
-    <title>Essential Studio for JavaScript : Angular JS Support for Listview </title>
+    <title>Essential Studio for JavaScript : AngularJS Support for Listview </title>
     <!-- Style sheet for default theme (flat azure) -->
     <link href="http://cdn.syncfusion.com/ {{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--Scripts-->
@@ -162,7 +162,7 @@ Here the ngModel directive binds an input, select, textarea (or custom form 
 
 Run the above code to render the following output. 
 
-![](Getting_Started_images\databinding_img1.png)
+![Getting Started](Getting_Started_images\databinding_img1.png)
 
 
 
@@ -195,7 +195,7 @@ We can add a header for **ListView**. Refer to the following script.
 
 Run the above code to render the following output.
 
-![](Getting_Started_images\addheader_img1.png)
+![Add Header](Getting_Started_images\addheader_img1.png)
 
 
 
