@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behavior Settings
+title: Syncfusion Rotator Behavior Settings
 description: Behavior Settings
 platform: AngularJS
 control: rotator
@@ -32,7 +32,7 @@ The e-isresponsive property resizes the Rotator when the browser window is resiz
 
 ### Auto Play option
 
-By using the e- enableautoplay, we can able to play the rotator slides automatically without our interference when it is set as true. The default value is ‘false’. The value set to this property is Boolean.
+By using the [`e-enableautoplay`], we can able to play the rotator slides automatically without our interference when it is set as true. The default value is ‘false’. The value set to this property is Boolean.
 
 {% highlight html %}
 
@@ -63,7 +63,7 @@ The “e-showpager” property turns on or off the pager support in the Rot
 
 
 
-![](behavior settings_images\showpager_img1.png)
+![Behavior settings](behavior settings_images\showpager_img1.png)
 
 #### Pager position
 
@@ -103,7 +103,7 @@ ej.Rotator.PagerPosition.TopRight
     { text: "Bird", url: "http://js.syncfusion.com/demos/web/content/images/rotator/bird.jpg" },
     { text: "Wheat", url: "http://js.syncfusion.com/demos/web/content/images/rotator/wheat.jpg" },
     { text: "Night", url: "http://js.syncfusion.com/demos/web/content/images/rotator/night.jpg" }];
-        angular.module('rotatApp', ['ejangular']).controller('RotatCtrl', function ($scope) {
+        angular.module('rotateApp', ['ejangular']).controller('RotateCtrl', function ($scope) {
             $scope.dataList = list;
 $scope.position = ej.Rotator.PagerPosition.BottomLeft;
         });
@@ -112,7 +112,7 @@ $scope.position = ej.Rotator.PagerPosition.BottomLeft;
 
 {% endhighlight %}
 
-![](behavior settings_images\pagerposition_img1.png)
+![Pager position](behavior settings_images\pagerposition_img1.png)
 
 
 

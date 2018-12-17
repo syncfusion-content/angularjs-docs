@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Databinding
+title: Syncfusion ListBox Databinding
 description: databinding
 platform: AngularJS
 control: ListBox
@@ -13,36 +13,13 @@ documentation: ug
 
 The ListBox component has a field property (object) which holds the properties to map with datasource fields. For example, the field object has a text property which is necessary to map with specific field in the datasource to render the items in the ListBox component.
 
-The field object contains the following properties.
-
-* [e-fields-text](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
-
-* [e-fields-tooltiptext](http://helpjs.syncfusion.com/js/api/ejlistbox#members:fields)
-
-* [e-fields-id](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
-
-* [e-fields-selectby](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
-
-* [e-fields-groupby](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
-
-* [e-fields-checkby](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
-
-* [e-fields-tablename](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
-
-* [e-fields-imageurl](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
-
-* [e-fields-imageattributes](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
-
-* [e-fields-spritecssclass](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
-
-* [e-fields-htmlattributes](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
-
+The field object contains the following [`properties`](http://help.syncfusion.com/js/api/ejlistbox#members:fields) such as text, id, etc. 
 
 ## Local data
 
 The local data can be an array of JSON objects which is assigned for the datasource property of ListBox component.
 
-Here the empid and text are fields with it's mapped to the id and value fields of object respectively.
+Here the empId and text are fields with it's mapped to the id and value fields of object respectively.
 
 {% highlight html %}
 
@@ -55,12 +32,12 @@ Here the empid and text are fields with it's mapped to the id and value fields o
 {% highlight javascript %}
 
      $scope.dataList = [
-              { empid: "bk1", text: "Aache RTR" }, { empid: "bk2", text: "CBR 150-R" }, { empid: "bk3", text: "CBZ Xtreme" },
-              { empid: "bk4", text: "Discover" }, { empid: "bk5", text: "Dazzler" }, { empid: "bk6", text: "Flame" },
-              { empid: "bk7", text: "Fazzer" }, { empid: "bk8", text: "FZ-S" }, { empid: "bk9", text: "Pulsar" },
-              { empid: "bk10", text: "Shine" }, { empid: "bk11", text: "R15" }, { empid: "bk12", text: "Unicorn" }
+              { empId: "bk1", text: "RTR" }, { empId: "bk2", text: "CBR 150-R" }, { empId: "bk3", text: "CBZ Xtreme" },
+              { empId: "bk4", text: "Discover" }, { empId: "bk5", text: "Dazzler" }, { empId: "bk6", text: "Flame" },
+              { empId: "bk7", text: "FZ-S" }, { empId: "bk8", text: "Pulsar" },
+              { empId: "bk9", text: "Shine" }, { empId: "bk10", text: "R15" }, { empId: "bk11", text: "Unicorn" }
              ];
-     $scope.id = "empid";
+     $scope.id = "empId";
      $scope.value = "text";
 
 {% endhighlight %}

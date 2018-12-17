@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Syncfusion Radial Menu Getting-Started
 description: getting started
 platform: AngularJS
 control: RadialMenu
@@ -11,7 +11,7 @@ documentation: ug
 
 This section helps to understand the getting started of the RadialMenu component for AngularJS.
 
-![](Getting_Started_images/getting-started_img1.png)
+![Getting Started](Getting_Started_images/getting-started_img1.png)
 
 ## Adding dependencies
 
@@ -35,7 +35,7 @@ The following steps guide you to add a **RadialMenu** component.
     </head>
     <body ng-controller="RadialMenuCtrl">
             <!-- Add RadialMenu component Here -->
-            <div id="radialslidermenu" ej-radialmenu> <div>
+            <div id="radialSliderMenu" ej-radialmenu> <div>
     </body>
     </html>
 
@@ -63,7 +63,7 @@ Declare the RadialMenu properties with prefix “e- “, refer the following cod
 
 {% highlight html %}
 
-    <div id="radialslidermenu" ej-radialmenu e-imageClass="imageclass" e-backImageClass="backimageclass" e-targetElementId="targetid" style="display:none;">
+    <div id="radialSliderMenu" ej-radialmenu e-imageClass="imageclass" e-backImageClass="backimageclass" e-targetElementId="targetId" style="display:none;">
 
     </div>
 
@@ -76,13 +76,13 @@ Note: All the Syncfusion widget’s properties are defined using e- prefix follo
 
 
 
-You can set the images for each item by giving the image URL with the **data-ej-imageurl** attribute in the inner list element and text with **data-ej-text** attribute. Refer to the following code example. 
+You can set the images for each item by giving the image URL with the [`data-ej-imageurl`] attribute in the inner list element and text with **data-ej-text** attribute. Refer to the following code example. 
 
 
 
 {% highlight html %}
 
-    <div id="radialslidermenu" ej-radialmenu e-imageClass="imageclass" e-backImageClass="backimageclass" e-targetElementId="targetid" style="display:none;">
+    <div id="radialSliderMenu" ej-radialmenu e-imageClass="imageclass" e-backImageClass="backimageclass" e-targetElementId="targetId" style="display:none;">
 
         <ul>
         <li data-ej-imageurl="content/images/RadialMenu/font.png" data-ej-text="Bold"></li>
@@ -132,7 +132,7 @@ Add the following styles in your code.
 
 {% highlight css %}
 
-        #radialslidermenu{
+        #radialSliderMenu{
                 display:table;       
                 margin:auto;
             }    
@@ -157,11 +157,11 @@ After initializing the RadialMenu control, you can set its target content by usi
 
 {% highlight javascript %}
 
-        var rteObj, rteEle = $("#rteSample4"), radialEle = $('#radialslidermenu'), action = 0, forRedo = 0;
+        var rteObj, rteElement = $("#rteSample4"), radialElement = $('#radialSliderMenu'), action = 0, forRedo = 0;
 
     angular.module(radialmenuApp, ['ejangular'])
                     .controller('RadialMenuCtrl', function ($scope,$compile) {
-            $scope.targetid = "radialtarget4";	
+            $scope.targetId = "radialtarget4";	
         });
 
         $(function(){
@@ -184,8 +184,8 @@ You can display the **Radial Menu** by performing desired action on the target c
                         // To set Radial Menu position within target
                         x = iframeX > target.width () - radialRadius ? target.width() - radialDiameter : (iframeX > radialRadius ? iframeX - radialRadius : 0),
                         y = iframeY > target.height () - radialRadius ? target.height() - radialDiameter : (iframeY > radialRadius ? iframeY - radialRadius : 0);
-                    radialEle.ejRadialMenu("setPosition", x, y);
-                    radialEle.css("display","block");
+                    radialElement.ejRadialMenu("setPosition", x, y);
+                    radialElement.css("display","block");
                     $('iframe').contents().find('body').blur();
         }
 
@@ -193,7 +193,7 @@ You can display the **Radial Menu** by performing desired action on the target c
 
 Run the above code and select any text inside the target. The settings icon is displayed. Click that icon to render the following output.
 
-![](Getting_Started_images\getting-started_img2.png)
+![Adding dependencies](Getting_Started_images\getting-started_img2.png)
 
 ## RadialMenu item functionalities
 
@@ -201,7 +201,7 @@ You can set the functionalities for each item and define click function by using
 
 {% highlight html %}
 
-    <div id="radialslidermenu" ej-radialmenu e-imageClass="imageclass" e-backImageClass="backimageclass" e-targetElementId="targetid" style="display:none;">
+    <div id="radialSliderMenu" ej-radialmenu e-imageClass="imageclass" e-backImageClass="backimageclass" e-targetElementId="targetId" style="display:none;">
 
         <ul>
                 <li data-ej-imageurl="content/images/RadialMenu/font.png" data-ej-text="Bold" 
@@ -227,36 +227,36 @@ Refer to the following code example to add click functions for RadialMenu items.
             data = rteObj._getSelectedHtmlString() ? true : false;
             if (data) action += 1;
             forRedo = action;
-            radialEle.focus();
+            radialElement.focus();
         }
         function italic(e) {
             rteObj.executeCommand("italic");
             data = rteObj._getSelectedHtmlString() ? true : false;
             if (data) action += 1;
             forRedo = action;
-            radialEle.focus();
+            radialElement.focus();
         }
         function undo(e) {
             rteObj.executeCommand("undo");
             action -= 1;
             if (action == 0)
-                radialEle.ejRadialMenu("disableItem", "Undo");
-            radialEle.ejRadialMenu("enableItem", "Redo");
-            radialEle.focus();
+                radialElement.ejRadialMenu("disableItem", "Undo");
+            radialElement.ejRadialMenu("enableItem", "Redo");
+            radialElement.focus();
         }
         function redo(e) {
             rteObj.executeCommand("redo");
             action += 1;
-            if (forRedo == action) radialEle.ejRadialMenu("disableItem", "Redo");
-            radialEle.ejRadialMenu("enableItem", "Undo");
-            radialEle.focus();
+            if (forRedo == action) radialElement.ejRadialMenu("disableItem", "Redo");
+            radialElement.ejRadialMenu("enableItem", "Undo");
+            radialElement.focus();
         }
 
 {% endhighlight %}
 
 Run the above code and select any text inside the target. The settings icon is displayed. Click that icon to render the RadialMenu component. Click **bold** item in Radialmenu component, to render the following output.
 
-![](Getting_Started_images\Getting_Started_img3.png)
+![RadialMenu item functionalities](Getting_Started_images\Getting_Started_img3.png)
 
 
 

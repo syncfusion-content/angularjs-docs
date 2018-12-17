@@ -1,6 +1,6 @@
 ---
 layout: post
-title: image customization
+title: Syncfusion Radial Slider image customization
 description: image customization
 platform: AngularJS
 control: Radial Slider
@@ -17,7 +17,7 @@ The **RadialSlider** property **e-innerCircleimageclass** allow to set image
 
 {% highlight html %}
 
-<div id="angularRadialSlider" ej-radialslider e-innercircleimageclass="imageclass" ></div>
+<div id="angularRadialSlider" ej-radialslider e-innercircleimageclass="imageClass" ></div>
 
 {% endhighlight %}
 
@@ -25,7 +25,7 @@ The **RadialSlider** property **e-innerCircleimageclass** allow to set image
 
 
     syncApp.controller('radialSliderCtrl', function ($scope) {
-        $scope.imageclass = "myclass";
+        $scope.imageClass = "myClass";
     });
 
 
@@ -34,7 +34,7 @@ The **RadialSlider** property **e-innerCircleimageclass** allow to set image
 
 {% highlight css %}
 
-    .myclass {
+    .myClass {
 
         background-image : url("http://js.syncfusion.com/UG/Mobile/Content/sent.png");
     }
@@ -42,27 +42,27 @@ The **RadialSlider** property **e-innerCircleimageclass** allow to set image
 
 The following screenshot illustrates the output of above code.
 
-![](Image_customization_images\usingclass_img1.png)
+![Image customization](Image_customization_images\usingclass_img1.png)
 
 ### Using image URL
 
-The **RadialSlider** property **e-innercircleimageurl** allow to set URL image to the inner circle of the **RadialSlider**. By default, the **Radial Slider** innercircleimageurl is set as “null”. Refer to the following code example.
+The **RadialSlider** property [`e-innercircleimageurl`] allow to set URL image to the inner circle of the **RadialSlider**. By default, the **Radial Slider** [`innercircleimageurl`] is set as “null”. Refer to the following code example.
 
 {% highlight html %}
 
-<div id="angularRadialSlider" ej-radialslider innercircleimageurl="imageurl "></div>
+<div id="angularRadialSlider" ej-radialslider innercircleimageurl="imageUrl"></div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
   syncApp.controller('radialSliderCtrl', function ($scope) {
-        $scope.imageurl = "http://js.syncfusion.com/demos/web/content/images/radialslider/chevron-right.png";
+        $scope.imageUrl = "http://js.syncfusion.com/demos/web/content/images/radialslider/chevron-right.png";
     });
 
 {% endhighlight %}
 
 The following screenshot illustrates the output of above code.
 
-![https://help.syncfusion.com/js/radialslider/image-customization_images/image-customization_img2.png](Image_customization_images\usingimageurl_img1.png)
+![Image customization](Image_customization_images\usingimageurl_img1.png)
 

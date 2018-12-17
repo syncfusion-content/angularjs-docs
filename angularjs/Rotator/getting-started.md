@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Syncfusion Rotator Getting-Started
 description: Getting Started
 platform: AngularJS
 control: rotator
@@ -11,7 +11,7 @@ documentation: ug
 
 This section helps to get started of the Rotator component for AngularJS. 
 
-![](getting-started-images\getting-started1.png)
+![Getting Started](getting-started-images\getting-started1.png)
 
 ## Adding dependencies
 
@@ -47,7 +47,7 @@ The following steps guide you to add a **Rotator** component.
 
     {% highlight javascript %}
 
-        angular.module('rotatApp', ['ejangular']).controller('RotatCtrl', function ($scope) {});
+        angular.module('rotateApp', ['ejangular']).controller('RotateCtrl', function ($scope) {});
 
     {% endhighlight %}
 
@@ -59,7 +59,7 @@ To configure images for Rotator component, define data and apply to scope variab
 {% highlight javascript %}
 
     var list = [
-    {text:"Seaview", url:"http://js.syncfusion.com/demos/web/content/images/rotator/seaview.jpg"},
+    {text:"Sea view", url:"http://js.syncfusion.com/demos/web/content/images/rotator/seaview.jpg"},
     { text: "Snowfall", url: "http://js.syncfusion.com/demos/web/content/images/rotator/snowfall.jpg" },
     { text: "Tablet", url: "http://js.syncfusion.com/demos/web/content/images/rotator/tablet.jpg" },
     { text: "Nature", url: "http://js.syncfusion.com/demos/web/content/images/rotator/nature.jpg" },
@@ -68,7 +68,7 @@ To configure images for Rotator component, define data and apply to scope variab
     { text: "Wheat", url: "http://js.syncfusion.com/demos/web/content/images/rotator/wheat.jpg" },
     { text: "Night", url: "http://js.syncfusion.com/demos/web/content/images/rotator/night.jpg" }];
 
-    angular.module('rotatApp', ['ejangular']).controller('RotatCtrl', function ($scope) {
+    angular.module('rotateApp', ['ejangular']).controller('RotateCtrl', function ($scope) {
     $scope.animation="slide";
     $scope.data=list;
     });
@@ -90,10 +90,10 @@ Declare the rotator properties with prefix “e- “, refer the following code,
 
 
 
-![](getting-started-images\configuring-properties_img1.png)
+![Adding dependencies](getting-started-images\configuring-properties_img1.png)
 
 
 
-N> All the Syncfusion component’s properties for Angularis defined using e- prefix followed by the property name.You can find the complete API list from the [API reference](https://help.syncfusion.com/js/api/ejrotator)
+N> All the Syncfusion component’s properties for Angular is defined using [`e-prefix`] followed by the property name. You can find the complete API list from the [API reference](https://help.syncfusion.com/js/api/ejrotator)
 
 

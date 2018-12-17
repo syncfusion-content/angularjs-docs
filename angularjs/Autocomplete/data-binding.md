@@ -1,6 +1,6 @@
 ---
 layout: post
-title: data-binding
+title: Syncfusion Autocomplete data-binding
 description: data binding
 platform: AngularJS
 control: Autocomplete
@@ -65,7 +65,7 @@ $scope.text="name";
 
 Run the above code to render the following output. 
 
-![](data-binding_images\local-data_img1.png)
+![Data Binding](data-binding_images\local-data_img1.png)
 
 
 ### Remote data
@@ -105,7 +105,7 @@ $scope.text="ContactName";
 
 Run the above code to render the following output. 
 
-![](data-binding_images\odata_img1.png)
+![Data Binding Images](data-binding_images\odata_img1.png)
 
 
 #### WebAPI
@@ -129,7 +129,7 @@ Here the ContactName field is mapped with text property of the field object.
              .controller('AutocompleteCtrl', function ($scope) {                
                  $scope.dataList = dataManger;				 
                   $scope.text="ContactName"
-                  $scope.key="SupplireID";
+                  $scope.key="SupplierID";
              });
     </script>
 
@@ -140,7 +140,7 @@ Here the ContactName field is mapped with text property of the field object.
 
 Run the above code to render get the following output. 
 
-![](data-binding_images\webapi_img1.png)
+![Web Data Binding](data-binding_images\webapi_img1.png)
 
 
 
@@ -152,7 +152,7 @@ In the above data manager configuration, “crossDomain” must be set to true t
 
 #### Handling errors
 
-In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle this errorsusing the “[e-actionFailure](http://help.syncfusion.com/api/js/ejautocomplete)” event.
+In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle this errors using the “[e-actionFailure](http://help.syncfusion.com/api/js/ejautocomplete)” event.
 
 
 #### See Also

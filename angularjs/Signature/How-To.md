@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To
+title: Syncfusion Signature How To
 description: How To
 platform: AngularJS
 control: Signature
@@ -11,7 +11,7 @@ documentation: ug
 
 ### Save signature image with user defined format
 
-By default, the downloaded image from the signature canvas will be in **png** format. We can define our own format to download the image with e-**saveimageformat** property. And we can also save the image along with the background by using the **e-savewithbackground** property.
+By default, the downloaded image from the signature canvas will be in **png** format. We can define our own format to download the image with [`e-saveimageformat`] property. And we can also save the image along with the background by using the **e-savewithbackground** property.
 
 The following code example is used to download drawn image on the Signature control.
 
@@ -19,11 +19,11 @@ The following code example is used to download drawn image on the Signature cont
 
     <div ng-controller="signatureCtrl">
 
-<div id="apisignature" ej-signature e-height="400px" e-isresponsive="true" e-backgroundimage="http://js.syncfusion.com/demos/web/content/images/signature/water.png" e-savewithbackground="true"></div>
+<div id="apiSignature" ej-signature e-height="400px" e-isresponsive="true" e-backgroundimage="http://js.syncfusion.com/demos/web/content/images/signature/water.png" e-savewithbackground="true"></div>
 
     </div>
 
-<input id="signsave" class="e-btn" type="button" value="Save" ej-button e-width="50px" e-size="normal" e-showroundedcorner="true" e-click="onsave" />
+<input id="signsave" class="e-btn" type="button" value="Save" ej-button e-width="50px" e-size="normal" e-showroundedcorner="true" e-click="onSave" />
 
 {% endhighlight %}
 
@@ -34,9 +34,9 @@ Add the following script to define the download format for the canvas.
 {% highlight js %}
 
 syncApp.controller('signatureCtrl', function ($scope) {
-            $scope.onsave = function (args) {
-                 var sig = $("#apisignature").ejSignature("instance");
-                 sig.save("MySignature");
+            $scope.onSave = function (args) {
+                 var signature = $("#apiSignature").ejSignature("instance");
+                 signature.save("MySignature");
             }
         });
 {% endhighlight %}
@@ -44,9 +44,9 @@ syncApp.controller('signatureCtrl', function ($scope) {
 
 The following screenshot illustrates the Signature with saving (downloading) the drawn image.
 
-![https://help.syncfusion.com/js/signature/How_To_images/savesignatureimagewithuserdefinedformat_img1.png](How_To_images\savesignatureimagewithuserdefinedformat_img1.png)
+![Save signature image with user defined format](How_To_images\savesignatureimagewithuserdefinedformat_img1.png)
 
-### To clear the Siganture
+### To clear the Signature
 
 To clear the signature, you can simply use the **clear()** method. This method will clear all the drawn strokes in the signature canvas and leaves it empty.
 
@@ -54,11 +54,11 @@ To clear the signature, you can simply use the **clear()** method. This method w
 
     <div ng-controller="signatureCtrl">
 
-<div id="apisignature" ej-signature e-height="400px" e-isresponsive="true"></div>
+<div id="apiSignature" ej-signature e-height="400px" e-isresponsive="true"></div>
 
     </div>
 
-<input id="signclear" class="e-btn" type="button" value="Clear" ej-button e-width="50px" e-size="normal" e-showroundedcorner="true" e-click="onclear" />
+<input id="signclear" class="e-btn" type="button" value="Clear" ej-button e-width="50px" e-size="normal" e-showroundedcorner="true" e-click="onClear" />
 
 {% endhighlight %}
 
@@ -67,9 +67,9 @@ Add the following script to clear the Signature.
 {% highlight js %}
 
 syncApp.controller('signatureCtrl', function ($scope) {
-            $scope.onclear = function (args) {
-                 var sig = $("#apisignature").ejSignature("instance");
-                 sig.clear();
+            $scope.onClear = function (args) {
+                 var signature = $("#apiSignature").ejSignature("instance");
+                 signature.clear();
             }
         });
 {% endhighlight %}
@@ -97,17 +97,17 @@ The following screenshot illustrates the Signature with responsiveness.
 
 Before Responsiveness:
 
-![https://help.syncfusion.com/js/signature/How_To_images/makesignatureasresponsive_img1.png](How_To_images\makesignatureasresponsive_img1.png)
+![Before signature as responsive](How_To_images\makesignatureasresponsive_img1.png)
 
 After giving the Responsiveness:
 
-![https://help.syncfusion.com/js/signature/How_To_images/makesignatureasresponsive_img2.png](How_To_images\makesignatureasresponsive_img2.png)
+![After signature as responsive](How_To_images\makesignatureasresponsive_img2.png)
 
 
 
 ### To check whether any input to the signature control since render
 
-We can detect whether not there has been any input to the signature control since render. To detect we can use the storeSnap public variable, which is an array that stores all the canvas inputs. At initial rendering this array is empty and we can use this variable to check for the drwan strokes.
+We can detect whether not there has been any input to the signature control since render. To detect we can use the storeSnap public variable, which is an array that stores all the canvas inputs. At initial rendering this array is empty and we can use this variable to check for the drawn strokes.
 
 
 {% highlight js %}

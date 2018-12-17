@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Template Support.
+title: Syncfusion Radial Menu Template Support.
 description: Template Support
 platform: js
 control: Radial Menu
@@ -9,7 +9,7 @@ documentation: ug
 
 ## Template Support
 
- Template support for RadialMenu items will allow you to use any type of [\<svg\>](https://developer.mozilla.org/en-US/docs/Web/SVG/Element#SVG_elements) permittable tags inside our template. Here for example, using this template support you can use the SVG icons in Radial Menu instead of image tags. To use SVG icons in RadialMenu, you need to use [e-prependto](https://help.syncfusion.com/api/js/ejradialmenu#members:items-prependTo) property.
+ Template support for RadialMenu items will allow you to use any type of [\<svg\>](https://developer.mozilla.org/en-US/docs/Web/SVG/Element#SVG_elements) permitted tags inside our template. Here for example, using this template support you can use the SVG icons in Radial Menu instead of image tags. To use SVG icons in RadialMenu, you need to use [e-prependto](https://help.syncfusion.com/api/js/ejradialmenu#members:items-prependTo) property.
 
  ### Add SVG to item Icon
 
@@ -29,7 +29,7 @@ Add the following code in the html page,
                             Model–view–controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
                             The model consists of application data, business rules, logic, and functions. A view can be any output representation of data, such as a chart or a diagram.
                             Multiple views of the same data are possible, such as a bar chart for management and a tabular view for accountants.
-                            The controller mediates input, converting it to commands for the model or view.The central ideas behind MVC are code reusability and in addition to dividing the application into three kinds of components, the MVC design defines the interactions between them.
+                            The controller mediates input, converting it to commands for the model or view.The central ideas behind MVC are code reusable and in addition to dividing the application into three kinds of components, the MVC design defines the interactions between them.
                             </p>
 
                             <p>A controller can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). It can also send commands to the model to update the model's state (e.g., editing a document).</p>
@@ -42,7 +42,7 @@ Add the following code in the html page,
                     </div>
                  </div>
 
-            <ej-radialmenu id="defaultradialmenu" e-targetelementid="radialtarget1">
+            <ej-radialmenu id="defaultRadialMenu" e-targetelementid="radialtarget1">
                <e-items>
                 <e-item e-prependto="#template1" e-text="Bold" e-click="bold"></e-item>
                 <e-item e-prependto="#template2" e-text="Italic" e-click="italic"></e-item>
@@ -74,7 +74,7 @@ Add following code in your script section,
 
 syncApp.controller('RadialMenuCtrl', function ($scope, $compile) {
 
-    var rteObj, rteEle = $("#rteSample1"), radialEle = $('#defaultradialmenu'), action = 0, forRedo = 0;
+    var rteObj, rteElement = $("#rteSample1"), radialElement = $('#defaultRadialMenu'), action = 0, forRedo = 0;
 	$("#radialtarget1").parent().css("position", "relative");
     $scope.success = function (args) {
         $compile(args.content)($scope);
@@ -88,41 +88,41 @@ syncApp.controller('RadialMenuCtrl', function ($scope, $compile) {
             // To set Radial Menu position within target
             x = iframeX > target.width() - radialRadius ? target.width() - radialDiameter : (iframeX > radialRadius ? iframeX - radialRadius : 0),
             y = iframeY > target.height() - radialRadius ? target.height() - radialDiameter : (iframeY > radialRadius ? iframeY - radialRadius : 0);
-            radialEle.ejRadialMenu("setPosition", x, y);
-            radialEle.focus();
+            radialElement.ejRadialMenu("setPosition", x, y);
+            radialElement.focus();
             rteObj = $("#rteSample1").data("ejRTE");
     }
     $scope.rteChange = function (e) {
-        radialEle.ejRadialMenu("enableItem", "Undo");
+        radialElement.ejRadialMenu("enableItem", "Undo");
     }
     $scope.bold = function (e) {
         rteObj.executeCommand("bold");
         data = rteObj._getSelectedHtmlString() ? true : false;
         if (data) action = 1;
         forRedo = action;
-        radialEle.focus();
+        radialElement.focus();
     }
     $scope.italic = function (e) {
         rteObj.executeCommand("italic");
         data = rteObj._getSelectedHtmlString() ? true : false;
         if (data) action = 1;
         forRedo = action;
-        radialEle.focus();
+        radialElement.focus();
     }
     $scope.undo = function (e) {
         rteObj.executeCommand("undo");
         action -= 1;
         if (action == 0)
-            radialEle.ejRadialMenu("disableItem", "Undo");
-        radialEle.ejRadialMenu("enableItem", "Redo");
-        radialEle.focus();
+            radialElement.ejRadialMenu("disableItem", "Undo");
+        radialElement.ejRadialMenu("enableItem", "Redo");
+        radialElement.focus();
     }
     $scope.redo = function (e) {
         rteObj.executeCommand("redo");
         action = 1;
-        if (forRedo == action) radialEle.ejRadialMenu("disableItem", "Redo");
-        radialEle.ejRadialMenu("enableItem", "Undo");
-        radialEle.focus();
+        if (forRedo == action) radialElement.ejRadialMenu("disableItem", "Redo");
+        radialElement.ejRadialMenu("enableItem", "Undo");
+        radialElement.focus();
     }
 })
 
@@ -166,6 +166,6 @@ Add following code in your style section,
 
 The following screenshot illustrates the output,
 
-![](template-support\img1.png)
+![Template Support](template-support\img1.png)
 
      N> This is the example sample for SVG icon support for Radial Menu.Like wise you can add any SVG element to it, but you need to customize and position the element individually.  
