@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Empty Points 
+title: Syncfusion EJ1 AngularJS Chart - Empty Points 
 description: How to show or hide an empty point in Essential Javascript Chart.
 platform: AngularJS
 control: Chart
@@ -46,10 +46,10 @@ The Data points that uses the **null** or **undefined** as value are considered 
    
 {% endhighlight %}
 
-![](Empty-Points_images/Empty-Points_img1.png)
+![Empty Points](Empty-Points_images/Empty-Points_img1.png)
 
 
-## emptypointsettings
+## EmptyPointSettings
 
 You can customize the empty points visibility and change its `displayMode` *(gap, zero and average)* using `e-emptypointsettings` option.
 
@@ -76,12 +76,12 @@ You can customize the empty points visibility and change its `displayMode` *(gap
 
 {% endhighlight %}
 
-![](Empty-Points_images/Empty-Points_img2.png)
+![Empty Point Settings](Empty-Points_images/Empty-Points_img2.png)
 
 
 If the `visible` property of `e-emptypointsettings` is *false*, then the empty points has been dropped and chart will be rendered without empty points.
 
-![](Empty-Points_images/Empty-Points_img3.png)
+![EmptyPointSettings Visibility](Empty-Points_images/Empty-Points_img3.png)
 
 ## Customizing Styles
 
@@ -114,4 +114,4 @@ Empty points color and border can be customized using `style` property of `e-emp
 
 {% endhighlight %}
 
-![](Empty-Points_images/Empty-Points_img4.png)
+![EmptyPointSettings Customization](Empty-Points_images/Empty-Points_img4.png)

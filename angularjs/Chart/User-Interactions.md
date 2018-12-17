@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactions available in Essential Javascript Chart
+title: Interactions available in Syncfusion Essential Javascript Chart
 description: What are the interactions available in Chart like tooltip, crosshair, trackball, highlighting, zooming and panning, etc..,
 platform: AngularJS
 control: Chart
@@ -40,7 +40,7 @@ Tooltip for the data points can be enabled by using the `visible` option of the 
 
 
 
-![](User-Interactions_images/User-Interactions_img1.png)
+![Point Tooltip](User-Interactions_images/User-Interactions_img1.png)
 
 ### Format the tooltip 
 
@@ -74,7 +74,7 @@ You can also use * **#series.<optionname>#** * as placeholder to display the val
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img2.png)
+![Tooltip Format](User-Interactions_images/User-Interactions_img2.png)
 
 ### Tooltip Template
 
@@ -117,7 +117,7 @@ You can also use * **#series.<optionname>#** * as place holder to display the va
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img3.png)
+![Tooltip Template](User-Interactions_images/User-Interactions_img3.png)
 
 [Click](http://ngjq.syncfusion.com/#/chart/line) here to view the Tooltip template online demo sample.
 
@@ -148,7 +148,7 @@ N> Tooltip is animated only if the template is specified for tooltip.
         <div id="container" ej-chart>
         <e-series>
         <e-series e-tooltip-template="Tooltip"
-        e-tooltip-enableanimation="true" e-tooltip-duration="1000ms"></e-series>
+        e-tooltip-enableAnimation="true" e-tooltip-duration="1000ms"></e-series>
         </e-series>
         </div>
         <script>
@@ -192,7 +192,7 @@ The `fill` and `border` options are used to customize the background color and b
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img4.png)
+![Tooltip Customization](User-Interactions_images/User-Interactions_img4.png)
 
 #### Tooltip with rounded corners
 
@@ -223,7 +223,7 @@ The options `rx` and `ry` are used to customize the corner radius of the tooltip
 {% endhighlight %}
 
 
-![](User-Interactions_images/User-Interactions_img5.png)
+![Rounded Tooltip](User-Interactions_images/User-Interactions_img5.png)
 
 
 ## Zooming and Panning
@@ -261,12 +261,12 @@ N> Pinch zooming is supported only in browsers that support multi-touch gestures
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img6.png)
+![Enable Zooming](User-Interactions_images/User-Interactions_img6.png)
 
 
 After zooming the chart, a zooming toolbar will appear with options to *zoom*, *pan* and *reset*. Selecting the Pan option will allow to pan the chart and selecting the Reset option will reset the zoomed chart.
 
-![](User-Interactions_images/User-Interactions_img7.png)
+![Zooming Toolbar](User-Interactions_images/User-Interactions_img7.png)
 
 ### Types of zooming
 
@@ -320,7 +320,7 @@ You can choose the items displayed in the zooming toolbar by specifying the prop
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img8.png)
+![Zooming Toolbar Customization](User-Interactions_images/User-Interactions_img8.png)
 
 
 
@@ -349,7 +349,7 @@ EjChart provides scrollbar support to view the other portions of chart area whic
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img9.png)
+![Enable Scrollbar](User-Interactions_images/User-Interactions_img9.png)
 
 ## Crosshair
 
@@ -357,7 +357,7 @@ Crosshair is used to view the value of an axis at mouse position or touch contac
 
 ### Enable crosshair and crosshair label
 
-Crosshair can be enabled by using the `e-crosshair-visible` option . Crosshair label for an axis can be enabled by using the `e-primaryyaxis-crosshairlabel-visible`  option  in the corresponding axis.
+Crosshair can be enabled by using the `e-crosshair-visible` option . Crosshair label for an axis can be enabled by using the `e-primaryyaxis-crosshairLabel-visible`  option  in the corresponding axis.
 
 
 {% highlight html %}
@@ -369,7 +369,7 @@ Crosshair can be enabled by using the `e-crosshair-visible` option . Crosshair l
     </head>
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart e-crosshair-visible="true" 
-    e-primaryxaxis-crosshairlabel-visible="true" e-primaryyaxis-crosshairlabel-visible="true">
+    e-primaryxaxis-crosshairLabel-visible="true" e-primaryyaxis-crosshairLabel-visible="true">
     </div>
     <script>
     angular.module('ChartApp', ['ejangular'])
@@ -383,7 +383,7 @@ Crosshair can be enabled by using the `e-crosshair-visible` option . Crosshair l
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img10.png)
+![Crosshair Label](User-Interactions_images/User-Interactions_img10.png)
 
 
 
@@ -401,10 +401,10 @@ The `fill` and `border` options of the `e-primaryxaxis-crosshairLabel` is used t
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart e-crosshair-visible="true"
     e-crosshair-line-color="gray" e-crosshair-line-width="2"
-    e-primaryxaxis-crosshairlabel-visible="true"
-    e-primaryxaxis-crosshairlabel-fill="red"
-    e-primaryxaxis-crosshairlabel-border-color="green"
-    e-primaryxaxis-crosshairlabel-border-width="2" >
+    e-primaryxaxis-crosshairLabel-visible="true"
+    e-primaryxaxis-crosshairLabel-fill="red"
+    e-primaryxaxis-crosshairLabel-border-color="green"
+    e-primaryxaxis-crosshairLabel-border-width="2" >
     </div>
     <script>
     angular.module('ChartApp', ['ejangular'])
@@ -416,7 +416,7 @@ The `fill` and `border` options of the `e-primaryxaxis-crosshairLabel` is used t
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img11.png)
+![Crosshair Line and Label Customization](User-Interactions_images/User-Interactions_img11.png)
 
 
 
@@ -450,7 +450,7 @@ Trackball can be enabled by setting the `e-crosshair-visible` option  to *true* 
 {% endhighlight %}
 
 
-![](User-Interactions_images/User-Interactions_img12.png)
+![Trackball](User-Interactions_images/User-Interactions_img12.png)
 
 
 #### Customize trackball marker and trackball line
@@ -482,7 +482,7 @@ Shape and size of the trackball marker can be customized by using the `shape`and
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img13.png)
+![Trackball Line and Marker Customization](User-Interactions_images/User-Interactions_img13.png)
 
 
 ### Format Trackball tooltip
@@ -498,7 +498,7 @@ X and Y values displayed in the trackball tooltip are formatted based on its axi
     </head>
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart e-crosshair-visible="true" e-crosshair-type="trackball"
-     e-primaryxaxis-labelformat="MMM, yyyy" e-primaryyaxis-labelformat="{value}K">
+     e-primaryxaxis-labelFormat="MMM, yyyy" e-primaryyaxis-labelFormat="{value}K">
     </div>
     <script>
      angular.module('ChartApp', ['ejangular'])
@@ -511,7 +511,7 @@ X and Y values displayed in the trackball tooltip are formatted based on its axi
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img14.png)
+![Trackball Tooltip Format](User-Interactions_images/User-Interactions_img14.png)
 
 
 You can able to show the trackball tooltip in two modes, using trackballTooltipSettings.
@@ -528,12 +528,12 @@ You can able to show the trackball tooltip in two modes, using trackballTooltipS
     </head>
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart e-crosshair-visible="true" e-crosshair-type="trackball" 
-    e-crosshair-trackballtooltipsettings-mode="grouping" 
-    e-crosshair-trackballtooltipsettings-border-width="1"
-    e-crosshair-trackballtooltipsettings-border-color="grey"
-    e-crosshair-trackballtooltipsettings-rx="3"
-    e-crosshair-trackballtooltipsettings-ry="3"
-    e-crosshair-trackballtooltipsettings-fill="whitesmoke">
+    e-crosshair-trackballTooltipSettings-mode="grouping" 
+    e-crosshair-trackballTooltipSettings-border-width="1"
+    e-crosshair-trackballTooltipSettings-border-color="grey"
+    e-crosshair-trackballTooltipSettings-rx="3"
+    e-crosshair-trackballTooltipSettings-ry="3"
+    e-crosshair-trackballTooltipSettings-fill="whitesmoke">
     </div>
     <script>
     angular.module('ChartApp', ['ejangular'])
@@ -545,7 +545,7 @@ You can able to show the trackball tooltip in two modes, using trackballTooltipS
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img30.png)
+![Grouping Format](User-Interactions_images/User-Interactions_img30.png)
 
 
 #### Trackball tooltip template:
@@ -561,8 +561,8 @@ Trackball tooltip template is used to display the tooltip in customized template
     </head>
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart e-crosshair-visible="true" e-crosshair-type="trackball" 
-    e-crosshair-trackballtooltipsettings-mode="float"
-    e-crosshair-trackballtooltipsettings-toolTipTemplate="template">
+    e-crosshair-trackballTooltipSettings-mode="float"
+    e-crosshair-trackballTooltipSettings-toolTipTemplate="template">
     </div>
     <script>
     angular.module('ChartApp', ['ejangular'])
@@ -574,7 +574,7 @@ Trackball tooltip template is used to display the tooltip in customized template
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img33.png)
+![Trackball Tooltip Template](User-Interactions_images/User-Interactions_img33.png)
 
 
 ## Highlight
@@ -644,7 +644,7 @@ To highlight all the data points of the specified series, you can set the **"ser
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img15.png)
+![Series Highlight](User-Interactions_images/User-Interactions_img15.png)
 
 
 **Point mode**
@@ -675,7 +675,7 @@ To highlight a single point, you can set the **"point"** value to the `mode` opt
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img16.png)
+![Point Highlight](User-Interactions_images/User-Interactions_img16.png)
 
 
 **Cluster mode**
@@ -705,7 +705,7 @@ To highlight the points that corresponds to the same index in all the series, se
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img17.png)
+![Cluster Highlight](User-Interactions_images/User-Interactions_img17.png)
 
 ### Customize the highlight styles
 
@@ -737,7 +737,7 @@ To customize the highlighted series, use the `color`, `border` and `opacity` opt
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img18.png)
+![Highlight Style Customization](User-Interactions_images/User-Interactions_img18.png)
 
 
 ### Patterns to highlight
@@ -789,7 +789,7 @@ EjChart provides pattern support for highlighting the data by setting the value 
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img19.png)
+![Highlight Pattern](User-Interactions_images/User-Interactions_img19.png)
 
 #### Custom pattern
 
@@ -812,7 +812,7 @@ To create a custom pattern for the highlighting data points, set the pattern typ
     <div id="container" ej-chart>
     <e-series>
     <e-series e-highlightsettings-enable="true" e-highlightsettings-pattern="custom"
-    e-highlightsettings-custompattern="dots_a"></e-series>
+    e-highlightsettings-customPattern="dots_a"></e-series>
     </e-series>
     </div>
     <script>
@@ -894,7 +894,7 @@ To select all the data points of the specified series, you can set the **"series
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img20.png)
+![Series Selection](User-Interactions_images/User-Interactions_img20.png)
 
 **Point mode**
 
@@ -924,7 +924,7 @@ To highlight a single point, you can set the **"point"** value to the `mode` opt
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img21.png)
+![Point Selection](User-Interactions_images/User-Interactions_img21.png)
 
 
 **Cluster mode**
@@ -954,7 +954,7 @@ To select the points that corresponds to the same index in all the series, set t
    
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img22.png)
+![Cluster Selection](User-Interactions_images/User-Interactions_img22.png)
 
 
 
@@ -973,7 +973,7 @@ To fetch the selected area data points value, you can set the selectionSettings 
     <div id="container" ej-chart e-rangeselected="rangeSelection">
     <e-series>
     <e-series e-selectionsettings-enable="true" e-selectionsettings-mode="range"
-    e-selectionsettings-rangetype="xy"></e-series>
+    e-selectionsettings-rangeType="xy"></e-series>
     </e-series>
     </div>
     <script>
@@ -992,7 +992,7 @@ To fetch the selected area data points value, you can set the selectionSettings 
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img23.png)
+![Range Selection](User-Interactions_images/User-Interactions_img23.png)
 
 ### Selection Type
 
@@ -1028,7 +1028,7 @@ To select a data point or a series on mouse click based on the `selectionSetting
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img24.png)
+![Single Selection](User-Interactions_images/User-Interactions_img24.png)
 
 **Multiple Type**
 
@@ -1057,7 +1057,7 @@ For selecting multiple data points or series on mouse click, set `selectionSetti
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img25.png)
+![Multiple Selection](User-Interactions_images/User-Interactions_img25.png)
 
 
 ### Customizing selection styles
@@ -1089,7 +1089,7 @@ To customize the selection styles, use the `color`, `border` and `opacity` optio
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img26.png)
+![Selection Style Customization](User-Interactions_images/User-Interactions_img26.png)
 
 
 ### Patterns for selection
@@ -1141,7 +1141,7 @@ EjChart provides pattern support for the data selection by setting the value to 
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img27.png)
+![Selection Pattern](User-Interactions_images/User-Interactions_img27.png)
 
 
 #### Custom pattern
@@ -1165,7 +1165,7 @@ To create a custom pattern for selecting the data points, set the `pattern` type
     <div id="container" ej-chart>
     <e-series>
     <e-series e-selectionsettings-enable="true"
-    e-selectionsettings-pattern="custom" e-selectionsettings-custompattern="dots_a">
+    e-selectionsettings-pattern="custom" e-selectionsettings-customPattern="dots_a">
     </e-series>
     </e-series>
     </div>
@@ -1182,7 +1182,7 @@ To create a custom pattern for selecting the data points, set the `pattern` type
 {% endhighlight %}
 
 
-![](User-Interactions_images/User-Interactions_img28.png)
+![Custom Selection Pattern](User-Interactions_images/User-Interactions_img28.png)
 
 
 ### Handling Series Selection
@@ -1239,7 +1239,7 @@ We can able to select the point/series programmatically on chart load, by settin
         <script>
                 angular.module('ChartApp', ['ejangular'])
                 .controller('ChartCtrl', function ($scope) {
-                    $scope.pointindex=[{ seriesIndex:0 , pointIndex:2 },
+                    $scope.pointIndex=[{ seriesIndex:0 , pointIndex:2 },
                                        { seriesIndex:1 , pointIndex:4 }];
                        });
         </script>
@@ -1249,7 +1249,7 @@ We can able to select the point/series programmatically on chart load, by settin
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img29.png)
+![Selection on Load](User-Interactions_images/User-Interactions_img29.png)
 
 ## Data Editing
 
@@ -1279,7 +1279,7 @@ EjChart provides support to change the location of the rendered points. This can
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img31.png)
+![Point Dragging](User-Interactions_images/User-Interactions_img31.png)
 
 [Click](http://ngjq.syncfusion.com/#/chart/dragdrop) here to view the data editing online demo sample.
 
@@ -1311,5 +1311,5 @@ To drag the point along x and y axes, you can specify `e-dragsettings-type` as x
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img32.png)
+![Dragging Direction Customization](User-Interactions_images/User-Interactions_img32.png)
 
