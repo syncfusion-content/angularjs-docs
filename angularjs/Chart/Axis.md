@@ -1432,12 +1432,12 @@ The `e-primaryxaxis-majorGridLines` and `e-primaryxaxis-minorGridLines` properti
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-        <div id="container" ej-chart e-primaryxaxis-majorgridlines-color="blue" 
-        e-primaryxaxis-majorgridlines-visible="true" 
-        e-primaryxaxis-majorgridlines-width="1"
-        e-primaryxaxis-minorgridlines-color="red" 
-        e-primaryxaxis-minorgridlines-visible="false" 
-        e-primaryxaxis-minorgridlines-width="1"
+        <div id="container" ej-chart e-primaryxaxis-majorGridLines-color="blue" 
+        e-primaryxaxis-majorGridLines-visible="true" 
+        e-primaryxaxis-majorGridLines-width="1"
+        e-primaryxaxis-minorGridLines-color="red" 
+        e-primaryxaxis-minorGridLines-visible="false" 
+        e-primaryxaxis-minorGridLines-width="1"
         e-primaryxaxis-minorTicksPerInterval= "0" >
         </div>
         <script>
@@ -1465,15 +1465,15 @@ The `e-primaryxaxis-majorTickLines` and `e-primaryxaxis-minorTickLines` properti
         <!--CSS and Script file References -->
     </head>
     <body ng-controller="ChartCtrl">
-      <div id="container" ej-chart e-primaryxaxis-majorticklines-color="blue" 
-        e-primaryxaxis-majorticklines-visible="true" 
-        e-primaryxaxis-majorticklines-width="1"
-        e-primaryxaxis-majorticklines-size="5"
-        e-primaryxaxis-minorticklines-color="red" 
-        e-primaryxaxis-minorticklines-visible="false" 
-        e-primaryxaxis-minorticklines-width="1"
+      <div id="container" ej-chart e-primaryxaxis-majorTickLines-color="blue" 
+        e-primaryxaxis-majorTickLines-visible="true" 
+        e-primaryxaxis-majorTickLines-width="1"
+        e-primaryxaxis-majorTickLines-size="5"
+        e-primaryxaxis-minorTickLines-color="red" 
+        e-primaryxaxis-minorTickLines-visible="false" 
+        e-primaryxaxis-minorTickLines-width="1"
         e-primaryxaxis-minorTicksPerInterval= "0"
-        e-primaryxaxis-minorticklines-size="5" >
+        e-primaryxaxis-minorTickLines-size="5" >
         </div>
         <script>
          angular.module('ChartApp', ['ejangular'])

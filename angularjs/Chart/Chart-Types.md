@@ -174,7 +174,7 @@ You can change the color of the line segments by using the `e-fill` property of 
 
 {% highlight html %}
 
-html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
     <head>
         <title>Essential Studio for AngularJS: Chart</title>
         <!--CSS and Script file References -->
@@ -3013,7 +3013,7 @@ To render a Box and Whisker Chart, set the series `e-type` as **"boxAndWhisker"*
 
 {% endhighlight %}
 
-![Box and Whisker Chart](=Chart-Types_images/Chart-Types_img90.png)
+![Box and Whisker Chart](Chart-Types_images/Chart-Types_img90.png)
 
 ### BoxPlotMode
 

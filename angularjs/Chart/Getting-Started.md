@@ -257,7 +257,7 @@ The following code example shows how to set the id of the above template to `tem
      angular.module('ChartApp', ['ejangular'])
      .controller('ChartCtrl', function ($scope) {
                 $scope.dataSource = chartData;
-                $scope.markeroptions = {
+                $scope.markerOptions = {
                     dataLabel: {
                         visible: true,
                         template: "dataLabelTemplate"

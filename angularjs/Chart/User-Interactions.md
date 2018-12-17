@@ -148,7 +148,7 @@ N> Tooltip is animated only if the template is specified for tooltip.
         <div id="container" ej-chart>
         <e-series>
         <e-series e-tooltip-template="Tooltip"
-        e-tooltip-enableanimation="true" e-tooltip-duration="1000ms"></e-series>
+        e-tooltip-enableAnimation="true" e-tooltip-duration="1000ms"></e-series>
         </e-series>
         </div>
         <script>
@@ -369,7 +369,7 @@ Crosshair can be enabled by using the `e-crosshair-visible` option . Crosshair l
     </head>
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart e-crosshair-visible="true" 
-    e-primaryxaxis-crosshairlabel-visible="true" e-primaryyaxis-crosshairlabel-visible="true">
+    e-primaryxaxis-crosshairLabel-visible="true" e-primaryyaxis-crosshairLabel-visible="true">
     </div>
     <script>
     angular.module('ChartApp', ['ejangular'])
@@ -401,10 +401,10 @@ The `fill` and `border` options of the `e-primaryxaxis-crosshairLabel` is used t
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart e-crosshair-visible="true"
     e-crosshair-line-color="gray" e-crosshair-line-width="2"
-    e-primaryxaxis-crosshairlabel-visible="true"
-    e-primaryxaxis-crosshairlabel-fill="red"
-    e-primaryxaxis-crosshairlabel-border-color="green"
-    e-primaryxaxis-crosshairlabel-border-width="2" >
+    e-primaryxaxis-crosshairLabel-visible="true"
+    e-primaryxaxis-crosshairLabel-fill="red"
+    e-primaryxaxis-crosshairLabel-border-color="green"
+    e-primaryxaxis-crosshairLabel-border-width="2" >
     </div>
     <script>
     angular.module('ChartApp', ['ejangular'])
@@ -498,7 +498,7 @@ X and Y values displayed in the trackball tooltip are formatted based on its axi
     </head>
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart e-crosshair-visible="true" e-crosshair-type="trackball"
-     e-primaryxaxis-labelformat="MMM, yyyy" e-primaryyaxis-labelformat="{value}K">
+     e-primaryxaxis-labelFormat="MMM, yyyy" e-primaryyaxis-labelFormat="{value}K">
     </div>
     <script>
      angular.module('ChartApp', ['ejangular'])
@@ -528,12 +528,12 @@ You can able to show the trackball tooltip in two modes, using trackballTooltipS
     </head>
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart e-crosshair-visible="true" e-crosshair-type="trackball" 
-    e-crosshair-trackballtooltipsettings-mode="grouping" 
-    e-crosshair-trackballtooltipsettings-border-width="1"
-    e-crosshair-trackballtooltipsettings-border-color="grey"
-    e-crosshair-trackballtooltipsettings-rx="3"
-    e-crosshair-trackballtooltipsettings-ry="3"
-    e-crosshair-trackballtooltipsettings-fill="whitesmoke">
+    e-crosshair-trackballTooltipSettings-mode="grouping" 
+    e-crosshair-trackballTooltipSettings-border-width="1"
+    e-crosshair-trackballTooltipSettings-border-color="grey"
+    e-crosshair-trackballTooltipSettings-rx="3"
+    e-crosshair-trackballTooltipSettings-ry="3"
+    e-crosshair-trackballTooltipSettings-fill="whitesmoke">
     </div>
     <script>
     angular.module('ChartApp', ['ejangular'])
@@ -561,8 +561,8 @@ Trackball tooltip template is used to display the tooltip in customized template
     </head>
     <body ng-controller="ChartCtrl">
     <div id="container" ej-chart e-crosshair-visible="true" e-crosshair-type="trackball" 
-    e-crosshair-trackballtooltipsettings-mode="float"
-    e-crosshair-trackballtooltipsettings-toolTipTemplate="template">
+    e-crosshair-trackballTooltipSettings-mode="float"
+    e-crosshair-trackballTooltipSettings-toolTipTemplate="template">
     </div>
     <script>
     angular.module('ChartApp', ['ejangular'])
@@ -812,7 +812,7 @@ To create a custom pattern for the highlighting data points, set the pattern typ
     <div id="container" ej-chart>
     <e-series>
     <e-series e-highlightsettings-enable="true" e-highlightsettings-pattern="custom"
-    e-highlightsettings-custompattern="dots_a"></e-series>
+    e-highlightsettings-customPattern="dots_a"></e-series>
     </e-series>
     </div>
     <script>
@@ -973,7 +973,7 @@ To fetch the selected area data points value, you can set the selectionSettings 
     <div id="container" ej-chart e-rangeselected="rangeSelection">
     <e-series>
     <e-series e-selectionsettings-enable="true" e-selectionsettings-mode="range"
-    e-selectionsettings-rangetype="xy"></e-series>
+    e-selectionsettings-rangeType="xy"></e-series>
     </e-series>
     </div>
     <script>
@@ -1165,7 +1165,7 @@ To create a custom pattern for selecting the data points, set the `pattern` type
     <div id="container" ej-chart>
     <e-series>
     <e-series e-selectionsettings-enable="true"
-    e-selectionsettings-pattern="custom" e-selectionsettings-custompattern="dots_a">
+    e-selectionsettings-pattern="custom" e-selectionsettings-customPattern="dots_a">
     </e-series>
     </e-series>
     </div>
@@ -1239,7 +1239,7 @@ We can able to select the point/series programmatically on chart load, by settin
         <script>
                 angular.module('ChartApp', ['ejangular'])
                 .controller('ChartCtrl', function ($scope) {
-                    $scope.pointindex=[{ seriesIndex:0 , pointIndex:2 },
+                    $scope.pointIndex=[{ seriesIndex:0 , pointIndex:2 },
                                        { seriesIndex:1 , pointIndex:4 }];
                        });
         </script>
