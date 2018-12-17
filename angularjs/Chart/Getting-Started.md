@@ -1,6 +1,6 @@
 ---
 
- title: Getting started for Chart
+ title: Syncfusion EJ1 AngularJS - Getting started for Chart
 
  description: How to create a chart, add series, enable tooltip and other functionalities
 
@@ -146,7 +146,7 @@ The code example for defining controls in AngularJS is as follows,
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-started-img1.png)
+![Chart Creation](Getting-Started_images/Getting-started-img1.png)
 
 ## Data Binding
 
@@ -200,9 +200,9 @@ N> All the properties in EjChart supports one way AngularJS binding except inner
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-started-img2.png)
+![Data Binding](Getting-Started_images/Getting-started-img2.png)
 
-Need to edit the jsplayground sample
+Need to edit the JS playground sample
 [Click](http://js.syncfusion.com/demos/web/#!/azure/angularsupport/chart) here to view the AngularJS data binding online demo sample.	
 
 
@@ -229,7 +229,7 @@ The following code example illustrates this,
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Data Labels](Getting-Started_images/Getting-Started_img3.png)
 
 
 There are situations where the default label content is not sufficient to the user. In this case, you can use the `template` option to format the label content with some additional information.
@@ -268,7 +268,7 @@ The following code example shows how to set the id of the above template to `tem
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![DataLabel Template](Getting-Started_images/Getting-Started_img4.png)
 
 ## Enable Legend
 
@@ -306,7 +306,7 @@ The following code example illustrates this,
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![Tooltip](Getting-Started_images/Getting-Started_img5.png)
 
 ## Add Chart Title
 
@@ -324,4 +324,4 @@ You need to add a title to the chart to provide quick information to the user ab
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img6.png)
+![Chart Title](Getting-Started_images/Getting-Started_img6.png)
