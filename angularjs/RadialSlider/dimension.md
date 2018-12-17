@@ -1,6 +1,6 @@
 ---
 layout: post
-title: dimension
+title: Syncfusion Radial Slider dimension
 description: dimension
 platform: AngularJS
 control: Radial Slider
@@ -11,7 +11,7 @@ documentation: ug
 
 ### Stroke Width
 
-**Radial Slider** [`e-strokewidth`] property specifies the width of the outline. By default, the **Radial slider** strokewidth is set as 2. Refer to the following code example.
+**Radial Slider** [`e-strokewidth`] property specifies the width of the outline. By default, the **Radial slider** stroke width is set as 2. Refer to the following code example.
 
 {% highlight html %}
 
@@ -31,7 +31,7 @@ Add the following script in your code.
 
 The following screenshot illustrates the output of the above code.
 
-![https://help.syncfusion.com/js/radialslider/dimension_images/dimension_img1.png](dimension_images\strokewidth_img1.png)
+![Stroke Width](dimension_images\strokewidth_img1.png)
 
 ### Setting radius
 
@@ -39,14 +39,14 @@ The **RadialSlider** property **e-radius** indicates the radius of the Radia
 
 {% highlight html %}
 
-<div id="angularRadialSlider" ej-radialslider e-radius="radiusvalue" e- innercircleimageurl="http://js.syncfusion.com/demos/web/content/images/ radialslider/chevron-right.png"></div>
+<div id="angularRadialSlider" ej-radialslider e-radius="radiusValue" e- innercircleimageurl="http://js.syncfusion.com/demos/web/content/images/ radialslider/chevron-right.png"></div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
     syncApp.controller('radialSliderCtrl', function ($scope) {
-        $scope.radiusvalue = 300;
+        $scope.radiusValue = 300;
     });
 
 {% endhighlight %}

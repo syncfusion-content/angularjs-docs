@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Nested Splitter Support
+title:  Syncfusion Splitter Nested Splitter Support
 description: Nested Splitter Support
 platform: AngularJS
 control: Splitter
@@ -66,4 +66,4 @@ Define properties of outerSplitter and innerSplitter in angular module in script
 
 The output for the above code as follows.
 
-![](Nested-Splitter-Support_images\Nested-Splitter-Support_img1.png) 
+![Nested Splitter Support](Nested-Splitter-Support_images\Nested-Splitter-Support_img1.png) 

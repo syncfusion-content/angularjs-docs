@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance and Styling 
+title: Syncfusion Radial Menu Appearance and Styling 
 description: appearance and styling
 platform: AngularJS
 control: RadialMenu
@@ -80,6 +80,6 @@ Add the following styles in your code.
 
 Output of RadialMenu configured based on CSS class is as follow,
 
-![](apperance-and-styling-images\appearance-and-styling_img1.png)
+![Appearance and Styling](apperance-and-styling-images\appearance-and-styling_img1.png)
 
 

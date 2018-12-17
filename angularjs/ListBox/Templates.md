@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Templates
+title: Syncfusion LitBox Templates
 description: templates
 platform: AngularJS
 control: ListBox
@@ -26,11 +26,11 @@ To create the JSON array with text, imageName, role and country which is initial
 {% highlight javascript %}
 
    $scope.dataList = [
-           { text: "Erik Linden", eimg: "3", desig: "Representative", country: "England" }, { text: "John Linden", eimg: "6", desig: "Representative", country: "Norway" },
-           { text: "Louis", eimg: "7", desig: "Representative", country: "Australia" }, { text: "Lawrence", eimg: "5", desig: "Representative", country: "India" }
+           { text: "Erik Linden", eimg: "3", designation: "Representative", country: "England" }, { text: "John Linden", eimg: "6", designation: "Representative", country: "Norway" },
+           { text: "Louis", eimg: "7", designation: "Representative", country: "Australia" }, { text: "Lawrence", eimg: "5", designation: "Representative", country: "India" }
              ];
    $scope.template = '<div><img class="eimg" src="http://js.syncfusion.com/demos/web/content/images/Employees/${eimg}.png" alt="employee"/>' +
-                               '<div class="ename"> ${text} </div><div class="desig"> ${desig} </div><div class="cont"> ${country} </div></div>';
+                               '<div class="ename"> ${text} </div><div class="designation"> ${designation} </div><div class="cont"> ${country} </div></div>';
 
 {% endhighlight %}
 
@@ -50,7 +50,7 @@ To create the JSON array with text, imageName, role and country which is initial
         padding: 6px 3px 1px 3px;
     }
 
-    .desig, .cont {
+    .designation, .cont {
         font-size: smaller;
         padding: 3px 3px -1px 0px;
     }
@@ -63,5 +63,5 @@ To create the JSON array with text, imageName, role and country which is initial
      
 {% endhighlight %}
 
-![](Templates_Images\templates_img1.png)
+![Templates](Templates_Images\templates_img1.png)
 

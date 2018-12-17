@@ -1,6 +1,6 @@
 ---
 layout: post
-title: appearance-and-styling
+title: Syncfusion Dialog appearance-and-styling
 description: appearance and styling
 platform: AngularJS
 control: Angular- Dialog
@@ -26,7 +26,7 @@ In order to display any title for our dialog, we can use the **e-showheader** pr
 
 ### Display dialog on initialization
 
-Using [`e-showoninit`] property to true or false, we can either display our dialog on the page load or on any actions. By default, showoninit property is true in Dialog.
+Using [`e-showoninit`] property to true or false, we can either display our dialog on the page load or on any actions. By default, [`showoninit`] property is true in Dialog.
 
 {% highlight html %}
 
@@ -54,7 +54,7 @@ You can use **e-showroundedcorner** property to add rounded borders to the dia
 
 
 
-![](appearance-and-styling_images\applying-rounded-corner_img1.png)
+![Applying Rounded Corner](appearance-and-styling_images\applying-rounded-corner_img1.png)
 
 ### Responsive Dialog:
 
@@ -82,5 +82,5 @@ Using the **e-htmlattributes** property we can directly set our own html attribu
 
 {% endhighlight %}
 
-![](appearance-and-styling_images\using-adding-html-attributes_img1.png)
+![Responsive Dialog](appearance-and-styling_images\using-adding-html-attributes_img1.png)
 

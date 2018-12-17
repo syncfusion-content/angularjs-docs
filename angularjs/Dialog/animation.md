@@ -1,6 +1,6 @@
 ---
 layout: post
-title: animation
+title: Syncfusion Dialog animation
 description: animation
 platform: AngularJS
 control: Angular- Dialog
@@ -102,7 +102,7 @@ We can also load the content in iframe by setting the **e-contenttype** property
 
 
 
-![](animation_images\iiframe_img1.png)
+![Iframe](animation_images\iiframe_img1.png)
 
 
 #### Image 
@@ -115,7 +115,7 @@ We can also load an image as the content by setting the **e-contenttype** proper
 
 
 
-![](animation_images\iimage-_img1.png)
+![Image](animation_images\iimage-_img1.png)
 
 
 

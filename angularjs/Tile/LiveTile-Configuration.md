@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LiveTile-Configuration
+title: Syncfusion LiveTile-Configuration
 description: livetile configuration
 platform: AngularJS
 control: Tile
@@ -57,4 +57,4 @@ Refer to the following code examples.
  
 {% endhighlight %}
 
-![](LiveTile_images/livetile_image.png)
+![LiveTile Configuration](LiveTile_images/livetile_image.png)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Databinding
+title: Syncfusion ListBox Databinding
 description: databinding
 platform: AngularJS
 control: ListBox
@@ -55,10 +55,10 @@ Here the empId and text are fields with it's mapped to the id and value fields o
 {% highlight javascript %}
 
      $scope.dataList = [
-              { empId: "bk1", text: "Aache RTR" }, { empId: "bk2", text: "CBR 150-R" }, { empId: "bk3", text: "CBZ Xtreme" },
+              { empId: "bk1", text: "RTR" }, { empId: "bk2", text: "CBR 150-R" }, { empId: "bk3", text: "CBZ Xtreme" },
               { empId: "bk4", text: "Discover" }, { empId: "bk5", text: "Dazzler" }, { empId: "bk6", text: "Flame" },
-              { empId: "bk7", text: "Fazzer" }, { empId: "bk8", text: "FZ-S" }, { empId: "bk9", text: "Pulsar" },
-              { empId: "bk10", text: "Shine" }, { empId: "bk11", text: "R15" }, { empId: "bk12", text: "Unicorn" }
+              { empId: "bk7", text: "FZ-S" }, { empId: "bk8", text: "Pulsar" },
+              { empId: "bk9", text: "Shine" }, { empId: "bk10", text: "R15" }, { empId: "bk11", text: "Unicorn" }
              ];
      $scope.id = "empId";
      $scope.value = "text";

@@ -26,7 +26,7 @@ Create a new HTML file and include the below code:
 <!DOCTYPE html>
 <html lang="en" ng-app="listviewApp">
 <head>
-    <title>Essential Studio for JavaScript : Angular JS Support for Listview </title>
+    <title>Essential Studio for JavaScript : AngularJS Support for Listview </title>
     <!-- Style sheet for default theme (flat azure) -->
     <link href="http://cdn.syncfusion.com/ {{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--Scripts-->
@@ -162,7 +162,7 @@ Here the ngModel directive binds an input, select, textarea (or custom form 
 
 Run the above code to render the following output. 
 
-![](Getting_Started_images\databinding_img1.png)
+![Getting Started](Getting_Started_images\databinding_img1.png)
 
 
 
@@ -195,7 +195,7 @@ We can add a header for **ListView**. Refer to the following script.
 
 Run the above code to render the following output.
 
-![](Getting_Started_images\addheader_img1.png)
+![Add Header](Getting_Started_images\addheader_img1.png)
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: see-also
+title: Syncfusion Autocomplete see-also
 description: see also
 platform: AngularJS
 control: Autocomplete
@@ -26,7 +26,7 @@ Since the Autocomplete is a form control, we can set the validation for Autocomp
 <!DOCTYPE html>
 <html lang="en" ng-app="AutoCompleteApp">
 <head>
-    <title>Essential Studio for JavaScript : Angular JS Support for Autocomplete</title>
+    <title>Essential Studio for JavaScript : AngularJS Support for Autocomplete</title>
     <!-- Style sheet for default theme (flat azure) -->
     <link href="http://cdn.syncfusion.com/14.4.0.15/js/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <!--Scripts-->
@@ -52,7 +52,7 @@ Since the Autocomplete is a form control, we can set the validation for Autocomp
 
    <form id="form1">
                     <h3>Select Car</h3>
-                            <input type="text" ej-autocomplete e-dataSource="dataList" e-multiSelectMode="multiselect" e-width="300" e-validationrules="validrules" e-validationmessage="validmessage" e-watermarktext="select a car" />
+                            <input type="text" ej-autocomplete e-dataSource="dataList" e-multiSelectMode="multiselect" e-width="300" e-validationrules="validRules" e-validationmessage="validMessage" e-watermarktext="select a car" />
                         <input type="submit" value="validate" id="btn" />    
 
                     </form>
@@ -77,10 +77,10 @@ Since the Autocomplete is a form control, we can set the validation for Autocomp
         angular.module('AutoCompleteApp', ['ejangular'])
              .controller('AutocompleteCtrl', function ($scope) {                
                  $scope.dataList = carList;
-                 $scope.validrules = {
+                 $scope.validRules = {
                      required: true
                  };
-                 $scope.validmessage = {
+                 $scope.validMessage = {
                      required: "please select some value"
                  }
              });
@@ -93,7 +93,7 @@ Since the Autocomplete is a form control, we can set the validation for Autocomp
 
 
 
-![](how-to_images\set-client-side-validation-for-autocomplete_img1.png)
+![How to section images](how-to_images\set-client-side-validation-for-autocomplete_img1.png)
 
 **NOTE**
 
@@ -109,7 +109,7 @@ By default, the selected item’s key value will be maintained in the **e-select
 
 {% highlight html %}
 
-  <input type="text" ej-autocomplete e-datasource="dataList" e-fields-key="key" e-fields-text="text" e-selectvaluebykey="keyvalue" e-width="30%" />
+  <input type="text" ej-autocomplete e-datasource="dataList" e-fields-key="key" e-fields-text="text" e-selectvaluebykey="keyValue" e-width="30%" />
 
 
 
@@ -149,7 +149,7 @@ By default, the selected item’s key value will be maintained in the **e-select
 
                  $scope.text="name";
 
-                  $scope.keyvalue = "C6";
+                  $scope.keyValue = "C6";
 
              });
 
@@ -159,7 +159,7 @@ By default, the selected item’s key value will be maintained in the **e-select
 
 
 
-![](how-to_images\get-the-key-value-of-the-selected-item_img1.png)
+![Get the key value](how-to_images\get-the-key-value-of-the-selected-item_img1.png)
 
 
 
@@ -168,7 +168,7 @@ But when using the remote datasource, we cannot able to maintain the key value i
 {% highlight html %}
 
 
-<input type="text" ej-autocomplete e-datasource="dataList" e-query="query" e-fields-key="key" e-fields-text="text" e-select="onselect" e-width="205" />
+<input type="text" ej-autocomplete e-datasource="dataList" e-query="query" e-fields-key="key" e-fields-text="text" e-select="onSelect" e-width="205" />
 
 <script type="text/javascript">
          var dataManger = ej.DataManager({              
@@ -181,9 +181,9 @@ But when using the remote datasource, we cannot able to maintain the key value i
                  $scope.query=query;
                  $scope.key="SupplierID";
                  $scope.text="ContactName";
-                $scope.onselect= function (args){
+                $scope.onSelect= function (args){
                          // Get the key here
-                      mykey= args.key;
+                      myKey= args.key;
 
 }
              });

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: textbox-customization
+title: Syncfusion Autocomplete textbox-customization
 description: textbox customization
 platform: AngularJS
 control: Autocomplete
@@ -30,7 +30,7 @@ We can automatically fill the Autocomplete text box by the **e-enableautofill** 
 
 
 
-![](textbox-customization_images\auto-fill-support_img1.png)
+![Text Box customization](textbox-customization_images\auto-fill-support_img1.png)
 
 ### Enabling reset option
 
@@ -52,7 +52,7 @@ We can easily reset the typed or selected value in the Autocomplete textbox usin
 
 
 
-![](textbox-customization_images\enabling-reset-option_img1.png)
+![Enable Reset option](textbox-customization_images\enabling-reset-option_img1.png)
 
 ### Adding watermark
 
@@ -68,7 +68,7 @@ It provides the short description of the expected value in Autocomplete and will
 
 
 
-![](textbox-customization_images\adding-watermark_img1.png)
+![Adding watermark](textbox-customization_images\adding-watermark_img1.png)
 
 
 ### Applying Rounded Corner
@@ -91,4 +91,4 @@ You can use [`e-showroundedcorner`] property to add rounded borders to the inpu
 
 
 
-![](textbox-customization_images\applying-rounded-corner_img1.png)
+![Applying Rounded Corner](textbox-customization_images\applying-rounded-corner_img1.png)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Apperance and Styling
+title: Syncfusion Splitter Apperance and Styling
 description: Apperance and Styling
 platform: AngularJS
 control: Splitter
@@ -18,7 +18,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** elements for outer an
 
 {% highlight html %}
 
-        <div id="splitter" ej-splitter e-properties="proper" e-orientation="orientation" e-height="280" e-width="600" e-htmlattributes="htmlattributes">
+        <div id="splitter" ej-splitter e-properties="proper" e-orientation="orientation" e-height="280" e-width="600" e-htmlAttributes="htmlAttributes">
             <div>
                 <div style="padding: 0px 15px;">
                     <h3 class="h3">Tools </h3>
@@ -43,14 +43,14 @@ Define **“e-htmlAttributes”** true in angular module in script section.
             .controller('SplitterCtrl', function ($scope) {
                 $scope.orientation = ej.Orientation.Vertical;
                 $scope.proper = [{}, {}];
-                $scope.htmlattributes = { class: "my-class", style: "border:1px solid red" };
+                $scope.htmlAttributes = { class: "my-class", style: "border:1px solid red" };
 
 
 {% endhighlight %}
 
 The output for the above code as follows,
 
-![](Appearance-and-Styling_images\Appearance-and-Styling_img1.png) 
+![Html Attributes](Appearance-and-Styling_images\Appearance-and-Styling_img1.png) 
 
 ## Enabling Responsiveness
 
@@ -124,7 +124,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
         <div>
             <div style="padding: 0px 15px;">
                 <h3 class="h3">Grid </h3>
-                Essential Mvc Grid offers full featured a Grid control with extensive support for
+                Essential MVC Grid offers full featured a Grid control with extensive support for
                 Grouping and the display of hierarchical data.
             </div>
         </div>
@@ -147,7 +147,7 @@ Define **“e-animationSpeed”** and **“e-enableAnimation”** properties in 
 
 The output for **Splitter** when **e-enableAnimation** is “True”. Expanding or collapsing the outer pane in the Splitter produces the animation effect with the animation speed.
 
-![](Appearance-and-Styling_images\Appearance-and-Styling_img2.png) 
+![Enabling Responsiveness](Appearance-and-Styling_images\Appearance-and-Styling_img2.png) 
 
 ## Dimensions configuration
 
@@ -191,7 +191,7 @@ The output for **Splitter** when **e-enableAnimation** is “True”. Expanding 
         <div>
             <div style="padding: 0px 15px;">
                 <h3 class="h3">Grid </h3>
-                Essential Mvc Grid offers full featured a Grid control with extensive support for Grouping and the display of hierarchical data.
+                Essential MVC Grid offers full featured a Grid control with extensive support for Grouping and the display of hierarchical data.
             </div>
         </div>
     </div>
@@ -238,7 +238,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
 
 {% highlight html %}
 
-    <div id="splitter" ej-splitter e-width="600" e-height="280" e-cssclass="cssclass">
+    <div id="splitter" ej-splitter e-width="600" e-height="280" e-cssClass="cssClass">
         <div>
             <div style="padding: 0px 15px;">
                 <h3 class="h3">Tools </h3>
@@ -249,7 +249,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
         <div>
             <div style="padding: 0px 15px;">
                 <h3 class="h3">Grid </h3>
-                Essential Mvc Grid offers full featured a Grid control with extensive support for
+                Essential MVC Grid offers full featured a Grid control with extensive support for
                 Grouping and the display of hierarchical data.
             </div>
         </div>
@@ -263,7 +263,7 @@ Define **“e-cssClass”** in angular module in script section.
 
     angular.module('syncApp', ['ejangular'])
             .controller('SplitterCtrl', function ($scope) {
-                $scope.cssclass = "customCSS";
+                $scope.cssClass = "customCSS";
     })
 
 {% endhighlight %}
@@ -291,7 +291,7 @@ Customize the **CSS** class by setting CSS properties.
 
 The output for Splitter after customizing the CSS class.
 
-![](Appearance-and-Styling_images\Appearance-and-Styling_img3.png) 
+![Customize using CSS class](Appearance-and-Styling_images\Appearance-and-Styling_img3.png) 
 
 
 

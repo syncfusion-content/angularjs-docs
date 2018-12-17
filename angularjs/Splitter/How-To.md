@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To
+title: Syncfusion Splitter How To
 description: How To
 platform: AngularJS
 control: Splitter
@@ -18,7 +18,7 @@ In the HTML page set the corresponding **&lt;div&gt;** element for rendering Spl
 
 {% highlight html %}
 
-    <div id="splitter" ej-splitter e-properties="proper" e-height="280" e-width="600" e-cssclass="cssclass">
+    <div id="splitter" ej-splitter e-properties="proper" e-height="280" e-width="600" e-cssClass="cssClass">
         <div>
             <div style="padding: 0px 15px;">
                 <h3 class="h3">Tools </h3>
@@ -42,18 +42,18 @@ Define **“e-cssClass”** in angular module in script section.
     angular.module('syncApp', ['ejangular'])
        .controller('SplitterCtrl', function ($scope) {
                   $scope.proper = [{ paneSize: "50%" }, {}];
-                  $scope.cssclass = "customclass";
+                  $scope.cssClass = "customClass";
 
 {% endhighlight %}
 
-Customize the **Splitbar** by setting **CSS** properties using CSSClass.
+Customize the **Splitbar** by setting **CSS** properties using cssClass.
 
 {% highlight css %}
 
-    .customclass.e-splitter .e-splitbar.e-h-bar {
+    .customClass.e-splitter .e-splitbar.e-h-bar {
         width: 16px;
     }
-    .customclass.e-splitter .e-splitbar > .e-icon:before {
+    .customClass.e-splitter .e-splitbar > .e-icon:before {
         font-size: 18px;
     }
 
@@ -61,7 +61,7 @@ Customize the **Splitbar** by setting **CSS** properties using CSSClass.
 
 The output for **Splitter** after customizing the CSS class.
 
-![](How To_images\HowTo_img1.png) 
+![Modify SplitBar size](How To_images\HowTo_img1.png) 
 
 ## Make Splitter with other components Responsive?
 
@@ -105,8 +105,8 @@ Define **“e-isresponsive”** and **“e-properties”** in angular module in 
 
 The output for **Splitter** with **innerSplitter at initial rendering** as given below:
 
-![](How To_images\HowTo_img2.png) 
+![Before Splitter with other components Responsive](How To_images\HowTo_img2.png) 
 
 After resizing the splitter, output of innerSplitter as follows.
 
-![](How To_images\HowTo_img3.png) 
+![After Splitter with other components Responsive](How To_images\HowTo_img3.png) 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: appearance and styling
+title: Syncfusion Radial Slider appearance and styling
 description: appearance and styling
 platform: AngularJS
 control: Radial Slider
@@ -62,7 +62,7 @@ Add the following code in your **HTML** page to render the RadialSlider.
 {% highlight html %}
 
 
-<div id="angularRadialSlider" ej-radialslider e-cssclass="cssclass" e-innercircleimageurl="http://js.syncfusion.com/demos/web/content/images/radialslider/chevron-right.png"></div>
+<div id="angularRadialSlider" ej-radialslider e-cssClass="cssClass" e-innercircleimageurl="http://js.syncfusion.com/demos/web/content/images/radialslider/chevron-right.png"></div>
 
 
 {% endhighlight %}
@@ -71,7 +71,7 @@ Add the following code in your **HTML** page to render the RadialSlider.
 {% highlight js %}
 
 syncApp.controller('radialSliderCtrl', function ($scope) {
-        $scope.cssclass = “purple-dark”;
+        $scope.cssClass = “purple-dark”;
     });
 
 
@@ -93,6 +93,6 @@ Add the following code in your style section.
 
 The following screenshot illustrates the output of the above code.
 
-![https://help.syncfusion.com/js/radialslider/Appearance-and-Styling_images/Appearance-and-Styling_images_img1.png](Appearance-and-Styling_images\cssclass_img1.png)
+![Appearance and Styling](Appearance-and-Styling_images\cssclass_img1.png)
 
 

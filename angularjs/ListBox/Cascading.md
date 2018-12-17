@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cascading
+title: Syncfusion ListBox Cascading
 description: Cascading
 platform: AngularJS
 control: ListBox
@@ -42,7 +42,7 @@ The child ListBox component id should mapping to the “cascadeTo” property of
              ];
 
              $scope.fields = { "value": "parentId", "text": "text" };
-             $scope.cascadding = "countryList";
+             $scope.cascading = "countryList";
              $scope.dataList2 = [{ value: 11, parentId: 'a', text: "Algeria" },
                 { value: 12, parentId: 'a', text: "Armenia"},
                 { value: 13, parentId: 'a', text: "Bangladesh" },
@@ -67,7 +67,7 @@ The child ListBox component id should mapping to the “cascadeTo” property of
              ];
 {% endhighlight %}
 
-![](Cascading_images\Cascading_img1.png)
+![Cascading](Cascading_images\Cascading_img1.png)
 
 ## Multilevel cascading
 
@@ -79,16 +79,16 @@ Create an ul elements to render the parent and the child ListBox component as be
       
     <div id="control">
         <div class="contents">
-            <ul id="groupsList" ej-listbox e-cascadeto="cascadding" e-datasource="data" e-fields="fields"></ul>
+            <ul id="groupsList" ej-listbox e-cascadeto="cascading" e-datasource="data" e-fields="fields"></ul>
         </div>
         <div class="contents">
-            <ul id="countryList" ej-listbox e-cascadeto="firstchild" e-datasource="firstLevelChildData" e-loaddataoninit="false" e-fields="firstchildfields"></ul>
+            <ul id="countryList" ej-listbox e-cascadeto="firstChild" e-datasource="firstLevelChildData" e-loaddataoninit="false" e-fields="firstChildFields"></ul>
         </div>
         <div class="contents">
-            <ul id="productList" ej-listbox e-cascadeto="secondchild" e-datasource="secondLevelChildData" e-loaddataoninit="false" e-fields="secondchildfields"></ul>
+            <ul id="productList" ej-listbox e-cascadeto="secondChild" e-datasource="secondLevelChildData" e-loaddataoninit="false" e-fields="secondChildFields"></ul>
         </div>
         <div class="contents">
-            <ul id="subproductList" ej-listbox e-datasource="thirdLevelChildData" e-loaddataoninit="false"></ul>
+            <ul id="subProductList" ej-listbox e-datasource="thirdLevelChildData" e-loaddataoninit="false"></ul>
         </div>
     </div>
 
@@ -107,40 +107,40 @@ The child ListBox component id should mapping to the “cascadeTo” property of
                 { subCategoryId: 13, categoryId: 'b', text: "Home furniture" },
                 { subCategoryId: 14, categoryId: 'b', text: "Bedding" }];
 
-             $scope.secondLevelChildData = [{ productid: 101, subCategoryId: 11, text: "men shirts" },
-                 { productid: 102, subCategoryId: 11, text: "men pants" },
-                 { productid: 103, subCategoryId: 12, text: "Women shirts" },
-                 { productid: 104, subCategoryId: 12, text: "Women pants" },
-                 { productid: 105, subCategoryId: 13, text: "sofa" },
-                 { productid: 106, subCategoryId: 13, text: "chairs" },
-                 { productid: 107, subCategoryId: 14, text: "bedsheets" },
-                 { productid: 108, subCategoryId: 14, text: "pillows" }];
+             $scope.secondLevelChildData = [{ productId: 101, subCategoryId: 11, text: "men shirts" },
+                 { productId: 102, subCategoryId: 11, text: "men pants" },
+                 { productId: 103, subCategoryId: 12, text: "Women shirts" },
+                 { productId: 104, subCategoryId: 12, text: "Women pants" },
+                 { productId: 105, subCategoryId: 13, text: "sofa" },
+                 { productId: 106, subCategoryId: 13, text: "chairs" },
+                 { productId: 107, subCategoryId: 14, text: "bedsheets" },
+                 { productId: 108, subCategoryId: 14, text: "pillows" }];
 
-             $scope.thirdLevelChildData = [{ productid: 101, text: "red men shirts" },
-                 { productid: 101, text: "blue men shirts" },
-                 { productid: 102, text: "red men pants" },
-                 { productid: 102, text: "blue men pants" },
-                 { productid: 103, text: "blueWomen shirts" },
-                 { productid: 103, text: "red Women shirts" },
-                 { productid: 104, text: "red women pants" },
-                 { productid: 104, text: "blue women pants" },
-                 { productid: 105, text: "red sofa" },
-                 { productid: 105, text: "blue sofa" },
-                 { productid: 106, text: "red chairs" },
-                 { productid: 106, text: "blue chairs" },
-                 { productid: 107, text: "red bedsheets" },
-                 { productid: 107, text: "blue bedsheets" },
-                 { productid: 108, text: "red pillows" },
-                 { productid: 108, text: "blue pillows" }];
+             $scope.thirdLevelChildData = [{ productId: 101, text: "red men shirts" },
+                 { productId: 101, text: "blue men shirts" },
+                 { productId: 102, text: "red men pants" },
+                 { productId: 102, text: "blue men pants" },
+                 { productId: 103, text: "blueWomen shirts" },
+                 { productId: 103, text: "red Women shirts" },
+                 { productId: 104, text: "red women pants" },
+                 { productId: 104, text: "blue women pants" },
+                 { productId: 105, text: "red sofa" },
+                 { productId: 105, text: "blue sofa" },
+                 { productId: 106, text: "red chairs" },
+                 { productId: 106, text: "blue chairs" },
+                 { productId: 107, text: "red bedsheets" },
+                 { productId: 107, text: "blue bedsheets" },
+                 { productId: 108, text: "red pillows" },
+                 { productId: 108, text: "blue pillows" }];
 
              $scope.fields = { "value": "categoryId" };
-             $scope.firstchildfields = { "value": "subCategoryId" };
-             $scope.secondchildfields = { "value": "productid" };
-             $scope.cascadding = "countryList";
-             $scope.firstchild = "productList";
-             $scope.secondchild = "subproductList";
+             $scope.firstChildFields = { "value": "subCategoryId" };
+             $scope.secondChildFields = { "value": "productId" };
+             $scope.cascading = "countryList";
+             $scope.firstChild = "productList";
+             $scope.secondChild = "subProductList";
              $scope.width = "100%";
 
 {% endhighlight %}
 
-![](Cascading_images\Cascading_img2.png)
+![Multilevel cascading](Cascading_images\Cascading_img2.png)
