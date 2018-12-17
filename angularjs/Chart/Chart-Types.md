@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart types
+title: Syncfusion EJ1 AngularJS - Chart types
 description: What are the different types of Charts available in Essential Javascript Chart.
 platform: AngularJS
 control: Chart
@@ -38,7 +38,7 @@ To render a Line Chart, set the series `e-type` as **"line"** in the chart serie
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img1.png)
+![Line Chart](Chart-Types_images/Chart-Types_img1.png)
 
 
 ### Change the line width
@@ -68,7 +68,7 @@ To change the width of the line segment, you can use the `e-width` property in t
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img2.png)
+![Line Width](Chart-Types_images/Chart-Types_img2.png)
 
 
 
@@ -100,7 +100,7 @@ To render the line series with dotted lines, you can use the `e-dashArray` optio
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img3.png)
+![Dashed Line](Chart-Types_images/Chart-Types_img3.png)
 
 
 
@@ -133,7 +133,7 @@ For customizing the start and end caps of the line segment, you can use the `e-l
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img4.png)
+![Line Cap](Chart-Types_images/Chart-Types_img4.png)
 
 
 ### Changing the line join
@@ -166,7 +166,7 @@ You can use the `e-linejoin` property to specify how two intersecting line segme
 {% endhighlight %}
 
 
-![](Chart-Types_images/Chart-Types_img5.png)
+![Line Join](Chart-Types_images/Chart-Types_img5.png)
 
 ### MultiColor Line
 
@@ -174,7 +174,7 @@ You can change the color of the line segments by using the `e-fill` property of 
 
 {% highlight html %}
 
-html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
     <head>
         <title>Essential Studio for AngularJS: Chart</title>
         <!--CSS and Script file References -->
@@ -202,7 +202,7 @@ html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img81.png)
+![MultiColor Line](Chart-Types_images/Chart-Types_img81.png)
 
 ## Step Line Chart
 
@@ -232,7 +232,7 @@ To render a Step Line Chart, set the series `e-type` as **"stepline"** in the ch
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img6.png)
+![StepLine Chart](Chart-Types_images/Chart-Types_img6.png)
 
 
 ### Changing the line width
@@ -262,7 +262,7 @@ To change the line width, you can use the **width** property.
 </html>
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img7.png)
+![StepLine Width](Chart-Types_images/Chart-Types_img7.png)
 
 
 ### Dashed lines
@@ -296,7 +296,7 @@ To render the step line series with dotted lines, you can use the `e-dasharray` 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img8.png)
+![Dashed StepLine](Chart-Types_images/Chart-Types_img8.png)
 
 
 ### Changing the line cap
@@ -328,7 +328,7 @@ For customizing the start and end caps of the line segment, you can use the `e-l
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img9.png)
+![StepLine Cap](Chart-Types_images/Chart-Types_img9.png)
 
 
 ### Changing the line join
@@ -360,7 +360,7 @@ You can use the `e-linejoin` property to specify how two intersecting line segme
 {% endhighlight %}
 
 
-![](Chart-Types_images/Chart-Types_img10.png)
+![StepLine Join](Chart-Types_images/Chart-Types_img10.png)
 
 
 ## Area Chart
@@ -392,7 +392,7 @@ To render an Area chart, you can specify the series `e-type` as **"area"** in th
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img11.png)
+![Area Chart](Chart-Types_images/Chart-Types_img11.png)
 
 
 
@@ -435,7 +435,7 @@ Since the RangeArea series requires two y values for a point, you have to add th
  
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img12.png)
+![RangeArea Chart](Chart-Types_images/Chart-Types_img12.png)
 
 
 
@@ -468,7 +468,7 @@ To render a Step Area Chart, set the `e-type` as **"stepArea"** in the chart ser
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img13.png)
+![StepArea Chart](Chart-Types_images/Chart-Types_img13.png)
 
 
 
@@ -502,7 +502,7 @@ To render a Spline Area Chart, set the `e-type` as **"splineArea"** in the chart
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img14.png)
+![SplineArea Chart](Chart-Types_images/Chart-Types_img14.png)
 
 
 ## Stacked Area Chart
@@ -533,7 +533,7 @@ To render a Stacked Area Chart, set the `e-type` as **"stackingArea"** in the ch
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img15.png)
+![StackedArea Chart](Chart-Types_images/Chart-Types_img15.png)
 
 
 ## 100% Stacked Area Chart  
@@ -564,11 +564,11 @@ To render a 100% Stacked Area Chart, set the `e-type` as **"stackingArea100"** i
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img16.png)
+![StackedArea100](Chart-Types_images/Chart-Types_img16.png)
 
 ## Stacked Spline Area Chart
 
-To render a Stacked Spline Area Chart, set the `e-type` as **"stackingsplinearea"** in the chart series.
+To render a Stacked Spline Area Chart, set the `e-type` as **"stackingSplineArea"** in the chart series.
 
 
 {% highlight html %}
@@ -596,7 +596,7 @@ To render a Stacked Spline Area Chart, set the `e-type` as **"stackingsplinearea
 {% endhighlight %} 
 
 
-![](Chart-Types_images/Chart-Types_img97.png)
+![Stacked Spline Area](Chart-Types_images/Chart-Types_img97.png)
 
 
 ## 100% Stacked Spline Area Chart  
@@ -627,7 +627,7 @@ To render a 100% Stacked Spline Area Chart, set the `e-type` as **"stackingsplin
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img98.png)
+![Stacked SplineArea100](Chart-Types_images/Chart-Types_img98.png)
 
 ## Column Chart
 
@@ -659,7 +659,7 @@ To render a Column Chart, set the `e-type` as **"column"** in the chart series. 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img17.png)
+![Column Chart](Chart-Types_images/Chart-Types_img17.png)
 
 ### Change a point color
 
@@ -693,7 +693,7 @@ You can change the color of a column by using the `fill` property of the point.
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img18.png)
+![Column Color](Chart-Types_images/Chart-Types_img18.png)
 
 
 
@@ -727,7 +727,7 @@ N> Width of a column also depends upon the `e-columnSpacing` property, because `
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img86.png)
+![Column Width](Chart-Types_images/Chart-Types_img86.png)
 
 ### Column with rounded corners
 Corners of the column chart can be customized by setting value to the `e-cornerradius` property.
@@ -753,7 +753,7 @@ Corners of the column chart can be customized by setting value to the `e-cornerr
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img88.png)
+![Rounded Column](Chart-Types_images/Chart-Types_img88.png)
 
 ### Spacing between column series
 
@@ -784,7 +784,7 @@ N> Column spacing will also affect the width of the column. For example, setting
 </html>
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img87.png)
+![Column Spacing](Chart-Types_images/Chart-Types_img87.png)
 
 
 ### Cylindrical Chart
@@ -820,7 +820,7 @@ The following chart types can be rendered as cylinder in both 2D and in 3D view.
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img89.png)
+![Cylindrical Column](Chart-Types_images/Chart-Types_img89.png)
 
 ## RangeColumn Chart
 
@@ -859,7 +859,7 @@ Since, the RangeColumn series requires two y values for a point, add the `e-high
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img19.png)
+![RangeColumn Chart](Chart-Types_images/Chart-Types_img19.png)
 
 
 ### Change a point color 
@@ -897,7 +897,7 @@ To change the color of a range column, you can use the `fill` property of point.
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img20.png)
+![RangeColumn Color](Chart-Types_images/Chart-Types_img20.png)
 
 ## Stacked Column Chart
 
@@ -928,7 +928,7 @@ To render a Stacked Column Chart, set the `e-type` as **"stackingColumn"** in th
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img21.png)
+![Stacked Column](Chart-Types_images/Chart-Types_img21.png)
 
 
 ### Cluster / Group stacked columns
@@ -961,7 +961,7 @@ You can use the `e-stackinggroup` property to group the stacked columns. Columns
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img22.png)
+![Stacked Column Group](Chart-Types_images/Chart-Types_img22.png)
 
 
 ### Change a point color
@@ -996,7 +996,7 @@ To change the color of a stacking column, you can use the `fill` property of the
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img23.png)
+![StackedColumn Color](Chart-Types_images/Chart-Types_img23.png)
 
 
 ## 100% Stacked Column Chart    
@@ -1028,7 +1028,7 @@ To render a 100% Stacked Column Chart, set the `e-type` as **"stackingColumn100"
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img24.png)
+![StackedColumn100](Chart-Types_images/Chart-Types_img24.png)
 
 
 ### Cluster / Group 100% stacked columns
@@ -1062,7 +1062,7 @@ By using the `e-stackinggroup` property, you can group the 100% stacking columns
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img25.png)
+![Group StackedColumn100](Chart-Types_images/Chart-Types_img25.png)
 
 
 ### Change a point color
@@ -1096,7 +1096,7 @@ To change the color of a 100% stacking column, you can use the `fill` property o
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img26.png)
+![StackedColumn100 Color](Chart-Types_images/Chart-Types_img26.png)
 
 
 ## Bar Chart
@@ -1126,7 +1126,7 @@ To render a bar Chart, set the `e-type` as **"bar"** in the chart series. To cha
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img27.png)
+![Bar Chart](Chart-Types_images/Chart-Types_img27.png)
 
 
 ### Change the color of a bar
@@ -1160,7 +1160,7 @@ By using the `fill` property of the point, you can change the specific point of 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img28.png)
+![Bar Color](Chart-Types_images/Chart-Types_img28.png)
 
 
 ## Stacked Bar Chart
@@ -1193,7 +1193,7 @@ To render a Stacked Bar Chart, set the `e-type` as **"stackingBar"** in the char
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img29.png)
+![Stacked Bar](Chart-Types_images/Chart-Types_img29.png)
 
 
 
@@ -1227,7 +1227,7 @@ You can use the `e-stackinggroup` property to group the stacking bars with the s
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img30.png)
+![Stacked Bar Group](Chart-Types_images/Chart-Types_img30.png)
 
 
 ### Change a point color
@@ -1261,7 +1261,7 @@ You can change the color of a stacking bar by using the `fill` property of the p
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img31.png)
+![Stacked Bar Color](Chart-Types_images/Chart-Types_img31.png)
 
 
 ## 100% Stacked Bar Chart
@@ -1293,7 +1293,7 @@ To render a 100% Stacked Bar Chart, set the `e-type` as **"stackingBar100"** in 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img32.png)
+![StackedBar100](Chart-Types_images/Chart-Types_img32.png)
 
 
 By using the `e-stackingGroup` property, you can group the 100% stacking bars with the same group name. 
@@ -1324,7 +1324,7 @@ By using the `e-stackingGroup` property, you can group the 100% stacking bars wi
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img33.png)
+![StackedBar Group](Chart-Types_images/Chart-Types_img33.png)
 
 
 ### Change a point color
@@ -1359,7 +1359,7 @@ To change the color of a 100% stacking bar, you can use the `fill` property of t
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img34.png)
+![StackedBar100 Color](Chart-Types_images/Chart-Types_img34.png)
 
 
 
@@ -1391,14 +1391,14 @@ To render a Spline Chart, set the `e-type` as **"spline"** in the chart series. 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img35.png)
+![Spline Chart](Chart-Types_images/Chart-Types_img35.png)
 
 
 
 ### Spline Types
 
 Spline series supports four types of curves, namely natural, monotonic, cardinal and clamped. To change the spline type, you can use the
-`e-splinetype`(../api/ejchart#members:series-splinetype) property in the series. 
+[`e-splineType`](../api/ejchart#members:series-splinetype) property in the series. 
 
 
 {% highlight html %}
@@ -1428,7 +1428,7 @@ Spline series supports four types of curves, namely natural, monotonic, cardinal
 
 ### Change the cardinal spline tension
 
-To change cardinal spline tension, you can use the `e-cardinalsplinetension`(../api/ejchart#members:series-cardinalsplinetension) property in the series. The default value of cardinalSplineTension is **0.5**. Its value ranges from 0 to 1.
+To change cardinal spline tension, you can use the [`e-cardinalSplineTension`](../api/ejchart#members:series-cardinalsplinetension) property in the series. The default value of cardinalSplineTension is **0.5**. Its value ranges from 0 to 1.
 
 {% highlight html %}
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="ChartApp">
@@ -1484,7 +1484,7 @@ To change the spline segment width, you can use the `e-width` property of the se
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img36.png)
+![Spline Width](Chart-Types_images/Chart-Types_img36.png)
 
 
 ### Dashed lines
@@ -1516,7 +1516,7 @@ To render the spline series with dotted lines, you can use the `e-dasharray` opt
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img37.png)
+![Dashed Splines](Chart-Types_images/Chart-Types_img37.png)
 
 
 ## Pie Chart
@@ -1548,7 +1548,7 @@ You can create a pie chart by setting the series `e-type` as **"pie"** in the ch
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img38.png)
+![Pie Chart](Chart-Types_images/Chart-Types_img38.png)
 
 
 
@@ -1581,7 +1581,7 @@ You can use the `e-pieCoefficient` property to change the diameter of the Pie ch
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img39.png)
+![Pie Size](Chart-Types_images/Chart-Types_img39.png)
 
 
 ### Explode a pie segment
@@ -1612,7 +1612,7 @@ You can explode a pie segment on the chart load by using the `e-explodeindex` of
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img40.png)
+![Pie Explode](Chart-Types_images/Chart-Types_img40.png)
 
 
 ### Explode all the segments
@@ -1643,7 +1643,7 @@ To explode all the segments of the Pie chart, you can enable the `e-explodeall` 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img41.png)
+![Pie ExplodeAll](Chart-Types_images/Chart-Types_img41.png)
 
 
 ### Explode a pie segment on mouse over
@@ -1673,7 +1673,7 @@ To explode a pie segment on a mouse over, you can enable the `e-explode` propert
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img42.png)
+![MouseOver Pie Explode](Chart-Types_images/Chart-Types_img42.png)
 
 
 ### Sector of Pie
@@ -1703,7 +1703,7 @@ EjChart allows you to render all the data points/segments in the semi-pie, quart
 </html>
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img43.png)
+![Pie Sector](Chart-Types_images/Chart-Types_img43.png)
 
 
 ## Doughnut Chart
@@ -1733,7 +1733,7 @@ To create a Doughnut chart, you can specify the series `e-type` as **"doughnut"*
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img44.png)
+![Doughnut Chart](Chart-Types_images/Chart-Types_img44.png)
 
 
 ### Change Doughnut inner radius
@@ -1763,7 +1763,7 @@ You can change the doughnut chart inner radius by using the `e-doughnutcoefficie
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img45.png)
+![Doughnut Inner Radius](Chart-Types_images/Chart-Types_img45.png)
 
 
 ### Change the doughnut size
@@ -1793,7 +1793,7 @@ You can use the `e-doughnutsize` property to change the diameter of the Doughnut
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img46.png)
+![Doughnut Size](Chart-Types_images/Chart-Types_img46.png)
 
 
 ### Explode a doughnut segment
@@ -1822,7 +1822,7 @@ To explode a specific doughnut segment, set the index to be exploded by using th
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img47.png)
+![Doughnut Explode](Chart-Types_images/Chart-Types_img47.png)
 
 
 ### Explode all the segments
@@ -1851,7 +1851,7 @@ To explode all the segments, you can enable the `e-explodeall` property of the s
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img48.png)
+![Doughnut ExplodeAll](Chart-Types_images/Chart-Types_img48.png)
 
 
 ### Explode a doughnut segment on mouse over
@@ -1880,7 +1880,7 @@ To explode a doughnut segment on a mouse over, you can enable the `e-explode` pr
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img49.png)
+![MouseOver Doughnut Explode](Chart-Types_images/Chart-Types_img49.png)
 
 
 ### Sector of Doughnut
@@ -1911,7 +1911,7 @@ EjChart allows you to render all the data points/segments in the semi-doughnut, 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img50.png)
+![Doughnut Sector](Chart-Types_images/Chart-Types_img50.png)
 
 
 ## Multiple Pie Chart
@@ -1944,11 +1944,11 @@ EjChart provides support to render more than one series in pie and in doughnut c
 
 **Multiple Pie** 
 
-![](Chart-Types_images/Chart-Types_img82.png)
+![Multiple Pie](Chart-Types_images/Chart-Types_img82.png)
 
 **Multiple Doughnut** 
 
-![](Chart-Types_images/Chart-Types_img83.png)
+![Multiple Doughnut](Chart-Types_images/Chart-Types_img83.png)
 
 ### Start and End Angle Support
 
@@ -1956,11 +1956,11 @@ In the Multiple Pie chart, the start and end angle property is also supported.
 
 **Sector of Multiple Pie**
 
-![](Chart-Types_images/Chart-Types_img84.png)
+![Multiple Pie Sector](Chart-Types_images/Chart-Types_img84.png)
 
 **Sector of Multiple Doughnut**
 
-![](Chart-Types_images/Chart-Types_img85.png)
+![Multiple Doughnut Sector](Chart-Types_images/Chart-Types_img85.png)
 
 
 ## Pyramid Chart
@@ -1989,7 +1989,7 @@ To create a Pyramid chart, you can specify the series `e-type` as **"pyramid"** 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img51.png)
+![Pyramid Chart](Chart-Types_images/Chart-Types_img51.png)
 
 
 ### Pyramid Mode
@@ -2018,7 +2018,7 @@ Pyramid mode has two types, *linear* and *surface* respectively. The default **"
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img52.png)
+![Pyramid Mode](Chart-Types_images/Chart-Types_img52.png)
 
 
 ### Gap between the segments
@@ -2047,7 +2047,7 @@ You can control the gap between the segments by using the `e-gapratio` option of
 </html>
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img53.png)
+![Gap Ratio](Chart-Types_images/Chart-Types_img53.png)
 
 
 ### Explode a pyramid segment
@@ -2077,7 +2077,7 @@ You can explode a pyramid segment on the chart load by using the `e-explodeindex
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img54.png)
+![Pyramid Explode](Chart-Types_images/Chart-Types_img54.png)
 
 
 ## Funnel Chart
@@ -2107,7 +2107,7 @@ You can create a funnel chart by setting the series `e-type` as **"funnel"** in 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img55.png)
+![Funnel Chart](Chart-Types_images/Chart-Types_img55.png)
 
 
 ### Change the funnel width and height
@@ -2136,7 +2136,7 @@ Funnel segments height and width is calculated from the chart size, by default. 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img56.png)
+![Funnel Width and Height](Chart-Types_images/Chart-Types_img56.png)
 
 
 ### Explode a funnel segment
@@ -2166,7 +2166,7 @@ You can explode a funnel segment on the chart load by using the `e-explodeindex`
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img57.png)
+![Funnel Explode](Chart-Types_images/Chart-Types_img57.png)
 
 
 ## Bubble Chart
@@ -2205,7 +2205,7 @@ To create a Bubble chart, you can set the series `e-type` as **"bubble"** in the
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img58.png)
+![Bubble Chart](Chart-Types_images/Chart-Types_img58.png)
 
 
 ## Scatter
@@ -2235,7 +2235,7 @@ To create a Scatter chart, you can set the series `e-type` as **"scatter"**’ i
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img59.png)
+![Scatter Chart](Chart-Types_images/Chart-Types_img59.png)
 
 
 ### Customize the scatter chart
@@ -2265,7 +2265,7 @@ You can change the scatter size by using the `e-size` property of the series mar
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img60.png)
+![Scatter Customization](Chart-Types_images/Chart-Types_img60.png)
 
 
 ## HiLoOpenClose Chart 
@@ -2305,7 +2305,7 @@ To create a HiLoOpenClose chart, you can set the series `e-type` as **"hiloopenc
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img61.png)
+![HiloOpenClose Chart](Chart-Types_images/Chart-Types_img61.png)
 
 
 ### DrawMode
@@ -2336,7 +2336,7 @@ You can change the HiLoOpenClose chart `e-drawMode` to `open`, `close` or *both*
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img62.png)
+![HiLo DrawMode](Chart-Types_images/Chart-Types_img62.png)
 
 
 ### Bull and Bear Color	
@@ -2366,7 +2366,7 @@ HiLoOpenClose chart `e-bullFillColor` is used to specify a fill color for the se
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img63.png)
+![HiLo Bull and Bear Fill](Chart-Types_images/Chart-Types_img63.png)
 
 
 ## Candle
@@ -2406,7 +2406,7 @@ You can create a Candle chart by specifying the series `e-type` as **"candle"** 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img64.png)
+![Candle Chart](Chart-Types_images/Chart-Types_img64.png)
 
 
 ### Bull and Bear Color
@@ -2435,7 +2435,7 @@ Candle chart `e-bullFillColor` is used to specify a fill color for the segments 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img65.png)
+![Candle Bear and Bull Fill](Chart-Types_images/Chart-Types_img65.png)
 
 
 ## HiLo
@@ -2475,7 +2475,7 @@ HiLo chart is created by setting the series `e-type` as **"hilo"** in the chart 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img66.png)
+![HiLo](Chart-Types_images/Chart-Types_img66.png)
 
 
 ## Polar
@@ -2506,7 +2506,7 @@ Polar chart is created by setting the series `e-type` as **polar** in the chart 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img67.png)
+![Polar Chart](Chart-Types_images/Chart-Types_img67.png)
 
 
 ### DrawType
@@ -2535,7 +2535,7 @@ Polar **DrawType** property is used to change the series plotting type to *Line*
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img68.png)
+![Polar DrawType](Chart-Types_images/Chart-Types_img68.png)
 
 
 ### Stack columns in Polar chart
@@ -2565,7 +2565,7 @@ By using the `e-isStacking` property, you can specify whether the column has to 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img69.png)
+![Polar StackedColumn](Chart-Types_images/Chart-Types_img69.png)
 
 
 ## Radar Chart  
@@ -2596,7 +2596,7 @@ To create a Radar chart, you can specify the series `e-type` as **"radar"** in t
 {% endhighlight %}
 
 
-![](Chart-Types_images/Chart-Types_img70.png)
+![Radar Chart](Chart-Types_images/Chart-Types_img70.png)
 
 
 ### DrawType
@@ -2627,7 +2627,7 @@ Radar **DrawType** property is used to change the series plotting type to *Line*
 {% endhighlight %}
 
 
-![](Chart-Types_images/Chart-Types_img71.png)
+![Radar DrawType](Chart-Types_images/Chart-Types_img71.png)
 
 
 ### Stack columns in Radar chart
@@ -2658,7 +2658,7 @@ By using the `e-isStacking` property, you can specify whether the column has to 
 {% endhighlight %}
 
 
-![](Chart-Types_images/Chart-Types_img72.png)
+![Radar StackedColumn](Chart-Types_images/Chart-Types_img72.png)
 
 
 ## Waterfall Chart 
@@ -2691,7 +2691,7 @@ N> The inline property of the **series.positiveFill** has the first priority and
 {% endhighlight %}
 
 
-![](Chart-Types_images/Chart-Types_img73.png)
+![Waterfall Chart](Chart-Types_images/Chart-Types_img73.png)
 
 
 **ShowIntermediateSum**
@@ -2782,7 +2782,7 @@ To customize the connector line color, width, opacity and dashArray of the water
 {% endhighlight %}
 
 
-![](Chart-Types_images/Chart-Types_img74.png)
+![Waterfall ConnectorLine](Chart-Types_images/Chart-Types_img74.png)
 
 
 ## Error bar Chart 
@@ -2813,7 +2813,7 @@ EjChart can generate Error bar for Cartesian type series *(Line, Column, Bar, Sc
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img75.png)
+![ErrorBar Chart](Chart-Types_images/Chart-Types_img75.png)
 
 ### Changing Error Bar Type
 
@@ -2842,7 +2842,7 @@ You can change the error bar rendering type using `e-type` *(like fixedValue, pe
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img76.png)
+![ErrorBar Type](Chart-Types_images/Chart-Types_img76.png)
 
 
 #### Customizing error bar type              
@@ -2876,7 +2876,7 @@ To customize the error bar type, set error bar `e-type` as **"custom"** and then
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img77.png)
+![ErrorBar Type Customization](Chart-Types_images/Chart-Types_img77.png)
 
 
 ### Changing Error Bar Mode
@@ -2907,7 +2907,7 @@ Error bar mode is used to define whether the error bar line has to be drawn *hor
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img78.png)
+![ErrorBar Mode Customization](Chart-Types_images/Chart-Types_img78.png)
 
 
 ### Changing Error Bar Direction
@@ -2939,7 +2939,7 @@ You can change the error bar direction to plus, minus or both side using `e-erro
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img79.png)
+![ErrorBar Direction](Chart-Types_images/Chart-Types_img79.png)
 
 
 ### Customizing Error bar cap
@@ -2971,12 +2971,12 @@ To customize the error bar cap *visibility, length, width* and *fill* color, you
  
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img80.png)
+![ErrorBar Cap Customization](Chart-Types_images/Chart-Types_img80.png)
 
 ## Box and Whisker Chart 
 
-To render a Box and Whisker Chart, set the series `e-type` as **"boxandwhisker"** in the chart series. Box and Whisker chart requires
-2 fields (x and y) to plot a segment. The feild y requires n number of data or it should  contain minimum five values to plot a segment.
+To render a Box and Whisker Chart, set the series `e-type` as **"boxAndWhisker"** in the chart series. Box and Whisker chart requires
+2 fields (x and y) to plot a segment. The field y requires n number of data or it should  contain minimum five values to plot a segment.
 
 {% highlight html %}
 
@@ -3013,7 +3013,7 @@ To render a Box and Whisker Chart, set the series `e-type` as **"boxandwhisker"*
 
 {% endhighlight %}
 
-![](=Chart-Types_images/Chart-Types_img90.png)
+![Box and Whisker Chart](Chart-Types_images/Chart-Types_img90.png)
 
 ### BoxPlotMode
 
@@ -3068,7 +3068,7 @@ Box and Whisker `e-showMedian` property is used to show the box and whisker aver
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img91.png)
+![Show Median](Chart-Types_images/Chart-Types_img91.png)
 
 ###  Customize the Outlier
 
@@ -3096,7 +3096,7 @@ Outlier symbol, width and height can be customized using outlierSettings through
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img92.png)
+![Outlier Customization](Chart-Types_images/Chart-Types_img92.png)
 
 [Click](http://ngjq.syncfusion.com/#/chart/boxandwhisker) here to view the Box and Whisker Chart online demo sample.
 
@@ -3138,7 +3138,7 @@ To render the pie of pie chart, set the series `e-type` as **pieofpie**. Pie of 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img93.png)
+![PieOfPie Chart](Chart-Types_images/Chart-Types_img93.png)
 
 [Click](http://ngjq.syncfusion.com/#/chart/pieofpie) here to view the Pie Of Pie Chart online demo sample.
 
@@ -3169,7 +3169,7 @@ The points to be displayed in the second pie is decided based on the `e-splitMod
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img94.png)
+![PieOfPie Split Mode and Value](Chart-Types_images/Chart-Types_img94.png)
 
 ### Changing Pie Of Pie Size
 
@@ -3195,7 +3195,7 @@ The size of the second Pie can be customized by using the `e-pieOfPieCoefficient
 
 The following screenshot represents the pie of pie series with pieOfPieCoefficient as 1
 
-![](Chart-Types_images/Chart-Types_img95.png)
+![PieOfPie Coefficient](Chart-Types_images/Chart-Types_img95.png)
 
 #### Customizing the Gap
 
@@ -3220,6 +3220,6 @@ The distance between the two pies in the pie of pie chart can be controlled by u
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img96.png)
+![PieOfPie GapWidth](Chart-Types_images/Chart-Types_img96.png)
 
 
