@@ -13,30 +13,7 @@ documentation: ug
 
 The ListBox component has a field property (object) which holds the properties to map with datasource fields. For example, the field object has a text property which is necessary to map with specific field in the datasource to render the items in the ListBox component.
 
-The field object contains the following properties.
-
-* [`e-fields-text`](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
-
-* [`e-fields-tooltiptext`](http://helpjs.syncfusion.com/js/api/ejlistbox#members:fields)
-
-* [`e-fields-id`](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
-
-* [`e-fields-selectby`](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
-
-* [`e-fields-groupby`](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
-
-* [`e-fields-checkby`](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
-
-* [`e-fields-tablename`](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
-
-* [`e-fields-imageurl`](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
-
-* [`e-fields-imageattributes`](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
-
-* [`e-fields-spritecssclass`](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
-
-* [`e-fields-htmlattributes`](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
-
+The field object contains the following [`properties`](http://help.syncfusion.com/js/api/ejlistbox#members:fields) such as text, id, etc. 
 
 ## Local data
 
