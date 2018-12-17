@@ -12,7 +12,7 @@ The ListView control allows you to select an item from a list-like interface and
 This section explains briefly about how to create a web ListView widget in your application with Angular JavaScript by step-by-step instructions. The following screenshot illustrates the output of a ListView widget.
 
 
-![](Getting_Started_images\Getting-Started_img1.png)
+![Getting Started](Getting_Started_images\Getting-Started_img1.png)
 
 ## Create a ListView widget in AngularJS
 
