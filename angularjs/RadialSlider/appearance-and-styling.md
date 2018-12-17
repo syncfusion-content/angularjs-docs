@@ -1,6 +1,6 @@
 ---
 layout: post
-title: appearance and styling
+title: Syncfusion Radial Slider appearance and styling
 description: appearance and styling
 platform: AngularJS
 control: Radial Slider
@@ -55,14 +55,14 @@ By default, there are 17 theme support available for RadialSlider component, nam
 
 **RadialSlider** component also allows you to customize its appearance using user-defined CSS. To apply custom themes you can use **e-cssClass** property, which sets the root class for **RadialSlider** theme.
 
-Using this **e-cssClass** you can override the existing styles under the theme style sheet. In the following example, the value of **cssclass** property is set as “**Purple-dark**”. **Purple-dark** is added as root class to **RadialSlider** component at the runtime. From this root class, you can customize the **RadialSlider** appearance.
+Using this **e-cssClass** you can override the existing styles under the theme style sheet. In the following example, the value of **cssClass** property is set as “**Purple-dark**”. **Purple-dark** is added as root class to **RadialSlider** component at the runtime. From this root class, you can customize the **RadialSlider** appearance.
 
 Add the following code in your **HTML** page to render the RadialSlider.
 
 {% highlight html %}
 
 
-<div id="angularRadialSlider" ej-radialslider e-cssclass="cssclass" e-innercircleimageurl="http://js.syncfusion.com/demos/web/content/images/radialslider/chevron-right.png"></div>
+<div id="angularRadialSlider" ej-radialslider e-cssClass="cssClass" e-innercircleimageurl="http://js.syncfusion.com/demos/web/content/images/radialslider/chevron-right.png"></div>
 
 
 {% endhighlight %}
@@ -71,7 +71,7 @@ Add the following code in your **HTML** page to render the RadialSlider.
 {% highlight js %}
 
 syncApp.controller('radialSliderCtrl', function ($scope) {
-        $scope.cssclass = “purple-dark”;
+        $scope.cssClass = “purple-dark”;
     });
 
 
@@ -93,6 +93,6 @@ Add the following code in your style section.
 
 The following screenshot illustrates the output of the above code.
 
-![https://help.syncfusion.com/js/radialslider/Appearance-and-Styling_images/Appearance-and-Styling_images_img1.png](Appearance-and-Styling_images\cssclass_img1.png)
+![Appearance and Styling](Appearance-and-Styling_images\cssclass_img1.png)
 
 

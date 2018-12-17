@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To
+title: Syncfusion Splitter How To
 description: How To
 platform: AngularJS
 control: Splitter
@@ -18,7 +18,7 @@ In the HTML page set the corresponding **&lt;div&gt;** element for rendering Spl
 
 {% highlight html %}
 
-    <div id="splitter" ej-splitter e-properties="proper" e-height="280" e-width="600" e-cssclass="cssclass">
+    <div id="splitter" ej-splitter e-properties="proper" e-height="280" e-width="600" e-cssClass="cssClass">
         <div>
             <div style="padding: 0px 15px;">
                 <h3 class="h3">Tools </h3>
@@ -42,18 +42,18 @@ Define **“e-cssClass”** in angular module in script section.
     angular.module('syncApp', ['ejangular'])
        .controller('SplitterCtrl', function ($scope) {
                   $scope.proper = [{ paneSize: "50%" }, {}];
-                  $scope.cssclass = "customclass";
+                  $scope.cssClass = "customClass";
 
 {% endhighlight %}
 
-Customize the **Splitbar** by setting **CSS** properties using CSSClass.
+Customize the **Splitbar** by setting **CSS** properties using cssClass.
 
 {% highlight css %}
 
-    .customclass.e-splitter .e-splitbar.e-h-bar {
+    .customClass.e-splitter .e-splitbar.e-h-bar {
         width: 16px;
     }
-    .customclass.e-splitter .e-splitbar > .e-icon:before {
+    .customClass.e-splitter .e-splitbar > .e-icon:before {
         font-size: 18px;
     }
 
@@ -61,13 +61,13 @@ Customize the **Splitbar** by setting **CSS** properties using CSSClass.
 
 The output for **Splitter** after customizing the CSS class.
 
-![](How To_images\HowTo_img1.png) 
+![Modify SplitBar size](How To_images\HowTo_img1.png) 
 
 ## Make Splitter with other components Responsive?
 
 In General, any components within the splitter is not responsive while you have set responsive property of that component. But You can make splitter with inner components Responsive by using “e-resize” event of Splitter. For example, if you have Splitter inside the Splitter, innerSplitter is not responsive. If you resize the outerSplitter, innerSplitter is not responsive when you have set “e-isResponsive” is true. Because isResponsive will word whenever the window resize event occurs. On resizing the splitter will not trigger any event related to window resizing and so you need to manually resize the elements inside the splitter.
 
-To achieve responsiveness of innersplitter, you have set **“e-resize”** event for outerSplitter. While resizing the outerSplitter, the resize event is triggered. You can call **“windowResized”** method to make responsiveness of innerSplitter within the resize event. 
+To achieve responsiveness of innerSplitter, you have set **“e-resize”** event for outerSplitter. While resizing the outerSplitter, the resize event is triggered. You can call **“windowResized”** method to make responsiveness of innerSplitter within the resize event. 
 
 In the HTML page set the corresponding **&lt;div&gt;** element for rendering Splitter component.
 
@@ -105,8 +105,8 @@ Define **“e-isresponsive”** and **“e-properties”** in angular module in 
 
 The output for **Splitter** with **innerSplitter at initial rendering** as given below:
 
-![](How To_images\HowTo_img2.png) 
+![Before Splitter with other components Responsive](How To_images\HowTo_img2.png) 
 
 After resizing the splitter, output of innerSplitter as follows.
 
-![](How To_images\HowTo_img3.png) 
+![After Splitter with other components Responsive](How To_images\HowTo_img3.png) 
