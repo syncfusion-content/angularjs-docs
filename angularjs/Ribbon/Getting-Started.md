@@ -321,7 +321,7 @@ Syncfusion JavaScript Controls can be added to group’s content with correspond
                                 </div>
                                 <div e-content>
                                     <div e-groups>
-                                        <div e-group e-id="fontfamily" e-type="dropdownlist" e-dropdownsettings-datasource="fontlist" e-dropdownsettings-value="1" e-dropdownsettings-width="100"></div>
+                                        <div e-group e-id="fontfamily" e-type="dropdownlist" e-dropdownsettings-datasource="list" e-dropdownsettings-value="1" e-dropdownsettings-width="100"></div>
                                     </div>
                                 </div>
                             </div>
@@ -340,7 +340,7 @@ Syncfusion JavaScript Controls can be added to group’s content with correspond
                   }];
                angular.module('RibbonApp', ['ejangular'])
                 .controller('RibbonCtrl', function ($scope) {
-                    $scope.fontlist = fontfamily;                
+                    $scope.list = fontfamily;                
                 });
         </script>
         </body>
