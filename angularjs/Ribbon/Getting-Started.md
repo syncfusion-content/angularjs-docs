@@ -1,5 +1,5 @@
 ---
-title: Getting started with Ribbon component	
+title: Getting started with Ribbon component | Syncfusion
 description: Rendering a basic Ribbon
 platform: AngularJS
 control: Ribbon
@@ -179,7 +179,7 @@ The code example for defining controls in AngularJS is as follows,
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Ribbon component](Getting-Started_images/Getting-Started_img1.png)
 
 N> Set the required `e-width` to Ribbon, else default parent container or window width will be considered.
 
@@ -219,7 +219,7 @@ Tab is a set of related groups which are combined into single item. For creating
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Ribbon component](Getting-Started_images/Getting-Started_img2.png)
 
 ## Configuring Groups
 
@@ -272,7 +272,7 @@ Create group item with `e-text` specified and add content group to Groups collec
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Ribbon component](Getting-Started_images/Getting-Started_img3.png)
 
 ## Adding Controls to Group
 
@@ -321,7 +321,7 @@ Syncfusion JavaScript Controls can be added to group’s content with correspond
                                 </div>
                                 <div e-content>
                                     <div e-groups>
-                                        <div e-group e-id="fontfamily" e-type="dropdownlist" e-dropdownsettings-datasource="fontlist" e-dropdownsettings-value="1" e-dropdownsettings-width="100"></div>
+                                        <div e-group e-id="fontfamily" e-type="dropdownlist" e-dropdownsettings-datasource="list" e-dropdownsettings-value="1" e-dropdownsettings-width="100"></div>
                                     </div>
                                 </div>
                             </div>
@@ -340,7 +340,7 @@ Syncfusion JavaScript Controls can be added to group’s content with correspond
                   }];
                angular.module('RibbonApp', ['ejangular'])
                 .controller('RibbonCtrl', function ($scope) {
-                    $scope.fontlist = fontfamily;                
+                    $scope.list = fontfamily;                
                 });
         </script>
         </body>
@@ -348,6 +348,14 @@ Syncfusion JavaScript Controls can be added to group’s content with correspond
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![Ribbon component](Getting-Started_images/Getting-Started_img4.png)
 
 N> The control can be render using `ej.web.all.min.js` and angular related references are referred from `ej.widget.angular.min.js` to render the control.
+
+## User Interface
+
+Ribbon component able to integrate any custom components and customized their functionality in application end. Our Ribbon component is similar to Microsoft products(Word). The Ribbon UI consists of several sections like Application Tab, Quick Access Toolbar, Tab, Contextual Tab, Gallery and etc.The following screenshot shows the diagrammatic detail of Ribbon UI:
+
+![Ribbon component](Getting-Started_images/Ribbon.png)
+
+From above screenshot, you can see Ribbon has several subcomponents for different functionalities. The upcoming sections explains the brief details of each functionalities and their customizations.
