@@ -1,6 +1,6 @@
 ---
 title: Welcome to Syncfusion Essential AngularJS
-description: Overview of Syncfusion Essential AngularJS 
+description: Overview of Syncfusion Essential AngularJS and How to render a Syncfusion AngularJS component.
 platform: AngularJS
 control: Introduction
 documentation: ug
