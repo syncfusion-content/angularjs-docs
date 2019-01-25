@@ -1,6 +1,6 @@
 ---
 title: Welcome to Syncfusion Essential AngularJS
-description: Overview of Syncfusion Essential AngularJS 
+description: Overview of Syncfusion Essential AngularJS and How to render a Syncfusion AngularJS component.
 platform: AngularJS
 control: Introduction
 documentation: ug
@@ -247,8 +247,8 @@ Model binding has been demonstrated in the below code,
     <!-- SCRIPT & CSS REFERENCE SECTION -->
   </head>
   <body ng-controller="DatePickerCtrl">
-    <input id="mydatepicker1" ej-datepicker  e-value="dateValue" e-enableStrictMode="true" />
-    <input id="mydatepicker2" ej-datepicker  e-value="dateValue" e-enableStrictMode="true" />
+    <input id="datepicker1" ej-datepicker  e-value="dateValue" e-enableStrictMode="true" />
+    <input id="datepicker2" ej-datepicker  e-value="dateValue" e-enableStrictMode="true" />
     <script type="text/javascript">
         angular.module('DateCtrl', ['ejangular'])
            .controller('DatePickerCtrl', function ($scope) {
@@ -272,7 +272,7 @@ Events can be bind to controls using the prefix `e-` and particular event name. 
     <!-- SCRIPT & CSS REFERENCE SECTION -->
   </head>
   <body ng-controller="DatePickerCtrl">
-    <input id="mydatepicker1" ej-datepicker e-value="dateValue" e-enableStrictMode="true" e-change="dateChanged" />
+    <input id="datepicker1" ej-datepicker e-value="dateValue" e-enableStrictMode="true" e-change="dateChanged" />
     <script type="text/javascript">
         angular.module('DateCtrl', ['ejangular'])
            .controller('DatePickerCtrl', function ($scope) {
@@ -293,14 +293,14 @@ In controller, you can get the reference to the `ej` widgets using the `ID` of p
  
 {% highlight html %}
   <body ng-controller="DatePickerCtrl">
-    <input id="mydatepicker" ej-datepicker e-value="dateValue" e-enableStrictMode="true" e-change="dateChanged" />
+    <input id="datepicker" ej-datepicker e-value="dateValue" e-enableStrictMode="true" e-change="dateChanged" />
 
     <script type="text/javascript">
         angular.module('DateCtrl', ['ejangular'])
            .controller('DatePickerCtrl',["$scope", function ($scope) {
                $scope.dateValue = "01/01/2015";
                $scope.dateChanged = function(e){
-                  alert($scope.mydatepicker.model.value)
+                  alert($scope.datepicker.model.value)
                }
         }]);
     </script>
@@ -316,7 +316,7 @@ You can set whole `ej` widgets configuration using particular component attribut
 
 {% highlight html %}
   <body ng-controller="DatePickerCtrl">
-    <input id="mydatepicker" ej-datepicker="dateSettings" />
+    <input id="datepicker" ej-datepicker="dateSettings" />
 
     <script type="text/javascript">
         angular.module('DateCtrl', ['ejangular'])
