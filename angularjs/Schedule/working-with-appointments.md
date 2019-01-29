@@ -1058,7 +1058,7 @@ The prioritySettings holds the below priority related properties such as,
 
 * `e-prioritysettings-enable` - It accepts true or false value, denoting whether to enable/disable the priority option. Its default value is **false**.
 * `e-prioritysettings-template` – Customize the priority icon/images using template options.
-* `e-prioritysettings-datasource` – binds the priority dataSource collection. This property should be assigned with the JSON data array collection or instance of [ej.DataManger](/angularjs/datamanager/overview). 
+* `e-prioritysettings-datasource` – binds the priority dataSource collection. This property should be assigned with the JSON data array collection or instance of [ej.DataManger](/js/datamanager/overview). 
 
 We have below 4 default values for priority dataSource collection.
 
