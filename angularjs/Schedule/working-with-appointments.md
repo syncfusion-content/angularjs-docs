@@ -1,5 +1,5 @@
 ---
-title: Working with appointments
+title: Working with appointments | Syncfusion
 description: Working with Scheduler appointments and its related options like Recurrence.
 platform: AngularJS
 control: schedule
