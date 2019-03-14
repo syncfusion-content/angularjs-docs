@@ -7,7 +7,12 @@ documentation: Ug
 ---
 # Formulas
 
-Formulas are used for calculation of data in sheet. You can set formula for a `cell` in following ways,
+Formulas are used for calculation of data in sheet. You can refer the formula cell reference in following ways,
+
+1. Cell reference from same sheet
+2. Cell reference from different sheets
+
+You can set formula for a `cell` in following ways,
 
 1. Initial Load
 2. Method
@@ -29,11 +34,11 @@ You can set formula for a cell by specifying `value` property in cell data bindi
 var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
     syncApp.controller('SpreadsheetCtrl', function ($scope,$rootScope) {
          $scope.sheetData = [{
-               rows: [{
-                        cells: [{
-                            value: 1
-                        }]
-                    },
+                rows: [{
+                    cells: [{
+                        value: 1
+                    }]
+                },
                 {
                     cells: [{
                         value: 2
@@ -44,13 +49,28 @@ var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
                         value: "=SUM(A1,A2)"
                     }]
                 }]
+            },
+            {
+                rows: [{
+                    cells: [{
+                        value: "=SUM(Sheet1!A1:A2)"
+                    }]
+                }]
             }];
      });
 
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formulas_images/Formula_img1.png)
+![Formula](Formulas_images/Formula_img5.png)
+
+Cell Reference from Same sheet
+{:.caption}
+
+![Formula](Formulas_images/Formula_img6.png)
+
+Cell Reference from different sheets
+{:.caption}
 
 ### Method
 
@@ -89,7 +109,7 @@ var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formulas_images/Formula_img1.png)
+![Formula](Formulas_images/Formula_img1.png)
 
 ### User Interface
 
@@ -122,10 +142,10 @@ var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
 
 {% endhighlight %}
 
-![](Formulas_images/Formula_img2.png)
+![Forumla](Formulas_images/Formula_img2.png)
 
 The following output is displayed while saving edited cell with above code example.
-![](Formulas_images/Formula_img1.png)
+![Formula](Formulas_images/Formula_img1.png)
 
 N> 1. The list of supported formulas can be find in following [`link`](https://help.syncfusion.com/js/calculate/supported-formulas/supported-formulas "link")
 N> 2. Constant values, cell references, formulas and named ranges can be passed as argument to formulas
@@ -143,7 +163,8 @@ To understand the purpose of cell reference or table, you can define a meaningfu
 
 ### Initial Load
 
-You can add named ranges at initial load with `nameManager` API. The following code example describes the above behavior,
+To add named ranges at initial load by using [`nameManager`](https://help.syncfusion.com/api/js/ejspreadsheet#members:namemanager "nameManager") API, and also you can specify the name and address of the range by using [`name`](https://help.syncfusion.com/api/js/ejspreadsheet#members:namemanager-name "name") and [`refersto`](https://help.syncfusion.com/api/js/ejspreadsheet#members:namemanager-refersto "refersto") API. You can find the added named range list collection in Spreadsheet by accessing [`nameManager`](https://help.syncfusion.com/api/js/ejspreadsheet#members:namemanager "nameManager") API.
+The following code example describes the above behavior,
 
 {% highlight html %}
 
@@ -179,7 +200,7 @@ var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formulas_images/Formula_img3.png)
+![Named Ranges](Formulas_images/Formula_img3.png)
 
 ### Method
 
@@ -218,12 +239,12 @@ var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formulas_images/Formula_img3.png)
+![Named Ranges](Formulas_images/Formula_img3.png)
 
 ### User Interface
 
 You can define name for range of cells through user interface using `Define Name` option in `OTHERS` tab. The following screenshot describes the above behavior,
-![](Formulas_images/Formula_img4.png)
+![Named Ranges](Formulas_images/Formula_img4.png)
 
 N> Defining name for cell reference or table will be accessible across all sheets.
 N> Named Ranges will be displayed in Name Manger dialog box.
