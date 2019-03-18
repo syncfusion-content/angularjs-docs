@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export
+title: Export | AngularJS | PivotClient | Syncfusion
 description: export
 platform: AngularJS
 control: pivotgrid
@@ -485,16 +485,18 @@ When paging is enabled, you can export the complete data by enabling the `enable
 
 The below screenshot shows the PivotGrid control exported to Excel document.
 
-![](Export_images/ExportPivotExcel.png)
+![Excel exporting in AngulaJS pivot grid control](Export_images/ExportPivotExcel.png)
 
 The below screenshot shows the PivotGrid control exported to Word document.
 
-![](Export_images/ExportPivotWord.png)
+![Word exporting in AngulaJS pivot grid control](Export_images/ExportPivotWord.png)
 
 The below screenshot shows the PivotGrid control exported to PDF document.
 
-![](Export_images/ExportPivotPDF.png)
+![PDF exporting in AngulaJS pivot grid control](Export_images/ExportPivotPDF.png)
 
 The below screenshot shows the PivotGrid control exported to CSV document.
 
-![](Export_images/ExportPivotCSV.png)
+![CSV exporting in AngulaJS pivot grid control](Export_images/ExportPivotCSV.png)
+
+N> Grand total and sub-totals can be hidden while exporting the document.
