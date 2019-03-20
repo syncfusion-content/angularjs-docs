@@ -318,8 +318,8 @@ The PDF documents can be loaded in the PdfViewerControl using [load()](https://h
 N> If the name of the PDF document is only passed as parameter in the load() method, the PDF document must be available in the folder that is specified in the Load action method in the controller.
 
 {% highlight javascript %}
-var pdfviewer=$(�#viewer�).data(�ejPdfViewer�);
-pdfviewer.load(�HTTP Succinctly�);
+var pdfviewer=$("#viewer").data("ejPdfViewer");
+pdfviewer.load("HTTP Succinctly");
 {% endhighlight %}
 
 When the PDF document is loaded in the PdfViewerControl, the documentLoad event will be triggered. You can define the event method using the [documentLoad](https://help.syncfusion.com/api/js/ejpdfviewer#documentload "documentLoad Event") property of the control.
