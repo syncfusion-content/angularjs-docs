@@ -80,7 +80,7 @@ The code example for defining controls in AngularJS is as follows.
 
 {% endhighlight %}
 
-![](Getting-started_images/Getting-started_img1.png)
+![Angular Grid control](Getting-started_images/Getting-started_img1.png)
 {:.image }
 
 In previous code sample, `ej-grid` denotes the control directive for the Syncfusion's Grid angular widget and all its properties are prefixed with the letter `e-` (For example, e-datasource).
@@ -111,7 +111,7 @@ The [`Data binding`](http://helpjs.syncfusion.com/js/grid/data-binding) in the g
 
 {% endhighlight %}
 
-![](Getting-started_images/Getting-started_img2.png)
+![Data binding support of angular grid](Getting-started_images/Getting-started_img2.png)
 {:.image }
 
 
@@ -147,7 +147,7 @@ N> _1.Pager settings can be customized by using the `e-pagesettings-pagesize` pr
 
 2. The array properties of the Syncfusion widget's in angularjs has to be defined by using the scope variable.
 
-![](Getting-started_images/Getting-started_img3.png)
+![Page number displayed on angular grid](Getting-started_images/Getting-started_img3.png)
 {:.image }
 
 
@@ -178,7 +178,7 @@ N> _1.Pager settings can be customized by using the `e-pagesettings-pagesize` pr
 
 {% endhighlight %}
 
-![](Getting-started_images/Getting-started_img4.png)
+![Filtering option of angular grid](Getting-started_images/Getting-started_img4.png)
 {:.image }
 
 ## Enable Grouping
@@ -206,7 +206,7 @@ N> _1.Pager settings can be customized by using the `e-pagesettings-pagesize` pr
 </html>
 {% endhighlight %}
 
-![](Getting-started_images/Getting-started_img5.png)
+![Grouping option enabled in angular grid](Getting-started_images/Getting-started_img5.png)
 {:.image }
 
 Refer to the following code example for initial grouping.
@@ -235,7 +235,7 @@ Refer to the following code example for initial grouping.
 
 {% endhighlight %}
 
-![](Getting-started_images/Getting-started_img6.png)
+![Grouping customization of angular grid](Getting-started_images/Getting-started_img6.png)
 {:.image }
 
 ## Add Summaries
@@ -268,7 +268,7 @@ Refer to the following code example for initial grouping.
 
 {% endhighlight %}
 
-![](Getting-started_images/Getting-started_img7.png)
+![Summary rows added in angular grid](Getting-started_images/Getting-started_img7.png)
 {:.image }
 
 
