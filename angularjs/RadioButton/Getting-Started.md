@@ -12,7 +12,7 @@ documentation: ug
 This section briefly describes you on how to create a QuizApp and RegistrationApp using Essential JavaScript RadioButton control and use the features available in it.**Essential JavaScript** **RadioButton** supports RTL, custom skins and events to display customized RadioButtons. In this example, you can learn how to use RadioButtons in a Quiz application. The following guidelines show you how to use the **RadioButton** to select the answers in the application and get the selected items. The following screenshot displays a sample Quiz application.
 
 
-![AngularJs Radio Button](\Getting-Started_images/Getting-Started_img1.png) 
+![AngularJs Radio Button](Getting-Started_images/Getting-Started_img1.png) 
 
 ## Create a RadioButton in a Quiz Application
 
@@ -147,5 +147,5 @@ Properties can be bind to ejRadioButton control using the prefix e- and particul
 
 The following screenshot displays the output for the above code.
 
-![AngularJs radio button in quiz application](\Getting-Started_images/Getting-Started_img2.png) 
+![AngularJs radio button in quiz application](Getting-Started_images/Getting-Started_img2.png) 
 
