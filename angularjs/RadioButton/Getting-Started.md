@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | Radio Button | AngularJs | Syncfusion
-description: This section explains how to add radio button control to angularjs application and illustrates how to create the quiz application using angularjs radio button. 
+description: This section explains how to add radio button control to angularjs application and illustrates how to create the quiz application using angularjs radio button.
 platform: AngularJS
 control: RadioButton
 documentation: ug
