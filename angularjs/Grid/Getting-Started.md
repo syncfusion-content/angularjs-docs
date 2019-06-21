@@ -6,7 +6,7 @@ platform: AngularJS
 control: Grid
 documentation: ug
 ---
-# Getting started
+# Getting Started
 
 Before getting started with the Grid, please refer to [this page] (http://help.syncfusion.com/js/angularjs) for general information regarding the integrating Syncfusion widget's.
 
@@ -178,7 +178,7 @@ N> _1.Pager settings can be customized by using the `e-pagesettings-pagesize` pr
 
 {% endhighlight %}
 
-![Filtering option of angular grid(Getting-started_images/Getting-started_img4.png)
+![Filtering option of angular grid](Getting-started_images/Getting-started_img4.png)
 {:.image }
 
 ## Enable Grouping
