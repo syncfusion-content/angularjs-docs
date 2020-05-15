@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sparkline with Spreadsheet widget for Syncfusion Essential AngularJS
-description:How to perform the sparkline chart customization in Syncfusion Essential AngularJS Spreadsheet widget.
+description: How to perform the sparkline chart customization in Syncfusion Essential AngularJS Spreadsheet widget.
 platform: AngularJS
 control: Spreadsheet
 documentation: ug
