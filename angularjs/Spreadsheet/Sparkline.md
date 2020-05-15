@@ -74,5 +74,5 @@ var syncApp = angular.module("defaultApp", ["ngRoute", "ejangular"]);
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Sparkline_images/Sparkline.png)
+![sparkline](Sparkline_images/Sparkline.png)
 
