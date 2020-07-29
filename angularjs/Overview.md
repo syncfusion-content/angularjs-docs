@@ -8,7 +8,37 @@ documentation: ug
 
 # AngularJS
 
-Essential JS includes AngularJS directives for all controls in the `ej.widget.angular.min.js` script file. All the Essential JS directives have been encapsulated into a single module called `ejangular` so the first step would be to declare dependency for this module within your AngularJS application.
+Essential JS includes AngularJS directives for all controls in the `ej.widget.angular.min.js` script file. All the Essential JS directives have been encapsulated into a single module called `ejangular`. To render our ej controls in angular, you need to refer the `angular.min.js` and `ej.widget.angular.min.js` in your application.
+
+Create a new HTML file and include the below code:
+
+{% highlight html %}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="DateCtrl">
+<head>
+    <title>Essential Studio for JavaScript : DatePicker - AngularJS</title>
+    <!-- Style sheet for default theme (flat azure) -->
+    <link href="http://cdn.syncfusion.com/13.4.0.53/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <!--Scripts-->
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js" type="text/javascript"> </script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
+	<script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
+    <script type="text/javascript" src="http://cdn.syncfusion.com/18.2.0.44/js/web/ej.web.all.min.js "></script>
+    <script src="http://cdn.syncfusion.com/18.2.0.44/js/common/ej.widget.angular.min.js"></script>
+    <!--Add custom scripts here -->
+</head>
+<body ng-controller="DatePickerCtrl">
+    <!-- add necessary HTML elements here -->
+</body>
+</html>
+
+
+{% endhighlight %}
+
+
+To render the ejDatePicker using angular directive, we need to inject the ejangular module with modules.
 
 {% highlight javascript %}
 
