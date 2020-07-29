@@ -74,7 +74,7 @@ angular.module('DateCtrl', ['ejangular'])
 {% endhighlight %}
 
 
-![](overview_images/overview.png)
+![Render DatePicker](overview_images/overview.png)
 
 ## Data binding
 
