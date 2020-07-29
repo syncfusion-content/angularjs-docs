@@ -1,14 +1,67 @@
 ---
 title: Welcome to Syncfusion Essential AngularJS
-description: Overview of Syncfusion Essential AngularJS and How to render a Syncfusion AngularJS component.
+description: This section describes the overview of Syncfusion Essential AngularJS and How to render a Syncfusion AngularJS component.
 platform: AngularJS
 control: Introduction
 documentation: ug
 --- 
 
-# AngularJS
+# Overview of Syncfusion Essential AngularJS
 
-Essential JS includes AngularJS directives for all controls in the `ej.widget.angular.min.js` script file. All the Essential JS directives have been encapsulated into a single module called `ejangular` so the first step would be to declare dependency for this module within your AngularJS application.
+Essential JS includes AngularJS directives for all controls in the `ej.widget.angular.min.js` script file. All the Essential JS directives have been encapsulated into a single module called `ejangular`. To render our ej controls in angular, you need to refer the `angular.min.js` and `ej.widget.angular.min.js` in your application.
+
+Create a new HTML file and include the below code:
+
+{% highlight html %}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="DateCtrl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <!-- Style sheet for default theme (flat azure) -->
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <!--Scripts-->
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-2.1.4.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+	<script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script>
+    <!--Add custom scripts here -->
+</head>
+<body ng-controller="DatePickerCtrl">
+    <!-- add necessary HTML elements here -->
+</body>
+</html>
+
+
+{% endhighlight %}
+
+The ng-app directive explains the root element (<html> or <body> tags) of the application. You will assign a name to the ng-app directive, then you must create a module with that name. In this module, you will have to define your directives, services, filters and configurations.
+
+A controller is defined using ng-controller directive. Each controller accepts an object $scope which we pass as a parameter.  This object is used to bind the controller with view.   
+
+All the Syncfusion widget’s control directives are prefixed with `ej-` to avoid conflict with other library directives and its properties are defined using `e-` prefix followed by the property name. The code example for defining controls in AngularJS is as follows,
+
+Create INPUT element and add in the body tag as below.
+
+
+{% highlight html %}
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="DateCtrl">
+  <head>
+    <title>Essential Studio for JavaScript : DatePicker - AngularJS</title>
+  </head>
+  <body ng-controller="DatePickerCtrl">
+    <input id="datepick" ej-datepicker e-value="dateValue" />
+  </body>
+</html>
+
+{% endhighlight %}
+
+In the above code snippet, `ej-datepicker` denotes the control directive for the Syncfusion’s datepicker widget and all its properties are prefixed with the letter `e-` (For example, `e-value`).
+
+To render the ejDatePicker using angular directive, we need to inject the ejangular module with modules.
 
 {% highlight javascript %}
 
@@ -19,24 +72,8 @@ angular.module('DateCtrl', ['ejangular'])
 
 {% endhighlight %}
 
-All the Syncfusion widget’s control directives are prefixed with `ej-` to avoid conflict with other library directives and its properties are defined using `e-` prefix followed by the property name. The code example for defining controls in AngularJS is as follows,
 
-{% highlight html %}
-
-
-<html xmlns="http://www.w3.org/1999/xhtml" ng-app="DateCtrl">
-  <head>
-    <title>Essential Studio for JavaScript : DatePicker - AngularJS</title>
-  </head>
-  <body ng-controller="DatePickerCtrl">
-    <input id="datepick" ej-datepicker e-value="dateValue" e-enableStrictMode="true" />
-  </body>
-</html>
-
-{% endhighlight %}
-
-In the above code snippet, `ej-datepicker` denotes the control directive for the Syncfusion’s datepicker widget and all its properties are prefixed with the letter `e-` (For example, `e-value`).
-
+![Render DatePicker](overview_images/overview.png)
 
 ## Data binding
 
