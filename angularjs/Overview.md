@@ -54,7 +54,7 @@ Create INPUT element and add in the body tag as below.
     <title>Essential Studio for JavaScript : DatePicker - AngularJS</title>
   </head>
   <body ng-controller="DatePickerCtrl">
-    <input id="datepick" ej-datepicker e-value="dateValue" e-enableStrictMode="true" />
+    <input id="datepick" ej-datepicker e-value="dateValue" />
   </body>
 </html>
 
@@ -73,6 +73,8 @@ angular.module('DateCtrl', ['ejangular'])
 
 {% endhighlight %}
 
+
+![](overview_images/overview.png)
 
 ## Data binding
 
