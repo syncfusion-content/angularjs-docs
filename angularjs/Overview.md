@@ -1,12 +1,12 @@
 ---
 title: Welcome to Syncfusion Essential AngularJS
-description: Overview of Syncfusion Essential AngularJS and How to render a Syncfusion AngularJS component.
+description: This section describes the overview of Syncfusion Essential AngularJS and How to render a Syncfusion AngularJS component.
 platform: AngularJS
 control: Introduction
 documentation: ug
 --- 
 
-# AngularJS
+# Overview of Syncfusion Essential AngularJS
 
 Essential JS includes AngularJS directives for all controls in the `ej.widget.angular.min.js` script file. All the Essential JS directives have been encapsulated into a single module called `ejangular`. To render our ej controls in angular, you need to refer the `angular.min.js` and `ej.widget.angular.min.js` in your application.
 
@@ -37,19 +37,14 @@ Create a new HTML file and include the below code:
 
 {% endhighlight %}
 
+The ng-app directive explains the root element (<html> or <body> tags) of the application. You will assign a name to the ng-app directive, then you must create a module with that name. In this module, you will have to define your directives, services, filters and configurations.
 
-To render the ejDatePicker using angular directive, we need to inject the ejangular module with modules.
-
-{% highlight javascript %}
-
-angular.module('DateCtrl', ['ejangular'])
-     .controller('DatePickerCtrl', function ($scope) {
-         $scope.dateValue = "2/3/2013";
-});
-
-{% endhighlight %}
+A controller is defined using ng-controller directive. Each controller accepts an object $scope which we pass as a parameter.  This object is used to bind the controller with view.   
 
 All the Syncfusion widget’s control directives are prefixed with `ej-` to avoid conflict with other library directives and its properties are defined using `e-` prefix followed by the property name. The code example for defining controls in AngularJS is as follows,
+
+Create INPUT element and add in the body tag as below.
+
 
 {% highlight html %}
 
@@ -66,6 +61,17 @@ All the Syncfusion widget’s control directives are prefixed with `ej-` to avoi
 {% endhighlight %}
 
 In the above code snippet, `ej-datepicker` denotes the control directive for the Syncfusion’s datepicker widget and all its properties are prefixed with the letter `e-` (For example, `e-value`).
+
+To render the ejDatePicker using angular directive, we need to inject the ejangular module with modules.
+
+{% highlight javascript %}
+
+angular.module('DateCtrl', ['ejangular'])
+     .controller('DatePickerCtrl', function ($scope) {
+         $scope.dateValue = "2/3/2013";
+});
+
+{% endhighlight %}
 
 
 ## Data binding
