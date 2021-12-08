@@ -1,6 +1,6 @@
 ---
 title: Open and Save with Spreadsheet widget for Syncfusion Essential JS
-description: Learn here all about Open and Save support in AngularJS Spreadsheet control, its functionalities like server mapper, import URL and more.
+description: Learn here all about Open and Save support in AngularJS Spreadsheet control, its functionalities and more.
 platform: AngularJS
 control: Spreadsheet
 documentation: ug
