@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering with Grid widget for Syncfusion Essential AngularJS
-description: Learn here all about Filtering support in Syncfusion AngularJS Grid control, its elements and more
+description: Learn here all about Filtering support in Syncfusion AngularJS Grid(SfGrid) control, its elements and more
 platform: AngularJS
 control: Grid
 documentation: ug
