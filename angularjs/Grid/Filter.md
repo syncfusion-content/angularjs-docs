@@ -55,7 +55,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![Filtering in AnguarJS Grid ](filtering_images/filtering_img1.png)
+![Filtering in AnguarJS Grid](filtering_images/filtering_img1.png)
 
 
 ## Menu filter
