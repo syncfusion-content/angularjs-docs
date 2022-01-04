@@ -1,12 +1,12 @@
 ---
 title: Open and Save with Spreadsheet widget for Syncfusion Essential JS
-description: How to perform Open and Save and configure its functionalities like server mapper, import URL etc.
+description: Learn here all about Open and Save support in AngularJS Spreadsheet control, its functionalities and more.
 platform: AngularJS
 control: Spreadsheet
 documentation: ug
 ---
 
-# Open and Save
+# Open and Save in AngularJS Spreadsheet
 
 The native data format for Spreadsheet is JSON. You can load and store JSON data with Spreadsheet. In Spreadsheet we have [`saveAsJSON`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:saveasjson "saveAsJSON") and [`loadFromJSON`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:loadfromjson "loadFromJSON") method which is used to save Spreadsheet as JSON and same JSON used to render Spreadsheet.
 
@@ -103,7 +103,7 @@ public class JSXLExportController : ApiController
 
 {% endhighlight %}
 
-![](Open-and-Save_images/Open-and-Save_img1.png)
+![Open and Save initial settings in AngularJS Spreadsheet](Open-and-Save_images/Open-and-Save_img1.png)
 
 ### Methods
 

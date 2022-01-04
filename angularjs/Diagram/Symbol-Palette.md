@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Define and add the frequently used nodes/connectors to the symbol palette
-description: How to add shapes to the symbol palette and drag and drop them over the drawing area?
+description: Learn here all about Symbol palette support in Syncfusion Angularjs Diagram control, its elements and more
 platform: AngularJS
 control: Diagram
 documentation: ug
 ---
 
-# Symbol Palette
+# Symbol Palette in AngularJS Diagram
 
 The **SymbolPalette** displays a collection of palettes. The Palette shows a set of nodes and connectors. It allows you to drag and drop the nodes and connectors into the Diagram.
 
@@ -95,7 +95,7 @@ You can add any number of palettes to the `palettes` collection of the symbol pa
 
 The following image shows the symbol palette with multiple palette Items.
 
-![](/angularjs/Diagram/Symbol-Palette_images/Symbol-Palette_img3.png)
+![Symbol Palette with multiple palette items in AngularJS Diagram](/angularjs/Diagram/Symbol-Palette_images/Symbol-Palette_img3.png)
 
 ### Customize the Palette Header
 
@@ -151,7 +151,7 @@ Also, you can embed any HTML element into a palette header by defining the Scri
 
 The following image shows the customized palette header
 
-![](/angularjs/Diagram/Symbol-Palette_images/customizethepaletteheader_img1.png)
+![Customized palette header in AngularJS Diagram](/angularjs/Diagram/Symbol-Palette_images/customizethepaletteheader_img1.png)
 
 ## Add symbols to palette
 
@@ -290,9 +290,9 @@ The `enableScale` property of the paletteItem enables you to customize the size 
 
 {% endhighlight %}
 
-![](/angularjs/Diagram/Symbol-Palette_images/Symbol-Palette_img1.png)
+![Stretch the symbols into the palette in AngularJS Diagram](/angularjs/Diagram/Symbol-Palette_images/Symbol-Palette_img1.png)
 
-![](/angularjs/Diagram/Symbol-Palette_images/Symbol-Palette_img2.png)
+![Stretch the symbols into the palette in AngularJS Diagram](/angularjs/Diagram/Symbol-Palette_images/Symbol-Palette_img2.png)
 
 
 ## Symbol Previews
@@ -334,7 +334,7 @@ var palettes = [{
 
 {% endhighlight %}
 
-![](/angularjs/Diagram/Symbol-Palette_images/Symbol-Palette_img4.png)
+![Customized preview size of individual palette items in AngularJS Diagram](/angularjs/Diagram/Symbol-Palette_images/Symbol-Palette_img4.png)
 
 You can also customize the preview size of the all palette items. The `previewWidth` and `previewHeight` property of SymbolPalette enables you to define the preview size to all the symbol palette items. The following code example illustrates how to change the preview size of a symbol palette items.
 
@@ -365,7 +365,7 @@ You can also customize the preview size of the all palette items. The `previewWi
   
 {% endhighlight %}
 
-![](/angularjs/Diagram/Symbol-Palette_images/Symbol-Palette_img5.png)
+![Customized preview size of all palette items in AngularJS Diagram](/angularjs/Diagram/Symbol-Palette_images/Symbol-Palette_img5.png)
 
 Symbol palette allows to sets the offset of the dragging helper relative to the mouse cursor.
 
@@ -409,7 +409,7 @@ Symbol palette allows to sets the offset of the dragging helper relative to the 
              
 {% endhighlight %}
 
-![](/angularjs/Diagram/Symbol-Palette_images/Symbol-Palette_img6.png)
+![Symbol palette offsests of the dragging helper relative to the mouse cursor in AngularJS Diagram](/angularjs/Diagram/Symbol-Palette_images/Symbol-Palette_img6.png)
 
 
 Symbol preview size will be set based on the following precedence.
