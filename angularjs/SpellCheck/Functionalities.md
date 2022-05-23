@@ -1,12 +1,12 @@
 ---
 title: SpellCheck - Functionalities
-description: SpellCheck Functionalities
+description: Learn here about getting started with Syncfusion Angularjs SpellCheck functionalities, its elements and more
 platform: AngularJS
 control: spellcheck
 documentation: ug
 keywords: spellcheck functionalities, check spelling, ignore words, change words, change, ignore, ignore settings,
 ---
-# Functionalities
+# Getting started with Angularjs SpellCheck
 
 ## Check Spelling
 
@@ -293,7 +293,7 @@ syncApp.controller('spellcheckCtrl', function ($scope) {
 
 The following screenshot displays the output for the above code
 
-![](ValidateOnType_Images/validateontype.png)
+![Angularjs spellcheck validate On Type](ValidateOnType_Images/validateontype.png)
 
 You can also validate the content within the IFrame element or IFrame element target text, by passing the IFrame element id or class name value to the `controlsToValidate` property. 
 Detailed information is given [here](https://help.syncfusion.com/js/spellcheck/multiple-target)
