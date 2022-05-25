@@ -72,7 +72,7 @@ To render the ejRTE using angular directive, we need to inject the ej angular di
 
 The following screenshot displays a RTE widget.
 
-![AngularJS RichTextEditor Creation of RTE](/js/RichTextEditor/Getting-Started_images/Getting-Started_img1.png)
+![AngularJS RichTextEditor Creation of RTE](Getting-Started_images/Getting-Started_img1.png)
 
 ## Toolbar–Configuration
 
@@ -98,7 +98,7 @@ You can configure a toolbar with the tools as your application requires.
 
 The following screenshot displays a RTE widget.
 
-![AngularJS RichTextEditor Toolbar Configuration](/js/RichTextEditor/Getting-Started_images/Getting-Started_img2.png)
+![AngularJS RichTextEditor Toolbar Configuration](Getting-Started_images/Getting-Started_img2.png)
 
 ## Setting and Getting Content
 
@@ -123,4 +123,4 @@ You can set the content of the editor as follows.
 
 The following screenshot displays a RTE widget.
 
-![AngularJS RichTextEditor Setting and Getting Content](/js/RichTextEditor/Getting-Started_images/Getting-Started_img3.png)
+![AngularJS RichTextEditor Setting and Getting Content](Getting-Started_images/Getting-Started_img3.png)
