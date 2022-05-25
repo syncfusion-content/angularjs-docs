@@ -98,7 +98,7 @@ You can configure a toolbar with the tools as your application requires.
 
 The following screenshot displays a RTE widget.
 
-![AngularJS RichTextEditor Toolbar–Configuration](/js/RichTextEditor/Getting-Started_images/Getting-Started_img2.png)
+![AngularJS RichTextEditor Toolbar Configuration](/js/RichTextEditor/Getting-Started_images/Getting-Started_img2.png)
 
 ## Setting and Getting Content
 
