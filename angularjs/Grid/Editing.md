@@ -1,7 +1,7 @@
 ---
 Layout: Post
-Title: Editing with AngularJS Grid
-Description: Learn how to perform editing functionalities in Syncfusion AngularJS Grid control, its elements, and more. 
+title: Editing with AngularJS Grid Control | Sycfusion
+description: Learn how to perform editing functionalities in Syncfusion AngularJS Grid control, its elements, and more. 
 Platform: AngularJS
 Control: Grid
 Documentation: UG
