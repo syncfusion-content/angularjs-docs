@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Syncfusion Autocomplete data-binding
-description: data binding
+title: Data Binding in AngularJS Autocomplete control | Syncfusion 
+description: Learn more about data binding support in Syncfusion AngularJS Autocomplete control, its elements, and more.
 platform: AngularJS
 control: Autocomplete
 documentation: ug
 ---
 
-## Data Binding
+# Data Binding in AngularJS Autocomplete
 
 In order to render the AutoComplete component, the data needs to be bound to it in a proper way. The below sections explains about how to bind either the local or remote data to the AutoComplete component.
 
-### Fields
+## Fields
 
 The AutoComplete component has **e-fields** property (object) which holds the properties to map with datasource fields. For example, the field object has a text property which is necessary to map with specific field in the datasource to render the suggestion items in the AutoComplete component. Or else empty suggestion list appears.
 
@@ -65,7 +65,7 @@ $scope.text="name";
 
 Run the above code to render the following output. 
 
-![Data Binding](data-binding_images\local-data_img1.png)
+![AngularJS Autocomplete Local data](data-binding_images\local-data_img1.png)
 
 
 ### Remote data
@@ -105,7 +105,7 @@ $scope.text="ContactName";
 
 Run the above code to render the following output. 
 
-![Data Binding Images](data-binding_images\odata_img1.png)
+![AngularJS Autocomplete Odata](data-binding_images\odata_img1.png)
 
 
 #### WebAPI
@@ -140,7 +140,7 @@ Here the ContactName field is mapped with text property of the field object.
 
 Run the above code to render get the following output. 
 
-![Web Data Binding](data-binding_images\webapi_img1.png)
+![AngularJS Autocomplete Webapi](data-binding_images\webapi_img1.png)
 
 
 
