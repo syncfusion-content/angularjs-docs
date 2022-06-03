@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Behavior Settings
-description: behavior settings
+title: Behavior Settings in AngularJS Datepicker control | Syncfusion
+description: Learn more about behavior settings in Syncfusion AngularJS Datepicker control, its elements, and more.
 platform: AngularJS
 control: Datepicker
 documnetation: ug
 ---
 
-# Behavior Settings
+# Behavior Settings in AngularJS Datepicker
 
 ## Set Value
 
