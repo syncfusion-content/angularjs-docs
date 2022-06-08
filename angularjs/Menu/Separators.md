@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Separators
-description: separators
+title: Separators in AngularJS Menu | Syncfusion
+description: Learn here all more about Separators support in Syncfusion AngularJS Menu control, its elements, and more.
 platform: AngularJS
 control: Menu
 documentation: ug
 keywords: ejmenu, menu, angularjs menu
 ---
 
-# Separators
+# Separators in AngularJS Menu
 
 Menu can also contain separators that are horizontal bars between menu items. You cannot select a separator. Separators are somewhat similar to [borders](http://docs.oracle.com/javase/tutorial/uiswing/components/border.html), except that they are genuine components and, as such, are drawn inside a control, rather than around the edges of the **Menu** control. [enableSeparator](https://help.syncfusion.com/api/js/ejmenu#members:enableseparator) is the property that is used to display the separators in the **Menu** control. It accepts the Boolean type value. Its default value is true. 
 
@@ -68,9 +68,9 @@ Add the following the code sample to display the **Menu** control without separa
 
 The following screenshot displays the output for the above code. 
 
-![](Separators_images/Separators_img1.png) 
+![AngularJS Menu Separators](Separators_images/Separators_img1.png) 
 
-# Separators for Context Menu
+## Separators for Context Menu
 
 We can add the separators for particular ContextMenu items by including **e-separator** class in the required **LI** elements. Add the following code to display ContextMenu with separator lines.
 
@@ -122,4 +122,4 @@ We can add the separators for particular ContextMenu items by including **e-sepa
 
 The following screenshot displays the output for the above code. 
 
-![](Separators_images/Separators_img2.png)
+![Separators for Context Menu in AngularJS](Separators_images/Separators_img2.png)
