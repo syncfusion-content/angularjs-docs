@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Syncfusion Autocomplete see-also
-description: see also
+title: How to in AngularJS Autocomplete control | Syncfusion
+description: Learn here on how to support in Syncfusion AngularJS Autocomplete control, its elements, and more.
 platform: AngularJS
 control: Autocomplete
 documentation: ug
 ---
 
 
-## How To
+# How To in AngularJS Autocomplete
 
-### Set Client Side Validation for Autocomplete?
+## Set Client Side Validation for Autocomplete?
 
 Since the Autocomplete is a form control, we can set the validation for Autocomplete on form submission. We can use the **e-validationrules** property to set the validation rules and **e-validationmessage** property to display the error message on form validation.
 
@@ -93,7 +93,7 @@ Since the Autocomplete is a form control, we can set the validation for Autocomp
 
 
 
-![How to section images](how-to_images\set-client-side-validation-for-autocomplete_img1.png)
+![Set client side validation in AngularJS Autocomplete](how-to_images\set-client-side-validation-for-autocomplete_img1.png)
 
 **NOTE**
 
@@ -159,7 +159,7 @@ By default, the selected item’s key value will be maintained in the **e-select
 
 
 
-![Get the key value](how-to_images\get-the-key-value-of-the-selected-item_img1.png)
+![Get the key value in AngularJS Autocomplete](how-to_images\get-the-key-value-of-the-selected-item_img1.png)
 
 
 
