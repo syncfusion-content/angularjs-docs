@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection
-description: selection
+title: Selection in AngularJS TreeGrid | Syncfusion
+description: Learn about Easy Customization support in Syncfusion AngularJS TreeGrid control, its elements, and more.
 platform: AngularJS
 control: TreeGrid
 documentation: ug
 ---
 
-# Selection
+# Selection in AngularJS TreeGrid
 
 The tree grid control provides support for row and cell selections.                  
 
@@ -29,7 +29,7 @@ The following code example shows how to disable the row selection in tree grid.
 
 The output of the tree grid with row selection is as follows:
 
-![](Selection_images/Selection_img1.png)
+![AngularJS TreeGrid Selection](Selection_images/Selection_img1.png)
 
 ### Selecting a row at initial load
 
@@ -76,7 +76,7 @@ The following code example explains how to enable multiple selection in tree gri
 
 The output of the tree grid with multiple row selection is as follows:
 
-![](Selection_images/Selection_img2.png)
+![AngularJS TreeGrid Selection](Selection_images/Selection_img2.png)
 
 To enable multiple selection, set the `e-selectionsettings.selectionType` property to `multiple` or enumeration value `ej.TreeGrid.SelectionType.Multiple`.      
 
@@ -136,7 +136,7 @@ The following code sample helps you to enable the cell selection in tree grid.
 
 The output of the tree grid with cell selection is as follows:
 
-![](Selection_images/Selection_img3.png)
+![AngularJS TreeGrid Selection](Selection_images/Selection_img3.png)
 
 ### Multiple cell selection
 
@@ -169,7 +169,7 @@ The following code example shows you to select multiple cells.
 
 The output of the tree grid with multiple cell selection is as follows:
 
-![](Selection_images/Selection_img4.png)
+![AngularJS TreeGrid Selection](Selection_images/Selection_img4.png)
 
 ### Selecting cells programmatically 
 
@@ -229,7 +229,7 @@ You can select or unselect all the tree grid rows using column header checkbox. 
 
 The output of the tree grid with checkbox enabled in column header is as follows:
 
-![](Selection_images/Selection_img5.png)
+![AngularJS TreeGrid Selection](Selection_images/Selection_img5.png)
 
 ### Hierarchy selection
 You can select the rows hierarchically using checkboxes in tree grid by enabling the `e-selectionsettings.enableHierarchySelection` property.
@@ -263,7 +263,7 @@ The following code sample explains enabling hierarchy selection in tree grid.
 
 The output of the tree grid with hierarchy selection enabled is as follows:
 
-![](Selection_images/Selection_img6.png)
+![AngularJS TreeGrid Selection](Selection_images/Selection_img6.png)
 
 ### Checkbox column
 
@@ -307,4 +307,4 @@ You can change the default index of the checkbox column and display the checkbox
 
 The output of the tree grid with checkbox enabled in task name column is as follows:
 
-![](Selection_images/Selection_img7.png)
+![AngularJS TreeGrid Selection](Selection_images/Selection_img7.png)
