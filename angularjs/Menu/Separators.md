@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Separators
-description: separators
+title: Separators AngularJS Menu control
+description: Learn about Easy Customization support in Syncfusion AngularJS Menu control, its elements, and more.
 platform: AngularJS
 control: Menu
 documentation: ug
@@ -68,9 +68,9 @@ Add the following the code sample to display the **Menu** control without separa
 
 The following screenshot displays the output for the above code. 
 
-![](Separators_images/Separators_img1.png) 
+![AngularJS Menu control Separators](Separators_images/Separators_img1.png) 
 
-# Separators for Context Menu
+## Separators for Context Menu
 
 We can add the separators for particular ContextMenu items by including **e-separator** class in the required **LI** elements. Add the following code to display ContextMenu with separator lines.
 
@@ -122,4 +122,4 @@ We can add the separators for particular ContextMenu items by including **e-sepa
 
 The following screenshot displays the output for the above code. 
 
-![](Separators_images/Separators_img2.png)
+![AngularJS Menu control Separators](Separators_images/Separators_img2.png)
