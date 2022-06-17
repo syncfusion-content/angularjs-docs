@@ -8,7 +8,7 @@ documentation: ug
 keywords: ejmenu, menu, angularjs menu
 ---
 
-# Separators
+# Separators in AngularJS Menu
 
 Menu can also contain separators that are horizontal bars between menu items. You cannot select a separator. Separators are somewhat similar to [borders](http://docs.oracle.com/javase/tutorial/uiswing/components/border.html), except that they are genuine components and, as such, are drawn inside a control, rather than around the edges of the **Menu** control. [enableSeparator](https://help.syncfusion.com/api/js/ejmenu#members:enableseparator) is the property that is used to display the separators in the **Menu** control. It accepts the Boolean type value. Its default value is true. 
 
