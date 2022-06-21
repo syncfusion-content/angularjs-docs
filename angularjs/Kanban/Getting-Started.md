@@ -1,12 +1,12 @@
 ---
-title: Getting started with Kanban component	
-description: Rendering a basic Kanban with remote data
+title: Getting started with AngularJS Kanban Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential AngularJS Kanban Control, its elements, and more.
 platform: AngularJS
 control: Kanban
 documentation: ug
 keywords: ejkanban, kanban, kanban board, js kanban 
 ---
-# Getting Started
+# Getting Started with AngularJS Kanban
 
 Before we start with the Kanban, please refer [this page](http://help.syncfusion.com/js/angularjs) page for general information regarding integrating Syncfusion widget’s.
 
@@ -231,7 +231,7 @@ The code example for defining controls in AngularJS is as follows,
 
 {% endhighlight %}
 
-![](Getting_Started_images/Getting_Started_img1.png)
+![AngularJS Kanban Create a Kanban](Getting_Started_images/Getting_Started_img1.png)
 
 ## Data Binding
 
@@ -264,7 +264,7 @@ For demonstration purpose, [Northwind OData service](http://mvc.syncfusion.com/S
 
 {% endhighlight %}
 
-![](Getting_Started_images/Getting_Started_img2.png)
+![AngularJS Kanban Data Binding](Getting_Started_images/Getting_Started_img2.png)
 
 N>  ODataAdaptor is the default adaptor used within DataManager. While binding to other web services, proper [`data adaptor`](http://help.syncfusion.com/js/datamanager/data-adaptors) needs to be set for `adaptor` option of DataManager.
 
@@ -302,7 +302,7 @@ In order to display cards in Kanban control, you need to map the database fields
 
 {% endhighlight %} 
 
-![](Getting_Started_images/Getting_Started_img3.png)
+![AngularJS Kanban Mapping Values](Getting_Started_images/Getting_Started_img3.png)
 
 N>  `e-fields.primaryKey` field is mandatory for “Drag and Drop” ,”Selection” and “Editing” Features.
 
@@ -335,7 +335,7 @@ N>  `e-fields.primaryKey` field is mandatory for “Drag and Drop” ,”Selecti
 
 {% endhighlight %} 
 
-![](Getting_Started_images/Getting_Started_img4.png)
+![AngularJS Kanban Enable Swimlane](Getting_Started_images/Getting_Started_img4.png)
 
 ## Adding Filters
 
@@ -372,6 +372,6 @@ Filters allows to filter the collection of cards from `dataSource` which meets t
 
 {% endhighlight %} 
 
-![](Getting_Started_images/Getting_Started_img5.png)
+![AngularJS Kanban Adding Filters](Getting_Started_images/Getting_Started_img5.png)
 
 N> The control can be render using `ej.web.all.min.js` and angular related references are referred from `ej.widget.angular.min.js` to render the control.
