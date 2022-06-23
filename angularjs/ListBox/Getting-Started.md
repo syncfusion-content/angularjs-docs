@@ -13,7 +13,7 @@ The ListBox widget that contains a list of selectable items. It performs excepti
 This section explains briefly about how to create a web ListBox in your application with Angular JavaScript by step-by-step instructions. The following screenshot illustrates the functionality of a ListBox widget.
 
 
-![Getting Started](Getting_Started_images\Getting-Started_img1.png)
+![AngularJS ListBox Getting Started](Getting_Started_images\Getting-Started_img1.png)
 
 ## Create a ListBox widget in AngularJS
 
@@ -175,7 +175,7 @@ Here the ngModel directive binds an input, select, textarea (or custom form 
 
 Run the above code to render the following output. 
 
-![Data binding](Getting_Started_images\databinding_img1.png)
+![AngularJS ListBox Data binding](Getting_Started_images\databinding_img1.png)
 
 
 
@@ -197,7 +197,7 @@ The ListBox widget also supports the item selection.
 
 Run the above code to render the following output. 
 
-![Selection](Getting_Started_images\selection_img1.png)
+![AngularJS ListBox Selection](Getting_Started_images\selection_img1.png)
 
 
 
