@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Getting started | ListBox | JavaScript | Syncfusion
-description: Getting started with listbox widget in angularjs
+description: Learn here about getting started with Syncfusion Essential AngularJS ListBox control, its elements, and more.
 platform: AngularJS
 control: ListBox
 documentation: ug
 ---
 
 
-## Getting Started
+# Getting Started in AngularJS ListBox
 The ListBox widget that contains a list of selectable items. It performs exceptionally well with thousands of items and supports checkboxes, template, single and multiple selection, keyboard navigation and virtual scrolling.
 This section explains briefly about how to create a web ListBox in your application with Angular JavaScript by step-by-step instructions. The following screenshot illustrates the functionality of a ListBox widget.
 
 
-![Getting Started](Getting_Started_images\Getting-Started_img1.png)
+![AngularJS ListBox Getting Started](Getting_Started_images\Getting-Started_img1.png)
 
 ## Create a ListBox widget in AngularJS
 
@@ -175,7 +175,7 @@ Here the ngModel directive binds an input, select, textarea (or custom form 
 
 Run the above code to render the following output. 
 
-![Data binding](Getting_Started_images\databinding_img1.png)
+![AngularJS ListBox Data binding](Getting_Started_images\databinding_img1.png)
 
 
 
@@ -197,7 +197,7 @@ The ListBox widget also supports the item selection.
 
 Run the above code to render the following output. 
 
-![Selection](Getting_Started_images\selection_img1.png)
+![AngularJS ListBox Selection](Getting_Started_images\selection_img1.png)
 
 
 
