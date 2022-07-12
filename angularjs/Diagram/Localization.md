@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Globalize and Localize the Diagram control
-description: How to globalize and localize the Diagram control?
+title: Localization in AngularJS Diagram Control | Syncfusion
+description: Learn here about localization support in Syncfusion Essential AngularJS Diagram Control, its elements, and more.
 platform: AngularJS
 control: Diagram
 documentation: ug
 ---
 
-# Localization
+# Localization in AngularJS Diagram
 
 * Localization is the process of providing controls in different cultures to help you set your own culture easily. Diagram provides localization support for Context Menu items.
 * The Diagram model’s `locale` property is used to define the culture code. 
@@ -62,6 +62,6 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angularjs/Diagram/Localization_images/Localization_img1.png)
+![AngularJS Diagram localization](Localization_images/Localization_img1.png)
 
 N> You have to define the textual descriptions of the context menu items for your custom cultures.
