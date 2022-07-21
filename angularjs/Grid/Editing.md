@@ -1,10 +1,10 @@
 ---
 Layout: Post
-Title: Editing with Grid widget for the Syncfusion Essential AngularJS
-Description: How to perform editing and configure edit time functionalities like edit type, edit time controls, etc
-Platform: AngularJS
-Control: Grid
-Documentation: UG
+title: Editing with Grid widget for the Syncfusion Essential AngularJS
+description: How to perform editing and configure edit time functionalities like edit type, edit time controls, etc
+platform: AngularJS
+control: Grid
+documentation: UG
 --- 
 # Editing in AngularJS Grid
 
