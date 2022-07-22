@@ -1,12 +1,12 @@
 ---
 Layout: Post
-Title: Editing with Grid widget for the Syncfusion Essential AngularJS
-Description: How to perform editing and configure edit time functionalities like edit type, edit time controls, etc
-Platform: AngularJS
-Control: Grid
-Documentation: UG
+title: Editing with Grid widget for the Syncfusion Essential AngularJS
+description: How to perform editing and configure edit time functionalities like edit type, edit time controls, etc
+platform: AngularJS
+control: Grid
+documentation: UG
 --- 
-# Editing
+# Editing in AngularJS Grid
 
 The grid control supports dynamic insertion, updation, and deletion of records. You can start the edit action either by double clicking the particular row or by selecting the required row and clicking the edit icon in toolbar. Similarly, you can add new record to grid either by clicking the insert icon in toolbar or external button which is bound to call method [`addRecord`](http://help.syncfusion.com/api/js/ejgrid#methods:addrecord "addRecord") of grid.  `Save` and `Cancel` on edit mode can be possible using respective toolbar icon in grid.
 
@@ -50,7 +50,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](Editing_images/Editing_img1.png)
+![AngularJS Grid Cell edit type and its params](Editing_images/Editing_img1.png)
 
 
 ## Cell edit type and its params
@@ -141,7 +141,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](Editing_images/Editing_img2.png)
+![AngularJS Grid Cell Edit Template](Editing_images/Editing_img2.png)
 
 
 ## Cell Edit Template
@@ -194,7 +194,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](Editing_images/Editing_img3.png)
+![AngularJS Grid Edit Modes](Editing_images/Editing_img3.png)
 
 
 ## Edit Modes
@@ -232,7 +232,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](Editing_images/Editing_img4.png)
+![AngularJS Grid Inline Form](Editing_images/Editing_img4.png)
 
 
 ### Inline Form
@@ -266,7 +266,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img5.png)
+![AngularJS Grid Inline Template Form](Editing_images/Editing_img5.png)
 
 
 ### Inline Template Form
@@ -346,13 +346,13 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](Editing_images/Editing_img6.png)
+![AngularJS Grid Before the template elements](Editing_images/Editing_img6.png)
 
 {:caption}
 Before the template elements are converted to JS controls
 
 
-![](Editing_images/Editing_img7.png)
+![AngularJS Grid After the template elements](Editing_images/Editing_img7.png)
 {:caption}
 After the template elements are converted to JS controls using actionComplete event 
 
@@ -388,7 +388,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img8.png)
+![AngularJS Grid Dialog Template Form](Editing_images/Editing_img8.png)
 
 
 ### Dialog Template Form
@@ -466,11 +466,11 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](Editing_images/Editing_img9.png)
+![AngularJS Grid Before the template elements](Editing_images/Editing_img9.png)
 {:caption}
 Before the template elements are converted to JS controls
 
-![](Editing_images/Editing_img10.png)
+![AngularJS Grid After the template elements](Editing_images/Editing_img10.png)
 {:caption}
 After the template elements are converted to JS controls using actionComplete event 
 
@@ -505,7 +505,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example.
 
-![](Editing_images/Editing_img11.png)
+![AngularJS Grid Form Position](Editing_images/Editing_img11.png)
 
 
 Form Position:
@@ -543,7 +543,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](Editing_images/Editing_img12.png)
+![AngularJS Grid External Template Form](Editing_images/Editing_img12.png)
 
 
 ### External Template Form
@@ -621,11 +621,11 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](Editing_images/Editing_img13.png)
+![AngularJS Grid Before the template](Editing_images/Editing_img13.png)
 {:caption}
 Before the template elements are converted to JS controls
 
-![](Editing_images/Editing_img14.png)
+![AngularJS Grid After the template](Editing_images/Editing_img14.png)
 {:caption}
 After the template elements are converted to JS controls using actionComplete event
 
@@ -663,7 +663,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](Editing_images/Editing_img15.png)
+![AngularJS Grid Batch Excel like](Editing_images/Editing_img15.png)
 
 
 ## Confirmation messages
@@ -699,7 +699,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example:
 
-![](Editing_images/Editing_img16.png)
+![AngularJS Grid Confirmation messages](Editing_images/Editing_img16.png)
 
 
 To show delete confirm dialog while deleting a record, set the [`showDeleteConfirmDialog`](http://help.syncfusion.com/api/js/ejgrid#members:editsettings-showdeleteconfirmdialog "showDeleteConfirmDialog") to true.
@@ -733,7 +733,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](Editing_images/Editing_img17.png)
+![AngularJS Grid Column Validation](Editing_images/Editing_img17.png)
 
 
 ## Column Validation
@@ -853,7 +853,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](Editing_images/Editing_img18.png)
+![AngularJS Grid Persisting data in Server](Editing_images/Editing_img18.png)
 
 
 ## Persisting data in Server
@@ -934,7 +934,7 @@ public class DataResult
 The grid actions (sorting, filtering, paging, searching, and aggregates) details are obtained in the 'DataManager' class. While initializing the grid, paging only enabled. The following screenshot shows paging details that are bound to the DataManager class.
 
 
-![](Editing_images/Editing_img20.png)
+![AngularJS Grid Insert Record](Editing_images/Editing_img20.png)
 
 
 Using the 'DataOperations' helper class, you can perform grid action at server side. The in-built methods that we have provided in the DataOperations class are listed as follows:
@@ -1076,7 +1076,7 @@ public ActionResult Insert(EditableOrder value)
 The newly added record details are bound to the 'value' parameter. Please refer to the following image:
 
 
-![](Editing_images/Editing_img21.png)
+![AngularJS Grid Update Record](Editing_images/Editing_img21.png)
 
 
 ### Update Record:
@@ -1096,7 +1096,7 @@ public ActionResult Update(EditableOrder value)
 
 The updated record details are bound to the 'value' parameter. Please refer to the following image:
 
-![](Editing_images/Editing_img22.png)
+![AngularJS Grid Delete Record](Editing_images/Editing_img22.png)
 
 
 ### Delete Record:
@@ -1116,7 +1116,7 @@ public ActionResult Remove(int key)
 
 The deleted record primary key value is bound to the 'key' parameter. Please refer to the following image:
 
-![](Editing_images/Editing_img23.png)
+![AngularJS Grid CRUD URL](Editing_images/Editing_img23.png)
 
 
 ### CRUD URL:
@@ -1174,7 +1174,7 @@ public ActionResult CrudUpdate(EditableOrder value, string action, int key)
 
 Please refer to the following image to know about the action parameter:
 
-![](Editing_images/Editing_img24.png)
+![AngularJS Grid Batch URL](Editing_images/Editing_img24.png)
 
 
 N>  If you specify `insertUrl` along with `CrudUrl`, the `insertUrl` will alone be called when record add action is performed in the grid.
@@ -1237,7 +1237,7 @@ public ActionResult BatchUpdate(string action, List<EditableOrder> added, List<E
 
 Please refer to the following image for more information about batch parameters:
 
-![](Editing_images/Editing_img25.png)
+![AngularJS Grid Adding New Row Position](Editing_images/Editing_img25.png)
 
 
 ## Adding New Row Position
@@ -1272,7 +1272,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](Editing_images/Editing_img26.png)
+![AngularJS Grid Render with blank row for easy add new](Editing_images/Editing_img26.png)
 
 
 ## Render with blank row for easy add new
@@ -1310,7 +1310,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](Editing_images/Editing_img27.png)
+![AngularJS Grid Render with blank row for easy add new](Editing_images/Editing_img27.png)
 
 
 N> 1. If it is remote, then the newly added record is placed based on the index from current view data. 
@@ -1349,6 +1349,6 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example.
 
-![](Editing_images/Editing_img28.png)
+![AngularJS Grid Default column values on add new](Editing_images/Editing_img28.png)
 
 
