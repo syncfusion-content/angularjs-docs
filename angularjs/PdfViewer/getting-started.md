@@ -1,13 +1,13 @@
 ---
-title: Getting started with Syncfusion Essential PDF viewer component	
-description: Rendering a basic PDF viewer with local data
+title: Getting started with AngularJS PDF Viewer Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential AngularJS PDF Viewer Control, its elements, and more.
 platform: AngularJS
 control: PDF viewer
 documentation: ug
 keywords: ejPdfViewer, PDF viewer, js pdfviewer 
 ---
 
-# Getting Started
+# Getting Started with AngularJS PDF Viewer
 
 The AngularJS directives are usually included within the `ej.widget.angular.min.js` file and all these directives are packed together in a common module known as `ejangular`. For basic details on how to configure Syncfusion widgets in AngularJS framework, refer [here](https://help.syncfusion.com/js/angularjs).
 
