@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Keyboard-Interaction
-description: keyboard interaction
+title: Keyboard Interaction in AngularJS TreeView Control | Syncfusion
+description: Learn here about keyboard interaction support in Syncfusion Essential AngularJS TreeView Control, its elements, and more.
 platform: AngularJS
 control: TreeView
 documentation: ug
 ---
 
 
-# Keyboard Interaction
+# Keyboard Interaction in AngularJS TreeView
 
 TreeView support all possible keyboard interaction and it can be allowed by specifying [allowKeyboardNavigation](http://help.syncfusion.com/api/js/ejtreeview#members:allowkeyboardnavigation) as true.
 
