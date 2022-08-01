@@ -6,7 +6,7 @@ platform: AngularJS
 control: Grid
 documentation: ug
 ---
-# Getting Started
+# Getting Started with AngularJS Grid
 
 Before getting started with the Grid, please refer to [this page] (http://help.syncfusion.com/js/angularjs) for general information regarding the integrating Syncfusion widget's.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Add context menu items to ease the execution of frequently used commands
-description: How to execute frequently used commands by using context menu items?
+title: Context Menu in AngularJS Diagram Control | Syncfusion
+description: Learn here about Context Menu in Syncfusion Essential AngularJS Diagram Control, its elements, and more.
 platform: AngularJS
 control: Diagram
 documentation: ug
 ---
 
-# Context Menu
+# Context Menu in AngularJS Diagram
 
 In graphical user interface (GUI), a context menu is a type of menu that appears when you perform right-click operation. Nested level of context menu items can be created.
 Diagram provides some in-built context menu items and allows to define custom menu items.
@@ -36,7 +36,7 @@ The following code illustrates how to enable the default context menu items.
 
 {% endhighlight %}
 
-![](/angularjs/Diagram/ContextMenu_images/Contextmenu_img1.png)
+![AngularJS Diagram Context Menu](ContextMenu_images/Contextmenu_img1.png)
 
 ## Customize Context Menu
 
@@ -104,7 +104,7 @@ The following code example illustrates how to customize the icon of context menu
 
 {% endhighlight %}
 
-![](/angularjs/Diagram/ContextMenu_images/Contextmenu_img2.png)
+![AngularJS Diagram Context Menu Events](ContextMenu_images/Contextmenu_img2.png)
 
 ## Context Menu Events
 
