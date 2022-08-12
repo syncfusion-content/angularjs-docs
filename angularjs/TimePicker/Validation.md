@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Validation | TimePicker | AngularJS | Syncfusion
-description: validation
+title: Validation in AngularJS TimePicker Control | Syncfusion
+description: Learn here all about validation support in Syncfusion AngularJS TimePicker control, its elements, and more.
 platform: AngularJS
 control: TimePicker
 documentation: ug
 ---
 
-# Validation
+# Validation in AngularJS TimePicker
 
 **EJ AngularJS TimePicker** is a form control and can be used within **ng-form**. This will support with the **AngularJS validation** and update the AngularJS validation related built-in classes to element based on current state of the element.
 
@@ -94,10 +94,10 @@ Add the following code in your script section to validate the form with **TimePi
 Run the above code to render the following output.
 
 
-![](Validation_images/Validation_images1.png)
+![AngularJS TimePicker validation](Validation_images/Validation_images1.png)
 
 
-![](Validation_images/Validation_images2.png)
+![AngularJS TimePicker provides classes and properties on the form and its inputs](Validation_images/Validation_images2.png)
 
 
-![](Validation_images/Validation_images3.png)
+![AngularJS TimePicker added script section to validate the form](Validation_images/Validation_images3.png)
