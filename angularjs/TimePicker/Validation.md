@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation in AngularJS TimePicker | Syncfusion
-description: Learn here all more about validation support in Syncfusion AngularJS TimePicker control, its elements, and more.
+title: Validation in AngularJS TimePicker control | Syncfusion
+description: Learn here all about validation support in Syncfusion AngularJS TimePicker control, its elements, and more.
 platform: AngularJS
 control: TimePicker
 documentation: ug
