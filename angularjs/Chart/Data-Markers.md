@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markers and data labels in Essential Javascript Chart
+title: Markers and data labels in Essential Javascript Chart | Syncfusion
 description: Learn here about data markers with Syncfusion Essential AngularJS Chart Control, its elements, and more.
 platform: AngularJS
 control: Chart
