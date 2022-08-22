@@ -169,7 +169,7 @@ N> Default RDLC Report will be rendered, which is used in the online service. Yo
 
 2.Run the application and you can see the ReportViewer on the page as displayed in the following screenshot.
 
-   ![AngularJS ReportViewer loads RDLC Reports ](Getting-Started_images/Getting-Started_img3.png) 
+   ![AngularJS ReportViewer loads RDLC reports ](Getting-Started_images/Getting-Started_img3.png) 
    
    Area Chart RDLC Report
    {:.caption}

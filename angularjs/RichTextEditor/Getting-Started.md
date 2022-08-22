@@ -123,4 +123,4 @@ You can set the content of the editor as follows.
 
 The following screenshot displays a RTE widget.
 
-![AngularJS RichTextEditor setting and getting ccontent](Getting-Started_images/Getting-Started_img3.png)
+![AngularJS RichTextEditor setting and getting content](Getting-Started_images/Getting-Started_img3.png)
