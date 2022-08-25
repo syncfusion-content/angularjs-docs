@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markers and data labels in Essential Javascript Chart | Syncfusion
-description: Learn here about data markers with Syncfusion Essential AngularJS Chart Control, its elements, and more.
+description: Learn here about data markers support in Syncfusion Essential AngularJS Chart Control, its elements, and more.
 platform: AngularJS
 control: Chart
 documentation: ug
@@ -201,7 +201,7 @@ The following code example shows how to rotate datalabel text and customize the 
 
 {% endhighlight %}
 
-![AngularJS Chart rotates datalabel text](Data-Markers_images/Data-Markers_img5.png)
+![AngularJS Chart rotates data label text](Data-Markers_images/Data-Markers_img5.png)
 
 
 You can position the label to the top, center or bottom position of the segment by using the `textPosition` option for the chart types such as column, bar, stacked bar, stacked column, 100% stacked bar, 100% stacked column, candle and OHLC.
