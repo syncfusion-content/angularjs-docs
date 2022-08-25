@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting-Started | RichTextEditor | JavaScript | Syncfusion
-description: Learn here all about getting started support in Syncfusion AngularJS RichTextEditor control, its elements, and more.
+description: Learn here all about getting started with Syncfusion AngularJS RichTextEditor control, its elements, and more.
 platform: AngularJS
 control: RichTextEditor Control
 documentation: ug
