@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Separators in  AngularJS Menu Control | Syncfusion
+title: Separators in AngularJS Menu Control | Syncfusion
 description: Learn here all about Separators support in Syncfusion Essential AngularJS Menu control, its elements, and more.
 platform: AngularJS
 control: Menu
