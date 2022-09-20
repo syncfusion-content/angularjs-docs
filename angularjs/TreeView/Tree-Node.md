@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Tree-Node
-description: tree node
+title: Tree-Node in AngularJS TreeView Control | Syncfusion
+description: Learn here all about tree-node support in Syncfusion Essential AngularJS TreeView control, its elements, and more.
 platform: AngularJS
 control: TreeView
 documentation: ug
 ---
 
 
-# Tree Node
+# Tree Node in AngularJS TreeView Control
 
 TreeView node is structured with expand/collapse arrow, checkbox, image and text as shown in below.
 
-![](Tree-Node_images/Tree-Node_img1.png)
+![AngularJS TreeView structure](Tree-Node_images/Tree-Node_img1.png)
 
 
 Also TreeView node object holds the following properties.
