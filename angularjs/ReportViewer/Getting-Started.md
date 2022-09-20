@@ -1,13 +1,13 @@
 ---
 title: Getting Started with ReportViewer component
-description: getting started
+description: Learn here all about getting started with Syncfusion Essential AngularJS ReportViewer control, its elements, and more.
 platform: AngularJS
 control: ReportViewer
 documentation: ug 
 keywords: ejReportViewer, ReportViewer, js ReportViewer 
 ---
 
-# Getting Started
+# Getting Started with ReportViewer component
 
 This section explains briefly about how to create a ReportViewer in your web application with AngularJS.
 
@@ -94,7 +94,7 @@ N> Default RDL Report will be rendered, which is used in the online service. You
 
 Run the sample application and you can see the ReportViewer on the page as displayed in the following screenshot.
 
-![](Getting-Started_images/Getting-Started_img1.png) 
+![AngularJS ReportViewer creating first report viewer](Getting-Started_images/Getting-Started_img1.png) 
 
 ReportViewer with Grouping Aggregate Report
 {:.caption}
@@ -126,7 +126,7 @@ N> The credential information for Report Server is provided in online service.
 
 2.Run the application and you can see the ReportViewer on the page as displayed in the following screenshot.
 
-   ![](Getting-Started_images/Getting-Started_img2.png) 
+   ![AngularJS ReportViewer load ssrs server reports](Getting-Started_images/Getting-Started_img2.png) 
    
    Report from SSRS
    {:.caption}
@@ -169,7 +169,7 @@ N> Default RDLC Report will be rendered, which is used in the online service. Yo
 
 2.Run the application and you can see the ReportViewer on the page as displayed in the following screenshot.
 
-   ![](Getting-Started_images/Getting-Started_img3.png) 
+   ![AngularJS ReportViewer load rdlc repors](Getting-Started_images/Getting-Started_img3.png) 
    
    Area Chart RDLC Report
    {:.caption}
