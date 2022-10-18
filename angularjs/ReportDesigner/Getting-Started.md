@@ -116,4 +116,4 @@ N> In the report designer service url, need to mention the controller name of th
 
 Run the sample application and the report designer control will render as like in the following screenshot.
 
-![](Getting-Started_images/Getting-Started-img1.png) 
+![AngularJS ReportDesigner Run the Application](Getting-Started_images/Getting-Started-img1.png) 
