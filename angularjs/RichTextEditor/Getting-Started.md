@@ -1,14 +1,16 @@
 ---
 layout: post
 title: Getting-Started | RichTextEditor | JavaScript | Syncfusion
-description: getting started 
+description: Learn here all more about getting started legend support in Syncfusion AngularJS control, its elements, and more.
+platform: Angular
+control: Chart
 platform: AngularJS
 control: RichTextEditor Control
 documentation: ug
 keywords: ejrte, rte, js rte
 ---
 
-# Getting Started 
+# Getting Started with AngularJS RichTextEditor
 
 This section helps to understand the getting started of RTE control with the step-by-step instruction.
 
@@ -72,7 +74,7 @@ To render the ejRTE using angular directive, we need to inject the ej angular di
 
 The following screenshot displays a RTE widget.
 
-![](/js/RichTextEditor/Getting-Started_images/Getting-Started_img1.png)
+![AngularJS RichTextEditor create RTE control](Getting-Started_images/Getting-Started_img1.png)
 
 ## Toolbar–Configuration
 
@@ -98,7 +100,7 @@ You can configure a toolbar with the tools as your application requires.
 
 The following screenshot displays a RTE widget.
 
-![](/js/RichTextEditor/Getting-Started_images/Getting-Started_img2.png)
+![AngularJS RichTextEditor toolbar configuration](Getting-Started_images/Getting-Started_img2.png)
 
 ## Setting and Getting Content
 
@@ -123,4 +125,4 @@ You can set the content of the editor as follows.
 
 The following screenshot displays a RTE widget.
 
-![](/js/RichTextEditor/Getting-Started_images/Getting-Started_img3.png)
+![AngularJS RichTextEditor setting and getting content](Getting-Started_images/Getting-Started_img3.png)
