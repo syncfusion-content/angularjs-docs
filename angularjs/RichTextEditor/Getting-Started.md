@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started | RichTextEditor | JavaScript | Syncfusion
-description: Learn here all more about getting started legend support in Syncfusion AngularJS control, its elements, and more.
+title: Getting-Started | RichTextEditor | Angular | Syncfusion
+description: Learn here all more about getting started legend support in Syncfusion AngularJS RichTextEditor control, its elements, and more.
 platform: Angular
 control: Chart
 platform: AngularJS
