@@ -1,13 +1,13 @@
 ---
-title: Getting started with report designer component	
-description: Rendering a basic report designer
+title: Getting started with AngualrJS report designer Control | Syncfusion	
+description: Learn here all about getting started with Syncfusion Essential AngularJS Reportdesigner control, its elements, and more.
 platform: AngularJS
 control: Reportdesigner
 documentation: ug
 keywords: ejReportDesigner, ReportDesigner, js ReportDesigner 
 ---
 
-# Getting Started
+# Getting Started with AngualrJS Reportdesigner
 
 This section explains briefly about how to create a ReportDesigner in your web application with AngularJS.
 

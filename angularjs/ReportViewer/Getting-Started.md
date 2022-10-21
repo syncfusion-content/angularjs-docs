@@ -1,13 +1,13 @@
 ---
-title: Getting Started with ReportViewer component
-description: getting started
+title: Getting Started with AngularJS ReportViewer Control | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential AngularJS ReportViewer control, its elements, and more.
 platform: AngularJS
 control: ReportViewer
 documentation: ug 
 keywords: ejReportViewer, ReportViewer, js ReportViewer 
 ---
 
-# Getting Started
+# Getting Started with AngularJS ReportViewer
 
 This section explains briefly about how to create a ReportViewer in your web application with AngularJS.
 
