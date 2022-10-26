@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Import and Export in Angular JS RichTextEditor widget | Syncfusion 
+title: Import and Export in AngularJS RichTextEditor widget | Syncfusion 
 description: Import content from word document into the RichTextEditor and Export the RichTextEditor content into word or PDF document.
 platform: AngularJS
 control: RichTextEditor
 documentation: ug
 keywords: RichTextEditor, server side XHTML Validation, RTE import, RTE export, export to PDF, export to Word
 ---
-# Import and Export in Angular JS Rich TextEditor 
+# Import and Export in AngularJS Rich TextEditor 
 
 Import feature provides support to import a word document into the editor `textarea`. To enable import option in the RTE tool bar,  `import` toolbar items needs to be added in RTE toolbar toolsList using `importExport` which adds the tool in the toolbar. In `importSettings` url option, the server page for import is needed to be mapped. When you click the toolbar import icon, it opens a dialog to browse the select a word file. The selected word file will be imported into the editor `textarea`.
 
@@ -116,7 +116,7 @@ Full list of assemblies needed for RTE Import are as follows
     4.  Syncfusion.Compression.Base
     5.  Syncfusion.DocIO.Base
 
-![Server Dependencies in Angular JS Rich TextEditor](ImportAndExport_images/import_images.png)
+![Server Dependencies in AngularJS Rich TextEditor](ImportAndExport_images/import_images.png)
 
 ### Export 
 
@@ -217,7 +217,7 @@ Export Helper functions are available in the Assembly `Syncfusion.EJ.Export`, wh
     6.  Syncfusion.PDF.Base
 
 ### Word Export
-![Word Export in Angular JS Rich TextEditor](ImportAndExport_images/export_word_images.png)
+![Word Export in AngularJS Rich TextEditor](ImportAndExport_images/export_word_images.png)
 
 ### PDF Export
-![PDF Export in Angular JS Rich TextEditor](ImportAndExport_images/export_pdf_images.png)
+![PDF Export in AngularJS Rich TextEditor](ImportAndExport_images/export_pdf_images.png)
