@@ -1,5 +1,5 @@
 ---
-title: Getting started with AngualrJS report designer Control | Syncfusion	
+title: Getting started with AngualrJS Report Designer Control | Syncfusion	
 description: Learn here all about getting started with Syncfusion Essential AngularJS Reportdesigner control, its elements, and more.
 platform: AngularJS
 control: Reportdesigner
