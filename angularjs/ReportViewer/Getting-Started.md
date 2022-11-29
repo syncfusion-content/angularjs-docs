@@ -42,7 +42,7 @@ Refer the CSS file from the specific theme folder to your HTML file within the h
 <head>
     <meta charset="utf-8" />
     <title>Getting Started - ReportViewer</title>
-    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <link href="http://cdn.syncfusion.com/19.1.0.63/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 </head>
 
 {% endhighlight %}
@@ -54,12 +54,12 @@ Refer the [CDN](https://help.syncfusion.com/js/cdn) script files with other requ
 <head>
     <meta charset="utf-8" />
     <title>Getting Started - ReportViewer</title>
-    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <link href="http://cdn.syncfusion.com/19.1.0.63/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script>
+    <script src="http://cdn.syncfusion.com/19.1.0.63/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/19.1.0.63/js/common/ej.widget.angular.min.js"></script>
 </head>
 
 {% endhighlight %}
