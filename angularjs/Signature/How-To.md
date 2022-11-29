@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion Signature How To
-description: How To
+title: How to Section in AngularJS Signature Control | Syncfusion
+description: Learn here all about how to section in Syncfusion Essential AngularJS Signature control, its elements, and more.
 platform: AngularJS
 control: Signature
 documentation: ug
 ---
 
-## How To?
+# How To Section in AngularJS Signature
 
 ### Save signature image with user defined format
 
