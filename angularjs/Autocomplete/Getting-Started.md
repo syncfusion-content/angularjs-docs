@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting-Started with AngularJS Autocomplete Control | Syncfusion
+description: Learn here about Getting Started with Syncfusion Essential AngularJS Autocomplete Control, its elements, and more.
 platform: AngularJS
 control: Autocomplete 
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with AngularJS Autocomplete 
 
 The AutoComplete control is a textbox control that provides a list of suggestions based on your query. When you enter text into the text box, the control performs a search operation and provides a list of results. There are several filter types available to perform the search.
 
@@ -94,7 +94,7 @@ To render the ejAutocomplete using angular directive, we need to inject the ejan
 {% endhighlight %}
 
 
-![](Getting_Started_Images/autocomplete.png)
+![Create HTML File in AngularJS Autocomplete](Getting_Started_Images/autocomplete.png)
 
 ## Model binding
 
@@ -142,7 +142,7 @@ Add in the $scope value as below.
 
 {% endhighlight %}
 
-![](Getting_Started_Images/modelbinding.png)
+![Model Binding in AngularJS Autocomplete](Getting_Started_Images/modelbinding.png)
 
 
 ## Data binding
@@ -203,7 +203,7 @@ The data for the suggestion list can be populated using the dataSource property.
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting_Started_Images/databinding.png)
+![Data Binding in AngularJS Autocomplete](Getting_Started_Images/databinding.png)
 
 ## Enable Popup Button
 
@@ -261,7 +261,7 @@ This button helps you to show all the available suggestions on clicking it.
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting_Started_Images/showpopup.png)
+![Show PopUp in AngularJS Autocomplete](Getting_Started_Images/showpopup.png)
 
 ## Two Way Binding
 
@@ -326,4 +326,4 @@ We have a two way data binding when a model variable is bound to an element that
 
 {% endtabs %}
 
-![](Getting_Started_Images/twowaybinding.png)
+![Two Way Binding in AngularJS Autocomplete](Getting_Started_Images/twowaybinding.png)
