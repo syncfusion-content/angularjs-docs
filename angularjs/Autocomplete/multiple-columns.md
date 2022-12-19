@@ -7,7 +7,7 @@ control: Autocomplete
 documentation: ug
 ---
 
-## Multiple Columns in Essential AngularJS AutoComplete
+# Multiple Columns in Essential AngularJS AutoComplete
 
 The Autocomplete allows list of data to be displayed in several columns and column collection can be defined and customized through the [e-multicolumnsettings ](http://help.syncfusion.com/api/js/ejautocomplete)property.
 

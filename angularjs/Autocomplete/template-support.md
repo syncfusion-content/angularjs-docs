@@ -7,7 +7,7 @@ control: Autocomplete
 documentation: ug
 ---
 
-## Template Support in Essential AngularJS AutoComplete
+# Template Support in Essential AngularJS AutoComplete
 
 The suggestion list can be customized based on different needs using templates. The desired templates can be defined using the “e-template” property.
 
