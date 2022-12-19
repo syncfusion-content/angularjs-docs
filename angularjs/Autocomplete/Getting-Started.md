@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting-Started with AngularJS Autocomplete Control | Syncfusion
-description: Learn here about Getting Started with Syncfusion Essential AngularJS Autocomplete Control, its elements, and more.
+description: Learn here about Getting Started with Syncfusion Essential AngularJS Autocomplete control, its elements, and more.
 platform: AngularJS
 control: Autocomplete 
 documentation: ug

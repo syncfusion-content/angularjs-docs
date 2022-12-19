@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in AngularJS Grid Control | Syncfusion
-description: Learn here about Filter Support in Syncfusion Essential Studio AngularJS Grid Control, its elements, and more.
+description: Learn here about Filter Support in Syncfusion Essential Studio AngularJS Grid control, its elements, and more.
 platform: AngularJS
 control: Grid
 documentation: ug

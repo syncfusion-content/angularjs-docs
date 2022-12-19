@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multiple Columns in AngularJS AutoComplete Control | Syncfusion
-description: Learn here about Multiple Columns support in Syncfusion Essential AngularJS AutoComplete Control, its elements, and more.
+description: Learn here about Multiple Columns support in Syncfusion Essential AngularJS AutoComplete control, its elements, and more.
 platform: AngularJS
 control: Autocomplete
 documentation: ug
