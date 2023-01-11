@@ -1,13 +1,13 @@
 ---
 layout: post
-title: template-support
-description: template support
+title: Template Support in AngularJS AutoComplete Control | Syncfusion
+description: Learn here more about Template Support in Syncfusion Essential AngularJS Autocomplete Control, its elements, and more
 platform: AngularJS
 control: Autocomplete
 documentation: ug
 ---
 
-## Template Support
+# Template Support in Essential AngularJS AutoComplete
 
 The suggestion list can be customized based on different needs using templates. The desired templates can be defined using the “e-template” property.
 
@@ -39,5 +39,5 @@ The suggestion list can be customized based on different needs using templates. 
 
 Run the above code to render the following output. 
 
-![](template-support_images\template-support_img1.png)
+![Template Support in AngularJS AutoComplete](template-support_images\template-support_img1.png)
 
