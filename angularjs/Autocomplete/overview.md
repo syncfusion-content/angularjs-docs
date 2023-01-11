@@ -1,13 +1,13 @@
 ---
 layout: post
-title: overview
-description: overview
+title: Overview in AngularJS AutoComplete Control | Syncfusion
+description: Learn here about Overview support in Syncfusion Essential AngularJS Autocomplete Control, its elements, and more.
 platform: AngularJS
 control: AutoComplete
 documentation: ug
 ---
 
-## Overview
+# Overview in Essential AngularJS AutoComplete 
 
 The Essential Angular AutoComplete control is a textbox control that provides a list of suggestions based on the user query.When the users enters the text in the text box, the control performs a search operation and provides a list of results in the suggestion pop up. There are several filter types available to perform the search.
 
