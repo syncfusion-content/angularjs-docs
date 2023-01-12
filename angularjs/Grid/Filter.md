@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Filtering with Grid widget for Syncfusion Essential AngularJS
-description: How to enable filtering and its functionalities
+title: Filtering in AngularJS Grid Control | Syncfusion
+description: Learn here about Filter Support in Syncfusion Essential Studio AngularJS Grid control, its elements, and more.
 platform: AngularJS
 control: Grid
 documentation: ug
 --- 
-# Filtering
+# Filtering in Essential AngularJS Grid
 
 Filtering helps to view particular or related records from dataSource that meets a given filtering criteria. To enable filter, set the `e-allowfiltering` to `true`. 
 
@@ -55,7 +55,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](filtering_images/filtering_img1.png)
+![Filtering in AngularJS Grid](filtering_images/filtering_img1.png)
 
 
 ## Menu filter
@@ -97,19 +97,19 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](filtering_images/filtering_img2.png)
+![Numeric Filter in AngularJS Grid](filtering_images/filtering_img2.png)
 {:caption}
 Numeric Filter
 
-![](filtering_images/filtering_img3.png)
+![String Filter in AngularJS Grid](filtering_images/filtering_img3.png)
 {:caption}
 String Filter
 
-![](filtering_images/filtering_img4.png)
+![Date Filter in AngularJS Grid](filtering_images/filtering_img4.png)
 {:caption}
 Date Filter
 
-![](filtering_images/filtering_img5.png)
+![Boolean Filter in AngularJS Grid](filtering_images/filtering_img5.png)
 
 Boolean Filter
 
@@ -143,7 +143,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](filtering_images/filtering_img6.png)
+![Excel Filter in AngularJS Grid](filtering_images/filtering_img6.png)
 
 
 ### Checkbox list generation:
@@ -181,7 +181,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](filtering_images/filtering_img7.png)
+![Checkbox List Generation in AngularJS Grid](filtering_images/filtering_img7.png)
 
 
 ### Add current selection to filter checkbox
@@ -190,7 +190,7 @@ When you filter the values multiple times on same column, then the previously fi
 
 The following image describes the previous behavior:
 
-![](filtering_images/filtering_img12.png)
+![Add Current Selection in AngularJS Grid](filtering_images/filtering_img12.png)
 
 
 ### Case Sensitivity
@@ -223,7 +223,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](filtering_images/filtering_img8.png)
+![Case Sensitivity in AngularJS Grid](filtering_images/filtering_img8.png)
 
 
 ## Filter bar
@@ -396,7 +396,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](filtering_images/filtering_img9.png)
+![Filter Bar in AngularJS Grid](filtering_images/filtering_img9.png)
 
 
 Filter bar modes:
@@ -439,7 +439,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](filtering_images/filtering_img10.png)
+![Filter Bar Message in AngularJS Grid](filtering_images/filtering_img10.png)
 
 
 ## Filter Operators
@@ -652,7 +652,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of previous code example:
 
-![](filtering_images/filtering_img11.png)
+![Filter Bar Template in AngularJS Grid](filtering_images/filtering_img11.png)
 {:caption}
 After Filtering
  
