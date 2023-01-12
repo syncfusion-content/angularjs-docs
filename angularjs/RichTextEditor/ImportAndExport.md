@@ -116,7 +116,7 @@ Full list of assemblies needed for RTE Import are as follows
     4.  Syncfusion.Compression.Base
     5.  Syncfusion.DocIO.Base
 
-![Server Dependencies in AngularJS Rich TextEditor](ImportAndExport_images/import_images.png)
+![Server Dependencies in AngularJS RichTextEditor](ImportAndExport_images/import_images.png)
 
 ### Export 
 
@@ -217,7 +217,7 @@ Export Helper functions are available in the Assembly `Syncfusion.EJ.Export`, wh
     6.  Syncfusion.PDF.Base
 
 ### Word Export
-![Word Export in AngularJS Rich TextEditor](ImportAndExport_images/export_word_images.png)
+![Word Export in AngularJS RichTextEditor](ImportAndExport_images/export_word_images.png)
 
 ### PDF Export
-![PDF Export in AngularJS Rich TextEditor](ImportAndExport_images/export_pdf_images.png)
+![PDF Export in AngularJS RichTextEditor](ImportAndExport_images/export_pdf_images.png)
