@@ -1,13 +1,13 @@
 ---
 layout: post
-title: multiple-columns
-description: multiple columns
+title: Multiple Columns in AngularJS Autocomplete Control | Syncfusion
+description: Learn here about Multiple Columns support in Syncfusion Essential AngularJS Autocomplete Control, its elements, and more.
 platform: AngularJS
 control: Autocomplete
 documentation: ug
 ---
 
-## Multiple Columns
+# Multiple Columns in Essential AngularJS Autocomplete
 
 The Autocomplete allows list of data to be displayed in several columns and column collection can be defined and customized through the [e-multicolumnsettings ](http://help.syncfusion.com/api/js/ejautocomplete)property.
 
@@ -145,7 +145,7 @@ columns: [
 
 Run the above code to render the following output. 
 
-![](multiple-columns_images\multiple-columns_img1.png)
+![Multiple Columns in AngularJS Autocomplete](multiple-columns_images\multiple-columns_img1.png)
 
 
 

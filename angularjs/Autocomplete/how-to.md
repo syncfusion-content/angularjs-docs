@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Syncfusion Autocomplete see-also
-description: see also
+title: How To Section in AngularJS Autocomplete Control | Syncfusion
+description: Learn here about How To Section in Syncfusion Essential AngularJS Autocomplete Control, its elements, and more.
 platform: AngularJS
 control: Autocomplete
 documentation: ug
 ---
 
 
-## How To
+# How To Section in AngularJS Autocomplete
 
 ### Set Client Side Validation for Autocomplete?
 
