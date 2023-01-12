@@ -7,7 +7,7 @@ control: RichTextEditor
 documentation: ug
 keywords: RichTextEditor, server side XHTML Validation, RTE import, RTE export, export to PDF, export to Word
 ---
-# Import and Export in AngularJS Rich TextEditor 
+# Import and Export in AngularJS RichTextEditor 
 
 Import feature provides support to import a word document into the editor `textarea`. To enable import option in the RTE tool bar,  `import` toolbar items needs to be added in RTE toolbar toolsList using `importExport` which adds the tool in the toolbar. In `importSettings` url option, the server page for import is needed to be mapped. When you click the toolbar import icon, it opens a dialog to browse the select a word file. The selected word file will be imported into the editor `textarea`.
 
