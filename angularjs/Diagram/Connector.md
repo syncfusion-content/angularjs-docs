@@ -1013,7 +1013,7 @@ var targetDecorator = {
 ![AngularJS Diagram Interaction](Connector_images/Connector_img23.png)
 
 ## Interaction
-Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/angularjs/Diagram/Interaction#connection-editing "Connection Editing").
+Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/angularjs/diagram/interaction#connection-editing "Connection Editing").
 
 ## Constraints
-The `constraints` property of connector allows to enable/disable certain features of connectors. For more information about constraints, refer to [Connector Constraints](/angularjs/Diagram/Constraints#connectorconstraints "Connector Constraints").
+The `constraints` property of connector allows to enable/disable certain features of connectors. For more information about constraints, refer to [Connector Constraints](/angularjs/diagram/constraints#connectorconstraints "Connector Constraints").
