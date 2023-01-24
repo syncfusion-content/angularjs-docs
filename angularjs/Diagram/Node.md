@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Visually represent the geometrical informations, process flow, or entities
-description: How to visually represent the geometrical information and process flows as nodes?
+title: Node in AngularJS Diagram Control | Syncfusion
+description: Learn here all about node support in Syncfusion Essential AngularJS Diagram Control, its elements and more.
 platform: AngularJS
 control: Diagram
 documentation: ug
 ---
 
-# Node
+# Node in AngularJS Diagram
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, entity, or any other kind of data.
 
-![](/angularjs/Diagram/Node_images/Node_img1.png)
+![AngularJS Diagram Create Node](Node_images/Node_img1.png)
 
 ## Create Node
 
@@ -48,7 +48,7 @@ To create a node, You have to define the node object and add that to `nodes` col
 
 {% endhighlight %}
 
-![](/angularjs/Diagram/Node_images/Node_img2.png)
+![AngularJS Diagram Position](Node_images/Node_img2.png)
 
 ## Position
 
@@ -91,7 +91,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angularjs/Diagram/Node_images/Node_img4.png)
+![AngularJS Diagram Types](Node_images/Node_img4.png)
 
 ## Types
 
@@ -129,7 +129,7 @@ You can customize the appearance of a node by changing its font, fill colors, pa
 
 {% endhighlight %}
 
-![](/angularjs/Diagram/Node_images/Node_img5.png)
+![AngularJS Diagram Gradient](Node_images/Node_img5.png)
 
 ### Gradient
 
@@ -213,7 +213,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angularjs/Diagram/Node_images/Node_img6.png)
+![AngularJS Diagram Shadow](Node_images/Node_img6.png)
 
 ## Shadow
 
@@ -245,7 +245,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 {% endhighlight %}
 
 
-![](/angularjs/Diagram/Node_images/Node_img7.png)
+![AngularJS Diagram shadow effect](Node_images/Node_img7.png)
 
 The following code illustrates how to disable shadow effect at runtime.
 
@@ -304,7 +304,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angularjs/Diagram/Node_images/Node_img8.png)
+![AngularJS Diagram Icon](Node_images/Node_img8.png)
 
 ## Icon
 
@@ -367,14 +367,14 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angularjs/Diagram/Node_images/Node_img9.png)
+![AngularJS Diagram Interaction](Node_images/Node_img9.png)
 
-![](/angularjs/Diagram/Node_images/Node_img10.png)
+![AngularJS Diagram Constraints](Node_images/Node_img10.png)
 
 ## Interaction
 
-Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Edit Nodes](/angularjs/Diagram/Interaction "Interaction").
+Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Edit Nodes](/angularjs/diagram/interaction "Interaction").
 
 ## Constraints
 
-The `constraints` property of node allows you to enable/disable certain features. For more information about node constraints, refer to [Node Constraints](/angularjs/Diagram/Constraints#nodeconstraints "Node Constraints").
+The `constraints` property of node allows you to enable/disable certain features. For more information about node constraints, refer to [Node Constraints](/angularjs/diagram/constraints#nodeconstraints "Node Constraints").
