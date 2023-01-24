@@ -1,25 +1,25 @@
 ---
 layout: post
-title: Create custom connection points to draw connections with any specific point of node
-description: How to draw connections with specific points of node?
+title: Port in AngularJS Diagram Control | Syncfusion
+description: Learn here all about port support in Syncfusion Essential AngularJS Diagram Control, its elements and more.
 platform: AngularJS
 control: Diagram
 documentation: ug
 ---
 
-# Port
+# Port in AngularJS Diagram
 
 Essential Diagram for JS provides support to define custom ports for making connections.
 
-![](/angularjs/Diagram/Port_images/Port_img3.png)
+![AngularJS Diagram custom ports](Port_images/Port_img3.png)
 
 When a connector is connected between two nodes, its end points are automatically docked to node's nearest boundary as shown in the following image. 
 
-![](/angularjs/Diagram/Port_images/Port_img4.png)
+![AngularJS Diagram two nodes](Port_images/Port_img4.png)
 
 Ports act as the connection points of node and allows to create connections with only those specific points as shown in the following image.
 
-![](/angularjs/Diagram/Port_images/Port_img5.png)
+![AngularJS Diagram connection points of node](Port_images/Port_img5.png)
 
 ## Create Port
 
@@ -109,7 +109,7 @@ diagram.addPorts("node", ports)
 
 {% endhighlight %}
 
-![]((/angularjs/Diagram/Port_images/Port_img1.png)
+![AngularJS Diagram node](Port_images/Port_img1.png)
 
 To explore the set of properties for defining a port, refer to [Port Properties](/api/js/ejDiagram#members:nodes-ports "Port Properties")
 
@@ -175,8 +175,8 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![]((/angularjs/Diagram/Port_images/Port_img2.png)
+![AngularJS Diagram Constraints](Port_images/Port_img2.png)
 
 ## Constraints
 
-The `constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/angularjs/Diagram/Constraints#portconstraints)
+The `constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/angularjs/diagram/constraints#portconstraints)
