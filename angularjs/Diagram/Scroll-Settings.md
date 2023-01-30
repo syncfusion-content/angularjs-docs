@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Read the current scroll status and programmatically pan Diagrams
-description: How to read/modify the scroll status of the Diagram?
+title: Scroll Settings in AngularJS Diagram Control | Syncfusion
+description: Learn here about Scroll Settings in Syncfusion Essential AngularJS Diagram Control, its elements, and more.
 platform: AngularJS
 control: Diagram
 documentation: ug
 ---
 
-# Scroll Settings
+# Scroll Settings in AngularJS Diagram
 The Diagram can be scrolled by using the vertical and horizontal scrollbars. In addition to the scrollbars, you can use mouse wheel to scroll the Diagram. 
 Diagram's `scrollSettings` enables you to read the current scroll status, view port size, current zoom, and zoom factor. It also allows you to scroll the Diagram programmatically. 
 
 ## Get current scroll status
 
-Scroll settings allows you to read the scroll status, view port size, and current zoom factor with a set of properties. To explore those properties, see [Scroll Settings](/api/js/ejDiagram#members:scrollsettings "Scroll Settings")
+Scroll settings allows you to read the scroll status, view port size, and current zoom factor with a set of properties. To explore those properties, see [Scroll Settings](/api/js/ejdiagram#members:scrollsettings "Scroll Settings")
 
 ## Define scroll status
 Diagram allows you to pan the Diagram before loading, so that any desired region of a large Diagram is made to view. You can programmatically pan the Diagram with the `horizontalOffset` and `verticalOffset` properties of scroll settings. The following code illustrates how to set pan the Diagram programmatically.
@@ -45,7 +45,7 @@ Diagram allows you to pan the Diagram before loading, so that any desired region
 
 In the example given below, the vertical scroll bar is scrolled down by 50px and horizontal scroll bar is scrolled to right by 100px. 
 
-![](/angularjs/Diagram/Scroll-Settings_images/Scroll-Settings_img1.png)
+![angularjs Diagram AutoScroll](Scroll-Settings_images/Scroll-Settings_img1.png)
 
 ## AutoScroll 
 
@@ -92,7 +92,7 @@ The scroll limit allows you to define the scrollable region of the Diagram. It i
 * Allows to scroll within the Diagram content.
 * Allows to scroll within the specified scrollable area.
 
-`scrollLimit` property of scroll settings helps to limit the scrolling. For the accepted values of the scrollLimit, refer to [Scroll Limit](/api/js/ejDiagram#scroll-limit "Scroll Limit").
+`scrollLimit` property of scroll settings helps to limit the scrolling. For the accepted values of the scrollLimit, refer to [Scroll Limit](/api/js/ejdiagram#scroll-limit "Scroll Limit").
 
 The following code example illustrates how to specify the scroll limit.
 
