@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Gallery
-description: gallery
+title: Gallery in AngularJS Platform | Syncfusion
+description: Learn here more about Gallery support in Syncfusion Essential AngularJS Application, its elements, and more.
 documentation: ug
 platform: AngularJS
 keywords: gallery,ribbon gallery
 ---
 
-# Gallery
+# Gallery in Essential AngularJS Application
 
 Galleries are used to display items that can be arranged in a grid-type layout. Items in the gallery can be customized as `button`/`menu` to display images, text, or both images and text. You can set `type` of group as `gallery`.
 
@@ -99,13 +99,13 @@ N> The `itemHeight`and `itemWidth` for gallery item can be set, if not set defau
 {% endhighlight %}
 
 
-![](Gallery_images/Gallery_img1.png)
+![Gallery Item in AngularJS Application](Gallery_images/Gallery_img1.png)
 
 Ribbon Gallery.
 {:.caption}
 
 
-![](Gallery_images/Gallery_img2.png)
+![Ribbon Gallery in AngularJS Application](Gallery_images/Gallery_img2.png)
 
 Gallery at Expanded State
 {:.caption}
@@ -206,4 +206,4 @@ You can also set `text`and `toolTip`to custom gallery item which can also be cus
 
 {% endhighlight %}
 
-![](Gallery_images/Gallery_img3.png)
+![Custom Gallery Items in AngularJS Application](Gallery_images/Gallery_img3.png)
