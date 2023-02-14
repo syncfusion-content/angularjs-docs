@@ -8,6 +8,8 @@ documentation: ug
 
 # Overview of Syncfusion Essential AngularJS
 
+> Syncfusion jQuery based widgets are no longer in active development. Switch to our pure JavaScript based next generation Essential JS 2 library.
+
 Essential JS includes AngularJS directives for all controls in the `ej.widget.angular.min.js` script file. All the Essential JS directives have been encapsulated into a single module called `ejangular`. To render our ej controls in angular, you need to refer the `angular.min.js` and `ej.widget.angular.min.js` in your application.
 
 Create a new HTML file and include the below code:
