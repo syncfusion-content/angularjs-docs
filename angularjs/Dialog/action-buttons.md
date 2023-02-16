@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion Dialog action-buttons
-description: action buttons
+title: Action Buttons| AngularJS | Dialog| Syncfusion
+description: Learn here about action buttons in Syncfusion Essential AngularJS Dialog Control, its elements, and more.
 platform: AngularJS
 control: Angular- Dialog
 documentation: ug
 ---
 
-## Action Buttons
+## Action Buttons in AngularJS Dialog
 
 The Dialog component provides the following action buttons.
 
@@ -37,7 +37,7 @@ You can display only the necessary buttons in the Dialog component by configurin
 
 
 
-![Action Buttons](action-buttons_images\action-buttons_img1.png)
+![Action Buttons in AngularJS Dialog](action-buttons_images\action-buttons_img1.png)
 
 ### Customizing Action Buttons
 
@@ -71,7 +71,7 @@ You can add new action button in the dialog component by configuring the **e-ac
 
 
 
-![Action Buttons](action-buttons_images\customizing-action-buttons_img1.png)
+![Action Buttons in AngularJS Dialog](action-buttons_images\customizing-action-buttons_img1.png)
 
 ### Giving Modal dialog
 
@@ -86,7 +86,7 @@ The Dialog component’s [modal dialog](https://en.wikipedia.org/wiki/Modal_wind
 {% endhighlight %}
 
 
-![Action Buttons Images](action-buttons_images\giving-modael-dialog_img1.png)
+![Action Buttons Images in AngularJS Dialog](action-buttons_images\giving-modael-dialog_img1.png)
 
 
 ### Containment
@@ -108,7 +108,7 @@ If the property **e- containment** is set, then dialog will append to the select
 
 In the above code we have restricted to move the dialog component with the given containment (i.e.) with the cols-sample-area 
 
-![Containment](action-buttons_images\containment_img1.png)
+![Containment in AngularJS Dialog](action-buttons_images\containment_img1.png)
 
 Note: This [`e-containtment`] property is mostly used for the Modal dialog to restrict to specific container. And this property is similar to the “[e-target](https://help.syncfusion.com/api/js/ejdialog)” property but this additionally sets the drag area for dialog. Also this property overrides target property if both are set.
 

@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Getting-Started | Button | AngularJS | Syncfusion
-description: getting started
+description: Learn here more about getting started with Syncfusion Essential AngularJS Button Control, its elements, and more.
 platform: AngularJS
 control: Button
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with AngularJS Button 
 
 This section explains you briefly on how to create a **Button** in your application with **JavaScript**. Essential JavaScript Button helps to display a Button widget within a web page and allows you to Click, Toggle Click, Reset, and Submit. The following example illustrates how to customize Button control in a Media Player and Office Ribbon Application. 
 
 The following screenshot illustrates the functionality of a Button control in Media Player and Office Ribbon Application.
 
-![Getting Started](Getting-Started_images/Getting-Started_img1.png)
+![Getting Started with AngularJS Button](Getting-Started_images/Getting-Started_img1.png)
 
 ## Create Button Widget
 
@@ -200,9 +200,9 @@ Add the following function definition for Button in the script section.
 
 The following screenshot displays Office Ribbon Application.
 
-![Create Office Ribbon Control](Getting-Started_images/Getting-Started_img3.png) 
+![Create Office Ribbon Control in AngularJS Button](Getting-Started_images/Getting-Started_img3.png) 
 
 The following screenshot displays **Office Ribbon** **Bold** Option.	
 
-![Create Office Ribbon Control](Getting-Started_images/Getting-Started_img4.png)
+![Create Office Ribbon Control in AngularJS Button](Getting-Started_images/Getting-Started_img4.png)
 
