@@ -7,7 +7,7 @@ control: Angular- Dialog
 documentation: ug
 ---
 
-## Action Buttons in AngularJS Dialog
+# Action Buttons in AngularJS Dialog
 
 The Dialog component provides the following action buttons.
 
