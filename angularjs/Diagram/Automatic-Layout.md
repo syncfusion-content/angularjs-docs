@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Layout nodes and connectors in an organized structure
-description: How to arrange nodes by using the automatic layouts?.
+title: Automatic Layout in AngularJS Diagram Control | Syncfusion
+description: Learn here about automatic layout in Syncfusion Essential AngularJS Diagram Control, its elements, and more.
 platform: AngularJS
 control: Diagram
 documentation: ug
 ---
 
-# Automatic Layout
+# Automatic Layout in AngularJS Diagram
 
 Diagram provides support to auto-arrange the nodes in the Diagram area that is referred as **Layout**. It includes the following layout modes.
 
@@ -109,7 +109,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angularjs/Diagram/Automatic-Layout_images/Automatic-Layout_img1.png)
+![AngularJS Diagram Radial Tree Layout](Automatic-Layout_images/Automatic-Layout_img1.png)
 
 N> You can ignore a particular Node from layout arrangement by setting its **excludeFromLayout** property as true.
 
@@ -309,7 +309,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angularjs/Diagram/Automatic-Layout_images/Automatic-Layout_img2.png)
+![AngularJS Diagram Organizational Chart](Automatic-Layout_images/Automatic-Layout_img2.png)
 
 ## Organizational Chart
 
@@ -483,7 +483,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angularjs/Diagram/Automatic-Layout_images/Automatic-Layout_img3.png)
+![AngularJS Diagram GetLayoutInfo](Automatic-Layout_images/Automatic-Layout_img3.png)
 
 Organizational chart layout starts parsing from root and iterate through all its child elements. ‘getLayoutInfo’ method provides necessary information of a node’s children and the way to arrange (direction, orientation, offsets, etc.) them. You can customize the arrangements by overriding this function as explained.
 
@@ -677,7 +677,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angularjs/Diagram/Automatic-Layout_images/Automatic-Layout_img10.png)
+![AngularJS Diagram Assistant](Automatic-Layout_images/Automatic-Layout_img10.png)
 
 ### Assistant
 
@@ -771,7 +771,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angularjs/Diagram/Automatic-Layout_images/Automatic-Layout_img11.png)
+![AngularJS Diagram Customize Layout](Automatic-Layout_images/Automatic-Layout_img11.png)
 
 ## Customize Layout
 
@@ -830,7 +830,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angularjs/Diagram/Automatic-Layout_images/Automatic-Layout_img14.png)
+![AngularJS Diagram Layout Margin](Automatic-Layout_images/Automatic-Layout_img14.png)
 
 ### Layout Margin
 
@@ -882,7 +882,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angularjs/Diagram/Automatic-Layout_images/Automatic-Layout_img15.png)
+![AngularJS Diagram Layout Orientation](Automatic-Layout_images/Automatic-Layout_img15.png)
 
 ### Layout Orientation
 
@@ -925,7 +925,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angularjs/Diagram/Automatic-Layout_images/Automatic-Layout_img12.png)
+![AngularJS Diagram Fixed Node](Automatic-Layout_images/Automatic-Layout_img12.png)
 
 ### Fixed Node
 
@@ -987,7 +987,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angularjs/Diagram/Automatic-Layout_images/Automatic-Layout_img13.png)
+![AngularJS Diagram Expand and collapse](Automatic-Layout_images/Automatic-Layout_img13.png)
 
 ### Expand and collapse
 
