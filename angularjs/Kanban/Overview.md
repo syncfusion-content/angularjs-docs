@@ -1,13 +1,13 @@
 ---
-title: Kanban - Overview	
-description: Kanban Introduction
+title: Overview of AngularJS Kanban Control | Syncfusion
+description: Learn here all about overview of Syncfusion Essential AngularJS Kanban Control, its elements, and more.
 platform: AngularJS
 control: Kanban
 documentation: ug
 keywords: ejkanban, overview, kanban board, js kanban 
 ---
 
-# Overview
+# Overview of AngularJS Kanban
 
 The Kanban control is an efficient way to visualize the workflow at each stage along its path to completion. The most important features available are Swim lane, filtering, and editing.
 
