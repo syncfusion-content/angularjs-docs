@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Easy Customization
-description: Easy Customization 
+title: Easy Customization in AngularJS Button Control | Syncfusion
+description: Learn here about Easy Customization in Syncfusion Essential AngularJS Button Control, its elements, and more.
 platform: AngularJS
 control: Button
 documentation: ug
 ---
 
-# Easy Customization
+# Easy Customization in AngularJS Button
 
 Button being used in all applications, button size, content and content location is varies based on each application. Here you can see some customizable options available for button control.
 
@@ -42,7 +42,7 @@ You can bound the buttons of different size using e-size property. Here, we have
 
 Run the above code to get the below output.
 
-![](customization_images/size.png)
+![AngularJS Button Content Type](customization_images/size.png)
 
 ## Content Type
 
@@ -79,7 +79,7 @@ Button control supports built-in icon libraries. The icons are added inside a bu
 
 Run the above code to get the below output.
 
-![](customization_images/content-type.png)
+![AngularJS Button Image position ](customization_images/content-type.png)
 
 ## Image position 
 
@@ -112,7 +112,7 @@ The e-imagePosition property of the button allows you to position the image with
 
 Run the above code to get the below output.
 
-![](customization_images/image-position.png)
+![AngularJS Button type](customization_images/image-position.png)
 
 ## Button Type
 
@@ -179,5 +179,5 @@ The e-timeInterval property is used to specify the time Interval for triggering 
 
 Run the above code to get the below output.
 
-![](customization_images/repeat-button.png)
+![AngularJS Button customization](customization_images/repeat-button.png)
 
