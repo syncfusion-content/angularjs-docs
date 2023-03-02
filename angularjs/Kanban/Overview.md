@@ -1,6 +1,6 @@
 ---
 title: Overview	| AngularJS | Kanban | Syncfusion
-description: Learn here about Kanban Introduction in Syncfusion Essential AngularJS Kanban Control, its elements, and more.
+description: Learn here all about overview of Syncfusion Essential AngularJS Kanban Control, its elements, and more.
 platform: AngularJS
 control: Kanban
 documentation: ug
