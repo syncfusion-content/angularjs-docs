@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Action Buttons| AngularJS | Dialog| Syncfusion
-description: Learn here about action buttons in Syncfusion Essential AngularJS Dialog Control, its elements, and more.
+title: Action Buttons in AngularJS Dialog Control | Syncfusion
+description: Learn here about action buttons support in Syncfusion Essential AngularJS Dialog Control, its elements, and more.
 platform: AngularJS
 control: Angular- Dialog
 documentation: ug
@@ -39,7 +39,7 @@ You can display only the necessary buttons in the Dialog component by configurin
 
 ![Action Buttons in AngularJS Dialog](action-buttons_images\action-buttons_img1.png)
 
-### Customizing Action Buttons
+## Customizing Action Buttons
 
 We can customize the action buttons in dialog component.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Easy Customization | AngularJS | Button | Syncfusion 
-description: Learn here about Easy Customization in Syncfusion Essential AngularJS Button Control, its elements, and more. 
+title: Easy Customization in AngularJS Button Control | Syncfusion
+description: Learn here about Easy Customization in Syncfusion Essential AngularJS Button Control, its elements, and more.
 platform: AngularJS
 control: Button
 documentation: ug
