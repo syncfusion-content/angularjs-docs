@@ -1,15 +1,15 @@
 ---
 layout: post
-title: signature customization
-description: signature customization
+title: Signature customization in AngularJS Signature Control | Syncfusion
+description: Learn here about signature customization in Syncfusion Essential AngularJS Signature Control, its elements, and more.
 platform: AngularJS
 control: Signature
 documentation: ug
 ---
 
-## Signature Customization
+# Signature Customization in AngularJS Signature
 
-### Background color
+## Background color
 
 Signature component allows you to set the background color for the component using the **e-backgroundcolor** property. When we set our required background, then the signature’s background color will be changed automatically.
 
@@ -71,7 +71,7 @@ syncApp.controller('signatureCtrl', function ($scope) {
 
 The following screenshot illustrates the Signature with custom defined background image.
 
-![](backgroundimage_images\backgroundimage_img1.png)
+![AngularJS Signature stroke color](backgroundimage_images\backgroundimage_img1.png)
 
 ### Stroke color
 
