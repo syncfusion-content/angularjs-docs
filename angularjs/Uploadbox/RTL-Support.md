@@ -1,13 +1,13 @@
 ---
 layout: post
-title: RTL-Support
-description: rtl support 
+title: RTL Support in AngularJS Uploadbox Control | Syncfusion
+description: Learn here about rtl support in Syncfusion Essential AngularJS Uploadbox Control, its elements, and more.
 platform: AngularJS
 control: Uploadbox
 documentation: ug
 ---
 
-# RTL Support 
+# RTL Support in AngularJS Uploadbox
 
 This feature supports the change of left-to-right alignment of the **Uploadbox** widget to right-to-left (**RTL**). That is, it sets the **Uploadbox** to right-to-left actions.
 
@@ -37,4 +37,4 @@ For **JS**, configure **saveFiles.ashx** and **removeFiles.ashx** files as menti
 
 The following screenshot displays the output.
 
-![](RTL-Support_images/RTL-Support_img1.png) 
+![AngularJS Uploadbox rtl support](RTL-Support_images/RTL-Support_img1.png) 
