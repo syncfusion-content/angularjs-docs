@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Range-Padding
-description: Range Padding
+title: Range Padding in AngularJS RangeNavigator Control | Syncfusion
+description: Learn here about range padding in Syncfusion Essential AngularJS RangeNavigator Control, its elements, and more.
 platform: AngularJS
 control: RangeNavigator
 documentation: ug
 ---
 
-# Range Padding
+# Range Padding in AngularJS RangeNavigator
 
 **Range Padding** adds padding for range in **RangeNavigator**. It allows you to space the grid lines in the **RangeNavigator**.  By default, this property is set to **none**.
 
@@ -47,7 +47,7 @@ The following screenshot illustrates a **RangeNavigator** with **rangePadding** 
 
 
 
-![](Range-Padding_images/Range-Padding_img1.png) 
+![AngularJS RangeNavigator none](Range-Padding_images/Range-Padding_img1.png) 
 
 ### Additional
 
@@ -57,7 +57,7 @@ The following screenshot illustrates a **RangeNavigator** with **rangePadding** 
 
 
 
-![](Range-Padding_images/Range-Padding_img2.png) 
+![AngularJS RangeNavigator additional](Range-Padding_images/Range-Padding_img2.png) 
 
 ### Normal
 
@@ -65,7 +65,7 @@ In normal **rangePadding**, automatic range calculation differs based on the dat
 
 The following screenshot illustrates **RangeNavigator** with **rangePadding** set to normal
 
-![](Range-Padding_images/Range-Padding_img3.png) 
+![AngularJS RangeNavigator normal](Range-Padding_images/Range-Padding_img3.png) 
 
 ### Round
 
@@ -73,7 +73,7 @@ Round **rangePadding** for a numerical range rounds the range of the control to 
 
 The following screenshot illustrates a **RangeNavigator** with **rangePadding** set to **Round**.
 
-![](Range-Padding_images/Range-Padding_img4.png) 
+![AngularJS RangeNavigator rounds](Range-Padding_images/Range-Padding_img4.png) 
 
 ## DateTime
 
@@ -108,7 +108,7 @@ By default, the **rangePadding** for **DateTime** range is none. The range is ca
 
 The following screenshot illustrates a **RangeNavigator** with **rangePadding** set to none.
 
-![](Range-Padding_images/Range-Padding_img5.png) 
+![AngularJS RangeNavigator range padding](Range-Padding_images/Range-Padding_img5.png) 
 
 ### Round
 
@@ -116,7 +116,7 @@ Round **rangePadding** for a **DateTime** range rounds the range of the control 
 
 The following screenshot illustrates a **RangeNavigator** with **rangePadding** set to Round.
 
-![](Range-Padding_images/Range-Padding_img6.png) 
+![AngularJS RangeNavigator date time](Range-Padding_images/Range-Padding_img6.png) 
 
 ## Padding
 
@@ -265,4 +265,4 @@ The following code example renders a RangeNavigator with a range from 2010 Janua
 {% endhighlight %}
 
 
-![](Range-Padding_images/Range-Padding_img7.png) 
+![AngularJS RangeNavigator Customize axis](Range-Padding_images/Range-Padding_img7.png) 
