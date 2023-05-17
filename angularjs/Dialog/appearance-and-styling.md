@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion Dialog appearance-and-styling
-description: appearance and styling
+title: Appearance and Styling in AngularJS Dialog Control | Syncfusion
+description: Learn about appearance and styling support in Syncfusion Essential AngularJS Dialog Control, its elements and more.
 platform: AngularJS
 control: Angular- Dialog
 documentation: ug
 ---
 
-## Appearance and styling
+# Appearance and styling in AngularJS Dialog
 
 ### Showing header
 
