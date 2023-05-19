@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started | ListView | JavaScript | Syncfusion
-description: Getting started with listview widget in angularjs
+title: Getting started with AngularJS ListView Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential AngularJS ListView Control, its elements and more.
 platform: AngularJS
 control: ListView
 documentation: ug
 ---
 
-## Getting Started
+# Getting Started with AngularJS ListView
 The ListView control allows you to select an item from a list-like interface and provides the infrastructure to display a set of data items in different layouts or views. Lists display data, data navigation, result lists, and data entry.
 This section explains briefly about how to create a web ListView widget in your application with Angular JavaScript by step-by-step instructions. The following screenshot illustrates the output of a ListView widget.
 
