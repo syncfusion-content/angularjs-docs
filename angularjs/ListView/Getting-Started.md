@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with AngularJS ListView control | Syncfusion
-description: Learn about getting started with Syncfusion Essential AngularJS ListView control, its elements and more.
+description: Learn here about getting started with Syncfusion Essential AngularJS ListView control, its elements and more.
 platform: AngularJS
 control: ListView
 documentation: ug
