@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion ListBox Cascading
-description: Cascading
+title: Cascading in AngularJS ListBox Control | Syncfusion
+description: Learn here all about cascading support in Syncfusion Essential AngularJS ListBox control, its features, and more.
 platform: AngularJS
 control: ListBox
 documentation: ug
 ---
 
-# Cascading
+# Cascading in AngularJS ListBox
 
 To dynamically populate list items to another list box while selecting the list item in list box. i.e. rendering the child list box based on the item selection in parent list box. This can be achieved by using “cascadeTo” property.
 
