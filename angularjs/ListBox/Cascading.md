@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cascading in AngularJS ListBox Control | Syncfusion
-description: Learn here all about cascading support in Syncfusion Essential AngularJS ListBox control, its features, and more.
+description: Learn here all about cascading support in Syncfusion Essential AngularJS ListBox control, its elements, and more.
 platform: AngularJS
 control: ListBox
 documentation: ug

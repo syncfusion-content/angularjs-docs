@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stacked Header in AngularJS TreeGrid Control | Syncfusion
-description: Learn here all about stacked header support in Syncfusion Essential AngularJS TreeGrid control, its features, and more.
+description: Learn here all about stacked header support in Syncfusion Essential AngularJS TreeGrid control, its elements, and more.
 platform: AngularJS
 control: TreeGrid
 documentation: ug
