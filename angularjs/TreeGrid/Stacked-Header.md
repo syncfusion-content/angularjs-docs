@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Stacked-Header
-description: stacked header
+title: Stacked Header in AngularJS TreeGrid Control | Syncfusion
+description: Learn here all about stacked header support in Syncfusion Essential AngularJS TreeGrid control, its elements, and more.
 platform: AngularJS
 control: TreeGrid
 documentation: ug
 
 ---
-# Stacked Headers
+# Stacked Headers in AngularJS TreeGrid
 
 The stacked headers helps you to group the logical columns in tree grid. It can be shown by setting `e-showstackedheader` to `true` and by defining `e-stackedheaderrows`.
 
