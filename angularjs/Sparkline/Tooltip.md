@@ -9,7 +9,7 @@ documentation: ug
 
 ## Tooltip  
 
-A [`tooltip`](../api/ejsparkline#members:tooltip) follows the pointer movement and is used to indicate the value of a point. This feature is applicable for line, column, pie, and area Sparkline. You can enable the tooltip by setting it's [`visible`](../api/ejsparkline#members:tooltip-visible) property as **true**.
+A [`tooltip`](../api/js/ejsparkline#members:tooltip) follows the pointer movement and is used to indicate the value of a point. This feature is applicable for line, column, pie, and area Sparkline. You can enable the tooltip by setting it's [`visible`](../api/js/ejsparkline#members:tooltip-visible) property as **true**.
 
 {% highlight html %}
 
@@ -36,7 +36,7 @@ A [`tooltip`](../api/ejsparkline#members:tooltip) follows the pointer movement a
 
 ## Tooltip Customization
 
-You can customize the tooltip [`fill color`](../api/ejsparkline#members:tooltip-fill), [`border`](../api/ejsparkline#members:tooltip-border) properties [`border color`](../api/ejsparkline#members:tooltip-border-color), [`border width`](../api/ejsparkline#members:tooltip-border-width) and [`font`](../api/ejsparkline#members:tooltip-font) properties [`color`](../api/ejsparkline#members:tooltip-font-color), [`font family`](../api/ejsparkline#members:tooltip-font-fontfamily), [`font style`](../api/ejsparkline#members:tooltip-font-fontstyle), [`font weight`](../api/ejsparkline#members:tooltip-font-fontweight), [`opacity`](../api/ejsparkline#members:tooltip-font-opacity), [`size`](../api/ejsparkline#members:tooltip-font-size)
+You can customize the tooltip [`fill color`](../api/js/ejsparkline#members:tooltip-fill), [`border`](../api/js/ejsparkline#members:tooltip-border) properties [`border color`](../api/js/ejsparkline#members:tooltip-border-color), [`border width`](../api/js/ejsparkline#members:tooltip-border-width) and [`font`](../api/js/ejsparkline#members:tooltip-font) properties [`color`](../api/js/ejsparkline#members:tooltip-font-color), [`font family`](../api/js/ejsparkline#members:tooltip-font-fontfamily), [`font style`](../api/js/ejsparkline#members:tooltip-font-fontstyle), [`font weight`](../api/js/ejsparkline#members:tooltip-font-fontweight), [`opacity`](../api/js/ejsparkline#members:tooltip-font-opacity), [`size`](../api/js/ejsparkline#members:tooltip-font-size)
 
 {% highlight html %}
 
@@ -77,7 +77,7 @@ You can customize the tooltip [`fill color`](../api/ejsparkline#members:tooltip-
 
 ## Tooltip Template   
 
-HTML elements can be displayed in the tooltip by using the [`template`](../api/ejsparkline#members:tooltip-template) option of the tooltip. The template option takes the value of the id attribute of the HTML element. You can use the **#point.x#** and **#point.y#** as place holders in the HTML element to display the x and y values of the corresponding point.
+HTML elements can be displayed in the tooltip by using the [`template`](../api/js/ejsparkline#members:tooltip-template) option of the tooltip. The template option takes the value of the id attribute of the HTML element. You can use the **#point.x#** and **#point.y#** as place holders in the HTML element to display the x and y values of the corresponding point.
 
 {% highlight html %}
 
