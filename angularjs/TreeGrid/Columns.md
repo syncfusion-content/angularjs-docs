@@ -2,7 +2,7 @@
 layout: post
 title: Columns | TreeGrid | Angular | Syncfusion
 description:  Learn here all about columns in Syncfusion Essential Angular TreeGrid control, its elements, and more.
-platform: angularJS
+platform: angular
 control: TreeGrid
 documentation: ug
 ---
