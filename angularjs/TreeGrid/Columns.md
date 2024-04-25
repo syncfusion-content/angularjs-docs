@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Columns
-description: columns
-platform: AngularJS
+title: Columns | TreeGrid | Angular | Syncfusion
+description:  Learn here all about columns in Syncfusion Essential Angular TreeGrid control, its elements, and more.
+platform: angular
 control: TreeGrid
 documentation: ug
 ---
 
-# Columns
+# Columns in Angular TreeGrid
 
 Column definitions that is specified in the **e-columns** option, defines how to display, format, and edit data in the **e-datasource** in tree grid control. The values in the **e-datasource** can be mapped to the appropriate column using the **‘field’** property of the corresponding column object.                 
 
@@ -178,7 +178,7 @@ The following code sample shows how to set the header template.
 
 The following screenshot depicts column headers with custom templates.
 
-![](Columns_images/Columns_img1.png)
+![Angular TreeGrid Header Template](columns_images/angular-treegrid-header-template.png)
 
 ## Frozen Columns
 
@@ -229,11 +229,11 @@ Specific columns can be frozen by enabling the **e-columns.isFrozen** property o
 
 The following screenshot depicts tree grid with frozen columns.
 
-![](Columns_images/Columns_img2.png)
+![Angular TreeGrid Frozen Columns](columns_images/angular-treegrid-frozen-columns.png)
 
 You can also freeze all the preceding columns by choosing *Freeze Preceding Columns* option in the column menu.               
 
-![](Columns_images/Columns_img3.png)
+![Angular TreeGrid Freeze Preceding Columns](columns_images/angular-treegrid-freeze-preceding-columns.png)
 
 ## Resizing
 
@@ -294,7 +294,7 @@ The following code example shows how to define template for the column.
 
 {% endhighlight %}
 
-![](Columns_images/Columns_img4.png)
+![Angular TreeGrid Comlumn Template](columns_images/angular-treegrid-column-template.png)
 
 ## Column Menu
 
@@ -337,7 +337,7 @@ The following are the items displayed in the column menu:
 
 {% endhighlight %}
 
-![](Columns_images/Columns_img5.png)
+![Angular TreeGrid Column Menu](columns_images/angular-treegrid-column-menu.png)
 
 ## Changing position of expander column
 
@@ -401,7 +401,7 @@ The following code example explains how to hide the fourth column.
 
 {% endhighlight %}
 
-![](Columns_images/Columns_img6.png)
+![Angular TreeGrid Visibility](columns_images/angular-treegrid-visibility.png)
 
 ## Read-only
 
