@@ -1,7 +1,7 @@
 ---
 Layout: Post
 title: Editing in Angular Grid Control | Syncfusion
-description: Leam here all about how to perform editing in Syncfusion Angular Grid control its elements, features and more
+description: Learn here all about how to perform editing in Syncfusion Angular Grid control its elements, features and more.
 platform: angularjs
 control: Grid
 documentation: UG
