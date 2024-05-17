@@ -7,9 +7,9 @@ control: Signature
 documentation: ug
 ---
 
-## How To?
+# How To?
 
-### Save signature image with user defined format
+## Save signature image with user defined format
 
 By default, the downloaded image from the signature canvas will be in **png** format. We can define our own format to download the image with [`e-saveimageformat`] property. And we can also save the image along with the background by using the **e-savewithbackground** property.
 
