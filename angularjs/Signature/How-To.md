@@ -7,7 +7,7 @@ control: Signature
 documentation: ug
 ---
 
-# How To Section AngularJS Signature
+# How To Section in AngularJS Signature
 
 ## Save signature image with user defined format
 
