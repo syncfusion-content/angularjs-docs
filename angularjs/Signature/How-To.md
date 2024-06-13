@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Syncfusion Signature How To
-description: How To
-platform: AngularJS
+title: How To Section in AngularJS Signature | Syncfusion
+description: Learn here all about how to section Syncfusion AngularJS Signature component, its elements and more.
+platform: angularjs
 control: Signature
 documentation: ug
 ---
 
-## How To?
+# How To Section in AngularJS Signature
 
-### Save signature image with user defined format
+## Save signature image with user defined format
 
 By default, the downloaded image from the signature canvas will be in **png** format. We can define our own format to download the image with [`e-saveimageformat`] property. And we can also save the image along with the background by using the **e-savewithbackground** property.
 
@@ -76,7 +76,7 @@ syncApp.controller('signatureCtrl', function ($scope) {
 
 
 
-### Make signature as responsive
+## Make signature as responsive
 
 When the signature component is resized or even the window is resized the strokes drawn in the signature will be disappeared. To make the strokes visible even after resizing the window, we must set the **e-isresponsive** property as true.
 
@@ -105,7 +105,7 @@ After giving the Responsiveness:
 
 
 
-### To check whether any input to the signature control since render
+## To check whether any input to the signature control since render
 
 We can detect whether not there has been any input to the signature control since render. To detect we can use the storeSnap public variable, which is an array that stores all the canvas inputs. At initial rendering this array is empty and we can use this variable to check for the drawn strokes.
 
