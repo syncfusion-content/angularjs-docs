@@ -7,7 +7,7 @@ control: Angular- Dialog
 documentation: ug
 ---
 
-## Appearance and styling
+# Appearance and styling
 
 ### Showing header
 
