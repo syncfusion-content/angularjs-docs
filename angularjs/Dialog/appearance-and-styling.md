@@ -7,9 +7,9 @@ control: Angular- Dialog
 documentation: ug
 ---
 
-# Appearance and styling
+# Appearance and styling in angularjs Dialog
 
-### Showing header
+## Showing header
 
 In order to display any title for our dialog, we can use the **e-showheader** property to display the header of the Dialog. By default, rounded corner property is true in Dialog.	
 
