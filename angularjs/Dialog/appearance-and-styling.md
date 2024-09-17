@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance and styling in Angular Dialog Component | Syncfusion
-description: Learn here all about Appearance and styling in Syncfusion Angular Dialog control, its elements, and more.
+description: Learn here all about appearance and styling in Syncfusion Angular Dialog control, its elements, and more.
 platform: angularjs
 control: Angular- Dialog
 documentation: ug
