@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Syncfusion Dialog appearance-and-styling
-description: appearance and styling
-platform: AngularJS
+title: Appearance and styling in Angular Dialog control | Syncfusion
+description: Learn here all about appearance and styling in Syncfusion Angular Dialog control, its elements, and more.
+platform: angularjs
 control: Angular- Dialog
 documentation: ug
 ---
 
-## Appearance and styling
+# Appearance and styling in Angular Dialog control
 
-### Showing header
+## Showing header
 
 In order to display any title for our dialog, we can use the **e-showheader** property to display the header of the Dialog. By default, rounded corner property is true in Dialog.	
 
