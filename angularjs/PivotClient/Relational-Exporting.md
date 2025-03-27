@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Export
-description: export
+title: Exporting in AngularJS PivotClient control | Syncfusion
+description: Learn more about Exporting support in Syncfusion AngularJS PivotClient control, its elements, and more.
 platform: AngularJS
 control: pivotclient
 documentation: ug
 keywords: ejpivotclient, pivotclient, pivotclient widget, js pivotclient 
 ---
 
-# Exporting
+# Exporting in AngularJS PivotClient
 
 Chart and Grid in the PivotClient widget can be exported to Excel, Word and PDF documents by clicking the respective toolbar icons.
 
-![](Export_images/exporting-icons.png) 
+![AngularJS PivotClient Exporting](Export_images/exporting-icons.png) 
 
 Exporting feature provides an option that allows you to export either PivotChart or PivotGrid or both with the use of the property `e-clientExportMode`.
 
@@ -257,12 +257,12 @@ void pivotClient_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook workBook)
 
 The below screenshot shows the PivotGrid and PivotChart controls exported to Excel document.
 
-![](Export_images/relational-excel-export.png)
+![Relational Excel Export with AngularJS PivotClient](Export_images/relational-excel-export.png)
 
 The below screenshot shows the PivotGrid and PivotChart controls exported to Word document.
 
-![](Export_images/relational-word-Export.png)
+![Relational Word Export with AngularJS PivotClient](Export_images/relational-word-Export.png)
 
 The below screenshot shows the PivotGrid and PivotChart controls exported to PDF document.
 
-![](Export_images/relational-Pdf-Export.png)
+![Relational PDF Export with AngularJS PivotClient](Export_images/relational-Pdf-Export.png)
