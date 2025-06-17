@@ -40,7 +40,7 @@ Create a new HTML file and include the below code:
 
 The ng-app directive explains the root element (<html> or <body> tags) of the application. You will assign a name to the ng-app directive, then you must create a module with that name. In this module, you will have to define your directives, services, filters and configurations.
 
-A controller is defined using ng-controller directive. Each controller accepts an object $scope which we pass as a parameter.  This object is used to bind the controller with view.   
+A controller is defined using ng-controller directive. Each controller accepts an object $scope which we pass as a parameter. This object is used to bind the controller with view.
 
 All the Syncfusion widget’s control directives are prefixed with `ej-` to avoid conflict with other library directives and its properties are defined using `e-` prefix followed by the property name. The code example for defining controls in AngularJS is as follows,
 
@@ -347,7 +347,7 @@ In controller, you can get the reference to the `ej` widgets using the `ID` of p
 
 {% endhighlight %}
 
-N> Since the widgets rendered after the controller, we can’t access the widget object  and their members like properties/methods inside controller. So we need to use callback functions or  '$postLink' (in case of custom directives).  For more information about component Life-cycle refer the [link](https://docs.angularjs.org/api/ng/service/$compile)
+N> Since the widgets rendered after the controller, we can’t access the widget object and their members like properties/methods inside controller. So we need to use callback functions or '$postLink' (in case of custom directives). For more information about component Life-cycle refer the [link](https://docs.angularjs.org/api/ng/service/$compile)
 
 ## Widget Configuration in Controller
 
