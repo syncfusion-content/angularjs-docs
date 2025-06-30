@@ -74,7 +74,7 @@ Add a placeholder `div` element that can be used to initialize the diagram widge
 {% endhighlight %}
 
 This creates an empty diagram
-![](/angularjs/Diagram/Getting-Started_images/Getting-Started_img1.png)
+![Create a diagram in AngularJS.](/angularjs/Diagram/Getting-Started_images/Getting-Started_img1.png)
 
 ### Initialize Nodes and Connectors
 
@@ -156,7 +156,7 @@ N> `labels` property is an array, which indicates that more than one label can b
 
 Added nodes and connector connecting node will be displayed in diagram as shown below.
 
-![](/angularjs/Diagram/Getting-Started_images/Getting-Started_img3.png)
+![Initialize Nodes and Connectors.](/angularjs/Diagram/Getting-Started_images/Getting-Started_img3.png)
 
 ### Business object (Employee information)
 
@@ -297,4 +297,4 @@ syncApp.controller('diagramCtrl', function($scope, $rootScope) {
 
 * The Employee details are displayed in the Diagram as follows.
 
-![](/angularjs/Diagram/Getting-Started_images/Getting-Started_img5.png)
+![Visualize employee.](/angularjs/Diagram/Getting-Started_images/Getting-Started_img5.png)
