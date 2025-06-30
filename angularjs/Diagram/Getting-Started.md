@@ -74,7 +74,7 @@ Add a placeholder `div` element that can be used to initialize the diagram widge
 {% endhighlight %}
 
 This creates an empty diagram
-![Empty diagram.](/angularjs/Diagram/Getting-Started_images/Getting-Started_img1.png)
+![Create a diagram in AngularJS.](/angularjs/Diagram/Getting-Started_images/Getting-Started_img1.png)
 
 ### Initialize Nodes and Connectors
 
