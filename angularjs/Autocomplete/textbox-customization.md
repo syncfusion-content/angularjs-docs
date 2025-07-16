@@ -7,7 +7,7 @@ control: Autocomplete
 documentation: ug
 ---
 
-## Textbox Customization
+# Textbox Customization
 
 ### Auto-fill support
 
