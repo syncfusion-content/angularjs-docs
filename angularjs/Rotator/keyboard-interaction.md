@@ -7,7 +7,7 @@ control: rotator
 documentation: ug
 ---
 
-## Keyboard interaction
+# Keyboard interaction
 
 The Rotator property e-allowkeyboardnavigation turns on keyboard interaction with the Rotator items. You must set this property to ‘true’ to access the keyboard shortcuts. The default value is ‘true’. The value set to this property is Boolean.
 
