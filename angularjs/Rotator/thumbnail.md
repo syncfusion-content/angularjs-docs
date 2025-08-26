@@ -44,5 +44,5 @@ You can refer the following code example of Thumbnail in Rotator.
 
 
 
-![thumbnail in rotator component.](thumbnail_images\previewthumbnail_img1.png)
+![thumbnail in Rotator component.](thumbnail_images\previewthumbnail_img1.png)
 
