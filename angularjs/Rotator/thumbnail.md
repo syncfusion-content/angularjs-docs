@@ -7,7 +7,7 @@ control: rotator
 documentation: ug
 ---
 
-## Thumbnail
+# Thumbnail
 
 This feature implements Thumbnail in Rotator control. You can view or access any of the Rotator items instantly. All the images are given as Thumb Element to use this feature.
 
@@ -44,5 +44,5 @@ You can refer the following code example of Thumbnail in Rotator.
 
 
 
-![](thumbnail_images\previewthumbnail_img1.png)
+![thumbnail in Rotator component.](thumbnail_images\previewthumbnail_img1.png)
 

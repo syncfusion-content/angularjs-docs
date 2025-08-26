@@ -7,7 +7,7 @@ control: Sunburst Chart
 documentation: ug
 ---
 
-## Tooltip  
+# Tooltip  
 
 ToolTip allows you to display any information over a sunburst segment. It appears when mouse hovered over or touch any chart segment. By default, it displays the corresponding segment category name and its value
 
@@ -18,7 +18,7 @@ ToolTip allows you to display any information over a sunburst segment. It appear
 
 {% endhighlight %}
 
-![](Tooltip_images/Tooltip_img1.png)
+![mouse hovered over or touch any chart segment.](Tooltip_images/Tooltip_img1.png)
 
 ## Tooltip Template   
 
@@ -45,7 +45,7 @@ You can add a <div> element to set the `background` for the Sunburst chart and a
 
 {% endhighlight %}
 
-![](Tooltip_images/Tooltip_img2.png)
+![to display the x and y values of the corresponding point.](Tooltip_images/Tooltip_img2.png)
 
 ## Customize the appearance of tooltip
 
