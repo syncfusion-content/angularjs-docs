@@ -7,7 +7,7 @@ control: TreeGrid
 documentation: ug
 ---
 
-## Searching
+# Searching content using toolbar search box in AngularJS TreeGrid
 
 The TreeGrid control has an option to search its content using toolbar search box. The toolbar search box can be enabled by using the `toolbarItems` in [`e-toolbarsettings`](/api/js/ejtreegrid#members:toolbarsettings) property. The following code example explains how to integrate search textbox in toolbar.
 
