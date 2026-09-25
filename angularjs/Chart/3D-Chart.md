@@ -1,13 +1,13 @@
 ---
 layout: post
 title: 3D Chart types available in Essential Javascript Chart
-description: Learn about the different types of 3D charts supported by Syncfusion Essential html Chart and how to customize the 3D view.
+description: Learn here all about 3D chart support in Syncfusion AngularJS Chart control, its elements and more details.
 platform: AngularJS
 control: Chart
 documentation: ug
 ---
 
-# 3D Chart
+# 3D Chart in AngularJS Chart
 
 Essential 3D Chart for html allows you to view 8 chart types in 3D view such as `Bar`, `StackingBar`, `StackingBar100`, `Column`, `Stacked Column`, `100% Stacked Column`, `Pie`, `Doughnut`.
 
@@ -40,7 +40,7 @@ For rendering a 3D Column Chart, specify the series `e-type` as **"column"** in 
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img1.png)
+![3D column Chart fruits nutrients in AngularJS Chart](3D-Chart_images/3D-Chart_img1.png)
 
 
 ## 3D Bar Chart
@@ -71,7 +71,7 @@ You can create a 3D Bar Chart by setting the series `e-type` as **"bar"** in the
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img2.png)
+![3D Bar Chart employees in self insured plans in AngularJS Chart](3D-Chart_images/3D-Chart_img2.png)
 
 
 ## 3D Stacked Column Chart
@@ -104,7 +104,7 @@ Stacking Column 3DChart is rendered by specifying the series `e-type` as **"stac
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img3.png)
+![3D stacked column chart passenger car sales per year in AngularJS Chart](3D-Chart_images/3D-Chart_img3.png)
 
 
 ## 3D 100% Stacked Column Chart
@@ -136,7 +136,7 @@ Stacking Column 3DChart is rendered by specifying the series `e-type` as **"stac
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img4.png)
+![Smartphone penetration in Asia per year in AngularJS Chart](3D-Chart_images/3D-Chart_img4.png)
 
 
 
@@ -170,7 +170,7 @@ To create Stacking Bar 3DChart, set the series `e-type` as **"stackingBar"** in 
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img5.png)
+![Real time bidding digital ad sales in AngularJS Chart](3D-Chart_images/3D-Chart_img5.png)
 
 
 ## 3D 100% Stacked Bar Chart
@@ -202,7 +202,7 @@ You can create 100% Stacking Bar 3DChart by setting the series `e-type` as **"st
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img6.png)
+![Money savings by year in AngularJS Chart](3D-Chart_images/3D-Chart_img6.png)
 
 
 ## 3D Pie Chart
@@ -233,7 +233,7 @@ To render the Pie Chart in 3D view, enable the **enbel3D** option in the chart a
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img7.png)
+![Expenditure shares on a child from birth through 17 in AngularJS Chart](3D-Chart_images/3D-Chart_img7.png)
 
 
 
@@ -267,7 +267,7 @@ To render the Doughnut Chart in 3D view, enable the **enbel3D** option in the ch
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img8.png)
+![People's hobbies in AngularJS Chart](3D-Chart_images/3D-Chart_img8.png)
 
 
 
@@ -302,7 +302,7 @@ To render the EjChart in 3D view, set the `e-enable3D`option as *true* in the ch
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img9.png)
+![3D view fruits nutrients in AngularJS Chart](3D-Chart_images/3D-Chart_img9.png)
 
 
  
@@ -331,7 +331,7 @@ To render the EjChart in 3D view, set the `e-enable3D`option as *true* in the ch
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img10.png)
+![Placing bar fruits nutrients in AngularJS Chart](3D-Chart_images/3D-Chart_img10.png)
 
 
 ### Setting Axis Wall Size
@@ -360,7 +360,7 @@ In 3DChart, Cartesian axes lines are represented as walls and it defines the wid
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img11.png)
+![3D chart fruits nutrients in AngularJS Chart](3D-Chart_images/3D-Chart_img11.png)
 
 
 ### 3D Depth
@@ -387,7 +387,7 @@ By using the `e-depth` property, you can view the 3D Chart from the front view o
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img12.png)
+![3D depth fruits nutrients in AngularJS Chart](3D-Chart_images/3D-Chart_img12.png)
 
 
 ### Rotating and Tilting 3D Chart
@@ -417,7 +417,7 @@ To spin the 3D Chart on mouse dragging, enable `e-enableRotation` option in the 
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img13.png)
+![Rotating and tilting 3D chart fruits nutrients in AngularJS Chart](3D-Chart_images/3D-Chart_img13.png)
 
 
 ### PerspectiveAngle	
@@ -444,4 +444,4 @@ The `e-perspectiveAngle` specifies the appearance of the height, width, depth an
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img14.png)
+![Perspective angle fruits nutrients in AngularJS Chart](3D-Chart_images/3D-Chart_img14.png)
